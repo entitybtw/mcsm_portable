@@ -2,6 +2,8 @@
 
 A port of Minecraft Story Mode: Season 1 for PSP.
 
+![](https://i.imgur.com/H0DDJvQ.png "in game")
+
 ## 🎮 controls
 
 ### 📋 menu controls
