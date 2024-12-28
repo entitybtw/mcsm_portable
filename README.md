@@ -24,4 +24,4 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 
 ---
 
-Thank you for supporting this project! Feel free to contribute or report any issues. 🚀
+thank u for supporting this project! feel free to contribute or report any issues. 🚀
