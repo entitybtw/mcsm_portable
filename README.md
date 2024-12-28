@@ -2,7 +2,7 @@
 
 A port of Minecraft Story Mode: Season 1 for PSP.
 
----
+--
 
 ## 🎮 controls
 
@@ -14,7 +14,7 @@ A port of Minecraft Story Mode: Season 1 for PSP.
    - Press **R** and **L** simultaneously: Return to the menu without saving.
    - *(Not ready yet)* Press **R** and **START**: Save and exit to the menu.
 
----
+--
 
 ## 👏 credits
 
@@ -22,6 +22,6 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 - **SeanDear**: For contributing to the project.
 - **DNTRNK**: For assisting with small optimizations.
 
----
+--
 
 thank u for supporting this project! feel free to contribute or report any issues. 🚀
