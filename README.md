@@ -1,16 +1,27 @@
-# mcsm_portable
-Minecraft Story Mode Port for PSP
+# Minecraft Story Mode Portable (PSP)
 
-## controls:
+A port of Minecraft Story Mode for PSP. Enjoy the adventure on your portable device!
 
-### menu
-triangle - exit to xmb
+---
 
-### gameplay
-1. during a cutscene, press R and L simultaneously to return to the menu without saving
-2. (not ready yet) during a cutscene, press R and START to save and exit to the menu 
+## 🎮 Controls
 
-### credits
-1. THANKS TO POX1016 FOR DUMPING MCSM 1 NETFLIX INTERACTIVE TO YT
-2. SEANDEAR FOR HELPING WITH THE PROJECT
-3. DNTRNK FOR HELPING WITH SMALL OPTIMIZATIONS
+### 📋 Menu Controls
+- **Triangle**: Exit to XMB
+
+### 🎬 Gameplay Controls
+1. **During a cutscene**:
+   - Press **R** and **L** simultaneously: Return to the menu without saving.
+   - *(Not ready yet)* Press **R** and **START**: Save and exit to the menu.
+
+---
+
+## 👏 Credits
+
+- **POX1016**: For dumping Minecraft Story Mode 1 Netflix Interactive to YouTube.
+- **SeanDear**: For contributing to the project.
+- **DNTRNK**: For assisting with small optimizations.
+
+---
+
+Thank you for supporting this project! Feel free to contribute or report any issues. 🚀
