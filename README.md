@@ -1,7 +1,7 @@
 # mcsm_portable
 Minecraft Story Mode Port for PSP
 
-### controls
+## · controls
 
 ### menu
 triangle - exit to xmb
