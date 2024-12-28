@@ -7,5 +7,5 @@ Minecraft Story Mode Port for PSP
 triangle - exit to xmb
 
 ### gameplay
-during a cutscene, press R and L simultaneously to return to the menu without saving
-(not ready yet) during a cutscene, press R and START to save and exit to the menu 
+1. during a cutscene, press R and L simultaneously to return to the menu without saving
+2. (not ready yet) during a cutscene, press R and START to save and exit to the menu 
