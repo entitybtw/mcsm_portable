@@ -1,6 +1,0 @@
-cannot open assets/video/episode1/choices/14/your_machine_was_cool.lua: No such file or directory
-cannot open assets/video/episode1/choices/20/lets_talk_to_gabriel.lua: No such file or directory
-cannot open assets/video/episode1/choices/20/lets_talk_to_gabriel.lua: No such file or directory
-cannot open assets/video/episode1/choices/21/after_lukas/run_for_it.lua: No such file or directory
-cannot open assets/video/episode1/choices/21/somebody_stop_him.lua: No such file or directory
-cannot open assets/video/episode1/choices/14/threaten.lua: No such file or directory
