@@ -11,8 +11,8 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 
 ### 🎬 gameplay controls
 1. **During a cutscene**:
-   - Press **R** and **L**: Return to the menu without saving.
-   - *(Not ready yet)* Press **R** and **START**: Save and return to the menu.
+   - Press **R** and **L** in turn: Return to the menu without saving.
+   - *(Not ready yet)* Press **R** and **START** in turn: Save and return to the menu.
 
 ## 👏 credits
 
