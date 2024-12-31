@@ -10,7 +10,7 @@ latest release -> https://github.com/entitybtw/mcsm_portable/releases/tag/0.5
 
 ### 📋 menu controls
 - **Triangle**: Exit to XMB
-- **D-Pad**: Navigate
+- **D-Pad**: Navigation
 ## episode menu controls
 - **R**: Next episode
 - **L**: Previous episode
