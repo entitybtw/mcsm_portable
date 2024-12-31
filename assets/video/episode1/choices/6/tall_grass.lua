@@ -20,6 +20,11 @@ while true do
         Image.unload(img)
         choosing = false
         dofile("./mainmenu.lua")
+    elseif buttons.pressed(buttons.start) then
+        Image.unload(img)
+        choosing = false
+        SaveGame(1)
+        dofile("./mainmenu.lua")
     end
 
 

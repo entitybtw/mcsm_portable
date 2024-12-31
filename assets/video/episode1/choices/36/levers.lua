@@ -13,15 +13,22 @@ while choosing do
 
     if buttons.pressed(buttons.square) then
         Image.unload(img)
+	wr("em", "ellegaard")
         choosing = false
         dofile("assets/video/episode1/choices/37/go_for_ellegaard.lua")
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
+	wr("em", "magnus")
         choosing = false
         dofile("assets/video/episode1/choices/37/go_for_magnus.lua")
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
+        dofile("./mainmenu.lua")
+    elseif buttons.pressed(buttons.start) then
+        Image.unload(img)
+        choosing = false
+        SaveGame(1)
         dofile("./mainmenu.lua")
     end
 

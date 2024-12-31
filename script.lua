@@ -1,3 +1,6 @@
 PMP.play('assets/mainmenu/mcsm_title.pmp', buttons.start)
 PMP.play('assets/mainmenu/loading.pmp')
+require("saves")
+require("files")
+sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
 dofile("./mainmenu.lua")
