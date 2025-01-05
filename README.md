@@ -14,9 +14,9 @@ latest release -> https://github.com/entitybtw/mcsm_portable/releases/latest
 ## episode menu controls
 - **R**: Next episode
 - **L**: Previous episode
-- **SQUARE**: Previous menu
-- **Triangle**: Start Episode
-- **Circle**: Remove all save files
+- **CIRCLE**: Previous menu
+- **CROSS**: Select
+- **SQUARE**: Manage game saves
 
 ### 🎬 gameplay controls
 1. **During a cutscene**:
