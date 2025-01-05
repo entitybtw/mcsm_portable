@@ -25,9 +25,9 @@ latest release -> https://github.com/entitybtw/mcsm_portable/releases/latest
 
 ## 👏 thanks to
 
-- **pox1016**: For dumping Minecraft Story Mode 1 Netflix Interactive to YouTube.
-- **SeanDear**: For contributing to the project.
-- **dntrnk**: For assisting with small optimizations.
+- **pox1016**: For adapting Minecraft Story Mode 1 Netflix Interactive to YouTube.
+- **Antim**: For a bunch of advice and fixing bugs
+- **dntrnk**: For menu improvements, optimizations
 - **VanyaVolkin**: For recording episode menu from pc version
 
 thank u for supporting this project! feel free to contribute or report any issues. 🚀
