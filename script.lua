@@ -1,6 +1,13 @@
+local img = Image.load("assets/mainmenu/byentitybtw.png")
+screen.clear()
+Image.draw(img, 0, 0)
+screen.flip()
+LUA.sleep(400)
+Image.unload(img)
 PMP.play('assets/mainmenu/mcsm_title.pmp', buttons.start)
 PMP.play('assets/mainmenu/loading.pmp')
 require("saves")
 require("files")
 sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
+fade_enabled = 1
 dofile("./mainmenu.lua")
