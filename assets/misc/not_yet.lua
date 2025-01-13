@@ -11,8 +11,7 @@ while loop do
     if buttons.pressed(buttons.start) then
         Image.unload(img)
 	loop = false
-        dofile("assets/mainmenu/epmenu/epmenu.lua")
-
+	dofile("assets/mainmenu/epmenu/epmenu.lua")
     end
 
 end

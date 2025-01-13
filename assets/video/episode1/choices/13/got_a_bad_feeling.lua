@@ -1,7 +1,7 @@
 local choosing = true
-local img = Image.load('assets/video/episode1/choices/13/got_a_bad_feeling.png')
+local img = Image.load('assets/video/episode1/choices/13/got_a_bad_feeling_' .. reuben .. '.png')
 
-PMP.play('assets/video/episode1/choices/13/got_a_bad_feeling.pmp', buttons.r)
+PMP.play('assets/video/episode1/choices/13/got_a_bad_feeling_' .. reuben .. '.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)

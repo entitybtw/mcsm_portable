@@ -18,6 +18,7 @@ function SaveGame(episodeNumber)
         file:write(script)
         file:close()
         print("Game saved to file:", filePath)
+	PMP.play('assets/mainmenu/lsave.pmp')
     else
         print("Save error:", err)
     end

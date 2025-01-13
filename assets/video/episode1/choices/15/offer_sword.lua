@@ -1,7 +1,7 @@
 local choosing = true
-local img = Image.load('assets/video/episode1/choices/15/offer_sword.png')
+local img = Image.load('assets/video/episode1/choices/15/offer_sword_' .. reuben .. '.png')
 
-PMP.play('assets/video/episode1/choices/15/offer_sword.pmp', buttons.r)
+PMP.play('assets/video/episode1/choices/15/offer_sword_' .. reuben .. '.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)

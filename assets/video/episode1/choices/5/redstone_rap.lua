@@ -1,3 +1,4 @@
+building = "enderman"
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/5/redstone_rap.png')
 

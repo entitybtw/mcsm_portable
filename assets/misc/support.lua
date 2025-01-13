@@ -11,7 +11,6 @@ while loop do
     if buttons.pressed(buttons.start) then
 	Image.unload(img)
 	loop = false
-        dofile("./mainmenu.lua")
 
     end
 
