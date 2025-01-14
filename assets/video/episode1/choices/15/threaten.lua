@@ -1,5 +1,5 @@
 local choosing = true
-local img = Image.load('assets/video/episode1/choices/15/threaten_' .. reuben .. '.png')
+local img = Image.load('assets/video/episode1/choices/15/threaten.png')
 
 PMP.play('assets/video/episode1/choices/15/threaten_' .. reuben .. '.pmp', buttons.r)
 
