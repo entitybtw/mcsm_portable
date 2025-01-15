@@ -5,8 +5,7 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 ![](https://i.imgur.com/H0DDJvQ.png "in game")
 
 
-- additional assets -> https://drive.google.com/drive/folders/1au4laxAx3n9pHir2TJe4H8g2fhxNYpfM?usp=sharing
-- latest release -> https://github.com/entitybtw/mcsm_portable/releases/latest
+latest release -> https://github.com/entitybtw/mcsm_portable/releases/latest
 
 ## 🎮 controls
 
