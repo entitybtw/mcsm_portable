@@ -1,5 +1,13 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/6/bush.png')
+local cross_choice = "assets/video/episode1/choices/6/smoke_trail.lua"
+if tall_grass == "off" then
+    img = Image.load('assets/video/episode1/choices/6/bush.png')
+    cross_choice = "assets/video/episode1/choices/6/smoke_trail.lua"
+else
+    img = Image.load('assets/video/episode1/choices/6/bush_tall_grass.png')
+    cross_choice = "assets/video/episode1/choices/6/tall_grass.lua"
+end
 
 PMP.play('assets/video/episode1/choices/6/bush.pmp', buttons.r)
 
@@ -20,7 +28,7 @@ while choosing do
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
 	choosing = false
-        dofile("assets/video/episode1/choices/6/smoke_trail.lua")
+        dofile(cross_choice)
     elseif buttons.pressed(buttons.triangle) then
         Image.unload(img)
 	choosing = false
