@@ -1,4 +1,5 @@
 local choosing = true
+slime = "off"
 local img = Image.load('assets/video/episode1/choices/15/threaten.png')
 
 PMP.play('assets/video/episode1/choices/15/threaten_' .. reuben .. '.pmp', buttons.r)
@@ -14,10 +15,12 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(img)
         choosing = false
+        slime = "off"
         dofile("assets/video/episode1/choices/16/chicken_machine.lua")
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
         choosing = false
+        slime = "on"
         dofile("assets/video/episode1/choices/16/slime.lua")
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
