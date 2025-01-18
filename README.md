@@ -6,6 +6,7 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 
 - latest release -> https://github.com/entitybtw/mcsm_portable/releases/latest
 - extras -> https://github.com/entitybtw/mcsm_portable_extras/
+- kanban-board -> https://github.com/users/entitybtw/projects/4
 
 ## 🎮 controls
 
