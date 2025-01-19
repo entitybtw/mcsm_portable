@@ -14,10 +14,16 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(img)
         choosing = false
+        slime = nil
+        cm_button = nil
+        cm_script = nil
         dofile("assets/video/episode1/choices/17/we_ask_politely.lua")
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
         choosing = false
+        cm_button = nil
+        cm_script = nil
+        slime = nil
         dofile("assets/video/episode1/choices/17/we_get_payback.lua")
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)

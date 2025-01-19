@@ -14,11 +14,15 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(img)
 	wr("em", "ellegaard")
+    pedestal = nil
+    temple_script = nil
         choosing = false
         dofile("assets/video/episode1/choices/37/go_for_ellegaard.lua")
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
 	wr("em", "magnus")
+    pedestal = nil
+    temple_script = nil
         choosing = false
         dofile("assets/video/episode1/choices/37/go_for_magnus.lua")
     elseif buttons.pressed(buttons.l) then

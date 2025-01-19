@@ -1,7 +1,16 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/36/axel.png')
+local temple_script = "assets/video/episode1/choices/36/pedestal.lua"
+if pedestal == "off" then
+    img = Image.load('assets/video/episode1/choices/36/axel.png')
+    PMP.play('assets/video/episode1/choices/36/axel.pmp', buttons.r)
+    temple_script = "assets/video/episode1/choices/36/pedestal.lua"
+elseif pedestal == "on" then
+    img = Image.load('assets/video/episode1/choices/36/axel_pedestal.png')
+    PMP.play('assets/video/episode1/choices/36/axel_pedestal.pmp', buttons.r)
+    temple_script = "assets/video/episode1/choices/36/levers.lua"
+end
 
-PMP.play('assets/video/episode1/choices/36/axel.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
@@ -26,7 +35,7 @@ while choosing do
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/36/pedestal.lua")
+        dofile(temple_script)
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false

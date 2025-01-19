@@ -4,7 +4,7 @@ local cross_choice = "assets/video/episode1/choices/6/smoke_trail.lua"
 if tall_grass == "off" then
     img = Image.load('assets/video/episode1/choices/6/pigs.png')
     cross_choice = "assets/video/episode1/choices/6/smoke_trail.lua"
-else
+elseif tall_grass == "on" then
     img = Image.load('assets/video/episode1/choices/6/pigs_tall_grass.png')
     cross_choice = "assets/video/episode1/choices/6/tall_grass.lua"
 end

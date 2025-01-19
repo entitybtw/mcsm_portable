@@ -1,4 +1,5 @@
 local choosing = true
+pedestal = "off"
 local img = Image.load('assets/video/episode1/choices/35/ivor_isnt_a_hero.png')
 
 PMP.play('assets/video/episode1/choices/35/ivor_isnt_a_hero.pmp', buttons.r)
@@ -26,6 +27,7 @@ while choosing do
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
         choosing = false
+        pedestal = "on"
         dofile("assets/video/episode1/choices/36/pedestal.lua")
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
