@@ -1,7 +1,7 @@
 # Minecraft Story Mode Portable (PSP)
 [![GitHub license](https://img.shields.io/github/license/entitybtw/mcsm_portable)](https://github.com/entitybtw/mcsm_portable/blob/main/License)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/entitybtw/mcsm_portable)](https://github.com/entitybtw/mcsm_portable/commits) 
-[![GitHub all releases](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github)](https://github.com/entitybtw/mcsm_portable/releases)  
+[![GitHub all releases](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github)](https://github.com/entitybtw/mcsm_portable/releases/latest)  
 
 A port of Minecraft Story Mode: Season 1 for PSP.
 
