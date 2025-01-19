@@ -4,12 +4,11 @@
 [![GitHub all releases](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github)](https://github.com/entitybtw/mcsm_portable/releases/)  
 [![GitHub release (with filter)](https://img.shields.io/github/v/release/entitybtw/mcsm_portable?logo=github)](https://github.com/entitybtw/mcsm_portable/releases/latest)
 [![kan-ban board)](https://img.shields.io/badge/kan--ban-board-blue)](https://github.com/users/entitybtw/projects/4)
+[![extras)](https://img.shields.io/badge/extras-orange)](https://github.com/entitybtw/mcsm_portable_extras/)
 
 A port of Minecraft Story Mode: Season 1 for PSP.
 
 ![](https://i.imgur.com/H0DDJvQ.png "in game")
-
-- extras -> https://github.com/entitybtw/mcsm_portable_extras/
 
 ## 🎮 controls
 
