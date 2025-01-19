@@ -1,5 +1,4 @@
 # Minecraft Story Mode Portable (PSP)
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/fastfetch-cli/fastfetch/ci.yml)](https://github.com/fastfetch-cli/fastfetch/actions)
 [![GitHub license](https://img.shields.io/github/license/entitybtw/mcsm_portable)](https://github.com/entitybtw/mcsm_portable/License)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/entitybtw/mcsm_portable)](https://github.com/entitybtw/mcsm_portable/commits) 
 [![GitHub all releases](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github)](https://github.com/entitybtw/mcsm_portable/releases)  
