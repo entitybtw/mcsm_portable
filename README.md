@@ -1,11 +1,11 @@
 # Minecraft Story Mode Portable (PSP)
 
-[![License](https://img.shields.io/github/license/entitybtw/mcsm_portable?color=brightgreen&style=for-the-badge)](https://github.com/entitybtw/mcsm_portable/blob/main/License)
-[![Commit Activity](https://img.shields.io/github/commit-activity/m/entitybtw/mcsm_portable?color=blue&style=for-the-badge)](https://github.com/entitybtw/mcsm_portable/commits)
-[![Total Downloads](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github&color=orange&style=for-the-badge)](https://github.com/entitybtw/mcsm_portable/releases/)
-[![Latest Release](https://img.shields.io/github/v/release/entitybtw/mcsm_portable?logo=github&color=yellow&style=for-the-badge)](https://github.com/entitybtw/mcsm_portable/releases/latest)
-[![Kanban Board](https://img.shields.io/badge/kan--ban-board-blue?style=for-the-badge)](https://github.com/users/entitybtw/projects/4)
-[![Extras](https://img.shields.io/badge/extras-orange?style=for-the-badge)](https://github.com/entitybtw/mcsm_portable_extras/)
+[![GitHub license](https://img.shields.io/github/license/entitybtw/mcsm_portable?color=brightgreen)](https://github.com/entitybtw/mcsm_portable/blob/main/License)  
+[![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/entitybtw/mcsm_portable?color=blue)](https://github.com/entitybtw/mcsm_portable/commits)  
+[![GitHub all releases](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github&color=orange)](https://github.com/entitybtw/mcsm_portable/releases/)  
+[![GitHub release (with filter)](https://img.shields.io/github/v/release/entitybtw/mcsm_portable?logo=github&color=yellow)](https://github.com/entitybtw/mcsm_portable/releases/latest)  
+[![kan-ban board](https://img.shields.io/badge/kan--ban-board-blue)](https://github.com/users/entitybtw/projects/4)  
+[![extras](https://img.shields.io/badge/extras-orange)](https://github.com/entitybtw/mcsm_portable_extras/)  
 
 A port of Minecraft Story Mode: Season 1 for PSP.
 
