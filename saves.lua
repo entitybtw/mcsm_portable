@@ -1,4 +1,4 @@
- -- Function to save the game to a file considering the episode number
+-- Function to save the game to a file considering the episode number
 function SaveGame(episodeNumber)
     -- Check if the episode number is valid
     if type(episodeNumber) ~= "number" or episodeNumber < 1 or episodeNumber > 7 then
@@ -7,25 +7,43 @@ function SaveGame(episodeNumber)
     end
 
     -- Path to the save file
-    local filePath = string.format("assets/saves/%d_save.txt", episodeNumber)
+    local filePath = "assets/saves/variables_1.txt"
 
-    -- Get the current script path
-    local script = debug.getinfo(2).source:sub(2) -- For example, "./name.lua"
+    -- Variables to save
+    local variables = {
+        reuben = reuben,
+        tall_grass = tall_grass,
+        creeper = creeper,
+        pedestal = pedestal,
+        slime = slime
+    }
 
-    -- Attempt to open the file for writing
-    local file, err = io.open(filePath, 'w')
-    if file then
-        file:write(script)
+    -- Open the file for writing (only for episode 1)
+    if episodeNumber == 1 then
+        local file, err = io.open(filePath, "w")
+        if not file then
+            print("Save error:", err)
+            return
+        end
+
+        -- Write non-nil variables to the file
+        for key, value in pairs(variables) do
+            if value ~= nil then
+                file:write(string.format("%s = \"%s\"\n", key, tostring(value)))
+            end
+        end
+
         file:close()
         print("Game saved to file:", filePath)
-	PMP.play('assets/mainmenu/lsave.pmp')
+        PMP.play("assets/mainmenu/lsave.pmp")
     else
-        print("Save error:", err)
+        print("Save function is only available for episode 1.")
     end
-    
+
     System.GC()
 end
 
+-- Function to load the game from a file considering the episode number
 function LoadGame(episodeNumber)
     -- Validate that the episode number is correct
     if type(episodeNumber) ~= "number" or episodeNumber < 1 or episodeNumber > 7 then
@@ -34,17 +52,27 @@ function LoadGame(episodeNumber)
     end
 
     -- Path to the save file
-    local filePath = string.format("assets/saves/%d_save.txt", episodeNumber)
+    local filePath = "assets/saves/variables_1.txt"
 
-    -- Attempt to open the file for reading
-    local file = io.open(filePath, "rb")
-    if not file then
-        print("Error: Save file not found.")
-        return nil
+    -- Open the file for reading (only for episode 1)
+    if episodeNumber == 1 then
+        local file = io.open(filePath, "r")
+        if not file then
+            print("Error: Save file not found.")
+            return nil
+        end
+
+        -- Read and load variables from the file
+        for line in file:lines() do
+            local key, value = line:match("(%w+) = \"(.-)\"")
+            if key and value then
+                _G[key] = value -- Set the global variable
+            end
+        end
+
+        file:close()
+        print("Game loaded from file:", filePath)
+    else
+        print("Load function is only available for episode 1.")
     end
-
-    -- Read the content of the file
-    local content = file:read("*a")
-    file:close()
-    return content
 end
