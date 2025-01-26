@@ -34,7 +34,7 @@ function SaveGame(episodeNumber)
         variables = {
             reuben = reuben,
             tall_grass = tall_grass,
-            creeper = creeper,
+            building = building,
             pedestal = pedestal,
             slime = slime
         }
