@@ -1,1 +1,1 @@
-cannot open assets/video/episode1/choices/16/levers.lua: No such file or directory
+assets/video/episode1/choices/16/chicken_machine.lua:15: PMP.play() error: file "assets/video/episode1/choices/16/chicken_machine.pmp" doesn't exist or some internal error
