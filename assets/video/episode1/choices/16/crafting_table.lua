@@ -15,10 +15,6 @@ while choosing do
         Image.unload(img)
         choosing = false
         dofile("assets/video/episode1/choices/16/chicken_machine.lua")
-    elseif buttons.pressed(buttons.circle) then
-        Image.unload(img)
-        choosing = false
-        dofile("assets/video/episode1/choices/16/crafting_table.lua")
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
         choosing = false
