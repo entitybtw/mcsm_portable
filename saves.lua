@@ -40,9 +40,8 @@ function SaveGame(episodeNumber)
         }
     elseif episodeNumber == 2 then
         variables = {
-            -- Add your variables specific to episode 2
+            -- wassup chat
         }
-    -- Add more `elseif` for each episode (3 to 7)
     else
         print("Error: No variables set for this episode.")
         return
@@ -63,7 +62,7 @@ function SaveGame(episodeNumber)
         print("Save error:", varErr)
     end
 
-    -- Play save sound effect
+    -- Play saving video
     PMP.play('assets/mainmenu/lsave.pmp')
 
     -- Perform garbage collection
