@@ -70,6 +70,7 @@ end
 
 if stat.state == "stopped" then
     sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
+    sound.volume(sound.MP3, 70)
 end
 
 -- Main loop
@@ -106,9 +107,11 @@ while true do
     -- Navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
+        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
     end
     if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
         selectedButton = selectedButton + 1
+        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
     end
 
     if buttons.pressed(buttons.triangle) then
@@ -133,18 +136,23 @@ while true do
 	    Image.unload(welcome)
             unloadButtons()
 	    fade_enabled = 0
+        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+        LUA.sleep(537)
 	    dofile("assets/mainmenu/epmenu/epmenu.lua")
         elseif selectedButton == 2 then
             -- Action for "Support"
 	    fade_enabled = 0
+        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
             -- Action for "Credits"
 	    fade_enabled = 0
+        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             dofile("assets/misc/credits.lua")
         elseif selectedButton == 4 then
             -- Action for "Controls"
 	    fade_enabled = 0
+        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             dofile("assets/misc/controls.lua")
         end
     end
