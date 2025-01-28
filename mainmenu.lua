@@ -137,7 +137,7 @@ while true do
             unloadButtons()
 	    fade_enabled = 0
         sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
-        LUA.sleep(537)
+        LUA.sleep(550)
 	    dofile("assets/mainmenu/epmenu/epmenu.lua")
         elseif selectedButton == 2 then
             -- Action for "Support"
