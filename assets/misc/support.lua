@@ -11,6 +11,7 @@ while loop do
     if buttons.pressed(buttons.start) then
 	Image.unload(img)
 	loop = false
+    sound.play("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
 
     end
 
