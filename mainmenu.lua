@@ -136,8 +136,8 @@ while true do
 	    Image.unload(welcome)
             unloadButtons()
 	    fade_enabled = 0
-        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
-        LUA.sleep(550)
+        -- sound.play("assets/sounds/click.wav", sound.WAV_1, false, false) <- wassup chat=-)
+        -- LUA.sleep(550) <- um what a sigma
 	    dofile("assets/mainmenu/epmenu/epmenu.lua")
         elseif selectedButton == 2 then
             -- Action for "Support"
