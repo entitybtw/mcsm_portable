@@ -1,5 +1,3 @@
-building = "creeper"
-tall_grass = "off"
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/creeper/4/5/warrior_whip.png')
 
@@ -23,7 +21,6 @@ while choosing do
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
         choosing = false
-	tall_grass = "on"
         dofile("assets/video/episode1/choices/6/smoke_trail.lua")
     elseif buttons.pressed(buttons.triangle) then
         Image.unload(img)

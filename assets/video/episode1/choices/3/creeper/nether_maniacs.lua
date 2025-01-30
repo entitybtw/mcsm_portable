@@ -1,4 +1,3 @@
-building = "creeper"
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/creeper/nether_maniacs.png')
 

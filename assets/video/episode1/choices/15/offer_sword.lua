@@ -19,7 +19,6 @@ while choosing do
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
         choosing = false
-        slime = "on"
         dofile("assets/video/episode1/choices/16/slime.lua")
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)

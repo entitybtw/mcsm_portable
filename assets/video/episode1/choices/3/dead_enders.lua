@@ -1,4 +1,3 @@
-building = "enderman"
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/dead_enders.png')
 

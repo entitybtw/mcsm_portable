@@ -1,4 +1,3 @@
-building = "enderman"
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/1/gabriel_is_awesome.png')
 
@@ -15,12 +14,10 @@ while choosing do
     if buttons.pressed(buttons.square) then
 	Image.unload(img)
 	choosing = false
-	building = "creeper"
         dofile("assets/video/episode1/choices/2/build_a_creeper.lua")
     elseif buttons.pressed(buttons.circle) then
 	Image.unload(img)
 	choosing = false
-	building = "enderman"
         dofile("assets/video/episode1/choices/2/build_a_enderman.lua")
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
