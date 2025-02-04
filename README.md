@@ -33,6 +33,6 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 - **pox1016**: For adapting Minecraft Story Mode 1 Netflix Interactive to YouTube.
 - **Antim**: For a bunch of advice and fixing bugs
 - **dntrnk**: For menu improvements, optimizations
-- **VanyaVolkin**: For recording episode menu from pc version
+- **VanyaVolkin**: For recording episode menu from pc version / recording sounds for mainmenu
 
 thank u for supporting this project! feel free to contribute or report any issues. 🚀
