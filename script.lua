@@ -11,4 +11,10 @@ require("files")
 sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
 sound.volume(sound.MP3, 70)
 fade_enabled = 1
-dofile("./mainmenu.lua")
+
+nextscene =  "./mainmenu.lua"
+
+while true do
+    dofile(nextscene)
+    System.GC()
+end
