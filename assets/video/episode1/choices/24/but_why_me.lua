@@ -15,21 +15,21 @@ while choosing do
         Image.unload(img)
 	wr("gp", "gabriel")
         choosing = false
-        dofile("assets/video/episode1/choices/25/save_gabriel.lua")
+        nextscene =  "assets/video/episode1/choices/25/save_gabriel.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
 	wr("gp", "petra")
         choosing = false
-        dofile("assets/video/episode1/choices/25/save_petra.lua")
+        nextscene =  "assets/video/episode1/choices/25/save_petra.lua"
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
         SaveGame(1)
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     end
 
 

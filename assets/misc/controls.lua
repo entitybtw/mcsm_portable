@@ -1,12 +1,11 @@
 local img = Image.load("assets/mainmenu/controls/controls_1.png")
 local curimg = 1
-local loop = true
 
 screen.clear()
 Image.draw(img, 0, 0)
 screen.flip()
 
-while loop do
+while true do
     buttons.read()
 
     if buttons.pressed(buttons.l) then
@@ -34,6 +33,6 @@ while loop do
     if buttons.pressed(buttons.start) then
         Image.unload(img)
         sound.play("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-        loop = false
+        break
     end
 end

@@ -14,20 +14,20 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/16/chicken_machine.lua")
+        nextscene =  "assets/video/episode1/choices/16/chicken_machine.lua"
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/16/lukas.lua")
+        nextscene =  "assets/video/episode1/choices/16/lukas.lua"
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
         SaveGame(1)
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     end
 
 

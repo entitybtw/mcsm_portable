@@ -15,28 +15,28 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/36/axel.lua")
+        nextscene =  "assets/video/episode1/choices/36/axel.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/36/lukas.lua")
+        nextscene =  "assets/video/episode1/choices/36/lukas.lua"
     elseif buttons.pressed(buttons.triangle) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/36/olivia.lua")
+        nextscene =  "assets/video/episode1/choices/36/olivia.lua"
     elseif buttons.pressed(buttons.cross) then
         Image.unload(img)
         choosing = false
-        dofile("assets/video/episode1/choices/36/levers.lua")
+        nextscene =  "assets/video/episode1/choices/36/levers.lua"
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
         SaveGame(1)
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     end
 
 

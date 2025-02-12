@@ -1,4 +1,3 @@
-local loop = true
 local animType = "r"
 local curEp = 1 -- currentEpisode
 local tostring = tostring
@@ -24,10 +23,10 @@ end
 curEp = getHighestSavedEpisode()
 PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. ".pmp")
 
-while loop do
+while true do
     buttons.read()
 
-    if buttons.pressed(buttons.l) then
+    if buttons.pressed(buttons["l"]) then
         animType = "l"
         if curEp ~= 1 then
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. "_" .. animType .. ".pmp")
@@ -35,7 +34,7 @@ while loop do
         end
     end
 
-    if buttons.pressed(buttons.r) then
+    if buttons.pressed(buttons["r"]) then
         animType = "r"
         if curEp ~= 8 then
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. "_" .. animType .. ".pmp")
@@ -43,30 +42,31 @@ while loop do
         end
     end
 
-    if buttons.pressed(buttons.cross) then
-        loop = false
-        screen.clear()
+    if buttons.pressed(buttons["cross"]) then
         if curEp < 2 then
             stop_sound(sound.MP3)
             fade_enabled = 1
-            dofile("assets/video/episode" .. tostring(curEp) .. "/start.lua")
+            nextscene = "assets/video/episode" .. tostring(curEp) .. "/start.lua"
+            return 1
         else
             dofile("assets/misc/not_yet.lua")
+            animType = "r"
+            curEp = 1
+            PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. "_" .. animType .. ".pmp")
         end
-    end
-
-    if buttons.pressed(buttons.square) then
-        screen.clear()
-        loop = false
+    elseif buttons.pressed(buttons["square"]) then
         if curEp < 2 then
             dofile("assets/misc/saves_ep" .. tostring(curEp) .. ".lua")
+            animType = "r"
+            curEp = 1
+            PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. ".pmp")
         else
             dofile("assets/misc/not_yet.lua")
+            animType = "r"
+            curEp = 1
+            PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. ".pmp")
         end
-    end
-
-    if buttons.pressed(buttons.circle) then
-        loop = false
-        dofile("./mainmenu.lua")
+    elseif buttons.pressed(buttons["circle"]) then
+        return 0
     end
 end

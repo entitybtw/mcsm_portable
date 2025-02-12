@@ -129,30 +129,33 @@ while true do
     if buttons.pressed(buttons.cross) then	
         if selectedButton == 1 then
             -- Action for "Play"
-       	    Image.unload(bg) 
-	    Image.unload(logo)
-            Image.unload(arrow)
-	    Image.unload(psp_buttons)
-	    Image.unload(welcome)
-            unloadButtons()
-	    fade_enabled = 0
-        -- sound.play("assets/sounds/click.wav", sound.WAV_1, false, false) <- wassup chat=-)
-        -- LUA.sleep(550) <- um what a sigma
-	    dofile("assets/mainmenu/epmenu/epmenu.lua")
+	        fade_enabled = 0
+            -- sound.play("assets/sounds/click.wav", sound.WAV_1, false, false) <- wassup chat=-)
+            -- LUA.sleep(550) <- um what a sigma
+	        local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
+            if epmenu == 1 then
+                Image.unload(bg) 
+	            Image.unload(logo)
+                Image.unload(arrow)
+	            Image.unload(psp_buttons)
+	            Image.unload(welcome)
+                unloadButtons()
+                break
+            end
         elseif selectedButton == 2 then
             -- Action for "Support"
-	    fade_enabled = 0
-        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+	        fade_enabled = 0
+            sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
             -- Action for "Credits"
-	    fade_enabled = 0
-        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+	        fade_enabled = 0
+            sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             dofile("assets/misc/credits.lua")
         elseif selectedButton == 4 then
             -- Action for "Controls"
-	    fade_enabled = 0
-        sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+	        fade_enabled = 0
+            sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             dofile("assets/misc/controls.lua")
         end
     end
@@ -164,12 +167,12 @@ while true do
     Image.draw(arrow, arrowX, 107, 14, 22)
     Image.draw(arrow, arrowX, 137, 14, 22)
     -- Update screen
-if fade_enabled == 1 then
-    if fade > 0 then
-    	screen.drawRect(0, 0, 480, 272, c_black, 0, fade)
+    if fade_enabled == 1 then
+        if fade > 0 then
+    	    screen.drawRect(0, 0, 480, 272, c_black, 0, fade)
+        end
     end
-end
-Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+    Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+    
     screen.flip()
-
 end

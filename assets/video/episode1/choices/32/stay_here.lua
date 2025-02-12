@@ -15,21 +15,21 @@ while choosing do
         Image.unload(img)
 	wr("bf", "bow")
         choosing = false
-        dofile("assets/video/episode1/choices/34/craft_a_bow.lua")
+        nextscene =  "assets/video/episode1/choices/34/craft_a_bow.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
 	wr("bf", "fishing_pole")
         choosing = false
-        dofile("assets/video/episode1/choices/34/craft_a_fishing_pole.lua")
+        nextscene =  "assets/video/episode1/choices/34/craft_a_fishing_pole.lua"
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
         SaveGame(1)
-        dofile("./mainmenu.lua")
+        nextscene =  "./mainmenu.lua"
     end
 
 

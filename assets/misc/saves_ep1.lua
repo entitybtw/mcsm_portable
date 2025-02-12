@@ -101,7 +101,7 @@ while true do
         Image.draw(noSavesImage, 0, 0)
         
         if buttons.pressed(buttons.start) then
-            dofile("assets/mainmenu/epmenu/epmenu.lua")
+            break
         end
     else
         if submenuActive then
@@ -144,7 +144,8 @@ while true do
                     submenuActive = false
                 elseif selectedOption == "BACK" then
                     submenuActive = false
-                    dofile("assets/mainmenu/epmenu/epmenu.lua")
+                    unloadResources()
+                    break
                 end
             end
 
