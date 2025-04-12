@@ -2,6 +2,7 @@ local choosing = true
 slime =	"off"
 local img = Image.load('assets/video/episode1/choices/15/threaten.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/15/threaten_' .. reuben .. '.pmp', buttons.r)
 
 screen.clear()

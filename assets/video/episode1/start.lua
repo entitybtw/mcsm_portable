@@ -1,12 +1,15 @@
 local save = LoadGame(1)
 if save then
+PMP.setVolume(pmpvolume)
   PMP.play('assets/mainmenu/loading.pmp')
   LoadGame(1)
 end
 
 local img = Image.load('assets/video/episode1/START.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/mainmenu/lsave.pmp')
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/START.pmp', buttons.r)
 
 screen.clear()

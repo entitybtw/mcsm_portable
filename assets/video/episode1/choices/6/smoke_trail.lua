@@ -2,6 +2,7 @@ local choosing = true
 tall_grass = "on"
 local img = Image.load('assets/video/episode1/choices/6/smoke_trail.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/6/smoke_trail.pmp', buttons.r)
 
 screen.clear()

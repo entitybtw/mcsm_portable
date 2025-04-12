@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/30/treehouse/31/you_should_go.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/30/treehouse/31/you_should_go.pmp', buttons.r)
 
 screen.clear()

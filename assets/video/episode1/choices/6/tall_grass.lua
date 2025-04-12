@@ -2,6 +2,7 @@ local choosing = true
 reuben = "reuben"
 local img = Image.load('assets/video/episode1/choices/6/tall_grass.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r)
 
 screen.clear()

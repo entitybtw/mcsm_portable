@@ -12,6 +12,7 @@ elseif slime == "on" then
     cm_script = "assets/video/episode1/choices/16/lukas.lua"
 end
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/16/chicken_machine.pmp', buttons.r)
 
 screen.clear()

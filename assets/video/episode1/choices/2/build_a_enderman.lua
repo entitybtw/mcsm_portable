@@ -2,6 +2,7 @@ building = "enderman"
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/2/build_a_enderman.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/2/build_a_enderman.pmp', buttons.r)
 
 screen.clear()

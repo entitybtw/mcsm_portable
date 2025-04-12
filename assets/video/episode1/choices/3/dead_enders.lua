@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/dead_enders.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/3/dead_enders.pmp', buttons.r)
 
 screen.clear()

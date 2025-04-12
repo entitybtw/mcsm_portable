@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/creeper/4/5/redstone_rap.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/3/creeper/4/5/redstone_rap.pmp', buttons.r)
 
 screen.clear()

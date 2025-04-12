@@ -9,6 +9,7 @@ elseif tall_grass == "on" then
     cross_choice = "assets/video/episode1/choices/6/tall_grass.lua"
 end
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/6/water_well.pmp', buttons.r)
 
 screen.clear()

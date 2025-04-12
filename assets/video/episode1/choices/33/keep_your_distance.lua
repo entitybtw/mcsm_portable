@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/33/keep_your_distance.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/33/keep_your_distance.pmp', buttons.r)
 
 screen.clear()

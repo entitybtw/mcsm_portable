@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/5/warrior_whip.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/5/warrior_whip.pmp', buttons.r)
 
 screen.clear()

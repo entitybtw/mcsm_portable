@@ -2,6 +2,7 @@ local choosing = true
 slime = "on"
 local img = Image.load('assets/video/episode1/choices/16/slime.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/16/slime.pmp', buttons.r)
 
 screen.clear()

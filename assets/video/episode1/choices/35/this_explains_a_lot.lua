@@ -2,6 +2,7 @@ local choosing = true
 pedestal = "off"
 local img = Image.load('assets/video/episode1/choices/35/this_explains_a_lot.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/35/this_explains_a_lot.pmp', buttons.r)
 
 screen.clear()

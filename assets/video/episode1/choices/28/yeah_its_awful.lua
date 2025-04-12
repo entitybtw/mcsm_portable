@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/28/yeah_its_awful.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/28/yeah_its_awful.pmp', buttons.r)
 
 screen.clear()

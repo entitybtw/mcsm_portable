@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/creeper/nether_maniacs.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/3/creeper/nether_maniacs.pmp', buttons.r)
 
 screen.clear()

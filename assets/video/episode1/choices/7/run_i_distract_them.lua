@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/7/run_i_distract_them.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/7/run_i_distract_them.pmp', buttons.r)
 
 screen.clear()

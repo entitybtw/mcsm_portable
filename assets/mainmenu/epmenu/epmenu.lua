@@ -21,6 +21,7 @@ end
 
 -- Устанавливаем текущий эпизод на основе сохранений
 curEp = getHighestSavedEpisode()
+PMP.setVolume(pmpvolume)
 PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. ".pmp")
 
 while true do
@@ -29,6 +30,7 @@ while true do
     if buttons.pressed(buttons["l"]) then
         animType = "l"
         if curEp ~= 1 then
+PMP.setVolume(pmpvolume)
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. "_" .. animType .. ".pmp")
             curEp = curEp - 1
         end
@@ -37,6 +39,7 @@ while true do
     if buttons.pressed(buttons["r"]) then
         animType = "r"
         if curEp ~= 8 then
+PMP.setVolume(pmpvolume)
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. "_" .. animType .. ".pmp")
             curEp = curEp + 1
         end
@@ -52,6 +55,7 @@ while true do
             dofile("assets/misc/not_yet.lua")
             animType = "r"
             curEp = 1
+PMP.setVolume(pmpvolume)
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. "_" .. animType .. ".pmp")
         end
     elseif buttons.pressed(buttons["square"]) then
@@ -59,11 +63,13 @@ while true do
             dofile("assets/misc/saves_ep" .. tostring(curEp) .. ".lua")
             animType = "r"
             curEp = 1
+PMP.setVolume(pmpvolume)
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. ".pmp")
         else
             dofile("assets/misc/not_yet.lua")
             animType = "r"
             curEp = 1
+PMP.setVolume(pmpvolume)
             PMP.play("assets/mainmenu/epmenu/ep" .. tostring(curEp) .. ".pmp")
         end
     elseif buttons.pressed(buttons["circle"]) then

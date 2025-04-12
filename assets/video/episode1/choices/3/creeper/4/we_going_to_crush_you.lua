@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/3/creeper/4/we_going_to_crush_you.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/3/creeper/4/we_going_to_crush_you.pmp', buttons.r)
 
 screen.clear()

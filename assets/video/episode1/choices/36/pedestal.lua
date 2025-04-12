@@ -2,6 +2,7 @@ local choosing = true
 pedestal = "on"
 local img = Image.load('assets/video/episode1/choices/36/pedestal.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/36/pedestal.pmp', buttons.r)
 
 screen.clear()

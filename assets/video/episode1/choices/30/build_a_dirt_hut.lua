@@ -1,6 +1,7 @@
 local choosing = true
 local img = Image.load('assets/video/episode1/choices/30/build_a_dirt_hut.png')
 
+PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode1/choices/30/build_a_dirt_hut.pmp', buttons.r)
 
 screen.clear()

@@ -3,10 +3,12 @@ local img = Image.load('assets/video/episode1/choices/36/olivia.png')
 local temple_script = "assets/video/episode1/choices/36/olivia.lua"
 if pedestal == "off" then
     img = Image.load('assets/video/episode1/choices/36/olivia.png')
+PMP.setVolume(pmpvolume)
     PMP.play('assets/video/episode1/choices/36/olivia.pmp', buttons.r)
     temple_script = "assets/video/episode1/choices/36/pedestal.lua"
 elseif pedestal == "on" then
     img = Image.load('assets/video/episode1/choices/36/olivia_pedestal.png')
+PMP.setVolume(pmpvolume)
     PMP.play('assets/video/episode1/choices/36/olivia_pedestal.pmp', buttons.r)
     temple_script = "assets/video/episode1/choices/36/levers.lua"
 end
