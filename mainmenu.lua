@@ -13,6 +13,31 @@ local psp_buttons = Image.load('assets/mainmenu/mainmenu_buttons.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
+local menumusicfile = io.open("assets/saves/menumusic.txt", "r")
+local videofile = io.open("assets/saves/pmpvolume.txt", "r")
+local uifile = io.open("assets/saves/uisounds.txt", "r")
+if menumusicfile then
+    local saved = tonumber(menumusicfile:read("*l"))
+    if saved and saved >= 0 and saved <= 10 then
+        currentLevel = saved
+        sound.volume(sound.MP3, currentLevel * 10)
+    end
+    menumusicfile:close()
+end
+if videofile then
+    local saveddd = tonumber(videoFile:read("*l"))
+    if saveddd and saveddd >= 0 and saveddd <= 10 then
+        videofile = savedd
+     end
+    videofile:close()
+end
+if uifile then
+    local savedd = tonumber(uifile:read("*l"))
+    if savedd and savedd >= 0 and savedd <= 10 then
+        uiLevel = savedd
+     end
+    uifile:close()
+end
 
 timered = timer.create()
 
@@ -31,13 +56,13 @@ local buttonsList = {
         selectedImage = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/CONTROLS_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/CONTROLS_ENG_SELECTED.png")
+        normalImage = Image.load("assets/buttons/SETTINGS_ENG_STATIC.png"),
+        selectedImage = Image.load("assets/buttons/SETTINGS_ENG_SELECTED.png")
     }
 }
 
 -- Initialize navigation variables
-local selectedButton = 1 -- 1: Play, 2: Credits, 3: Support
+local selectedButton = 1
 
 -- Function to draw buttons
 local function drawButtons()
@@ -58,7 +83,7 @@ function stop_sound(channel)
     if (state.state ~= "stopped") then
         sound.stop(channel)
     end
-    sound.unload(channel)
+    sound.stop(channel)
 end
 
 local function unloadButtons()
@@ -70,7 +95,6 @@ end
 
 if stat.state == "stopped" then
     sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
-    sound.volume(sound.MP3, 70)
 end
 
 -- Main loop
@@ -108,10 +132,12 @@ while true do
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+	    sound.volume(sound.WAV_1, uiLevel * 10)
     end
     if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
         selectedButton = selectedButton + 1
         sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+	    sound.volume(sound.WAV_1, uiLevel * 10)
     end
 
     if buttons.pressed(buttons.triangle) then
@@ -130,8 +156,8 @@ while true do
         if selectedButton == 1 then
             -- Action for "Play"
 	        fade_enabled = 0
-            -- sound.play("assets/sounds/click.wav", sound.WAV_1, false, false) <- wassup chat=-)
-            -- LUA.sleep(550) <- um what a sigma
+            -- sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+            -- LUA.sleep(550)
 	        local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
             if epmenu == 1 then
                 Image.unload(bg) 
@@ -146,17 +172,20 @@ while true do
             -- Action for "Support"
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+	        sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
             -- Action for "Credits"
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
+	        sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/credits.lua")
         elseif selectedButton == 4 then
             -- Action for "Controls"
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
-            dofile("assets/misc/controls.lua")
+	        sound.volume(sound.WAV_1, uiLevel * 10)
+            dofile("assets/misc/settings.lua")
         end
     end
 
