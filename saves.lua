@@ -63,6 +63,7 @@ function SaveGame(episodeNumber)
     end
 
     -- Play saving video
+PMP.setVolume(pmpvolume)
     PMP.play('assets/mainmenu/lsave.pmp')
 
     -- Perform garbage collection
