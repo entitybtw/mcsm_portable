@@ -1,8 +1,11 @@
--- Load background
 local bg = Image.load("assets/mainmenu/bg.png")
 local audiovideotext = Image.load("assets/mainmenu/options/audiovideo_text.png")
-
--- Image preloader
+local hints = {
+    music = Image.load("assets/mainmenu/options/menumusic_text.png"),
+    video = Image.load("assets/mainmenu/options/pmpvideos_text.png"),
+    ui = Image.load("assets/mainmenu/options/uisounds_text.png")
+}
+-- Preloads image list into memory
 local function preloadImages(prefix, suffix, count)
     local list = {}
     for i = 0, count do
@@ -11,49 +14,28 @@ local function preloadImages(prefix, suffix, count)
     return list
 end
 
--- Load all image sets
-local sliders = {
-    {
-        name = "music",
-        level = 5,
-        file = "assets/saves/menumusic.txt",
-        static = preloadImages("menumusic_", "_static.png", 10),
-        selected = preloadImages("menumusic_", "_selected.png", 10),
-        posY = 55,
-        soundType = sound.MP3
-    },
-    {
-        name = "video",
-        level = 5,
-        file = "assets/saves/pmpvideos.txt",
-        static = preloadImages("pmpvideos_", "_static.png", 10),
-        selected = preloadImages("pmpvideos_", "_selected.png", 10),
-        posY = 85,
-    },
-    {
-        name = "ui",
-        level = 5,
-        file = "assets/saves/uisounds.txt",
-        static = preloadImages("uisounds_", "_static.png", 10),
-        selected = preloadImages("uisounds_", "_selected.png", 10),
-        posY = 115,
-        soundType = sound.WAV_1
-    }
-}
+-- Load all necessary image sets
+local staticImages       = preloadImages("menumusic_", "_static.png", 10)
+local selectedImages     = preloadImages("menumusic_", "_selected.png", 10)
+local videoStaticImages  = preloadImages("pmpvideos_", "_static.png", 10)
+local videoSelectedImages= preloadImages("pmpvideos_", "_selected.png", 10)
+local uiStaticImages     = preloadImages("uisounds_", "_static.png", 10)
+local uiSelectedImages   = preloadImages("uisounds_", "_selected.png", 10)
 
--- Slider visuals
 local sliderStatic   = Image.load("assets/mainmenu/options/slider_static.png")
 local sliderSelected = Image.load("assets/mainmenu/options/slider_selected.png")
 
 -- Generate slider positions
-for _, s in ipairs(sliders) do
-    s.positions = {}
-    for i = 0, 10 do
-        table.insert(s.positions, { x = 35 + i * 16.3, y = s.posY })
-    end
+local sliderPositions, videoSliderPositions, uiSliderPositions = {}, {}, {}
+for i = 0, 10 do
+    table.insert(sliderPositions, { x = 35 + i * 16.3, y = 55 })
+    table.insert(videoSliderPositions, { x = 35 + i * 16.3, y = 85 })
+    table.insert(uiSliderPositions, { x = 35 + i * 16.3, y = 115 })
 end
 
--- Load saved levels
+-- Initialize volume levels
+local currentLevel, videoLevel, uiLevel = 5, 5, 5
+
 local function loadLevel(path)
     local file = io.open(path, "r")
     if file then
@@ -64,113 +46,186 @@ local function loadLevel(path)
     return 5
 end
 
-for _, s in ipairs(sliders) do
-    s.level = loadLevel(s.file)
-    if s.soundType then sound.volume(s.soundType, s.level * 10) end
-end
+currentLevel = loadLevel("assets/saves/menumusic.txt")
+videoLevel   = loadLevel("assets/saves/pmpvideos.txt")
+uiLevel      = loadLevel("assets/saves/uisounds.txt")
 
--- Previous menu button
+-- Set initial volume
+sound.volume(sound.MP3, currentLevel * 10)
+sound.volume(sound.WAV_1, uiLevel * 10)
+
+-- Load previous menu button graphics
 local prevMenu = {
     static = Image.load("assets/buttons/PREVIOUSMENU_ENG_STATIC.png"),
     selected = Image.load("assets/buttons/PREVIOUSMENU_ENG_SELECTED.png"),
-    x = 0, y = 220
+    x = 0,
+    y = 220
 }
 
--- UI state
-local selectedIndex = 1
-local inPrev = false
+-- UI state flags
+local isSliderSelected, isVideoSliderSelected, isUiSliderSelected, isPrevSelected = true, false, false, false
 
 -- Draw UI
-local function drawUI()
+local function drawui()
     screen.clear()
     if bg then Image.draw(bg, 0, 0) end
     if audiovideotext then Image.draw(audiovideotext, 35, 38, 120, 13) end
 
-    for i, s in ipairs(sliders) do
-        local isSelected = (selectedIndex == i and not inPrev)
-        local img = isSelected and s.selected[s.level + 1] or s.static[s.level + 1]
-        if img then Image.draw(img, 35, s.posY) end
-
-        local pos = s.positions[s.level + 1]
-        local slider = isSelected and sliderSelected or sliderStatic
-        if slider then Image.draw(slider, pos.x, pos.y, nil, nil, nil, nil, nil, nil, nil, nil, 190) end
+    local function drawSlider(imgList, selectedList, level, selectedFlag, posList, yPos)
+        local img = selectedFlag and selectedList[level + 1] or imgList[level + 1]
+        if img then Image.draw(img, 35, yPos) end
+        local pos = posList[level + 1]
+        local slider = selectedFlag and sliderSelected or sliderStatic
+        if slider then
+            Image.draw(slider, pos.x, pos.y, nil, nil, nil, nil, nil, nil, nil, nil, 190)
+        end
     end
 
-    local prevImg = inPrev and prevMenu.selected or prevMenu.static
+    drawSlider(staticImages, selectedImages, currentLevel, isSliderSelected, sliderPositions, 55)
+    drawSlider(videoStaticImages, videoSelectedImages, videoLevel, isVideoSliderSelected, videoSliderPositions, 85)
+    drawSlider(uiStaticImages, uiSelectedImages, uiLevel, isUiSliderSelected, uiSliderPositions, 115)
+
+if not inPrev then
+    local hintImg = nil
+    if isSliderSelected then
+        hintImg = hints.music
+    elseif isVideoSliderSelected then
+        hintImg = hints.video
+    elseif isUiSliderSelected then
+        hintImg = hints.ui
+    end
+
+    if hintImg then
+        Image.draw(hintImg, 35, prevMenu.y - 10)
+    end
+end
+
+
+    local prevImg = isPrevSelected and prevMenu.selected or prevMenu.static
     if prevImg then Image.draw(prevImg, prevMenu.x, prevMenu.y) end
 
     screen.flip()
 end
 
--- First draw
-drawUI()
+drawui()
 
 -- Main loop
 while true do
     buttons.read()
 
+    -- Navigation
     if buttons.pressed(buttons.down) then
-        if not inPrev then
-            if selectedIndex < #sliders then
-                selectedIndex = selectedIndex + 1
-            else
-                inPrev = true
+        if isSliderSelected then
+            isSliderSelected, isVideoSliderSelected = false, true
+        elseif isVideoSliderSelected then
+            isVideoSliderSelected, isUiSliderSelected = false, true
+        elseif isUiSliderSelected then
+            isUiSliderSelected, isPrevSelected = false, true
+        end
+        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.volume(sound.WAV_1, uiLevel * 10)
+        drawui()
+    elseif buttons.pressed(buttons.up) then
+        if isPrevSelected then
+            isPrevSelected, isUiSliderSelected = false, true
+        elseif isUiSliderSelected then
+            isUiSliderSelected, isVideoSliderSelected = false, true
+        elseif isVideoSliderSelected then
+            isVideoSliderSelected, isSliderSelected = false, true
+        end
+        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.volume(sound.WAV_1, uiLevel * 10)
+        drawui()
+    end
+
+    -- Music slider
+    if isSliderSelected then
+        local changed = false
+        if buttons.pressed(buttons.left) and currentLevel > 0 then
+            currentLevel = currentLevel - 1
+            changed = true
+        elseif buttons.pressed(buttons.right) and currentLevel < 10 then
+            currentLevel = currentLevel + 1
+            changed = true
+        end
+        if changed then
+            sound.volume(sound.MP3, currentLevel * 10)
+            drawui()
+        end
+    end
+
+    -- Video slider
+    if isVideoSliderSelected then
+        local changed = false
+        if buttons.pressed(buttons.left) and videoLevel > 0 then
+            videoLevel = videoLevel - 1
+            pmpvolume = videoLevel * 10
+            changed = true
+        elseif buttons.pressed(buttons.right) and videoLevel < 10 then
+            videoLevel = videoLevel + 1
+            pmpvolume = videoLevel * 10
+            changed = true
+        end
+        if changed then
+            drawui()
+        end
+    end
+
+    -- UI sound slider
+    if isUiSliderSelected then
+        local changed = false
+        if buttons.pressed(buttons.left) and uiLevel > 0 then
+            uiLevel = uiLevel - 1
+            changed = true
+        elseif buttons.pressed(buttons.right) and uiLevel < 10 then
+            uiLevel = uiLevel + 1
+            changed = true
+        end
+        if changed then
+            sound.volume(sound.WAV_1, uiLevel * 10)
+            drawui()
+        end
+    end
+
+    -- Confirm and exit
+    if isPrevSelected and buttons.pressed(buttons.cross) then
+        -- Save levels
+        local function saveLevel(path, level)
+            local save = io.open(path, "w")
+            if save then save:write(tostring(level)) save:close() end
+        end
+
+        saveLevel("assets/saves/menumusic.txt", currentLevel)
+        saveLevel("assets/saves/pmpvideos.txt", videoLevel)
+        saveLevel("assets/saves/uisounds.txt", uiLevel)
+
+        -- Unload everything
+        local function unloadList(list)
+            for i = 1, #list do
+                if list[i] then Image.unload(list[i]) end
             end
         end
-        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
-        drawUI()
 
-    elseif buttons.pressed(buttons.up) then
-        if inPrev then
-            inPrev = false
-        elseif selectedIndex > 1 then
-            selectedIndex = selectedIndex - 1
-        end
-        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
-        drawUI()
-    end
-
-    -- Slider logic
-    if not inPrev then
-        local s = sliders[selectedIndex]
-        if buttons.pressed(buttons.left) and s.level > 0 then
-            s.level = s.level - 1
-            if s.soundType then sound.volume(s.soundType, s.level * 10) end
-            drawUI()
-        elseif buttons.pressed(buttons.right) and s.level < 10 then
-            s.level = s.level + 1
-            if s.soundType then sound.volume(s.soundType, s.level * 10) end
-            drawUI()
-        end
-    end
-
-    -- Confirm exit
-    if inPrev and buttons.pressed(buttons.cross) then
-        -- Save levels
-        for _, s in ipairs(sliders) do
-            local save = io.open(s.file, "w")
-            if save then save:write(tostring(s.level)) save:close() end
-        end
-
-        -- Unload images
-        local function unload(list)
-            for _, img in ipairs(list) do if img then Image.unload(img) end end
-        end
-
-        for _, s in ipairs(sliders) do
-            unload(s.static)
-            unload(s.selected)
-        end
+        unloadList(staticImages)
+        unloadList(selectedImages)
+        unloadList(videoStaticImages)
+        unloadList(videoSelectedImages)
+        unloadList(uiStaticImages)
+        unloadList(uiSelectedImages)
 
         if bg then Image.unload(bg) end
         if sliderStatic then Image.unload(sliderStatic) end
         if sliderSelected then Image.unload(sliderSelected) end
         if prevMenu.static then Image.unload(prevMenu.static) end
         if prevMenu.selected then Image.unload(prevMenu.selected) end
-	if audiovideotext then Image.unload(audiovideotext) end
+        if audiovideotext then Image.unload(audiovideotext) end
+
+        for _, img in pairs(hints) do
+            if img then Image.unload(img) end
+        end
 
         sound.play("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-        sound.volume(sound.WAV_1, sliders[3].level * 10) -- UI volume
+        sound.volume(sound.WAV_1, uiLevel * 10)
         break
     end
 end
