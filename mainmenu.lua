@@ -13,31 +13,35 @@ local psp_buttons = Image.load('assets/mainmenu/mainmenu_buttons.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
-local menumusicfile = io.open("assets/saves/menumusic.txt", "r")
-local videofile = io.open("assets/saves/pmpvolume.txt", "r")
-local uifile = io.open("assets/saves/uisounds.txt", "r")
-if menumusicfile then
-    local saved = tonumber(menumusicfile:read("*l"))
-    if saved and saved >= 0 and saved <= 10 then
-        currentLevel = saved
-        sound.volume(sound.MP3, currentLevel * 10)
-    end
+local menumusicfile = io.open("assets/saves/sound_levels/menumusic.txt", "r")
+local uifile = io.open("assets/saves/sound_levels/uisounds.txt", "r")
+if not menumusicfile then
+    menumusicfile = io.open("assets/saves/sound_levels/menumusic.txt", "w")
+    menumusicfile:write("10")
     menumusicfile:close()
+    menumusicfile = io.open("assets/saves/sound_levels/menumusic.txt", "r")
 end
-if videofile then
-    local saveddd = tonumber(videoFile:read("*l"))
-    if saveddd and saveddd >= 0 and saveddd <= 10 then
-        videofile = savedd
-     end
-    videofile:close()
+
+local menumusicsaved = tonumber(menumusicfile:read("*l"))
+if menumusicsaved and menumusicsaved >= 0 and menumusicsaved <= 10 then
+    currentLevel = menumusicsaved
+    sound.volume(sound.MP3, currentLevel * 10)
 end
-if uifile then
-    local savedd = tonumber(uifile:read("*l"))
-    if savedd and savedd >= 0 and savedd <= 10 then
-        uiLevel = savedd
-     end
+menumusicfile:close()
+
+if not uifile then
+    uifile = io.open("assets/saves/sound_levels/uisounds.txt", "w")
+    uifile:write("10")
     uifile:close()
+    uifile = io.open("assets/saves/sound_levels/uisounds.txt", "r")
 end
+
+local uisaved = tonumber(uifile:read("*l"))
+if uisaved and uisaved >= 0 and uisaved <= 10 then
+    uiLevel = uisaved
+end
+uifile:close()
+
 
 timered = timer.create()
 
@@ -202,6 +206,5 @@ while true do
         end
     end
     Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
-    
     screen.flip()
 end
