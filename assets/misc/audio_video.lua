@@ -46,9 +46,9 @@ local function loadLevel(path)
     return 5
 end
 
-currentLevel = loadLevel("assets/saves/menumusic.txt")
-videoLevel   = loadLevel("assets/saves/pmpvideos.txt")
-uiLevel      = loadLevel("assets/saves/uisounds.txt")
+currentLevel = loadLevel("assets/saves/sound_levels/menumusic.txt")
+videoLevel   = loadLevel("assets/saves/sound_levels/pmpvideos.txt")
+uiLevel      = loadLevel("assets/saves/sound_levels/uisounds.txt")
 
 -- Set initial volume
 sound.volume(sound.MP3, currentLevel * 10)
@@ -195,9 +195,9 @@ while true do
             if save then save:write(tostring(level)) save:close() end
         end
 
-        saveLevel("assets/saves/menumusic.txt", currentLevel)
-        saveLevel("assets/saves/pmpvideos.txt", videoLevel)
-        saveLevel("assets/saves/uisounds.txt", uiLevel)
+        saveLevel("assets/saves/sound_levels/menumusic.txt", currentLevel)
+        saveLevel("assets/saves/sound_levels/pmpvideos.txt", videoLevel)
+        saveLevel("assets/saves/sound_levels/uisounds.txt", uiLevel)
 
         -- Unload everything
         local function unloadList(list)

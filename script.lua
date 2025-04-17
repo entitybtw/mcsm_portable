@@ -1,12 +1,17 @@
 local img = Image.load("assets/mainmenu/byentitybtw.png")
-local filed = io.open("assets/saves/pmpvideos.txt", "r")
-if filed then
-    local savedd = tonumber(filed:read("*l"))
-    if savedd and savedd >= 0 and savedd <= 10 then
-        pmpvolume = savedd * 10
-    end
-    filed:close()
+local pmpfile = io.open("assets/saves/sound_levels/pmpvideos.txt", "r")
+if not pmpfile then
+    pmpfile = io.open("assets/saves/sound_levels/pmpvideos.txt", "w")
+    pmpfile:write("10")
+    pmpfile:close()
+    pmpfile = io.open("assets/saves/sound_levels/pmpvideos.txt", "r")
 end
+
+local pmpSaved = tonumber(pmpfile:read("*l"))
+if pmpSaved and pmpSaved >= 0 and pmpSaved <= 10 then
+    pmpvolume = pmpSaved * 10
+end
+pmpfile:close()
 screen.clear()
 Image.draw(img, 0, 0)
 screen.flip()

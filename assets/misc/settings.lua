@@ -10,8 +10,8 @@ local buttonsList = {
         selectedImage = Image.load("assets/buttons/AUDIOVIDEO_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/GITHUB_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/GITHUB_ENG_SELECTED.png")
+        normalImage = Image.load("assets/buttons/DEBUG_ENG_STATIC.png"),
+        selectedImage = Image.load("assets/buttons/DEBUG_ENG_SELECTED.png")
     },
     {
         normalImage = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
@@ -86,10 +86,10 @@ while true do
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/audio_video.lua")
         elseif selectedButton == 3 then
-            -- Action for "Github"
+            -- Action for "Debug"
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
-            dofile("assets/misc/github.lua")
+            dofile("assets/misc/debug.lua")
         elseif selectedButton == 4 then
             -- Action for "Credits"
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
@@ -109,6 +109,6 @@ while true do
     -- Draw buttons
     drawButtons()
     Image.draw(settingstext, 0, 38, 120, 13)
-    
+
     screen.flip()
 end
