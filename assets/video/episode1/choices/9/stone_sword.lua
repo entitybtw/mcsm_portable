@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/9/stone_sword_' .. reuben .. '.pmp', but
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/3/creeper/4/5/warrior_whip.pmp', buttons
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 while choosing do

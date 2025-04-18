@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/not_funny_axel.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 while choosing do

@@ -17,6 +17,7 @@ PMP.play('assets/video/episode1/choices/16/chicken_machine.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

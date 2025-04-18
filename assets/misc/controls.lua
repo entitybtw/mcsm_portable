@@ -3,6 +3,7 @@ local curimg = 1
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 while true do
@@ -15,6 +16,7 @@ while true do
             img = Image.load("assets/mainmenu/controls/controls_" .. tostring(curimg) .. ".png")
             screen.clear()
             Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
             screen.flip()
         end
     end
@@ -26,6 +28,7 @@ while true do
             img = Image.load("assets/mainmenu/controls/controls_" .. tostring(curimg) .. ".png")
             screen.clear()
             Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
             screen.flip()
         end
     end

@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/12/who_are_you_' .. reuben .. '.pmp', bu
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

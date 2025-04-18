@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/27/hold_on_tight.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

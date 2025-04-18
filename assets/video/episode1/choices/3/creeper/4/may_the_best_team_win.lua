@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/3/creeper/4/may_the_best_team_win.pmp', 
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

@@ -1,5 +1,5 @@
 local bg = Image.load('assets/mainmenu/bg.png')
-local creditstext = Image.load("assets/mainmenu/options/viewcredits_text.png")
+local creditstext = Image.load("assets/mainmenu/settings/viewcredits_text.png")
 
 -- Load button images dynamically based on language
 local buttonsList = {
@@ -124,5 +124,6 @@ while true do
     drawButtons()
     Image.draw(creditstext, 10, 38, 120, 13)
     
+debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end

@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/8/whats_in_it_for_me_' .. reuben .. '.pm
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

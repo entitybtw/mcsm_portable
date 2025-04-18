@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/3/creeper/4/we_going_to_crush_you.pmp', 
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

@@ -7,6 +7,7 @@ PMP.play('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/14/your_machine_was_cool_' .. reuben .. 
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

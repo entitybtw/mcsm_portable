@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/11/proud_of_you_' .. reuben .. '.pmp', b
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

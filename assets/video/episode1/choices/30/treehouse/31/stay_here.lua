@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/30/treehouse/31/stay_here.pmp', buttons.
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

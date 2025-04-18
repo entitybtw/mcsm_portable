@@ -2,6 +2,7 @@ local img = Image.load("assets/mainmenu/support.png")
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 while true do

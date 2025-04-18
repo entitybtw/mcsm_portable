@@ -1,15 +1,16 @@
 local bg = Image.load("assets/mainmenu/bg.png")
-local audiovideotext = Image.load("assets/mainmenu/options/audiovideo_text.png")
+local audiovideotext = Image.load("assets/mainmenu/settings/audiovideo_text.png")
 local hints = {
-    music = Image.load("assets/mainmenu/options/menumusic_text.png"),
-    video = Image.load("assets/mainmenu/options/pmpvideos_text.png"),
-    ui = Image.load("assets/mainmenu/options/uisounds_text.png")
+    music = Image.load("assets/mainmenu/settings/menumusic_text.png"),
+    video = Image.load("assets/mainmenu/settings/pmpvideos_text.png"),
+    ui = Image.load("assets/mainmenu/settings/uisounds_text.png")
 }
+
 -- Preloads image list into memory
 local function preloadImages(prefix, suffix, count)
     local list = {}
     for i = 0, count do
-        list[i + 1] = Image.load("assets/mainmenu/options/" .. string.format("%s%d%s", prefix, i, suffix))
+        list[i + 1] = Image.load("assets/mainmenu/settings/" .. string.format("%s%d%s", prefix, i, suffix))
     end
     return list
 end
@@ -22,8 +23,8 @@ local videoSelectedImages= preloadImages("pmpvideos_", "_selected.png", 10)
 local uiStaticImages     = preloadImages("uisounds_", "_static.png", 10)
 local uiSelectedImages   = preloadImages("uisounds_", "_selected.png", 10)
 
-local sliderStatic   = Image.load("assets/mainmenu/options/slider_static.png")
-local sliderSelected = Image.load("assets/mainmenu/options/slider_selected.png")
+local sliderStatic   = Image.load("assets/mainmenu/settings/slider_static.png")
+local sliderSelected = Image.load("assets/mainmenu/settings/slider_selected.png")
 
 -- Generate slider positions
 local sliderPositions, videoSliderPositions, uiSliderPositions = {}, {}, {}
@@ -34,21 +35,30 @@ for i = 0, 10 do
 end
 
 -- Initialize volume levels
-local currentLevel, videoLevel, uiLevel = 5, 5, 5
+local currentLevel, videoLevel, uiLevel = 10, 10, 10
 
-local function loadLevel(path)
+-- Load levels from the soundlevels.txt file
+local function loadLevels(path)
     local file = io.open(path, "r")
     if file then
-        local saved = tonumber(file:read("*l"))
+        local savedLevels = {}
+        for i = 1, 3 do
+            local level = tonumber(file:read("*l"))
+            table.insert(savedLevels, level)
+        end
         file:close()
-        if saved and saved >= 0 and saved <= 10 then return saved end
+        
+        -- If levels are valid, return them
+        if savedLevels[1] and savedLevels[2] and savedLevels[3] then
+            return savedLevels[1], savedLevels[2], savedLevels[3]
+        end
     end
-    return 5
+    -- Default levels if no valid file is found
+    return 5, 5, 5
 end
 
-currentLevel = loadLevel("assets/saves/sound_levels/menumusic.txt")
-videoLevel   = loadLevel("assets/saves/sound_levels/pmpvideos.txt")
-uiLevel      = loadLevel("assets/saves/sound_levels/uisounds.txt")
+-- Set initial levels from the file
+currentLevel, videoLevel, uiLevel = loadLevels("assets/saves/soundlevels.txt")
 
 -- Set initial volume
 sound.volume(sound.MP3, currentLevel * 10)
@@ -85,25 +95,25 @@ local function drawui()
     drawSlider(videoStaticImages, videoSelectedImages, videoLevel, isVideoSliderSelected, videoSliderPositions, 85)
     drawSlider(uiStaticImages, uiSelectedImages, uiLevel, isUiSliderSelected, uiSliderPositions, 115)
 
-if not inPrev then
-    local hintImg = nil
-    if isSliderSelected then
-        hintImg = hints.music
-    elseif isVideoSliderSelected then
-        hintImg = hints.video
-    elseif isUiSliderSelected then
-        hintImg = hints.ui
-    end
+    if not inPrev then
+        local hintImg = nil
+        if isSliderSelected then
+            hintImg = hints.music
+        elseif isVideoSliderSelected then
+            hintImg = hints.video
+        elseif isUiSliderSelected then
+            hintImg = hints.ui
+        end
 
-    if hintImg then
-        Image.draw(hintImg, 35, prevMenu.y - 10)
+        if hintImg then
+            Image.draw(hintImg, 35, prevMenu.y - 10)
+        end
     end
-end
-
 
     local prevImg = isPrevSelected and prevMenu.selected or prevMenu.static
     if prevImg then Image.draw(prevImg, prevMenu.x, prevMenu.y) end
 
+    debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end
 
@@ -190,14 +200,17 @@ while true do
     -- Confirm and exit
     if isPrevSelected and buttons.pressed(buttons.cross) then
         -- Save levels
-        local function saveLevel(path, level)
+        local function saveLevels(path, musicLevel, videoLevel, uiLevel)
             local save = io.open(path, "w")
-            if save then save:write(tostring(level)) save:close() end
+            if save then
+                save:write(musicLevel .. "\n")
+                save:write(videoLevel .. "\n")
+                save:write(uiLevel .. "\n")
+                save:close()
+            end
         end
 
-        saveLevel("assets/saves/sound_levels/menumusic.txt", currentLevel)
-        saveLevel("assets/saves/sound_levels/pmpvideos.txt", videoLevel)
-        saveLevel("assets/saves/sound_levels/uisounds.txt", uiLevel)
+        saveLevels("assets/saves/soundlevels.txt", currentLevel, videoLevel, uiLevel)
 
         -- Unload everything
         local function unloadList(list)

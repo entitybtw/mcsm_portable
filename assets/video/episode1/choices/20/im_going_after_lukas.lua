@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/20/im_going_after_lukas.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

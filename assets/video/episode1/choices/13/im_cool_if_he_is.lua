@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/13/im_cool_if_he_is_' .. reuben .. '.pmp
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

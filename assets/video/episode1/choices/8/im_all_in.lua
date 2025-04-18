@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/8/im_all_in_' .. reuben .. '.pmp', butto
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 

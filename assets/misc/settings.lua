@@ -1,5 +1,5 @@
 local bg = Image.load('assets/mainmenu/bg.png')
-local settingstext = Image.load("assets/mainmenu/options/settings_text.png")
+local settingstext = Image.load("assets/mainmenu/settings/settings_text.png")
 local buttonsList = {
     {
         normalImage = Image.load("assets/buttons/CONTROLS_ENG_STATIC.png"),
@@ -110,5 +110,6 @@ while true do
     drawButtons()
     Image.draw(settingstext, 0, 38, 120, 13)
 
+debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end

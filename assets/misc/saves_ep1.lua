@@ -170,5 +170,6 @@ while true do
         end
     end
 
+debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end

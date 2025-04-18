@@ -13,34 +13,33 @@ local psp_buttons = Image.load('assets/mainmenu/mainmenu_buttons.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
-local menumusicfile = io.open("assets/saves/sound_levels/menumusic.txt", "r")
-local uifile = io.open("assets/saves/sound_levels/uisounds.txt", "r")
+local menumusicfile = io.open("assets/saves/soundlevels.txt", "r")
 if not menumusicfile then
-    menumusicfile = io.open("assets/saves/sound_levels/menumusic.txt", "w")
-    menumusicfile:write("10")
+    menumusicfile = io.open("assets/saves/soundlevels.txt", "w")
+    menumusicfile:write("10\n10\n10")
     menumusicfile:close()
-    menumusicfile = io.open("assets/saves/sound_levels/menumusic.txt", "r")
+    menumusicfile = io.open("assets/saves/soundlevels.txt", "r")
 end
 
 local menumusicsaved = tonumber(menumusicfile:read("*l"))
+local uisaved = tonumber(menumusicfile:read("*l"))
+local pmpSaved = tonumber(menumusicfile:read("*l"))
+
 if menumusicsaved and menumusicsaved >= 0 and menumusicsaved <= 10 then
     currentLevel = menumusicsaved
     sound.volume(sound.MP3, currentLevel * 10)
 end
-menumusicfile:close()
 
-if not uifile then
-    uifile = io.open("assets/saves/sound_levels/uisounds.txt", "w")
-    uifile:write("10")
-    uifile:close()
-    uifile = io.open("assets/saves/sound_levels/uisounds.txt", "r")
-end
-
-local uisaved = tonumber(uifile:read("*l"))
 if uisaved and uisaved >= 0 and uisaved <= 10 then
     uiLevel = uisaved
+    sound.volume(sound.WAV_1, uiLevel * 10)
 end
-uifile:close()
+
+if pmpSaved and pmpSaved >= 0 and pmpSaved <= 10 then
+    pmpvolume = pmpSaved * 10
+end
+
+menumusicfile:close()
 
 
 timered = timer.create()
@@ -206,5 +205,6 @@ while true do
         end
     end
     Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end

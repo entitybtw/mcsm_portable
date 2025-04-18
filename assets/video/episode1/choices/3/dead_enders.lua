@@ -6,6 +6,7 @@ PMP.play('assets/video/episode1/choices/3/dead_enders.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
+debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 
