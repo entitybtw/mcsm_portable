@@ -30,9 +30,9 @@ A port of Minecraft Story Mode: Season 1 for PSP.
 
 ## 👏 thanks to
 
-- **pox1016**: For adapting Minecraft Story Mode 1 Netflix Interactive to YouTube.
+- **pox1016**: For adapting Minecraft Story Mode Netflix Interactive to YouTube.
 - **Antim**: For a bunch of advice and fixing bugs
 - **dntrnk**: For menu improvements, huge optimizations
-- **VanyaVolkin**: For assets from a mcsm pc version
+- **VanyaVolkin**: For helping with episode menu
 
 thank u for supporting this project! feel free to contribute or report any issues. 🚀
