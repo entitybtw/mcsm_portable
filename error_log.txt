@@ -1,4 +1,0 @@
-assets/video/episode2/start.lua:2: 'then' expected near '='
-assets/video/episode2/start.lua:5: no loop to break near 'elseif'
-assets/video/episode2/start.lua:11: no loop to break near 'elseif'
-cannot open assets/video/episode2/ellegaard/start.lua: No such file or directory
