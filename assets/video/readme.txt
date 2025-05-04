@@ -1,1 +1,1 @@
-This folder contains everything you need for the game.
+This folder contains pmp videos, scripts for episodes, etc
