@@ -120,3 +120,11 @@ function LoadGame(episodeNumber)
     -- Return both the save content and the loaded variables
     return saveContent, loadedVariables
 end
+function checkFile(filePath, globalVarName)
+    local file = io.open(filePath, "r")
+    if not file then return false end
+    local content = file:read("*l")
+    file:close()
+    _G[globalVarName] = content
+    return true
+end
