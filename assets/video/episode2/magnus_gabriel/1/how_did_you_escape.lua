@@ -15,11 +15,11 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(img)
         choosing = false
-        nextscene =  "assets/video/episode2/magnus/choices/8/magnus_is_cool.lua"
+        nextscene =  "assets/video/episode2/magnus/choices/9/magnus_is_cool.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
         choosing = false
-        nextscene =  "assets/video/episode2/magnus/choices/8/you_need_to_get_along.lua"
+        nextscene =  "assets/video/episode2/magnus/choices/9/you_need_to_get_along.lua"
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
@@ -27,7 +27,7 @@ while choosing do
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
-        SaveGame(1)
+        SaveGame(2)
         nextscene =  "./mainmenu.lua"
     end
 

@@ -19,7 +19,7 @@ while choosing do
     elseif buttons.pressed(buttons.circle) then
         Image.unload(img)
         choosing = false
-        nextscene =  "assets/video/episode2/petra/4/let_him_go_gabriel.lua"
+        nextscene =  "assets/video/episode2/petra/4/let_him_go_petra.lua"
     elseif buttons.pressed(buttons.l) then
         Image.unload(img)
         choosing = false
@@ -27,7 +27,7 @@ while choosing do
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
-        SaveGame(1)
+        SaveGame(2)
         nextscene =  "./mainmenu.lua"
     end
 

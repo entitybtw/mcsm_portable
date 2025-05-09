@@ -1,11 +1,103 @@
-checkFile("assets/saves/em.txt", "em")
+local savePath, vars = LoadGame(2)
+if savePath then
+    PMP.setVolume(pmpvolume)
+    PMP.play("assets/mainmenu/loading.pmp")
+    nextscene = savePath
+    return 1
+end
 
-if em == "ellegaard" then
-    nextscene = "assets/video/episode2/ellegaard/start.lua"
-    return 1
-elseif em == "magnus" then
-    nextscene = "assets/video/episode2/magnus/start.lua"
-    return 1
+
+-- Загрузка сейвов
+local file = io.open("assets/saves/em.txt", "r")
+if file then
+    em = file:read("*l")
+    file:close()
 else
-    System.message("saves not found, do you want to rewind to this episode?", 1)
+    em = nil
+end
+
+file = io.open("assets/saves/gp.txt", "r")
+if file then
+    gp = file:read("*l")
+    file:close()
+else
+    gp = nil
+end
+
+file = io.open("assets/saves/bf.txt", "r")
+if file then
+    bf = file:read("*l")
+    file:close()
+else
+    bf = nil
+end
+
+if em and gp and bf then
+    if em == "ellegaard" then
+        nextscene = "assets/video/episode2/ellegaard/start.lua"
+        return 1
+    elseif em == "magnus" then
+        nextscene = "assets/video/episode2/magnus/start.lua"
+        return 1
+    end
+else
+    while true do
+        screen.clear()
+        System.message("save files for episode 1 not found, do you want to rewind to this episode?", 1)
+        local rewind = System.buttonPressed()
+
+        if rewind == "Yes" then
+            local step = 1
+            local gp, bf, em
+
+            while true do
+                screen.clear()
+
+                if step == 1 then
+                    System.message("What would you like to save? Gabriel - Yes | Petra - No", 1)
+                    local input = System.buttonPressed()
+                    if input == "Back" then
+                        -- нет куда назад
+                    else
+                        gp = (input == "Yes") and "gabriel" or "petra"
+                        step = 2
+                    end
+
+                elseif step == 2 then
+                    System.message("What would you like to craft? Fishing Pole - Yes | Bow - No", 1)
+                    local input = System.buttonPressed()
+                    if input == "Back" then
+                        step = 1
+                    else
+                        bf = (input == "Yes") and "fishing_pole" or "bow"
+                        step = 3
+                    end
+
+                elseif step == 3 then
+                    System.message("Go for Magnus - Yes | Go for Ellegaard - No", 1)
+                    local input = System.buttonPressed()
+                    if input == "Back" then
+                        step = 2
+                    else
+                        em = (input == "Yes") and "magnus" or "ellegaard"
+
+                        wr("gp", gp)
+                        wr("bf", bf)
+                        wr("em", em)
+
+                        screen.flip()
+                        return 1
+                    end
+                end
+
+                screen.flip()
+            end
+
+        elseif rewind == "No" or rewind == "Back" then
+            screen.flip()
+            break
+        end
+
+        screen.flip()
+    end
 end

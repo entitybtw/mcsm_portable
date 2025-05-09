@@ -27,7 +27,7 @@ while choosing do
     elseif buttons.pressed(buttons.start) then
         Image.unload(img)
         choosing = false
-        SaveGame(1)
+        SaveGame(2)
         nextscene =  "./mainmenu.lua"
     end
 
