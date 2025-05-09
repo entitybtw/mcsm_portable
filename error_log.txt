@@ -1,0 +1,24 @@
+cannot open assets/video/episode2/ellegaard/bow.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/choices/2/chest.lua: No such file or directory
+...sets/video/episode2/ellegaard/choices/2/autofarm.lua:5: PMP.play() error: file "assets/video/episode2/ellegaard/choices/2/autofarm.pmp" doesn't exist or some internal error
+.../video/episode2/ellegaard/choices/2/intellectual.lua:2: Image.load() error loading "assets/video/episode2/ellegaard/choices/2/intellectual.png"
+assets/video/episode2/ellegaard/choices/2/chest.lua:2: Image.load() error loading "assets/video/episode2/ellegaard/choices/2/chest.png"
+cannot open assets/video/episode2/ellegaard/choices/3/dont_touch_anything.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/choices/2/intellectual_chest.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/choices/3/dont_touch_anything.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/choices/3/dont_touch_anything.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/choices/3/dont_touch_anything.lua: No such file or directory
+...episode2/ellegaard/choices/3/dont_touch_anything.lua:2: Image.load() error loading "assets/video/episode2/ellegaard/choices/3/dont_touch_anyting.png"
+cannot open assets/video/episode2/ellegaard_gabriel/1/glad_youre_okay.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard_gabriel/1/glad_youre_okay.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/8/ellegaard_is_cool.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard_gabriel/choices/2/stay_out_of_it_axel.lua: No such file or directory
+cannot open assets/video/episode2/gabriel/1/thank_you.lua: No such file or directory
+cannot open assets/video/episode2/ellegaard/choices/2/intellectual_autofarm.lua: No such file or directory
+assets/mainmenu/epmenu/epmenu.lua:59: PMP.play() error: file "assets/mainmenu/epmenu/ep1_l.pmp" doesn't exist or some internal error
+assets/video/episode3/start.lua:1: unexpected symbol near ')'
+assets/video/episode5/start.lua:2: '=' expected near '<eof>'
+assets/video/episode5/start.lua:2: '=' expected near '<eof>'
+assets/video/episode3/start.lua:1: attempt to call global 'swag' (a nil value)
+assets/video/episode3/start.lua:1: attempt to call global 'swag' (a nil value)
+assets/mainmenu/epmenu/epmenu.lua:65: attempt to call field 'isPlaying' (a nil value)

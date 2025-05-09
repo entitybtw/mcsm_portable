@@ -1,0 +1,5 @@
+PMP.setVolume(pmpvolume)
+PMP.play('assets/video/episode2/gabriel/5/hes_done_this_before.pmp', buttons.r)
+PMP.setVolume(pmpvolume)
+PMP.play('assets/video/credits/ep2.pmp', buttons.start)
+nextscene =  "./mainmenu.lua"
