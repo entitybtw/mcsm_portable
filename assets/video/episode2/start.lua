@@ -43,10 +43,10 @@ if em and gp and bf then
 else
     while true do
         screen.clear()
-        System.message("save files for episode 1 not found, do you want to rewind to this episode?", 1)
-        local rewind = System.buttonPressed()
+        System.message("save files for episode 1 not found, do you want to start episode choice setup?", 1)
+        local episodeChoiceResponse = System.buttonPressed()
 
-        if rewind == "Yes" then
+        if episodeChoiceResponse == "Yes" then
             local step = 1
             local gp, bf, em
 
@@ -93,7 +93,7 @@ else
                 screen.flip()
             end
 
-        elseif rewind == "No" or rewind == "Back" then
+        elseif episodeChoiceResponse == "No" or episodeChoiceResponse == "Back" then
             nextscene = "./mainmenu.lua"
             screen.flip()
             break
