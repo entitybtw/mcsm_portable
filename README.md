@@ -7,7 +7,7 @@
 [![kan-ban board](https://img.shields.io/badge/kan--ban-board-blue)](https://github.com/users/entitybtw/projects/4)
 [![extras](https://img.shields.io/badge/extras-orange)](https://github.com/entitybtw/mcsm_portable_extras/)
 
-A port of Minecraft Story Mode: Season 1 for PSP. (fanmade)
+A port of Minecraft Story Mode: Season 1 for PSP.
 
 This is a fanmade port of Minecraft: Story Mode.
 This port is not affiliated with Telltale Games or Netflix.
