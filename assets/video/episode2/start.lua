@@ -94,6 +94,7 @@ else
             end
 
         elseif rewind == "No" or rewind == "Back" then
+            nextscene = "./mainmenu.lua"
             screen.flip()
             break
         end

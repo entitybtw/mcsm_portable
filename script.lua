@@ -36,6 +36,7 @@ require("debugoverlay")
 require("files")
 sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
 
+fade_enabled = 1
 nextscene =  "./mainmenu.lua"
 
 while true do
