@@ -1,4 +1,7 @@
-local img = Image.load("assets/mainmenu/byentitybtw.png")
+local fade = require("fade")
+
+local byentitybtw = Image.load("assets/mainmenu/byentitybtw.png")
+local headphones = Image.load("assets/mainmenu/headphones.png")
 local pmpfile = io.open("assets/saves/soundlevels.txt", "r")
 if not pmpfile then
     pmpfile = io.open("assets/saves/soundlevels.txt", "w")
@@ -14,10 +17,17 @@ end
 pmpfile:close()
 
 screen.clear()
-Image.draw(img, 0, 0)
-screen.flip()
-LUA.sleep(400)
-Image.unload(img)
+fade.fadeIn(byentitybtw, 0, 0, 480, 272, nil, 2000, nil, nil, nil, nil, nil, 255, nil)
+LUA.sleep(2000)
+fade.fadeOut(byentitybtw, 0, 0, 480, 272, nil, 2000, nil, nil, nil, nil, nil, 255, nil)
+
+screen.clear()
+fade.fadeIn(headphones, 0, 0, 480, 272, nil, 1500, nil, nil, nil, nil, nil, 255, nil)
+LUA.sleep(1500)
+fade.fadeOut(headphones, 0, 0, 480, 272, nil, 1500, nil, nil, nil, nil, nil, 255, nil)
+
+Image.unload(byentitybtw)
+Image.unload(headphones)
 PMP.setVolume(pmpvolume)
 PMP.play('assets/mainmenu/mcsm_title.pmp', buttons.start)
 PMP.play('assets/mainmenu/loading.pmp')
@@ -25,7 +35,6 @@ require("saves")
 require("debugoverlay")
 require("files")
 sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
-fade_enabled = 1
 
 nextscene =  "./mainmenu.lua"
 
