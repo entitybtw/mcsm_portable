@@ -1,67 +1,65 @@
-local bg = Image.load('assets/mainmenu/bg.png')
-local settingstext = Image.load("assets/mainmenu/settings/settings_text.png")
+local bg = Image.load('assets/mainmenu/bg.png') -- load bg
+local settingstext = Image.load("assets/mainmenu/settings/settings_text.png") -- load settings text
+
+-- load buttons
 local buttonsList = {
     {
-        normalImage = Image.load("assets/buttons/CONTROLS_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/CONTROLS_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/CONTROLS_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/CONTROLS_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/AUDIOVIDEO_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/AUDIOVIDEO_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/AUDIOVIDEO_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/AUDIOVIDEO_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/DEBUG_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/DEBUG_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/DEBUG_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/DEBUG_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/PREVIOUSMENU_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/PREVIOUSMENU_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/PREVIOUSMENU_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/PREVIOUSMENU_ENG_SELECTED.png")
     }
 }
 
--- Initialize navigation variables
 local selectedButton = 1
 
--- Function to draw buttons
 local function drawButtons()
     for i, button in ipairs(buttonsList) do
-        local x = 35                 -- Horizontal position for all buttons
-        local y = 50 + (i - 1) * 30 -- Vertical spacing between buttons
+        local x = 35                 -- horizontal position for all buttons
+        local y = 50 + (i - 1) * 30 -- vertical spacing between buttons
 
-        -- If it's the last button, add extra space between it and others
+        -- if its last button, add extra space
         if i == #buttonsList then
-            y = 50 + (i - 1) * 30 + 50 -- Adding more space for the "Previous Menu" button
+            y = 50 + (i - 1) * 30 + 50
             x = 0
         end
 
         if i == selectedButton then
-            Image.draw(button.selectedImage, x, y) -- Highlight selected button
+            Image.draw(button.selected, x, y)
         else
-            Image.draw(button.normalImage, x, y)
+            Image.draw(button.static, x, y)
         end
     end
 end
 
 local function unloadButtons()
     for k, v in pairs(buttonsList) do
-        Image.unload(v.normalImage)
-        Image.unload(v.selectedImage)
+        Image.unload(v.static)
+        Image.unload(v.selected)
     end
 end
 
--- Main loop
 while true do
     screen.clear()
-    buttons.read() -- Read button input
+    buttons.read()
 
-    -- Background rendering
     Image.draw(bg, 0, 0)
 
-    -- Navigation logic
+    -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
@@ -73,33 +71,32 @@ while true do
         sound.volume(sound.WAV_1, uiLevel * 10)
     end
 
-    -- Action on "Cross" button
     if buttons.pressed(buttons.cross) then    
         if selectedButton == 1 then
-            -- Action for "Controls"
+            -- controls button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/controls.lua")
         elseif selectedButton == 2 then
-            -- Action for "Audio/Video"
+            -- audio/video button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/audio_video.lua")
         elseif selectedButton == 3 then
-            -- Action for "Debug"
+            -- debug button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/debug.lua")
         elseif selectedButton == 4 then
-            -- Action for "Credits"
+            -- credits button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/credits_episodes.lua")
         elseif selectedButton == 5 then
-            -- Action for "Previous Menu"
+            -- previous menu button
             unloadButtons()
             Image.unload(bg)
-	    Image.unload(settingstext)
+	        Image.unload(settingstext)
             sound.play("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             break
@@ -107,9 +104,9 @@ while true do
     end
 
     -- Draw buttons
-    drawButtons()
-    Image.draw(settingstext, 0, 38, 120, 13)
+    drawButtons() -- draw buttons
+    Image.draw(settingstext, 0, 38, 120, 13) -- draw settingstext
 
-debugoverlay.draw(debugoverlay.loadSettings())
+    debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end

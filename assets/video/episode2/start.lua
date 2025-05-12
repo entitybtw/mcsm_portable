@@ -1,13 +1,12 @@
-local savePath, vars = LoadGame(2)
-if savePath then
+local path = System.LoadData("assets/mainmenu/saves_bg.png")
+if path then
     PMP.setVolume(pmpvolume)
     PMP.play("assets/mainmenu/loading.pmp")
-    nextscene = savePath
+    nextscene = path.data
     return 1
 end
 
 
--- Загрузка сейвов
 local file = io.open("assets/saves/em.txt", "r")
 if file then
     em = file:read("*l")
@@ -57,7 +56,6 @@ else
                     System.message("What would you like to save? Gabriel - Yes | Petra - No", 1)
                     local input = System.buttonPressed()
                     if input == "Back" then
-                        -- нет куда назад
                     else
                         gp = (input == "Yes") and "gabriel" or "petra"
                         step = 2

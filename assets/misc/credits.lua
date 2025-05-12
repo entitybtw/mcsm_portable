@@ -1,4 +1,4 @@
-local img = Image.load("assets/mainmenu/credits.png")
+local img = Image.load("assets/mainmenu/credits.png") -- load image
 
 screen.clear()
 Image.draw(img, 0, 0)

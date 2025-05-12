@@ -9,26 +9,26 @@ screen.flip()
 while true do
     buttons.read()
 
-    if buttons.pressed(buttons.l) then
+    if buttons.pressed(buttons.l) then -- previous image
         if curimg > 1 then
             Image.unload(img)
             curimg = curimg - 1
             img = Image.load("assets/mainmenu/controls/controls_" .. tostring(curimg) .. ".png")
             screen.clear()
             Image.draw(img, 0, 0)
-debugoverlay.draw(debugoverlay.loadSettings())
+            debugoverlay.draw(debugoverlay.loadSettings())
             screen.flip()
         end
     end
 
-    if buttons.pressed(buttons.r) then
+    if buttons.pressed(buttons.r) then -- next image
         if curimg < 3 then
             Image.unload(img)
             curimg = curimg + 1
             img = Image.load("assets/mainmenu/controls/controls_" .. tostring(curimg) .. ".png")
             screen.clear()
             Image.draw(img, 0, 0)
-debugoverlay.draw(debugoverlay.loadSettings())
+            debugoverlay.draw(debugoverlay.loadSettings())
             screen.flip()
         end
     end

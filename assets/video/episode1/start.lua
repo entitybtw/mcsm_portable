@@ -1,8 +1,9 @@
-local save = LoadGame(1)
-if save then
-PMP.setVolume(pmpvolume)
-  PMP.play('assets/mainmenu/loading.pmp')
-  LoadGame(1)
+local path = System.LoadData("assets/mainmenu/saves_bg.png")
+if path then
+    PMP.setVolume(pmpvolume)
+    PMP.play("assets/mainmenu/loading.pmp")
+    nextscene = path.data
+    return 1
 end
 
 local img = Image.load('assets/video/episode1/START.png')

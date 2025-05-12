@@ -1,8 +1,8 @@
 local choosing = true
-local img = Image.load('assets/video/episode2/magnus_gabriel/2/stay_out_of_it_axel.png')
+local img = Image.load('assets/video/episode2/magnus_gabriel/2/stay_out_of_it_olivia.png')
 
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode2/magnus_gabriel/2/stay_out_of_it_axel.pmp', buttons.r)
+PMP.play('assets/video/episode2/magnus_gabriel/2/stay_out_of_it_olivia.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)

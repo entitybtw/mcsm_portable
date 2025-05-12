@@ -1,4 +1,4 @@
--- Load libs
+-- initialize variables
 local fade = 255
 local welanim = 255
 local step = -10
@@ -13,74 +13,47 @@ local psp_buttons = Image.load('assets/mainmenu/mainmenu_buttons.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
-local menumusicfile = io.open("assets/saves/soundlevels.txt", "r")
-if not menumusicfile then
-    menumusicfile = io.open("assets/saves/soundlevels.txt", "w")
-    menumusicfile:write("10\n10\n10")
-    menumusicfile:close()
-    menumusicfile = io.open("assets/saves/soundlevels.txt", "r")
-end
-
-local menumusicsaved = tonumber(menumusicfile:read("*l"))
-local uisaved = tonumber(menumusicfile:read("*l"))
-local pmpSaved = tonumber(menumusicfile:read("*l"))
-
-if menumusicsaved and menumusicsaved >= 0 and menumusicsaved <= 10 then
-    currentLevel = menumusicsaved
-    sound.volume(sound.MP3, currentLevel * 10)
-end
-
-if uisaved and uisaved >= 0 and uisaved <= 10 then
-    uiLevel = uisaved
-    sound.volume(sound.WAV_1, uiLevel * 10)
-end
-
-if pmpSaved and pmpSaved >= 0 and pmpSaved <= 10 then
-    pmpvolume = pmpSaved * 10
-end
-
-menumusicfile:close()
 
 
 timered = timer.create()
 
--- Load button images dynamically based on language
+-- load buttons
 local buttonsList = {
     {
-        normalImage = Image.load("assets/buttons/PLAY_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/PLAY_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/PLAY_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/PLAY_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/SUPPORT_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/SUPPORT_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/SUPPORT_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/SUPPORT_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
     },
     {
-        normalImage = Image.load("assets/buttons/SETTINGS_ENG_STATIC.png"),
-        selectedImage = Image.load("assets/buttons/SETTINGS_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/SETTINGS_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/SETTINGS_ENG_SELECTED.png")
     }
 }
 
--- Initialize navigation variables
 local selectedButton = 1
 
--- Function to draw buttons
+-- buttons draw function
 local function drawButtons()
     for i, button in ipairs(buttonsList) do
-        local x = 35                 -- Horizontal position for all buttons
-        local y = 100 + (i - 1) * 30 -- Vertical spacing between buttons
+        local x = 35
+        local y = 100 + (i - 1) * 30
 
         if i == selectedButton then
-            Image.draw(button.selectedImage, x, y) -- Highlight selected button
+            Image.draw(button.selected, x, y)
         else
-            Image.draw(button.normalImage, x, y)
+            Image.draw(button.static, x, y)
         end
     end
 end
 
+-- stop_sound function
 function stop_sound(channel)
     local state = sound.state(channel)
     if (state.state ~= "stopped") then
@@ -89,10 +62,11 @@ function stop_sound(channel)
     sound.stop(channel)
 end
 
+-- unload buttons function
 local function unloadButtons()
     for k, v in pairs(buttonsList) do
-        Image.unload(v.normalImage)
-        Image.unload(v.selectedImage)
+        Image.unload(v.static)
+        Image.unload(v.selected)
     end
 end
 
@@ -100,10 +74,9 @@ if stat.state == "stopped" then
     sound.play("assets/sounds/bg.mp3", sound.MP3, false, true)
 end
 
--- Main loop
 while true do
     screen.clear()
-    buttons.read() -- Read button input
+    buttons.read()
     if fade_enabled == 1 then
     	if fade > 0 then fade = fade - 8 end
     end
@@ -126,12 +99,11 @@ while true do
         end
     end
 
-    -- Background rendering
     Image.draw(bg, 0, 0)
     Image.draw(logo, 15, 45, 220, 50, white, 0, 0, 183, 37)
     Image.draw(psp_buttons, 35, 230, 150, 30, white, 0, 0, 183, 37)
 
-    -- Navigation logic
+    -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
@@ -143,24 +115,21 @@ while true do
 	    sound.volume(sound.WAV_1, uiLevel * 10)
     end
 
+    -- quit
     if buttons.pressed(buttons.triangle) then
         LUA.quit()
     end
 
-    -- Update arrow
     arrowStep = arrowStep + 0.1
     arrowX = 27 + cos(arrowStep) * 3
     if arrowX == 30 then
         arrowStep = 0
     end
 
-    -- Action on "Cross" button
     if buttons.pressed(buttons.cross) then	
         if selectedButton == 1 then
-            -- Action for "Play"
+            -- play button
 	        fade_enabled = 0
-            -- sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
-            -- LUA.sleep(550)
 	        local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
             if epmenu == 1 then
                 Image.unload(bg) 
@@ -172,19 +141,19 @@ while true do
                 break
             end
         elseif selectedButton == 2 then
-            -- Action for "Support"
+            -- support button
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
-            -- Action for "Credits"
+            -- credits button
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/credits.lua")
         elseif selectedButton == 4 then
-            -- Action for "Controls"
+            -- settings button
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volume(sound.WAV_1, uiLevel * 10)
@@ -192,19 +161,19 @@ while true do
         end
     end
 
-    -- Draw buttons
     drawButtons()
 
-    -- Draw arrows
+    -- draw arrows
     Image.draw(arrow, arrowX, 107, 14, 22)
     Image.draw(arrow, arrowX, 137, 14, 22)
-    -- Update screen
+    
+    -- fade
     if fade_enabled == 1 then
         if fade > 0 then
     	    screen.drawRect(0, 0, 480, 272, c_black, 0, fade)
         end
     end
-    Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
-debugoverlay.draw(debugoverlay.loadSettings())
+    Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim) -- 'welcome to minecraft story mode' popup
+    debugoverlay.draw(debugoverlay.loadSettings()) -- debug text draw
     screen.flip()
 end
