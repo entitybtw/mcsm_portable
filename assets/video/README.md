@@ -14,15 +14,15 @@ The game is based on the **YouTube interactive version** of Minecraft: Story Mod
 ### Folder Structure:
 The files are organized in the following way:
 
-```assets/
-├── video/
-│ └── episode1/
-│ ├── 10_zombie_sized.pmp # PMP video file
-│ ├── 10_zombie_sized.png # PNG image with choice overlays
-│ └── choices/
-│ └── 1/
-│ ├── cool_mask.lua # Lua script for this choice
-│ └── not_funny_axel.lua # Lua script for the alternate choice'''
+assets/
+    video/
+        episode1/
+            10_zombie_sized.pmp # PMP video file
+            10_zombie_sized.png # PNG image with choice overlays
+            choices/
+                1/
+            cool_mask.lua # Lua script for this choice
+            not_funny_axel.lua # Lua script for the alternate choice?
 
 
 ### Choice Handling in Code:
