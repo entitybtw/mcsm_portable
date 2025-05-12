@@ -1,6 +1,6 @@
 # Minecraft: Story Mode PSP Port - Choices Implementation
 
-This port of **Minecraft: Story Mode** for PSP uses **PMP** videos to present interactive choices to the player. The game is based on the **YouTube interactive version** of the game, which was dumped manually from the **Netflix version**. Due to limitations in the engine during development, the choice system works differently than in the original game.
+This port of **Minecraft: Story Mode** for PSP uses **PMP** videos to present interactive choices to the player. The game is based on the **YouTube interactive version**, which was manually dumped from the **Netflix version**. Unlike the original Telltale release, this version doesn't include silence as a choice — that limitation is replicated in this port.
 
 ## Folder Structure
 
@@ -10,11 +10,11 @@ The game's files are structured in the following way:
 assets/
 ├── video/
 │   ├── episode1/
-│   │   ├── 10_zombie_sized.pmp       # PMP video file
-│   │   ├── 10_zombie_sized.png       # PNG image for choices
+│   │   ├── 10_zombie_sized.pmp        # PMP video file
+│   │   ├── 10_zombie_sized.png        # PNG image for choices
 │   │   └── choices/
 │   │       ├── 1/
-│   │       │   ├── cool_mask.lua     # Lua script for the "cool_mask" choice
+│   │       │   ├── cool_mask.lua      # Lua script for the "cool_mask" choice
 │   │       │   └── not_funny_axel.lua # Lua script for the "not_funny_axel" choice
 │   │       └── 2/
 │   │           ├── another_choice.lua
@@ -24,19 +24,18 @@ assets/
 └── ...
 ```
 
-Each episode contains a folder with the video files (in **PMP** format) and PNG images that display the choices after the video ends. Each set of choices is located in a numbered folder (e.g., `choices/1/`, `choices/2/`, etc.).
+Each episode contains PMP video files and PNG images that display the choices after the video ends. Choices are organized into numbered folders (e.g., `choices/1/`, `choices/2/`, etc.), each containing Lua scripts corresponding to specific player decisions.
 
 ## How Choices Work
 
-### Workflow Overview:
-1. **PMP Video File:** The game plays a **PMP** video.
-2. **Choice Image:** After the video ends, a **PNG** image is displayed. This image is the last frame of the video with added choice buttons and text.
-3. **Choice Handling:** The player makes a choice by pressing a button (e.g., `Square` or `Circle`). Each choice leads to a different outcome and loads a new video or script.
-4. **Choice Folder Structure:** Choices are handled by Lua scripts inside the `choices/` folder.
+### Workflow Overview
 
-### Example Code:
+1. **PMP Video Playback:** The game plays a PMP video (`.pmp`).
+2. **Image Display:** After the video finishes, a `.png` image with choice overlays is displayed. This image is usually the last frame of the video with added buttons/text in Photoshop.
+3. **Button Mapping:** Players press a button (`Square`, `Circle`, etc.) to make a choice.
+4. **Script Execution:** The choice triggers the corresponding Lua script from the appropriate folder.
 
-Here is an example of how the choice system works in the game:
+### Example Code
 
 ```lua
 local choosing = true
@@ -74,35 +73,24 @@ while choosing do
 end
 ```
 
-### Explanation of the Code:
-1. **Loading the Image and Video:**
-   - The **PMP** video is played using `PMP.play()`.
-   - After the video finishes, a PNG image (`10_zombie_sized.png`) is drawn to the screen with the available choices.
-   
-2. **Choice Handling:**
-   - The player presses a button (`Square`, `Circle`, etc.).
-   - Depending on the button pressed, the corresponding Lua script is loaded (`cool_mask.lua`, `not_funny_axel.lua`).
+## Preparing PMP Videos and Choice Images
 
-3. **Choice Folders:**
-   - Choices are stored in numbered folders (`choices/1/`, `choices/2/`, etc.).
-   - Each folder contains Lua scripts representing each choice. These scripts control what happens next in the game.
+To create the necessary files for a choice segment:
 
-## Video Conversion Workflow
+1. **Trim the video** where choice options appear and all characters are silent (this ensures a clean frame for overlays).
+2. **Extract the final frame** of that trimmed video.
+3. **Open it in Photoshop** (PSD templates available in `mcsm_portable_extras` repo).
+4. **Add text and button overlays**.
+5. **Save as PNG** using the same base name as the PMP video.
+6. **Convert the trimmed video to PMP** using **Xvid4PSP 5.0**.
 
-The **PMP** video format is used for all the scenes. Here's how you can convert videos and prepare the images for choices:
+### Example Tools Used
 
-1. **Convert the video to PMP** using **Xvid4PSP 5.0** (a program available on archive.org).
-2. **Extract the last frame** of the video and save it as a PNG image.
-3. **Add overlays** (e.g., choice buttons and text) using Photoshop.
-4. **Save the image** with the same name as the video and place it in the appropriate directory.
-5. **Create a Lua script** for each choice inside the `choices/` folder.
-
-## Tools Used
-
-- **Xvid4PSP 5.0**: A program used to convert video files to the PMP format.
-- **Photoshop**: For creating the choice overlays on the PNG images.
+- **Xvid4PSP 5.0**: Used to trim and convert video to `.pmp`. Available on archive.org.
+- **Photoshop**: For editing PNG overlays for choices.
 
 ## Notes
 
-- The choice system uses **PNG images** that are displayed after the video ends, and buttons are mapped to specific actions defined in Lua scripts.
-- Make sure to follow the folder structure carefully when adding new episodes or choices.
+- The system replicates YouTube’s interactive format — no “silence” option is included.
+- Debug overlay support is included via `debugoverlay.lua`.
+- Make sure file paths and folder structure match the examples to avoid load errors.
