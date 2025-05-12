@@ -1,11 +1,34 @@
---[[
-README — How Choices Work in MCSM PSP Port
-Author: entitybtw (mcsm_portable)
+# Minecraft: Story Mode PSP Port - Choices Implementation
 
-==========================
-Example: Choice Script
-==========================
+This is a custom port of **Minecraft: Story Mode** for the PSP. The game uses videos in the **PMP** format, and the interactive choices are displayed after each video plays. Here's how the choices work and how you can modify or extend them.
 
+## How Choices Work
+
+The game is based on the **YouTube interactive version** of Minecraft: Story Mode, which was **dumped manually** from the Netflix version. Unlike the original version, there is **no "mute" option** in the YouTube version, which is why choices are handled differently.
+
+### Key Workflow:
+- Each scene is a separate **PMP** video.
+- The video plays, and once it ends, a static image (last frame of the video) is displayed. This image contains the overlay for the choice (e.g., buttons and text), which was created manually using Photoshop.
+- The player makes a choice by pressing a button (such as Square or Circle). The corresponding choice leads to another video or scene.
+
+### Folder Structure:
+The files are organized in the following way:
+
+assets/
+├── video/
+│ └── episode1/
+│ ├── 10_zombie_sized.pmp # PMP video file
+│ ├── 10_zombie_sized.png # PNG image with choice overlays
+│ └── choices/
+│ └── 1/
+│ ├── cool_mask.lua # Lua script for this choice
+│ └── not_funny_axel.lua # Lua script for the alternate choice
+
+
+### Choice Handling in Code:
+Each episode contains a video and a `.png` file for choices. Below is an example code that shows how a choice works in the port:
+
+```lua
 local choosing = true
 local img = Image.load('assets/video/episode1/10_zombie_sized.png')
 
@@ -39,43 +62,3 @@ while choosing do
         nextscene = "./mainmenu.lua"
     end
 end
-
-==========================
-Q: How does it work?
-==========================
-
-A:
-The game is built entirely using PMP videos. Since the base is the **YouTube interactive version** of Minecraft: Story Mode (based on Netflix, but dumped manually), every scene is a separate video file.
-
-**There is no "stay silent" option in the YouTube version**, unlike in the original Telltale release — that's why the game always forces a player choice.
-
-To handle visual choices, here's how it's done:
-- The PMP video ends *right before* the choice UI appears.
-- The last frame is captured and saved as a `.png`.
-- The actual UI (buttons and text) is baked into the image using Photoshop.
-- These PNGs are shown immediately after the video ends.
-- Player presses a button (e.g. ◻️ or ⭘), and the corresponding `.lua` script loads the next video/scene.
-
-All assets like `.psd` files used to generate the PNG overlays are stored in the `mcsm_portable_extras` repo.
-
-Videos are converted using **Xvid4PSP 5.0**, available on Archive.org.
-
-==========================
-Folder Structure
-==========================
-
-assets/
-├── video/
-│   └── episode1/
-│       ├── 10_zombie_sized.pmp
-│       ├── 10_zombie_sized.png
-│       └── choices/
-│           └── 1/
-│               ├── cool_mask.lua
-│               └── not_funny_axel.lua
-
-Each choice is grouped by number (`1`, `2`, `3`, etc.) inside `choices/`, depending on how many decision points are in an episode.
-
-==========================
-2025 entitybtw / mcsm_portable
-]]--
