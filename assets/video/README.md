@@ -15,14 +15,20 @@ The game is based on the **YouTube interactive version** of Minecraft: Story Mod
 The files are organized in the following way:
 
 assets/
-    video/
-        episode1/
-            10_zombie_sized.pmp # PMP video file
-            10_zombie_sized.png # PNG image with choice overlays
-            choices/
-                1/
-            cool_mask.lua # Lua script for this choice
-            not_funny_axel.lua # Lua script for the alternate choice?
+├── video/
+│ ├── episode1/
+│ │ ├── 10_zombie_sized.pmp # PMP video file
+│ │ ├── 10_zombie_sized.png # PNG image for choices
+│ │ └── choices/
+│ │ ├── 1/
+│ │ │ ├── cool_mask.lua # Lua script for the "cool_mask" choice
+│ │ │ └── not_funny_axel.lua # Lua script for the "not_funny_axel" choice
+│ │ └── 2/
+│ │ ├── another_choice.lua
+│ │ └── another_choice_alt.lua
+│ └── episode2/
+│ └── ...
+└── ...
 
 
 ### Choice Handling in Code:
