@@ -1,6 +1,6 @@
 # Minecraft: Story Mode PSP Port - Choices Implementation
 
-This port of **Minecraft: Story Mode** for PSP uses **PMP** videos to present interactive choices to the player. The game is based on the **YouTube interactive version**, which was manually dumped from the **Netflix version**. Unlike the original Telltale release, this version doesn't include silence as a choice — that limitation is replicated in this port.
+This port of **Minecraft: Story Mode** for PSP uses **PMP** videos to present interactive choices to the player. This homebrew uses videos downloaded from **YouTube interactive version**, which were manually dumped from the **Netflix version**. Unlike the original Telltale release, this version doesn't include silence as a choice — that limitation is replicated in this port.
 
 ## Folder Structure
 
@@ -24,7 +24,7 @@ assets/
 └── ...
 ```
 
-Each episode contains PMP video files and PNG images that display the choices after the video ends. Choices are organized into numbered folders (e.g., `choices/1/`, `choices/2/`, etc.), each containing Lua scripts corresponding to specific player decisions.
+Each episode contains PMP video files and PNG images that display the choices after the video ends. Choices are organized into numbered folders (e.g., `choices/1/`, `choices/2/`, etc.), each containing Lua scripts that represent different player decisions.
 
 ## How Choices Work
 
@@ -39,36 +39,36 @@ Each episode contains PMP video files and PNG images that display the choices af
 
 ```lua
 local choosing = true
-local img = Image.load('assets/video/episode1/10_zombie_sized.png')
+local img = Image.load('assets/video/episode1/10_zombie_sized.png') -- load image
 
-PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode1/10_zombie_sized.pmp', buttons.r)
+PMP.setVolume(pmpvolume) -- set pmp volume from pmpvolume variable
+PMP.play('assets/video/episode1/10_zombie_sized.pmp', buttons.r)  -- playing pmp video
 
 screen.clear()
-Image.draw(img, 0, 0)
-debugoverlay.draw(debugoverlay.loadSettings())
+Image.draw(img, 0, 0) -- drawing image
+debugoverlay.draw(debugoverlay.loadSettings()) -- display debug text
 screen.flip()
 
 while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(img)
+        Image.unload(img) -- unload image
         choosing = false
-        nextscene = "assets/video/episode1/choices/1/cool_mask.lua"
+        nextscene = "assets/video/episode1/choices/1/cool_mask.lua" -- move to next scene
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(img)
+        Image.unload(img) -- unload image
         choosing = false
-        nextscene = "assets/video/episode1/choices/1/not_funny_axel.lua"
+        nextscene = "assets/video/episode1/choices/1/not_funny_axel.lua" -- move to next scene
     elseif buttons.pressed(buttons.l) then
-        Image.unload(img)
+        Image.unload(img) -- unload image
         choosing = false
-        nextscene = "./mainmenu.lua"
+        nextscene = "./mainmenu.lua" -- move to main menu
     elseif buttons.pressed(buttons.start) then
-        Image.unload(img)
+        Image.unload(img) -- unload image
         choosing = false
-        SaveGame(1)
-        nextscene = "./mainmenu.lua"
+        SaveGame(1) -- saving game
+        nextscene = "./mainmenu.lua" -- move to main menu
     end
 end
 ```
@@ -77,20 +77,20 @@ end
 
 To create the necessary files for a choice segment:
 
-1. **Trim the video** where choice options appear and all characters are silent (this ensures a clean frame for overlays).
-2. **Extract the final frame** of that trimmed video.
-3. **Open it in Photoshop** (PSD templates available in `mcsm_portable_extras` repo).
-4. **Add text and button overlays**.
-5. **Save as PNG** using the same base name as the PMP video.
-6. **Convert the trimmed video to PMP** using **Xvid4PSP 5.0**.
+1. **Load the video into Xvid4PSP 5.0.**
+2. **Trim the video** at the point where the choice selection frame appears and all characters are silent.
+3. **Extract the final frame** from the trimmed video.
+4. **Convert the trimmed video to PMP** using **Xvid4PSP 5.0**.
+5. **Open the extracted frame in Photoshop** (PSD templates available in the `mcsm_portable_extras` repo).
+6. **Add the choice text.**
+7. **Save the image as a PNG** using the same base name as the PMP video.
 
-### Example Tools Used
+### Tools Used
 
 - **Xvid4PSP 5.0**: Used to trim and convert video to `.pmp`. Available on archive.org.
 - **Photoshop**: For editing PNG overlays for choices.
+- **Cobalt**: For downloading videos from youtube | https://cobalt.tools
 
 ## Notes
 
-- The system replicates YouTube’s interactive format — no “silence” option is included.
-- Debug overlay support is included via `debugoverlay.lua`.
 - Make sure file paths and folder structure match the examples to avoid load errors.
