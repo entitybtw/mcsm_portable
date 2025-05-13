@@ -31,8 +31,8 @@ Each episode contains PMP video files and PNG images that display the choices af
 ### Workflow Overview
 
 1. **PMP Video Playback:** The game plays a PMP video (`.pmp`).
-2. **Image Display:** After the video finishes, a `.png` image with choice overlays is displayed. This image is usually the last frame of the video with added buttons/text in Photoshop.
-3. **Button Mapping:** Players press a button (`Square`, `Circle`, etc.) to make a choice.
+2. **Image Display:** After the video finishes, a `.png` image with choice overlays is displayed. This image is usually the last frame of the video with buttons/text added using Photoshop.
+3. **Button Mapping:** Player presses the button (`Square`, `Circle`, etc.) to make a choice.
 4. **Script Execution:** The choice triggers the corresponding Lua script from the appropriate folder.
 
 ### Example Code
@@ -80,7 +80,7 @@ To create the necessary files for a choice segment:
 1. **Load the video into Xvid4PSP 5.0.**
 2. **Trim the video** at the point where the choice selection frame appears and all characters are silent.
 3. **Extract the final frame** from the trimmed video.
-4. **Convert the trimmed video to PMP** using **Xvid4PSP 5.0**.
+4. **Convert the trimmed video to PMP**
 5. **Open the extracted frame in Photoshop** (PSD templates available in the `mcsm_portable_extras` repo).
 6. **Add the choice text.**
 7. **Save the image as a PNG** using the same base name as the PMP video.
