@@ -1,5 +1,6 @@
 -- initialize variables
 local fade = 255
+local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 
 -- check if the file exists; if not, create it with default values (10 for each setting)
 if not soundlevels then
@@ -8,10 +9,9 @@ if not soundlevels then
     soundlevels:close()
     soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 end
-local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
-local menumusic = tonumber(soundlevels:read("*l"))
-local uisaved = tonumber(soundlevels:read("*l"))
-local pmpvideos = tonumber(soundlevels:read("*l")) 
+menumusic = tonumber(soundlevels:read("*l"))
+uiLevel = tonumber(soundlevels:read("*l"))
+pmpvideos = tonumber(soundlevels:read("*l")) 
 
 -- load images
 local byentitybtw = Image.load("assets/mainmenu/byentitybtw.png")
@@ -19,8 +19,7 @@ local headphones = Image.load("assets/mainmenu/headphones.png")
 
 -- load menumusic level
 if menumusic and menumusic >= 0 and menumusic <= 10 then
-    currentLevel = menumusic
-    sound.volume(sound.MP3, currentLevel * 10)
+    sound.volume(sound.MP3, menumusic * 10)
 end
 
 -- load pmp videos sound level
@@ -29,8 +28,7 @@ if pmpvideos and pmpvideos >= 0 and pmpvideos <= 10 then
 end
 
 -- load ui sounds level
-if uisaved and uisaved >= 0 and uisaved <= 10 then
-    uiLevel = uisaved
+if uiLevel and uiLevel >= 0 and uiLevel <= 10 then
     sound.volume(sound.WAV_1, uiLevel * 10)
 end
 
@@ -101,6 +99,7 @@ nextscene = "./mainmenu.lua" -- open mainmenu
 
 -- optimized dofile replacement, made by dntrnk, to prevent memory overload and PSP freezes
 while true do
+    System.PowerTick()
     dofile(nextscene)
     System.GC()
 end
