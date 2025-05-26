@@ -2,7 +2,7 @@ local choosing = true
 local img = Image.load('assets/video/episode2/magnus_petra/choices/4/shes_awesome.png')
 
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode2/magnus_petra/choices/4/hes_awesome.pmp', buttons.r)
+PMP.play('assets/video/episode2/magnus_petra/choices/4/shes_awesome.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)

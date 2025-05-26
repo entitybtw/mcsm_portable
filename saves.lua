@@ -1,13 +1,42 @@
 function SaveGame(episodeNumber)
-    System.SaveData(nextscene, episodeNumber .. " episode save", "Minecraft Story Mode Save", "EBOOT.PBP", "EBOOT.PBP", "assets/mainmenu/saves_bg.png")
-    PMP.play('assets/mainmenu/lsave.pmp')
-end
+    local suffix = ""
 
-function checkFile(filePath, globalVarName)
-    local file = io.open(filePath, "r")
-    if not file then return false end
-    local content = file:read("*l")
-    file:close()
-    _G[globalVarName] = content
-    return true
+    if episodeNumber == 1 then
+        suffix = "st"
+    elseif episodeNumber == 2 then
+        suffix = "nd"
+    elseif episodeNumber == 3 then
+        suffix = "rd"
+    elseif episodeNumber == 4 or episodeNumber == 5 then
+        suffix = "th"
+    end
+    System.SaveData(nextscene, episodeNumber .. suffix .. " episode save", "Minecraft Story Mode Save", "EBOOT.PBP", "assets/buttons/saves_icon.png", "assets/mainmenu/saves_bg.png")
+    wr(episodeNumber .. "_status", "continue")
+    for i = episodeNumber + 1, 5 do
+        rm(i .. "_status")
+        _G["status_" .. i] = nil
+    end
+
+    if episodeNumber == 1 then
+        local saveDir = "assets/saves/"
+        local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
+
+        local variables = {
+            reuben = reuben,
+            tall_grass = tall_grass,
+            building = building,
+            pedestal = pedestal,
+            slime = slime
+        }
+
+        local file, err = io.open(variablesFilePath, "w")
+        if file then
+            for key, value in pairs(variables) do
+                if value ~= nil then
+                    file:write(string.format("%s = \"%s\"\n", key, tostring(value)))
+                end
+            end
+            file:close()
+        end
+    end
 end

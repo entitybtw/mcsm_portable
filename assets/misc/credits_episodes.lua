@@ -81,31 +81,31 @@ while true do
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep1.pmp', buttons.start)
-	    sound.volume(sound.MP3, currentLevel * 10)
+	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 2 then
             -- episode 2 button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep2.pmp', buttons.start)
-	    sound.volume(sound.MP3, currentLevel * 10)
+	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 3 then
             -- episode 3 button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep3.pmp', buttons.start)
-	    sound.volume(sound.MP3, currentLevel * 10)
+	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 4 then
             -- episode 4 button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep4.pmp', buttons.start)
-	    sound.volume(sound.MP3, currentLevel * 10)
+	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 5 then
             -- episode 5 button
 	        PMP.setVolume(pmpvolume)
             sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep5.pmp', buttons.start)
-	    sound.volume(sound.MP3, currentLevel * 10)
+	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 6 then
             -- previous menu button
             unloadButtons()

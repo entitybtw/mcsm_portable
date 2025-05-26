@@ -42,8 +42,11 @@ if em and gp and bf then
 else
     while true do
         screen.clear()
-        System.message("save files for episode 1 not found, do you want to start episode choice setup?", 1)
+        System.message("Key data for episode 1 not found, do you want to start episode choice setup?", 1)
         local episodeChoiceResponse = System.buttonPressed()
+        local bfexists = fileExists("assets/saves/bf.txt")
+        local emexists = fileExists("assets/saves/em.txt")
+        local gpexists = fileExists("assets/saves/gp.txt")
 
         if episodeChoiceResponse == "Yes" then
             local step = 1
@@ -53,16 +56,22 @@ else
                 screen.clear()
 
                 if step == 1 then
-                    System.message("What would you like to save? Gabriel - Yes | Petra - No", 1)
+                    if not gpexists then
+                    System.message("What would you like to save? Gabriel = Yes, Petra = No", 1)
                     local input = System.buttonPressed()
                     if input == "Back" then
+                    break
                     else
                         gp = (input == "Yes") and "gabriel" or "petra"
                         step = 2
                     end
+                else
+                    step = 2
+                end
 
                 elseif step == 2 then
-                    System.message("What would you like to craft? Fishing Pole - Yes | Bow - No", 1)
+                    if not bfexists then
+                    System.message("What would you like to craft? Fishing Pole = Yes, Bow = No", 1)
                     local input = System.buttonPressed()
                     if input == "Back" then
                         step = 1
@@ -70,18 +79,29 @@ else
                         bf = (input == "Yes") and "fishing_pole" or "bow"
                         step = 3
                     end
+                else
+                    step = 3
+                end
 
                 elseif step == 3 then
-                    System.message("Go for Magnus - Yes | Go for Ellegaard - No", 1)
+                    if not emexists then
+                    System.message("Go for Magnus = Yes, Go for Ellegaard = No", 1)
                     local input = System.buttonPressed()
                     if input == "Back" then
                         step = 2
                     else
                         em = (input == "Yes") and "magnus" or "ellegaard"
+                        if not gpexists then wr("gp", gp) end
+                        if not bfexists then wr("bf", bf) end
+                        if not emexists then wr("em", em) end
+                        screen.flip()
+                        return 1
+                    end
+                else
 
-                        wr("gp", gp)
-                        wr("bf", bf)
-                        wr("em", em)
+                        if not gpexists then wr("gp", gp) end
+                        if not bfexists then wr("bf", bf) end
+                        if not emexists then wr("em", em) end
 
                         screen.flip()
                         return 1

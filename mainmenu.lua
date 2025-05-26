@@ -101,7 +101,7 @@ while true do
 
     Image.draw(bg, 0, 0)
     Image.draw(logo, 15, 45, 220, 50, white, 0, 0, 183, 37)
-    Image.draw(psp_buttons, 35, 230, 150, 30, white, 0, 0, 183, 37)
+    Image.draw(psp_buttons, 35, 230, 145, 29, white, 0, 0, 183, 37)
 
     -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
@@ -129,6 +129,20 @@ while true do
     if buttons.pressed(buttons.cross) then	
         if selectedButton == 1 then
             -- play button
+            fade = 0
+            while fade < 255 do
+                screen.clear()
+                Image.draw(bg, 0, 0)
+                Image.draw(logo, 15, 45, 220, 50, white, 0, 0, 183, 37)
+                drawButtons()
+                Image.draw(arrow, arrowX, 107, 14, 22)
+                Image.draw(arrow, arrowX, 137, 14, 22)
+                Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+                Image.draw(psp_buttons, 35, 230, 145, 29, white, 0, 0, 183, 37)
+                screen.drawRect(0, 0, 480, 272, c_black, 0, fade)
+                screen.flip()
+                fade = fade + 8
+            end
 	        fade_enabled = 0
 	        local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
             if epmenu == 1 then

@@ -1,4 +1,4 @@
--- writes content to a file in assets/saves
+-- only assets/saves path
 function wr(fileName, content)
     if type(fileName) ~= "string" or fileName == "" then return end
     if type(content) ~= "string" then return end
@@ -13,7 +13,7 @@ function wr(fileName, content)
     System.GC()
 end
 
--- remove files from assets/saves
+
 function rm(...)
     local files = {...}
     if #files == 0 then return end
@@ -30,4 +30,29 @@ function rm(...)
     end
 
     System.GC()
+end
+-- any path
+function checkFile(filePath, globalVarName)
+    local file = io.open(filePath, "r")
+    if not file then return false end
+    local content = file:read("*l")
+    file:close()
+    globalVarName = content
+    return true
+end
+function fileExists(filePath)
+    local file = io.open(filePath, "r")
+    if file then
+        file:close()
+        return true
+    else
+        return false
+    end
+end
+function cnt(filePath)
+    local file = io.open(filePath, "r")
+    if not file then return false end
+    local content = file:read("*l")
+    file:close()
+    return content
 end

@@ -1,3 +1,4 @@
+wr("2_status", "restart")
 PMP.setVolume(pmpvolume)
 PMP.play('assets/video/episode2/petra/5/be_careful.pmp', buttons.r)
 PMP.setVolume(pmpvolume)

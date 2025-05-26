@@ -3,6 +3,18 @@ if path then
     PMP.setVolume(pmpvolume)
     PMP.play("assets/mainmenu/loading.pmp")
     nextscene = path.data
+
+    local variablesFile = io.open("assets/saves/1_variables.txt", "r")
+    if variablesFile then
+        for line in variablesFile:lines() do
+            local key, value = line:match("^(%w+) = \"([^\"]+)\"$")
+            if key and value then
+                _G[key] = value
+            end
+        end
+        variablesFile:close()
+    end
+
     return 1
 end
 
