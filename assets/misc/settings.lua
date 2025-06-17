@@ -73,27 +73,27 @@ while true do
 
     if buttons.pressed(buttons.cross) then    
         if selectedButton == 1 then
-            -- controls button
+            -- 'controls' button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/controls.lua")
         elseif selectedButton == 2 then
-            -- audio/video button
+            -- 'audio/video' button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/audio_video.lua")
         elseif selectedButton == 3 then
-            -- debug button
+            -- 'debug' button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/debug.lua")
         elseif selectedButton == 4 then
-            -- credits button
+            -- 'credits' button
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/credits_episodes.lua")
         elseif selectedButton == 5 then
-            -- previous menu button
+            -- 'previous menu' button
             unloadButtons()
             Image.unload(bg)
 	        Image.unload(settingstext)

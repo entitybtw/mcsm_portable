@@ -39,15 +39,15 @@ for i = 1, 5 do
 end
 
 for i = 1, 5 do
-    local s = cnt("assets/saves/" .. i .. "_status.txt")
-    if s == "continue" or s == "restart" then
-        _G["status_" .. i] = s
-    end
-end
-
-for i = 1, 5 do
-    if cnt("assets/saves/" .. i .. "_status.txt") == "continue" then
-        _G["status_" .. i] = "continue"
+    if hasStart(i) then
+        local s = cnt("assets/saves/" .. i .. "_status.txt")
+        if s == "continue" or s == "restart" or s == "start" then
+            _G["status_" .. i] = s
+        else
+            _G["status_" .. i] = "start"
+        end
+    else
+        _G["status_" .. i] = "soon"
     end
 end
 

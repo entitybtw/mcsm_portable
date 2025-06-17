@@ -155,19 +155,19 @@ while true do
                 break
             end
         elseif selectedButton == 2 then
-            -- support button
+            -- 'support' button
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
-            -- credits button
+            -- 'credits' button
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volume(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/credits.lua")
         elseif selectedButton == 4 then
-            -- settings button
+            -- 'settings' button
 	        fade_enabled = 0
             sound.play("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volume(sound.WAV_1, uiLevel * 10)

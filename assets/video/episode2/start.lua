@@ -1,12 +1,3 @@
-local path = System.LoadData("assets/mainmenu/saves_bg.png")
-if path then
-    PMP.setVolume(pmpvolume)
-    PMP.play("assets/mainmenu/loading.pmp")
-    nextscene = path.data
-    return 1
-end
-
-
 local file = io.open("assets/saves/em.txt", "r")
 if file then
     em = file:read("*l")
@@ -39,6 +30,13 @@ if em and gp and bf then
         nextscene = "assets/video/episode2/magnus/start.lua"
         return 1
     end
+local path = System.LoadData("assets/mainmenu/saves_bg.png")
+if path and em and gp and bf then
+    PMP.setVolume(pmpvolume)
+    PMP.play("assets/mainmenu/loading.pmp")
+    nextscene = path.data
+    return 1
+end
 else
     while true do
         screen.clear()

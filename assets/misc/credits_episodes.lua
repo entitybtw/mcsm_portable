@@ -77,31 +77,31 @@ while true do
 
     if buttons.pressed(buttons.cross) then    
         if selectedButton == 1 then
-            -- episode 1 button
+            -- 'episode 1' button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep1.pmp', buttons.start)
 	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 2 then
-            -- episode 2 button
+            -- 'episode 2' button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep2.pmp', buttons.start)
 	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 3 then
-            -- episode 3 button
+            -- 'episode 3' button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep3.pmp', buttons.start)
 	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 4 then
-            -- episode 4 button
+            -- 'episode 4' button
 	        PMP.setVolume(pmpvolume)
 	        sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep4.pmp', buttons.start)
 	    sound.volume(sound.MP3, menumusic * 10)
         elseif selectedButton == 5 then
-            -- episode 5 button
+            -- 'episode 5' button
 	        PMP.setVolume(pmpvolume)
             sound.volume(sound.MP3, 0)
             PMP.play('assets/video/credits/ep5.pmp', buttons.start)

@@ -1,4 +1,3 @@
--- load images
 local bg = Image.load("assets/mainmenu/bg.png")
 local audiovideotext = Image.load("assets/mainmenu/settings/audiovideo_text.png")
 local hints = {
@@ -6,24 +5,14 @@ local hints = {
     video = Image.load("assets/mainmenu/settings/pmpvideos_text.png"),
     ui = Image.load("assets/mainmenu/settings/uisounds_text.png")
 }
-local function preloadImages(prefix, suffix, count)
-    local list = {}
-    for i = 0, count do
-        list[i + 1] = Image.load("assets/mainmenu/settings/" .. string.format("%s%d%s", prefix, i, suffix))
-    end
-    return list
-end
-local staticImages       = preloadImages("menumusic_", "_static.png", 10)
-local selectedImages     = preloadImages("menumusic_", "_selected.png", 10)
-local videoStaticImages  = preloadImages("pmpvideos_", "_static.png", 10)
-local videoSelectedImages= preloadImages("pmpvideos_", "_selected.png", 10)
-local uiStaticImages     = preloadImages("uisounds_", "_static.png", 10)
-local uiSelectedImages   = preloadImages("uisounds_", "_selected.png", 10)
+
+local musicSpritesheet = Image.load("assets/mainmenu/settings/menumusic_spritesheet.png")
+local videoSpritesheet = Image.load("assets/mainmenu/settings/pmpvideos_spritesheet.png")
+local uiSpritesheet = Image.load("assets/mainmenu/settings/uisounds_spritesheet.png")
 
 local sliderStatic   = Image.load("assets/mainmenu/settings/slider_static.png")
 local sliderSelected = Image.load("assets/mainmenu/settings/slider_selected.png")
 
--- generate slider positions
 local function generatePositions(yPos)
     local positions = {}
     for i = 0, 10 do
@@ -32,7 +21,6 @@ local function generatePositions(yPos)
     return positions
 end
 
--- load levels function
 local function loadLevels(path)
     local file = io.open(path, "r")
     if file then
@@ -46,11 +34,9 @@ local function loadLevels(path)
             return savedLevels[1], savedLevels[2], savedLevels[3]
         end
     end
-    return 5, 5, 5 -- default levels
+    return 5, 5, 5
 end
 
-
--- save levels function
 local function saveLevels(path, levels)
     local file = io.open(path, "w")
     if file then
@@ -61,17 +47,14 @@ local function saveLevels(path, levels)
     end
 end
 
--- load levels
 local menumusic, pmpvideos, uiLevel = loadLevels("assets/saves/soundlevels.txt")
 
--- slider data structure
 local sliders = {
     {
         name = "Music",
         level = menumusic,
         positions = generatePositions(55),
-        staticImages = staticImages,
-        selectedImages = selectedImages,
+        spritesheet = musicSpritesheet,
         apply = function(level) sound.volume(sound.MP3, level * 10) end,
         hint = hints.music
     },
@@ -79,8 +62,7 @@ local sliders = {
         name = "Video",
         level = pmpvideos,
         positions = generatePositions(85),
-        staticImages = videoStaticImages,
-        selectedImages = videoSelectedImages,
+        spritesheet = videoSpritesheet,
         apply = function(level) pmpvolume = level * 10 end,
         hint = hints.video
     },
@@ -88,14 +70,12 @@ local sliders = {
         name = "UI",
         level = uiLevel,
         positions = generatePositions(115),
-        staticImages = uiStaticImages,
-        selectedImages = uiSelectedImages,
+        spritesheet = uiSpritesheet,
         apply = function(level) sound.volume(sound.WAV_1, level * 10) end,
         hint = hints.ui
     }
 }
 
--- apply volume
 for _, slider in ipairs(sliders) do
     slider.apply(slider.level)
 end
@@ -110,10 +90,18 @@ local prevMenu = {
 local selectedIndex = 1
 local inPrev = false
 
+local function drawSpriteFromSheet(sheet, level, isSelected, x, y)
+    local spriteWidth = 180
+    local spriteHeight = 26
+    local srcx = isSelected and 0 or 180
+    local invertedLevel = 10 - level
+    local srcy = invertedLevel * spriteHeight
+    Image.draw(sheet, x, y, spriteWidth, spriteHeight, nil, srcx, srcy, spriteWidth, spriteHeight)
+end
+
 local function drawSlider(slider, isSelected)
     local level = slider.level
-    local img = isSelected and slider.selectedImages[level + 1] or slider.staticImages[level + 1]
-    if img then Image.draw(img, 35, slider.positions[1].y) end
+    drawSpriteFromSheet(slider.spritesheet, level, isSelected, 35, slider.positions[1].y)
     local pos = slider.positions[level + 1]
     local sliderImg = isSelected and sliderSelected or sliderStatic
     if sliderImg then
@@ -150,7 +138,6 @@ drawui()
 while true do
     buttons.read()
 
-    -- navigation logic
     if buttons.pressed(buttons.down) then
         if not inPrev then
             if selectedIndex < #sliders then
@@ -160,6 +147,7 @@ while true do
             end
         end
         sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.volume(sound.WAV_1, sliders[3].level * 10)
         drawui()
     elseif buttons.pressed(buttons.up) then
         if inPrev then
@@ -168,10 +156,10 @@ while true do
             selectedIndex = selectedIndex - 1
         end
         sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.volume(sound.WAV_1, sliders[3].level * 10)
         drawui()
     end
 
-    -- slider logic
     if not inPrev then
         local slider = sliders[selectedIndex]
         local changed = false
@@ -188,7 +176,6 @@ while true do
         end
     end
 
-    -- confirm and exit
     if inPrev and buttons.pressed(buttons.cross) then
         local levelsToSave = {}
         for _, slider in ipairs(sliders) do
@@ -196,27 +183,16 @@ while true do
         end
         saveLevels("assets/saves/soundlevels.txt", levelsToSave)
 
-        -- unload images function
-        local function unloadList(list)
-            for i = 1, #list do
-                if list[i] then Image.unload(list[i]) end
-            end
-        end
-
-        -- unload images
-        unloadList(staticImages)
-        unloadList(selectedImages)
-        unloadList(videoStaticImages)
-        unloadList(videoSelectedImages)
-        unloadList(uiStaticImages)
-        unloadList(uiSelectedImages)
-
         if bg then Image.unload(bg) end
         if sliderStatic then Image.unload(sliderStatic) end
         if sliderSelected then Image.unload(sliderSelected) end
         if prevMenu.static then Image.unload(prevMenu.static) end
         if prevMenu.selected then Image.unload(prevMenu.selected) end
         if audiovideotext then Image.unload(audiovideotext) end
+
+        if musicSpritesheet then Image.unload(musicSpritesheet) end
+        if videoSpritesheet then Image.unload(videoSpritesheet) end
+        if uiSpritesheet then Image.unload(uiSpritesheet) end
 
         for _, img in pairs(hints) do
             if img then Image.unload(img) end
