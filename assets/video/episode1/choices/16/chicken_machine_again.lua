@@ -1,19 +1,15 @@
 local choosing = true
-local img = Image.load('assets/video/episode1/choices/16/chicken_machine_again.png')
+local img = Image.load('assets/video/episode1/choices/16/chicken_machine_2.png')
 local cm_button = buttons.circle
 local cm_script = "assets/video/episode1/choices/16/slime.lua"
-if slime == "off" then
-    img = Image.load('assets/video/episode1/choices/16/chicken_machine_again.png')
-    cm_button = buttons.circle
-    cm_script = "assets/video/episode1/choices/16/slime.lua"
-elseif slime == "on" then
-    img = Image.load('assets/video/episode1/choices/16/chicken_machine_slime_again.png')
+if slime == "on" then
+    img = Image.load('assets/video/episode1/choices/16/chicken_machine_2_slime.png')
     cm_button = buttons.cross
     cm_script = "assets/video/episode1/choices/16/lukas.lua"
 end
 
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode1/choices/16/chicken_machine_again.pmp', buttons.r)
+PMP.play('assets/video/episode1/choices/16/chicken_machine_2.pmp', buttons.r)
 
 screen.clear()
 Image.draw(img, 0, 0)
@@ -24,7 +20,11 @@ screen.flip()
 while choosing do
     buttons.read()
 
-    if buttons.pressed(cm_button) then
+    if buttons.pressed(buttons.square) then
+        Image.unload(img)
+        choosing = false
+        nextscene =  "assets/video/episode1/choices/16/chicken_machine.lua"
+    elseif buttons.pressed(cm_button) then
         Image.unload(img)
         choosing = false
         nextscene = cm_script

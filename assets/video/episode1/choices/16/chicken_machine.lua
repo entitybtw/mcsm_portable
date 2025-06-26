@@ -2,11 +2,7 @@ local choosing = true
 local img = Image.load('assets/video/episode1/choices/16/chicken_machine.png')
 local cm_button = buttons.circle
 local cm_script = "assets/video/episode1/choices/16/slime.lua"
-if slime == "off" then
-    img = Image.load('assets/video/episode1/choices/16/chicken_machine.png')
-    cm_button = buttons.circle
-    cm_script = "assets/video/episode1/choices/16/slime.lua"
-elseif slime == "on" then
+if slime == "on" then
     img = Image.load('assets/video/episode1/choices/16/chicken_machine_slime.png')
     cm_button = buttons.cross
     cm_script = "assets/video/episode1/choices/16/lukas.lua"
