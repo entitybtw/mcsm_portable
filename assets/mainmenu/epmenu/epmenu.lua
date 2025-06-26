@@ -99,7 +99,7 @@ while true do
     end
 
     if buttons.pressed(buttons["square"]) then
-        if curEp ~= 1 then
+        if curEp ~= 1 and curEp ~= 3 then
             System.DeleteData("assets/mainmenu/saves_bg.png")
             rm(curEp .. "_status")
             _G["status_" .. curEp] = "start"
@@ -125,6 +125,23 @@ while true do
                 PMP.setVolume(pmpvolume)
                 PMP.play("assets/mainmenu/epmenu/ep1_start.pmp")
             end
+        elseif curEp == 3 then -- if the 1st episode is selected and the square button is pressed, a question appears about deleting key saves or regular saves
+                System.message("Do you want to delete the save files for episode 3, or just the key save files? Save files - Yes, Key save files - No", 1) -- if you clicking yes, opens usual saves management menu, if you click no, all key saves are being deleted, if you click back it returns to episode menu
+                local answer = System.buttonPressed()
+                if answer == "Yes" then
+                    System.DeleteData("assets/mainmenu/saves_bg.png")
+                    rm("3_status")
+                    status_3 = "start"
+                    PMP.setVolume(pmpvolume)
+                    PMP.play("assets/mainmenu/epmenu/ep3_start.pmp")
+                elseif answer == "No" then
+                    rm("ema")
+                    PMP.setVolume(pmpvolume)
+                    PMP.play("assets/mainmenu/epmenu/ep3_start.pmp")
+                elseif answer == "Back" then
+                    PMP.setVolume(pmpvolume)
+                    PMP.play("assets/mainmenu/epmenu/ep3_start.pmp")
+                end
         end
     end
 
