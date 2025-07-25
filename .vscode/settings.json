@@ -1,0 +1,8 @@
+{
+    "Lua.workspace.library": [
+        "/home/entitybtw/vscode/LLS",
+        "${addons}/LuaPlayerYT/module/library"
+    ],
+    "Lua.runtime.version": "Lua 5.1",
+    "Lua.workspace.checkThirdParty": false
+}

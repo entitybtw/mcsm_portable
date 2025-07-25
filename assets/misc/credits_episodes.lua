@@ -1,6 +1,3 @@
-local bg = Image.load('assets/mainmenu/bg.png') -- load bg
-local creditstext = Image.load("assets/mainmenu/settings/viewcredits_text.png") -- load creditstext
-
 -- load buttons
 local buttonsList = {
     {
@@ -22,26 +19,17 @@ local buttonsList = {
     {
         static = Image.load("assets/buttons/EP5_ENG_STATIC.png"),
         selected = Image.load("assets/buttons/EP5_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/PREVIOUSMENU_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/PREVIOUSMENU_ENG_SELECTED.png")
     }
 }
 
 local selectedButton = 1
+local buttonz = Image.load("assets/mainmenu/previousmenu_eng.png")
 
 -- Function to draw buttons
 local function drawButtons()
     for i, button in ipairs(buttonsList) do
         local x = 35                 -- horizontal position for all buttons
         local y = 50 + (i - 1) * 30 -- vertical spacing between buttons
-
-        -- if its last button, add extra space
-        if i == #buttonsList then
-            y = 20 + (i - 1) * 30 + 50
-            x = 0
-        end
 
         if i == selectedButton then
             Image.draw(button.selected, x, y)
@@ -63,63 +51,86 @@ while true do
     screen.clear()
     buttons.read()
 
-    Image.draw(bg, 0, 0)
+    if PMP.getFrame(videoFrame) then
+        Image.draw(videoFrame, 0, 0)
+    end
 
     -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
-        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
     end
     if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
         selectedButton = selectedButton + 1
-        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
     end
 
     if buttons.pressed(buttons.cross) then    
         if selectedButton == 1 then
             -- 'episode 1' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volume(sound.MP3, 0)
-            PMP.play('assets/video/credits/ep1.pmp', buttons.start)
-	    sound.volume(sound.MP3, menumusic * 10)
+	        sound.volumeEasy(sound.MP3, 0)
+            PMP.stop(videoFrame)
+            sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            PMP.play('assets/video/credits/ep1.pmp', false, nil, buttons.start)
+            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+	    sound.volumeEasy(sound.MP3, menumusic * 10)
         elseif selectedButton == 2 then
             -- 'episode 2' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volume(sound.MP3, 0)
-            PMP.play('assets/video/credits/ep2.pmp', buttons.start)
-	    sound.volume(sound.MP3, menumusic * 10)
+	        sound.volumeEasy(sound.MP3, 0)
+            PMP.stop(videoFrame)
+            sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            PMP.play('assets/video/credits/ep2.pmp', false, nil, buttons.start)
+            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+	    sound.volumeEasy(sound.MP3, menumusic * 10)
         elseif selectedButton == 3 then
             -- 'episode 3' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volume(sound.MP3, 0)
-            PMP.play('assets/video/credits/ep3.pmp', buttons.start)
-	    sound.volume(sound.MP3, menumusic * 10)
+	        sound.volumeEasy(sound.MP3, 0)
+            PMP.stop(videoFrame)
+            sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            PMP.play('assets/video/credits/ep3.pmp', false, nil, buttons.start)
+            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+	    sound.volumeEasy(sound.MP3, menumusic * 10)
         elseif selectedButton == 4 then
             -- 'episode 4' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volume(sound.MP3, 0)
-            PMP.play('assets/video/credits/ep4.pmp', buttons.start)
-	    sound.volume(sound.MP3, menumusic * 10)
+	        sound.volumeEasy(sound.MP3, 0)
+            PMP.stop(videoFrame)
+            sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            PMP.play('assets/video/credits/ep4.pmp', false, nil, buttons.start)
+            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+	    sound.volumeEasy(sound.MP3, menumusic * 10)
         elseif selectedButton == 5 then
             -- 'episode 5' button
 	        PMP.setVolume(pmpvolume)
-            sound.volume(sound.MP3, 0)
-            PMP.play('assets/video/credits/ep5.pmp', buttons.start)
-	    sound.volume(sound.MP3, menumusic * 10)
-        elseif selectedButton == 6 then
-            -- previous menu button
-            unloadButtons()
-            Image.unload(bg)
-	        Image.unload(creditstext)
-            sound.play("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-            sound.volume(sound.WAV_1, uiLevel * 10)
-            break
+            sound.volumeEasy(sound.MP3, 0)
+            PMP.stop(videoFrame)
+            sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            PMP.play('assets/video/credits/ep5.pmp', false, nil, buttons.start)
+            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+	    sound.volumeEasy(sound.MP3, menumusic * 10)
         end
+    end
+    if buttons.pressed(buttons.circle) then
+        sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
+        unloadButtons()
+        Image.unload(buttonz)
+        break
     end
 
     drawButtons() -- draw buttons
-    Image.draw(creditstext, 10, 38, 120, 13) -- draw creditstext
     
     debugoverlay.draw(debugoverlay.loadSettings())
+    intraFont.print(40, 40, "Credits", Color.new(255, 255, 255), font, 0.3)
+    Image.draw(buttonz, 35, 230, 145, 29)
     screen.flip()
 end

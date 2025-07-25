@@ -1,18 +1,28 @@
 local choosing = true
-local img = Image.load('assets/video/episode1/choices/16/chicken_machine_2.png')
+local square = Image.load("assets/icons/square.png")
+local cross = nil
+local circle = nil
 local cm_button = buttons.circle
 local cm_script = "assets/video/episode1/choices/16/slime.lua"
+PMP.setVolume(pmpvolume)
+PMP.playEasy('assets/video/episode1/choices/16/chicken_machine_2.pmp', buttons.r, true, 'assets/video/episode1/choices/16/chicken_machine_2.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+
 if slime == "on" then
-    img = Image.load('assets/video/episode1/choices/16/chicken_machine_2_slime.png')
+    cross = Image.load("assets/icons/cross.png")
+    circle = Image.load("assets/icons/circle.png")
+    Image.draw(circle, 334, 153)
+    intraFont.print(334 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 153 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
+    Image.draw(cross, 141, 139)
+    intraFont.print(141 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 139 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
     cm_button = buttons.cross
     cm_script = "assets/video/episode1/choices/16/lukas.lua"
+elseif slime == "off" then
+    circle = Image.load("assets/icons/circle.png")
+    Image.draw(circle, 141, 139)
+    intraFont.print(141 - intraFont.textW(font, "Slime", 0.4) / 2 + 8, 139 + 14, "Slime", Color.new(255,255,255), font, 0.4)
 end
-
-PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode1/choices/16/chicken_machine_2.pmp', buttons.r)
-
-screen.clear()
-Image.draw(img, 0, 0)
+Image.draw(square, 221, 122)
+intraFont.print(221 - intraFont.textW(font, "Chicken Machine", 0.4) / 2 + 8, 122 + 14, "Chicken Machine", Color.new(255,255,255), font, 0.4)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
@@ -21,23 +31,28 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(img)
+        Image.unload(square)
+        if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         nextscene =  "assets/video/episode1/choices/16/chicken_machine.lua"
     elseif buttons.pressed(cm_button) then
-        Image.unload(img)
+        Image.unload(square)
+        if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         nextscene = cm_script
     elseif slime == "on" and buttons.pressed(buttons.circle) then
-        Image.unload(img)
+        Image.unload(square)
+        if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         nextscene =  "assets/video/episode1/choices/16/crafting_table.lua"
     elseif buttons.pressed(buttons.l) then
-        Image.unload(img)
+        Image.unload(square)
+        if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         nextscene =  "./mainmenu.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(img)
+        Image.unload(square)
+        if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         SaveGame(1)
         nextscene =  "./mainmenu.lua"

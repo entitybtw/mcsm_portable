@@ -33,7 +33,7 @@ if em and gp and bf then
 local path = System.LoadData("assets/mainmenu/saves_bg.png")
 if path and em and gp and bf then
     PMP.setVolume(pmpvolume)
-    PMP.play("assets/mainmenu/loading.pmp")
+    PMP.playEasy("assets/mainmenu/loading.pmp")
     nextscene = path.data
     return 1
 end

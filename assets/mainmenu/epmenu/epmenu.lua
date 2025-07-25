@@ -1,6 +1,6 @@
 -- initialize variables
 local animType = "r"
-curEp = 1
+local curEp = 1
 local latestContinue = 0
 
 if not fileExists("assets/saves/lastep.txt") then
@@ -147,6 +147,7 @@ while true do
 
     if buttons.pressed(buttons["circle"]) then
         wr("lastep", tostring(curEp))
+        videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
         return 0
     end
 end

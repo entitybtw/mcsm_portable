@@ -1,6 +1,6 @@
 wr("3_status", "restart")
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode3/petra/choices/18/ellegaard/2/this_armor_is_yours.pmp', buttons.r)
+PMP.playEasy('assets/video/episode3/petra/choices/18/ellegaard/2/this_armor_is_yours.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/18/ellegaard/2/this_armor_is_yours.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/credits/ep3.pmp', buttons.start)
+PMP.playEasy('assets/video/credits/ep3.pmp', buttons.start, true, 'assets/video/credits/ep3.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 nextscene =  "./mainmenu.lua"

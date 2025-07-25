@@ -1,17 +1,67 @@
-local bg = Image.load("assets/mainmenu/bg.png")
-local audiovideotext = Image.load("assets/mainmenu/settings/audiovideo_text.png")
+-- Глобальные переменные
+subs = true
+subssize = 0.4
+
+local subtitleSavePath = "assets/saves/subtitles.txt"
+
+local function loadSubtitles()
+    local file = io.open(subtitleSavePath, "r")
+    if file then
+        local s = file:read("*l")
+        local size = tonumber(file:read("*l"))
+        subs = (s == "true")
+        subssize = size or 0.4
+        file:close()
+    end
+end
+
+local function saveSubtitles()
+    local file = io.open(subtitleSavePath, "w")
+    if file then
+        file:write(tostring(subs) .. "\n")
+        file:write(tostring(subssize) .. "\n")
+        file:close()
+    end
+end
+
+loadSubtitles()
+
+local subssizeOptions = {0.35, 0.4, 0.415}
+local subssizeIndex = 2
+for i, v in ipairs(subssizeOptions) do
+    if v == subssize then
+        subssizeIndex = i
+        break
+    end
+end
+
 local hints = {
-    music = Image.load("assets/mainmenu/settings/menumusic_text.png"),
-    video = Image.load("assets/mainmenu/settings/pmpvideos_text.png"),
-    ui = Image.load("assets/mainmenu/settings/uisounds_text.png")
+    music = "Adjust the Main Menu Music volume",
+    video = "Adjust the PMP Videos volume",
+    ui = "Adjust the UI Sounds volume",
+    subs = "Displays subtitles at the bottom of the screen",
+    subssize = "Adjust the size of the subtitles"
 }
 
+local buttonz = Image.load("assets/mainmenu/previousmenu_eng.png")
 local musicSpritesheet = Image.load("assets/mainmenu/settings/menumusic_spritesheet.png")
 local videoSpritesheet = Image.load("assets/mainmenu/settings/pmpvideos_spritesheet.png")
 local uiSpritesheet = Image.load("assets/mainmenu/settings/uisounds_spritesheet.png")
 
 local sliderStatic   = Image.load("assets/mainmenu/settings/slider_static.png")
 local sliderSelected = Image.load("assets/mainmenu/settings/slider_selected.png")
+
+local subsOnStatic = Image.load("assets/buttons/DISPSUBSON_ENG_STATIC.png")
+local subsOnSelected = Image.load("assets/buttons/DISPSUBSON_ENG_SELECTED.png")
+local subsOffStatic = Image.load("assets/buttons/DISPSUBSOFF_ENG_STATIC.png")
+local subsOffSelected = Image.load("assets/buttons/DISPSUBSOFF_ENG_SELECTED.png")
+
+local subSmallStatic = Image.load("assets/buttons/SUBSSMALL_ENG_STATIC.png")
+local subSmallSelected = Image.load("assets/buttons/SUBSSMALL_ENG_SELECTED.png")
+local subMediumStatic = Image.load("assets/buttons/SUBSMEDIUM_ENG_STATIC.png")
+local subMediumSelected = Image.load("assets/buttons/SUBSMEDIUM_ENG_SELECTED.png")
+local subLargeStatic = Image.load("assets/buttons/SUBSLARGE_ENG_STATIC.png")
+local subLargeSelected = Image.load("assets/buttons/SUBSLARGE_ENG_SELECTED.png")
 
 local function generatePositions(yPos)
     local positions = {}
@@ -30,9 +80,7 @@ local function loadLevels(path)
             table.insert(savedLevels, level)
         end
         file:close()
-        if savedLevels[1] and savedLevels[2] and savedLevels[3] then
-            return savedLevels[1], savedLevels[2], savedLevels[3]
-        end
+        return unpack(savedLevels)
     end
     return 5, 5, 5
 end
@@ -55,8 +103,8 @@ local sliders = {
         level = menumusic,
         positions = generatePositions(55),
         spritesheet = musicSpritesheet,
-        apply = function(level) sound.volume(sound.MP3, level * 10) end,
-        hint = hints.music
+        apply = function(level) sound.volumeEasy(sound.MP3, level * 10) end,
+        hintText = hints.music
     },
     {
         name = "Video",
@@ -64,15 +112,15 @@ local sliders = {
         positions = generatePositions(85),
         spritesheet = videoSpritesheet,
         apply = function(level) pmpvolume = level * 10 end,
-        hint = hints.video
+        hintText = hints.video
     },
     {
         name = "UI",
         level = uiLevel,
         positions = generatePositions(115),
         spritesheet = uiSpritesheet,
-        apply = function(level) sound.volume(sound.WAV_1, level * 10) end,
-        hint = hints.ui
+        apply = function(level) sound.volumeEasy(sound.WAV_1, level * 10) end,
+        hintText = hints.ui
     }
 }
 
@@ -80,15 +128,8 @@ for _, slider in ipairs(sliders) do
     slider.apply(slider.level)
 end
 
-local prevMenu = {
-    static = Image.load("assets/buttons/PREVIOUSMENU_ENG_STATIC.png"),
-    selected = Image.load("assets/buttons/PREVIOUSMENU_ENG_SELECTED.png"),
-    x = 0,
-    y = 220
-}
-
 local selectedIndex = 1
-local inPrev = false
+local totalItems = #sliders + 2
 
 local function drawSpriteFromSheet(sheet, level, isSelected, x, y)
     local spriteWidth = 180
@@ -104,102 +145,127 @@ local function drawSlider(slider, isSelected)
     drawSpriteFromSheet(slider.spritesheet, level, isSelected, 35, slider.positions[1].y)
     local pos = slider.positions[level + 1]
     local sliderImg = isSelected and sliderSelected or sliderStatic
-    if sliderImg then
-        Image.draw(sliderImg, pos.x, pos.y, nil, nil, nil, nil, nil, nil, nil, nil, 190)
+    Image.draw(sliderImg, pos.x, pos.y, nil, nil, nil, nil, nil, nil, nil, nil, 190)
+end
+
+local function drawSubsToggle(isSelected)
+    local x = 36
+    local y = 140
+    if subs then
+        Image.draw(isSelected and subsOnSelected or subsOnStatic, x, y, 179, 37)
+    else
+        Image.draw(isSelected and subsOffSelected or subsOffStatic, x, y, 179, 37)
+    end
+end
+
+local function drawSubsSize(isSelected)
+    local x = 36
+    local y = 170
+    if subssizeIndex == 1 then
+        Image.draw(isSelected and subSmallSelected or subSmallStatic, x, y, 179, 37)
+    elseif subssizeIndex == 2 then
+        Image.draw(isSelected and subMediumSelected or subMediumStatic, x, y, 179, 37)
+    else
+        Image.draw(isSelected and subLargeSelected or subLargeStatic, x, y, 179, 37)
     end
 end
 
 local function drawui()
-    screen.clear()
-    if bg then Image.draw(bg, 0, 0) end
-    if audiovideotext then Image.draw(audiovideotext, 35, 38, 120, 13) end
+    intraFont.print(40, 40, "Audio/Video Settings", Color.new(255, 255, 255), font, 0.3)
 
     for i, slider in ipairs(sliders) do
-        drawSlider(slider, (i == selectedIndex) and not inPrev)
+        drawSlider(slider, i == selectedIndex)
     end
 
-    local hintImg = nil
-    if not inPrev then
-        hintImg = sliders[selectedIndex].hint
-    end
-    if hintImg then
-        Image.draw(hintImg, 35, prevMenu.y - 10)
+    drawSubsToggle(selectedIndex == #sliders + 1)
+    drawSubsSize(selectedIndex == #sliders + 2)
+
+    local hintText
+    if selectedIndex <= #sliders then
+        hintText = sliders[selectedIndex].hintText
+    elseif selectedIndex == #sliders + 1 then
+        hintText = hints.subs
+    elseif selectedIndex == #sliders + 2 then
+        hintText = hints.subssize
     end
 
-    local prevImg = inPrev and prevMenu.selected or prevMenu.static
-    if prevImg then Image.draw(prevImg, prevMenu.x, prevMenu.y) end
+    if hintText then
+        intraFont.setStyle(font, 0.6, Color.new(255, 255, 255), 0, intraFont.ALIGN_LEFT)
+        intraFont.print(43, 222, hintText, Color.new(255,255,255), font, 0.3)
+    end
 
     debugoverlay.draw(debugoverlay.loadSettings())
-    screen.flip()
 end
 
 drawui()
 
 while true do
     buttons.read()
+    screen.clear()
+    if PMP.getFrame(videoFrame) then
+        Image.draw(videoFrame, 0, 0)
+    end
+    Image.draw(buttonz, 32, 230, 145, 29)
+    drawui()
+    screen.flip()
 
-    if buttons.pressed(buttons.down) then
-        if not inPrev then
-            if selectedIndex < #sliders then
-                selectedIndex = selectedIndex + 1
-            else
-                inPrev = true
-            end
-        end
-        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
-        sound.volume(sound.WAV_1, sliders[3].level * 10)
-        drawui()
-    elseif buttons.pressed(buttons.up) then
-        if inPrev then
-            inPrev = false
-        elseif selectedIndex > 1 then
-            selectedIndex = selectedIndex - 1
-        end
-        sound.play("assets/sounds/select.wav", sound.WAV_1, false, false)
-        sound.volume(sound.WAV_1, sliders[3].level * 10)
-        drawui()
+    if buttons.pressed(buttons.down) and selectedIndex < totalItems then
+        selectedIndex = selectedIndex + 1
+        sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+    elseif buttons.pressed(buttons.up) and selectedIndex > 1 then
+        selectedIndex = selectedIndex - 1
+        sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
     end
 
-    if not inPrev then
+    if selectedIndex <= #sliders then
         local slider = sliders[selectedIndex]
-        local changed = false
         if buttons.pressed(buttons.left) and slider.level > 0 then
             slider.level = slider.level - 1
-            changed = true
+            slider.apply(slider.level)
         elseif buttons.pressed(buttons.right) and slider.level < 10 then
             slider.level = slider.level + 1
-            changed = true
-        end
-        if changed then
             slider.apply(slider.level)
-            drawui()
+        end
+    elseif selectedIndex == #sliders + 1 then
+        if buttons.pressed(buttons.cross) then
+            subs = not subs
+            saveSubtitles()
+        end
+    elseif selectedIndex == #sliders + 2 then
+        if buttons.pressed(buttons.cross) then
+            subssizeIndex = subssizeIndex % #subssizeOptions + 1
+            subssize = subssizeOptions[subssizeIndex]
+            saveSubtitles()
         end
     end
 
-    if inPrev and buttons.pressed(buttons.cross) then
+    if buttons.pressed(buttons.circle) then
         local levelsToSave = {}
         for _, slider in ipairs(sliders) do
             table.insert(levelsToSave, slider.level)
         end
         saveLevels("assets/saves/soundlevels.txt", levelsToSave)
-
-        if bg then Image.unload(bg) end
-        if sliderStatic then Image.unload(sliderStatic) end
-        if sliderSelected then Image.unload(sliderSelected) end
-        if prevMenu.static then Image.unload(prevMenu.static) end
-        if prevMenu.selected then Image.unload(prevMenu.selected) end
-        if audiovideotext then Image.unload(audiovideotext) end
-
-        if musicSpritesheet then Image.unload(musicSpritesheet) end
-        if videoSpritesheet then Image.unload(videoSpritesheet) end
-        if uiSpritesheet then Image.unload(uiSpritesheet) end
-
-        for _, img in pairs(hints) do
-            if img then Image.unload(img) end
-        end
-
-        sound.play("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-        sound.volume(sound.WAV_1, sliders[3].level * 10)
+        saveSubtitles()
+        Image.unload(buttonz)
+        Image.unload(musicSpritesheet)
+        Image.unload(videoSpritesheet)
+        Image.unload(uiSpritesheet)
+        
+        Image.unload(sliderStatic)
+        Image.unload(sliderSelected)
+        
+        Image.unload(subsOnStatic)
+        Image.unload(subsOnSelected)
+        Image.unload(subsOffStatic)
+        Image.unload(subsOffSelected)
+        
+        Image.unload(subSmallStatic)
+        Image.unload(subSmallSelected)
+        Image.unload(subMediumStatic)
+        Image.unload(subMediumSelected)
+        Image.unload(subLargeStatic)
+        Image.unload(subLargeSelected)
+           
         break
     end
 end

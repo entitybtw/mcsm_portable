@@ -1,7 +1,8 @@
 local path = System.LoadData("assets/mainmenu/saves_bg.png")
+-- local font = intraFont.load('assets/minecraft.pgf')
 if path then
     PMP.setVolume(pmpvolume)
-    PMP.play("assets/mainmenu/loading.pmp")
+    PMP.playEasy("assets/mainmenu/loading.pmp")
     nextscene = path.data
 
     local variablesFile = io.open("assets/saves/1_variables.txt", "r")
@@ -18,15 +19,21 @@ if path then
     return 1
 end
 
-local img = Image.load('assets/video/episode1/START.png')
+local square = Image.load('assets/icons/square.png')
+local circle = Image.load('assets/icons/circle.png')
 
 PMP.setVolume(pmpvolume)
-PMP.play('assets/mainmenu/lsave.pmp')
+PMP.playEasy('assets/mainmenu/lsave.pmp')
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode1/START.pmp', buttons.r)
+PMP.playEasy('assets/video/episode1/START.pmp', buttons.r, true, "assets/video/episode1/start.srt", font, subssize, "#FFFFFF", "#000000/150", subs)
 
-screen.clear()
-Image.draw(img, 0, 0)
+Image.draw(square, 25, 127)
+Image.draw(circle, 455, 127)
+
+intraFont.print(25 + 15 + 5, 127, "100 chicken-sized\n \n       zombies", Color.new(255,255,255), font, 0.4)
+
+intraFont.print(455 - 5 - intraFont.textW(font, "10 zombie-sized\n \n       chickens", 0.4), 127, "10 zombie-sized\n \n       chickens", Color.new(255,255,255), font, 0.4)
+
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
@@ -34,15 +41,18 @@ while true do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(img)
+        Image.unload(square)
+        Image.unload(circle)
         nextscene =  "assets/video/episode1/100_chicken_sized.lua"
         break
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(img)
+        Image.unload(square)
+        Image.unload(circle)
         nextscene =  "assets/video/episode1/10_zombie_sized.lua"
         break
     elseif buttons.pressed(buttons.l) then
-        Image.unload(img)
+        Image.unload(square)
+        Image.unload(circle)
 	    nextscene =  "./mainmenu.lua"
         break
     end

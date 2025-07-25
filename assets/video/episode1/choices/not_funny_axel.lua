@@ -1,11 +1,15 @@
 local choosing = true
-local img = Image.load('assets/video/episode1/choices/not_funny_axel.png')
+local square = Image.load('assets/icons/square.png')
+local circle = Image.load('assets/icons/circle.png')
+
 
 PMP.setVolume(pmpvolume)
-PMP.play('assets/video/episode1/choices/not_funny_axel.pmp', buttons.r)
+PMP.playEasy('assets/video/episode1/choices/not_funny_axel.pmp', buttons.r, true, 'assets/video/episode1/choices/not_funny_axel.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 
-screen.clear()
-Image.draw(img, 0, 0)
+Image.draw(square, 25, 127)
+Image.draw(circle, 455, 127)
+intraFont.print(25 + 15 + 5, 127, "Gabriel is awesome", Color.new(255,255,255), font, 0.4)
+intraFont.print(455 - 5 - intraFont.textW(font, "No big deal", 0.4), 127, "No big deal", Color.new(255,255,255), font, 0.4)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
@@ -13,19 +17,23 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-	Image.unload(img)
-        choosing = false
+	    Image.unload(square)
+        Image.unload(circle)
+	choosing = false
         nextscene =  "assets/video/episode1/choices/1/gabriel_is_awesome.lua"
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(img)
+        Image.unload(square)
+        Image.unload(circle)
         choosing = false
         nextscene =  "assets/video/episode1/choices/1/no_big_deal.lua"
     elseif buttons.pressed(buttons.l) then
-        Image.unload(img)
+        Image.unload(square)
+        Image.unload(circle)
         choosing = false
         nextscene =  "./mainmenu.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(img)
+        Image.unload(square)
+        Image.unload(circle)
         choosing = false
         SaveGame(1)
         nextscene =  "./mainmenu.lua"
