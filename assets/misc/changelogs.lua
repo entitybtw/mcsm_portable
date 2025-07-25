@@ -4,20 +4,42 @@ local scrollSpeed = 10
 local scrollDelay = 0
 local scrollCooldown = 2
 
-
-
 local function printCenteredLine(y, line, scale)
     local textWidth = intraFont.textW(font, line, scale)
     local x = 240 - (textWidth / 2)
     intraFont.print(x, y, line, Color.new(255, 255, 255), font, scale)
 end
 
+local function printWrappedText(x, y, text, maxWidth, color, font, scale)
+    local spaceW = intraFont.textW(font, " ", scale)
+    local words = {}
+    for word in text:gmatch("%S+") do
+        table.insert(words, word)
+    end
+    local line = ""
+    local lineWidth = 0
+    local lineHeight = 20 * scale + 10
+    local curY = y
+    for i, word in ipairs(words) do
+        local wordWidth = intraFont.textW(font, word, scale)
+        if lineWidth + wordWidth > maxWidth then
+            intraFont.print(x, curY, line, color, font, scale)
+            curY = curY + lineHeight
+            line = word .. " "
+            lineWidth = wordWidth + spaceW
+        else
+            line = line .. word .. " "
+            lineWidth = lineWidth + wordWidth + spaceW
+        end
+    end
+    if line ~= "" then
+        intraFont.print(x, curY, line, color, font, scale)
+        curY = curY + lineHeight
+    end
+    return curY
+end
 
-
-
-local sep = "\n\n------------------------------\n\n"
-
--- changelogs
+local sep = "\n\n\n\n"
 
 local changelog_0_1 = [[
 mcsm_portable 0.1 [prerelease]
@@ -188,6 +210,10 @@ Changed
 - Improved saves system
 
 - Improved Episode Menu
+
+Thanks to
+
+Sei-Sou for converting videos for ellegaard_gabriel storyline
 ]]
 
 local changelog_1_4 = [[
@@ -226,6 +252,10 @@ Fixed
 Removed
 
 - Removed the "Not Yet" screen from the episode menu
+
+Thanks to
+
+@r3trob0y for helping improve the save menu system
 ]]
 
 local changelog_1_5 = [[
@@ -244,6 +274,12 @@ Fixed
 - Optimized audio/video tab in settings
 
 - Optimized Chicken Machine button in 'endercon' interactive zone (episode one)
+
+Thanks to
+
+@r3trob0y for helping optimize audio/video tab in settings
+
+@antim0118 for helping optimize the chicken machine button in 'endercon' interactive zone
 ]]
 
 local combined_changelog = 
@@ -260,7 +296,17 @@ local combined_changelog =
     changelog_0_2 .. sep ..
     changelog_0_1
 
-    
+local colors = {
+    Added = Color.new(150, 220, 150),
+    Changed = Color.new(220, 220, 150),
+    Fixed = Color.new(150, 190, 220),
+    Removed = Color.new(220, 150, 150),
+    DefaultBullet = Color.new(180, 200, 255),
+    Numbered = Color.new(220, 220, 220),
+    Header = Color.new(255, 255, 100),
+    DefaultText = Color.new(255, 255, 255),
+    Thanks = Color.new(100, 180, 160)
+}
 
 while true do
     buttons.read()
@@ -274,7 +320,7 @@ while true do
     elseif buttons.held(buttons.down) then
         scrollDelay = scrollDelay + 1
         if scrollDelay >= scrollCooldown then
-            if scrollY < 1600 then scrollY = scrollY + scrollSpeed end
+            if scrollY < 1660 then scrollY = scrollY + scrollSpeed end
             scrollDelay = 0
         end
     else
@@ -290,30 +336,60 @@ while true do
 
     screen.clear()
     Image.draw(psbg, 0, 0)
-    
-    -- Настройки текста и отступов
+
     local exitText = "Press START to exit"
     local exitScale = 0.3
-    local exitHeight = 10 * exitScale + 20 -- высота строки + отступ
-    local exitY = 275    - exitHeight -- текст прижат к низу
-    
-    -- Ограниченная зона вывода changelog (до текста снизу)
+    local exitHeight = 10 * exitScale + 20
+    local exitY = 275 - exitHeight
+
     local changelogYStart = -scrollY
-    local changelogMaxY = exitY - 10 -- 10px отступ перед надписью
-    
-    -- Рисуем changelog, но только если он не упрется в текст снизу
+    local changelogMaxY = exitY - 10
+
     local y = changelogYStart
     for line in combined_changelog:gmatch("[^\r\n]+") do
         if y > changelogMaxY then break end
-        printCenteredLine(y, line, 0.3)
-        y = y + 20 * 0.3 + 10
+
+        if line:find("^mcsm_portable") then
+            local scale = 0.4
+            local x = 240 - intraFont.textW(font, line, scale) / 2
+            intraFont.print(x, y, line, colors.Header, font, scale)
+            y = y + 20 * scale + 10
+
+        elseif line:find("^%-+$") then
+            printCenteredLine(y, line, 0.3)
+            y = y + 5
+
+        elseif line == "" then
+            y = y + 5
+
+        elseif line:find("^Added") then
+            y = printWrappedText(30, y, line, 420, colors.Added, font, 0.3)
+
+        elseif line:find("^Changed") then
+            y = printWrappedText(30, y, line, 420, colors.Changed, font, 0.3)
+
+        elseif line:find("^Fixed") then
+            y = printWrappedText(30, y, line, 420, colors.Fixed, font, 0.3)
+
+        elseif line:find("^Removed") then
+            y = printWrappedText(30, y, line, 420, colors.Removed, font, 0.3)
+            
+        elseif line:find("^Thanks to") then
+            y = printWrappedText(30, y, line, 420, colors.Thanks, font, 0.3)
+
+        elseif line:find("^%-") then
+            y = printWrappedText(30, y, line, 420, colors.DefaultBullet, font, 0.3)
+
+        elseif line:match("^%d+%.") then
+            y = printWrappedText(30, y, line, 420, colors.Numbered, font, 0.3)
+
+        else
+            y = printWrappedText(30, y, line, 420, colors.DefaultText, font, 0.3)
+        end
     end
-    
-    -- Рисуем кнопку выхода
-    intraFont.print(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(255, 255, 255, 180), font, exitScale)
-    
-    -- Остальное
+
+    intraFont.print(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(140, 160, 180), font, exitScale)
+
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
-    
 end
