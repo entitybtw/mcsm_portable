@@ -28,8 +28,8 @@ local buttonsList = {
         selected = Image.load("assets/buttons/SUPPORT_ENG_SELECTED.png")
     },
     {
-        static = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
+        static = Image.load("assets/buttons/CHANGELOGS_ENG_STATIC.png"),
+        selected = Image.load("assets/buttons/CHANGELOGS_ENG_SELECTED.png")
     },
     {
         static = Image.load("assets/buttons/SETTINGS_ENG_STATIC.png"),
@@ -173,11 +173,11 @@ while true do
 	        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
-            -- 'credits' button
+            -- 'changelogs' button
 	        fade_enabled = 0
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 	        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-            dofile("assets/misc/credits.lua")
+            dofile("assets/misc/changelogs.lua")
         elseif selectedButton == 4 then
             -- 'settings' button
 	        fade_enabled = 0

@@ -1,8 +1,10 @@
 local psbg = Image.load("assets/mainmenu/pause_bg.png")
-local scrollY = 0
+local scrollY = -25
 local scrollSpeed = 10
 local scrollDelay = 0
 local scrollCooldown = 2
+
+
 
 local function printCenteredLine(y, line, scale)
     local textWidth = intraFont.textW(font, line, scale)
@@ -10,17 +12,12 @@ local function printCenteredLine(y, line, scale)
     intraFont.print(x, y, line, Color.new(255, 255, 255), font, scale)
 end
 
-local function printMultilineCenteredText(yStart, text, scale)
-    local y = yStart
-    for line in text:gmatch("[^\r\n]+") do
-        printCenteredLine(y, line, scale)
-        y = y + 10 * scale + 10
-    end
-end
+
+
 
 local sep = "\n\n------------------------------\n\n"
 
--- Все changelog'и ниже, оригинальные
+-- changelogs
 
 local changelog_0_1 = [[
 mcsm_portable 0.1 [prerelease]
@@ -263,19 +260,21 @@ local combined_changelog =
     changelog_0_2 .. sep ..
     changelog_0_1
 
+    
+
 while true do
     buttons.read()
 
     if buttons.held(buttons.up) then
         scrollDelay = scrollDelay + 1
         if scrollDelay >= scrollCooldown then
-            scrollY = scrollY - scrollSpeed
+            if scrollY > -25 then scrollY = scrollY - scrollSpeed end
             scrollDelay = 0
         end
     elseif buttons.held(buttons.down) then
         scrollDelay = scrollDelay + 1
         if scrollDelay >= scrollCooldown then
-            scrollY = scrollY + scrollSpeed
+            if scrollY < 1600 then scrollY = scrollY + scrollSpeed end
             scrollDelay = 0
         end
     else
@@ -291,7 +290,30 @@ while true do
 
     screen.clear()
     Image.draw(psbg, 0, 0)
-    printMultilineCenteredText(-scrollY, combined_changelog, 0.3)
+    
+    -- Настройки текста и отступов
+    local exitText = "Press START to exit"
+    local exitScale = 0.3
+    local exitHeight = 10 * exitScale + 20 -- высота строки + отступ
+    local exitY = 275    - exitHeight -- текст прижат к низу
+    
+    -- Ограниченная зона вывода changelog (до текста снизу)
+    local changelogYStart = -scrollY
+    local changelogMaxY = exitY - 10 -- 10px отступ перед надписью
+    
+    -- Рисуем changelog, но только если он не упрется в текст снизу
+    local y = changelogYStart
+    for line in combined_changelog:gmatch("[^\r\n]+") do
+        if y > changelogMaxY then break end
+        printCenteredLine(y, line, 0.3)
+        y = y + 20 * 0.3 + 10
+    end
+    
+    -- Рисуем кнопку выхода
+    intraFont.print(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(255, 255, 255, 180), font, exitScale)
+    
+    -- Остальное
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
+    
 end
