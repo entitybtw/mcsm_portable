@@ -118,8 +118,8 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
                         screen.filledRect(x - 4, y - 2, w + 7, h + 12, bgColor)
                         intraFont.printGradient(x, y, line, colorStart, colorEnd, usedFont, fontSizeNow)
                     else
-                        intraFont.printShadowed(x, y, line, colorStart, bgColor, usedFont, 90, 500, fontSizeNow, 0)
-                    end
+                        intraFont.printBackground(x, y, line, colorStart, bgColor, usedFont, fontSizeNow)
+                    end                                  
                 end
             end
         end
