@@ -113,12 +113,12 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
                     local w = intraFont.textW(usedFont, line, fontSizeNow)
                     local h = fontSizeNow + 6
 
-                    screen.filledRect(x - 4, y - 2, w + 7, h + 12, bgColor)
 
                     if colorEnd then
+                        screen.filledRect(x - 4, y - 2, w + 7, h + 12, bgColor)
                         intraFont.printGradient(x, y, line, colorStart, colorEnd, usedFont, fontSizeNow)
                     else
-                        intraFont.print(x, y, line, colorStart, usedFont, fontSizeNow)
+                        intraFont.printShadowed(x, y, line, colorStart, bgColor, usedFont, 90, 500, fontSizeNow, 0)
                     end
                 end
             end
