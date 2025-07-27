@@ -101,6 +101,7 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
         screen.clear()
         buttons.read()
 
+
         Image.draw(pointer, 0, 0)
 
         -- Используем статичные fontSizeNow и subsEnabledNow

@@ -8,7 +8,7 @@ local cos = math.cos
 local stat = sound.state(sound.MP3)
 local logo = Image.load('assets/mainmenu/logo.png')
 local arrow = Image.load('assets/mainmenu/arrow.png')
-local psp_buttons = Image.load('assets/mainmenu/mainmenu_buttons.png')
+local cross = Image.load('assets/icons/cross.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
@@ -80,6 +80,7 @@ while true do
     if PMP.getFrame(videoFrame) then
         Image.draw(videoFrame, 0, 0)
     end
+
     if fade_enabled == 1 then
     	if fade > 0 then fade = fade - 8 end
     end
@@ -93,7 +94,7 @@ while true do
     end
 
     if timer.time(welanim_duration) >= 26000 then
-        welanim = 0
+        welanim = -1
         timer.stop(timered)  -- останавливаем таймер timered после 10 секунд
     end
 
@@ -112,7 +113,8 @@ while true do
     end
 
     Image.draw(logo, 15, 45, 220, 50, white, 0, 0, 183, 37)
-    Image.draw(psp_buttons, 35, 230, 145, 29, white, 0, 0, 183, 37)
+    Image.draw(cross, 40, 233, 14, 14)
+    intraFont.printShadowed(57, 234, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 
     -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
@@ -148,7 +150,8 @@ while true do
                 Image.draw(arrow, arrowX, 107, 14, 22)
                 Image.draw(arrow, arrowX, 137, 14, 22)
                 Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
-                Image.draw(psp_buttons, 35, 230, 145, 29, white, 0, 0, 183, 37)
+                Image.draw(cross, 40, 233, 14, 14)
+                intraFont.printShadowed(57, 234, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
                 screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
                 screen.flip()
                 fade = fade + 8
@@ -161,7 +164,7 @@ while true do
             if epmenu == 1 then
 	            Image.unload(logo)
                 Image.unload(arrow)
-	            Image.unload(psp_buttons)
+	            Image.unload(cross)
 	            Image.unload(welcome)
                 unloadButtons()
                 break
