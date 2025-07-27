@@ -1,20 +1,15 @@
 local img = Image.load("assets/mainmenu/controls/psp.png")
 local circle = Image.load("assets/icons/circle.png")
+local bg = Image.load("assets/mainmenu/pause_bg.png")
 local imgfade = 0
-local creditfade = 0
-local rectfade = 0
 local imgtimer = timer.create()
 
 while true do
     buttons.read()
     screen.clear()
 
-    if PMP.getFrame(videoFrame) then
-        Image.draw(videoFrame, 0, 0)
-    end
+    Image.draw(bg, 0, 0)
 
-    rectfade = math.min(rectfade + 5, 50)
-    screen.filledRect(0, 0, 480, 272, Color.new(0, 0, 0), nil, rectfade)
 
     local elapsed = timer.time(imgtimer)
     if elapsed >= 300 and imgfade < 255 then
@@ -23,7 +18,7 @@ while true do
     creditfade = math.min(imgfade * 0.6, 100)
 
     Image.draw(img, 47.5, 26, 385, 220, nil, nil, nil, nil, nil, nil, imgfade)
-    Image.draw(circle, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 8, 233 + 13, 14, 14)
+    Image.draw(circle, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, nil, nil, nil, nil, nil)
     intraFont.printShadowed(240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 + 8, 233 + 14, "Previous Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)    
     intraFont.printShadowed(225 - intraFont.textW(font, "Controls", 0.2) / 2 + 8, 5 + 14, "Controls", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     intraFont.printShadowed(390, 75, "Skip current\n\n   cutscene", Color.new(255, 255, 255, imgfade), Color.new(0, 0, 0, imgfade), font, 90, 1, 0.3, 0)
@@ -37,6 +32,7 @@ while true do
 
     if buttons.pressed(buttons.circle) then
         Image.unload(img)
+        Image.unload(bg)
         Image.unload(circle)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)

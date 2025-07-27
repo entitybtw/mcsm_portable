@@ -1,4 +1,4 @@
-local buttonz = Image.load("assets/mainmenu/previousmenu_eng.png")
+local circle = Image.load("assets/icons/circle.png")
 local bg = Image.load("assets/mainmenu/pause_bg.png")
 
 local buttonsList = {
@@ -146,7 +146,7 @@ while true do
     screen.clear()
     buttons.read()
     Image.draw(bg, 0, 0)
-    intraFont.print(205, 25, "Debug Menu", Color.new(255, 255, 255), font, 0.3)
+    intraFont.printShadowed(205, 25, "Debug Menu", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
@@ -168,7 +168,7 @@ while true do
         unloadButtons()
         saveSystemInfo()
         Image.unload(bg)
-        Image.unload(buttonz)
+        Image.unload(circle)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break
@@ -176,6 +176,7 @@ while true do
 
     drawButtons()
     drawSystemInfo()
-    Image.draw(buttonz, 190, 240, 145, 29)
+    Image.draw(circle, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 2, 233 + 13, 14, 14)
+    intraFont.printShadowed(240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 + 14, 233 + 14, "Previous Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)   
     screen.flip()
 end

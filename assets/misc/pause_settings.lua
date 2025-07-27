@@ -1,5 +1,6 @@
 local bg = Image.load("assets/mainmenu/pause_bg.png")
-local buttonz = Image.load("assets/mainmenu/pause_settings_buttons.png")
+local circle = Image.load("assets/icons/circle.png")
+local cross = Image.load("assets/icons/cross.png")
 
 
 -- load buttons
@@ -47,9 +48,12 @@ while true do
     
 
     Image.draw(bg, 0, 0)
-    intraFont.print(218, 25, "Settings", Color.new(255, 255, 255), font, 0.3)
-    Image.draw(buttonz, 170, 240, 145, 29)
-
+    intraFont.printShadowed(218, 25, "Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    Image.draw(cross, 240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2, 246, 14, 14)
+    intraFont.printShadowed(240 - (14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + 5, 247, "Select", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    Image.draw(circle, 240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 246, 14, 14)
+    intraFont.printShadowed(240 - (14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + 5, 247, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    
     -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
@@ -64,7 +68,8 @@ while true do
     if buttons.pressed(buttons.circle) then
         unloadButtons()
         Image.unload(bg)
-        Image.unload(buttonz)
+        Image.unload(circle)
+        Image.unload(cross)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break

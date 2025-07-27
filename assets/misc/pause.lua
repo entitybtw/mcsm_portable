@@ -1,5 +1,5 @@
 local bg = Image.load("assets/mainmenu/pause_bg.png")
-local buttonz = Image.load("assets/mainmenu/pause_buttons.png")
+local circle = Image.load("assets/icons/circle.png")
 sound.playEasy("assets/sounds/pause_bg.wav", sound.WAV_2, true, false)
 sound.volumeEasy(sound.WAV_2, menumusic * 10)
 local fade = 255
@@ -59,9 +59,9 @@ while true do
     
 
     Image.draw(bg, 0, 0)
-    intraFont.print(220, 25, "Paused", Color.new(255, 255, 255), font, 0.3)
-    Image.draw(buttonz, 170, 240, 145, 29)
-
+    intraFont.printShadowed(220, 25, "Paused", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    Image.draw(circle, 240 - intraFont.textW(font, "Resume Game", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, nil, nil, nil, nil, nil)
+    intraFont.printShadowed(240 - intraFont.textW(font, "Resume Game", 0.3) / 2 + 8, 233 + 14, "Resume Game", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0) 
     -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
@@ -78,7 +78,7 @@ while true do
         sound.stop(sound.WAV_2)
         unloadButtons()
         Image.unload(bg)
-        Image.unload(buttonz)
+        Image.unload(circle)
         break
     end
     if buttons.pressed(buttons.cross) then    
@@ -89,6 +89,7 @@ while true do
             PMP.pause()
             unloadButtons()
             sound.stop(sound.WAV_2)
+            Image.unload(circle)
             Image.unload(bg)
             break
         elseif selectedButton == 2 then
@@ -100,9 +101,10 @@ while true do
             -- 'mainmenu' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-            Image.unload(bg)
             sound.stop(sound.WAV_2)
-            nextscene = "./mainmenu.lua"
+            Image.unload(bg)
+            dofile("./mainmenu.lua")
+            break
         elseif selectedButton == 4 then
             -- 'Exit Game' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)

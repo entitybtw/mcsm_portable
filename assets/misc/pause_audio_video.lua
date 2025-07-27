@@ -38,7 +38,7 @@ for i, v in ipairs(subssizeOptions) do
 end
 
 local hints = {
-    music = "Adjust the Main Menu Music volume",
+    music = "Adjust the Menu Music volume",
     video = "Adjust the PMP Videos volume",
     ui = "Adjust the UI Sounds volume",
     subs = "Displays subtitles at the bottom of the screen",
@@ -46,7 +46,7 @@ local hints = {
 }
 
 local bg = Image.load("assets/mainmenu/pause_bg.png")
-local buttonz = Image.load("assets/mainmenu/previousmenu_eng.png")
+local circle = Image.load("assets/icons/circle.png")
 
 local musicSpritesheet = Image.load("assets/mainmenu/settings/menumusic_spritesheet.png")
 local videoSpritesheet = Image.load("assets/mainmenu/settings/pmpvideos_spritesheet.png")
@@ -187,8 +187,9 @@ end
 
 local function drawui()
     Image.draw(bg, 0, 0)
-    Image.draw(buttonz, 190, 240, 145, 29)
-    intraFont.print(184, 25, "Audio/Video Settings", Color.new(255, 255, 255), font, 0.3)
+    Image.draw(circle, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 2, 233 + 13, 14, 14)
+    intraFont.printShadowed(240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 + 14, 233 + 14, "Previous Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)    
+    intraFont.printShadowed(184, 25, "Audio/Video Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 
     for i, slider in ipairs(sliders) do
         drawSlider(slider, (i == selectedIndex))
@@ -208,7 +209,7 @@ local function drawui()
 
     if hintText then
         intraFont.setStyle(font, 0.6, Color.new(255, 255, 255), 0, intraFont.ALIGN_CENTER)
-        intraFont.print(150, 235, hintText, Color.new(255, 255, 255), font, 0.3)
+        intraFont.printShadowed(245 - intraFont.textW(font, hintText, 0.3) / 2 + 8, 220 + 14, hintText, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     end
 
     debugoverlay.draw(debugoverlay.loadSettings())

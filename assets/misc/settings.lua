@@ -19,7 +19,8 @@ local buttonsList = {
 }
 
 local selectedButton = 1
-local buttonz = Image.load("assets/mainmenu/pause_settings_buttons.png")
+local circle = Image.load("assets/icons/circle.png")
+local cross = Image.load("assets/icons/cross.png")
 
 local function drawButtons()
     for i, button in ipairs(buttonsList) do
@@ -82,14 +83,18 @@ while true do
     if buttons.pressed(buttons.circle) then    
        sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
        unloadButtons()
-       Image.unload(buttonz)
+       Image.unload(circle)
+       Image.unload(cross)
        break
     end
 
     drawButtons()
 
     debugoverlay.draw(debugoverlay.loadSettings())
-    intraFont.print(40, 40, "Settings", Color.new(255, 255, 255), font, 0.3)
-    Image.draw(buttonz, 35, 230, 145, 29)
+    intraFont.printShadowed(40, 40, "Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    Image.draw(cross, 40, 233, 14, 14)
+    intraFont.printShadowed(38 + 14 + 5, 234, "Select", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    Image.draw(circle, 40 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 233, 14, 14)
+    intraFont.printShadowed(38 + 14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + 5, 234, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)    
     screen.flip()
 end

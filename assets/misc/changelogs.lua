@@ -7,7 +7,7 @@ local scrollCooldown = 2
 local function printCenteredLine(y, line, scale)
     local textWidth = intraFont.textW(font, line, scale)
     local x = 240 - (textWidth / 2)
-    intraFont.print(x, y, line, Color.new(255, 255, 255), font, scale)
+    intraFont.printShadowed(x, y, line, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, scale, 0)
 end
 
 local function printWrappedText(x, y, text, maxWidth, color, font, scale)
@@ -23,7 +23,7 @@ local function printWrappedText(x, y, text, maxWidth, color, font, scale)
     for i, word in ipairs(words) do
         local wordWidth = intraFont.textW(font, word, scale)
         if lineWidth + wordWidth > maxWidth then
-            intraFont.print(x, curY, line, color, font, scale)
+            intraFont.printShadowed(x, curY, line, color, Color.new(0, 0, 0), font, 90, 1, scale, 0)
             curY = curY + lineHeight
             line = word .. " "
             lineWidth = wordWidth + spaceW
@@ -33,7 +33,7 @@ local function printWrappedText(x, y, text, maxWidth, color, font, scale)
         end
     end
     if line ~= "" then
-        intraFont.print(x, curY, line, color, font, scale)
+        intraFont.printShadowed(x, curY, line, color, Color.new(0, 0, 0), font, 90, 1, scale, 0)
         curY = curY + lineHeight
     end
     return curY
@@ -352,7 +352,7 @@ while true do
         if line:find("^mcsm_portable") then
             local scale = 0.4
             local x = 240 - intraFont.textW(font, line, scale) / 2
-            intraFont.print(x, y, line, colors.Header, font, scale)
+            intraFont.printShadowed(x, y, line, colors.Header, Color.new(0, 0, 0), font, 90, 1, scale, 0)
             y = y + 20 * scale + 10
 
         elseif line:find("^%-+$") then
@@ -388,7 +388,7 @@ while true do
         end
     end
 
-    intraFont.print(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(140, 160, 180), font, exitScale)
+    intraFont.printShadowed(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(140, 160, 180), Color.new(0, 0, 0), font, 90, 1, exitScale, 0)
 
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()

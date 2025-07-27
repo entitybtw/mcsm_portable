@@ -36,14 +36,14 @@ for i, v in ipairs(subssizeOptions) do
 end
 
 local hints = {
-    music = "Adjust the Main Menu Music volume",
+    music = "Adjust the Menu Music volume",
     video = "Adjust the PMP Videos volume",
     ui = "Adjust the UI Sounds volume",
     subs = "Displays subtitles at the bottom of the screen",
     subssize = "Adjust the size of the subtitles"
 }
 
-local buttonz = Image.load("assets/mainmenu/previousmenu_eng.png")
+local circle = Image.load("assets/icons/circle.png")
 local musicSpritesheet = Image.load("assets/mainmenu/settings/menumusic_spritesheet.png")
 local videoSpritesheet = Image.load("assets/mainmenu/settings/pmpvideos_spritesheet.png")
 local uiSpritesheet = Image.load("assets/mainmenu/settings/uisounds_spritesheet.png")
@@ -171,7 +171,7 @@ local function drawSubsSize(isSelected)
 end
 
 local function drawui()
-    intraFont.print(40, 40, "Audio/Video Settings", Color.new(255, 255, 255), font, 0.3)
+    intraFont.printShadowed(40, 40, "Audio/Video Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 
     for i, slider in ipairs(sliders) do
         drawSlider(slider, i == selectedIndex)
@@ -191,7 +191,7 @@ local function drawui()
 
     if hintText then
         intraFont.setStyle(font, 0.6, Color.new(255, 255, 255), 0, intraFont.ALIGN_LEFT)
-        intraFont.print(43, 222, hintText, Color.new(255,255,255), font, 0.3)
+        intraFont.printShadowed(43, 210, hintText, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     end
 
     debugoverlay.draw(debugoverlay.loadSettings())
@@ -205,7 +205,8 @@ while true do
     if PMP.getFrame(videoFrame) then
         Image.draw(videoFrame, 0, 0)
     end
-    Image.draw(buttonz, 32, 230, 145, 29)
+    Image.draw(circle, 40, 233, 14, 14)
+    intraFont.printShadowed(57, 234, "Previous Menu", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     drawui()
     screen.flip()
 
@@ -246,7 +247,7 @@ while true do
         end
         saveLevels("assets/saves/soundlevels.txt", levelsToSave)
         saveSubtitles()
-        Image.unload(buttonz)
+        Image.unload(circle)
         Image.unload(musicSpritesheet)
         Image.unload(videoSpritesheet)
         Image.unload(uiSpritesheet)
