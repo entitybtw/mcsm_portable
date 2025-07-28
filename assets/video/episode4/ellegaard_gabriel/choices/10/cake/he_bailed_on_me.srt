@@ -79,110 +79,126 @@ The Order traveled far and wide during our heyday.
 How can Ivor live here?
 
 21
-00:01:20,520 --> 00:01:25,520
-I mean, it's one thing to build a war world inside the End, but this...
+00:01:20,520 --> 00:01:24,674
+I mean, it's one thing to build a war world inside the End,
 
 22
+00:01:24,674 --> 00:01:25,520
+but this...
+
+23
 00:01:25,960 --> 00:01:27,640
 Oh, I doubt he lives here.
 
-23
-00:01:28,040 --> 00:01:31,240
-He most likely comes here only for his most secretive research.
-
 24
-00:01:31,440 --> 00:01:35,440
-Whatever Ivor is hiding in here, it will be extremely well guarded.
+00:01:28,040 --> 00:01:30,732
+He most likely comes here only for his most secretive
 
 25
+00:01:30,732 --> 00:01:31,240
+research.
+
+26
+00:01:31,440 --> 00:01:34,902
+Whatever Ivor is hiding in here, it will be extremely well
+
+27
+00:01:34,902 --> 00:01:35,440
+guarded.
+
+28
 00:01:42,120 --> 00:01:43,720
 This way, I suspect.
 
-26
+29
 00:01:44,520 --> 00:01:47,320
 I'd feel better about this if Axel and Lucas were here.
 
-27
+30
 00:01:49,680 --> 00:01:50,680
 Come on!
 
-28
+31
 00:01:57,880 --> 00:02:00,880
 Is this... a maze?
 
-29
+32
 00:02:01,480 --> 00:02:02,880
 It would appear so.
 
-30
+33
 00:02:03,880 --> 00:02:05,880
 A massive one from the looks of it.
 
-31
-00:02:07,280 --> 00:02:12,280
-If Ivor used the command block to build this, it could hold unspeakable peril.
+34
+00:02:07,280 --> 00:02:11,062
+If Ivor used the command block to build this, it could hold
 
-32
+35
+00:02:11,062 --> 00:02:12,280
+unspeakable peril.
+
+36
 00:02:12,480 --> 00:02:15,080
 Why do I have a bad feeling about this?
 
-33
+37
 00:02:15,080 --> 00:02:18,080
 Because some part of you still knows Ivor is here.
 
-34
+38
 00:02:18,080 --> 00:02:19,080
 I'm sure he's here.
 
-35
+39
 00:02:19,080 --> 00:02:20,080
 I'm sure he's here.
 
-36
+40
 00:02:20,080 --> 00:02:21,080
 I'm sure he's here.
 
-37
+41
 00:02:21,080 --> 00:02:22,080
 I'm sure he's here.
 
-38
+42
 00:02:22,080 --> 00:02:23,080
 I'm sure he's here.
 
-39
+43
 00:02:23,080 --> 00:02:24,080
 I'm sure he's here.
 
-40
+44
 00:02:24,080 --> 00:02:25,080
 I'm sure he's here.
 
-41
+45
 00:02:25,080 --> 00:02:26,080
 I'm sure he's here.
 
-42
+46
 00:02:26,080 --> 00:02:27,080
 I'm sure he's here.
 
-43
+47
 00:02:27,080 --> 00:02:28,080
 I still know Ivor.
 
-44
+48
 00:02:29,080 --> 00:02:32,080
 Fortunately, this seems to be the only way forward.
 
-45
+49
 00:02:32,080 --> 00:02:34,080
 There has to be another way.
 
-46
+50
 00:02:35,080 --> 00:02:37,080
 A secret door, or... I don't know.
 
-47
+51
 00:02:38,080 --> 00:02:40,080
 Some way around.
 

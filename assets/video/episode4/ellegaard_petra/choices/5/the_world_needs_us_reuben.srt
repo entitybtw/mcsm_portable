@@ -3,174 +3,218 @@
 The world needs us, Ruben.
 
 2
-00:00:02,720 --> 00:00:06,720
-So much of it has already been reduced to bedrock, and it's up to us to save the rest of it.
+00:00:02,720 --> 00:00:05,285
+So much of it has already been reduced to bedrock, and it's
 
 3
-00:00:08,160 --> 00:00:13,040
-Well, maybe that is a lot of pressure for just a person and a pig, but we have to find a way.
+00:00:05,285 --> 00:00:06,720
+up to us to save the rest of it.
 
 4
+00:00:08,160 --> 00:00:11,255
+Well, maybe that is a lot of pressure for just a person and
+
+5
+00:00:11,255 --> 00:00:13,040
+a pig, but we have to find a way.
+
+6
 00:00:14,400 --> 00:00:16,400
 Oh, you wanted help, do you?
 
-5
-00:00:17,120 --> 00:00:20,560
-That's what I said, isn't it? Oh, just as you once helped us before.
-
-6
-00:00:20,960 --> 00:00:27,120
-This isn't about the past, it's about the future. There are three of those things now. You say that like it's my fault!
-
 7
+00:00:17,120 --> 00:00:20,003
+That's what I said, isn't it? Oh, just as you once helped
+
+8
+00:00:20,003 --> 00:00:20,560
+us before.
+
+9
+00:00:20,960 --> 00:00:24,014
+This isn't about the past, it's about the future. There are
+
+10
+00:00:24,014 --> 00:00:27,120
+three of those things now. You say that like it's my fault!
+
+11
 00:00:27,200 --> 00:00:28,000
 It is your fault!
 
-8
+12
 00:00:28,000 --> 00:00:30,000
 Take responsibility for once, Sorin!
 
-9
+13
 00:00:30,240 --> 00:00:31,520
 Sorin, you need to listen to me.
 
-10
+14
 00:00:31,520 --> 00:00:33,520
 Hush! Ivor, for once!
 
-11
-00:00:33,680 --> 00:00:36,960
-I told you, I wouldn't have followed you here without good reason.
+15
+00:00:33,680 --> 00:00:36,562
+I told you, I wouldn't have followed you here without good
 
-12
-00:00:37,280 --> 00:00:40,560
-What you don't understand is you are all in very grave danger.
+16
+00:00:36,562 --> 00:00:36,960
+reason.
 
-13
+17
+00:00:37,280 --> 00:00:40,136
+What you don't understand is you are all in very grave
+
+18
+00:00:40,136 --> 00:00:40,560
+danger.
+
+19
 00:00:42,240 --> 00:00:43,520
 Obviously!
 
-14
-00:00:43,520 --> 00:00:50,720
-No, I mean specifically this group. The Weather Storm isn't acting randomly, it's following Gabriel.
+20
+00:00:43,520 --> 00:00:47,768
+No, I mean specifically this group. The Weather Storm isn't
 
-15
+21
+00:00:47,768 --> 00:00:50,720
+acting randomly, it's following Gabriel.
+
+22
 00:00:50,720 --> 00:00:54,720
 You see, I may have programmed it to follow his amulet.
 
-16
+23
 00:00:54,720 --> 00:00:56,720
 I have the amulet, Ivor. I have all along.
 
-17
+24
 00:00:56,720 --> 00:00:58,720
 What?
 
-18
-00:00:58,720 --> 00:01:00,720
-Ivor, you fool! You've created a monster that's following Jesse!
+25
+00:00:58,720 --> 00:01:00,501
+Ivor, you fool! You've created a monster that's following
 
-19
+26
+00:01:00,501 --> 00:01:00,720
+Jesse!
+
+27
 00:01:00,720 --> 00:01:02,720
 I didn't know.
 
-20
+28
 00:01:02,720 --> 00:01:04,720
 And it's only getting stronger.
 
-21
+29
 00:01:04,720 --> 00:01:06,720
 You don't think I realize that?
 
-22
+30
 00:01:06,720 --> 00:01:08,720
 Nothing can stop those things!
 
-23
+31
 00:01:08,720 --> 00:01:10,720
 Nothing even hurts them!
 
-24
+32
 00:01:10,720 --> 00:01:12,720
 Well, except Enderman.
 
-25
-00:01:12,720 --> 00:01:14,720
-We actually just saw a bunch of Endermen pull blocks off of us.
+33
+00:01:12,720 --> 00:01:14,593
+We actually just saw a bunch of Endermen pull blocks off of
 
-26
-00:01:14,720 --> 00:01:16,720
-So, enough of them working together might be able to destroy a Weather Storm entirely!
+34
+00:01:14,593 --> 00:01:14,720
+us.
 
-27
-00:01:16,720 --> 00:01:18,720
-Question is, how to bring the Storms and the Endermen together?
+35
+00:01:14,720 --> 00:01:15,929
+So, enough of them working together might be able to
 
-28
+36
+00:01:15,929 --> 00:01:16,720
+destroy a Weather Storm entirely!
+
+37
+00:01:16,720 --> 00:01:18,402
+Question is, how to bring the Storms and the Endermen
+
+38
+00:01:18,402 --> 00:01:18,720
+together?
+
+39
 00:01:18,720 --> 00:01:20,720
 Endermen aren't pets, they don't follow orders.
 
-29
+40
 00:01:20,720 --> 00:01:22,720
 At least, not from mere mortals.
 
-30
+41
 00:01:22,720 --> 00:01:24,720
 I know, I know.
 
-31
+42
 00:01:24,720 --> 00:01:26,720
 But I don't think we should let them do that.
 
-32
+43
 00:01:26,720 --> 00:01:28,720
 I think we should just let them do what they want.
 
-33
+44
 00:01:28,720 --> 00:01:30,720
 I think we should just let them do what they want.
 
-34
+45
 00:01:30,720 --> 00:01:32,720
 I think we should just let them do what they want.
 
-35
+46
 00:01:32,720 --> 00:01:34,720
 I think we should just let them do what they want.
 
-36
+47
 00:01:34,720 --> 00:01:36,720
 I think we should just let them do what they want.
 
-37
+48
 00:01:36,720 --> 00:01:38,720
 I think we should just let them do what they want.
 
-38
+49
 00:01:38,720 --> 00:01:40,720
 I think we should just let them do what they want.
 
-39
+50
 00:01:40,720 --> 00:01:42,720
 I think we should just let them do what they want.
 
-40
+51
 00:01:42,720 --> 00:01:44,720
 I think we should just let them do what they want.
 
-41
+52
 00:01:44,720 --> 00:01:46,720
 I think we should just let them do what they want.
 
-42
+53
 00:01:46,720 --> 00:01:48,720
 I think we should just let them do what they want.
 
-43
+54
 00:01:48,720 --> 00:01:50,720
 I think we should just let them do what they want.
 
-44
+55
 00:01:50,720 --> 00:01:52,720
 I think we should just let them do what they want.
 

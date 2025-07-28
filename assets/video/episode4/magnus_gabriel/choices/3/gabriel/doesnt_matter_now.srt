@@ -79,74 +79,86 @@ Why is that thing still alive?
 The Formidabomb just wasn't strong enough.
 
 21
-00:01:09,000 --> 00:01:12,500
-I mean, it ripped the Witherstorm apart, but it didn't make a dent in the command block.
+00:01:09,000 --> 00:01:11,346
+I mean, it ripped the Witherstorm apart, but it didn't make
 
 22
+00:01:11,346 --> 00:01:12,500
+a dent in the command block.
+
+23
 00:01:13,500 --> 00:01:16,500
 So the command block is still out there?
 
-23
+24
 00:01:17,000 --> 00:01:18,000
 Oh, great.
 
-24
+25
 00:01:18,500 --> 00:01:21,500
 Look, our plan didn't work, so we obviously need a new one.
 
-25
+26
 00:01:22,500 --> 00:01:25,000
 Question is, what do we do?
 
-26
+27
 00:01:26,000 --> 00:01:28,500
 Why are you asking me?
 
-27
+28
 00:01:29,000 --> 00:01:31,500
 Am I expected to know every last thing in the universe?
 
-28
+29
 00:01:33,000 --> 00:01:35,500
 I need a moment to think.
 
-29
+30
 00:01:38,000 --> 00:01:39,500
 Is he always like this?
 
-30
+31
 00:01:40,000 --> 00:01:42,000
 You have no idea.
 
-31
+32
 00:01:45,000 --> 00:01:48,000
 That jacket, it looks familiar.
 
-32
+33
 00:01:49,000 --> 00:01:51,000
 Lucas always wears that jacket.
 
-33
-00:01:51,000 --> 00:01:57,000
-No, I saw other people wearing it when I was being thrown from that dead monster.
-
 34
+00:01:51,000 --> 00:01:55,222
+No, I saw other people wearing it when I was being thrown
+
+35
+00:01:55,222 --> 00:01:57,000
+from that dead monster.
+
+36
 00:01:59,000 --> 00:02:00,500
 Even thinking about it hurts.
 
-35
+37
 00:02:01,000 --> 00:02:02,500
 Hey, hey, it's okay.
 
-36
+38
 00:02:04,000 --> 00:02:06,500
 Jesse, if what Petra said is true...
 
-37
+39
 00:02:08,000 --> 00:02:10,000
 I mean, do you think?
 
-38
-00:02:10,500 --> 00:02:14,500
-I thought for sure they were gone, but if they were just trapped in the Witherstorm...
+40
+00:02:10,500 --> 00:02:13,104
+I thought for sure they were gone, but if they were just
+
+41
+00:02:13,104 --> 00:02:14,500
+trapped in the Witherstorm...
 

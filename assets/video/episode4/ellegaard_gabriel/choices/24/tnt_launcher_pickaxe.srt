@@ -11,218 +11,226 @@ We'll use the Pistons, the Redstone, and the TNT
 to build a TNT launcher.
 
 4
-00:00:06,560 --> 00:00:11,680
-Then I climb on and you guys blast me all the way into the Witherstorm.
+00:00:06,560 --> 00:00:10,742
+Then I climb on and you guys blast me all the way into the
 
 5
+00:00:10,742 --> 00:00:11,680
+Witherstorm.
+
+6
 00:00:11,680 --> 00:00:15,120
 Ha ha! Heck yeah! I love that idea.
 
-6
+7
 00:00:15,120 --> 00:00:18,080
 So what are we waiting for? Let's hurry up and...
 
-7
+8
 00:00:18,080 --> 00:00:19,520
 Oh! Look out!
 
-8
+9
 00:00:21,840 --> 00:00:22,720
 Petra!
 
-9
+10
 00:00:22,720 --> 00:00:23,920
 Axel!
 
-10
+11
 00:00:23,920 --> 00:00:25,920
 Aaaaaaah!
 
-11
+12
 00:00:25,920 --> 00:00:27,920
 Aaaaaaah!
 
-12
+13
 00:00:27,920 --> 00:00:29,920
 Whoa!
 
-13
+14
 00:00:29,920 --> 00:00:31,920
 Gah!
 
-14
+15
 00:00:35,360 --> 00:00:37,920
 I can't...hold on!
 
-15
+16
 00:00:37,920 --> 00:00:38,880
 I got you!
 
-16
+17
 00:00:38,880 --> 00:00:40,880
 Lucas! You're here!
 
-17
+18
 00:00:40,880 --> 00:00:44,400
 Ocelots, distract that Witherstorm!
 
-18
+19
 00:00:44,400 --> 00:00:46,880
 Hey you! Get a load of this!
 
-19
+20
 00:00:53,840 --> 00:00:55,360
 Lucas, thank you.
 
-20
+21
 00:00:55,440 --> 00:00:57,440
 Anything for a friend.
 
-21
+22
 00:00:57,440 --> 00:00:59,440
 Now let's hurry up and build this thing!
 
-22
+23
 00:01:15,440 --> 00:01:17,440
 Okay, it's finished.
 
-23
+24
 00:01:19,440 --> 00:01:21,440
 Quick! Climb on!
 
-24
+25
 00:01:21,440 --> 00:01:23,440
 Jesse, you can do this. I know you can.
 
-25
+26
 00:01:23,440 --> 00:01:24,640
 We all do.
 
-26
+27
 00:01:24,880 --> 00:01:26,880
 Thanks guys. It means a lot.
 
-27
+28
 00:01:26,880 --> 00:01:28,880
 Now go to walls that command block.
 
-28
+29
 00:01:30,880 --> 00:01:32,880
 Ruben, this is no place for a...
 
-29
+30
 00:01:32,880 --> 00:01:34,880
 Petra!
 
-30
+31
 00:01:34,880 --> 00:01:36,880
 Aaaaaaah!
 
-31
+32
 00:01:36,880 --> 00:01:38,880
 Aaaaaaah!
 
-32
+33
 00:01:38,880 --> 00:01:40,880
 Go!
 
-33
+34
 00:01:40,880 --> 00:01:42,880
 Ow!
 
-34
+35
 00:01:46,880 --> 00:01:48,880
 Whoa!
 
-35
+36
 00:01:49,120 --> 00:01:51,120
 Aaaaaaah!
 
-36
+37
 00:01:53,120 --> 00:01:55,120
 Gah!
 
-37
+38
 00:02:03,120 --> 00:02:05,120
 There it is.
 
-38
+39
 00:02:09,120 --> 00:02:11,120
 We meet again, command block.
 
-39
+40
 00:02:13,120 --> 00:02:15,120
 Now it's time to destroy you.
 
-40
+41
 00:02:19,120 --> 00:02:23,120
 Ruben, I think we made it angry.
 
-41
+42
 00:02:41,120 --> 00:02:43,120
 It's doing everything it can to protect the command block.
 
-42
+43
 00:02:45,120 --> 00:02:47,120
 Awesome weapon. Don't fail me now.
 
-43
+44
 00:02:49,120 --> 00:02:51,120
 Gah!
 
-44
+45
 00:02:53,120 --> 00:02:55,120
 Aaaaaaah!
 
-45
+46
 00:02:57,120 --> 00:02:59,120
 Gah!
 
-46
+47
 00:02:59,120 --> 00:03:01,120
 Gah!
 
-47
+48
 00:03:01,120 --> 00:03:03,120
 Holy moly!
 
-48
+49
 00:03:03,120 --> 00:03:05,120
 Gah!
 
-49
+50
 00:03:05,120 --> 00:03:07,120
 Gah!
 
-50
+51
 00:03:07,120 --> 00:03:09,120
 This thing will die!
 
-51
+52
 00:03:11,120 --> 00:03:13,120
 Gah!
 
-52
+53
 00:03:13,120 --> 00:03:15,120
 Gah!
 
-53
+54
 00:03:15,120 --> 00:03:17,120
 Gah!
 
-54
-00:03:17,360 --> 00:03:21,360
-Ruben, whatever happens, we have to destroy that command block.
-
 55
+00:03:17,360 --> 00:03:20,915
+Ruben, whatever happens, we have to destroy that command
+
+56
+00:03:20,915 --> 00:03:21,360
+block.
+
+57
 00:03:31,360 --> 00:03:33,360
 Wait a second, I know exactly how to get up there.
 
-56
+58
 00:03:35,360 --> 00:03:37,360
 The tractor beam!
 
-57
+59
 00:03:37,360 --> 00:03:39,360
 Hey you!
 

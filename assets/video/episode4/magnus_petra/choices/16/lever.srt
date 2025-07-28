@@ -7,102 +7,130 @@ Let's see what this sucker does.
 A secret passageway.
 
 3
-00:00:23,200 --> 00:00:26,560
-Why would you build a secret passage in a house that nobody ever visits?
+00:00:23,200 --> 00:00:25,953
+Why would you build a secret passage in a house that nobody
 
 4
+00:00:25,953 --> 00:00:26,560
+ever visits?
+
+5
 00:00:27,440 --> 00:00:29,440
 More like why wouldn't you?
 
-5
+6
 00:00:30,000 --> 00:00:32,000
 Secret passageways are cool.
 
-6
+7
 00:00:32,480 --> 00:00:34,480
 Good point.
 
-7
+8
 00:00:48,800 --> 00:00:50,800
 Are you guys okay?
 
-8
-00:00:50,800 --> 00:00:56,900
-We're fine, but the lever isn't working anymore. Stay there. We'll head down and see what we can find
-
 9
+00:00:50,800 --> 00:00:54,000
+We're fine, but the lever isn't working anymore. Stay
+
+10
+00:00:54,000 --> 00:00:56,900
+there. We'll head down and see what we can find
+
+11
 00:01:00,000 --> 00:01:02,000
 What is all this?
 
-10
+12
 00:01:02,000 --> 00:01:06,000
 Incredible. He's gathered them all in one place.
 
-11
+13
 00:01:06,000 --> 00:01:08,000
 Gathered what exactly?
 
-12
+14
 00:01:10,000 --> 00:01:12,000
 The treasures of the Order of the Stone.
 
-13
+15
 00:01:16,000 --> 00:01:20,000
 The stories I could tell about these dusty old things.
 
-14
+16
 00:01:24,000 --> 00:01:26,000
 You know, I often give up on my family.
 
-15
-00:01:26,000 --> 00:01:34,000
-You know, I often give Ivor a hard time, but for all his complaining, his time with the Order clearly meant a great deal to him.
+17
+00:01:26,000 --> 00:01:29,500
+You know, I often give Ivor a hard time, but for all his
 
-16
+18
+00:01:29,500 --> 00:01:33,125
+complaining, his time with the Order clearly meant a great
+
+19
+00:01:33,125 --> 00:01:34,000
+deal to him.
+
+20
 00:01:34,000 --> 00:01:38,000
 Yeah, I guess so. Anyway, let's go get that enchanting book.
 
-17
-00:01:44,000 --> 00:01:48,000
-By the stars, the Ender Dragon. With replica ender crystals in all.
+21
+00:01:44,000 --> 00:01:47,522
+By the stars, the Ender Dragon. With replica ender crystals
 
-18
+22
+00:01:47,522 --> 00:01:48,000
+in all.
+
+23
 00:01:48,000 --> 00:01:52,000
 Wow, I always wondered what it looked like.
 
-19
+24
 00:01:52,000 --> 00:01:54,000
 Hmm, no way out.
 
-20
+25
 00:02:04,000 --> 00:02:06,000
 It's obviously some kind of puzzle.
 
-21
+26
 00:02:08,000 --> 00:02:10,000
 Sorin, what's this thing supposed to be?
 
-22
-00:02:10,000 --> 00:02:14,000
-It appears to be an homage to our battle with the Ender Dragon.
+27
+00:02:10,000 --> 00:02:13,492
+It appears to be an homage to our battle with the Ender
 
-23
+28
+00:02:13,492 --> 00:02:14,000
+Dragon.
+
+29
 00:02:14,000 --> 00:02:16,000
 Despite its name, it's still a treasure.
 
-24
-00:02:16,000 --> 00:02:20,000
-It appears to be an homage to our battle with the Ender Dragon.
+30
+00:02:16,000 --> 00:02:19,492
+It appears to be an homage to our battle with the Ender
 
-25
+31
+00:02:19,492 --> 00:02:20,000
+Dragon.
+
+32
 00:02:20,000 --> 00:02:24,000
 Despite its anger, Ivor never stopped being fond of us.
 
-26
+33
 00:02:24,000 --> 00:02:28,000
 He was a big part of our team after all.
 
-27
+34
 00:02:32,000 --> 00:02:34,000
 He knows his days in the Order were his finest.
 

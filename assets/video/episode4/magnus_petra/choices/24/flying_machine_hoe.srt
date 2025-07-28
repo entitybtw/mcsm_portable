@@ -1,168 +1,180 @@
 1
-00:00:00,000 --> 00:00:06,000
-Guys, check it out. We use the pistons and some redstone to build a flying machine.
+00:00:00,000 --> 00:00:04,265
+Guys, check it out. We use the pistons and some redstone to
 
 2
-00:00:06,000 --> 00:00:12,000
-Then when I'm high enough, I ignite the TNT and blast myself into the wither storm.
+00:00:04,265 --> 00:00:06,000
+build a flying machine.
 
 3
+00:00:06,000 --> 00:00:09,831
+Then when I'm high enough, I ignite the TNT and blast
+
+4
+00:00:09,831 --> 00:00:12,000
+myself into the wither storm.
+
+5
 00:00:12,000 --> 00:00:15,000
 Heck yeah! I love that idea.
 
-4
+6
 00:00:15,000 --> 00:00:18,000
 So what are we waiting for? Let's hurry up and...
 
-5
+7
 00:00:18,000 --> 00:00:20,000
 Look out!
 
-6
+8
 00:00:25,000 --> 00:00:27,000
 Axle!
 
-7
+9
 00:00:30,000 --> 00:00:32,000
 No!
 
-8
+10
 00:00:37,000 --> 00:00:40,000
 I can't hold on!
 
-9
+11
 00:00:40,000 --> 00:00:41,000
 I got you!
 
-10
+12
 00:00:41,000 --> 00:00:43,000
 Lucas! You're here!
 
-11
+13
 00:00:43,000 --> 00:00:46,000
 Ocelots, distract that wither storm!
 
-12
+14
 00:00:46,000 --> 00:00:49,000
 Hey you! Get a load of this!
 
-13
+15
 00:00:56,000 --> 00:00:57,000
 Lucas, thank you.
 
-14
+16
 00:00:57,000 --> 00:00:59,000
 Anything for us, right?
 
-15
+17
 00:00:59,000 --> 00:01:02,000
 Now let's hurry up and build this thing.
 
-16
+18
 00:01:16,000 --> 00:01:18,000
 Okay, it's finished.
 
-17
+19
 00:01:20,000 --> 00:01:21,000
 Quick, climb on!
 
-18
+20
 00:01:21,000 --> 00:01:24,000
 And Jesse, I know you can do this.
 
-19
+21
 00:01:24,000 --> 00:01:25,000
 We all do.
 
-20
+22
 00:01:25,000 --> 00:01:28,000
 Thanks guys. It means a lot.
 
-21
+23
 00:01:28,000 --> 00:01:31,000
 Now go to walls that command block.
 
-22
+24
 00:01:35,000 --> 00:01:38,000
 Ruben, this is no place for a...
 
-23
+25
 00:01:51,000 --> 00:01:53,000
 Wow!
 
-24
+26
 00:01:58,000 --> 00:02:00,000
 No!
 
-25
+27
 00:02:08,000 --> 00:02:10,000
 There it is.
 
-26
+28
 00:02:13,000 --> 00:02:16,000
 We meet again, command block.
 
-27
+29
 00:02:17,000 --> 00:02:20,000
 Now it's time to destroy you.
 
-28
+30
 00:02:20,000 --> 00:02:23,000
 Ruben, I think we made it angry.
 
-29
+31
 00:02:34,000 --> 00:02:37,000
 It's doing everything it can to protect the command block.
 
-30
+32
 00:02:37,000 --> 00:02:40,000
 I'm going to get you, Ruben.
 
-31
+33
 00:02:40,000 --> 00:02:43,000
 I'm going to get you, Ruben.
 
-32
+34
 00:02:43,000 --> 00:02:46,000
 I'm going to get you, Ruben.
 
-33
+35
 00:02:46,000 --> 00:02:50,000
 It's doing everything it can to protect the command block.
 
-34
+36
 00:02:51,000 --> 00:02:54,000
 Awesome weapon, don't fail me now.
 
-35
+37
 00:03:06,000 --> 00:03:08,000
 Holy moly!
 
-36
+38
 00:03:11,000 --> 00:03:13,000
 It's their own time!
 
-37
-00:03:16,000 --> 00:03:20,000
-Ruben, whatever happens, we have to destroy that command block.
+39
+00:03:16,000 --> 00:03:19,555
+Ruben, whatever happens, we have to destroy that command
 
-38
+40
+00:03:19,555 --> 00:03:20,000
+block.
+
+41
 00:03:30,000 --> 00:03:34,000
 Wait a second, I know exactly how to get up there.
 
-39
+42
 00:03:34,000 --> 00:03:37,000
 The tractor beam!
 
-40
+43
 00:03:37,000 --> 00:03:39,000
 Hey, you!
 
-41
+44
 00:03:40,000 --> 00:03:43,000
 The tractor beam!
 
-42
+45
 00:03:43,000 --> 00:03:45,000
 Hey, you!
 

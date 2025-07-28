@@ -1,104 +1,144 @@
 1
-00:00:00,000 --> 00:00:05,720
-I couldn't save you things were happening so fast and that thing was powerful
+00:00:00,000 --> 00:00:04,308
+I couldn't save you things were happening so fast and that
 
 2
+00:00:04,308 --> 00:00:05,720
+thing was powerful
+
+3
 00:00:06,480 --> 00:00:08,480
 Well, thank you for trying
 
-3
-00:00:10,760 --> 00:00:16,640
-Sure all that matters is you're with us now and that you're still a fighter the best one I know
-
 4
+00:00:10,760 --> 00:00:14,411
+Sure all that matters is you're with us now and that you're
+
+5
+00:00:14,411 --> 00:00:16,640
+still a fighter the best one I know
+
+6
 00:00:17,680 --> 00:00:20,280
 So, what do you say? Will you be part of our group again?
 
-5
+7
 00:00:23,760 --> 00:00:28,660
 All right count me in we didn't all make it back though
 
-6
+8
 00:00:30,000 --> 00:00:32,000
 Guys it was my fault
 
-7
+9
 00:00:32,000 --> 00:00:34,000
 I'm the one who took Magnus's armor
 
-8
+10
 00:00:34,000 --> 00:00:36,000
 But you couldn't have known what was going to happen
 
-9
-00:00:36,000 --> 00:00:42,000
-She's right. You can't blame yourself. Jesse. I'm surprised he lasted as long as he did
-
-10
-00:00:44,000 --> 00:00:52,000
-Being emotional is getting us nowhere. What I want to know is what happened out there today. Why is that thing still alive?
-
 11
+00:00:36,000 --> 00:00:40,068
+She's right. You can't blame yourself. Jesse. I'm surprised
+
+12
+00:00:40,068 --> 00:00:42,000
+he lasted as long as he did
+
+13
+00:00:44,000 --> 00:00:47,772
+Being emotional is getting us nowhere. What I want to know
+
+14
+00:00:47,772 --> 00:00:51,479
+is what happened out there today. Why is that thing still
+
+15
+00:00:51,479 --> 00:00:52,000
+alive?
+
+16
 00:00:52,000 --> 00:00:54,000
 The Formidabomb just wasn't strong enough
 
-12
-00:00:55,000 --> 00:00:59,000
-I mean it ripped the wither storm apart, but it didn't make a dent in the command block
+17
+00:00:55,000 --> 00:00:57,712
+I mean it ripped the wither storm apart, but it didn't make
 
-13
+18
+00:00:57,712 --> 00:00:59,000
+a dent in the command block
+
+19
 00:00:59,000 --> 00:01:03,000
 So the command block is still out there? Oh great
 
-14
+20
 00:01:03,000 --> 00:01:07,000
 Look our plan didn't work. So we obviously need a new one
 
-15
+21
 00:01:07,000 --> 00:01:10,000
 Question is what do we do?
 
-16
-00:01:10,000 --> 00:01:16,000
-Why are you asking me? Am I expected to know every last thing in the universe?
+22
+00:01:10,000 --> 00:01:14,230
+Why are you asking me? Am I expected to know every last
 
-17
-00:01:17,000 --> 00:01:22,000
-Well, why are you asking me am I expected to know every last thing in the universe?
+23
+00:01:14,230 --> 00:01:16,000
+thing in the universe?
 
-18
+24
+00:01:17,000 --> 00:01:20,313
+Well, why are you asking me am I expected to know every
+
+25
+00:01:20,313 --> 00:01:22,000
+last thing in the universe?
+
+26
 00:01:24,000 --> 00:01:26,000
 I need a moment to think
 
-19
+27
 00:01:29,000 --> 00:01:32,000
 Is he always like this you have no idea
 
-20
+28
 00:01:36,000 --> 00:01:38,000
 Jacket it looks familiar
 
-21
+29
 00:01:40,000 --> 00:01:42,000
 Lucas always wears that jacket
 
-22
-00:01:42,000 --> 00:01:48,000
-No, I saw other people wearing it when I was being thrown from that dead monster
+30
+00:01:42,000 --> 00:01:46,275
+No, I saw other people wearing it when I was being thrown
 
-23
+31
+00:01:46,275 --> 00:01:48,000
+from that dead monster
+
+32
 00:01:50,000 --> 00:01:53,000
 Even thinking about it hurts. Hey, hey, it's okay
 
-24
+33
 00:01:55,000 --> 00:02:01,000
 Jesse if what Petra said is true. I mean, do you think I?
 
-25
-00:02:01,000 --> 00:02:05,000
-Thought for sure they were gone. But if they were just tracked in the wither storm
+34
+00:02:01,000 --> 00:02:03,634
+Thought for sure they were gone. But if they were just
 
-26
+35
+00:02:03,634 --> 00:02:05,000
+tracked in the wither storm
+
+36
 00:02:12,000 --> 00:02:14,000
 You
 

@@ -11,22 +11,26 @@ What if she doesn't? What if it's permanent?
 Jesse, this is awful.
 
 4
-00:00:11,000 --> 00:00:19,000
-You, Jesse. You're the one who rescued me. Tell me, please, what is going on?
+00:00:11,000 --> 00:00:17,129
+You, Jesse. You're the one who rescued me. Tell me, please,
 
 5
+00:00:17,129 --> 00:00:19,000
+what is going on?
+
+6
 00:00:20,000 --> 00:00:23,000
 You were caught in the wither storm for a long time, Petra.
 
-6
+7
 00:00:23,000 --> 00:00:27,000
 Really? I can't remember any of it.
 
-7
+8
 00:00:27,000 --> 00:00:31,000
 The room... everything's spinning.
 
-8
+9
 00:00:31,000 --> 00:00:34,000
 You're okay. Easy does it.
 

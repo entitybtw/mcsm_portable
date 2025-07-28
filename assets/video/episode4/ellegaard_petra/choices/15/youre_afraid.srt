@@ -7,30 +7,38 @@ Soran are you afraid of flying?
 The man's mad he's with her crazy
 
 3
-00:00:08,360 --> 00:00:13,920
-Well, I suppose I might be mistaken I liked you better when you had amnesia
+00:00:08,360 --> 00:00:12,733
+Well, I suppose I might be mistaken I liked you better when
 
 4
+00:00:12,733 --> 00:00:13,920
+you had amnesia
+
+5
 00:00:30,440 --> 00:00:32,440
 Well, that was exciting
 
-5
+6
 00:00:32,800 --> 00:00:36,440
 By exciting I assume you mean absurd and unnecessary
 
-6
+7
 00:00:37,320 --> 00:00:39,320
 Let's go see what he's hiding in there
 
-7
+8
 00:00:57,400 --> 00:00:59,400
 So many books
 
-8
-00:01:00,000 --> 00:01:06,400
-We should be careful this place could be booby-trapped. Let's just start looking for the enchanting book
-
 9
+00:01:00,000 --> 00:01:03,384
+We should be careful this place could be booby-trapped.
+
+10
+00:01:03,384 --> 00:01:06,400
+Let's just start looking for the enchanting book
+
+11
 00:01:30,000 --> 00:01:32,000
 You
 

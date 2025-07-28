@@ -1,96 +1,136 @@
 1
-00:00:00,000 --> 00:00:05,200
-The Witherstorms are already chasing us. If we just get them to chase us to your fortress again...
+00:00:00,000 --> 00:00:02,918
+The Witherstorms are already chasing us. If we just get
 
 2
+00:00:02,918 --> 00:00:05,200
+them to chase us to your fortress again...
+
+3
 00:00:05,200 --> 00:00:08,200
 They'll be caught between a rock and a hard place!
 
-3
+4
 00:00:08,200 --> 00:00:12,000
 Just one problem. You're forgetting about the command block!
 
-4
-00:00:12,000 --> 00:00:19,000
-Ugh, yes. It's clear now that no weapon can destroy it. Not even a Formita bomb.
-
 5
+00:00:12,000 --> 00:00:17,162
+Ugh, yes. It's clear now that no weapon can destroy it. Not
+
+6
+00:00:17,162 --> 00:00:19,000
+even a Formita bomb.
+
+7
 00:00:19,000 --> 00:00:22,000
 Yes, well, I created a failsafe.
 
-6
+8
 00:00:22,000 --> 00:00:24,000
 What kind of failsafe, exactly?
 
-7
-00:00:24,000 --> 00:00:30,000
-An enchanting book. One that contains the power of the command block itself.
-
-8
-00:00:30,000 --> 00:00:37,000
-Use it to enchant a weapon, and you'll be able to smash the command block to bits. Forever!
-
 9
+00:00:24,000 --> 00:00:28,263
+An enchanting book. One that contains the power of the
+
+10
+00:00:28,263 --> 00:00:30,000
+command block itself.
+
+11
+00:00:30,000 --> 00:00:34,538
+Use it to enchant a weapon, and you'll be able to smash the
+
+12
+00:00:34,538 --> 00:00:37,000
+command block to bits. Forever!
+
+13
 00:00:37,000 --> 00:00:40,000
 Yes. Yes, that's it!
 
-10
+14
 00:00:40,000 --> 00:00:41,000
 What?
 
-11
+15
 00:00:53,000 --> 00:00:54,000
 Ivor!
 
-12
+16
 00:00:54,000 --> 00:00:55,000
 It is you!
 
-13
+17
 00:00:55,000 --> 00:00:58,000
 Good to see you too, Magnus.
 
-14
+18
 00:00:58,000 --> 00:01:00,000
 It just keeps coming for us.
 
-15
-00:01:00,000 --> 00:01:06,000
-Guys, there's a reason it's been following us. Ivor says it's because of the amulet that Gabriel...
+19
+00:01:00,000 --> 00:01:03,393
+Guys, there's a reason it's been following us. Ivor says
 
-16
+20
+00:01:03,393 --> 00:01:06,000
+it's because of the amulet that Gabriel...
+
+21
 00:01:07,000 --> 00:01:10,000
 We aren't safe. Not as long as we have that amulet.
 
-17
-00:01:10,000 --> 00:01:15,000
-I'll take it. I'll keep the Witherstorms busy. You guys do what you gotta do.
+22
+00:01:10,000 --> 00:01:13,766
+I'll take it. I'll keep the Witherstorms busy. You guys do
 
-18
+23
+00:01:13,766 --> 00:01:15,000
+what you gotta do.
+
+24
 00:01:15,000 --> 00:01:17,000
 Axel, thank you.
 
-19
-00:01:17,000 --> 00:01:21,000
-You just go make that super weapon. I'll meet you back at Soren's fortress.
+25
+00:01:17,000 --> 00:01:20,040
+You just go make that super weapon. I'll meet you back at
 
-20
-00:01:21,000 --> 00:01:25,000
-Well, Axel shouldn't have to do this alone. I'm coming with you, man.
+26
+00:01:20,040 --> 00:01:21,000
+Soren's fortress.
 
-21
+27
+00:01:21,000 --> 00:01:24,420
+Well, Axel shouldn't have to do this alone. I'm coming with
+
+28
+00:01:24,420 --> 00:01:25,000
+you, man.
+
+29
 00:01:25,000 --> 00:01:27,000
 Nice.
 
-22
-00:01:27,000 --> 00:01:32,000
-Well, I'm going with Jesse. I pledge to help, and that's what I must do.
+30
+00:01:27,000 --> 00:01:30,888
+Well, I'm going with Jesse. I pledge to help, and that's
 
-23
+31
+00:01:30,888 --> 00:01:32,000
+what I must do.
+
+32
 00:01:32,000 --> 00:01:35,000
 Everyone, take good care of yourselves.
 
-24
-00:01:36,000 --> 00:01:42,000
-Hey, Jesse. Let's try our handshake again, just once for the road.
+33
+00:01:36,000 --> 00:01:41,090
+Hey, Jesse. Let's try our handshake again, just once for
+
+34
+00:01:41,090 --> 00:01:42,000
+the road.
 

@@ -1,64 +1,84 @@
 1
-00:00:00,000 --> 00:00:04,000
-Look, even if your friends are out there somewhere, there's nothing you can do for them.
+00:00:00,000 --> 00:00:02,681
+Look, even if your friends are out there somewhere, there's
 
 2
+00:00:02,681 --> 00:00:04,000
+nothing you can do for them.
+
+3
 00:00:06,500 --> 00:00:10,500
 What? No, if they're alive, I have to go after them.
 
-3
+4
 00:00:11,000 --> 00:00:12,500
 They might need me, Jesse.
 
-4
+5
 00:00:12,500 --> 00:00:15,500
 You can't just up and leave, Lucas. You're part of our team.
 
-5
+6
 00:00:16,500 --> 00:00:19,000
 And you saying that just reminds me that I left my team.
 
-6
+7
 00:00:19,000 --> 00:00:20,000
 Lucas...
 
-7
+8
 00:00:20,500 --> 00:00:23,500
 Look, you and me, we've made a pretty good team so far.
 
-8
+9
 00:00:24,000 --> 00:00:25,500
 I'd even call us friends.
 
-9
-00:00:25,500 --> 00:00:28,500
-So I hope you'll understand why I need to go help my old friends.
-
 10
-00:00:28,500 --> 00:00:34,500
-I can't believe I'm saying this, but if your heart's telling you to go, then you gotta go.
+00:00:25,500 --> 00:00:28,084
+So I hope you'll understand why I need to go help my old
 
 11
+00:00:28,084 --> 00:00:28,500
+friends.
+
+12
+00:00:28,500 --> 00:00:31,966
+I can't believe I'm saying this, but if your heart's
+
+13
+00:00:31,966 --> 00:00:34,500
+telling you to go, then you gotta go.
+
+14
 00:00:35,000 --> 00:00:38,000
 Otherwise you'd be heartless or something.
 
-12
-00:00:39,500 --> 00:00:45,500
-Thank you, Jesse. I'll find them. And then I'll find you again, too. I promise.
+15
+00:00:39,500 --> 00:00:43,753
+Thank you, Jesse. I'll find them. And then I'll find you
 
-13
+16
+00:00:43,753 --> 00:00:45,500
+again, too. I promise.
+
+17
 00:00:46,000 --> 00:00:47,000
 Thanks.
 
-14
+18
 00:00:59,000 --> 00:01:01,000
 Hey, buddy. You doing okay?
 
-15
-00:01:02,000 --> 00:01:06,000
-Of course you are. Wish I could say the same for everyone else.
+19
+00:01:02,000 --> 00:01:05,619
+Of course you are. Wish I could say the same for everyone
 
-16
+20
+00:01:05,619 --> 00:01:06,000
+else.
+
+21
 00:01:07,000 --> 00:01:09,000
 We've lost too many people already.
 

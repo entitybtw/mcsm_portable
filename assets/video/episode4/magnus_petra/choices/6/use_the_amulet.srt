@@ -1,96 +1,144 @@
 1
-00:00:00,000 --> 00:00:06,720
-We know for a fact the wither storm will follow the ambulance. So if we take the amulet back to your fortress where the endermen are
+00:00:00,000 --> 00:00:02,596
+We know for a fact the wither storm will follow the
 
 2
-00:00:07,200 --> 00:00:13,680
-We'll lead them straight into a massive trap. Just one problem. You're forgetting about the command block
+00:00:02,596 --> 00:00:05,498
+ambulance. So if we take the amulet back to your fortress
 
 3
+00:00:05,498 --> 00:00:06,720
+where the endermen are
+
+4
+00:00:07,200 --> 00:00:10,532
+We'll lead them straight into a massive trap. Just one
+
+5
+00:00:10,532 --> 00:00:13,680
+problem. You're forgetting about the command block
+
+6
 00:00:14,880 --> 00:00:16,240
 Yes
 
-4
+7
 00:00:16,240 --> 00:00:18,480
 It's clear now that no weapon can destroy it
 
-5
-00:00:19,280 --> 00:00:25,120
-Not even a formidable. Yes. Well, I created a fail safe. What kind of fail safe exactly?
+8
+00:00:19,280 --> 00:00:22,996
+Not even a formidable. Yes. Well, I created a fail safe.
 
-6
+9
+00:00:22,996 --> 00:00:25,120
+What kind of fail safe exactly?
+
+10
 00:00:26,080 --> 00:00:28,080
 an enchanting book
 
-7
+11
 00:00:28,160 --> 00:00:31,840
 One that contains the power of the command block itself
 
-8
-00:00:32,400 --> 00:00:37,040
-Use it to enchant a weapon and you'll be able to smash the command block to bits
+12
+00:00:32,400 --> 00:00:35,764
+Use it to enchant a weapon and you'll be able to smash the
 
-9
+13
+00:00:35,764 --> 00:00:37,040
+command block to bits
+
+14
 00:00:37,760 --> 00:00:39,040
 forever
 
-10
+15
 00:00:39,040 --> 00:00:40,400
 Yes
 
-11
+16
 00:00:40,400 --> 00:00:42,400
 Yes, that's it
 
-12
+17
 00:00:42,400 --> 00:00:44,400
 Ivor?
 
-13
+18
 00:00:54,160 --> 00:00:56,160
 Ivor? Well, I'll be
 
-14
+19
 00:00:57,040 --> 00:00:59,120
 It is you
 
-15
+20
 00:00:59,120 --> 00:01:01,600
 The pleasure as always, Eligard
 
-16
+21
 00:01:02,320 --> 00:01:04,320
 It just keeps coming for us
 
-17
-00:01:04,880 --> 00:01:11,280
-Guys, there's a reason it's been following us. Ivor says it's because of the amulet that Gabriel the point is we need to get moving
+22
+00:01:04,880 --> 00:01:07,615
+Guys, there's a reason it's been following us. Ivor says
 
-18
-00:01:11,360 --> 00:01:15,680
-We aren't safe. Not as long as we have that amulet. I'll take it
+23
+00:01:07,615 --> 00:01:10,302
+it's because of the amulet that Gabriel the point is we
 
-19
-00:01:15,840 --> 00:01:22,880
-I'll keep the wither storms busy. You guys do what you got to do. Axel. Thank you. You just go make that super weapon
+24
+00:01:10,302 --> 00:01:11,280
+need to get moving
 
-20
-00:01:23,440 --> 00:01:27,760
-I'll meet you back at soren's fortress. Well, axel shouldn't have to do this alone
+25
+00:01:11,360 --> 00:01:15,140
+We aren't safe. Not as long as we have that amulet. I'll
 
-21
+26
+00:01:15,140 --> 00:01:15,680
+take it
+
+27
+00:01:15,840 --> 00:01:19,329
+I'll keep the wither storms busy. You guys do what you got
+
+28
+00:01:19,329 --> 00:01:22,880
+to do. Axel. Thank you. You just go make that super weapon
+
+29
+00:01:23,440 --> 00:01:26,074
+I'll meet you back at soren's fortress. Well, axel
+
+30
+00:01:26,074 --> 00:01:27,760
+shouldn't have to do this alone
+
+31
 00:01:28,320 --> 00:01:30,480
 I'm going with him. I appreciate that
 
-22
-00:01:31,600 --> 00:01:36,320
-Well, i'm going with jesse. I pledge to help and that's what I must do
+32
+00:01:31,600 --> 00:01:35,308
+Well, i'm going with jesse. I pledge to help and that's
 
-23
+33
+00:01:35,308 --> 00:01:36,320
+what I must do
+
+34
 00:01:36,880 --> 00:01:38,880
 Everyone take good care of yourselves
 
-24
-00:01:41,280 --> 00:01:47,300
-Hey jesse, let's try our handshake again just once for the road
+35
+00:01:41,280 --> 00:01:46,822
+Hey jesse, let's try our handshake again just once for the
+
+36
+00:01:46,822 --> 00:01:47,300
+road
 

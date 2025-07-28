@@ -3,246 +3,250 @@
 Soren come back here dude, what a chicken
 
 2
-00:00:04,120 --> 00:00:09,720
-Jesse you can handle things out here, right? What I can't let him get himself killed
+00:00:04,120 --> 00:00:07,920
+Jesse you can handle things out here, right? What I can't
 
 3
+00:00:07,920 --> 00:00:09,720
+let him get himself killed
+
+4
 00:00:09,840 --> 00:00:13,160
 Just get to the command block and destroy it. Sorry
 
-4
+5
 00:00:13,760 --> 00:00:16,100
 So much for the mighty order of the stone
 
-5
+6
 00:00:16,680 --> 00:00:18,680
 Doesn't matter. We have work to do
 
-6
+7
 00:00:21,760 --> 00:00:23,880
 We need to get those Enderman to attack it
 
-7
+8
 00:00:30,000 --> 00:00:32,560
 Tractor beam Jesse that's it
 
-8
+9
 00:00:34,920 --> 00:00:37,240
 Make them chase you into the tractor beam
 
-9
+10
 00:01:00,040 --> 00:01:02,040
 Yeah
 
-10
+11
 00:01:02,040 --> 00:01:28,040
 Yes, they're falling for it.
 
-11
+12
 00:01:28,040 --> 00:01:29,040
 Jesse look, it's working.
 
-12
+13
 00:01:29,040 --> 00:01:30,040
 That hole's big enough to get inside of.
 
-13
+14
 00:01:30,040 --> 00:01:31,040
 Now we just need to find you a way up.
 
-14
+15
 00:01:31,040 --> 00:01:32,040
 Or build you a way up.
 
-15
+16
 00:01:32,040 --> 00:01:33,040
 That's it.
 
-16
+17
 00:01:33,040 --> 00:01:34,040
 Everyone, empty your pockets.
 
-17
+18
 00:01:34,040 --> 00:01:35,040
 Let's see.
 
-18
+19
 00:01:35,040 --> 00:01:36,040
 I've got redstone and cobblestone from Ivor's Armory.
 
-19
+20
 00:01:36,040 --> 00:01:37,040
 I've got some TNT from Boomtown.
 
-20
+21
 00:01:37,040 --> 00:01:38,040
 I've got pistons, repeaters.
 
-21
+22
 00:01:38,040 --> 00:01:39,040
 Lucas gave me some wool.
 
-22
+23
 00:01:39,040 --> 00:01:40,040
 And I took some slime from the maze.
 
-23
+24
 00:01:40,040 --> 00:01:41,040
 Oh, and I still have that minecart.
 
-24
+25
 00:01:41,040 --> 00:01:42,040
 That's gotta be enough to make something, right?
 
-25
+26
 00:01:42,040 --> 00:01:43,040
 I mean, if we use the TNT on, say...
 
-26
+27
 00:01:43,040 --> 00:01:44,040
 The minecart?
 
-27
+28
 00:01:44,040 --> 00:01:45,040
 Or the minecart.
 
-28
+29
 00:01:46,040 --> 00:01:47,040
 And we do have all that cobblestone.
 
-29
+30
 00:01:47,040 --> 00:01:48,040
 Maybe we could build a ramp?
 
-30
+31
 00:01:48,040 --> 00:01:49,040
 Or even go straight up vertically.
 
-31
+32
 00:01:49,040 --> 00:01:50,040
 Or find a way to use redstone.
 
-32
+33
 00:01:50,040 --> 00:01:51,040
 We're close to an answer.
 
-33
+34
 00:01:51,040 --> 00:01:52,040
 I can feel it.
 
-34
+35
 00:01:52,040 --> 00:01:53,040
 I'm sorry.
 
-35
+36
 00:01:53,040 --> 00:01:54,040
 I'm sorry.
 
-36
+37
 00:01:54,040 --> 00:01:55,040
 I'm sorry.
 
-37
+38
 00:01:55,040 --> 00:01:56,040
 I'm sorry.
 
-38
+39
 00:01:56,040 --> 00:01:57,040
 I'm sorry.
 
-39
+40
 00:01:57,040 --> 00:01:58,040
 I'm sorry.
 
-40
+41
 00:01:58,040 --> 00:01:59,040
 I'm sorry.
 
-41
+42
 00:01:59,040 --> 00:02:00,040
 I'm sorry.
 
-42
+43
 00:02:00,040 --> 00:02:01,040
 I'm sorry.
 
-43
+44
 00:02:01,040 --> 00:02:02,040
 I'm sorry.
 
-44
+45
 00:02:02,040 --> 00:02:03,040
 I'm sorry.
 
-45
+46
 00:02:03,040 --> 00:02:04,040
 I'm sorry.
 
-46
+47
 00:02:04,040 --> 00:02:05,040
 I'm sorry.
 
-47
+48
 00:02:05,040 --> 00:02:06,040
 I'm sorry.
 
-48
+49
 00:02:06,040 --> 00:02:07,040
 I'm sorry.
 
-49
+50
 00:02:07,040 --> 00:02:08,040
 I'm sorry.
 
-50
+51
 00:02:08,040 --> 00:02:09,040
 I'm sorry.
 
-51
+52
 00:02:09,040 --> 00:02:10,040
 I'm sorry.
 
-52
+53
 00:02:10,040 --> 00:02:11,040
 I'm sorry.
 
-53
+54
 00:02:11,040 --> 00:02:12,040
 I'm sorry.
 
-54
+55
 00:02:12,040 --> 00:02:13,040
 I'm sorry.
 
-55
+56
 00:02:13,040 --> 00:02:14,040
 I'm sorry.
 
-56
+57
 00:02:14,040 --> 00:02:15,040
 I'm sorry.
 
-57
+58
 00:02:15,040 --> 00:02:16,040
 I'm sorry.
 
-58
+59
 00:02:16,040 --> 00:02:17,040
 I'm sorry.
 
-59
+60
 00:02:17,040 --> 00:02:18,040
 I'm sorry.
 
-60
+61
 00:02:18,040 --> 00:02:19,040
 I'm sorry.
 
-61
+62
 00:02:19,040 --> 00:02:20,040
 I'm sorry.
 
-62
+63
 00:02:20,040 --> 00:02:21,040
 I'm sorry.
 

@@ -1,132 +1,144 @@
 1
-00:00:00,000 --> 00:00:06,560
-Guys, check it out. Use the Pistons, the Redstone, and the TNT to build a TNT launcher.
+00:00:00,000 --> 00:00:04,373
+Guys, check it out. Use the Pistons, the Redstone, and the
 
 2
-00:00:06,560 --> 00:00:11,520
-Then I climb on and you guys blast me all the way into the Witherstorm.
+00:00:04,373 --> 00:00:06,560
+TNT to build a TNT launcher.
 
 3
+00:00:06,560 --> 00:00:10,611
+Then I climb on and you guys blast me all the way into the
+
+4
+00:00:10,611 --> 00:00:11,520
+Witherstorm.
+
+5
 00:00:12,640 --> 00:00:14,880
 Heck yeah! I love that idea.
 
-4
+6
 00:00:15,520 --> 00:00:17,680
 So what are we waiting for? Let's hurry up and...
 
-5
+7
 00:00:17,680 --> 00:00:19,120
 Oh, look out!
 
-6
+8
 00:00:25,520 --> 00:00:26,080
 Axle!
 
-7
+9
 00:00:30,000 --> 00:00:30,500
 No!
 
-8
+10
 00:00:37,360 --> 00:00:39,840
 I can't hold on!
 
-9
+11
 00:00:39,840 --> 00:00:40,720
 I got you!
 
-10
+12
 00:00:40,720 --> 00:00:42,640
 Lucas! You're here!
 
-11
+13
 00:00:43,520 --> 00:00:46,480
 Ocelots, distract that Witherstorm!
 
-12
+14
 00:00:46,480 --> 00:00:48,640
 Hey you! Get a load of this!
 
-13
+15
 00:00:55,680 --> 00:00:58,320
 Lucas, thank you. Anything for a friend.
 
-14
+16
 00:00:58,480 --> 00:01:02,160
 Okay. Now let's hurry up and build this thing.
 
-15
+17
 00:01:18,240 --> 00:01:19,760
 Okay, it's finished.
 
-16
+18
 00:01:21,760 --> 00:01:23,040
 Quick, climb on!
 
-17
+19
 00:01:23,040 --> 00:01:26,160
 And Jesse, I know you can do this.
 
-18
+20
 00:01:26,160 --> 00:01:27,360
 We all do.
 
-19
+21
 00:01:27,360 --> 00:01:29,440
 Thanks guys. It means a lot.
 
-20
+22
 00:01:29,440 --> 00:01:31,440
 Now go demolish that command block.
 
-21
+23
 00:01:32,880 --> 00:01:34,880
 Ruben, this is no place for a...
 
-22
+24
 00:01:35,760 --> 00:01:37,120
 Please!
 
-23
+25
 00:01:49,120 --> 00:01:50,320
 Wow.
 
-24
+26
 00:01:57,360 --> 00:02:06,320
 There it is.
 
-25
+27
 00:02:10,560 --> 00:02:12,320
 We meet again, command block.
 
-26
+28
 00:02:14,560 --> 00:02:16,320
 Now it's time to destroy you.
 
-27
+29
 00:02:23,040 --> 00:02:25,600
 Ruben, I think we made it angry.
 
-28
+30
 00:02:27,360 --> 00:02:46,400
 It's doing everything it can to protect the command block.
 
-29
+31
 00:02:48,400 --> 00:02:50,400
 Awesome weapon. Don't fail me now.
 
-30
-00:02:57,360 --> 00:03:22,400
-Ruben, whatever happens, we have to destroy that command block.
+32
+00:02:57,360 --> 00:03:19,617
+Ruben, whatever happens, we have to destroy that command
 
-31
+33
+00:03:19,617 --> 00:03:22,400
+block.
+
+34
 00:03:27,360 --> 00:03:36,400
 Wait a second, I know exactly how to get up there.
 
-32
+35
 00:03:36,400 --> 00:03:38,400
 The tractor beams!
 
-33
+36
 00:03:38,400 --> 00:03:40,400
 Hey you!
 

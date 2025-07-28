@@ -95,86 +95,106 @@ but this...
 Oh, I doubt he lives here.
 
 25
-00:01:30,240 --> 00:01:33,440
-He most likely comes here only for his most secretive research.
+00:01:30,240 --> 00:01:32,932
+He most likely comes here only for his most secretive
 
 26
-00:01:33,680 --> 00:01:37,680
-Whatever Ivor's hiding in here, it will be extremely well guarded.
+00:01:32,932 --> 00:01:33,440
+research.
 
 27
+00:01:33,680 --> 00:01:37,134
+Whatever Ivor's hiding in here, it will be extremely well
+
+28
+00:01:37,134 --> 00:01:37,680
+guarded.
+
+29
 00:01:44,320 --> 00:01:45,920
 This way, I suspect.
 
-28
-00:01:46,720 --> 00:01:49,720
-I'd feel better about this if the rest of our group was with us.
+30
+00:01:46,720 --> 00:01:49,298
+I'd feel better about this if the rest of our group was
 
-29
+31
+00:01:49,298 --> 00:01:49,720
+with us.
+
+32
 00:01:51,880 --> 00:01:52,880
 Come on!
 
-30
+33
 00:01:56,680 --> 00:01:59,680
 Is this... a maze?
 
-31
+34
 00:02:00,080 --> 00:02:01,480
 It would appear so.
 
-32
+35
 00:02:02,480 --> 00:02:04,480
 A massive one from the looks of it.
 
-33
-00:02:05,680 --> 00:02:10,680
-If Ivor used the command block to build this, it could hold unspeakable peril.
+36
+00:02:05,680 --> 00:02:09,462
+If Ivor used the command block to build this, it could hold
 
-34
+37
+00:02:09,462 --> 00:02:10,680
+unspeakable peril.
+
+38
 00:02:10,680 --> 00:02:13,680
 Why do I sense that interest in the Far Lands?
 
-35
+39
 00:02:13,680 --> 00:02:16,680
 I'm sure it's because of the way Ivor's been working.
 
-36
+40
 00:02:16,680 --> 00:02:19,680
 I'm sure he's been working on this for a long time.
 
-37
+41
 00:02:19,680 --> 00:02:22,680
 I think Ivor's been working on this for a long time.
 
-38
+42
 00:02:22,680 --> 00:02:24,680
 I think Ivor's been working on this for a long time.
 
-39
-00:02:24,680 --> 00:02:30,680
-Why do I sense that entering this so-called maze would be a grave mistake?
+43
+00:02:24,680 --> 00:02:29,463
+Why do I sense that entering this so-called maze would be a
 
-40
+44
+00:02:29,463 --> 00:02:30,680
+grave mistake?
+
+45
 00:02:30,680 --> 00:02:33,680
 Because some part of you still knows Ivor.
 
-41
+46
 00:02:33,680 --> 00:02:36,680
 Unfortunately, this seems to be the only way forward.
 
-42
+47
 00:02:36,680 --> 00:02:38,680
 There has to be another way.
 
-43
+48
 00:02:39,680 --> 00:02:41,680
 A secret door, or... I don't know.
 
-44
+49
 00:02:42,680 --> 00:02:44,680
 Some way around.
 
-45
+50
 00:02:54,680 --> 00:02:56,680
 I'm sure Ivor's been working on this for a long time.
 

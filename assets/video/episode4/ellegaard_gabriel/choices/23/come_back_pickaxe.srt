@@ -3,126 +3,134 @@
 Soren come back here dude, what a chicken
 
 2
-00:00:04,120 --> 00:00:09,720
-Jesse you can handle things out here, right? What I can't let him get himself killed
+00:00:04,120 --> 00:00:07,920
+Jesse you can handle things out here, right? What I can't
 
 3
+00:00:07,920 --> 00:00:09,720
+let him get himself killed
+
+4
 00:00:09,840 --> 00:00:13,160
 Just get to the command block and destroy it. Sorry
 
-4
+5
 00:00:13,760 --> 00:00:16,100
 So much for the mighty order of the stone
 
-5
+6
 00:00:16,680 --> 00:00:18,680
 Doesn't matter. We have work to do
 
-6
+7
 00:00:21,760 --> 00:00:23,880
 We need to get those Enderman to attack it
 
-7
+8
 00:00:30,000 --> 00:00:32,560
 Tractor beam Jesse that's it
 
-8
+9
 00:00:34,920 --> 00:00:37,240
 Make them chase you into the tractor beam
 
-9
+10
 00:01:00,160 --> 00:01:02,160
 I
 
-10
+11
 00:01:02,160 --> 00:01:28,160
 Yes, they're falling for it.
 
-11
+12
 00:01:28,160 --> 00:01:29,160
 Jesse, look!
 
-12
+13
 00:01:29,160 --> 00:01:30,160
 It's working!
 
-13
+14
 00:01:30,160 --> 00:01:32,160
 The hole's big enough to get inside of.
 
-14
+15
 00:01:32,160 --> 00:01:34,160
 Now we just need to find you a way up.
 
-15
+16
 00:01:34,160 --> 00:01:37,160
 Or build you a way up.
 
-16
+17
 00:01:37,160 --> 00:01:38,160
 That's it!
 
-17
+18
 00:01:38,160 --> 00:01:40,160
 Everyone, empty your pockets!
 
-18
+19
 00:01:40,160 --> 00:01:42,160
 Let's see...
 
-19
+20
 00:01:42,160 --> 00:01:44,160
 I've got redstone and cobblestone from Ivor's Armory.
 
-20
+21
 00:01:44,160 --> 00:01:46,160
 I've got some TNT from Boomtown.
 
-21
+22
 00:01:46,160 --> 00:01:48,160
 I've got pistons, repeaters...
 
-22
-00:01:48,160 --> 00:01:50,160
-Lucas gave me some wool, and I took some slime from the maze.
-
 23
+00:01:48,160 --> 00:01:49,963
+Lucas gave me some wool, and I took some slime from the
+
+24
+00:01:49,963 --> 00:01:50,160
+maze.
+
+25
 00:01:50,160 --> 00:01:52,160
 Oh, and I still have that minecart.
 
-24
+26
 00:01:52,160 --> 00:01:54,160
 That's gotta be enough to make something, right?
 
-25
+27
 00:01:54,160 --> 00:01:57,160
 I mean, if we use the TNT on, say...
 
-26
+28
 00:01:57,160 --> 00:01:58,160
 The minecart?
 
-27
+29
 00:01:58,160 --> 00:01:59,160
 Or those pistons...
 
-28
+30
 00:01:59,160 --> 00:02:01,160
 And we do have all that cobblestone.
 
-29
+31
 00:02:01,160 --> 00:02:02,160
 Maybe we could build a ramp?
 
-30
+32
 00:02:02,160 --> 00:02:04,160
 Or even go straight up vertically.
 
-31
+33
 00:02:04,160 --> 00:02:06,160
 Or find a way to use redstone.
 
-32
+34
 00:02:06,160 --> 00:02:08,160
 We're close to an answer. I can feel it!
 

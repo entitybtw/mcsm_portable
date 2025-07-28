@@ -103,14 +103,18 @@ And so it was that a new Order of the Stone was born.
 One whose adventures were only just beginning.
 
 27
-00:01:39,180 --> 00:01:43,180
-For though the world had been saved and the command block destroyed,
+00:01:39,180 --> 00:01:42,532
+For though the world had been saved and the command block
 
 28
+00:01:42,532 --> 00:01:43,180
+destroyed,
+
+29
 00:01:43,180 --> 00:01:47,180
 there are many more worlds than just this one.
 
-29
+30
 00:02:13,180 --> 00:02:17,180
 Thanks for watching!
 

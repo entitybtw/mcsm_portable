@@ -3,18 +3,22 @@
 Hey Olivia, I think there's some redstone over here.
 
 2
-00:00:05,000 --> 00:00:11,000
-Looks like a circuit. We probably just need a lever to power it.
+00:00:05,000 --> 00:00:10,062
+Looks like a circuit. We probably just need a lever to
 
 3
+00:00:10,062 --> 00:00:11,000
+power it.
+
+4
 00:00:11,000 --> 00:00:13,000
 Too bad I don't have one.
 
-4
+5
 00:00:13,000 --> 00:00:16,000
 Yeah, no lever, no functioning circuit.
 
-5
+6
 00:00:30,000 --> 00:00:35,000
 Thanks for watching!
 

@@ -15,146 +15,162 @@ Behold! My enchanted diamond pickaxe!
 Yes, that should do the job nicely.
 
 5
-00:00:29,000 --> 00:00:34,000
-But if you're fighting those Wither Monsters head on, you'll want better armor too.
+00:00:29,000 --> 00:00:32,192
+But if you're fighting those Wither Monsters head on,
 
 6
-00:00:34,000 --> 00:00:38,000
-I enchanted these for the Order. They're about as strong as it comes.
+00:00:32,192 --> 00:00:34,000
+you'll want better armor too.
 
 7
+00:00:34,000 --> 00:00:37,420
+I enchanted these for the Order. They're about as strong as
+
+8
+00:00:37,420 --> 00:00:38,000
+it comes.
+
+9
 00:00:38,000 --> 00:00:41,000
 Even able to withstand TNT!
 
-8
+10
 00:00:41,000 --> 00:00:43,000
 Any preference?
 
-9
+11
 00:00:43,000 --> 00:00:47,000
 Oh, I kinda wanna keep the armor I'm already wearing.
 
-10
+12
 00:00:47,000 --> 00:00:48,000
 Really?
 
-11
+13
 00:00:48,000 --> 00:00:51,000
 I mean, Magnus died so I could have it, you know?
 
-12
+14
 00:00:51,000 --> 00:00:56,000
 Come to think of it, he would have liked that. Very well.
 
-13
+15
 00:00:56,000 --> 00:00:58,000
 Nice weapon, Jesse!
 
-14
+16
 00:00:58,000 --> 00:01:00,000
 Thanks!
 
-15
+17
 00:01:00,000 --> 00:01:02,000
 But at least take some for your friends.
 
-16
+18
 00:01:02,000 --> 00:01:04,000
 Sounds good to me.
 
-17
-00:01:15,000 --> 00:01:20,000
-Let's get back to Soren's fortress and see how the Witherstorms are doing against those Endermen.
+19
+00:01:15,000 --> 00:01:17,577
+Let's get back to Soren's fortress and see how the
 
-18
+20
+00:01:17,577 --> 00:01:20,000
+Witherstorms are doing against those Endermen.
+
+21
 00:01:21,000 --> 00:01:23,000
 I'm not sure what's going on here.
 
-19
+22
 00:01:35,000 --> 00:01:37,000
 My poor fortress!
 
-20
+23
 00:01:37,000 --> 00:01:41,000
 I see Endermen, so this means the plan's working, right?
 
-21
+24
 00:01:41,000 --> 00:01:45,000
 Shouldn't the Endermen have dismantled those things already?
 
-22
+25
 00:01:45,000 --> 00:01:47,000
 Or am I just confused?
 
-23
+26
 00:01:47,000 --> 00:01:50,000
 It's not just you. Something's wrong.
 
-24
+27
 00:01:50,000 --> 00:01:52,000
 Jesse, over here!
 
-25
+28
 00:01:54,000 --> 00:01:55,000
 Axle!
 
-26
+29
 00:01:55,000 --> 00:01:57,000
 You guys made it!
 
-27
+30
 00:01:57,000 --> 00:01:59,000
 Nice freakin' armor, by the way.
 
-28
+31
 00:01:59,000 --> 00:02:01,000
 Do you still have the amulet?
 
-29
+32
 00:02:01,000 --> 00:02:04,000
 Safe and sound. That's not the problem.
 
-30
+33
 00:02:04,000 --> 00:02:06,000
 Then what is?
 
-31
+34
 00:02:06,000 --> 00:02:08,000
 The Endermen. They're not angry enough.
 
-32
-00:02:08,000 --> 00:02:13,000
-I mean, some of them are, but a lot of them are just standing around moving blocks.
+35
+00:02:08,000 --> 00:02:11,132
+I mean, some of them are, but a lot of them are just
 
-33
+36
+00:02:11,132 --> 00:02:13,000
+standing around moving blocks.
+
+37
 00:02:13,000 --> 00:02:16,000
 You know, being Endermen.
 
-34
+38
 00:02:16,000 --> 00:02:17,000
 Ugh! Blast!
 
-35
+39
 00:02:17,000 --> 00:02:20,000
 Well, it's nothing we can't handle, right?
 
-36
+40
 00:02:20,000 --> 00:02:22,000
 I'm not so sure about that.
 
-37
+41
 00:02:22,000 --> 00:02:25,000
 Now is not the time for cold feet, Soren!
 
-38
+42
 00:02:28,000 --> 00:02:30,000
 So what's the plan?
 
-39
+43
 00:02:30,000 --> 00:02:33,000
 I mean, I know we gotta go in there, but...
 
-40
+44
 00:02:35,000 --> 00:02:38,000
 Do we just go for it, or what?
 

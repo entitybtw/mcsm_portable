@@ -1,256 +1,268 @@
 1
-00:00:00,000 --> 00:00:09,000
-Guys, check it out. We build a cobblestone ramp, lay down some track, attach the TNT to the minecart, and launch it off the ramp like a rocket!
+00:00:00,000 --> 00:00:03,587
+Guys, check it out. We build a cobblestone ramp, lay down
 
 2
+00:00:03,587 --> 00:00:07,174
+some track, attach the TNT to the minecart, and launch it
+
+3
+00:00:07,174 --> 00:00:09,000
+off the ramp like a rocket!
+
+4
 00:00:09,000 --> 00:00:12,000
 Heck yeah! I love that idea!
 
-3
+5
 00:00:12,000 --> 00:00:15,000
 So what are we waiting for? Let's hurry up and...
 
-4
+6
 00:00:15,000 --> 00:00:17,000
 Oh, look out!
 
-5
+7
 00:00:19,000 --> 00:00:20,000
 Petra!
 
-6
+8
 00:00:20,000 --> 00:00:21,000
 Axel!
 
-7
+9
 00:00:31,000 --> 00:00:34,000
 I can't... hold on!
 
-8
+10
 00:00:34,000 --> 00:00:35,000
 I got you!
 
-9
+11
 00:00:35,000 --> 00:00:38,000
 Lucas! You're here!
 
-10
+12
 00:00:38,000 --> 00:00:41,000
 Ocelots, distract that wither storm!
 
-11
+13
 00:00:41,000 --> 00:00:44,000
 Hey you! Get a load of this!
 
-12
+14
 00:00:50,000 --> 00:00:52,000
 Lucas, thank you.
 
-13
+15
 00:00:52,000 --> 00:00:54,000
 Anything for a friend.
 
-14
+16
 00:00:54,000 --> 00:00:57,000
 Now let's hurry up and build this thing!
 
-15
+17
 00:01:00,000 --> 00:01:03,000
 Okay, it's finished.
 
-16
+18
 00:01:03,000 --> 00:01:05,000
 Quick, climb on!
 
-17
+19
 00:01:05,000 --> 00:01:08,000
 Jesse, you can do this. I know you can.
 
-18
+20
 00:01:08,000 --> 00:01:09,000
 We all do.
 
-19
+21
 00:01:09,000 --> 00:01:11,000
 Thanks guys. It means a lot.
 
-20
+22
 00:01:11,000 --> 00:01:14,000
 Now go to walls that command block.
 
-21
+23
 00:01:17,000 --> 00:01:19,000
 Okay, let's go.
 
-22
+24
 00:01:19,000 --> 00:01:21,000
 Okay, let's go.
 
-23
+25
 00:01:21,000 --> 00:01:23,000
 Okay, let's go.
 
-24
+26
 00:01:23,000 --> 00:01:25,000
 Okay, let's go.
 
-25
+27
 00:01:25,000 --> 00:01:27,000
 Okay, let's go.
 
-26
+28
 00:01:27,000 --> 00:01:29,000
 Ruben, this is no place for a...
 
-27
+29
 00:01:29,000 --> 00:01:31,000
 Big...
 
-28
+30
 00:01:33,000 --> 00:01:36,000
 Aaaaaah!
 
-29
+31
 00:01:36,000 --> 00:01:38,000
 Aaaaaah!
 
-30
+32
 00:01:38,000 --> 00:01:40,000
 No!
 
-31
+33
 00:01:44,000 --> 00:01:46,000
 Wow!
 
-32
+34
 00:01:57,000 --> 00:01:59,000
 No!
 
-33
+35
 00:02:07,000 --> 00:02:09,000
 There it is.
 
-34
+36
 00:02:12,000 --> 00:02:15,000
 We meet again, command block.
 
-35
+37
 00:02:16,000 --> 00:02:19,000
 Now it's time to destroy you.
 
-36
+38
 00:02:19,000 --> 00:02:22,000
 Ruben, I think we made it angry.
 
-37
+39
 00:02:29,000 --> 00:02:31,000
 Die!
 
-38
+40
 00:02:40,000 --> 00:02:43,000
 It's doing everything it can to protect the command block.
 
-39
+41
 00:02:43,000 --> 00:02:46,000
 Awesome weapon, don't fail me now.
 
-40
+42
 00:02:53,000 --> 00:02:55,000
 Aaaaaah!
 
-41
+43
 00:02:57,000 --> 00:02:59,000
 Aaaaaah!
 
-42
+44
 00:03:01,000 --> 00:03:03,000
 Holy moly!
 
-43
+45
 00:03:05,000 --> 00:03:07,000
 This thing will die!
 
-44
+46
 00:03:07,000 --> 00:03:09,000
 Aaaaaah!
 
-45
+47
 00:03:10,000 --> 00:03:12,000
 This thing will die!
 
-46
-00:03:21,000 --> 00:03:25,000
-Ruben, whatever happens, we have to destroy that command block.
+48
+00:03:21,000 --> 00:03:24,555
+Ruben, whatever happens, we have to destroy that command
 
-47
+49
+00:03:24,555 --> 00:03:25,000
+block.
+
+50
 00:03:25,000 --> 00:03:27,000
 I'm going to kill you.
 
-48
+51
 00:03:35,000 --> 00:03:38,000
 Wait a second, I know exactly how to get up there.
 
-49
+52
 00:03:39,000 --> 00:03:41,000
 The tractor beam!
 
-50
+53
 00:03:42,000 --> 00:03:44,000
 Hey you!
 
-51
+54
 00:03:55,000 --> 00:03:57,000
 You're dead.
 
-52
+55
 00:03:57,000 --> 00:03:59,000
 You're dead.
 
-53
+56
 00:03:59,000 --> 00:04:01,000
 You're dead.
 
-54
+57
 00:04:01,000 --> 00:04:03,000
 You're dead.
 
-55
+58
 00:04:03,000 --> 00:04:05,000
 You're dead.
 
-56
+59
 00:04:05,000 --> 00:04:07,000
 You're dead.
 
-57
+60
 00:04:07,000 --> 00:04:09,000
 You're dead.
 
-58
+61
 00:04:09,000 --> 00:04:11,000
 You're dead.
 
-59
+62
 00:04:11,000 --> 00:04:13,000
 You're dead.
 
-60
+63
 00:04:13,000 --> 00:04:15,000
 You're dead.
 
-61
+64
 00:04:15,000 --> 00:04:17,000
 You're dead.
 
-62
+65
 00:04:17,000 --> 00:04:19,000
 You're dead.
 
-63
+66
 00:04:19,000 --> 00:04:21,000
 You're dead.
 
-64
+67
 00:04:21,000 --> 00:04:23,000
 You're dead.
 

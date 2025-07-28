@@ -79,90 +79,106 @@ The Order traveled far and wide during our heyday.
 How can Ivor live here?
 
 21
-00:01:20,600 --> 00:01:25,600
-I mean, it's one thing to build a war world inside the End, but this...
+00:01:20,600 --> 00:01:24,754
+I mean, it's one thing to build a war world inside the End,
 
 22
+00:01:24,754 --> 00:01:25,600
+but this...
+
+23
 00:01:26,000 --> 00:01:28,000
 Oh, I doubt he lives here.
 
-23
-00:01:28,080 --> 00:01:31,480
-He most likely comes here only for his most secretive research.
-
 24
-00:01:31,480 --> 00:01:35,480
-Whatever Ivor is hiding in here, it will be extremely well guarded.
+00:01:28,080 --> 00:01:30,940
+He most likely comes here only for his most secretive
 
 25
+00:01:30,940 --> 00:01:31,480
+research.
+
+26
+00:01:31,480 --> 00:01:34,942
+Whatever Ivor is hiding in here, it will be extremely well
+
+27
+00:01:34,942 --> 00:01:35,480
+guarded.
+
+28
 00:01:42,120 --> 00:01:44,120
 This way, I suspect.
 
-26
+29
 00:01:44,520 --> 00:01:47,520
 I'd feel better about this if Axel and Lucas were here.
 
-27
+30
 00:01:49,720 --> 00:01:50,720
 Come on!
 
-28
+31
 00:01:58,000 --> 00:02:01,000
 Is this... a maze?
 
-29
+32
 00:02:01,000 --> 00:02:03,000
 It would appear so.
 
-30
+33
 00:02:03,000 --> 00:02:06,000
 A massive one from the looks of it.
 
-31
-00:02:07,000 --> 00:02:12,000
-If Ivor used the command block to build this, it would hold a speakable peril.
+34
+00:02:07,000 --> 00:02:10,782
+If Ivor used the command block to build this, it would hold
 
-32
+35
+00:02:10,782 --> 00:02:12,000
+a speakable peril.
+
+36
 00:02:12,000 --> 00:02:15,000
 Why do I have a bad feeling about this?
 
-33
+37
 00:02:15,000 --> 00:02:18,000
 Because some part of you still knows Ivor lives here.
 
-34
+38
 00:02:18,000 --> 00:02:21,000
 I'm sure he's been here before.
 
-35
+39
 00:02:21,000 --> 00:02:23,000
 I'm sure he's been here before.
 
-36
+40
 00:02:23,000 --> 00:02:25,000
 I'm sure he's been here before.
 
-37
+41
 00:02:25,000 --> 00:02:27,000
 I'm sure he's been here before.
 
-38
+42
 00:02:27,000 --> 00:02:29,000
 I'm sure he's been here before.
 
-39
+43
 00:02:29,000 --> 00:02:32,000
 Fortunately, this seems to be the only way forward.
 
-40
+44
 00:02:32,000 --> 00:02:34,000
 There has to be another way.
 
-41
+45
 00:02:34,000 --> 00:02:37,000
 A secret door, or... I don't know.
 
-42
+46
 00:02:37,000 --> 00:02:40,000
 Some way around.
 

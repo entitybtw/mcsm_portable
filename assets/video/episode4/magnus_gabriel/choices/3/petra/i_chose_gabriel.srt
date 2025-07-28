@@ -1,164 +1,184 @@
 1
-00:00:00,000 --> 00:00:03,900
-Look, there were two of you caught in the tractor beam that day and...
+00:00:00,000 --> 00:00:03,287
+Look, there were two of you caught in the tractor beam that
 
 2
+00:00:03,287 --> 00:00:03,900
+day and...
+
+3
 00:00:04,900 --> 00:00:06,400
 Well, I helped Gabriel.
 
-3
+4
 00:00:07,600 --> 00:00:09,500
 The sick guy over there.
 
-4
+5
 00:00:10,100 --> 00:00:10,900
 Oh...
 
-5
+6
 00:00:11,500 --> 00:00:13,600
 Yeah, I think I do remember that.
 
-6
-00:00:13,600 --> 00:00:17,900
-You gotta realize I thought we needed him if it was just about who I liked!
-
 7
+00:00:13,600 --> 00:00:16,810
+You gotta realize I thought we needed him if it was just
+
+8
+00:00:16,810 --> 00:00:17,900
+about who I liked!
+
+9
 00:00:17,900 --> 00:00:19,500
 No, I get it.
 
-8
+10
 00:00:20,000 --> 00:00:21,600
 You did what you had to do.
 
-9
+11
 00:00:22,400 --> 00:00:24,300
 All that matters is you're with us now.
 
-10
+12
 00:00:24,300 --> 00:00:26,100
 And that you're still a fighter.
 
-11
+13
 00:00:26,300 --> 00:00:27,800
 The best one I know.
 
-12
+14
 00:00:28,400 --> 00:00:31,300
 So, what do you say? Will you be part of our group again?
 
-13
+15
 00:00:34,600 --> 00:00:36,900
 Alright. Count me in.
 
-14
+16
 00:00:37,700 --> 00:00:39,600
 We didn't all make it back, though.
 
-15
+17
 00:00:43,000 --> 00:00:44,800
 Guys, it was my fault.
 
-16
+18
 00:00:46,200 --> 00:00:48,600
 I'm the one who took Magnus' armor.
 
-17
+19
 00:00:49,200 --> 00:00:51,800
 But you couldn't have known what was going to happen.
 
-18
+20
 00:00:52,200 --> 00:00:55,600
 She's right. You can't blame yourself, Jesse.
 
-19
+21
 00:00:56,100 --> 00:00:58,500
 I'm surprised he lasted as long as he did.
 
-20
+22
 00:01:00,200 --> 00:01:02,600
 Being emotional is getting us nowhere!
 
-21
+23
 00:01:02,900 --> 00:01:05,400
 What I want to know is what happened out there today.
 
-22
+24
 00:01:05,400 --> 00:01:07,700
 Why is that thing still alive?
 
-23
+25
 00:01:08,200 --> 00:01:10,300
 The Formidabomb just wasn't strong enough.
 
-24
-00:01:10,600 --> 00:01:14,000
-I mean, it ripped the Witherstorm apart, but it didn't make a dent in the command block.
+26
+00:01:10,600 --> 00:01:12,879
+I mean, it ripped the Witherstorm apart, but it didn't make
 
-25
+27
+00:01:12,879 --> 00:01:14,000
+a dent in the command block.
+
+28
 00:01:15,300 --> 00:01:17,800
 So the command block is still out there?
 
-26
+29
 00:01:18,400 --> 00:01:19,600
 Oh, great!
 
-27
+30
 00:01:20,200 --> 00:01:23,100
 Look, our plan didn't work, so we obviously need a new one.
 
-28
+31
 00:01:23,900 --> 00:01:26,700
 The question is, what do we do?
 
-29
+32
 00:01:27,900 --> 00:01:30,200
 Well, why are you asking me?
 
-30
+33
 00:01:30,700 --> 00:01:33,300
 Am I expected to know every last thing in the universe?
 
-31
+34
 00:01:35,000 --> 00:01:37,100
 I need a moment to think.
 
-32
+35
 00:01:39,800 --> 00:01:41,400
 Is he always like this?
 
-33
+36
 00:01:41,600 --> 00:01:43,700
 You have no idea.
 
-34
+37
 00:01:46,700 --> 00:01:49,600
 That jacket, it looks familiar.
 
-35
+38
 00:01:50,700 --> 00:01:52,500
 Lucas always wears that jacket.
 
-36
-00:01:52,700 --> 00:01:58,900
-No, I saw other people wearing it when I was being thrown from that dead monster.
+39
+00:01:52,700 --> 00:01:57,062
+No, I saw other people wearing it when I was being thrown
 
-37
+40
+00:01:57,062 --> 00:01:58,900
+from that dead monster.
+
+41
 00:02:00,700 --> 00:02:02,100
 Even thinking about it hurts.
 
-38
+42
 00:02:02,100 --> 00:02:03,900
 Hey, hey, it's okay.
 
-39
+43
 00:02:05,700 --> 00:02:08,300
 Jesse, if what Petra said is true...
 
-40
+44
 00:02:09,500 --> 00:02:11,400
 I mean, do you think?
 
-41
-00:02:11,900 --> 00:02:16,200
-I thought for sure they were gone, but if they were just trapped in the Witherstorm...
+45
+00:02:11,900 --> 00:02:14,700
+I thought for sure they were gone, but if they were just
+
+46
+00:02:14,700 --> 00:02:16,200
+trapped in the Witherstorm...
 

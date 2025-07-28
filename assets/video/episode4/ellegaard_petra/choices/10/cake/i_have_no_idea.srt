@@ -79,82 +79,102 @@ The Order traveled far and wide during our heyday.
 How can Ivor live here?
 
 21
-00:01:22,800 --> 00:01:26,680
-I mean, it's one thing to build a wall world and decide the end,
+00:01:22,800 --> 00:01:26,376
+I mean, it's one thing to build a wall world and decide the
 
 22
+00:01:26,376 --> 00:01:26,680
+end,
+
+23
 00:01:26,680 --> 00:01:27,680
 but this...
 
-23
+24
 00:01:28,200 --> 00:01:30,000
 Oh, I doubt he lives here.
 
-24
-00:01:30,240 --> 00:01:33,440
-He most likely comes here only for his most secretive research.
-
 25
-00:01:33,680 --> 00:01:37,680
-Whatever Ivor's hiding in here, it will be extremely well guarded.
+00:01:30,240 --> 00:01:32,932
+He most likely comes here only for his most secretive
 
 26
+00:01:32,932 --> 00:01:33,440
+research.
+
+27
+00:01:33,680 --> 00:01:37,134
+Whatever Ivor's hiding in here, it will be extremely well
+
+28
+00:01:37,134 --> 00:01:37,680
+guarded.
+
+29
 00:01:44,320 --> 00:01:45,920
 This way, I suspect.
 
-27
-00:01:46,720 --> 00:01:49,720
-I'd feel better about this if the rest of our group was with us.
+30
+00:01:46,720 --> 00:01:49,298
+I'd feel better about this if the rest of our group was
 
-28
+31
+00:01:49,298 --> 00:01:49,720
+with us.
+
+32
 00:01:51,880 --> 00:01:52,880
 Come on!
 
-29
+33
 00:01:56,720 --> 00:01:58,920
 Just give me your thoughts about the Water Jah.
 
-30
+34
 00:02:10,840 --> 00:02:13,400
 Is this... a maze?
 
-31
+35
 00:02:13,840 --> 00:02:15,640
 It would appear so.
 
-32
+36
 00:02:16,960 --> 00:02:19,040
 A massive one from the looks of it.
 
-33
+37
 00:02:20,400 --> 00:02:22,520
 If Ivor used the command block to build this,
 
-34
+38
 00:02:22,840 --> 00:02:25,040
 it could hold up to the speakable peril.
 
-35
-00:02:25,040 --> 00:02:30,640
-Why do I sense that entering this so-called maze would be a grave mistake?
+39
+00:02:25,040 --> 00:02:29,504
+Why do I sense that entering this so-called maze would be a
 
-36
+40
+00:02:29,504 --> 00:02:30,640
+grave mistake?
+
+41
 00:02:30,640 --> 00:02:33,540
 Because some part of you still knows Ivor.
 
-37
+42
 00:02:33,540 --> 00:02:36,840
 Unfortunately, this seems to be the only way forward.
 
-38
+43
 00:02:36,840 --> 00:02:39,540
 There has to be another way.
 
-39
+44
 00:02:39,540 --> 00:02:43,040
 A secret door, or... I don't know...
 
-40
+45
 00:02:43,040 --> 00:02:45,240
 Some way around.
 

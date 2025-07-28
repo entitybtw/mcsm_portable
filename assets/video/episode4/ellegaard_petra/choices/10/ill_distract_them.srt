@@ -19,210 +19,246 @@ I'll hold them off!
 What? Ivor, no!
 
 6
-00:00:09,000 --> 00:00:13,000
-There's no time to argue. Just head for the corner of the glitch wall!
+00:00:09,000 --> 00:00:12,257
+There's no time to argue. Just head for the corner of the
 
 7
+00:00:12,257 --> 00:00:13,000
+glitch wall!
+
+8
 00:00:13,000 --> 00:00:14,000
 The what wall?
 
-8
-00:00:14,000 --> 00:00:18,000
-Hey you, witch! You're not the only one who can throw a potion!
-
 9
+00:00:14,000 --> 00:00:17,492
+Hey you, witch! You're not the only one who can throw a
+
+10
+00:00:17,492 --> 00:00:18,000
+potion!
+
+11
 00:00:22,000 --> 00:00:24,000
 Come on!
 
-10
+12
 00:00:30,000 --> 00:00:32,000
 Guys, I think we lost them for...
 
-11
+13
 00:00:35,000 --> 00:00:37,000
 Wow!
 
-12
+14
 00:00:37,000 --> 00:00:39,000
 You lost them for wow?
 
-13
+15
 00:00:39,000 --> 00:00:41,000
 What is that?
 
-14
+16
 00:00:41,000 --> 00:00:43,000
 Oh...
 
-15
+17
 00:00:43,000 --> 00:00:45,000
 Wow!
 
-16
+18
 00:00:47,000 --> 00:00:49,000
 It's like we're at the edge of the world!
 
-17
+19
 00:00:49,000 --> 00:00:52,000
 Actually, we seem to be at the corner of it.
 
-18
+20
 00:00:52,000 --> 00:00:54,000
 Welcome to the Far Land.
 
-19
-00:00:55,000 --> 00:01:00,000
-I'd feel a lot better about going into this crazy wall thingy if I wasn't still hungry.
+21
+00:00:55,000 --> 00:00:58,103
+I'd feel a lot better about going into this crazy wall
 
-20
+22
+00:00:58,103 --> 00:01:00,000
+thingy if I wasn't still hungry.
+
+23
 00:01:00,000 --> 00:01:03,000
 I'd rather be hungry than killed by a witch.
 
-21
+24
 00:01:03,000 --> 00:01:05,000
 I'd rather be eating dinner.
 
-22
+25
 00:01:09,000 --> 00:01:11,000
 I'm sorry, I'm sorry.
 
-23
+26
 00:01:11,000 --> 00:01:13,000
 I'm sorry.
 
-24
+27
 00:01:13,000 --> 00:01:15,000
 I'm sorry.
 
-25
+28
 00:01:15,000 --> 00:01:17,000
 I'm sorry.
 
-26
+29
 00:01:17,000 --> 00:01:19,000
 I'm sorry.
 
-27
+30
 00:01:19,000 --> 00:01:21,000
 I'm sorry.
 
-28
+31
 00:01:21,000 --> 00:01:23,000
 Wow.
 
-29
+32
 00:01:25,000 --> 00:01:27,000
 Quite a sight, isn't it?
 
-30
+33
 00:01:27,000 --> 00:01:29,000
 Sauron, have you been here before?
 
-31
+34
 00:01:29,000 --> 00:01:33,000
 Not here specifically, but I have visited the Far Lands.
 
-32
+35
 00:01:33,000 --> 00:01:37,000
 The Order traveled far and wide during our heyday.
 
-33
-00:01:39,000 --> 00:01:45,000
-How can Ivor live here? I mean, it's one thing to build a wall world inside the End, but this...
+36
+00:01:39,000 --> 00:01:42,562
+How can Ivor live here? I mean, it's one thing to build a
 
-34
+37
+00:01:42,562 --> 00:01:45,000
+wall world inside the End, but this...
+
+38
 00:01:45,000 --> 00:01:47,000
 Oh, I doubt he lives here.
 
-35
-00:01:47,000 --> 00:01:50,000
-He most likely comes here only for his most secretive research.
+39
+00:01:47,000 --> 00:01:49,523
+He most likely comes here only for his most secretive
 
-36
-00:01:50,000 --> 00:01:54,000
-Whatever Ivor's hiding in here, it will be extremely well guarded.
+40
+00:01:49,523 --> 00:01:50,000
+research.
 
-37
+41
+00:01:50,000 --> 00:01:53,454
+Whatever Ivor's hiding in here, it will be extremely well
+
+42
+00:01:53,454 --> 00:01:54,000
+guarded.
+
+43
 00:02:01,000 --> 00:02:03,000
 This way, I suspect.
 
-38
-00:02:03,000 --> 00:02:07,000
-I'd feel better about this if the rest of our group was with us.
+44
+00:02:03,000 --> 00:02:06,437
+I'd feel better about this if the rest of our group was
 
-39
+45
+00:02:06,437 --> 00:02:07,000
+with us.
+
+46
 00:02:07,000 --> 00:02:09,000
 Come on!
 
-40
+47
 00:02:17,000 --> 00:02:19,000
 Is this... a maze?
 
-41
+48
 00:02:19,000 --> 00:02:21,000
 It would appear so.
 
-42
+49
 00:02:21,000 --> 00:02:23,000
 A massive one from the looks of it.
 
-43
-00:02:23,000 --> 00:02:27,000
-If Ivor used the command block to build this, it would hold unspeakable peril.
+50
+00:02:23,000 --> 00:02:26,025
+If Ivor used the command block to build this, it would hold
 
-44
-00:02:27,000 --> 00:02:31,000
-Why do I sense that entering this so-called maze would be a good idea?
+51
+00:02:26,025 --> 00:02:27,000
+unspeakable peril.
 
-45
+52
+00:02:27,000 --> 00:02:30,371
+Why do I sense that entering this so-called maze would be a
+
+53
+00:02:30,371 --> 00:02:31,000
+good idea?
+
+54
 00:02:31,000 --> 00:02:33,000
 I'm not sure.
 
-46
+55
 00:02:33,000 --> 00:02:35,000
 I'm not sure.
 
-47
+56
 00:02:35,000 --> 00:02:37,000
 I'm not sure.
 
-48
+57
 00:02:37,000 --> 00:02:39,000
 I'm not sure.
 
-49
+58
 00:02:39,000 --> 00:02:41,000
 I'm not sure.
 
-50
+59
 00:02:41,000 --> 00:02:43,000
 I'm not sure.
 
-51
+60
 00:02:43,000 --> 00:02:45,000
 I'm not sure.
 
-52
+61
 00:02:45,000 --> 00:02:49,000
 Entering the so-called maze would be a grave mistake.
 
-53
+62
 00:02:49,000 --> 00:02:52,000
 Because some part of you still knows Ivor.
 
-54
+63
 00:02:52,000 --> 00:02:55,000
 Fortunately, this seems to be the only way forward.
 
-55
+64
 00:02:55,000 --> 00:02:58,000
 There has to be another way.
 
-56
+65
 00:02:58,000 --> 00:03:00,000
 A secret door, or, I don't know...
 
-57
+66
 00:03:01,000 --> 00:03:03,000
 some way around.
 

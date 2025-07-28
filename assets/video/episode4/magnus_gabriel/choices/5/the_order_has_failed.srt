@@ -1,140 +1,192 @@
 1
-00:00:00,000 --> 00:00:08,000
-The order failed. Part of me was still holding out hope that they could fix things, but guess I should have known better.
+00:00:00,000 --> 00:00:03,636
+The order failed. Part of me was still holding out hope
 
 2
+00:00:03,636 --> 00:00:07,404
+that they could fix things, but guess I should have known
+
+3
+00:00:07,404 --> 00:00:08,000
+better.
+
+4
 00:00:08,000 --> 00:00:12,000
 You're really not making me feel better, Reuben.
 
-3
-00:00:14,000 --> 00:00:21,000
-Oh, you want help, do you? That's what I said, isn't it? Just as you once helped us before.
-
-4
-00:00:21,000 --> 00:00:26,000
-This isn't about the past, it's about the future. There are three of those things now.
-
 5
+00:00:14,000 --> 00:00:18,307
+Oh, you want help, do you? That's what I said, isn't it?
+
+6
+00:00:18,307 --> 00:00:21,000
+Just as you once helped us before.
+
+7
+00:00:21,000 --> 00:00:24,430
+This isn't about the past, it's about the future. There are
+
+8
+00:00:24,430 --> 00:00:26,000
+three of those things now.
+
+9
 00:00:26,000 --> 00:00:28,000
 You say that like it's my fault! It is your fault!
 
-6
-00:00:28,000 --> 00:00:31,000
-Take responsibility for once, Soren. Soren, you need to listen to me.
+10
+00:00:28,000 --> 00:00:30,391
+Take responsibility for once, Soren. Soren, you need to
 
-7
+11
+00:00:30,391 --> 00:00:31,000
+listen to me.
+
+12
 00:00:31,000 --> 00:00:34,000
 Hush, Ivor, for once!
 
-8
-00:00:34,000 --> 00:00:41,000
-I told you, I wouldn't have followed you here without good reason. What you don't understand is, you are all in very grave danger.
+13
+00:00:34,000 --> 00:00:37,123
+I told you, I wouldn't have followed you here without good
 
-9
+14
+00:00:37,123 --> 00:00:40,192
+reason. What you don't understand is, you are all in very
+
+15
+00:00:40,192 --> 00:00:41,000
+grave danger.
+
+16
 00:00:41,000 --> 00:00:43,000
 Obviously!
 
-10
-00:00:43,000 --> 00:00:51,000
-No, I mean specifically this group. The Winter Storm isn't acting randomly, it's following Gabriel.
+17
+00:00:43,000 --> 00:00:47,686
+No, I mean specifically this group. The Winter Storm isn't
 
-11
+18
+00:00:47,686 --> 00:00:51,000
+acting randomly, it's following Gabriel.
+
+19
 00:00:51,000 --> 00:00:57,000
 You see, I may have programmed it to follow his amulet.
 
-12
+20
 00:00:57,000 --> 00:01:00,000
 I have the amulet, Ivor, I have all along.
 
-13
-00:01:00,000 --> 00:01:05,000
-What? Ivor, you fool! You've created a monster that's following Jesse!
+21
+00:01:00,000 --> 00:01:03,785
+What? Ivor, you fool! You've created a monster that's
 
-14
+22
+00:01:03,785 --> 00:01:05,000
+following Jesse!
+
+23
 00:01:05,000 --> 00:01:08,000
 I... I didn't know.
 
-15
+24
 00:01:08,000 --> 00:01:09,000
 And it's only getting stronger!
 
-16
-00:01:09,000 --> 00:01:14,000
-You don't think I realize that? Nothing can stop those things! Nothing even hurts them!
+25
+00:01:09,000 --> 00:01:12,103
+You don't think I realize that? Nothing can stop those
 
-17
-00:01:15,000 --> 00:01:21,000
-Well, except Enderman. We actually just saw a bunch of Endermen pull blocks off a wither storm.
+26
+00:01:12,103 --> 00:01:14,000
+things! Nothing even hurts them!
 
-18
-00:01:21,000 --> 00:01:28,000
-So, enough of them working together might be able to destroy a wither storm entirely.
+27
+00:01:15,000 --> 00:01:18,410
+Well, except Enderman. We actually just saw a bunch of
 
-19
-00:01:28,000 --> 00:01:33,000
-The question is, how to bring the storms and the Endermen together?
+28
+00:01:18,410 --> 00:01:21,000
+Endermen pull blocks off a wither storm.
 
-20
+29
+00:01:21,000 --> 00:01:25,282
+So, enough of them working together might be able to
+
+30
+00:01:25,282 --> 00:01:28,000
+destroy a wither storm entirely.
+
+31
+00:01:28,000 --> 00:01:32,253
+The question is, how to bring the storms and the Endermen
+
+32
+00:01:32,253 --> 00:01:33,000
+together?
+
+33
 00:01:35,000 --> 00:01:38,000
 Endermen aren't pets, they don't follow orders.
 
-21
+34
 00:01:40,000 --> 00:01:43,000
 At least, not from mere mortals.
 
-22
+35
 00:01:44,000 --> 00:01:46,000
 I mean, they're just animals.
 
-23
+36
 00:01:46,000 --> 00:01:48,000
 They're just animals.
 
-24
+37
 00:01:48,000 --> 00:01:50,000
 They're just animals.
 
-25
+38
 00:01:50,000 --> 00:01:52,000
 They're just animals.
 
-26
+39
 00:01:52,000 --> 00:01:54,000
 They're just animals.
 
-27
+40
 00:01:54,000 --> 00:01:56,000
 They're just animals.
 
-28
+41
 00:01:56,000 --> 00:01:58,000
 They're just animals.
 
-29
+42
 00:01:58,000 --> 00:02:00,000
 They're just animals.
 
-30
+43
 00:02:00,000 --> 00:02:02,000
 They're just animals.
 
-31
+44
 00:02:02,000 --> 00:02:04,000
 They're just animals.
 
-32
+45
 00:02:04,000 --> 00:02:06,000
 They're just animals.
 
-33
+46
 00:02:06,000 --> 00:02:08,000
 They're just animals.
 
-34
+47
 00:02:08,000 --> 00:02:10,000
 They're just animals.
 
-35
+48
 00:02:10,000 --> 00:02:12,000
 They're just animals.
 

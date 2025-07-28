@@ -3,50 +3,54 @@
 Hey Olivia, I think there's some redstone over here.
 
 2
-00:00:05,000 --> 00:00:11,000
-Looks like a circuit. We probably just need a lever to power it.
+00:00:05,000 --> 00:00:10,062
+Looks like a circuit. We probably just need a lever to
 
 3
+00:00:10,062 --> 00:00:11,000
+power it.
+
+4
 00:00:11,000 --> 00:00:13,000
 Too bad I don't have one.
 
-4
+5
 00:00:13,000 --> 00:00:16,000
 Yeah, no lever, no functioning circuit.
 
-5
+6
 00:00:31,000 --> 00:00:34,000
 I'm not sure what this is for.
 
-6
+7
 00:00:34,000 --> 00:00:37,000
 I'm not sure what this is for.
 
-7
+8
 00:00:37,000 --> 00:00:40,000
 I'm not sure what this is for.
 
-8
+9
 00:00:40,000 --> 00:00:43,000
 I'm not sure what this is for.
 
-9
+10
 00:00:43,000 --> 00:00:46,000
 I'm not sure what this is for.
 
-10
+11
 00:00:46,000 --> 00:00:49,000
 I'm not sure what this is for.
 
-11
+12
 00:00:49,000 --> 00:00:52,000
 I'm not sure what this is for.
 
-12
+13
 00:00:52,000 --> 00:00:55,000
 I'm not sure what this is for.
 
-13
+14
 00:00:55,000 --> 00:00:58,000
 I'm not sure what this is for.
 

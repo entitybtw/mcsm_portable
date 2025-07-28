@@ -1,272 +1,288 @@
 1
-00:00:00,000 --> 00:00:06,560
-Guys, check it out. Use the Pistons, the Redstone, and the TNT to build a TNT launcher.
+00:00:00,000 --> 00:00:04,373
+Guys, check it out. Use the Pistons, the Redstone, and the
 
 2
-00:00:06,560 --> 00:00:11,680
-Then I climb on and you guys blast me all the way into the Witherstorm.
+00:00:04,373 --> 00:00:06,560
+TNT to build a TNT launcher.
 
 3
+00:00:06,560 --> 00:00:10,742
+Then I climb on and you guys blast me all the way into the
+
+4
+00:00:10,742 --> 00:00:11,680
+Witherstorm.
+
+5
 00:00:11,680 --> 00:00:15,120
 Haha, heck yeah! I love that idea.
 
-4
+6
 00:00:15,120 --> 00:00:18,080
 So what are we waiting for? Let's hurry up and...
 
-5
+7
 00:00:18,080 --> 00:00:19,520
 Oh, look out!
 
-6
+8
 00:00:21,520 --> 00:00:22,720
 Petra!
 
-7
+9
 00:00:22,720 --> 00:00:23,920
 Axel!
 
-8
+10
 00:00:23,920 --> 00:00:25,920
 Aaaaaah!
 
-9
+11
 00:00:25,920 --> 00:00:27,920
 Aaaaaah!
 
-10
+12
 00:00:27,920 --> 00:00:29,920
 Whoa!
 
-11
+13
 00:00:29,920 --> 00:00:31,920
 Gah!
 
-12
+14
 00:00:35,920 --> 00:00:37,920
 I can't hold on!
 
-13
+15
 00:00:37,920 --> 00:00:39,920
 I got you!
 
-14
+16
 00:00:39,920 --> 00:00:41,920
 Lucas, you're here!
 
-15
+17
 00:00:41,920 --> 00:00:43,920
 Ocelots, distract that Witherstorm!
 
-16
+18
 00:00:43,920 --> 00:00:47,920
 Hey you! Get a load of this!
 
-17
+19
 00:00:47,920 --> 00:00:49,920
 Lucas, thank you.
 
-18
+20
 00:00:49,920 --> 00:00:51,920
 Anything for a friend.
 
-19
+21
 00:00:51,920 --> 00:00:53,920
 Now let's hurry up and build this thing!
 
-20
+22
 00:01:09,920 --> 00:01:11,920
 Okay, it's finished.
 
-21
+23
 00:01:11,920 --> 00:01:13,920
 Okay, it's finished.
 
-22
+24
 00:01:13,920 --> 00:01:15,920
 Okay, it's finished.
 
-23
+25
 00:01:15,920 --> 00:01:17,920
 Okay, it's finished.
 
-24
+26
 00:01:19,920 --> 00:01:21,920
 Quick, climb on!
 
-25
+27
 00:01:21,920 --> 00:01:23,920
 Jesse, you can do this. I know you can.
 
-26
+28
 00:01:23,920 --> 00:01:25,920
 We all do.
 
-27
+29
 00:01:25,920 --> 00:01:27,920
 Thanks guys. It means a lot.
 
-28
+30
 00:01:27,920 --> 00:01:29,920
 Now go demolish that command block.
 
-29
+31
 00:01:29,920 --> 00:01:31,920
 Ruben, this is no place for a...
 
-30
+32
 00:01:31,920 --> 00:01:33,920
 Heeeeeeeet!
 
-31
+33
 00:01:33,920 --> 00:01:35,920
 Aaaaaah!
 
-32
+34
 00:01:35,920 --> 00:01:37,920
 Aaaaaah!
 
-33
+35
 00:01:37,920 --> 00:01:39,920
 Aaaaaah!
 
-34
+36
 00:01:39,920 --> 00:01:41,920
 Go!
 
-35
+37
 00:01:45,920 --> 00:01:47,920
 Whoa!
 
-36
+38
 00:01:51,920 --> 00:01:53,920
 Gah!
 
-37
+39
 00:02:01,920 --> 00:02:03,920
 There it is.
 
-38
+40
 00:02:07,920 --> 00:02:09,920
 We meet again, command block.
 
-39
+41
 00:02:11,920 --> 00:02:13,920
 Now it's time to destroy you.
 
-40
+42
 00:02:15,920 --> 00:02:17,920
 Ruben, I think we made it angry.
 
-41
+43
 00:02:19,920 --> 00:02:21,920
 Ruben, I think we made it angry.
 
-42
+44
 00:02:21,920 --> 00:02:23,920
 Ruben, I think we made it angry.
 
-43
+45
 00:02:41,920 --> 00:02:43,920
 It's doing everything it can to protect the command block.
 
-44
+46
 00:02:45,920 --> 00:02:47,920
 Awesome weapon, don't fail me now.
 
-45
+47
 00:02:47,920 --> 00:02:49,920
 Awesome weapon, don't fail me now.
 
-46
+48
 00:03:01,920 --> 00:03:03,920
 Holy moly!
 
-47
+49
 00:03:05,920 --> 00:03:07,920
 Still on time!
 
-48
-00:03:15,920 --> 00:03:17,920
-Ruben, if it ever happens, we have to destroy that command block.
-
-49
-00:03:17,920 --> 00:03:19,920
-Ruben, if it ever happens, we have to destroy that command block.
-
 50
+00:03:15,920 --> 00:03:17,704
+Ruben, if it ever happens, we have to destroy that command
+
+51
+00:03:17,704 --> 00:03:17,920
+block.
+
+52
+00:03:17,920 --> 00:03:19,704
+Ruben, if it ever happens, we have to destroy that command
+
+53
+00:03:19,704 --> 00:03:19,920
+block.
+
+54
 00:03:29,920 --> 00:03:31,920
 Wait a second, I know exactly how to get up there.
 
-51
+55
 00:03:31,920 --> 00:03:33,920
 Wait a second, I know exactly how to get up there.
 
-52
+56
 00:03:33,920 --> 00:03:35,920
 The tractor beam!
 
-53
+57
 00:03:35,920 --> 00:03:37,920
 The tractor beam!
 
-54
+58
 00:03:37,920 --> 00:03:39,920
 Hey you!
 
-55
+59
 00:03:45,920 --> 00:03:47,920
 Hey you!
 
-56
+60
 00:03:47,920 --> 00:03:49,920
 Hey you!
 
-57
+61
 00:03:49,920 --> 00:03:51,920
 Hey you!
 
-58
+62
 00:03:51,920 --> 00:03:53,920
 Hey you!
 
-59
+63
 00:03:53,920 --> 00:03:55,920
 Hey you!
 
-60
+64
 00:03:55,920 --> 00:03:57,920
 Hey you!
 
-61
+65
 00:03:57,920 --> 00:03:59,920
 Hey you!
 
-62
+66
 00:03:59,920 --> 00:04:01,920
 Hey you!
 
-63
+67
 00:04:01,920 --> 00:04:03,920
 Hey you!
 
-64
+68
 00:04:03,920 --> 00:04:05,920
 Hey you!
 
-65
+69
 00:04:05,920 --> 00:04:07,920
 Hey you!
 
-66
+70
 00:04:07,920 --> 00:04:09,920
 Hey you!
 
-67
+71
 00:04:09,920 --> 00:04:11,920
 Hey you!
 
-68
+72
 00:04:11,920 --> 00:04:13,920
 Hey you!
 

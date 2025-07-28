@@ -79,78 +79,94 @@ The Order traveled far and wide during our heyday.
 How can Ivor live here?
 
 21
-00:01:20,640 --> 00:01:25,840
-I mean, it's one thing to build a wall world inside the End, but this...
+00:01:20,640 --> 00:01:24,612
+I mean, it's one thing to build a wall world inside the
 
 22
+00:01:24,612 --> 00:01:25,840
+End, but this...
+
+23
 00:01:25,960 --> 00:01:27,960
 Oh, I doubt he lives here.
 
-23
-00:01:27,960 --> 00:01:31,360
-He most likely comes here only for his most secretive research.
-
 24
-00:01:31,360 --> 00:01:35,360
-Whatever Ivor is hiding in here, it will be extremely well guarded.
+00:01:27,960 --> 00:01:30,820
+He most likely comes here only for his most secretive
 
 25
+00:01:30,820 --> 00:01:31,360
+research.
+
+26
+00:01:31,360 --> 00:01:34,822
+Whatever Ivor is hiding in here, it will be extremely well
+
+27
+00:01:34,822 --> 00:01:35,360
+guarded.
+
+28
 00:01:41,960 --> 00:01:44,360
 This way, I suspect.
 
-26
+29
 00:01:44,360 --> 00:01:47,360
 I'd feel better about this if Axel and Lucas were here.
 
-27
+30
 00:01:49,560 --> 00:01:50,560
 Come on!
 
-28
+31
 00:01:55,960 --> 00:01:57,160
 Oh, thanks.
 
-29
+32
 00:01:57,160 --> 00:01:59,160
 I'm glad you're here, Ivor.
 
-30
+33
 00:02:09,160 --> 00:02:12,160
 Is this... a maze?
 
-31
+34
 00:02:12,160 --> 00:02:14,360
 It would appear so.
 
-32
+35
 00:02:14,360 --> 00:02:17,360
 A massive one from the looks of it.
 
-33
-00:02:17,360 --> 00:02:23,360
-If Ivor used the command block to build this, it would hold a speaking peril.
+36
+00:02:17,360 --> 00:02:21,957
+If Ivor used the command block to build this, it would hold
 
-34
+37
+00:02:21,957 --> 00:02:23,360
+a speaking peril.
+
+38
 00:02:23,360 --> 00:02:25,360
 Why do I have a bad feeling about this?
 
-35
+39
 00:02:25,360 --> 00:02:28,360
 Because some part of you still knows Ivor.
 
-36
+40
 00:02:28,360 --> 00:02:31,860
 Unfortunately, this seems to be the only way forward.
 
-37
+41
 00:02:31,860 --> 00:02:34,360
 There has to be another way.
 
-38
+42
 00:02:34,360 --> 00:02:37,360
 A secret door, or... I don't know...
 
-39
+43
 00:02:37,360 --> 00:02:40,360
 Some way around.
 

@@ -11,122 +11,134 @@ I can. Jesse, you can handle things out here, right?
 What?
 
 4
-00:00:07,800 --> 00:00:13,600
-I can't let him get himself killed! Just get to the command block and destroy it! Soren!
+00:00:07,800 --> 00:00:11,688
+I can't let him get himself killed! Just get to the command
 
 5
+00:00:11,688 --> 00:00:13,600
+block and destroy it! Soren!
+
+6
 00:00:13,800 --> 00:00:16,400
 So much for the mighty Order of the Stone.
 
-6
+7
 00:00:16,800 --> 00:00:18,800
 Doesn't matter. We have work to do.
 
-7
+8
 00:00:21,800 --> 00:00:23,800
 We need to get those Endermen to attack it!
 
-8
+9
 00:00:23,800 --> 00:00:25,800
 The Tractor Beam! Jesse, that's it!
 
-9
+10
 00:00:28,800 --> 00:00:30,800
 Make them chase you into the Tractor Beam!
 
-10
+11
 00:00:45,800 --> 00:00:47,800
 How do you like the bag? Or what? Free?
 
-11
+12
 00:00:48,800 --> 00:00:50,800
 How do you like the bag? Or what? Free?
 
-12
+13
 00:01:00,800 --> 00:01:02,800
 Yes, they're falling for it!
 
-13
+14
 00:01:17,800 --> 00:01:19,800
 Jesse, look! It's working!
 
-14
+15
 00:01:27,800 --> 00:01:29,800
 Jesse, look! It's working!
 
-15
+16
 00:01:29,800 --> 00:01:31,800
 That hole's big enough to get inside of.
 
-16
+17
 00:01:31,800 --> 00:01:33,800
 Now we just need to find you a way up.
 
-17
+18
 00:01:33,800 --> 00:01:36,800
 Or build you a way up.
 
-18
+19
 00:01:36,800 --> 00:01:39,800
 That's it! Everyone, empty your pockets!
 
-19
+20
 00:01:39,800 --> 00:01:41,800
 Let's see...
 
-20
+21
 00:01:41,800 --> 00:01:43,800
 I've got Redstone and Cobblestone from Iowars Army.
 
-21
-00:01:43,800 --> 00:01:45,800
-I've got Redstone and Cobblestone from Iowars Army. I've got Redstone and Cobblestone from Iowars Army. I've got some TNT from Boomtown.
-
 22
+00:01:43,800 --> 00:01:44,623
+I've got Redstone and Cobblestone from Iowars Army. I've
+
+23
+00:01:44,623 --> 00:01:45,432
+got Redstone and Cobblestone from Iowars Army. I've got
+
+24
+00:01:45,432 --> 00:01:45,800
+some TNT from Boomtown.
+
+25
 00:01:45,800 --> 00:01:47,800
 I've got Pistons, Repeaters, some Wool, some leftover Slime.
 
-23
+26
 00:01:47,800 --> 00:01:49,800
 I've got Pistons, Repeaters, some Wool, some leftover Slime.
 
-24
+27
 00:01:49,800 --> 00:01:51,800
 Oh, and I still have that Minecart.
 
-25
+28
 00:01:51,800 --> 00:01:53,800
 That's gotta be enough to make something, right?
 
-26
+29
 00:01:53,800 --> 00:01:55,800
 I mean, if we use the TNT on, say...
 
-27
+30
 00:01:55,800 --> 00:01:57,800
 The Minecart?
 
-28
+31
 00:01:57,800 --> 00:01:59,800
 Or those Pistons...
 
-29
+32
 00:01:59,800 --> 00:02:01,800
 And we do have all that Cobblestone.
 
-30
+33
 00:02:01,800 --> 00:02:03,800
 Maybe we could build a ramp?
 
-31
+34
 00:02:03,800 --> 00:02:05,800
 Or even go straight up vertically.
 
-32
+35
 00:02:05,800 --> 00:02:07,800
 Or find a way to use Redstone.
 
-33
+36
 00:02:07,800 --> 00:02:09,800
 We're close to an answer. I can feel it!
 

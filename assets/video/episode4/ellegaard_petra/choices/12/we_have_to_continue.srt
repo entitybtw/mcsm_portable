@@ -55,74 +55,86 @@ What was Ivor thinking?
 Or maybe it's just me.
 
 15
-00:00:45,000 --> 00:00:49,200
-I mean, Ellegard herself said I don't have what it takes to be a great engineer.
+00:00:45,000 --> 00:00:48,097
+I mean, Ellegard herself said I don't have what it takes to
 
 16
+00:00:48,097 --> 00:00:49,200
+be a great engineer.
+
+17
 00:00:49,200 --> 00:00:52,200
 So prove her wrong. Show the world what you're made of.
 
-17
+18
 00:00:53,200 --> 00:00:55,000
 Prove her wrong?
 
-18
+19
 00:00:55,000 --> 00:00:59,200
 Jesse, she was the greatest redstone engineer ever.
 
-19
+20
 00:01:00,200 --> 00:01:02,600
 She was in the Order of the Stone.
 
-20
+21
 00:01:02,600 --> 00:01:05,600
 Sure, but the Order are still people, just like us.
 
-21
+22
 00:01:05,600 --> 00:01:08,000
 Right. Just like us.
 
-22
-00:01:08,000 --> 00:01:13,000
-I mean, how are we the ones saving the world when even they don't have what it takes?
-
 23
+00:01:08,000 --> 00:01:11,470
+I mean, how are we the ones saving the world when even they
+
+24
+00:01:11,470 --> 00:01:13,000
+don't have what it takes?
+
+25
 00:01:13,000 --> 00:01:15,800
 Soren and Ivor are always at each other's throats.
 
-24
-00:01:15,800 --> 00:01:21,000
-All I ever see Magnus do is argue, and we both know what happened to Ellegard.
+26
+00:01:15,800 --> 00:01:19,533
+All I ever see Magnus do is argue, and we both know what
 
-25
+27
+00:01:19,533 --> 00:01:21,000
+happened to Ellegard.
+
+28
 00:01:21,000 --> 00:01:26,000
 If the Order can't do this, how are we supposed to?
 
-26
+29
 00:01:26,000 --> 00:01:30,000
 All I know is the world is depending on us.
 
-27
+30
 00:01:30,000 --> 00:01:32,000
 Then maybe the world is in trouble.
 
-28
+31
 00:01:32,000 --> 00:01:35,000
 I mean, they defeated an Ender Dragon.
 
-29
+32
 00:01:35,000 --> 00:01:38,000
 Can you name even one thing we've done right?
 
-30
+33
 00:01:38,000 --> 00:01:41,000
 And I don't mean managing to stay alive.
 
-31
+34
 00:01:44,000 --> 00:01:46,000
 Something that actually matters.
 
-32
+35
 00:01:46,000 --> 00:01:49,000
 Something that actually matters.
 

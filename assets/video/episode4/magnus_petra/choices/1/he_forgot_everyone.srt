@@ -11,30 +11,34 @@ Well, he only just met you.
 But for him to forget us?
 
 4
-00:00:07,280 --> 00:00:15,280
-You! You're the one who rescued me! Tell me please, what is going on?
+00:00:07,280 --> 00:00:14,120
+You! You're the one who rescued me! Tell me please, what is
 
 5
+00:00:14,120 --> 00:00:15,280
+going on?
+
+6
 00:00:15,280 --> 00:00:19,280
 You were caught in the witherstorm, trapped.
 
-6
+7
 00:00:19,280 --> 00:00:21,280
 For how long?
 
-7
+8
 00:00:21,280 --> 00:00:24,280
 Long enough that it did this to you.
 
-8
+9
 00:00:24,280 --> 00:00:27,280
 It felt like an eternity.
 
-9
+10
 00:00:28,060 --> 00:00:32,560
 Whoa, I suddenly feel really dizzy.
 
-10
+11
 00:00:32,560 --> 00:00:34,560
 Easy, easy, I gotcha.
 

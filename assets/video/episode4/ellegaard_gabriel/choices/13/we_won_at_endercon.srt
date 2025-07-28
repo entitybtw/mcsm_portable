@@ -23,18 +23,26 @@ I like that way of looking at it.
 Wait a second. I think I see what he was trying to do.
 
 7
-00:00:23,000 --> 00:00:33,000
-Jesse, take this piston, craft it into a sticky piston, then place it on the other side of the barge, along with a redstone block.
+00:00:23,000 --> 00:00:27,230
+Jesse, take this piston, craft it into a sticky piston,
 
 8
+00:00:27,230 --> 00:00:31,692
+then place it on the other side of the barge, along with a
+
+9
+00:00:31,692 --> 00:00:33,000
+redstone block.
+
+10
 00:00:33,000 --> 00:00:35,000
 You got all that?
 
-9
+11
 00:00:35,000 --> 00:00:37,000
 I think so.
 
-10
+12
 00:00:53,000 --> 00:01:05,000
 Thanks for watching!
 

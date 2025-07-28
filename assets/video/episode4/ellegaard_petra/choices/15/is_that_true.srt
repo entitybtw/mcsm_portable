@@ -3,62 +3,70 @@
 Sorin is that true? Of course not
 
 2
-00:00:04,720 --> 00:00:10,360
-Well, I suppose I might be mistaken I liked you better when you had amnesia
+00:00:04,720 --> 00:00:09,156
+Well, I suppose I might be mistaken I liked you better when
 
 3
-00:00:10,360 --> 00:00:32,880
-Well, that was exciting by exciting I assume you mean absurd and unnecessary
+00:00:09,156 --> 00:00:10,360
+you had amnesia
 
 4
+00:00:10,360 --> 00:00:26,064
+Well, that was exciting by exciting I assume you mean
+
+5
+00:00:26,064 --> 00:00:32,880
+absurd and unnecessary
+
+6
 00:00:32,880 --> 00:00:35,400
 Let's go see what he's hiding in there
 
-5
+7
 00:00:40,360 --> 00:00:55,360
 So many books!
 
-6
+8
 00:00:55,360 --> 00:01:00,360
 We should be careful this place could be booby-trapped
 
-7
+9
 00:01:00,360 --> 00:01:03,360
 Let's just start looking for the enchanting book
 
-8
+10
 00:01:11,360 --> 00:01:14,360
 I'm sure he's not hiding anything
 
-9
+11
 00:01:14,360 --> 00:01:17,360
 I'm sure he's not hiding anything
 
-10
+12
 00:01:17,360 --> 00:01:20,360
 I'm sure he's not hiding anything
 
-11
+13
 00:01:20,360 --> 00:01:23,360
 I'm sure he's not hiding anything
 
-12
+14
 00:01:23,360 --> 00:01:26,360
 I'm sure he's not hiding anything
 
-13
+15
 00:01:26,360 --> 00:01:29,360
 I'm sure he's not hiding anything
 
-14
+16
 00:01:29,360 --> 00:01:32,360
 I'm sure he's not hiding anything
 
-15
+17
 00:01:32,360 --> 00:01:35,360
 I'm sure he's not hiding anything
 
-16
+18
 00:01:35,360 --> 00:01:38,360
 I'm sure he's not hiding anything
 

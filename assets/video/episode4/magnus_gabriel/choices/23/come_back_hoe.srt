@@ -3,74 +3,98 @@
 Soren come back here dude, what a chicken
 
 2
-00:00:04,120 --> 00:00:09,720
-Jesse you can handle things out here, right? What I can't let him get himself killed
+00:00:04,120 --> 00:00:07,920
+Jesse you can handle things out here, right? What I can't
 
 3
+00:00:07,920 --> 00:00:09,720
+let him get himself killed
+
+4
 00:00:09,840 --> 00:00:13,160
 Just get to the command block and destroy it. Sorry
 
-4
+5
 00:00:13,760 --> 00:00:16,080
 So much for the mighty order of the stone
 
-5
+6
 00:00:16,880 --> 00:00:18,880
 Doesn't matter. We have work to do
 
-6
+7
 00:00:21,760 --> 00:00:23,880
 We need to get those Enderman to attack it
 
-7
+8
 00:00:30,000 --> 00:00:32,560
 Tractor beam Jesse that's it
 
-8
+9
 00:00:34,880 --> 00:00:37,200
 Make them chase you into the tractor beam
 
-9
+10
 00:01:00,000 --> 00:01:02,000
 Oh
 
-10
+11
 00:01:02,480 --> 00:01:04,480
 Oh
 
-11
+12
 00:01:27,920 --> 00:01:29,920
 Jesse look it's working
 
-12
+13
 00:01:32,000 --> 00:01:34,000
 Now we just need to find you a way up
 
-13
-00:01:35,360 --> 00:01:41,260
-Build you a way up. That's it. Everyone empty your pockets. Let's see
-
 14
-00:01:41,780 --> 00:01:47,840
-I've got redstone and cobblestone from Ivor's armory. I have some TNT from boom town got Pistons repeaters
+00:01:35,360 --> 00:01:40,404
+Build you a way up. That's it. Everyone empty your pockets.
 
 15
-00:01:47,840 --> 00:01:52,220
-Look, it gave me some more. I took some slime from the maze. Oh, and they still have that minecart
+00:01:40,404 --> 00:01:41,260
+Let's see
 
 16
+00:01:41,780 --> 00:01:44,924
+I've got redstone and cobblestone from Ivor's armory. I
+
+17
+00:01:44,924 --> 00:01:47,840
+have some TNT from boom town got Pistons repeaters
+
+18
+00:01:47,840 --> 00:01:50,253
+Look, it gave me some more. I took some slime from the
+
+19
+00:01:50,253 --> 00:01:52,220
+maze. Oh, and they still have that minecart
+
+20
 00:01:52,220 --> 00:01:54,320
 That's gotta be enough to make something right?
 
-17
-00:01:54,320 --> 00:02:01,300
-I mean if we use the TNT on say minecart or those piston and we do have all that cobblestone
+21
+00:01:54,320 --> 00:01:58,568
+I mean if we use the TNT on say minecart or those piston
 
-18
-00:02:01,300 --> 00:02:06,260
-Maybe we could build a ramp or even go straight up vertically or find a way to use redstone
+22
+00:01:58,568 --> 00:02:01,300
+and we do have all that cobblestone
 
-19
+23
+00:02:01,300 --> 00:02:04,025
+Maybe we could build a ramp or even go straight up
+
+24
+00:02:04,025 --> 00:02:06,260
+vertically or find a way to use redstone
+
+25
 00:02:06,260 --> 00:02:08,380
 We're close to an answer. I can feel it
 

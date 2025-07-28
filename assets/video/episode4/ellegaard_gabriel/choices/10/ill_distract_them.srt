@@ -19,170 +19,198 @@ I'll hold them off!
 What? Ivor, no!
 
 6
-00:00:09,000 --> 00:00:13,000
-There's no time to argue. Just head for the corner of the glitch wall!
+00:00:09,000 --> 00:00:12,257
+There's no time to argue. Just head for the corner of the
 
 7
+00:00:12,257 --> 00:00:13,000
+glitch wall!
+
+8
 00:00:13,000 --> 00:00:14,000
 The what wall?
 
-8
-00:00:14,000 --> 00:00:18,000
-Hey you, witch! You're not the only one who can draw a potion!
-
 9
+00:00:14,000 --> 00:00:17,483
+Hey you, witch! You're not the only one who can draw a
+
+10
+00:00:17,483 --> 00:00:18,000
+potion!
+
+11
 00:00:22,000 --> 00:00:24,000
 Come on!
 
-10
+12
 00:00:30,000 --> 00:00:32,000
 Guys, I think we lost them for...
 
-11
+13
 00:00:35,000 --> 00:00:37,000
 Wow!
 
-12
+14
 00:00:37,000 --> 00:00:39,000
 You lost them for wow?
 
-13
+15
 00:00:39,000 --> 00:00:41,000
 What is that?
 
-14
+16
 00:00:41,000 --> 00:00:43,000
 Oh...
 
-15
+17
 00:00:47,000 --> 00:00:49,000
 It's like we're at the edge of the world!
 
-16
+18
 00:00:49,000 --> 00:00:52,000
 Actually, we seem to be at the corner of it.
 
-17
+19
 00:00:52,000 --> 00:00:54,000
 Welcome to the Far Lands.
 
-18
+20
 00:00:54,000 --> 00:00:56,000
 I'm Ivor.
 
-19
+21
 00:00:56,000 --> 00:00:58,000
 I'm Ivor.
 
-20
+22
 00:00:58,000 --> 00:01:01,000
 Welcome to the Far Lands, my friend.
 
-21
-00:01:09,000 --> 00:01:14,000
-I'd feel a lot better about going into this crazy wall thingy if I wasn't still hungry.
+23
+00:01:09,000 --> 00:01:12,103
+I'd feel a lot better about going into this crazy wall
 
-22
+24
+00:01:12,103 --> 00:01:14,000
+thingy if I wasn't still hungry.
+
+25
 00:01:14,000 --> 00:01:17,000
 I'd rather be hungry than boiling in some cauldron.
 
-23
+26
 00:01:17,000 --> 00:01:19,000
 I'd rather be eating dinner.
 
-24
+27
 00:01:25,000 --> 00:01:27,000
 Quite a sight, isn't it?
 
-25
+28
 00:01:28,000 --> 00:01:30,000
 Sorin, have you been here before?
 
-26
+29
 00:01:30,000 --> 00:01:34,000
 Not here specifically, but I have visited the Far Lands.
 
-27
+30
 00:01:34,000 --> 00:01:37,000
 The Order traveled far and wide during our heyday.
 
-28
+31
 00:01:39,000 --> 00:01:41,000
 How can Ivor live here?
 
-29
-00:01:41,000 --> 00:01:46,000
-I mean, it's one thing to build a wall world inside the End, but this...
+32
+00:01:41,000 --> 00:01:44,819
+I mean, it's one thing to build a wall world inside the
 
-30
+33
+00:01:44,819 --> 00:01:46,000
+End, but this...
+
+34
 00:01:46,000 --> 00:01:48,000
 Oh, I doubt he lives here.
 
-31
-00:01:48,000 --> 00:01:52,000
-He most likely comes here only for his most secretive research.
+35
+00:01:48,000 --> 00:01:51,365
+He most likely comes here only for his most secretive
 
-32
-00:01:52,000 --> 00:01:56,000
-Whatever Ivor's hiding in here, it will be extremely well guarded.
+36
+00:01:51,365 --> 00:01:52,000
+research.
 
-33
+37
+00:01:52,000 --> 00:01:55,454
+Whatever Ivor's hiding in here, it will be extremely well
+
+38
+00:01:55,454 --> 00:01:56,000
+guarded.
+
+39
 00:01:58,000 --> 00:02:01,000
 I'm not sure I've seen this before.
 
-34
+40
 00:02:01,000 --> 00:02:04,000
 I suspect it's this way.
 
-35
+41
 00:02:04,000 --> 00:02:07,000
 I'd feel better about this if Axel and Lucas were here.
 
-36
+42
 00:02:07,000 --> 00:02:09,000
 I'm not sure I've seen this before.
 
-37
+43
 00:02:09,000 --> 00:02:11,000
 Come on!
 
-38
+44
 00:02:29,000 --> 00:02:32,000
 Is this... a maze?
 
-39
+45
 00:02:32,000 --> 00:02:34,000
 It would appear so.
 
-40
+46
 00:02:34,000 --> 00:02:37,000
 A massive one from the looks of it.
 
-41
-00:02:37,000 --> 00:02:43,000
-If Ivor used the command block to build this, it could hold unspeakable peril.
+47
+00:02:37,000 --> 00:02:41,538
+If Ivor used the command block to build this, it could hold
 
-42
+48
+00:02:41,538 --> 00:02:43,000
+unspeakable peril.
+
+49
 00:02:43,000 --> 00:02:46,000
 Why do I have a bad feeling about this?
 
-43
+50
 00:02:46,000 --> 00:02:49,000
 Because some part of you still knows Ivor.
 
-44
+51
 00:02:49,000 --> 00:02:52,000
 Unfortunately, this seems to be the only way forward.
 
-45
+52
 00:02:52,000 --> 00:02:54,000
 There has to be another way.
 
-46
+53
 00:02:54,000 --> 00:02:57,000
 A secret door, or... I don't know.
 
-47
+54
 00:02:58,000 --> 00:03:00,000
 Somewhere around.
 

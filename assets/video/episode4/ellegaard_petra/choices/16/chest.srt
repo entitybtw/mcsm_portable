@@ -1,8 +1,12 @@
 1
-00:00:00,000 --> 00:00:07,000
-Looks like there's some cobblestone and some wood, two of my favorite blocks.
+00:00:00,000 --> 00:00:05,181
+Looks like there's some cobblestone and some wood, two of
 
 2
+00:00:05,181 --> 00:00:07,000
+my favorite blocks.
+
+3
 00:00:30,000 --> 00:00:40,000
 Thanks for watching!
 

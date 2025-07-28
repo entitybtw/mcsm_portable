@@ -3,50 +3,62 @@
 Okay, a redstone block.
 
 2
-00:00:15,800 --> 00:00:19,800
-Okay, let's put the redstone block where it's supposed to go and place these pistons.
+00:00:15,800 --> 00:00:18,482
+Okay, let's put the redstone block where it's supposed to
 
 3
+00:00:18,482 --> 00:00:19,800
+go and place these pistons.
+
+4
 00:00:29,800 --> 00:00:31,800
 Holy cow, we did it!
 
-4
+5
 00:00:32,800 --> 00:00:33,800
 I'm proud of you, Olivia.
 
-5
-00:00:34,800 --> 00:00:40,800
-Thanks, Jesse. And thanks for everything you said just before. It really helped.
-
 6
+00:00:34,800 --> 00:00:38,850
+Thanks, Jesse. And thanks for everything you said just
+
+7
+00:00:38,850 --> 00:00:40,800
+before. It really helped.
+
+8
 00:00:41,800 --> 00:00:42,800
 No problemo.
 
-7
+9
 00:00:46,800 --> 00:00:59,800
 This way! This way! Run!
 
-8
+10
 00:01:00,800 --> 00:01:03,800
 Everybody get on! Quick, onto the barge!
 
-9
+11
 00:01:03,800 --> 00:01:14,800
 That was close. Everyone okay?
 
-10
+12
 00:01:15,800 --> 00:01:16,800
 For the moment.
 
-11
+13
 00:01:17,800 --> 00:01:23,800
 Slime! I'm remembering something with slime and chickens.
 
-12
-00:01:24,800 --> 00:01:28,800
-Or maybe they were ducks? There was a big gathering of people.
+14
+00:01:24,800 --> 00:01:28,283
+Or maybe they were ducks? There was a big gathering of
 
-13
+15
+00:01:28,283 --> 00:01:28,800
+people.
+
+16
 00:01:28,800 --> 00:01:33,800
 And we were looking for a man with a sword.
 

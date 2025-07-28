@@ -55,78 +55,86 @@ What was Ivor thinking?
 Or maybe it's just me.
 
 15
-00:00:45,200 --> 00:00:49,200
-I mean, Ellegard herself said I don't have what it takes to be a great engineer.
+00:00:45,200 --> 00:00:48,150
+I mean, Ellegard herself said I don't have what it takes to
 
 16
+00:00:48,150 --> 00:00:49,200
+be a great engineer.
+
+17
 00:00:49,200 --> 00:00:52,200
 So prove her wrong. Show the world what you're made of.
 
-17
+18
 00:00:53,200 --> 00:00:54,200
 Prove her wrong?
 
-18
+19
 00:00:54,600 --> 00:00:58,600
 Jessie, she's the greatest redstone engineer ever.
 
-19
+20
 00:01:00,600 --> 00:01:02,600
 She's in the Order of the Stone.
 
-20
+21
 00:01:02,600 --> 00:01:05,600
 Sure, but the Order are still people, just like us.
 
-21
+22
 00:01:05,600 --> 00:01:07,600
 Right. Just like us.
 
-22
-00:01:07,600 --> 00:01:13,600
-I mean, how are we the ones saving the world when even they don't have what it takes?
-
 23
+00:01:07,600 --> 00:01:11,764
+I mean, how are we the ones saving the world when even they
+
+24
+00:01:11,764 --> 00:01:13,600
+don't have what it takes?
+
+25
 00:01:13,600 --> 00:01:15,600
 Soren and Ivor are always at each other's throats.
 
-24
+26
 00:01:15,600 --> 00:01:18,600
 None of them give Ellegard any respect.
 
-25
+27
 00:01:18,600 --> 00:01:21,600
 And Magnus lost his life trying to fight this.
 
-26
+28
 00:01:24,600 --> 00:01:29,600
 If the Order can't do this, how are we supposed to?
 
-27
+29
 00:01:29,600 --> 00:01:33,600
 All I know is the world is depending on us.
 
-28
+30
 00:01:33,600 --> 00:01:35,600
 And maybe the world is in trouble.
 
-29
+31
 00:01:35,600 --> 00:01:38,600
 I mean, they defeated an Ender Dragon.
 
-30
+32
 00:01:38,600 --> 00:01:41,600
 Can you name even one thing we've done right?
 
-31
+33
 00:01:41,600 --> 00:01:44,600
 And I don't mean managing to stay alive.
 
-32
+34
 00:01:47,600 --> 00:01:49,600
 Something that actually matters.
 
-33
+35
 00:01:49,600 --> 00:01:52,000
 Something that actually matters.
 

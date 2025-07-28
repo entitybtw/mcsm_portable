@@ -91,90 +91,110 @@ but this...
 Oh, I doubt he lives here.
 
 24
-00:01:30,200 --> 00:01:33,400
-He most likely comes here only for his most secretive research.
+00:01:30,200 --> 00:01:32,892
+He most likely comes here only for his most secretive
 
 25
-00:01:33,600 --> 00:01:37,800
-Whatever Ivor's hiding in here, it will be extremely well guarded.
+00:01:32,892 --> 00:01:33,400
+research.
 
 26
+00:01:33,600 --> 00:01:37,227
+Whatever Ivor's hiding in here, it will be extremely well
+
+27
+00:01:37,227 --> 00:01:37,800
+guarded.
+
+28
 00:01:44,200 --> 00:01:46,000
 This way, I suspect.
 
-27
-00:01:46,600 --> 00:01:49,800
-I'd feel better about this if the rest of our group was with us.
+29
+00:01:46,600 --> 00:01:49,350
+I'd feel better about this if the rest of our group was
 
-28
+30
+00:01:49,350 --> 00:01:49,800
+with us.
+
+31
 00:01:51,800 --> 00:01:52,800
 Come on!
 
-29
+32
 00:01:57,800 --> 00:02:00,800
 Is this... a maze?
 
-30
+33
 00:02:01,200 --> 00:02:02,800
 It would appear so.
 
-31
+34
 00:02:03,400 --> 00:02:05,800
 A massive one from the looks of it.
 
-32
-00:02:06,800 --> 00:02:11,800
-If Ivor used the command block to build this, it could hold unspeakable peril.
+35
+00:02:06,800 --> 00:02:10,582
+If Ivor used the command block to build this, it could hold
 
-33
+36
+00:02:10,582 --> 00:02:11,800
+unspeakable peril.
+
+37
 00:02:12,000 --> 00:02:14,800
 Why do I sense that entering this place is so dangerous?
 
-34
+38
 00:02:15,000 --> 00:02:16,800
 I'm sure Ivor would have been able to do it.
 
-35
+39
 00:02:17,000 --> 00:02:18,800
 I'm sure Ivor would have been able to do it.
 
-36
+40
 00:02:19,000 --> 00:02:20,800
 I'm sure Ivor would have been able to do it.
 
-37
+41
 00:02:21,000 --> 00:02:22,800
 I'm sure Ivor would have been able to do it.
 
-38
+42
 00:02:23,000 --> 00:02:24,800
 I'm sure Ivor would have been able to do it.
 
-39
-00:02:24,800 --> 00:02:29,800
-Why do I sense that entering this so-called maze would be a grave mistake?
+43
+00:02:24,800 --> 00:02:28,786
+Why do I sense that entering this so-called maze would be a
 
-40
+44
+00:02:28,786 --> 00:02:29,800
+grave mistake?
+
+45
 00:02:30,000 --> 00:02:32,800
 Because some part of you still knows Ivor.
 
-41
+46
 00:02:33,000 --> 00:02:36,400
 Unfortunately, this seems to be the only way forward.
 
-42
+47
 00:02:36,600 --> 00:02:38,800
 There has to be another way.
 
-43
+48
 00:02:39,000 --> 00:02:41,800
 A secret door, or... I don't know...
 
-44
+49
 00:02:42,600 --> 00:02:44,800
 Some way around.
 
-45
+50
 00:02:54,800 --> 00:02:56,800
 I'm sure Ivor would have been able to do it.
 

@@ -3,62 +3,78 @@
 And these are supposed to be the Ender crystals?
 
 2
-00:00:02,520 --> 00:00:06,240
-Scale models of them. They were the secret to the dragon's demise.
+00:00:02,520 --> 00:00:05,789
+Scale models of them. They were the secret to the dragon's
 
 3
+00:00:05,789 --> 00:00:06,240
+demise.
+
+4
 00:00:06,240 --> 00:00:07,760
 The secret, huh?
 
-4
+5
 00:00:08,760 --> 00:00:15,000
 Ha, if only you'd been there. It was a fight for the ages.
 
-5
+6
 00:00:15,000 --> 00:00:18,760
 We'd spent weeks preparing for our greatest battle ever.
 
-6
-00:00:22,880 --> 00:00:27,680
-But even so, the Ender Dragon was stronger than even I had imagined.
-
 7
-00:00:28,360 --> 00:00:32,360
-I realized that it was drawing strength from the Ender crystals,
+00:00:22,880 --> 00:00:26,974
+But even so, the Ender Dragon was stronger than even I had
 
 8
+00:00:26,974 --> 00:00:27,680
+imagined.
+
+9
+00:00:28,360 --> 00:00:31,735
+I realized that it was drawing strength from the Ender
+
+10
+00:00:31,735 --> 00:00:32,360
+crystals,
+
+11
 00:00:32,360 --> 00:00:35,360
 and that the crystals had to be destroyed.
 
-9
+12
 00:00:35,360 --> 00:00:38,960
 I hit the first with a perfectly placed arrow,
 
-10
-00:00:38,960 --> 00:00:43,960
-the second I destroyed by launching myself on the shockwave of Magnus' TNT.
+13
+00:00:38,960 --> 00:00:42,893
+the second I destroyed by launching myself on the shockwave
 
-11
+14
+00:00:42,893 --> 00:00:43,960
+of Magnus' TNT.
+
+15
 00:00:45,360 --> 00:00:48,160
 Using only my strength and my wiles,
 
-12
+16
 00:00:48,160 --> 00:00:51,560
 I steered the foul beast toward the third crystal.
 
-13
+17
 00:00:51,560 --> 00:00:56,560
 I flew the dragon directly toward the final crystal.
 
-14
+18
 00:01:03,560 --> 00:01:08,560
 Only then did Gabriel deliver his famous final blow.
 
-15
+19
 00:01:14,560 --> 00:01:18,560
 We became heroes, and eventually, legends.
 
-16
+20
 00:01:21,560 --> 00:01:25,560
 The greatest the world has ever known.
 

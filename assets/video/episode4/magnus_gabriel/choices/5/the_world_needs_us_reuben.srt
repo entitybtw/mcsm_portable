@@ -3,86 +3,138 @@
 The world needs us, Ruben.
 
 2
-00:00:02,720 --> 00:00:06,720
-So much of it has already been reduced to bedrock, and it's up to us to save the rest of it.
+00:00:02,720 --> 00:00:05,285
+So much of it has already been reduced to bedrock, and it's
 
 3
-00:00:08,160 --> 00:00:13,040
-Well, maybe that is a lot of pressure for just a person and a pig, but we have to find a way.
+00:00:05,285 --> 00:00:06,720
+up to us to save the rest of it.
 
 4
+00:00:08,160 --> 00:00:11,255
+Well, maybe that is a lot of pressure for just a person and
+
+5
+00:00:11,255 --> 00:00:13,040
+a pig, but we have to find a way.
+
+6
 00:00:14,400 --> 00:00:16,400
 Oh, you wanted help, do you?
 
-5
-00:00:17,120 --> 00:00:20,560
-That's what I said, isn't it? Oh, just as you once helped us before.
-
-6
-00:00:20,960 --> 00:00:27,040
-This isn't about the past, it's about the future. There are three of those things now. You say that like it's my fault!
-
 7
-00:00:27,200 --> 00:00:33,520
-It is your fault! I'll take responsibility for once, Soren. Soren, you need to listen to me. Hush, I vor for once!
+00:00:17,120 --> 00:00:20,003
+That's what I said, isn't it? Oh, just as you once helped
 
 8
-00:00:33,680 --> 00:00:40,560
-I told you, I wouldn't have followed you here without good reason. What you don't understand is you are all in very grave danger.
+00:00:20,003 --> 00:00:20,560
+us before.
 
 9
-00:00:42,320 --> 00:00:50,720
-Obviously! No, I mean specifically this group. The Weather Storm isn't acting randomly, it's following Gabriel.
+00:00:20,960 --> 00:00:23,974
+This isn't about the past, it's about the future. There are
 
 10
+00:00:23,974 --> 00:00:27,040
+three of those things now. You say that like it's my fault!
+
+11
+00:00:27,200 --> 00:00:30,470
+It is your fault! I'll take responsibility for once, Soren.
+
+12
+00:00:30,470 --> 00:00:33,520
+Soren, you need to listen to me. Hush, I vor for once!
+
+13
+00:00:33,680 --> 00:00:36,773
+I told you, I wouldn't have followed you here without good
+
+14
+00:00:36,773 --> 00:00:39,760
+reason. What you don't understand is you are all in very
+
+15
+00:00:39,760 --> 00:00:40,560
+grave danger.
+
+16
+00:00:42,320 --> 00:00:46,709
+Obviously! No, I mean specifically this group. The Weather
+
+17
+00:00:46,709 --> 00:00:50,720
+Storm isn't acting randomly, it's following Gabriel.
+
+18
 00:00:51,360 --> 00:00:57,360
 You see, I may have programmed it to follow his amulet.
 
-11
+19
 00:00:57,360 --> 00:00:59,360
 I have the amulet, Ivor. I have all along.
 
-12
+20
 00:00:59,360 --> 00:01:01,360
 What?
 
-13
-00:01:01,360 --> 00:01:05,360
-Ivor, you fool! You've created a monster that's following Jesse!
+21
+00:01:01,360 --> 00:01:04,922
+Ivor, you fool! You've created a monster that's following
 
-14
+22
+00:01:04,922 --> 00:01:05,360
+Jesse!
+
+23
 00:01:05,360 --> 00:01:07,360
 I... I didn't know.
 
-15
+24
 00:01:07,360 --> 00:01:09,360
 And it's only getting stronger!
 
-16
-00:01:09,360 --> 00:01:13,360
-You don't think I realize that? Nothing can stop those things! Nothing even hurts them!
+25
+00:01:09,360 --> 00:01:11,842
+You don't think I realize that? Nothing can stop those
 
-17
-00:01:14,000 --> 00:01:22,000
-Well, except Enderman. We actually just saw a bunch of Endermen pull blocks off a Weather Storm.
+26
+00:01:11,842 --> 00:01:13,360
+things! Nothing even hurts them!
 
-18
-00:01:22,000 --> 00:01:28,000
-So, enough of them working together might be able to destroy a Weather Storm entirely.
+27
+00:01:14,000 --> 00:01:18,500
+Well, except Enderman. We actually just saw a bunch of
 
-19
-00:01:28,000 --> 00:01:34,000
-Question is, how to bring the storms and the Endermen together?
+28
+00:01:18,500 --> 00:01:22,000
+Endermen pull blocks off a Weather Storm.
 
-20
+29
+00:01:22,000 --> 00:01:25,627
+So, enough of them working together might be able to
+
+30
+00:01:25,627 --> 00:01:28,000
+destroy a Weather Storm entirely.
+
+31
+00:01:28,000 --> 00:01:33,047
+Question is, how to bring the storms and the Endermen
+
+32
+00:01:33,047 --> 00:01:34,000
+together?
+
+33
 00:01:34,000 --> 00:01:38,000
 Endermen aren't pets, they don't follow orders.
 
-21
+34
 00:01:38,000 --> 00:01:42,000
 At least, not from mere mortals.
 
-22
+35
 00:01:42,000 --> 00:01:52,640
 Thanks for watching!
 

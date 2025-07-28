@@ -1,124 +1,164 @@
 1
-00:00:00,000 --> 00:00:06,000
-The order failed. Part of me was still holding out hope that they could fix things, but...
+00:00:00,000 --> 00:00:03,666
+The order failed. Part of me was still holding out hope
 
 2
+00:00:03,666 --> 00:00:06,000
+that they could fix things, but...
+
+3
 00:00:06,000 --> 00:00:08,000
 I guess I should have known better.
 
-3
+4
 00:00:08,000 --> 00:00:12,000
 You're really not making me feel better, Reuben.
 
-4
+5
 00:00:14,000 --> 00:00:16,000
 Oh, you want help, do you?
 
-5
-00:00:16,000 --> 00:00:21,000
-That's what I said, isn't it? Just as you once helped us before.
-
 6
+00:00:16,000 --> 00:00:20,375
+That's what I said, isn't it? Just as you once helped us
+
+7
+00:00:20,375 --> 00:00:21,000
+before.
+
+8
 00:00:21,000 --> 00:00:24,000
 This isn't about the past, it's about the future.
 
-7
+9
 00:00:24,000 --> 00:00:26,000
 There are three of those things now.
 
-8
+10
 00:00:26,000 --> 00:00:27,000
 You say that like it's my fault!
 
-9
+11
 00:00:27,000 --> 00:00:28,000
 It is your fault!
 
-10
+12
 00:00:28,000 --> 00:00:30,000
 I'll take responsibility for once, Soren.
 
-11
+13
 00:00:30,000 --> 00:00:31,000
 Soren, you need to listen to me.
 
-12
+14
 00:00:31,000 --> 00:00:33,000
 Hush, Ivor, for once!
 
-13
-00:00:33,000 --> 00:00:37,000
-I told you, I wouldn't have followed you here without good reason.
-
-14
-00:00:37,000 --> 00:00:41,000
-What you don't understand is, you are all in very grave danger.
-
 15
+00:00:33,000 --> 00:00:36,515
+I told you, I wouldn't have followed you here without good
+
+16
+00:00:36,515 --> 00:00:37,000
+reason.
+
+17
+00:00:37,000 --> 00:00:40,492
+What you don't understand is, you are all in very grave
+
+18
+00:00:40,492 --> 00:00:41,000
+danger.
+
+19
 00:00:41,000 --> 00:00:43,000
 Obviously!
 
-16
+20
 00:00:43,000 --> 00:00:46,000
 No, I mean specifically this group.
 
-17
-00:00:46,000 --> 00:00:51,000
-The Witherstorm isn't acting randomly. It's following Gabriel.
+21
+00:00:46,000 --> 00:00:50,274
+The Witherstorm isn't acting randomly. It's following
 
-18
+22
+00:00:50,274 --> 00:00:51,000
+Gabriel.
+
+23
 00:00:53,000 --> 00:00:57,000
 You see, I may have programmed it to follow his amulet.
 
-19
+24
 00:00:58,000 --> 00:01:01,000
 I have the amulet, Ivor. I have all along.
 
-20
-00:01:01,000 --> 00:01:06,000
-What? Ivor, you fool! You've created a monster that's following Jesse!
+25
+00:01:01,000 --> 00:01:04,785
+What? Ivor, you fool! You've created a monster that's
 
-21
+26
+00:01:04,785 --> 00:01:06,000
+following Jesse!
+
+27
 00:01:06,000 --> 00:01:08,000
 I... I didn't know.
 
-22
+28
 00:01:08,000 --> 00:01:09,000
 And it's only getting stronger.
 
-23
-00:01:09,000 --> 00:01:13,000
-You don't think I realize that? Nothing can stop those things!
+29
+00:01:09,000 --> 00:01:12,483
+You don't think I realize that? Nothing can stop those
 
-24
+30
+00:01:12,483 --> 00:01:13,000
+things!
+
+31
 00:01:13,000 --> 00:01:15,000
 Nothing even hurts them!
 
-25
+32
 00:01:15,000 --> 00:01:18,000
 Well, except Enderman.
 
-26
-00:01:18,000 --> 00:01:22,000
-We actually just saw a bunch of Enderman pull blocks off a Witherstorm.
+33
+00:01:18,000 --> 00:01:21,267
+We actually just saw a bunch of Enderman pull blocks off a
 
-27
-00:01:22,000 --> 00:01:28,000
-So, enough of them working together might be able to destroy a Witherstorm entirely.
+34
+00:01:21,267 --> 00:01:22,000
+Witherstorm.
 
-28
-00:01:29,000 --> 00:01:33,000
-The question is, how to bring the storms and the Enderman together?
+35
+00:01:22,000 --> 00:01:25,714
+So, enough of them working together might be able to
 
-29
+36
+00:01:25,714 --> 00:01:28,000
+destroy a Witherstorm entirely.
+
+37
+00:01:29,000 --> 00:01:32,402
+The question is, how to bring the storms and the Enderman
+
+38
+00:01:32,402 --> 00:01:33,000
+together?
+
+39
 00:01:35,000 --> 00:01:38,000
 Enderman aren't pets. They don't follow orders.
 
-30
+40
 00:01:40,000 --> 00:01:43,000
 At least, not from mere mortals.
 
-31
+41
 00:01:52,000 --> 00:01:57,000
 Thanks for watching!
 

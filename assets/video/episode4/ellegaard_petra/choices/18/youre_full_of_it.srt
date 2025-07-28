@@ -71,118 +71,142 @@ Like the real ones?
 No, it can't be.
 
 19
-00:01:30,240 --> 00:01:36,240
-But those things were destroyed in your big heroic battle with the Ender Dragon, right, Soren?
+00:01:30,240 --> 00:01:33,878
+But those things were destroyed in your big heroic battle
 
 20
+00:01:33,878 --> 00:01:36,240
+with the Ender Dragon, right, Soren?
+
+21
 00:01:37,240 --> 00:01:40,240
 He kept them. The fool actually kept them.
 
-21
-00:01:40,240 --> 00:01:45,240
-Soren, you said destroying these crystals was the key to defeating the Ender Dragon.
-
 22
+00:01:40,240 --> 00:01:43,573
+Soren, you said destroying these crystals was the key to
+
+23
+00:01:43,573 --> 00:01:45,240
+defeating the Ender Dragon.
+
+24
 00:01:47,240 --> 00:01:50,240
 You did kill the Ender Dragon, right?
 
-23
+25
 00:01:51,240 --> 00:01:53,240
 Jesse, this isn't what it looks like.
 
-24
+26
 00:01:54,240 --> 00:01:58,240
 Our story, the story, it's mostly true. I swear it.
 
-25
+27
 00:01:58,480 --> 00:02:00,480
 Soren, I want the truth and I want it now.
 
-26
+28
 00:02:01,480 --> 00:02:03,480
 I can't. We swore never to speak of it.
 
-27
+29
 00:02:04,480 --> 00:02:05,480
 I don't care.
 
-28
+30
 00:02:07,480 --> 00:02:09,480
 I'm afraid I haven't been honest with you, Jesse.
 
-29
-00:02:10,480 --> 00:02:16,480
-We did defeat the Ender Dragon, but it wasn't exactly like I said.
+31
+00:02:10,480 --> 00:02:15,752
+We did defeat the Ender Dragon, but it wasn't exactly like
 
-30
+32
+00:02:15,752 --> 00:02:16,480
+I said.
+
+33
 00:02:17,480 --> 00:02:19,480
 How not exactly?
 
-31
+34
 00:02:20,480 --> 00:02:25,480
 We got rid of it, but we didn't kill it per se.
 
-32
+35
 00:02:26,480 --> 00:02:27,480
 So what did you do to it?
 
-33
+36
 00:02:27,720 --> 00:02:31,720
 We didn't do anything. We used the command block.
 
-34
+37
 00:02:32,720 --> 00:02:36,720
 You used the command block to defeat the Ender Dragon?
 
-35
+38
 00:02:38,720 --> 00:02:40,720
 I'm afraid so.
 
-36
-00:02:41,720 --> 00:02:46,720
-Understand, when I found that blasted block, we were nobodies.
+39
+00:02:41,720 --> 00:02:45,913
+Understand, when I found that blasted block, we were
 
-37
-00:02:47,720 --> 00:02:53,720
-But with its help, we became stronger, faster. We could do so much more.
+40
+00:02:45,913 --> 00:02:46,720
+nobodies.
 
-38
+41
+00:02:47,720 --> 00:02:52,553
+But with its help, we became stronger, faster. We could do
+
+42
+00:02:52,553 --> 00:02:53,720
+so much more.
+
+43
 00:02:53,960 --> 00:02:56,960
 The others had no idea what I was doing.
 
-39
+44
 00:02:57,960 --> 00:03:00,960
 Yet the more I used it, the more we came to depend on it.
 
-40
+45
 00:03:01,960 --> 00:03:05,960
 I knew it was only so long before someone would find out.
 
-41
+46
 00:03:23,960 --> 00:03:24,960
 Ha!
 
-42
+47
 00:03:26,960 --> 00:03:28,960
 So, I concocted a plan.
 
-43
-00:03:29,960 --> 00:03:33,960
-I would use the command block to blink the Ender Dragon out of existence.
+48
+00:03:29,960 --> 00:03:33,192
+I would use the command block to blink the Ender Dragon out
 
-44
+49
+00:03:33,192 --> 00:03:33,960
+of existence.
+
+50
 00:03:35,960 --> 00:03:37,960
 Woo!
 
-45
+51
 00:03:43,960 --> 00:03:46,960
 Securing our status as legends forever.
 
-46
+52
 00:03:49,960 --> 00:03:52,960
 We told the world we defeated a dragon.
 
-47
+53
 00:03:53,720 --> 00:03:56,960
 And the rest is history.
 

@@ -1,164 +1,184 @@
 1
-00:00:00,000 --> 00:00:03,700
-Look, there were two of you caught in the tractor beam that day and...
+00:00:00,000 --> 00:00:03,118
+Look, there were two of you caught in the tractor beam that
 
 2
+00:00:03,118 --> 00:00:03,700
+day and...
+
+3
 00:00:04,700 --> 00:00:06,700
 Well, I helped Gabriel.
 
-3
+4
 00:00:07,500 --> 00:00:09,500
 The sick guy over there.
 
-4
+5
 00:00:10,000 --> 00:00:11,000
 Oh...
 
-5
+6
 00:00:11,500 --> 00:00:13,500
 Yeah, I think I do remember that.
 
-6
-00:00:13,600 --> 00:00:17,800
-You gotta realize I thought we needed him if it was just about who I liked.
-
 7
+00:00:13,600 --> 00:00:16,736
+You gotta realize I thought we needed him if it was just
+
+8
+00:00:16,736 --> 00:00:17,800
+about who I liked.
+
+9
 00:00:17,900 --> 00:00:19,500
 No, I get it.
 
-8
+10
 00:00:20,000 --> 00:00:21,500
 You did what you had to do.
 
-9
+11
 00:00:22,400 --> 00:00:24,200
 All that matters is you're with us now.
 
-10
+12
 00:00:24,300 --> 00:00:26,000
 And that you're still a fighter.
 
-11
+13
 00:00:26,300 --> 00:00:27,800
 The best one I know.
 
-12
+14
 00:00:28,300 --> 00:00:31,300
 So, what do you say? Will you be part of our group again?
 
-13
+15
 00:00:34,300 --> 00:00:36,800
 Alright. Count me in.
 
-14
+16
 00:00:37,300 --> 00:00:39,300
 We didn't all make it back, though.
 
-15
+17
 00:00:42,800 --> 00:00:44,800
 Guys, it was my fault.
 
-16
+18
 00:00:45,800 --> 00:00:48,300
 I'm the one who took Eligard's armor.
 
-17
+19
 00:00:49,300 --> 00:00:51,800
 But you couldn't have known what was going to happen.
 
-18
+20
 00:00:52,300 --> 00:00:54,800
 She's right. Don't blame yourself, kid.
 
-19
+21
 00:00:55,300 --> 00:00:58,300
 I, uh, never blame myself for anything.
 
-20
+22
 00:01:00,300 --> 00:01:02,800
 Being emotional is getting us nowhere!
 
-21
+23
 00:01:03,300 --> 00:01:05,300
 What I want to know is what happened out there today.
 
-22
+24
 00:01:05,400 --> 00:01:07,800
 Why is that thing still alive?
 
-23
+25
 00:01:08,300 --> 00:01:10,300
 The Formidabomb just wasn't strong enough.
 
-24
-00:01:10,800 --> 00:01:14,300
-I mean, it ripped the witherstorm apart, but it didn't make a dent in the command block.
+26
+00:01:10,800 --> 00:01:13,146
+I mean, it ripped the witherstorm apart, but it didn't make
 
-25
+27
+00:01:13,146 --> 00:01:14,300
+a dent in the command block.
+
+28
 00:01:15,300 --> 00:01:17,800
 So the command block is still out there?
 
-26
+29
 00:01:18,300 --> 00:01:19,800
 Oh, great.
 
-27
+30
 00:01:20,300 --> 00:01:23,300
 Look, our plan didn't work, so we obviously need a new one.
 
-28
+31
 00:01:23,800 --> 00:01:26,800
 The question is, what do we do?
 
-29
+32
 00:01:27,800 --> 00:01:29,800
 Why are you asking me?
 
-30
+33
 00:01:30,300 --> 00:01:32,800
 Am I expected to know every last thing in the universe?
 
-31
+34
 00:01:34,800 --> 00:01:36,800
 I need a moment to think.
 
-32
+35
 00:01:39,800 --> 00:01:41,300
 Is he always like this?
 
-33
+36
 00:01:41,800 --> 00:01:43,800
 You have no idea.
 
-34
+37
 00:01:46,800 --> 00:01:49,800
 That jacket, it looks familiar.
 
-35
+38
 00:01:50,800 --> 00:01:52,800
 Lucas always wears that jacket.
 
-36
-00:01:53,800 --> 00:01:58,800
-I saw other people wearing it when I was being thrown from that dead monster.
+39
+00:01:53,800 --> 00:01:57,566
+I saw other people wearing it when I was being thrown from
 
-37
+40
+00:01:57,566 --> 00:01:58,800
+that dead monster.
+
+41
 00:02:00,800 --> 00:02:02,300
 Even thinking about it hurts.
 
-38
+42
 00:02:02,800 --> 00:02:04,800
 Hey, hey, it's okay.
 
-39
+43
 00:02:05,800 --> 00:02:08,800
 Jesse, if what Petra said is true...
 
-40
+44
 00:02:09,800 --> 00:02:11,800
 I mean, do you think?
 
-41
-00:02:12,300 --> 00:02:16,800
-I thought for sure they were gone, but if they were just trapped in the witherstorm...
+45
+00:02:12,300 --> 00:02:15,230
+I thought for sure they were gone, but if they were just
+
+46
+00:02:15,230 --> 00:02:16,800
+trapped in the witherstorm...
 

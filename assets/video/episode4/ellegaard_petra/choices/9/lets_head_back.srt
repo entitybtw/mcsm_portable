@@ -19,22 +19,26 @@ Jesse! Did you find any food?
 No, well, sort of, but it doesn't matter.
 
 6
-00:00:13,000 --> 00:00:16,000
-There's a witch nearby. We saw her creeping through the swamp and...
+00:00:13,000 --> 00:00:15,426
+There's a witch nearby. We saw her creeping through the
 
 7
+00:00:15,426 --> 00:00:16,000
+swamp and...
+
+8
 00:00:21,000 --> 00:00:23,000
 Oh no! Skeletons!
 
-8
+9
 00:00:24,000 --> 00:00:28,000
 Witches and skeletons? That's a deadly combination.
 
-9
+10
 00:00:28,000 --> 00:00:31,000
 Her potions combined with their arrows?
 
-10
+11
 00:00:31,000 --> 00:00:35,000
 Oh, we'll all be killed. We can't win this.
 

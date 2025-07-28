@@ -59,98 +59,134 @@ Like, the real ones?
 No, it can't be.
 
 16
-00:01:26,000 --> 00:01:32,000
-But those things were destroyed in your big heroic battle with the Ender dragon, right, Soren?
+00:01:26,000 --> 00:01:29,638
+But those things were destroyed in your big heroic battle
 
 17
+00:01:29,638 --> 00:01:32,000
+with the Ender dragon, right, Soren?
+
+18
 00:01:33,000 --> 00:01:36,000
 He kept them. The fool actually kept them.
 
-18
-00:01:36,500 --> 00:01:41,000
-Soren, you said destroying these crystals was the key to defeating the Ender dragon.
-
 19
+00:01:36,500 --> 00:01:39,500
+Soren, you said destroying these crystals was the key to
+
+20
+00:01:39,500 --> 00:01:41,000
+defeating the Ender dragon.
+
+21
 00:01:43,000 --> 00:01:46,000
 You did kill the Ender dragon, right?
 
-20
-00:01:47,000 --> 00:01:54,000
-Jesse, this isn't... this isn't what it looks like. Our story, the story, it's mostly true. I swear, I swear.
+22
+00:01:47,000 --> 00:01:50,532
+Jesse, this isn't... this isn't what it looks like. Our
 
-21
+23
+00:01:50,532 --> 00:01:54,000
+story, the story, it's mostly true. I swear, I swear.
+
+24
 00:01:54,000 --> 00:01:57,000
 Soren, I want the truth and I want it now.
 
-22
+25
 00:01:57,000 --> 00:02:00,000
 I can't. We swore never to speak of it.
 
-23
+26
 00:02:00,000 --> 00:02:01,000
 I don't care.
 
-24
-00:02:03,000 --> 00:02:12,000
-I'm afraid I haven't been honest with you, Jesse. We did defeat the Ender dragon, but it... it wasn't exactly like I said.
+27
+00:02:03,000 --> 00:02:07,131
+I'm afraid I haven't been honest with you, Jesse. We did
 
-25
+28
+00:02:07,131 --> 00:02:11,483
+defeat the Ender dragon, but it... it wasn't exactly like I
+
+29
+00:02:11,483 --> 00:02:12,000
+said.
+
+30
 00:02:14,000 --> 00:02:16,000
 How not exactly?
 
-26
+31
 00:02:16,000 --> 00:02:22,000
 We got rid of it, but we didn't kill it, per se.
 
-27
+32
 00:02:22,000 --> 00:02:24,000
 So what did you do to it?
 
-28
+33
 00:02:24,000 --> 00:02:28,000
 We didn't do anything. We used the command block.
 
-29
+34
 00:02:28,000 --> 00:02:33,000
 You used the command block to defeat the Ender dragon?
 
-30
+35
 00:02:35,000 --> 00:02:37,000
 I'm afraid so.
 
-31
-00:02:37,000 --> 00:02:43,000
-Understand, when I found that blasted block, we were nobodies.
+36
+00:02:37,000 --> 00:02:42,032
+Understand, when I found that blasted block, we were
 
-32
-00:02:43,000 --> 00:02:50,000
-But with its help, we became stronger, faster, we could do so much more.
+37
+00:02:42,032 --> 00:02:43,000
+nobodies.
 
-33
-00:02:52,000 --> 00:02:59,000
-The others had no idea what I was doing. Yet the more I used it, the more we came to depend on it.
+38
+00:02:43,000 --> 00:02:48,638
+But with its help, we became stronger, faster, we could do
 
-34
+39
+00:02:48,638 --> 00:02:50,000
+so much more.
+
+40
+00:02:52,000 --> 00:02:55,928
+The others had no idea what I was doing. Yet the more I
+
+41
+00:02:55,928 --> 00:02:59,000
+used it, the more we came to depend on it.
+
+42
 00:03:00,000 --> 00:03:04,000
 I knew it was only so long before someone would find out.
 
-35
+43
 00:03:23,000 --> 00:03:26,000
 So, I concocted a plan.
 
-36
-00:03:26,000 --> 00:03:31,000
-I would use the command block to blink the Ender dragon out of existence.
+44
+00:03:26,000 --> 00:03:30,041
+I would use the command block to blink the Ender dragon out
 
-37
+45
+00:03:30,041 --> 00:03:31,000
+of existence.
+
+46
 00:03:40,000 --> 00:03:43,000
 Securing our status as legends forever.
 
-38
+47
 00:03:44,000 --> 00:03:48,000
 We told the world we defeated a dragon.
 
-39
+48
 00:03:48,000 --> 00:03:51,000
 And the rest is history.
 

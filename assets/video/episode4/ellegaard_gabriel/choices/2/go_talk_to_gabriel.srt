@@ -3,50 +3,86 @@
 You feeling any better, Gabriel?
 
 2
-00:00:03,000 --> 00:00:13,000
-Better is relative. The battle with the Witherstorm sapped the last of my strength. Considerable though it was.
+00:00:03,000 --> 00:00:08,225
+Better is relative. The battle with the Witherstorm sapped
 
 3
+00:00:08,225 --> 00:00:13,000
+the last of my strength. Considerable though it was.
+
+4
 00:00:13,000 --> 00:00:16,000
 You need to rest.
 
-4
+5
 00:00:16,000 --> 00:00:18,000
 You're right, I do.
 
-5
-00:00:18,000 --> 00:00:24,000
-Look, Jesse, wherever you guys go next, give him some time to get his strength back.
-
 6
+00:00:18,000 --> 00:00:22,142
+Look, Jesse, wherever you guys go next, give him some time
+
+7
+00:00:22,142 --> 00:00:24,000
+to get his strength back.
+
+8
 00:00:24,000 --> 00:00:26,000
 The problem is we don't have time.
 
-7
-00:00:26,000 --> 00:00:36,000
-Jesse's right. In fact, it might be best if my journey ends here. This cave is safe, easy to defend.
-
-8
-00:00:36,000 --> 00:00:42,000
-If that's what you feel is best, then I support it. You've been through too much as it is.
-
 9
-00:00:42,000 --> 00:00:46,000
-Thank you, Jesse. I'm just sorry that I can't be there for you.
+00:00:26,000 --> 00:00:31,900
+Jesse's right. In fact, it might be best if my journey ends
 
 10
+00:00:31,900 --> 00:00:36,000
+here. This cave is safe, easy to defend.
+
+11
+00:00:36,000 --> 00:00:39,866
+If that's what you feel is best, then I support it. You've
+
+12
+00:00:39,866 --> 00:00:42,000
+been through too much as it is.
+
+13
+00:00:42,000 --> 00:00:45,682
+Thank you, Jesse. I'm just sorry that I can't be there for
+
+14
+00:00:45,682 --> 00:00:46,000
+you.
+
+15
 00:00:46,000 --> 00:00:48,000
 Me too.
 
-11
-00:00:49,000 --> 00:01:07,000
-Nothing had to turn out like this. If the order had just been different, if we'd made smarter choices, Iver wouldn't have turned into a maniac and, well, maybe Elagard would still be alive.
+16
+00:00:49,000 --> 00:00:54,333
+Nothing had to turn out like this. If the order had just
 
-12
+17
+00:00:54,333 --> 00:00:59,952
+been different, if we'd made smarter choices, Iver wouldn't
+
+18
+00:00:59,952 --> 00:01:05,285
+have turned into a maniac and, well, maybe Elagard would
+
+19
+00:01:05,285 --> 00:01:07,000
+still be alive.
+
+20
 00:01:07,000 --> 00:01:10,000
 Come on, let's not talk about the old days.
 
-13
-00:01:10,000 --> 00:01:18,000
-But how can we not? So many lives torn asunder, the world ripped to pieces.
+21
+00:01:10,000 --> 00:01:16,080
+But how can we not? So many lives torn asunder, the world
+
+22
+00:01:16,080 --> 00:01:18,000
+ripped to pieces.
 

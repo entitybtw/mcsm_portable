@@ -3,34 +3,46 @@
 I'm fine, but what about you guys? Is everyone okay?
 
 2
-00:00:03,000 --> 00:00:08,000
-We're great, Jesse. We're more than great. The Witherstorms are gone!
+00:00:03,000 --> 00:00:07,275
+We're great, Jesse. We're more than great. The Witherstorms
 
 3
-00:00:08,000 --> 00:00:12,000
-It was so freaking awesome. They're gonna be talking about you forever.
+00:00:07,275 --> 00:00:08,000
+are gone!
 
 4
+00:00:08,000 --> 00:00:11,267
+It was so freaking awesome. They're gonna be talking about
+
+5
+00:00:11,267 --> 00:00:12,000
+you forever.
+
+6
 00:00:12,000 --> 00:00:15,000
 You did it, Jesse! You actually did it!
 
-5
+7
 00:00:17,000 --> 00:00:19,000
 Hey, do you guys hear something?
 
-6
+8
 00:00:23,000 --> 00:00:24,000
 Reuben!
 
-7
+9
 00:00:30,000 --> 00:00:31,000
 Oh no!
 
-8
-00:00:34,000 --> 00:00:39,000
-Reuben, you're a hero. You know that? You just helped save the world.
+10
+00:00:34,000 --> 00:00:38,202
+Reuben, you're a hero. You know that? You just helped save
 
-9
+11
+00:00:38,202 --> 00:00:39,000
+the world.
+
+12
 00:00:41,000 --> 00:00:43,000
 Come on, Reuben, say something.
 

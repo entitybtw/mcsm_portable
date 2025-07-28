@@ -1,28 +1,36 @@
 1
-00:00:00,000 --> 00:00:03,200
-Well, for starters, we're the ones who brought them back together again.
+00:00:00,000 --> 00:00:02,488
+Well, for starters, we're the ones who brought them back
 
 2
+00:00:02,488 --> 00:00:03,200
+together again.
+
+3
 00:00:03,700 --> 00:00:06,200
 Yeah, I suppose that's true.
 
-3
+4
 00:00:08,500 --> 00:00:11,900
 Wait a second. I think I see what he was trying to do.
 
-4
+5
 00:00:16,800 --> 00:00:20,400
 Jesse, take this piston, craft it into a sticky piston,
 
-5
-00:00:20,400 --> 00:00:24,200
-then place it on the other side of the barge, along with a redstone block.
-
 6
+00:00:20,400 --> 00:00:23,378
+then place it on the other side of the barge, along with a
+
+7
+00:00:23,378 --> 00:00:24,200
+redstone block.
+
+8
 00:00:25,100 --> 00:00:26,200
 You got all that?
 
-7
+9
 00:00:26,400 --> 00:00:28,400
 I think so.
 

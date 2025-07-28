@@ -3,102 +3,114 @@
 Okay, a redstone block.
 
 2
-00:00:15,800 --> 00:00:19,800
-Okay, let's put the redstone block where it's supposed to go and place these pistons.
+00:00:15,800 --> 00:00:18,482
+Okay, let's put the redstone block where it's supposed to
 
 3
+00:00:18,482 --> 00:00:19,800
+go and place these pistons.
+
+4
 00:00:29,800 --> 00:00:31,800
 Holy cow, we did it!
 
-4
+5
 00:00:32,800 --> 00:00:33,800
 I'm proud of you, Olivia.
 
-5
-00:00:34,800 --> 00:00:40,800
-Thanks, Jesse. And thanks for everything you said just before. It really helped.
-
 6
+00:00:34,800 --> 00:00:38,850
+Thanks, Jesse. And thanks for everything you said just
+
+7
+00:00:38,850 --> 00:00:40,800
+before. It really helped.
+
+8
 00:00:41,800 --> 00:00:42,800
 No problemo.
 
-7
+9
 00:00:46,800 --> 00:00:48,800
 It must be this way!
 
-8
+10
 00:00:49,800 --> 00:00:52,800
 Run! Everybody get on! Quick, onto the barge!
 
-9
+11
 00:00:53,800 --> 00:00:55,800
 That was close. Everyone okay?
 
-10
+12
 00:00:56,800 --> 00:00:57,800
 For the moment.
 
-11
-00:00:57,800 --> 00:01:01,800
-I remember something. Didn't Eligard build a machine like this once?
+13
+00:00:57,800 --> 00:01:01,152
+I remember something. Didn't Eligard build a machine like
 
-12
+14
+00:01:01,152 --> 00:01:01,800
+this once?
+
+15
 00:01:02,800 --> 00:01:03,800
 Yes, in the past.
 
-13
+16
 00:01:04,800 --> 00:01:05,800
 I remember.
 
-14
+17
 00:01:06,800 --> 00:01:07,800
 I remember.
 
-15
+18
 00:01:08,800 --> 00:01:09,800
 I remember.
 
-16
+19
 00:01:10,800 --> 00:01:11,800
 I remember.
 
-17
+20
 00:01:12,800 --> 00:01:13,800
 I remember.
 
-18
+21
 00:01:14,800 --> 00:01:15,800
 I remember.
 
-19
+22
 00:01:16,800 --> 00:01:17,800
 I remember.
 
-20
+23
 00:01:18,800 --> 00:01:19,800
 I remember.
 
-21
+24
 00:01:19,800 --> 00:01:20,800
 Did you build a machine like this once?
 
-22
+25
 00:01:21,800 --> 00:01:22,800
 Yes, in the nether.
 
-23
+26
 00:01:23,800 --> 00:01:25,800
 And you were terrified of flying on it!
 
-24
+27
 00:01:26,800 --> 00:01:28,800
 What? Stuff and nonsense.
 
-25
+28
 00:01:31,800 --> 00:01:32,800
 No, no, I'm positive.
 
-26
+29
 00:01:34,800 --> 00:01:36,800
 You spent the whole ride quivering in terror.
 

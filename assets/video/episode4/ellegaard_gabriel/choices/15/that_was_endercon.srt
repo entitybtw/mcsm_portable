@@ -19,34 +19,38 @@ I would love to go to a chicken convention.
 Wait, it's already fading. Fading and... gone.
 
 6
-00:00:19,000 --> 00:00:24,000
-Take my advice, Petra. Some stories are better left forgotten.
+00:00:19,000 --> 00:00:23,112
+Take my advice, Petra. Some stories are better left
 
 7
+00:00:23,112 --> 00:00:24,000
+forgotten.
+
+8
 00:00:30,000 --> 00:00:45,000
 That was amazing. Isn't it amazing?
 
-8
+9
 00:00:45,000 --> 00:00:48,000
 Let's go see what he's hiding in there.
 
-9
+10
 00:01:00,000 --> 00:01:07,000
 How can one person need this many books?
 
-10
+11
 00:01:07,000 --> 00:01:12,000
 We should be careful. This place could be booby-trapped.
 
-11
+12
 00:01:12,000 --> 00:01:15,000
 Let's just start looking for the enchanting book.
 
-12
+13
 00:01:30,000 --> 00:01:35,000
 I'm sure there's a way to get there.
 
-13
+14
 00:01:35,000 --> 00:01:41,000
 I'm sure there's a way to get there.
 

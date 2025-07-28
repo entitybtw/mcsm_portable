@@ -43,26 +43,34 @@ I don't think it's exposed.
 We need to get more Endermen focused on the Witherstorm.
 
 12
-00:00:54,000 --> 00:00:58,000
-How do you make Endermen focus? I can't even make myself focus.
+00:00:54,000 --> 00:00:57,555
+How do you make Endermen focus? I can't even make myself
 
 13
-00:00:58,000 --> 00:01:02,000
-We shouldn't be here. Not that this is going according to plan.
+00:00:57,555 --> 00:00:58,000
+focus.
 
 14
+00:00:58,000 --> 00:01:01,619
+We shouldn't be here. Not that this is going according to
+
+15
+00:01:01,619 --> 00:01:02,000
+plan.
+
+16
 00:01:02,000 --> 00:01:05,000
 Soren, what are you doing?
 
-15
+17
 00:01:05,000 --> 00:01:10,000
 I, uh, you know, I've really enjoyed meeting you all, but...
 
-16
+18
 00:01:13,000 --> 00:01:15,000
 Soren!
 
-17
+19
 00:01:15,000 --> 00:01:18,000
 Did Soren just run away?
 

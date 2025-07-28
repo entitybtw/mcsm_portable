@@ -27,154 +27,190 @@ Just head for the corner of the glitch wall!
 The what wall?
 
 8
-00:00:13,600 --> 00:00:16,800
-Hey, you witch! You're not the only one who can draw a potion!
+00:00:13,600 --> 00:00:16,387
+Hey, you witch! You're not the only one who can draw a
 
 9
+00:00:16,387 --> 00:00:16,800
+potion!
+
+10
 00:00:21,400 --> 00:00:22,400
 Come on!
 
-10
+11
 00:00:30,000 --> 00:00:32,000
 Guys, I think we lost them for...
 
-11
+12
 00:00:34,800 --> 00:00:35,800
 Wow!
 
-12
+13
 00:00:36,800 --> 00:00:38,800
 You lost them for wow?
 
-13
+14
 00:00:39,300 --> 00:00:40,300
 What is that?
 
-14
+15
 00:00:41,300 --> 00:00:42,300
 Oh...
 
-15
+16
 00:00:42,800 --> 00:00:43,800
 Wow...
 
-16
+17
 00:00:46,800 --> 00:00:48,800
 It's like we're at the edge of the world.
 
-17
+18
 00:00:49,300 --> 00:00:51,300
 Actually, we seem to be at the corner of it.
 
-18
+19
 00:00:52,300 --> 00:00:54,300
 Welcome to the Far Lands, my friend.
 
-19
-00:00:55,300 --> 00:00:58,300
-I'm sorry, I'm not sure if I'm the only one who can draw a potion.
-
 20
+00:00:55,300 --> 00:00:57,936
+I'm sorry, I'm not sure if I'm the only one who can draw a
+
+21
+00:00:57,936 --> 00:00:58,300
+potion.
+
+22
 00:00:58,300 --> 00:01:00,300
 Welcome to the Far Lands, my friend.
 
-21
-00:01:08,300 --> 00:01:13,300
-I'd feel a lot better about going into this crazy wall thingy if I wasn't still hungry.
+23
+00:01:08,300 --> 00:01:11,403
+I'd feel a lot better about going into this crazy wall
 
-22
+24
+00:01:11,403 --> 00:01:13,300
+thingy if I wasn't still hungry.
+
+25
 00:01:13,800 --> 00:01:16,300
 I'd rather be hungry than killed by a witch.
 
-23
+26
 00:01:16,800 --> 00:01:18,800
 I'd rather be eating dinner.
 
-24
+27
 00:01:24,800 --> 00:01:26,300
 Quite a sight, isn't it?
 
-25
+28
 00:01:27,300 --> 00:01:28,800
 Sauron, have you been here before?
 
-26
+29
 00:01:29,300 --> 00:01:32,800
 Not here specifically, but I have visited the Far Lands.
 
-27
+30
 00:01:33,300 --> 00:01:36,300
 The Order traveled far and wide during our heyday.
 
-28
-00:01:38,300 --> 00:01:44,800
-How can Ivor live here? I mean, it's one thing to build a wall world inside the End, but this...
+31
+00:01:38,300 --> 00:01:42,159
+How can Ivor live here? I mean, it's one thing to build a
 
-29
+32
+00:01:42,159 --> 00:01:44,800
+wall world inside the End, but this...
+
+33
 00:01:45,300 --> 00:01:47,300
 Oh, I doubt he lives here.
 
-30
-00:01:47,800 --> 00:01:50,300
-He most likely comes here only for his most secretive research.
+34
+00:01:47,800 --> 00:01:49,903
+He most likely comes here only for his most secretive
 
-31
-00:01:50,800 --> 00:01:54,800
-Whatever Ivor is hiding in here, it will be extremely well guarded.
+35
+00:01:49,903 --> 00:01:50,300
+research.
 
-32
+36
+00:01:50,800 --> 00:01:54,262
+Whatever Ivor is hiding in here, it will be extremely well
+
+37
+00:01:54,262 --> 00:01:54,800
+guarded.
+
+38
 00:01:56,300 --> 00:01:57,800
 I'm sure he lives here.
 
-33
+39
 00:02:02,300 --> 00:02:03,800
 This way, I suspect.
 
-34
-00:02:04,300 --> 00:02:07,300
-I'd feel better about this if the rest of our group was with us.
+40
+00:02:04,300 --> 00:02:06,878
+I'd feel better about this if the rest of our group was
 
-35
+41
+00:02:06,878 --> 00:02:07,300
+with us.
+
+42
 00:02:09,300 --> 00:02:10,800
 Come on!
 
-36
+43
 00:02:27,300 --> 00:02:30,800
 Is this... a maze?
 
-37
+44
 00:02:31,300 --> 00:02:32,800
 It would appear so.
 
-38
+45
 00:02:33,300 --> 00:02:35,800
 A massive one from the looks of it.
 
-39
-00:02:36,300 --> 00:02:41,800
-If Ivor used the command block to build this, it could hold unspeakable peril.
+46
+00:02:36,300 --> 00:02:40,460
+If Ivor used the command block to build this, it could hold
 
-40
-00:02:42,300 --> 00:02:47,300
-Why do I sense that entering this so-called maze would be a grave mistake?
+47
+00:02:40,460 --> 00:02:41,800
+unspeakable peril.
 
-41
+48
+00:02:42,300 --> 00:02:46,286
+Why do I sense that entering this so-called maze would be a
+
+49
+00:02:46,286 --> 00:02:47,300
+grave mistake?
+
+50
 00:02:47,800 --> 00:02:50,300
 Because some part of you still knows Ivor.
 
-42
+51
 00:02:50,800 --> 00:02:53,800
 Unfortunately, this seems to be the only way forward.
 
-43
+52
 00:02:54,300 --> 00:02:55,800
 There has to be another way.
 
-44
+53
 00:02:56,300 --> 00:02:58,800
 A secret door, or... I don't know.
 
-45
+54
 00:02:59,300 --> 00:03:01,800
 Somewhere around.
 

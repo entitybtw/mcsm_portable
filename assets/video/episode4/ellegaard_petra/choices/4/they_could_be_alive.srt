@@ -31,58 +31,62 @@ Look, you and me, we've made a pretty good team so far.
 I'd even call us friends.
 
 9
-00:00:20,800 --> 00:00:23,880
-So I hope you'll understand why I need to go help my old friends.
+00:00:20,800 --> 00:00:23,453
+So I hope you'll understand why I need to go help my old
 
 10
+00:00:23,453 --> 00:00:23,880
+friends.
+
+11
 00:00:23,960 --> 00:00:25,720
 I can't believe I'm saying this, but...
 
-11
+12
 00:00:26,080 --> 00:00:27,840
 If your heart's telling you to go...
 
-12
+13
 00:00:28,520 --> 00:00:29,520
 Then you gotta go.
 
-13
+14
 00:00:30,320 --> 00:00:33,120
 Otherwise you'd be... heartless, or something.
 
-14
+15
 00:00:35,240 --> 00:00:36,240
 Thank you, Jesse.
 
-15
+16
 00:00:36,520 --> 00:00:37,520
 I'll find them.
 
-16
+17
 00:00:37,720 --> 00:00:39,120
 And then I'll find you again, too.
 
-17
+18
 00:00:40,000 --> 00:00:41,000
 I promise.
 
-18
+19
 00:00:41,200 --> 00:00:42,200
 Thanks.
 
-19
+20
 00:01:00,000 --> 00:01:01,720
 Hey, buddy. You doing okay?
 
-20
+21
 00:01:02,920 --> 00:01:03,920
 Of course you are.
 
-21
+22
 00:01:04,720 --> 00:01:06,720
 Wish I could say the same for everyone else.
 
-22
+23
 00:01:08,320 --> 00:01:10,120
 We've lost too many people already.
 

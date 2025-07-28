@@ -1,36 +1,44 @@
 1
-00:00:00,000 --> 00:00:04,400
-Yes, we used slime to break a chicken machine. There were chickens everywhere.
+00:00:00,000 --> 00:00:03,215
+Yes, we used slime to break a chicken machine. There were
 
 2
+00:00:03,215 --> 00:00:04,400
+chickens everywhere.
+
+3
 00:00:04,900 --> 00:00:08,500
 Weird. Yeah, I kinda remember.
 
-3
+4
 00:00:08,500 --> 00:00:14,600
 Wait, it's already fading. Fading... and... gone.
 
-4
-00:00:15,400 --> 00:00:19,600
-Take my advice, Petra. Some stories are better left forgotten.
-
 5
+00:00:15,400 --> 00:00:18,854
+Take my advice, Petra. Some stories are better left
+
+6
+00:00:18,854 --> 00:00:19,600
+forgotten.
+
+7
 00:00:30,000 --> 00:00:35,000
 That was amazing. Isn't it amazing?
 
-6
+8
 00:00:37,000 --> 00:00:39,000
 Let's go see what he's hiding in there.
 
-7
+9
 00:01:01,000 --> 00:01:04,000
 How can one person need this many books?
 
-8
+10
 00:01:05,000 --> 00:01:09,000
 We should be careful. This place could be booby-trapped.
 
-9
+11
 00:01:09,000 --> 00:01:12,000
 Let's just start looking for the enchanting book.
 

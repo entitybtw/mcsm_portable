@@ -3,54 +3,62 @@
 Finishing what we set out to do.
 
 2
-00:00:03,440 --> 00:00:07,200
-Cause there's no way we were gonna let a world this cold and torn apart.
+00:00:03,440 --> 00:00:06,364
+Cause there's no way we were gonna let a world this cold
 
 3
+00:00:06,364 --> 00:00:07,200
+and torn apart.
+
+4
 00:00:08,160 --> 00:00:09,360
 We did it!
 
-4
+5
 00:00:24,320 --> 00:00:27,280
 Jesse, this is the Nether Star
 
-5
+6
 00:00:27,520 --> 00:00:30,480
 that dropped when the wither storm was destroyed.
 
-6
+7
 00:00:31,280 --> 00:00:32,480
 You wanna do the honors?
 
-7
+8
 00:00:36,880 --> 00:00:39,280
 Oh man, this game is so cool.
 
-8
+9
 00:00:57,280 --> 00:01:01,280
 My friends, I am now pleased to introduce to you
 
-9
+10
 00:01:06,400 --> 00:01:08,400
 a new Order of the Stone.
 
-10
+11
 00:01:09,040 --> 00:01:11,040
 A new Order of the Stone!
 
-11
+12
 00:01:23,040 --> 00:01:27,040
 And so it was that a new Order of the Stone was born.
 
-12
+13
 00:01:27,040 --> 00:01:30,560
 One whose adventures were only just beginning.
 
-13
-00:01:30,560 --> 00:01:34,560
-For though the world had been saved and the command block destroyed,
-
 14
+00:01:30,560 --> 00:01:33,912
+For though the world had been saved and the command block
+
+15
+00:01:33,912 --> 00:01:34,560
+destroyed,
+
+16
 00:01:34,560 --> 00:01:38,720
 there are many more worlds than just this one.
 
