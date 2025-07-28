@@ -50,7 +50,7 @@ while choosing do
         if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         nextscene =  "./mainmenu.lua"
-    elseif buttons.pressed(buttons.start) then
+    elseif buttons.pressed(buttons.r) then
         Image.unload(square)
         if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false

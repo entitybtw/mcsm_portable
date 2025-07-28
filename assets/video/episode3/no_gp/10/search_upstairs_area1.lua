@@ -30,7 +30,7 @@ while choosing do
         Image.unload(square)
         choosing = false
         nextscene =  "./mainmenu.lua"
-    elseif buttons.pressed(buttons.start) then
+    elseif buttons.pressed(buttons.r) then
         Image.unload(circle)
         Image.unload(square)
         choosing = false

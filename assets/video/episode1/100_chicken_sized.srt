@@ -20,7 +20,7 @@ easy.
 
 6
 00:00:16,600 --> 00:00:20,801
-So I've got a daylight sensor on the roof, and if I do this
+So I've got a daylight sensor on the roof, and if I did this
 
 7
 00:00:20,801 --> 00:00:21,300
@@ -112,7 +112,7 @@ No.
 
 29
 00:01:18,800 --> 00:01:22,800
-Oh, man. You guys totally freaked out. That was us.
+Oh, man. You guys totally freaked out. That was aweso-
 
 30
 00:01:22,800 --> 00:01:25,800

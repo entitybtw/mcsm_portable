@@ -1,0 +1,228 @@
+1
+00:00:00,000 --> 00:00:09,000
+Awesome! I've never owned a diamond weapon!
+
+2
+00:00:09,000 --> 00:00:11,000
+Just wait till you enchant it!
+
+3
+00:00:20,000 --> 00:00:24,000
+Behold! My enchanted diamond pickaxe!
+
+4
+00:00:25,000 --> 00:00:29,000
+Yes, that should do the job nicely.
+
+5
+00:00:29,000 --> 00:00:34,000
+But if you're fighting those wither monsters head on, you'll want better armor too.
+
+6
+00:00:34,000 --> 00:00:38,000
+I enchanted these for the Order. They're about as strong as it comes.
+
+7
+00:00:38,000 --> 00:00:41,000
+Even able to withstand TNT!
+
+8
+00:00:41,000 --> 00:00:43,000
+Any preference?
+
+9
+00:00:43,000 --> 00:00:47,000
+Oh, I kinda wanna keep the armor I'm already wearing.
+
+10
+00:00:47,000 --> 00:00:48,000
+Really?
+
+11
+00:00:48,000 --> 00:00:52,000
+I mean, Eligar died so I could have it, you know?
+
+12
+00:00:52,000 --> 00:00:56,000
+Come to think of it, she would have liked that. Very well.
+
+13
+00:00:56,000 --> 00:00:59,000
+Nice weapon, Jesse!
+
+14
+00:00:59,000 --> 00:01:00,000
+Thanks!
+
+15
+00:01:00,000 --> 00:01:02,000
+But at least take some for your friends.
+
+16
+00:01:02,000 --> 00:01:04,000
+Sounds good to me.
+
+17
+00:01:15,000 --> 00:01:20,000
+Let's get back to Soren's fortress and see how the wither storms are doing against those Endermen.
+
+18
+00:01:22,000 --> 00:01:25,000
+Oh, my poor fortress!
+
+19
+00:01:25,000 --> 00:01:29,000
+I see Endermen, so this means the plan's working, right?
+
+20
+00:01:29,000 --> 00:01:35,000
+Shouldn't the Endermen have dismantled those things by now? Or am I just confused?
+
+21
+00:01:35,000 --> 00:01:38,000
+It's not just you. Something's wrong.
+
+22
+00:01:38,000 --> 00:01:40,000
+Jesse, over here!
+
+23
+00:01:40,000 --> 00:01:42,000
+What's going on?
+
+24
+00:01:42,000 --> 00:01:44,000
+I don't know.
+
+25
+00:01:44,000 --> 00:01:47,000
+I'm just wondering if we should go back to the fortress.
+
+26
+00:01:47,000 --> 00:01:50,000
+It's not just you. Something's wrong.
+
+27
+00:01:50,000 --> 00:01:52,000
+Jesse, over here!
+
+28
+00:01:54,000 --> 00:01:55,000
+Axle!
+
+29
+00:01:55,000 --> 00:01:57,000
+You guys made it!
+
+30
+00:01:57,000 --> 00:01:59,000
+Nice freakin' armor, by the way.
+
+31
+00:01:59,000 --> 00:02:01,000
+Do you still have the amulet?
+
+32
+00:02:01,000 --> 00:02:04,000
+Safe and sound. That's not the problem.
+
+33
+00:02:04,000 --> 00:02:05,000
+Then what is?
+
+34
+00:02:05,000 --> 00:02:08,000
+The Endermen. They're not angry enough.
+
+35
+00:02:08,000 --> 00:02:13,000
+I mean, some of them are, but a lot of them are just standing around moving blocks.
+
+36
+00:02:13,000 --> 00:02:16,000
+You know, being Endermen.
+
+37
+00:02:16,000 --> 00:02:21,000
+Blast! They kept the main wither storm busy, but one of the smaller ones started attacking us.
+
+38
+00:02:21,000 --> 00:02:25,000
+And Magnus ran off to fight that thing all by himself.
+
+39
+00:02:25,000 --> 00:02:28,000
+He's fighting a wither storm? Alone?
+
+40
+00:02:28,000 --> 00:02:33,000
+Yeah, kept saying something about paying for the mistakes of the past. Whatever that means.
+
+41
+00:02:33,000 --> 00:02:36,000
+If a fellow member of the Order of the... of the...
+
+42
+00:02:36,000 --> 00:02:37,000
+Order of the Stone?
+
+43
+00:02:37,000 --> 00:02:40,000
+...is out there fighting, then I belong out there too.
+
+44
+00:02:40,000 --> 00:02:44,000
+Gabriel, no! No, I told you you're not who you think you are!
+
+45
+00:02:44,000 --> 00:02:48,000
+My name is Gabriel the Warrior!
+
+46
+00:02:51,000 --> 00:02:54,000
+And he's running the wrong way.
+
+47
+00:02:54,000 --> 00:02:58,000
+Without the command block, none of them stands a chance.
+
+48
+00:02:58,000 --> 00:03:00,000
+Say what now?
+
+49
+00:03:00,000 --> 00:03:03,000
+I'll explain later.
+
+50
+00:03:03,000 --> 00:03:04,000
+Fine.
+
+51
+00:03:04,000 --> 00:03:07,000
+Hey, uh, you guys didn't check on Petra, did you?
+
+52
+00:03:07,000 --> 00:03:10,000
+No, we came straight here.
+
+53
+00:03:10,000 --> 00:03:13,000
+All alone in that cave? I hope she's alright.
+
+54
+00:03:13,000 --> 00:03:17,000
+She will be as long as we destroy the command block.
+
+55
+00:03:17,000 --> 00:03:19,000
+So what's the plan?
+
+56
+00:03:19,000 --> 00:03:23,000
+I mean, I know we gotta go in there, but...
+
+57
+00:03:25,000 --> 00:03:28,000
+Do we just go for it, or what?
+

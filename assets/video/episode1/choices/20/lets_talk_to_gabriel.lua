@@ -31,7 +31,7 @@ Image.unload(square)
 Image.unload(circle)
         choosing = false
         nextscene = "./mainmenu.lua"
-    elseif buttons.pressed(buttons.start) then
+    elseif buttons.pressed(buttons.r) then
 Image.unload(square)
 Image.unload(circle)
         choosing = false

@@ -308,19 +308,41 @@ local colors = {
     Thanks = Color.new(100, 180, 160)
 }
 
+local lines = {}
+for line in combined_changelog:gmatch("[^\r\n]+") do
+    table.insert(lines, line)
+end
+
+local function getLineHeight(line)
+    if line:find("^mcsm_portable") then
+        return 20 * 0.4 + 10
+    elseif line:find("^%-+$") then
+        return 5
+    elseif line == "" then
+        return 5
+    else
+        return 20 * 0.3 + 10
+    end
+end
+
 while true do
     buttons.read()
 
     if buttons.held(buttons.up) then
         scrollDelay = scrollDelay + 1
         if scrollDelay >= scrollCooldown then
-            if scrollY > -25 then scrollY = scrollY - scrollSpeed end
+            scrollY = math.max(0, scrollY - scrollSpeed)
             scrollDelay = 0
         end
     elseif buttons.held(buttons.down) then
         scrollDelay = scrollDelay + 1
         if scrollDelay >= scrollCooldown then
-            if scrollY < 1660 then scrollY = scrollY + scrollSpeed end
+            local totalHeight = 0
+            for _, line in ipairs(lines) do
+                totalHeight = totalHeight + getLineHeight(line)
+            end
+            local maxScroll = math.max(0, totalHeight - 275)
+            scrollY = math.min(maxScroll, scrollY + scrollSpeed)
             scrollDelay = 0
         end
     else
@@ -342,50 +364,38 @@ while true do
     local exitHeight = 10 * exitScale + 20
     local exitY = 275 - exitHeight
 
-    local changelogYStart = -scrollY
-    local changelogMaxY = exitY - 10
-
-    local y = changelogYStart
-    for line in combined_changelog:gmatch("[^\r\n]+") do
-        if y > changelogMaxY then break end
-
-        if line:find("^mcsm_portable") then
-            local scale = 0.4
-            local x = 240 - intraFont.textW(font, line, scale) / 2
-            intraFont.printShadowed(x, y, line, colors.Header, Color.new(0, 0, 0), font, 90, 1, scale, 0)
-            y = y + 20 * scale + 10
-
-        elseif line:find("^%-+$") then
-            printCenteredLine(y, line, 0.3)
-            y = y + 5
-
-        elseif line == "" then
-            y = y + 5
-
-        elseif line:find("^Added") then
-            y = printWrappedText(30, y, line, 420, colors.Added, font, 0.3)
-
-        elseif line:find("^Changed") then
-            y = printWrappedText(30, y, line, 420, colors.Changed, font, 0.3)
-
-        elseif line:find("^Fixed") then
-            y = printWrappedText(30, y, line, 420, colors.Fixed, font, 0.3)
-
-        elseif line:find("^Removed") then
-            y = printWrappedText(30, y, line, 420, colors.Removed, font, 0.3)
-            
-        elseif line:find("^Thanks to") then
-            y = printWrappedText(30, y, line, 420, colors.Thanks, font, 0.3)
-
-        elseif line:find("^%-") then
-            y = printWrappedText(30, y, line, 420, colors.DefaultBullet, font, 0.3)
-
-        elseif line:match("^%d+%.") then
-            y = printWrappedText(30, y, line, 420, colors.Numbered, font, 0.3)
-
-        else
-            y = printWrappedText(30, y, line, 420, colors.DefaultText, font, 0.3)
+    local y = -scrollY
+    for i, line in ipairs(lines) do
+        local h = getLineHeight(line)
+        if y + h > 0 and y < exitY - 10 then
+            if line:find("^mcsm_portable") then
+                local scale = 0.4
+                local x = 240 - intraFont.textW(font, line, scale) / 2
+                intraFont.printShadowed(x, y, line, colors.Header, Color.new(0, 0, 0), font, 90, 1, scale, 0)
+            elseif line:find("^%-+$") then
+                printCenteredLine(y, line, 0.3)
+            elseif line == "" then
+                -- пусто
+            elseif line:find("^Added") then
+                intraFont.printShadowed(30, y, line, colors.Added, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            elseif line:find("^Changed") then
+                intraFont.printShadowed(30, y, line, colors.Changed, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            elseif line:find("^Fixed") then
+                intraFont.printShadowed(30, y, line, colors.Fixed, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            elseif line:find("^Removed") then
+                intraFont.printShadowed(30, y, line, colors.Removed, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            elseif line:find("^Thanks to") then
+                intraFont.printShadowed(30, y, line, colors.Thanks, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            elseif line:find("^%-") then
+                intraFont.printShadowed(30, y, line, colors.DefaultBullet, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            elseif line:match("^%d+%.") then
+                intraFont.printShadowed(30, y, line, colors.Numbered, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            else
+                intraFont.printShadowed(30, y, line, colors.DefaultText, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+            end
         end
+        y = y + h
+        if y > exitY - 10 then break end
     end
 
     intraFont.printShadowed(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(140, 160, 180), Color.new(0, 0, 0), font, 90, 1, exitScale, 0)

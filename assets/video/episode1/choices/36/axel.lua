@@ -68,7 +68,7 @@ while choosing do
         Image.unload(cross)
         choosing = false
         nextscene =  "./mainmenu.lua"
-    elseif buttons.pressed(buttons.start) then
+    elseif buttons.pressed(buttons.r) then
         Image.unload(square)
         Image.unload(circle)
         Image.unload(triangle)

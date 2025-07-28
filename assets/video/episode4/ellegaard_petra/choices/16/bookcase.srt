@@ -1,0 +1,24 @@
+1
+00:00:00,000 --> 00:00:05,000
+How to train your slime.
+
+2
+00:00:05,000 --> 00:00:09,000
+The various uses of Mushroom Stew?
+
+3
+00:00:09,000 --> 00:00:13,000
+Potionology, volume 24?
+
+4
+00:00:13,000 --> 00:00:17,000
+None of these are enchanting books.
+
+5
+00:00:30,000 --> 00:00:35,000
+How to train your slime.
+
+6
+00:00:35,000 --> 00:00:40,000
+Potionology, volume 24?
+

@@ -20,7 +20,7 @@ while choosing do
         Image.unload(chest)
         choosing = false
         nextscene =  "./mainmenu.lua"
-    elseif buttons.pressed(buttons.start) then
+    elseif buttons.pressed(buttons.r) then
         Image.unload(chest)
         choosing = false
         SaveGame(3)

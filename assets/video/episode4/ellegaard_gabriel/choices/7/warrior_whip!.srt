@@ -1,0 +1,32 @@
+1
+00:00:00,000 --> 00:00:02,000
+The warrior's whip, you got it!
+
+2
+00:00:08,800 --> 00:00:10,800
+I'll see you at Soren's, alright?
+
+3
+00:00:11,200 --> 00:00:13,200
+Not if I see you first.
+
+4
+00:00:30,000 --> 00:00:32,000
+Are we there yet?
+
+5
+00:00:32,000 --> 00:00:34,000
+Almost there.
+
+6
+00:01:00,000 --> 00:01:02,000
+Are we there yet?
+
+7
+00:01:02,000 --> 00:01:04,000
+Not much further now.
+
+8
+00:02:00,000 --> 00:02:02,000
+Thanks for watching!
+
