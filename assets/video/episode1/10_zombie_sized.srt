@@ -7,11 +7,11 @@ I have to go with the giant chickens, not because I want to
 or because I think it would be easy, but because they would
 
 3
-00:00:05,985 --> 00:00:07,000
+00:00:05,985 --> 00:00:07,398
 be an abomination.
 
 4
-00:00:07,000 --> 00:00:09,000
+00:00:07,398 --> 00:00:09,000
 Imagine their giant feet.
 
 5
@@ -27,7 +27,7 @@ So I've got a daylight sensor on the roof, and if I did
 this right, these lamps should turn on once it gets dark.
 
 8
-00:00:21,000 --> 00:00:23,494
+00:00:21,300 --> 00:00:23,494
 I didn't want to just leave Reuben here with nothing while
 
 9
@@ -39,82 +39,85 @@ we're at the building competition.
 He's coming with us.
 
 11
-00:00:26,000 --> 00:00:27,000
+00:00:26,500 --> 00:00:27,610
 Really?
 
 12
-00:00:27,000 --> 00:00:30,000
+00:00:28,849 --> 00:00:31,149
 What kind of question is that? Of course he is.
 
 13
-00:00:30,000 --> 00:00:33,000
+00:00:31,149 --> 00:00:34,786
 Okay, I'm not saying he shouldn't come. I'm not.
 
 14
-00:00:33,000 --> 00:00:35,682
+00:00:34,786 --> 00:00:36,457
 But don't you think it's a little weird that you take him
 
 15
-00:00:35,682 --> 00:00:37,000
+00:00:36,457 --> 00:00:38,375
 with you everywhere you go?
 
 16
-00:00:38,000 --> 00:00:40,000
+00:00:39,050 --> 00:00:41,124
 Reuben's my best friend.
 
 17
-00:00:40,000 --> 00:00:42,000
+00:00:41,124 --> 00:00:42,837
 I thought I was your best friend.
 
 18
-00:00:42,000 --> 00:00:43,000
+00:00:42,837 --> 00:00:44,462
 Both of you are.
 
 19
-00:00:43,000 --> 00:00:46,899
+00:00:44,462 --> 00:00:48,961
 I didn't mean anything by it. I'm glad he's coming. I just
 
 20
-00:00:46,899 --> 00:00:50,394
+00:00:48,961 --> 00:00:51,018
 don't want to give people one more reason to call us
 
 21
-00:00:50,394 --> 00:00:51,000
+00:00:51,018 --> 00:00:52,175
 losers.
 
 22
-00:00:51,000 --> 00:00:53,000
+00:00:52,175 --> 00:00:54,150
 Who cares what other people think?
 
 23
-00:00:53,000 --> 00:00:56,000
+00:00:54,150 --> 00:00:57,500
 I know. I'm just... it wears you down.
 
 24
-00:00:56,000 --> 00:00:59,000
+00:00:57,500 --> 00:01:00,362
 You say you're not a loser, Olivia. So win.
 
 25
-00:00:59,000 --> 00:01:01,000
+00:01:00,362 --> 00:01:02,975
 Okay. Fine.
 
 26
-00:01:03,000 --> 00:01:04,000
+00:01:04,262 --> 00:01:05,524
 Do you hear that?
 
 27
-00:01:13,000 --> 00:01:16,000
-Oh man. You guys totally freaked out. That was aweso-
+00:01:06,793 --> 00:01:08,086
+Oh, no.
 
 28
-00:01:17,000 --> 00:01:19,000
-Axel, what's the matter with you?
+00:01:13,679 --> 00:01:18,140
+Oh man. You guys totally freaked out. That was awes--
 
 29
-00:01:24,000 --> 00:01:27,000
-Great. Now I'm going to smell like a pig in Endercon.
+00:01:18,519 --> 00:01:20,920
+Axel, what's the matter with you?
 
 30
-00:01:29,000 --> 00:01:31,000
-I thought we were buddies.
+00:01:23,799 --> 00:01:27,099
+Great. Now I'm going to smell like a pig in Endercon.
 
+31
+00:01:28,940 --> 00:01:30,920
+I thought we were buddies.
