@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,500
-Hey, uh, Lucas, can you do me a favor?
+Hey, uh, Lukas, can you do me a favor?
 
 2
 00:00:03,500 --> 00:00:04,500
@@ -16,7 +16,7 @@ Whatever you guys are doing, count me in.
 
 5
 00:00:12,000 --> 00:00:13,000
-Thanks, Lucas.
+Thanks, Lukas.
 
 6
 00:00:13,000 --> 00:00:14,500

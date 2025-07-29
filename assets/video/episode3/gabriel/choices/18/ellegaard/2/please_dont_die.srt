@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:03,500
-Please don't die, Eligard. Please, just hang on a little
+Please don't die, Ellegaardd. Please, just hang on a little
 
 2
 00:00:03,500 --> 00:00:04,000
@@ -44,7 +44,7 @@ We're the good guys, right? That's what we do.
 
 12
 00:01:05,140 --> 00:01:08,140
-Come on, Ruben, we've got a job to do.
+Come on, Reuben, we've got a job to do.
 
 13
 00:01:13,140 --> 00:01:16,286

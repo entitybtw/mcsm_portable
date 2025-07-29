@@ -80,11 +80,11 @@ It's just a bunch of dyed wool.
 
 21
 00:01:41,000 --> 00:01:43,000
-Oh no, Ruben's on fire!
+Oh no, Reuben's on fire!
 
 22
 00:01:44,000 --> 00:01:46,000
-Ruben, no! Come back!
+Reuben, no! Come back!
 
 23
 00:01:46,000 --> 00:01:48,000
@@ -96,7 +96,7 @@ What about the build?
 
 25
 00:01:50,000 --> 00:01:52,000
-Ruben's going to get lost.
+Reuben's going to get lost.
 
 26
 00:01:52,000 --> 00:01:54,000
@@ -112,7 +112,7 @@ We'll meet up with you at Endercon.
 
 29
 00:02:25,000 --> 00:02:27,000
-Ruben, where are you, buddy?
+Reuben, where are you, buddy?
 
 30
 00:02:27,000 --> 00:02:29,000

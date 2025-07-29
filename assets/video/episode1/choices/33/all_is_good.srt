@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,000
-You're cool with me Lucas.
+You're cool with me Lukas.
 
 2
 00:00:02,000 --> 00:00:03,000
@@ -64,7 +64,7 @@ It's the Temple of the Order of the Stone.
 
 17
 00:00:57,000 --> 00:00:59,000
-Lucas, are you sure?
+Lukas, are you sure?
 
 18
 00:01:00,000 --> 00:01:02,000

@@ -52,7 +52,7 @@ I got you!
 
 14
 00:00:40,720 --> 00:00:42,640
-Lucas! You're here!
+Lukas! You're here!
 
 15
 00:00:43,520 --> 00:00:46,480
@@ -64,7 +64,7 @@ Hey you! Get a load of this!
 
 17
 00:00:48,640 --> 00:00:50,640
-Lucas, thank you.
+Lukas, thank you.
 
 18
 00:00:50,640 --> 00:00:52,640
@@ -104,7 +104,7 @@ Now go demolish that command block.
 
 27
 00:01:32,640 --> 00:01:34,640
-Ruben, this is no place for a...
+Reuben, this is no place for a...
 
 28
 00:01:34,640 --> 00:01:36,640
@@ -136,7 +136,7 @@ Now it's time to destroy you.
 
 35
 00:02:22,640 --> 00:02:26,640
-Ruben, I think we made it angry.
+Reuben, I think we made it angry.
 
 36
 00:02:42,640 --> 00:02:46,640
@@ -160,7 +160,7 @@ Ahhhhh!
 
 41
 00:03:18,640 --> 00:03:22,195
-Ruben, whatever happens, we have to destroy that command
+Reuben, whatever happens, we have to destroy that command
 
 42
 00:03:22,195 --> 00:03:22,640

@@ -60,7 +60,7 @@ I got you!
 
 16
 00:00:39,920 --> 00:00:41,920
-Lucas, you're here!
+Lukas, you're here!
 
 17
 00:00:41,920 --> 00:00:43,920
@@ -72,7 +72,7 @@ Hey you! Get a load of this!
 
 19
 00:00:47,920 --> 00:00:49,920
-Lucas, thank you.
+Lukas, thank you.
 
 20
 00:00:49,920 --> 00:00:51,920
@@ -120,7 +120,7 @@ Now go demolish that command block.
 
 31
 00:01:29,920 --> 00:01:31,920
-Ruben, this is no place for a...
+Reuben, this is no place for a...
 
 32
 00:01:31,920 --> 00:01:33,920
@@ -164,15 +164,15 @@ Now it's time to destroy you.
 
 42
 00:02:15,920 --> 00:02:17,920
-Ruben, I think we made it angry.
+Reuben, I think we made it angry.
 
 43
 00:02:19,920 --> 00:02:21,920
-Ruben, I think we made it angry.
+Reuben, I think we made it angry.
 
 44
 00:02:21,920 --> 00:02:23,920
-Ruben, I think we made it angry.
+Reuben, I think we made it angry.
 
 45
 00:02:41,920 --> 00:02:43,920
@@ -196,7 +196,7 @@ Still on time!
 
 50
 00:03:15,920 --> 00:03:17,704
-Ruben, if it ever happens, we have to destroy that command
+Reuben, if it ever happens, we have to destroy that command
 
 51
 00:03:17,704 --> 00:03:17,920
@@ -204,7 +204,7 @@ block.
 
 52
 00:03:17,920 --> 00:03:19,704
-Ruben, if it ever happens, we have to destroy that command
+Reuben, if it ever happens, we have to destroy that command
 
 53
 00:03:19,704 --> 00:03:19,920

@@ -120,7 +120,7 @@ That jacket, it looks familiar.
 
 31
 00:01:50,000 --> 00:01:52,160
-Lucas always wears that jacket.
+Lukas always wears that jacket.
 
 32
 00:01:52,160 --> 00:01:56,325

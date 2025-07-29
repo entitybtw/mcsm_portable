@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,400
-You're the genius, Eligar. Let's get started.
+You're the genius, Ellegaard. Let's get started.
 
 2
 00:00:02,400 --> 00:00:04,000
@@ -32,7 +32,7 @@ Oh, no!
 
 9
 00:01:18,800 --> 00:01:20,600
-Eligar, come on!
+Ellegaard, come on!
 
 10
 00:01:30,400 --> 00:01:33,200
@@ -72,7 +72,7 @@ Oh, Jesse? Is that you?
 
 19
 00:02:50,400 --> 00:02:53,200
-Lucas, did you build all of this?
+Lukas, did you build all of this?
 
 20
 00:02:53,200 --> 00:02:55,000
@@ -116,7 +116,7 @@ He showed up not too long before you guys.
 
 30
 00:03:19,200 --> 00:03:22,400
-Eligar, my old friend.
+Ellegaard, my old friend.
 
 31
 00:03:22,400 --> 00:03:25,600

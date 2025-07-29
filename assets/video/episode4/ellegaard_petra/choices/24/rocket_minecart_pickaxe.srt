@@ -36,7 +36,7 @@ I got you!
 
 10
 00:00:38,000 --> 00:00:40,000
-Lucas! You're here!
+Lukas! You're here!
 
 11
 00:00:40,000 --> 00:00:43,000
@@ -48,7 +48,7 @@ Hey you! Get a load of this!
 
 13
 00:00:52,000 --> 00:00:54,000
-Lucas, thank you!
+Lukas, thank you!
 
 14
 00:00:54,000 --> 00:00:56,000
@@ -88,7 +88,7 @@ Now go to walls that command want.
 
 23
 00:01:35,000 --> 00:01:38,000
-Ruben, there's no place for him.
+Reuben, there's no place for him.
 
 24
 00:01:52,000 --> 00:01:54,000
@@ -108,7 +108,7 @@ Now it's time to destroy you.
 
 28
 00:02:26,000 --> 00:02:30,000
-Ruben, I think we made it angry.
+Reuben, I think we made it angry.
 
 29
 00:02:47,000 --> 00:02:52,000
@@ -128,7 +128,7 @@ This thing will die!
 
 33
 00:03:23,000 --> 00:03:27,444
-Ruben, whatever happens, we have to destroy that command
+Reuben, whatever happens, we have to destroy that command
 
 34
 00:03:27,444 --> 00:03:28,000
