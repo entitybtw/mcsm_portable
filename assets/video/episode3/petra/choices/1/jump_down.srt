@@ -39,94 +39,70 @@ Get away! I got you! They touched me!
 Okay, all right. It's safe now.
 
 11
-00:00:40,000 --> 00:00:45,000
+00:01:00,000 --> 00:01:03,000
 Everyone okay?
 
 12
-00:00:45,000 --> 00:00:48,000
+00:01:03,000 --> 00:01:06,000
 I just slipped.
 
 13
-00:00:48,000 --> 00:00:50,000
-What's that smell?
-
-14
-00:00:50,000 --> 00:00:53,000
-Just breathe.
-
-15
-00:00:53,000 --> 00:00:56,000
-I'm not sure.
-
-16
-00:00:56,000 --> 00:00:59,000
-I'm not sure.
-
-17
-00:00:59,000 --> 00:01:02,000
-I'm not sure.
-
-18
-00:01:02,000 --> 00:01:05,000
-I'm not sure.
-
-19
 00:01:06,000 --> 00:01:08,000
 What's that smell?
 
-20
+14
 00:01:08,000 --> 00:01:10,000
 Just breathe through your mouth.
 
-21
+15
 00:01:10,000 --> 00:01:12,000
 Axel already does that.
 
-22
+16
 00:01:12,000 --> 00:01:14,000
 Hey.
 
-23
+17
 00:01:14,000 --> 00:01:17,000
 Let's get out of here.
 
-24
+18
 00:01:24,000 --> 00:01:27,000
 Stay close, boy.
 
-25
+19
 00:01:31,000 --> 00:01:33,000
 We have to get out of here!
 
-26
+20
 00:01:33,000 --> 00:01:35,000
 What?
 
-27
+21
 00:01:35,000 --> 00:01:38,000
 We have to get out of here!
 
-28
+22
 00:01:38,000 --> 00:01:41,000
 We just got here.
 
-29
+23
 00:01:41,000 --> 00:01:43,000
 You don't understand.
 
-30
+24
 00:01:43,000 --> 00:01:46,000
 This is a grinder.
 
-31
+25
 00:01:53,000 --> 00:01:56,000
 They're meant to kill monsters.
 
-32
+26
 00:01:56,000 --> 00:02:00,971
 Trouble is they can't tell the difference between monsters
 
-33
+27
 00:02:00,971 --> 00:02:02,000
 and people.
 
