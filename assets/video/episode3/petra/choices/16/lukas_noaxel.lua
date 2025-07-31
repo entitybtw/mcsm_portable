@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local triangle = Image.load("assets/icons/triangle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/petra/choices/16/lukas.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/lukas.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/petra/choices/16/lukas.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/lukas.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 224, 64)
 intraFont.print(224 - intraFont.textW(font, "Button", 0.4) / 2 + 8, 64 + 14, "Button", Color.new(255,255,255), font, 0.4)

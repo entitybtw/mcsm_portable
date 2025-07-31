@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/petra/choices/16/axel.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/axel.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/petra/choices/16/axel.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/axel.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 321, 131)
 intraFont.print(321 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 131 + 14, "Chest", Color.new(255,255,255), font, 0.4)
 intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)

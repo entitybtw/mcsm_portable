@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local cross = Image.load("assets/icons/cross.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/gabriel/choices/16/button.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/16/button.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/gabriel/choices/16/button.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/16/button.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(cross, 277, 80)
 intraFont.print(277 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 80 + 14, "Lukas", Color.new(255,255,255), font, 0.4)

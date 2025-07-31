@@ -4,7 +4,11 @@ sword = "_sword"
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/choices/15/threaten_' .. reuben .. '.pmp', buttons.r)
+local result = PMP.playEasy('assets/video/episode1/choices/15/threaten_' .. reuben .. '.pmp', buttons.r)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 221, 122)
 intraFont.print(221 - intraFont.textW(font, "Chicken Machine", 0.4) / 2 + 8, 122 + 14, "Chicken Machine", Color.new(255,255,255), font, 0.4)

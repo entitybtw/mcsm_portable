@@ -14,7 +14,11 @@ else
     LUA.quit()
 end
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode2/magnus/start.pmp', buttons.r, true, 'assets/video/episode2/magnus/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode2/magnus/start.pmp', buttons.r, true, 'assets/video/episode2/magnus/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)

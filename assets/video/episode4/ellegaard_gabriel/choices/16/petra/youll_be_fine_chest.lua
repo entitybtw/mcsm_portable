@@ -4,7 +4,11 @@ local circle = Image.load("assets/icons/circle.png")
 local triangle = Image.load("assets/icons/triangle.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/petra/youll_be_fine.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_gabriel/choices/16/petra/youll_be_fine.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/petra/youll_be_fine.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_gabriel/choices/16/petra/youll_be_fine.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 289, 119)
 intraFont.print(289 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 119 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 126, 169)

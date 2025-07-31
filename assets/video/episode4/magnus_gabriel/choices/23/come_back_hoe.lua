@@ -4,7 +4,11 @@ local circle = Image.load("assets/icons/circle.png")
 local triangle = Image.load("assets/icons/triangle.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/23/come_back_hoe.pmp', buttons.r, true, 'assets/video/episode4/magnus_gabriel/choices/23/come_back_hoe.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/23/come_back_hoe.pmp', buttons.r, true, 'assets/video/episode4/magnus_gabriel/choices/23/come_back_hoe.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
 Image.draw(triangle, 140, 182)

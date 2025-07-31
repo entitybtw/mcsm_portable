@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/gabriel/choices/4/save_amulet/thanks_for_saving_reuben.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/4/save_amulet/thanks_for_saving_reuben.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/gabriel/choices/4/save_amulet/thanks_for_saving_reuben.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/4/save_amulet/thanks_for_saving_reuben.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)

@@ -4,7 +4,11 @@ local square = Image.load("assets/icons/square.png")
 local cross = Image.load("assets/icons/cross.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/choices/16/slime.pmp', buttons.r, true, 'assets/video/episode1/choices/16/slime.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/choices/16/slime.pmp', buttons.r, true, 'assets/video/episode1/choices/16/slime.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(circle, 334, 153)
 intraFont.print(334 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 153 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
 Image.draw(cross, 141, 139)

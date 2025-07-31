@@ -2,7 +2,11 @@ local choosing = true
 local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/petra/choices/8/leverpetra.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/8/leverpetra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/petra/choices/8/leverpetra.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/8/leverpetra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(circle, 305, 135)
 intraFont.print(305 - intraFont.textW(font, "Reuben", 0.4) / 2 + 8, 135 + 14, "Reuben", Color.new(255,255,255), font, 0.4)
 intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)

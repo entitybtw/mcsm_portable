@@ -5,7 +5,11 @@ local triangle = Image.load("assets/icons/triangle.png")
 local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/gabriel/choices/15/that_was_cool.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/15/that_was_cool.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/gabriel/choices/15/that_was_cool.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/15/that_was_cool.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 224, 64)
 intraFont.print(224 - intraFont.textW(font, "Button", 0.4) / 2 + 8, 64 + 14, "Button", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 341, 195)

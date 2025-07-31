@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/petra/choices/9/petra_is_sick/you_can_do_this.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/9/petra_is_sick/you_can_do_this.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/petra/choices/9/petra_is_sick/you_can_do_this.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/9/petra_is_sick/you_can_do_this.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)

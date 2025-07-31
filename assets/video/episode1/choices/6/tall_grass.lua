@@ -4,7 +4,11 @@ local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r, true, 'assets/video/episode1/choices/6/tall_grass.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r, true, 'assets/video/episode1/choices/6/tall_grass.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
 intraFont.print(25 + 15 + 5, 127, "Run, I'll distract them!", Color.new(255,255,255), font, 0.4)

@@ -6,7 +6,11 @@ local triangle = Image.load("assets/icons/triangle.png")
 local cross = Image.load("assets/icons/cross.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/choices/36/axel_pedestal.pmp', buttons.r, true, 'assets/video/episode1/choices/36/axel_pedestal.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/choices/36/axel_pedestal.pmp', buttons.r, true, 'assets/video/episode1/choices/36/axel_pedestal.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
     
 Image.draw(cross, 392, 183)
 intraFont.print(392 - intraFont.textW(font, "Levers", 0.4) / 2 + 8, 183 + 14, "Levers", Color.new(255,255,255), font, 0.4)

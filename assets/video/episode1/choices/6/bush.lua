@@ -6,7 +6,11 @@ local triangle = Image.load("assets/icons/triangle.png")
 local cross = Image.load("assets/icons/cross.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/choices/6/bush.pmp', buttons.r, true, 'assets/video/episode1/choices/6/bush.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/choices/6/bush.pmp', buttons.r, true, 'assets/video/episode1/choices/6/bush.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 if tall_grass == "off" then
     Image.draw(cross, 257, 136)
     intraFont.print(257 - intraFont.textW(font, "Smoke Trail", 0.4) / 2 + 8, 136 + 14, "Smoke Trail", Color.new(255,255,255), font, 0.4)

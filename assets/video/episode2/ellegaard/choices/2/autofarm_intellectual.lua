@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode2/ellegaard/choices/2/autofarm.pmp', buttons.r, true, 'assets/video/episode2/ellegaard/choices/2/autofarm.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode2/ellegaard/choices/2/autofarm.pmp', buttons.r, true, 'assets/video/episode2/ellegaard/choices/2/autofarm.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(circle, 383, 197)
 intraFont.print(383 - intraFont.textW(font, "School Boy", 0.4) / 2 + 8, 197 + 14, "School Boy", Color.new(255,255,255), font, 0.4)

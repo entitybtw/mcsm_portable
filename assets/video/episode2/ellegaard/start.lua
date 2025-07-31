@@ -13,7 +13,11 @@ else
 end
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode2/ellegaard/start.pmp', buttons.r, true, 'assets/video/episode2/ellegaard/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode2/ellegaard/start.pmp', buttons.r, true, 'assets/video/episode2/ellegaard/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
 intraFont.print(25 + 15 + 5, 127, text, Color.new(255,255,255), font, 0.4)

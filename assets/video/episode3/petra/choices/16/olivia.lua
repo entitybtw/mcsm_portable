@@ -4,7 +4,11 @@ local cross = Image.load("assets/icons/cross.png")
 local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/petra/choices/16/olivia.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/olivia.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/petra/choices/16/olivia.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/olivia.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 Image.draw(square, 224, 64)
 intraFont.print(224 - intraFont.textW(font, "Button", 0.4) / 2 + 8, 64 + 14, "Button", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 341, 195)

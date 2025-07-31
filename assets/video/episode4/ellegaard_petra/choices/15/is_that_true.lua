@@ -4,7 +4,11 @@ local circle = Image.load("assets/icons/circle.png")
 local cross = Image.load("assets/icons/cross.png")
 local triangle = Image.load("assets/icons/triangle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode4/ellegaard_petra/choices/15/is_that_true.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_petra/choices/15/is_that_true.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/ellegaard_petra/choices/15/is_that_true.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_petra/choices/15/is_that_true.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(cross, 210, 169)
 intraFont.print(210 - intraFont.textW(font, "Gabriel", 0.4) / 2 + 8, 169 + 14, "Gabriel", Color.new(255,255,255), font, 0.4)

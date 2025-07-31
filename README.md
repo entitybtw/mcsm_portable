@@ -17,8 +17,8 @@ The original game and Netflix version are no longer available, but it’s still 
 
 ## 🎮 controls
 
+
 ### 📋 menu controls
-- **Triangle**: Exit to XMB
 - **D-Pad**: Navigation
 ## episode menu controls
 - **R**: Next episode
@@ -26,17 +26,16 @@ The original game and Netflix version are no longer available, but it’s still 
 - **CIRCLE**: Previous menu
 - **CROSS**: Select
 - **SQUARE**: Manage game saves
-
-### 🎬 gameplay controls
-1. **During a cutscene**:
-   - Press **R** and **L** in turn: Return to the menu without saving.
-   - Press **R** and **START** in turn: Save and return to the menu.
+## gameplay controls
+- **R**: skip current scene
+- **START**: pause menu
+- **SELECT**: pause game
+- **R**(after cutscene): save
 
 ## 👏 thanks to
 
 - **pox1016**: For adapting Minecraft Story Mode Netflix Interactive to YouTube.
 - **Antim**: For a bunch of advice and fixing bugs
 - **dntrnk**: For menu improvements, huge optimizations
-- **VanyaVolkin**: For helping with episode menu
 
 thank u for supporting this project! feel free to contribute or report any issues. 🚀

@@ -4,7 +4,11 @@ local cross = Image.load("assets/icons/cross.png")
 local triangle = Image.load("assets/icons/triangle.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode3/gabriel/choices/16/button.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/16/button.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/gabriel/choices/16/button.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/16/button.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(circle, 341, 195)
 intraFont.print(341 - intraFont.textW(font, "Axel", 0.4) / 2 + 8, 195 + 14, "Axel", Color.new(255,255,255), font, 0.4)

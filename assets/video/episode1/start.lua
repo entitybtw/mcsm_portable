@@ -1,8 +1,12 @@
 local path = System.LoadData("assets/mainmenu/saves_bg.png")
--- local font = intraFont.load('assets/minecraft.pgf')
+local fade = 255
 if path then
     PMP.setVolume(pmpvolume)
-    PMP.playEasy("assets/mainmenu/loading.pmp")
+local result =     PMP.playEasy("assets/mainmenu/loading.pmp")
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
     nextscene = path.data
 
     local variablesFile = io.open("assets/saves/1_variables.txt", "r")
@@ -21,9 +25,39 @@ end
 local square = Image.load('assets/icons/square.png')
 local circle = Image.load('assets/icons/circle.png')
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/mainmenu/lsave.pmp')
+local result = PMP.playEasy('assets/mainmenu/lsave.pmp')
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
+local yourText = "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play"
+fade = 0
+
+-- Fade in
+while fade < 255 do
+    fade = math.min(fade + 8, 255)
+    screen.clear()
+    intraFont.print(230 - intraFont.textW(font, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", 0.3) / 2 + 8, 118 + 14, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", Color.new(255,255,255, fade), font, 0.3)
+    screen.flip()
+    LUA.sleep(16)
+end
+LUA.sleep(2000)
+
+-- Fade out
+while fade > 0 do
+    fade = math.max(fade - 8, 0)
+    screen.clear()
+    intraFont.print(230 - intraFont.textW(font, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", 0.3) / 2 + 8, 118 + 14, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", Color.new(255,255,255, fade), font, 0.3)
+    screen.flip()
+    LUA.sleep(16)
+end
+
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/START.pmp', buttons.r, true, "assets/video/episode1/start.srt", font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/START.pmp', buttons.r, true, "assets/video/episode1/start.srt", font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)

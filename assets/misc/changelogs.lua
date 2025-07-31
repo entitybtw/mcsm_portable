@@ -1,5 +1,5 @@
 local psbg = Image.load("assets/mainmenu/pause_bg.png")
-local scrollY = -25
+local scrollY = 0
 local scrollSpeed = 10
 local scrollDelay = 0
 local scrollCooldown = 2
@@ -8,35 +8,6 @@ local function printCenteredLine(y, line, scale)
     local textWidth = intraFont.textW(font, line, scale)
     local x = 240 - (textWidth / 2)
     intraFont.printShadowed(x, y, line, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, scale, 0)
-end
-
-local function printWrappedText(x, y, text, maxWidth, color, font, scale)
-    local spaceW = intraFont.textW(font, " ", scale)
-    local words = {}
-    for word in text:gmatch("%S+") do
-        table.insert(words, word)
-    end
-    local line = ""
-    local lineWidth = 0
-    local lineHeight = 20 * scale + 10
-    local curY = y
-    for i, word in ipairs(words) do
-        local wordWidth = intraFont.textW(font, word, scale)
-        if lineWidth + wordWidth > maxWidth then
-            intraFont.printShadowed(x, curY, line, color, Color.new(0, 0, 0), font, 90, 1, scale, 0)
-            curY = curY + lineHeight
-            line = word .. " "
-            lineWidth = wordWidth + spaceW
-        else
-            line = line .. word .. " "
-            lineWidth = lineWidth + wordWidth + spaceW
-        end
-    end
-    if line ~= "" then
-        intraFont.printShadowed(x, curY, line, color, Color.new(0, 0, 0), font, 90, 1, scale, 0)
-        curY = curY + lineHeight
-    end
-    return curY
 end
 
 local sep = "\n\n\n\n"
@@ -49,11 +20,8 @@ THIS IS A PRE-RELEASE, A RAW VERSION BEFORE THE NORMAL RELEASE
 Currently not done:
 
 1. Sounds in the menu
-
 2. Saves
-
 3. Episode Menu
-
 4. Credits button in the menu
 ]]
 
@@ -67,11 +35,8 @@ THIS IS A PRE-RELEASE, A RAW VERSION BEFORE THE NORMAL RELEASE
 Currently not done:
 
 1. Sounds in the menu
-
 2. Saves
-
 3. Episode Menu
-
 4. Credits button in the menu
 ]]
 
@@ -97,17 +62,11 @@ local changelog_0_8 = [[
 mcsm_portable 0.8 [prerelease]
 
 - now episode menu is taken from ps4 mcsm version
-
 - added saves menu
-
 - added arrows for mainmenu from the original game
-
 - added "welcome to minecraft story mode" thing from the original game
-
 - updated controls menu
-
 - now names of video-files for ep1 is better
-
 - main menu now is much better, stable
 
 There is a choice in which if you choose something wrong, 
@@ -119,21 +78,13 @@ local changelog_1 = [[
 mcsm_portable 1.0 [release]
 
 - now episode menu is taken from ps4 mcsm version
-
 - added saves menu
-
 - added arrows for mainmenu from the original game
-
 - added "welcome to minecraft story mode" thing from the original game
-
 - updated controls menu
-
 - now names of video-files for ep1 is better
-
 - main menu now is much better, stable
-
 - updated saving screens (now they look better).
-
 - finally fixed the Reuben choice (run or don’t run) 
 and the choice between creeper or enderman.
 ]]
@@ -142,13 +93,9 @@ local changelog_1_1 = [[
 mcsm_portable 1.1 [release]
 
 - fixed loading screen glitches
-
 - improved game save system
-
 - improved playstation buttons sprites in mainmenu
-
 - fixed interactive zones bugs
-
 - added sounds in mainmenu
 ]]
 
@@ -156,37 +103,22 @@ local changelog_1_2 = [[
 mcsm_portable 1.2 [release]
 
 Added
-
 - New Settings menu with customization options
-
 - Audio volume sliders for:
-
     UI sounds
-
     Menu music
-
     PMP videos
-
 - Credits button (shows episode credits)
-
 - Debug menu displaying:
-
     Battery %
-
     Free RAM
-
     CPU frequency
-
     PSP model
-
     Date & Time
-
     Nickname
-
     System language
 
 Changed
-
 - Redesigned main menu Credits section
 ]]
 
@@ -194,25 +126,17 @@ local changelog_1_3 = [[
 mcsm_portable 1.3 [release]
 
 Added
-
 - Episode 2
-
 - Episode 2 Saves Menu
-
 - Episode 2 Rewind System 
 (lets you revisit and choose key decisions 
 from Episode 1 before starting Episode 2)
 
 Changed
-
 - Changed audio/video menu music text
-
 - Improved saves system
-
 - Improved Episode Menu
-
 Thanks to
-
 Sei-Sou for converting videos for ellegaard_gabriel storyline
 ]]
 
@@ -220,41 +144,30 @@ local changelog_1_4 = [[
 mcsm_portable 1.4 [release]
 
 Added
-
 - Fade-out animation when clicking Play in the main menu
-
 - Readme explaining the choice system in assets/video/
-
 - New global functions like cnt, fileExists, and more
-
 - 'Minecraft is best played with headphones' screen from mobile version
-
 - Screen won’t lower brightness or turn off during gameplay
 
 Changed
-
 - Episode menu now includes: Coming Soon, Continue, and Restart buttons
-
 - Save system improved — now uses a proper system-level structure
-
 - Renamed the "rewind" system to episode choice setup
-
-- Episode menu buttons styled in black & white (exclusive to this port)
-
-- Main menu hints now use PS-style black & white buttons (exclusive to this port)
-
+- Episode menu buttons styled in black & white 
+- (exclusive to this port)
+- Main menu hints now use PS-style black & white buttons 
+(exclusive to this port)
 - Changed 'made by entitybtw' screen
 
 Fixed
-
-- Fixed a choice issue in assets/video/episode2/magnus_petra/4/shes_awesome.lua
+- Fixed a choice issue in 
+assets/video/episode2/magnus_petra/4/shes_awesome.lua
 
 Removed
-
 - Removed the "Not Yet" screen from the episode menu
 
 Thanks to
-
 @r3trob0y for helping improve the save menu system
 ]]
 
@@ -262,27 +175,64 @@ local changelog_1_5 = [[
 mcsm_portable 1.5 [release]
 
 Added
-
 - Episode 3
-
 - 'Chicken Machine 2' button in 'endercon' interactive zone (episode one)
 
 Fixed
-
 - Fixed bugs in episode one choices
-
 - Optimized audio/video tab in settings
-
-- Optimized Chicken Machine button in 'endercon' interactive zone (episode one)
+- Optimized Chicken Machine button in 'endercon' interactive zone 
+(episode one)
 
 Thanks to
-
 @r3trob0y for helping optimize audio/video tab in settings
+@antim0118 for helping optimize the chicken machine button in 'endercon' 
+interactive zone
+]]
+local changelog_1_6 = [[
+mcsm_portable 1.6 [release]
 
-@antim0118 for helping optimize the chicken machine button in 'endercon' interactive zone
+Added
+- Episode 4
+- Pause Menu
+- 'Paused' screen
+- Animated background in main-menu
+- Loading in title-screen
+- subtitles
+- subtitles settings in audio/video tab
+- 'The game series adapts to the choices you make' screen for episode one
+
+Fixed
+- Threaten or Offer Sword choice in episode 1
+
+Changed
+- Replaced the Credits tab in the main menu with a Changelogs tab
+- Now saving is triggered by pressing R
+- Controls tab, now it looks like from original game
+- Refactored all choices
+- Now all menus use button hints (previous menu, etc.).
+
+Removed
+- The triangle (exit) button from the main menu.
+
+Note
+> Subtitles may be unsynchronized or contain mistakes; if you can, 
+> please help with fixing the subtitles.
+
+
+Thanks to
+@r3trob0y for awesome LuaPlayerYT engine beta 2.2
+@antim0118 for helping fixing bugs
+tyom4style for helping with pause-menu background
+@akrgood for helping fixing subtitles a bit for episode three
+@dntrnk for helping fixing subtitles a bit for episode one
+
+
+
 ]]
 
 local combined_changelog = 
+    changelog_1_6 .. sep .. 
     changelog_1_5 .. sep .. 
     changelog_1_4 .. sep ..
     changelog_1_3 .. sep ..
@@ -294,7 +244,7 @@ local combined_changelog =
     changelog_0_6 .. sep ..
     changelog_0_5 .. sep ..
     changelog_0_2 .. sep ..
-    changelog_0_1
+    changelog_0_1 
 
 local colors = {
     Added = Color.new(150, 220, 150),
@@ -341,7 +291,7 @@ while true do
             for _, line in ipairs(lines) do
                 totalHeight = totalHeight + getLineHeight(line)
             end
-            local maxScroll = math.max(0, totalHeight - 275)
+            local maxScroll = math.max(0, totalHeight - 250)
             scrollY = math.min(maxScroll, scrollY + scrollSpeed)
             scrollDelay = 0
         end

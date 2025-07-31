@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local cross = Image.load("assets/icons/cross.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode4/magnus_petra/choices/16/bookcase.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/16/bookcase.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/16/bookcase.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/16/bookcase.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(cross, 210, 169)
 intraFont.print(210 - intraFont.textW(font, "Gabriel", 0.4) / 2 + 8, 169 + 14, "Gabriel", Color.new(255,255,255), font, 0.4)

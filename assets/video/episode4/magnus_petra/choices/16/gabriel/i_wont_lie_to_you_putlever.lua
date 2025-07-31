@@ -2,7 +2,11 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode4/magnus_petra/choices/16/gabriel/i_wont_lie_to_you.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/16/gabriel/i_wont_lie_to_you.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/16/gabriel/i_wont_lie_to_you.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/16/gabriel/i_wont_lie_to_you.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 Image.draw(square, 393, 146)
 intraFont.print(393 - intraFont.textW(font, "Lever", 0.4) / 2 + 8, 146 + 14, "Lever", Color.new(255,255,255), font, 0.4)

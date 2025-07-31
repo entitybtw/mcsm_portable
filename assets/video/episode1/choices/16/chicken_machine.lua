@@ -5,7 +5,11 @@ local circle = nil
 local cm_button = buttons.circle
 local cm_script = "assets/video/episode1/choices/16/slime.lua"
 PMP.setVolume(pmpvolume)
-PMP.playEasy('assets/video/episode1/choices/16/chicken_machine.pmp', buttons.r, true, 'assets/video/episode1/choices/16/chicken_machine.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/choices/16/chicken_machine.pmp', buttons.r, true, 'assets/video/episode1/choices/16/chicken_machine.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
 if slime == "on" then
     cross = Image.load("assets/icons/cross.png")
