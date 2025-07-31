@@ -204,6 +204,7 @@ Added
 
 Fixed
 - Threaten or Offer Sword choice in episode 1
+- Episode 3 interactive zones
 
 Changed
 - Replaced the Credits tab in the main menu with a Changelogs tab
