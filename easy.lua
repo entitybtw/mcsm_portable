@@ -133,7 +133,8 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
                 PMP.pause()
                 local code = dofile("assets/misc/pause.lua")
                 if code == -1 then
-                    return
+                    PMP.stop(pointer)
+                    return 1
                 end
             end
         end
@@ -145,7 +146,7 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
 
         if paused then
             screen.filledRect(0, 0, 480, 272, Color.new(0, 0, 0), nil, 150)
-            intraFont.print(170, 118, "Paused", Color.new(255, 255, 255), usedFont, 1, 0)
+            intraFont.print(235 - intraFont.textW(font, "Paused", 1) / 2 + 8, 105 + 14, "Paused", Color.new(255,255,255), font, 1)
         end
 
         screen.flip()
