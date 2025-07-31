@@ -35,7 +35,7 @@ end
 else
     while true do
         screen.clear()
-        System.message("Key data for episode 1, 3 not found, do you want to start episode choice setup?", 1)
+        System.message("Key data not found, do you want to start episode choice setup?", 1)
         local episodeChoiceResponse = System.buttonPressed()
         local emaexists = fileExists("assets/saves/ema.txt")
         local gpexists = fileExists("assets/saves/gp.txt")
@@ -50,7 +50,6 @@ else
                     System.message("What would you like to save? Gabriel = Yes, Petra = No", 1)
                     local input = System.buttonPressed()
                     if input == "Back" then
-                    break
                     else
                         gp = (input == "Yes") and "gabriel" or "petra"
                         step = 2
@@ -66,7 +65,7 @@ else
                     if input == "Back" then
                         step = 1
                     else
-                        ema = (input == "Yes") and "magnus" or "ellegaard"
+                        ema = (input == "Yes") and "ellegaard" or "magnus"
                         if not gpexists then wr("gp", gp) end
                         if not emaexists then wr("ema", ema) end
                         screen.flip()
@@ -84,9 +83,8 @@ else
             end
 
         elseif episodeChoiceResponse == "No" or episodeChoiceResponse == "Back" then
-dofile("assets/misc/pause.lua")
+dofile("./mainmenu.lua")
             screen.flip()
-            break
         end
 
         screen.flip()

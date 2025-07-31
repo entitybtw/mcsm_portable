@@ -2,7 +2,7 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/16/petra.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/16/petra.pmp', buttons.r, true, 'assets/video/episode4/magnus_gabriel/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
@@ -22,17 +22,18 @@ while choosing do
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode4/magnus_petra/choices/16/petra/youll_be_fine_putlever.lua"
+        nextscene = "assets/video/episode4/magnus_gabriel/choices/16/petra/youll_be_fine_putlever.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode4/magnus_petra/choices/16/petra/i_wont_lie_to_you_putlever.lua"
+        nextscene = "assets/video/episode4/magnus_gabriel/choices/16/petra/i_wont_lie_to_you_putlever.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         Image.unload(circle)
-        choosing = false
-dofile("assets/misc/pause.lua")
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
 choosing = false
         SaveGame(3)

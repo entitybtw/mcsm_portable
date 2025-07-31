@@ -43,8 +43,9 @@ while choosing do
         Image.unload(square)
         Image.unload(cross)
         Image.unload(triangle)
-        choosing = false
-dofile("assets/misc/pause.lua")
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
         Image.unload(square)
 choosing = false

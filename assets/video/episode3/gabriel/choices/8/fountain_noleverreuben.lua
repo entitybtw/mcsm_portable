@@ -21,8 +21,9 @@ while choosing do
         nextscene =  "assets/video/episode3/gabriel/choices/8/gabriel_noleverreuben_nofountain.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
-        choosing = false
-dofile("assets/misc/pause.lua")
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
 choosing = false
         SaveGame(3)
     end

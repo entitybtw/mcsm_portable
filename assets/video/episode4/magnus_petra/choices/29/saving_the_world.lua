@@ -6,9 +6,5 @@ if result == 1 then
     return 1
 end
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/credits/ep4.pmp', buttons.start)
-if result == 1 then
-    nextscene = "./mainmenu.lua"
-    return 1
-end
-PMP.setVolume(pmpvolume)
+PMP.playEasy('assets/video/credits/ep4.pmp', buttons.start)
+nextscene = "./mainmenu.lua"

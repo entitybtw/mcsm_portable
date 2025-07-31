@@ -57,7 +57,6 @@ else
                     System.message("What would you like to save? Gabriel = Yes, Petra = No", 1)
                     local input = System.buttonPressed()
                     if input == "Back" then
-                    break
                     else
                         gp = (input == "Yes") and "gabriel" or "petra"
                         step = 2
@@ -108,9 +107,8 @@ else
             end
 
         elseif episodeChoiceResponse == "No" or episodeChoiceResponse == "Back" then
-dofile("assets/misc/pause.lua")
+dofile("./mainmenu.lua")
             screen.flip()
-            break
         end
 
         screen.flip()

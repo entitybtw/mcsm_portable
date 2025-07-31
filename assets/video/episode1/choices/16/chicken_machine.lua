@@ -51,8 +51,9 @@ while choosing do
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
-        choosing = false
-dofile("assets/misc/pause.lua")
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
 choosing = false
         SaveGame(1)

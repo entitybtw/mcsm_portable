@@ -73,17 +73,16 @@ while true do
         Image.unload(square)
         Image.unload(circle)
         nextscene =  "assets/video/episode1/100_chicken_sized.lua"
-        break
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         nextscene =  "assets/video/episode1/10_zombie_sized.lua"
-        break
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         Image.unload(circle)
-dofile("assets/misc/pause.lua")
-        break
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
     end
 
 end

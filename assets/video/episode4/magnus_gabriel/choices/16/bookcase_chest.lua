@@ -4,7 +4,7 @@ local cross = Image.load("assets/icons/cross.png")
 local triangle = Image.load("assets/icons/triangle.png")
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/16/bookcase.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/15/bookcase.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/16/bookcase.pmp', buttons.r, true, 'assets/video/episode4/magnus_gabriel/choices/15/bookcase.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
@@ -26,25 +26,26 @@ while choosing do
         Image.unload(cross)
         Image.unload(triangle)
         choosing = false
-        nextscene =  "assets/video/episode4/magnus_petra/choices/16/crafting_table.lua"
+        nextscene =  "assets/video/episode4/magnus_gabriel/choices/16/crafting_table.lua"
     elseif buttons.pressed(buttons.cross) then
 	Image.unload(square)
         Image.unload(cross)
         Image.unload(triangle)
 	choosing = false
-	nextscene =  "assets/video/episode4/magnus_petra/choices/16/petra.lua"
+	nextscene =  "assets/video/episode4/magnus_gabriel/choices/16/petra.lua"
     elseif buttons.pressed(buttons.triangle) then
 	Image.unload(square)
         Image.unload(cross)
         Image.unload(triangle)
 	choosing = false
-	nextscene =  "assets/video/episode4/magnus_petra/choices/16/redstone_hole_chest.lua"
+	nextscene =  "assets/video/episode4/magnus_gabriel/choices/16/redstone_hole_chest.lua"
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         Image.unload(cross)
         Image.unload(triangle)
-        choosing = false
-dofile("assets/misc/pause.lua")
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
         Image.unload(square)
 choosing = false
