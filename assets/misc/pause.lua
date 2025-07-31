@@ -103,8 +103,9 @@ while true do
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             sound.stop(sound.WAV_2)
             Image.unload(bg)
-            dofile("./mainmenu.lua")
-            break
+            unloadButtons()
+            nextscene = "./mainmenu.lua"
+            return -1
         elseif selectedButton == 4 then
             -- 'Exit Game' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)

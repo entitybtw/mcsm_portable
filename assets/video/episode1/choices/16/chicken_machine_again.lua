@@ -23,13 +23,12 @@ elseif slime == "off" then
 end
 Image.draw(square, 221, 122)
 intraFont.print(221 - intraFont.textW(font, "Chicken Machine", 0.4) / 2 + 8, 122 + 14, "Chicken Machine", Color.new(255,255,255), font, 0.4)
+intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
-
 while choosing do
     buttons.read()
-
     if buttons.pressed(buttons.square) then
         Image.unload(square)
         if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
@@ -45,18 +44,14 @@ while choosing do
         if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
         nextscene =  "assets/video/episode1/choices/16/crafting_table.lua"
-    elseif buttons.pressed(buttons.l) then
+    elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
         choosing = false
-        nextscene =  "./mainmenu.lua"
+dofile("assets/misc/pause.lua")
     elseif buttons.pressed(buttons.r) then
-        Image.unload(square)
-        if slime == "on" then Image.unload(cross) Image.unload(circle) elseif slime == "off" then Image.unload(circle) end
-        choosing = false
+choosing = false
         SaveGame(1)
-        nextscene =  "./mainmenu.lua"
     end
-
 
 end

@@ -5,7 +5,6 @@ if file then
 else
     gp = nil
 end
-
 if gp then
     local path = System.LoadData("assets/mainmenu/saves_bg.png")
     if path and gp then
@@ -29,11 +28,9 @@ else
         local bfexists = fileExists("assets/saves/bf.txt")
         local emexists = fileExists("assets/saves/em.txt")
         local gpexists = fileExists("assets/saves/gp.txt")
-
         if episodeChoiceResponse == "Yes" then
             local step = 1
             local gp, bf, em
-
             while true do
                 screen.clear()
 
@@ -53,12 +50,11 @@ else
                         return 1
                     end
                 end
-
                 screen.flip()
             end
 
         elseif episodeChoiceResponse == "No" or episodeChoiceResponse == "Back" then
-            nextscene = "./mainmenu.lua"
+dofile("assets/misc/pause.lua")
             screen.flip()
             break
         end

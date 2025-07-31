@@ -26,7 +26,8 @@ function SaveGame(episodeNumber)
             tall_grass = tall_grass,
             building = building,
             pedestal = pedestal,
-            slime = slime
+            slime = slime,
+            sword = sword
         }
 
         local file, err = io.open(variablesFilePath, "w")

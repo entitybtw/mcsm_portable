@@ -7,7 +7,6 @@ local cross = Image.load("assets/icons/cross.png")
 
 PMP.setVolume(pmpvolume)
 PMP.playEasy('assets/video/episode1/choices/35/this_explains_a_lot.pmp', buttons.r, true, 'assets/video/episode1/choices/35/this_explains_a_lot.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
-
 Image.draw(cross, 243, 139)
 intraFont.print(243 - intraFont.textW(font, "Pedestal", 0.4) / 2 + 8, 139 + 14, "Pedestal", Color.new(255,255,255), font, 0.4)
 Image.draw(triangle, 305, 157)
@@ -16,6 +15,7 @@ Image.draw(square, 123, 161)
 intraFont.print(123 - intraFont.textW(font, "Axel", 0.4) / 2 + 8, 161 + 14, "Axel", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 174, 153)
 intraFont.print(174 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 153 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
+intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
@@ -49,23 +49,18 @@ while choosing do
         Image.unload(circle)
         choosing = false
             nextscene =  "assets/video/episode1/choices/36/olivia.lua"
-    elseif buttons.pressed(buttons.l) then
+    elseif buttons.pressed(buttons.start) then
         Image.unload(cross)
 	Image.unload(triangle)
 	Image.unload(square)
 	Image.unload(circle)
         choosing = false
-        nextscene =  "./mainmenu.lua"
+dofile("assets/misc/pause.lua")
     elseif buttons.pressed(buttons.r) then
         Image.unload(cross)
 	Image.unload(triangle)
-	Image.unload(square)
-	Image.unload(circle)
-        choosing = false
+choosing = false
         SaveGame(1)
-        nextscene =  "./mainmenu.lua"
     end
 
-
 end
-

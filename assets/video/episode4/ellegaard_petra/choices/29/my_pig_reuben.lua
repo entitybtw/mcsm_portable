@@ -1,0 +1,6 @@
+wr("4_status", "restart")
+PMP.setVolume(pmpvolume)
+PMP.playEasy('assets/video/episode4/ellegaard_petra/choices/29/my_pig_reuben.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_petra/choices/29/my_pig_reuben.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+PMP.setVolume(pmpvolume)
+PMP.playEasy('assets/video/credits/ep4.pmp', buttons.start)
+PMP.setVolume(pmpvolume)

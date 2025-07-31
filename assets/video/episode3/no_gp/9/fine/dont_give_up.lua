@@ -5,19 +5,18 @@ local cross = Image.load("assets/icons/cross.png")
 
 PMP.setVolume(pmpvolume)
 PMP.playEasy('assets/video/episode3/no_gp/9/fine/dont_give_up.pmp', buttons.r, true, 'assets/video/episode3/no_gp/9/fine/dont_give_up.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
-
 Image.draw(cross, 445, 179)
 intraFont.print(445 - intraFont.textW(font, "Exit", 0.4) / 2 + 8, 179 + 14, "Exit", Color.new(255,255,255), font, 0.4)
 Image.draw(square, 62, 203)
 intraFont.print(62 - intraFont.textW(font, "Olivia", 0.4) / 2 + 8, 203 + 14, "Olivia", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 155, 171)
 intraFont.print(155 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 171 + 14, "Chest", Color.new(255,255,255), font, 0.4)
+intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
 while choosing do
     buttons.read()
-
     if buttons.pressed(buttons.square) then
         Image.unload(square)
         Image.unload(circle)
@@ -36,20 +35,15 @@ while choosing do
         Image.unload(cross)
         choosing = false
         nextscene =  "assets/video/episode3/no_gp/10/exit1.lua"
-    elseif buttons.pressed(buttons.l) then
+    elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene =  "./mainmenu.lua"
+dofile("assets/misc/pause.lua")
     elseif buttons.pressed(buttons.r) then
         Image.unload(square)
-        Image.unload(circle)
-        Image.unload(cross)
-        choosing = false
+choosing = false
         SaveGame(3)
-        nextscene =  "./mainmenu.lua"
     end
-
 end
-

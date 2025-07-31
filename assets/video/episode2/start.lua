@@ -5,7 +5,6 @@ if file then
 else
     em = nil
 end
-
 file = io.open("assets/saves/gp.txt", "r")
 if file then
     gp = file:read("*l")
@@ -13,7 +12,6 @@ if file then
 else
     gp = nil
 end
-
 file = io.open("assets/saves/bf.txt", "r")
 if file then
     bf = file:read("*l")
@@ -21,7 +19,6 @@ if file then
 else
     bf = nil
 end
-
 if em and gp and bf then
     if em == "ellegaard" then
         nextscene = "assets/video/episode2/ellegaard/start.lua"
@@ -45,11 +42,9 @@ else
         local bfexists = fileExists("assets/saves/bf.txt")
         local emexists = fileExists("assets/saves/em.txt")
         local gpexists = fileExists("assets/saves/gp.txt")
-
         if episodeChoiceResponse == "Yes" then
             local step = 1
             local gp, bf, em
-
             while true do
                 screen.clear()
 
@@ -105,12 +100,11 @@ else
                         return 1
                     end
                 end
-
                 screen.flip()
             end
 
         elseif episodeChoiceResponse == "No" or episodeChoiceResponse == "Back" then
-            nextscene = "./mainmenu.lua"
+dofile("assets/misc/pause.lua")
             screen.flip()
             break
         end
