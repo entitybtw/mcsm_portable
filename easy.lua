@@ -79,7 +79,7 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
     local fontSizeNow = fontSize or 12
     local subsEnabledNow = subsControl ~= false
 
-    local pointer = PMP.play(path, getPointer, loop, subsPath, stopButton)
+    pointer = PMP.play(path, getPointer, loop, subsPath, stopButton)
 
     local colorStart, colorEnd
     if hexColor and hexColor:find("/") then
@@ -131,7 +131,10 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
         elseif buttons.pressed(buttons.start) then
             if not paused then
                 PMP.pause()
-                dofile("assets/misc/pause.lua")
+                local code = dofile("assets/misc/pause.lua")
+                if code == -1 then
+                    return
+                end
             end
         end
 
