@@ -1,4 +1,5 @@
 local path = System.LoadData("assets/mainmenu/saves_bg.png")
+local choosing = true
 local fade = 255
 if path then
     PMP.setVolume(pmpvolume)
@@ -67,16 +68,18 @@ intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 
-while true do
+while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
         Image.unload(square)
         Image.unload(circle)
         nextscene =  "assets/video/episode1/100_chicken_sized.lua"
+        choosing = false
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         nextscene =  "assets/video/episode1/10_zombie_sized.lua"
+        choosing = false
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         Image.unload(circle)
