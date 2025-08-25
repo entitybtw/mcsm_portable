@@ -75,7 +75,6 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
         usedFont = font
     end
 
-    -- Заменяем динамические функции на простые значения
     local fontSizeNow = fontSize or 12
     local subsEnabledNow = subsControl ~= false
 

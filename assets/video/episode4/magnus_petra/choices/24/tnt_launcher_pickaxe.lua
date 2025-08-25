@@ -36,6 +36,6 @@ local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
 choosing = false
-        SaveGame(3)
+        SaveGame(4)
     end
 end
