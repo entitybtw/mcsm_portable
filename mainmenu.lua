@@ -1,4 +1,3 @@
--- initialize variables
 local fade = 255
 local welanim = 255
 local step = -10
@@ -17,43 +16,54 @@ videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, true, nil, nil,
 local timered = timer.create()
 local welanim_duration = timer.create()
 
--- load buttons
+local btn_static = Image.load("assets/buttons/static.png")
+local btn_selected = Image.load("assets/buttons/selected.png")
+
 local buttonsList = {
-    {
-        static = Image.load("assets/buttons/PLAY_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/PLAY_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/SUPPORT_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/SUPPORT_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/CHANGELOGS_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/CHANGELOGS_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/SETTINGS_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/SETTINGS_ENG_SELECTED.png")
-    }
+    { text = "Play" },
+    { text = "Support" },
+    { text = "Changelogs" },
+    { text = "Settings" }
 }
 
 local selectedButton = 1
 
--- buttons draw function
 local function drawButtons()
+    local startX = 35
+    local startY = 100
     for i, button in ipairs(buttonsList) do
-        local x = 35
-        local y = 100 + (i - 1) * 30
+        local x = startX
+        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
+        local bg = (i == selectedButton) and btn_selected or btn_static
+        Image.draw(bg, x, y)
 
-        if i == selectedButton then
-            Image.draw(button.selected, x, y)
-        else
-            Image.draw(button.static, x, y)
-        end
+        local scale = 0.3
+        local tw = intraFont.textW(font, button.text, scale)
+        local th = intraFont.textH(font) * scale
+
+        local tx = x + (Image.W(bg) - tw) / 2
+        local ty = y + (Image.H(bg) - th)  / 2.7
+
+        local color = (i == selectedButton)
+            and Color.new(251, 238, 90)
+            or Color.new(255, 255, 255)
+
+        intraFont.printShadowed(
+            tx,
+            ty,
+            button.text,
+            color,
+            Color.new(0, 0, 0),
+            font,
+            90,
+            1,
+            scale,
+            0
+        )
     end
 end
 
--- stop_sound function
+
 function stop_sound(channel)
     local state = sound.state(channel)
     if (state.state ~= "stopped") then
@@ -62,12 +72,9 @@ function stop_sound(channel)
     sound.stop(channel)
 end
 
--- unload buttons function
 local function unloadButtons()
-    for k, v in pairs(buttonsList) do
-        Image.unload(v.static)
-        Image.unload(v.selected)
-    end
+    Image.unload(btn_static)
+    Image.unload(btn_selected)
 end
 
 if stat.state == "stopped" then
@@ -82,7 +89,7 @@ while true do
     end
 
     if fade_enabled == 1 then
-    	if fade > 0 then fade = fade - 8 end
+        if fade > 0 then fade = fade - 8 end
     end
 
     if timer.time(timered) == 0 then
@@ -95,12 +102,11 @@ while true do
 
     if timer.time(welanim_duration) >= 26000 then
         welanim = -1
-        timer.stop(timered)  -- останавливаем таймер timered после 10 секунд
+        timer.stop(timered)
     end
 
     if timer.time(timered) >= delay_time then
         welanim = welanim + step
-
         if welanim >= 255 then
             welanim = 255
             step = -10
@@ -116,32 +122,29 @@ while true do
     Image.draw(cross, 40, 233, 14, 14)
     intraFont.printShadowed(57, 234, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 
-    -- navigation logic
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-	    sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
     end
     if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
         selectedButton = selectedButton + 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-	    sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
     end
 
-    -- quit
     if buttons.pressed(buttons.triangle) then
         LUA.quit()
     end
 
     arrowStep = arrowStep + 0.2
     arrowX = 27 + cos(arrowStep) * 3
-    if arrowStep == 360 then
-   	arrowStep = 0
+    if arrowStep >= 360 then
+        arrowStep = 0
     end
 
-    if buttons.pressed(buttons.cross) then	
+    if buttons.pressed(buttons.cross) then
         if selectedButton == 1 then
-            -- play button
             fade = 0
             while fade < 255 do
                 screen.clear()
@@ -156,53 +159,48 @@ while true do
                 screen.flip()
                 fade = fade + 8
             end
-	        fade_enabled = 0
+            fade_enabled = 0
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-	        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.stop(videoFrame)
-	        local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
+            local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
             if epmenu == 1 then
-	            Image.unload(logo)
+                Image.unload(logo)
                 Image.unload(arrow)
-	            Image.unload(cross)
-	            Image.unload(welcome)
+                Image.unload(cross)
+                Image.unload(welcome)
                 unloadButtons()
                 break
             end
         elseif selectedButton == 2 then
-            -- 'support' button
-	        fade_enabled = 0
+            fade_enabled = 0
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-	        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/support.lua")
         elseif selectedButton == 3 then
-            -- 'changelogs' button
-	        fade_enabled = 0
+            fade_enabled = 0
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-	        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/changelogs.lua")
         elseif selectedButton == 4 then
-            -- 'settings' button
-	        fade_enabled = 0
+            fade_enabled = 0
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-	        sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/settings.lua")
         end
     end
 
     drawButtons()
 
-    -- draw arrows
     Image.draw(arrow, arrowX, 107, 14, 22)
     Image.draw(arrow, arrowX, 137, 14, 22)
-    
-    -- fade
+
     if fade_enabled == 1 then
         if fade > 0 then
-    	    screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+            screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
         end
     end
-    Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim) -- 'welcome to minecraft story mode' popup
-    debugoverlay.draw(debugoverlay.loadSettings()) -- debug text draw
+    Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+    debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end
