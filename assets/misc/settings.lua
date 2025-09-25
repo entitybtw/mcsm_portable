@@ -1,45 +1,59 @@
 -- load buttons
-local buttonsList = {
-    {
-        static = Image.load("assets/buttons/CONTROLS_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/CONTROLS_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/AUDIOVIDEO_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/AUDIOVIDEO_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/DEBUG_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/DEBUG_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/CREDITS_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/CREDITS_ENG_SELECTED.png")
-    }
-}
+
 
 local selectedButton = 1
 local circle = Image.load("assets/icons/circle.png")
 local cross = Image.load("assets/icons/cross.png")
 
-local function drawButtons()
-    for i, button in ipairs(buttonsList) do
-        local x = 35
-        local y = 50 + (i - 1) * 30
+local btn_static = Image.load("assets/buttons/static.png")
+local btn_selected = Image.load("assets/buttons/selected.png")
 
-        if i == selectedButton then
-            Image.draw(button.selected, x, y)
-        else
-            Image.draw(button.static, x, y)
-        end
+local buttonsList = {
+    { text = "Controls" },
+    { text = "Audio/Video" },
+    { text = "Debug" },
+    { text = "Credits" }
+}
+
+
+local function drawButtons()
+    local startX = 35
+    local startY = 50
+    for i, button in ipairs(buttonsList) do
+        local x = startX
+        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
+        local bg = (i == selectedButton) and btn_selected or btn_static
+        Image.draw(bg, x, y)
+
+        local scale = 0.3
+        local tw = intraFont.textW(font, button.text, scale)
+        local th = intraFont.textH(font) * scale
+
+        local tx = x + (Image.W(bg) - tw) / 2
+        local ty = y + (Image.H(bg) - th)  / 2.7
+
+        local color = (i == selectedButton)
+            and Color.new(251, 238, 90)
+            or Color.new(255, 255, 255)
+
+        intraFont.printShadowed(
+            tx,
+            ty,
+            button.text,
+            color,
+            Color.new(0, 0, 0),
+            font,
+            90,
+            1,
+            scale,
+            0
+        )
     end
 end
 
 local function unloadButtons()
-    for _, v in ipairs(buttonsList) do
-        Image.unload(v.static)
-        Image.unload(v.selected)
-    end
+    Image.unload(btn_static)
+    Image.unload(btn_selected)
 end
 
 while true do
