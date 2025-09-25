@@ -118,9 +118,9 @@ while true do
         end
     end
 
-    Image.draw(logo, 15, 45, 220, 50, white, 0, 0, 183, 37)
-    Image.draw(cross, 40, 233, 14, 14)
+    Image.draw(logo, 32, 38, 190, 61, nil, nil, nil, nil, nil, nil, nil, nil, true)
     intraFont.printShadowed(57, 234, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    Image.draw(cross, 40, 233, 14, 14)
 
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
@@ -148,7 +148,7 @@ while true do
             fade = 0
             while fade < 255 do
                 screen.clear()
-                Image.draw(logo, 15, 45, 220, 50, white, 0, 0, 183, 37)
+                Image.draw(logo, 32, 38, 190, 61)
                 drawButtons()
                 Image.draw(arrow, arrowX, 107, 14, 22)
                 Image.draw(arrow, arrowX, 137, 14, 22)
@@ -200,7 +200,11 @@ while true do
             screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
         end
     end
+    if welanim > -1 then 
     Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+    intraFont.printShadowed(270, 205, "Welcome to Minecraft: Story Mode!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(335, 225, "Visit mcsm_portable github page!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.2, 0)
+    end
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end
