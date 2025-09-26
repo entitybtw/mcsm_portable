@@ -96,12 +96,12 @@ while true do
         timer.start(timered)
     end
 
-    if timer.time(welanim_duration) == 0 then
+    if timer.time(welanim_duration) == 1 then
         timer.start(welanim_duration)
     end
 
     if timer.time(welanim_duration) >= 26000 then
-        welanim = -1
+        welanim = 0
         timer.stop(timered)
     end
 
@@ -111,15 +111,15 @@ while true do
             welanim = 255
             step = -10
             timer.reset(timered)
-        elseif welanim <= 0 then
-            welanim = 0
+        elseif welanim <= 1 then
+            welanim = 1
             step = 10
             timer.reset(timered)
         end
     end
 
     Image.draw(logo, 32, 38, 190, 61, nil, nil, nil, nil, nil, nil, nil, nil, true)
-    intraFont.printShadowed(57, 234, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     Image.draw(cross, 40, 233, 14, 14)
 
     if buttons.pressed(buttons.up) and selectedButton > 1 then
@@ -154,7 +154,7 @@ while true do
                 Image.draw(arrow, arrowX, 137, 14, 22)
                 Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
                 Image.draw(cross, 40, 233, 14, 14)
-                intraFont.printShadowed(57, 234, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+                intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
                 screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
                 screen.flip()
                 fade = fade + 8
@@ -200,11 +200,11 @@ while true do
             screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
         end
     end
-    if welanim > -1 then 
+
     Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
     intraFont.printShadowed(270, 205, "Welcome to Minecraft: Story Mode!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.3, 0)
     intraFont.printShadowed(335, 225, "Visit mcsm_portable github page!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.2, 0)
-    end
+
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
 end
