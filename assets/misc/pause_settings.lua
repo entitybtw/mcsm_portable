@@ -4,41 +4,55 @@ local cross = Image.load("assets/icons/cross.png")
 
 
 -- load buttons
+local btn_static = Image.load("assets/buttons/static.png")
+local btn_selected = Image.load("assets/buttons/selected.png")
+
 local buttonsList = {
-    {
-        static = Image.load("assets/buttons/CONTROLS_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/CONTROLS_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/AUDIOVIDEO_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/AUDIOVIDEO_ENG_SELECTED.png")
-    },
-    {
-        static = Image.load("assets/buttons/DEBUG_ENG_STATIC.png"),
-        selected = Image.load("assets/buttons/DEBUG_ENG_SELECTED.png")
-    }
+    { text = "Controls" },
+    { text = "Audio/Video" },
+    { text = "Debug" }
 }
 
 local selectedButton = 1
 
 local function drawButtons()
+    local startX = 150
+    local startY = 40
     for i, button in ipairs(buttonsList) do
-        local x = 150                 -- horizontal position for all buttons
-        local y = 40 + (i - 1) * 30 -- vertical spacing between buttons
+        local x = startX
+        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
+        local bg = (i == selectedButton) and btn_selected or btn_static
+        Image.draw(bg, x, y)
 
-        if i == selectedButton then
-            Image.draw(button.selected, x, y)
-        else
-            Image.draw(button.static, x, y)
-        end
+        local scale = 0.3
+        local tw = intraFont.textW(font, button.text, scale)
+        local th = intraFont.textH(font) * scale
+
+        local tx = x + (Image.W(bg) - tw) / 2
+        local ty = y + (Image.H(bg) - th)  / 2.7
+
+        local color = (i == selectedButton)
+            and Color.new(251, 238, 90)
+            or Color.new(255, 255, 255)
+
+        intraFont.printShadowed(
+            tx,
+            ty,
+            button.text,
+            color,
+            Color.new(0, 0, 0),
+            font,
+            90,
+            1,
+            scale,
+            0
+        )
     end
 end
 
 local function unloadButtons()
-    for k, v in pairs(buttonsList) do
-        Image.unload(v.static)
-        Image.unload(v.selected)
-    end
+    Image.unload(btn_static)
+    Image.unload(btn_selected)
 end
 
 while true do

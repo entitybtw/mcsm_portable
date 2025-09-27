@@ -1,87 +1,55 @@
 local circle = Image.load("assets/icons/circle.png")
 local bg = Image.load("assets/mainmenu/pause_bg.png")
 
+local btn_static = Image.load("assets/buttons/static.png")
+local btn_selected = Image.load("assets/buttons/selected.png")
+
 local buttonsList = {
-    {
-        id = "FREERAM", isToggle = true, state = false,
-        normalImageOn = Image.load("assets/buttons/FREERAMON_ENG_STATIC.png"),
-        normalImageOff = Image.load("assets/buttons/FREERAMOFF_ENG_STATIC.png"),
-        selectedImageOn = Image.load("assets/buttons/FREERAMON_ENG_SELECTED.png"),
-        selectedImageOff = Image.load("assets/buttons/FREERAMOFF_ENG_SELECTED.png")
-    },
-    {
-        id = "BATTERY", isToggle = true, state = false,
-        normalImageOn = Image.load("assets/buttons/BATTERYON_ENG_STATIC.png"),
-        normalImageOff = Image.load("assets/buttons/BATTERYOFF_ENG_STATIC.png"),
-        selectedImageOn = Image.load("assets/buttons/BATTERYON_ENG_SELECTED.png"),
-        selectedImageOff = Image.load("assets/buttons/BATTERYOFF_ENG_SELECTED.png")
-    },
-    {
-        id = "CPUFREQ", isToggle = true, state = false,
-        normalImageOn = Image.load("assets/buttons/CPUFREQON_ENG_STATIC.png"),
-        normalImageOff = Image.load("assets/buttons/CPUFREQOFF_ENG_STATIC.png"),
-        selectedImageOn = Image.load("assets/buttons/CPUFREQON_ENG_SELECTED.png"),
-        selectedImageOff = Image.load("assets/buttons/CPUFREQOFF_ENG_SELECTED.png")
-    },
-    {
-        id = "NICKNAME", isToggle = true, state = false,
-        normalImageOn = Image.load("assets/buttons/NICKNAMEON_ENG_STATIC.png"),
-        normalImageOff = Image.load("assets/buttons/NICKNAMEOFF_ENG_STATIC.png"),
-        selectedImageOn = Image.load("assets/buttons/NICKNAMEON_ENG_SELECTED.png"),
-        selectedImageOff = Image.load("assets/buttons/NICKNAMEOFF_ENG_SELECTED.png")
-    },
-    {
-        id = "TIMEDATE", isToggle = true, state = false,
-        normalImageOn = Image.load("assets/buttons/TIMEDATEON_ENG_STATIC.png"),
-        normalImageOff = Image.load("assets/buttons/TIMEDATEOFF_ENG_STATIC.png"),
-        selectedImageOn = Image.load("assets/buttons/TIMEDATEON_ENG_SELECTED.png"),
-        selectedImageOff = Image.load("assets/buttons/TIMEDATEOFF_ENG_SELECTED.png")
-    }
+    { id = "FREERAM", text = "Free RAM", isToggle = true, state = false },
+    { id = "BATTERY", text = "Battery", isToggle = true, state = false },
+    { id = "CPUFREQ", text = "CPU Freq", isToggle = true, state = false },
+    { id = "NICKNAME", text = "Nickname", isToggle = true, state = false },
+    { id = "TIMEDATE", text = "Time/Date", isToggle = true, state = false }
 }
 
 local selectedButton = 1
 
 local function drawButtons()
-    for i, button in ipairs(buttonsList) do
-        local x = 150
-        local y = 40 + (i - 1) * 30
+    local startX = 150
+    local startY = 40
+    local scale = 0.3
 
-        if button.isToggle then
-            if button.state then
-                if i == selectedButton then
-                    Image.draw(button.selectedImageOn, x, y)
-                else
-                    Image.draw(button.normalImageOn, x, y)
-                end
-            else
-                if i == selectedButton then
-                    Image.draw(button.selectedImageOff, x, y)
-                else
-                    Image.draw(button.normalImageOff, x, y)
-                end
-            end
-        else
-            if i == selectedButton then
-                Image.draw(button.selectedImage, x, y)
-            else
-                Image.draw(button.normalImage, x, y)
-            end
-        end
+    for i, button in ipairs(buttonsList) do
+        local x = startX
+        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
+
+        local bg = (i == selectedButton) and btn_selected or btn_static
+        Image.draw(bg, x, y)
+
+        local label = button.text .. ": " .. (button.state and "ON" or "OFF")
+        local tw = intraFont.textW(font, label, scale)
+        local th = intraFont.textH(font) * scale
+        local tx = x + (Image.W(bg) - tw) / 2
+        local ty = y + (Image.H(bg) - th)  / 2.7
+
+        local color = (i == selectedButton)
+            and Color.new(251, 238, 90)
+            or Color.new(255, 255, 255)
+
+        intraFont.printShadowed(
+            tx, ty,
+            label,
+            color,
+            Color.new(0, 0, 0),
+            font,
+            90, 1, scale, 0
+        )
     end
 end
 
 local function unloadButtons()
-    for _, btn in pairs(buttonsList) do
-        if btn.isToggle then
-            Image.unload(btn.normalImageOn)
-            Image.unload(btn.normalImageOff)
-            Image.unload(btn.selectedImageOn)
-            Image.unload(btn.selectedImageOff)
-        else
-            Image.unload(btn.normalImage)
-            Image.unload(btn.selectedImage)
-        end
-    end
+    Image.unload(btn_static)
+    Image.unload(btn_selected)
 end
 
 local function drawSystemInfo()
