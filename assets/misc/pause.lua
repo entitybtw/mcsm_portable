@@ -70,7 +70,7 @@ while true do
     
 
     Image.draw(bg, 0, 0)
-    intraFont.printShadowed(220, 25, "Paused", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(230 - intraFont.textW(font, "Paused", 0.3) / 2 + 14, 25, "Paused", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     Image.draw(circle, 240 - intraFont.textW(font, "Resume Game", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, nil, nil, nil, nil, nil)
     intraFont.printShadowed(240 - intraFont.textW(font, "Resume Game", 0.3) / 2 + 8, 233 + 14, "Resume Game", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0) 
     -- navigation logic

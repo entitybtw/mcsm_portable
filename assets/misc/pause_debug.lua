@@ -114,7 +114,7 @@ while true do
     screen.clear()
     buttons.read()
     Image.draw(bg, 0, 0)
-    intraFont.printShadowed(205, 25, "Debug Menu", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(230 - intraFont.textW(font, "Debug Menu", 0.3) / 2 + 14, 25, "Debug Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)

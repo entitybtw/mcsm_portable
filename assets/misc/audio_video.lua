@@ -1,7 +1,9 @@
--- Глобальные переменные
+-- глобальные переменные
 subs = true
 subssize = 0.4
 
+local btn_static = Image.load("assets/buttons/static.png")
+local btn_selected = Image.load("assets/buttons/selected.png")
 local subtitleSavePath = "assets/saves/subtitles.txt"
 
 local function loadSubtitles()
@@ -44,29 +46,14 @@ local hints = {
 }
 
 local circle = Image.load("assets/icons/circle.png")
-local musicSpritesheet = Image.load("assets/mainmenu/settings/menumusic_spritesheet.png")
-local videoSpritesheet = Image.load("assets/mainmenu/settings/pmpvideos_spritesheet.png")
-local uiSpritesheet = Image.load("assets/mainmenu/settings/uisounds_spritesheet.png")
-
+local sliderBg = Image.load("assets/mainmenu/settings/slider_bg.png")
 local sliderStatic   = Image.load("assets/mainmenu/settings/slider_static.png")
 local sliderSelected = Image.load("assets/mainmenu/settings/slider_selected.png")
-
-local subsOnStatic = Image.load("assets/buttons/DISPSUBSON_ENG_STATIC.png")
-local subsOnSelected = Image.load("assets/buttons/DISPSUBSON_ENG_SELECTED.png")
-local subsOffStatic = Image.load("assets/buttons/DISPSUBSOFF_ENG_STATIC.png")
-local subsOffSelected = Image.load("assets/buttons/DISPSUBSOFF_ENG_SELECTED.png")
-
-local subSmallStatic = Image.load("assets/buttons/SUBSSMALL_ENG_STATIC.png")
-local subSmallSelected = Image.load("assets/buttons/SUBSSMALL_ENG_SELECTED.png")
-local subMediumStatic = Image.load("assets/buttons/SUBSMEDIUM_ENG_STATIC.png")
-local subMediumSelected = Image.load("assets/buttons/SUBSMEDIUM_ENG_SELECTED.png")
-local subLargeStatic = Image.load("assets/buttons/SUBSLARGE_ENG_STATIC.png")
-local subLargeSelected = Image.load("assets/buttons/SUBSLARGE_ENG_SELECTED.png")
 
 local function generatePositions(yPos)
     local positions = {}
     for i = 0, 10 do
-        table.insert(positions, { x = 35 + i * 16.3, y = yPos })
+        table.insert(positions, { x = 38 + i * 16.3, y = yPos + 10 })
     end
     return positions
 end
@@ -99,7 +86,7 @@ local menumusic, pmpvideos, uiLevel = loadLevels("assets/saves/soundlevels.txt")
 
 local sliders = {
     {
-        name = "Music",
+        name = "Menu Music Volume",
         level = menumusic,
         positions = generatePositions(55),
         spritesheet = musicSpritesheet,
@@ -107,17 +94,17 @@ local sliders = {
         hintText = hints.music
     },
     {
-        name = "Video",
+        name = "PMP Videos Volume",
         level = pmpvideos,
-        positions = generatePositions(85),
+        positions = generatePositions(95),
         spritesheet = videoSpritesheet,
         apply = function(level) pmpvolume = level * 10 end,
         hintText = hints.video
     },
     {
-        name = "UI",
+        name = "UI Sounds Volume",
         level = uiLevel,
-        positions = generatePositions(115),
+        positions = generatePositions(135),
         spritesheet = uiSpritesheet,
         apply = function(level) sound.volumeEasy(sound.WAV_1, level * 10) end,
         hintText = hints.ui
@@ -131,54 +118,55 @@ end
 local selectedIndex = 1
 local totalItems = #sliders + 2
 
-local function drawSpriteFromSheet(sheet, level, isSelected, x, y)
-    local spriteWidth = 180
-    local spriteHeight = 26
-    local srcx = isSelected and 0 or 180
-    local invertedLevel = 10 - level
-    local srcy = invertedLevel * spriteHeight
-    Image.draw(sheet, x, y, spriteWidth, spriteHeight, nil, srcx, srcy, spriteWidth, spriteHeight)
-end
+local function drawSlider(slider, isSelected, y)
+    local x = 36
+    Image.draw(sliderBg, x, y, 183, 26)
 
-local function drawSlider(slider, isSelected)
-    local level = slider.level
-    drawSpriteFromSheet(slider.spritesheet, level, isSelected, 35, slider.positions[1].y)
-    local pos = slider.positions[level + 1]
+    local scale = 0.27
+    local text = slider.name .. ": " .. tostring(slider.level)
+    local tw = intraFont.textW(font, text, scale)
+    local th = intraFont.textH(font) * scale
+
+    local tx = x + (179 - tw) / 2
+    local ty = y + (37 - th) / 3.5
+
+    local color = isSelected and Color.new(251,238,90) or Color.new(255,255,255)
+
+    intraFont.printShadowed(tx, ty, text, color, Color.new(0,0,0), font, 90, 1, scale, 0)
+
+    local pos = slider.positions[slider.level + 1]
     local sliderImg = isSelected and sliderSelected or sliderStatic
-    Image.draw(sliderImg, pos.x, pos.y, nil, nil, nil, nil, nil, nil, nil, nil, 190)
+    Image.draw(sliderImg, pos.x, y)
 end
 
-local function drawSubsToggle(isSelected)
+local function drawToggle(text, stateText, isSelected, y)
     local x = 36
-    local y = 140
-    if subs then
-        Image.draw(isSelected and subsOnSelected or subsOnStatic, x, y, 179, 37)
-    else
-        Image.draw(isSelected and subsOffSelected or subsOffStatic, x, y, 179, 37)
-    end
-end
+    local slcted = isSelected and btn_selected or btn_static
+    Image.draw(slcted, x, y)
 
-local function drawSubsSize(isSelected)
-    local x = 36
-    local y = 170
-    if subssizeIndex == 1 then
-        Image.draw(isSelected and subSmallSelected or subSmallStatic, x, y, 179, 37)
-    elseif subssizeIndex == 2 then
-        Image.draw(isSelected and subMediumSelected or subMediumStatic, x, y, 179, 37)
-    else
-        Image.draw(isSelected and subLargeSelected or subLargeStatic, x, y, 179, 37)
-    end
+    local scale = 0.3
+    local fullText = text .. ": " .. stateText
+    local tw = intraFont.textW(font, fullText, scale)
+    local th = intraFont.textH(font) * scale
+
+    local tx = x + (179 - tw) / 2
+    local ty = y + (37 - th) / 3
+
+    local color = isSelected and Color.new(251,238,90) or Color.new(255,255,255)
+
+    intraFont.printShadowed(tx, ty, fullText, color, Color.new(0,0,0), font, 90, 1, scale, 0)
 end
 
 local function drawui()
-    intraFont.printShadowed(40, 40, "Audio/Video Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(40, 40, "Audio/Video Settings", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
 
     for i, slider in ipairs(sliders) do
-        drawSlider(slider, i == selectedIndex)
+        drawSlider(slider, i == selectedIndex, 27 + i * 30)
     end
 
-    drawSubsToggle(selectedIndex == #sliders + 1)
-    drawSubsSize(selectedIndex == #sliders + 2)
+    drawToggle("Subtitles", subs and "On" or "Off", selectedIndex == #sliders + 1, 1 + (#sliders + 1) * 35)
+    local sizeText = (subssizeIndex == 1 and "Small") or (subssizeIndex == 2 and "Medium") or "Large"
+    drawToggle("Subtitle Size", sizeText, selectedIndex == #sliders + 2, 1 + (#sliders + 2) * 34)
 
     local hintText
     if selectedIndex <= #sliders then
@@ -190,14 +178,9 @@ local function drawui()
     end
 
     if hintText then
-        intraFont.setStyle(font, 0.6, Color.new(255, 255, 255), 0, intraFont.ALIGN_LEFT)
-        intraFont.printShadowed(43, 210, hintText, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+        intraFont.printShadowed(43, 220, hintText, Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
     end
-
-    debugoverlay.draw(debugoverlay.loadSettings())
 end
-
-drawui()
 
 while true do
     buttons.read()
@@ -206,7 +189,8 @@ while true do
         Image.draw(videoFrame, 0, 0)
     end
     Image.draw(circle, 40, 233, 14, 14)
-    intraFont.printShadowed(57, 234, "Previous Menu", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(57, 234, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+
     drawui()
     screen.flip()
 
@@ -247,26 +231,14 @@ while true do
         end
         saveLevels("assets/saves/soundlevels.txt", levelsToSave)
         saveSubtitles()
+
         Image.unload(circle)
-        Image.unload(musicSpritesheet)
-        Image.unload(videoSpritesheet)
-        Image.unload(uiSpritesheet)
-        
+
+        Image.unload(btn_static)
+        Image.unload(btn_selected)
+        Image.unload(sliderBg)
         Image.unload(sliderStatic)
         Image.unload(sliderSelected)
-        
-        Image.unload(subsOnStatic)
-        Image.unload(subsOnSelected)
-        Image.unload(subsOffStatic)
-        Image.unload(subsOffSelected)
-        
-        Image.unload(subSmallStatic)
-        Image.unload(subSmallSelected)
-        Image.unload(subMediumStatic)
-        Image.unload(subMediumSelected)
-        Image.unload(subLargeStatic)
-        Image.unload(subLargeSelected)
-           
         break
     end
 end
