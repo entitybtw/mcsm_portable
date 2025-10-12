@@ -16,23 +16,6 @@ The original game and Netflix version are no longer available, but it’s still 
 
 ![](https://i.imgur.com/H0DDJvQ.png "in game")
 
-## 🎮 controls
-
-
-### 📋 menu controls
-- **D-Pad**: Navigation
-## episode menu controls
-- **R**: Next episode
-- **L**: Previous episode
-- **CIRCLE**: Previous menu
-- **CROSS**: Select
-- **SQUARE**: Manage game saves
-## gameplay controls
-- **R**: skip current scene
-- **START**: pause menu
-- **SELECT**: pause game
-- **R**(after cutscene): save
-
 ## 👏 thanks to
 
 - **pox1016**: For adapting Minecraft Story Mode Netflix Interactive to YouTube.
