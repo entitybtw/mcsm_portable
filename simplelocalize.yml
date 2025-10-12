@@ -1,0 +1,22 @@
+# cfg file for SimpleLocalize GitHub App
+
+pull-request:
+  title: "Update translations"
+  body: "This PR updates translations for the project."
+  labels:
+    - "translations"
+
+# What files should be uploaded on push
+upload:
+  files:
+    - path: "source.json"
+      format: "single-language-json"
+      language-key: "en"
+      options:
+        - REPLACE_TRANSLATION_IF_FOUND
+
+# Where we should commit translations files 
+download:
+  files:
+    - path: "/translations/messages_{lang}.json"
+      format: "single-language-json"
