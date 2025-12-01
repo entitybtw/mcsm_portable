@@ -1,56 +1,87 @@
 1
-00:00:00,000 --> 00:00:06,514
-I'm cool if he's cool. It's settled then you're both cool
+00:00:00,000 --> 00:00:02,870
+I'm cool if he's cool.
 
 2
-00:00:06,514 --> 00:00:08,000
-proceed then
+00:00:02,870 --> 00:00:05,138
+It's settled, then -- you're both cool.
 
 3
-00:00:12,680 --> 00:00:19,480
-I'll take that diamond now take it you've earned it
+00:00:05,138 --> 00:00:7,807
+Proceed, then.
 
 4
-00:00:19,480 --> 00:00:29,331
-this isn't a diamond no it's lapis I knew we couldn't trust
+00:00:13,313 --> 00:00:15,715
+I'll take that diamond now.
 
 5
-00:00:29,331 --> 00:00:33,840
-that guy we're going after
+00:00:16,016 --> 00:00:18,384
+Take it, you've earned it.
 
 6
-00:00:33,840 --> 00:00:39,220
-him getting that diamond I'm getting my school
+00:00:26,326 --> 00:00:28,628
+Uh, this isn't a diamond...
 
 7
-00:00:44,760 --> 00:00:45,760
-do you see him anywhere
+00:00:28,628 --> 00:00:31,064
+No, it's lapis!
 
 8
-00:00:50,000 --> 00:00:52,400
-lost then we'll just have to find
+00:00:31,064 --> 00:00:33,216
+I knew we couldn't trust that guy!
 
 9
-00:01:03,840 --> 00:01:27,669
-nothing what's up with you I just said nothing hey congrats
+00:00:33,216 --> 00:00:34,967
+We're going after it!
 
 10
-00:01:27,669 --> 00:01:32,920
-on the win I
+00:00:36,637 --> 00:00:39,839
+I'm either getting that diamond, or I'm getting my skull back --
 
 11
-00:01:33,360 --> 00:01:36,931
-mean I still think our beacon was amazing but you guys did
+00:00:39,839 --> 00:00:42,342
+Or you'll make him pay, right? Right?
 
 12
-00:01:36,931 --> 00:01:38,040
-a pretty good job
+00:00:42,342 --> 00:00:43,426
+Come on.
 
 13
-00:01:38,040 --> 00:01:43,742
-too I mean I thought the whole monster theme was plenty
+00:00:44,962 --> 00:00:46,712
+Do you see him anywhere?
 
 14
-00:01:43,742 --> 00:01:48,200
-cool but fireworks too it was sort of cool
+00:00:49,833 --> 00:00:51,267
+We lost him.
 
+15
+00:00:51,267 --> 00:00:54,520
+Then we'll just have to find again. Go!
+
+16
+00:01:21,848 --> 00:01:22,866
+'Sup?
+
+17
+00:01:22,866 --> 00:01:23,400
+'Sup?
+
+18
+00:01:23,400 --> 00:01:23,776
+Nothing, 'sup with you?
+
+19
+00:01:23,776 --> 00:01:27,003
+Nothing, 'sup with YOU?
+
+20
+00:01:27,003 --> 00:01:29,055
+I just said -- nothing.
+
+21
+00:01:29,055 --> 00:01:32,926
+Hey, uh, congrats on the win.
+
+22
+00:01:32,926 --> 00:01:38,698
+I mean, I still think our beacon was amazing, but... you guys did a pretty good job, too.
