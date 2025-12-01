@@ -1,140 +1,87 @@
 1
-00:00:00,000 --> 00:00:03,757
-maybe we should rethink the whole thing this guy gives me a
+00:00:00,000 --> 00:00:04,571
+Maybe we should rethink the whole thing. This guy gives me a bad feeling.
 
 2
-00:00:03,757 --> 00:00:04,840
-bad feeling I'll
+00:00:04,571 --> 00:00:08,375
+I'll give you a bad feeling if you ruin this for me.
 
 3
-00:00:04,840 --> 00:00:11,480
-give you a bad feeling if you ruin this for me proceed then
+00:00:08,375 --> 00:00:11,044
+Proceed, then.
 
 4
-00:00:16,000 --> 00:00:22,840
-I'll take that diamond now take it you've earned it
+00:00:16,550 --> 00:00:18,952
+I'll take that diamond now.
 
 5
-00:00:22,840 --> 00:00:33,938
-this isn't a diamond no it's lapis I knew we couldn't trust
+00:00:19,253 --> 00:00:21,621
+Take it, you've earned it.
 
 6
-00:00:33,938 --> 00:00:36,760
-that guy we're
+00:00:29,563 --> 00:00:31,865
+Uh, this isn't a diamond...
 
 7
-00:00:36,760 --> 00:00:39,520
-going after it
+00:00:31,865 --> 00:00:34,301
+No, it's lapis!
 
 8
-00:00:52,840 --> 00:00:56,140
-lost
+00:00:34,301 --> 00:00:36,453
+I knew we couldn't trust that guy!
 
 9
-00:01:22,840 --> 00:01:23,840
-What's up?
+00:00:36,453 --> 00:00:38,204
+We're going after it!
 
 10
-00:01:23,840 --> 00:01:24,840
-What's up?
+00:00:39,874 --> 00:00:43,076
+I'm either getting that diamond, or I'm getting my skull back --
 
 11
-00:01:24,840 --> 00:01:25,840
-Nothing.
+00:00:43,076 --> 00:00:45,579
+Or you'll make him pay, right? Right?
 
 12
-00:01:25,840 --> 00:01:26,840
-What's up with you?
+00:00:45,579 --> 00:00:46,663
+Come on.
 
 13
-00:01:26,840 --> 00:01:27,840
-Nothing.
+00:00:48,199 --> 00:00:49,949
+Do you see him anywhere?
 
 14
-00:01:27,840 --> 00:01:28,840
-What's up with you?
+00:00:53,070 --> 00:00:54,504
+We lost him.
 
 15
-00:01:28,840 --> 00:01:31,840
-I just said nothing.
+00:00:54,504 --> 00:00:57,757
+Then we'll just have to find again. Go!
 
 16
-00:01:31,840 --> 00:01:37,000
-Hey, uh, congrats on the win.
+00:01:25,085 --> 00:01:26,103
+'Sup?
 
 17
-00:01:37,000 --> 00:01:40,766
-I mean, I still think our beacon was amazing, but you guys
+00:01:26,103 --> 00:01:26,637
+'Sup?
 
 18
-00:01:40,766 --> 00:01:42,520
-did a pretty good job too.
+00:01:26,637 --> 00:01:28,038
+Nothing, 'sup with you?
 
 19
-00:01:42,520 --> 00:01:47,476
-I mean, I thought the whole monster theme was plenty cool,
+00:01:28,038 --> 00:01:30,240
+Nothing, 'sup with YOU?
 
 20
-00:01:47,476 --> 00:01:49,100
-but fireworks too?
+00:01:30,240 --> 00:01:32,292
+I just said -- nothing.
 
 21
-00:01:49,100 --> 00:01:52,400
-It was sort of cool.
+00:01:32,292 --> 00:01:36,163
+Hey, uh, congrats on the win.
 
 22
-00:01:52,400 --> 00:01:53,400
-I mean, I still think the whole thing was pretty cool.
-
-23
-00:01:53,400 --> 00:01:54,400
-I mean, I still think the whole thing was pretty cool.
-
-24
-00:01:54,400 --> 00:01:55,400
-I mean, I still think the whole thing was pretty cool.
-
-25
-00:01:55,400 --> 00:01:56,400
-I mean, I still think the whole thing was pretty cool.
-
-26
-00:01:56,400 --> 00:01:57,400
-I mean, I still think the whole thing was pretty cool.
-
-27
-00:01:57,400 --> 00:01:58,400
-I mean, I still think the whole thing was pretty cool.
-
-28
-00:01:58,400 --> 00:01:59,400
-I mean, I still think the whole thing was pretty cool.
-
-29
-00:01:59,400 --> 00:02:00,400
-I mean, I still think the whole thing was pretty cool.
-
-30
-00:02:00,400 --> 00:02:01,400
-I mean, I still think the whole thing was pretty cool.
-
-31
-00:02:01,400 --> 00:02:02,400
-I mean, I still think the whole thing was pretty cool.
-
-32
-00:02:02,400 --> 00:02:03,400
-I mean, I still think the whole thing was pretty cool.
-
-33
-00:02:03,400 --> 00:02:04,400
-I mean, I still think the whole thing was pretty cool.
-
-34
-00:02:04,400 --> 00:02:05,400
-I mean, I still think the whole thing was pretty cool.
-
-35
-00:02:05,400 --> 00:02:06,400
-I mean, I still think the whole thing was pretty cool.
-
+00:01:36,163 --> 00:01:41,935
+I mean, I still think our beacon was amazing, but... you guys did a pretty good job, too.
