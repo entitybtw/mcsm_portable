@@ -1,6 +1,6 @@
 1
 00:00:00,000 --> 00:00:02,000
-You beacon wasn't too shabby.
+Your beacon wasn't too shabby.
 
 2
 00:00:02,000 --> 00:00:04,000
@@ -172,7 +172,7 @@ To me, he's inventory.
 
 44
 00:02:27,848 --> 00:02:31,185
-I might be amenable to some kind of trade. I might be amenable to some kind of trade...
+I might be amenable to some kind of trade...
 
 45
 00:02:31,185 --> 00:02:39,026
