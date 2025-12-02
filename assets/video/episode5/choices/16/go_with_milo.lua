@@ -1,6 +1,7 @@
 local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
+mi = "milo"
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode5/choices/16/go_with_milo.pmp', buttons.r, true, 'assets/video/episode5/choices/16/go_with_milo.srt', font, subssize, "#FFFFFF", "#000000/150", subs)

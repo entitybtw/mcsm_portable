@@ -1,6 +1,7 @@
 local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
+mi = "ivor"
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode5/choices/16/help_ivor.pmp', buttons.r, true, 'assets/video/episode5/choices/16/help_ivor.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
