@@ -2,12 +2,24 @@ local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 
-PMP.setVolume(pmpvolume)
+local path = System.LoadData("assets/mainmenu/saves_bg.png")
+if path then
+    PMP.setVolume(pmpvolume)
+local result =     PMP.playEasy("assets/mainmenu/loading.pmp")
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
+    nextscene = path.data
+    return 1
+end
+
 local result = PMP.playEasy('assets/video/episode5/start.pmp', buttons.r, true, 'assets/video/episode5/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
 end
+
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
