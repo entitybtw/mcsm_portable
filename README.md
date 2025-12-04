@@ -20,6 +20,7 @@ The original game and Netflix version are no longer available, but it’s still 
 </p>
 <p>
   <img src="https://hapka.lol/iFYOk" width="45%" />
+  <img src="https://hapka.lol/VmhbG" width="45%" />
 </p>
 
 ## 👏 thanks to
