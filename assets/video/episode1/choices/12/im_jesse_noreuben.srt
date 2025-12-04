@@ -1,100 +1,75 @@
 1
-00:00:00,000 --> 00:00:03,000
+00:00:00,000 --> 00:00:03,400
 The name's Jesse. What's it to you?
 
 2
-00:00:03,000 --> 00:00:06,058
-I'm supposed to meet with Petra, not whatever you're
+00:00:03,400 --> 00:00:07,000
+I'm supposed to meet up with Petra, not whoever you're supposed to be!
 
 3
-00:00:06,058 --> 00:00:07,000
-supposed to be.
+00:00:07,000 --> 00:00:10,400
+Give me one good reason why I shouldn't walk out of here right now!
 
 4
-00:00:07,000 --> 00:00:09,507
-Give me one good reason why I shouldn't walk out of here
+00:00:10,400 --> 00:00:13,714
+You're the guy who needed a Wither skull , right?
 
 5
-00:00:09,507 --> 00:00:10,000
-right now!
-
-6
-00:00:10,000 --> 00:00:13,000
-You're the guy who needed a wither skull, right?
-
-7
-00:00:13,000 --> 00:00:15,000
+00:00:13,714 --> 00:00:16,114
 Not so loud, you idiot!
 
-8
-00:00:15,000 --> 00:00:19,000
+6
+00:00:16,114--> 00:00:19,000
 Too many people know my business already.
 
-9
+7
 00:00:20,000 --> 00:00:21,000
 Do you have the skull?
 
+8
+00:00:21,000 --> 00:00:26,000
+Uh... well… Petra has it -- and she'll be back any minute now!
+
+9
+00:00:26,000 --> 00:00:32,214
+Well. As long as she's bringing it... I suppose it wouldn't kill me to wait a minute longer.
+
 10
-00:00:21,000 --> 00:00:25,000
-Uh, well... Petra has it. Should we back any minute now?
+00:00:35,000 --> 00:00:37,000
+Uh... well…
 
 11
-00:00:25,000 --> 00:00:28,800
-Well, as long as she's bringing it. I suppose it wouldn't
-
-12
-00:00:28,800 --> 00:00:31,000
-kill me to wait a minute longer.
-
-13
-00:00:35,000 --> 00:00:37,000
-Uh, well...
-
-14
-00:00:40,000 --> 00:00:41,000
+00:00:40,400 --> 00:00:41,000
 Ivor!
 
+12
+00:00:41,000 --> 00:00:43,500
+Ah, here she is!
+
+13
+00:00:43,500 --> 00:00:48,500
+Sorry I'm late, but -- good things are worth waiting for. I've got what you asked for.
+
+14
+00:00:48,500 --> 00:00:51,000
+IF you have what you promised us.
+
 15
-00:00:41,000 --> 00:00:43,000
-Ah, here she is.
-
-16
-00:00:43,000 --> 00:00:46,554
-Sorry I'm late, but good things are worth waiting for. I've
-
-17
-00:00:46,554 --> 00:00:48,000
-got what you asked for.
-
-18
-00:00:48,000 --> 00:00:51,000
-If you have what you promised us...
-
-19
 00:00:51,000 --> 00:00:54,000
 You didn't say anything about an us when we first met?
 
-20
+16
 00:00:55,000 --> 00:00:57,000
 And I don't like surprises.
 
-21
+17
 00:00:57,000 --> 00:01:00,000
-If these are the sorts of people you associate with...
+If these are the people you associate with…
 
-22
+18
 00:01:00,000 --> 00:01:03,000
-Perhaps we should call the whole thing off!
+perhaps we should call the whole thing off
 
-23
+19
 00:01:03,000 --> 00:01:06,000
-My friend is fine, right Jesse? There's no problem here.
-
-24
-00:01:06,000 --> 00:01:09,000
-Let's not be too hasty, okay?
-
-25
-00:01:10,000 --> 00:01:13,000
-This is just a little misunderstanding.
-
+My friend is fine, right, Jesse? There's no problem here
