@@ -1,224 +1,175 @@
 1
-00:00:00,000 --> 00:00:04,000
-You know that stunt your friend pulled really hurt my pig.
+00:00:00,000 --> 00:00:03,600
+You know, that stunt your friend pulled really hurt my pig.
 
 2
-00:00:04,000 --> 00:00:08,000
+00:00:03,600 --> 00:00:07,100
 Okay, maybe, but I had nothing to do with that.
 
 3
-00:00:08,000 --> 00:00:11,031
-Hey, you didn't happen to see a creepy guy with long hair
+00:00:07,575 --> 00:00:12,800
+Hey, you didn't happen to see a creepy guy with a long hair and a beard roaming around, did you?
 
 4
-00:00:11,031 --> 00:00:13,000
-and a beard roaming around, did you?
+00:00:12,800 --> 00:00:14,300
+I don't think so... why?
 
 5
-00:00:13,000 --> 00:00:15,000
-I don't think so. Why?
-
-6
-00:00:15,000 --> 00:00:17,000
+00:00:14,300 --> 00:00:16,800
 He kinda scammed Petra out of a diamond earlier.
 
+6
+00:00:16,800 --> 00:00:20,400
+Whoa -- everyone knows, you don't mess with Petra.
+
 7
-00:00:17,000 --> 00:00:21,000
-Whoa, everyone knows you don't mess with Petra.
+00:00:20,400 --> 00:00:22,400
+Not if you know what's good for you.
 
 8
-00:00:21,000 --> 00:00:23,000
-I don't know what's good for you.
+00:00:22,400 --> 00:00:24,400
+I'll keep a eye out, okay?
 
 9
-00:00:23,000 --> 00:00:25,000
-I'll keep an eye out, okay?
+00:00:24,400 --> 00:00:25,900
+Thanks, I appreciate it
 
 10
-00:00:25,000 --> 00:00:27,000
-Thanks, I appreciate it.
-
-11
-00:00:27,000 --> 00:00:29,000
+00:00:25,900 --> 00:00:29,300
 So, uh, we're cool?
 
-12
-00:00:29,000 --> 00:00:31,000
+11
+00:00:29,700 --> 00:00:31,200
 Yeah, we're cool.
 
-13
-00:00:31,000 --> 00:00:32,000
+12
+00:00:31,200 --> 00:00:32,200
 Cool, cool.
 
+13
+00:00:32,200 --> 00:00:33,700
+Ha! See you later, Lukas.
+
 14
-00:00:32,000 --> 00:00:33,000
-See you later, Lucas.
+00:00:33,700 --> 00:00:35,200
+Yeah. See ya.
 
 15
-00:00:33,000 --> 00:00:35,000
-Yeah, see ya.
+00:00:39,700 --> 00:00:42,700
+Thought you could just wiggle right out of that trap, didn't you?
 
 16
-00:00:39,000 --> 00:00:41,462
-I thought you could just wiggle right out of that trap,
+00:00:42,700 --> 00:00:47,600
+Well -- Wiggle as much as you want -- you're not goin' anywhere
 
 17
-00:00:41,462 --> 00:00:42,000
-didn't you?
+00:00:47,600 --> 00:00:52,500
+Axel, listen up -- any chance you've seen a creepy-looking beard-y guy anywhere?
 
 18
-00:00:42,000 --> 00:00:45,000
-Well, wiggle as much as you want.
+00:00:52,500 --> 00:00:57,200
+No, but Petra told me what happened -- I'm keeping an eye out for him.
 
 19
-00:00:45,000 --> 00:00:47,000
-You're not going anywhere.
-
-20
-00:00:47,000 --> 00:00:50,653
-Axel, listen up. Any chance you've seen a creepy-looking,
-
-21
-00:00:50,653 --> 00:00:52,000
-beardy guy anywhere?
-
-22
-00:00:52,000 --> 00:00:55,000
-No. Petra told me what happened.
-
-23
-00:00:55,000 --> 00:00:57,000
-I'm keeping an eye out for him.
-
-24
-00:00:59,000 --> 00:01:02,000
+00:00:58,200 --> 00:01:01,762
 Okay, so I got a little distracted.
 
+20
+00:01:01,762 --> 00:01:08,700
+It's just this machine presses all my buttons -- unnecessarily complicated, and mean to birds for no reason.
+
+21
+00:01:08,700 --> 00:01:10,700
+Stop messing around -- we need your help
+
+22
+00:01:10,700 --> 00:01:15,200
+I was looking, I swear -- I've just got a short attention span.
+
+23
+00:01:17,343 --> 00:01:19,189
+All right, all right. I'll look.
+
+24
+00:01:20,347 --> 00:01:23,750
+After I watch one more chicken get owned.
+
 25
-00:01:02,000 --> 00:01:05,000
-It's just this machine presses all my buttons.
+00:01:26,689 --> 00:01:28,689
+Ha! I see you now, weirdo...
 
 26
-00:01:05,000 --> 00:01:09,000
-Unnecessarily complicated, mean to birds for no reason.
+00:01:34,294 --> 00:01:38,689
+Well, if it isn't Team Trashbag! How's your stupid pig?
 
 27
-00:01:09,000 --> 00:01:11,000
-Stop messing around. We need your help.
-
-28
-00:01:11,000 --> 00:01:13,000
-I was looking, I swear.
-
-29
-00:01:13,000 --> 00:01:16,000
-I've just got a short attention span.
-
-30
-00:01:17,000 --> 00:01:20,000
-Alright, alright, I'll look.
-
-31
-00:01:20,000 --> 00:01:24,000
-After I watch one more chicken ghetto.
-
-32
-00:01:25,000 --> 00:01:28,000
-I see you now, weirdo.
-
-33
-00:01:33,000 --> 00:01:36,000
-Wow, if it isn't Team Trashback.
-
-34
-00:01:36,000 --> 00:01:38,000
-How's your stupid pig?
-
-35
-00:01:38,000 --> 00:01:40,000
+00:01:39,389 --> 00:01:41,189
 I'm busy right now, man.
 
-36
-00:01:40,000 --> 00:01:42,000
-What, busy trying to get a life?
+28
+00:01:41,189 --> 00:01:46,189
+What? Busy trying to get a life? Busy trying to find some friends?
 
-37
-00:01:42,000 --> 00:01:45,000
-Busy trying to find some friends?
+29
+00:01:47,389 --> 00:01:48,189
+Hey!
 
-38
-00:01:46,000 --> 00:01:48,000
-Hey.
+30
+00:01:52,146 --> 00:01:53,180
+Hey! Where do you think you're --
 
-39
-00:01:50,000 --> 00:01:52,000
-Hey, what do you think you're...
-
-40
-00:01:52,000 --> 00:01:54,000
+31
+00:01:53,180 --> 00:01:54,247
 What do you think you're doing?
 
-41
-00:01:54,000 --> 00:01:55,000
+32
+00:01:54,247 --> 00:01:55,315
 Oh, I'm sorry.
 
-42
-00:01:55,000 --> 00:01:56,000
-Get away from me.
+33
+00:01:55,315 --> 00:01:56,783
+Get away from me!
 
-43
-00:01:56,000 --> 00:01:58,000
+34
+00:01:56,783 --> 00:01:58,418
 I said I was sorry.
 
-44
-00:02:02,000 --> 00:02:04,000
-Ruben, is that you?
+35
+00:02:01,956 --> 00:02:04,557
+Reuben? Is that you?!
 
-45
-00:02:06,000 --> 00:02:10,000
-Nothing sticks to your ribs quite like a juicy pork chop.
+36
+00:02:05,989 --> 00:02:10,263
+Nothing sticks to your ribs quite like a juicy pork chop!
 
-46
-00:02:12,000 --> 00:02:13,000
-Ruben!
+37
+00:02:11,499 --> 00:02:12,233
+Reuben!
 
-47
-00:02:13,000 --> 00:02:17,000
+38
+00:02:13,000 --> 00:02:17,270
 What's the big idea? I'm trying to run a business here.
 
-48
-00:02:17,000 --> 00:02:20,000
-That's my pig, you kidnapped my pig.
+39
+00:02:17,605 --> 00:02:20,273
+That's my pig! You kidnapped my pig!
 
-49
-00:02:20,000 --> 00:02:22,000
-Well, I don't know what you're talking about, Chief.
+40
+00:02:20,273 --> 00:02:25,745
+Well, I don't know what you're talking about, Chief. I found this pig wandering alone in the streets.
 
-50
-00:02:22,000 --> 00:02:25,000
-I found this pig wandering alone in the streets.
+41
+00:02:25,745 --> 00:02:27,280
+Please. He's my friend.
 
-51
-00:02:25,000 --> 00:02:27,000
-Please, he's my friend.
-
-52
-00:02:27,000 --> 00:02:29,000
+42
+00:02:27,280 --> 00:02:28,882
 To me, he's inventory.
 
-53
-00:02:29,000 --> 00:02:32,000
-I might be amenable to some kind of trade.
+43
+00:02:28,882 --> 00:02:32,219
+I might be amenable to some kind of trade...
 
-54
-00:02:32,000 --> 00:02:36,000
-Not that you look like you got much of value.
-
-55
-00:02:36,000 --> 00:02:40,000
-I gotta get some kind of return on my investment.
-
-56
-00:02:42,000 --> 00:02:46,000
-Otherwise, it's straight to the slaughterhouse for this one.
-
+44
+00:02:32,219 --> 00:02:40,060
+Not that you look like you've got much of value. I gotta get some kind of return on my investment.
