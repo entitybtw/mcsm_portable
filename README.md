@@ -14,7 +14,7 @@ This is a fanmade port of Minecraft: Story Mode.
 This port is not affiliated with Telltale Games or Netflix.
 The original game and Netflix version are no longer available, but it’s still a great game worth experiencing!
 
-![](https://i.imgur.com/H0DDJvQ.png "in game")
+![](https://hapka.lol/JrOIn)
 
 ## 👏 thanks to
 
