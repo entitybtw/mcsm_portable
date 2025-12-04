@@ -15,6 +15,8 @@ This port is not affiliated with Telltale Games or Netflix.
 The original game and Netflix version are no longer available, but it’s still a great game worth experiencing!
 
 ![](https://hapka.lol/JrOIn)
+![](https://hapka.lol/jlPaR)
+![](https://hapka.lol/iFYOk)
 
 ## 👏 thanks to
 
