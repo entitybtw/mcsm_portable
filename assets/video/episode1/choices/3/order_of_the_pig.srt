@@ -1,216 +1,179 @@
 1
-00:00:00,000 --> 00:00:02,000
+00:00:00,000 --> 00:00:03,500
 We're the Order of the Pig.
 
 2
-00:00:02,000 --> 00:00:04,000
+00:00:03,500 --> 00:00:05,000
 Really?
 
 3
-00:00:04,000 --> 00:00:08,000
+00:00:05,000 --> 00:00:08,500
 Is it meant to tie us to Reuben, or are you making fun of me?
 
 4
-00:00:08,000 --> 00:00:13,000
-Okay, Order of the Pig. You guys are in booth five.
+00:00:08,500 --> 00:00:11,000
+Okay, Order of the Pig.
 
 5
+00:00:11,000 --> 00:00:13,300
+You guys are in Booth 5.
+
+6
 00:00:30,000 --> 00:00:32,000
 Is that a freakin' beacon?
 
-6
-00:00:32,000 --> 00:00:34,000
-They have a freakin' beacon?
-
 7
-00:00:34,000 --> 00:00:37,000
-Freakin' beacon?
+00:00:32,000 --> 00:00:34,500
+They have a freakin' beacon?!
 
 8
+00:00:34,500 --> 00:00:37,000
+Freakin' Beacon!?
+
+9
 00:00:37,000 --> 00:00:39,000
 That's stained glass.
 
-9
+10
 00:00:39,000 --> 00:00:41,000
 They aren't just building a beacon.
 
-10
-00:00:41,000 --> 00:00:43,000
+11
+00:00:41,000 --> 00:00:43,500
 They're building a rainbow beacon.
 
-11
-00:00:43,000 --> 00:00:45,000
+12
+00:00:43,500 --> 00:00:45,500
 Our design is way cooler.
 
-12
-00:00:45,000 --> 00:00:49,000
-A gigantic Enderman is better than a fancy light.
-
 13
-00:00:49,000 --> 00:00:52,575
-Their difficulty score is going to be higher than our total
+00:00:45,500 --> 00:00:49,000
+A gigantic enderman is better than a fancy light.
 
 14
-00:00:52,575 --> 00:00:53,000
-score.
+00:00:49,000 --> 00:00:53,500
+Their difficulty score is going to be higher than our total score.
 
 15
-00:00:53,000 --> 00:00:55,000
-We've got something they don't.
+00:00:53,500 --> 00:00:57,000
+But we’ve got something they don’t... fireworks.
 
 16
-00:00:55,000 --> 00:00:57,000
-Fireworks.
-
-17
-00:00:57,000 --> 00:00:59,000
+00:00:57,000 --> 00:00:59,500
 We should probably stop staring at them.
 
+17
+00:00:59,500 --> 00:01:05,000
+Hahaha! Look, it's the Order of the Losers. Again.
+
 18
-00:00:59,000 --> 00:01:01,000
-Ha ha ha.
+00:01:05,000 --> 00:01:07,500
+Good one, Gill!
 
 19
-00:01:01,000 --> 00:01:05,000
-Look, it's the Order of the Losers again.
-
-20
-00:01:05,000 --> 00:01:07,000
-Good one, Gil.
-
-21
-00:01:07,000 --> 00:01:09,000
+00:01:07,500 --> 00:01:09,000
 We're just looking.
 
-22
-00:01:09,000 --> 00:01:12,085
-There'll be plenty of time for you all to look at it after
+20
+00:01:09,000 --> 00:01:14,000
+There’ll be plenty of time for you all to look at it after it wins and gets shown at Endercon.
 
-23
-00:01:12,085 --> 00:01:14,000
-it wins and gets shown at Endercon.
-
-24
+21
 00:01:14,000 --> 00:01:16,000
 You're being unpleasant.
 
-25
+22
 00:01:16,000 --> 00:01:17,000
-Maybe not all of you.
+Maybe not all of you…
 
-26
-00:01:17,000 --> 00:01:20,000
+23
+00:01:17,000 --> 00:01:21,000
 Endercon doesn't allow outside food or drink.
 
-27
-00:01:20,000 --> 00:01:22,000
+24
+00:01:21,000 --> 00:01:22,000
 Shut up.
 
-28
+25
 00:01:22,000 --> 00:01:23,000
 What's that?
 
-29
+26
 00:01:23,000 --> 00:01:25,000
-Jesse said shut up.
+Jesse said “shut up.“
 
-30
-00:01:25,000 --> 00:01:27,000
+27
+00:01:25,000 --> 00:01:27,500
 Do you need to hear it again?
 
-31
-00:01:27,000 --> 00:01:28,000
-I don't know.
+28
+00:01:27,500 --> 00:01:30,000
+I don't know, maybe?
 
-32
-00:01:28,000 --> 00:01:30,000
-Maybe.
-
-33
+29
 00:01:30,000 --> 00:01:32,000
-Stop wasting your time, Aiden.
+Stop wasting your time, Aiden. 
 
-34
-00:01:32,000 --> 00:01:34,000
+30
+00:01:32,000 --> 00:01:34,500
 We've got work to do.
 
-35
-00:01:34,000 --> 00:01:37,000
+31
+00:01:34,500 --> 00:01:37,500
 You're lucky I'm busy.
 
-36
-00:01:37,000 --> 00:01:38,000
-Hey, Jesse.
+32
+00:01:37,500 --> 00:01:40,000
+Hey Jesse. Guys.
 
-37
-00:01:38,000 --> 00:01:40,000
-Guys.
-
-38
+33
 00:01:40,000 --> 00:01:41,000
-Hey, Petra.
+Hey Petra.
 
-39
-00:01:41,000 --> 00:01:42,000
+34
+00:01:41,000 --> 00:01:42,500
 How's the build going?
 
-40
-00:01:42,000 --> 00:01:45,000
-Only time will tell, but we're optimistic.
+35
+00:01:42,500 --> 00:01:45,800
+Only time will tell. But we’re optimistic.
 
-41
-00:01:45,000 --> 00:01:46,000
-Hey, Petra.
+36
+00:01:45,800 --> 00:01:49,000
+Hey Petra, I forgot to thank you for that nether star.
 
-42
-00:01:46,000 --> 00:01:48,000
-I forgot to thank you for that nether star.
-
-43
-00:01:48,000 --> 00:01:49,000
-Hey, Lukas.
-
-44
+37
 00:01:49,000 --> 00:01:50,000
+Hey Lukas.
+
+38
+00:01:50,000 --> 00:01:51,000
 Not a problem.
 
-45
-00:01:50,000 --> 00:01:52,000
-You help these tools?
+39
+00:01:51,000 --> 00:01:52,500
+You helped these tools?
 
-46
-00:01:52,000 --> 00:01:55,000
-For the right price, I'll help anyone.
+40
+00:01:52,500 --> 00:01:55,500
+For the right price, I’ll help anyone.
 
-47
-00:01:55,000 --> 00:01:58,000
+41
+00:01:55,500 --> 00:01:59,000
 If you need anything, you know where to find me.
 
-48
-00:01:58,000 --> 00:02:01,000
+42
+00:01:59,000 --> 00:02:01,000
 None of us know where to find you.
 
-49
+43
 00:02:01,000 --> 00:02:03,000
 Exactly.
 
-50
+44
 00:02:03,000 --> 00:02:05,000
-No hard feelings, guys.
+No hard feelings guys.
 
-51
+45
 00:02:05,000 --> 00:02:08,000
 If you're cool with Petra, you're cool with us.
-
-52
-00:02:11,000 --> 00:02:14,489
-So why don't we just forget about all this and, you know,
-
-53
-00:02:14,489 --> 00:02:17,000
-make this about how cool our builds are?
-
-54
-00:02:25,000 --> 00:02:27,000
-Thank you.
-
