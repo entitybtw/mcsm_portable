@@ -1,10 +1,10 @@
 1
 00:00:00,000 --> 00:00:02,000
-We're the DeadEnders.
+We're the Dead Enders.
 
 2
 00:00:02,000 --> 00:00:05,000
-Whoa. Sounds like a name for pirates.
+Whoa! It sounds like a name for pirates.
 
 3
 00:00:05,000 --> 00:00:06,000
@@ -12,85 +12,164 @@ It's cool.
 
 4
 00:00:06,000 --> 00:00:09,000
-Okay, DeadEnders. You guys are in booth five.
+Okay, Dead Enders. You guys are in Booth 5.
 
 5
-00:00:26,000 --> 00:00:28,000
+00:00:26,300 --> 00:00:28,300
 Is that a freakin' beacon?
 
 6
-00:00:28,000 --> 00:00:30,000
-They have a freakin' beacon?
+00:00:28,300 --> 00:00:30,800
+They have a freakin' beacon?!
 
 7
-00:00:31,000 --> 00:00:33,000
-Freakin' beacon?
+00:00:30,800 --> 00:00:33,300
+Freakin' Beacon!?
 
 8
-00:00:58,000 --> 00:01:00,000
-Again.
+00:00:33,300 --> 00:00:35,300
+That's stained glass.
 
 9
-00:01:29,000 --> 00:01:31,000
-You're lucky I'm busy.
+00:00:35,300 --> 00:00:37,300
+They aren't just building a beacon.
 
 10
-00:01:32,000 --> 00:01:34,000
-Hey, Josie. Guys.
+00:00:37,300 --> 00:00:39,800
+They're building a rainbow beacon.
 
 11
-00:01:34,000 --> 00:01:36,000
-Hey, Petra.
+00:00:39,800 --> 00:00:41,800
+Our design is way cooler.
 
 12
-00:01:36,000 --> 00:01:37,000
-How's the build going?
+00:00:41,800 --> 00:00:44,500
+Our design is better. A creeper that shoots fireworks is cooler than a fancy light.
 
 13
-00:01:37,000 --> 00:01:40,000
-Only time will tell, but we're optimistic.
+00:00:44,500 --> 00:00:49,000
+Their difficulty score is going to be higher than our total score.
 
 14
-00:01:40,000 --> 00:01:43,000
-Hey, Petra. I forgot to thank you for that Nether Star.
+00:00:49,000 --> 00:00:52,500
+But we’ve got something they don’t... fireworks.
 
 15
-00:01:43,000 --> 00:01:45,000
-Hey, Lukas. Not a problem.
+00:00:52,500 --> 00:00:55,000
+We should probably stop staring at them.
 
 16
-00:01:45,000 --> 00:01:47,000
-Can you help these tools?
+00:00:55,000 --> 00:01:00,500
+Hahaha! Look, it's the Order of the Losers. Again.
 
 17
-00:01:47,000 --> 00:01:50,000
-For the right price, I'll help anyone.
+00:01:00,500 --> 00:01:03,000
+Good one, Gill!
 
 18
-00:01:50,000 --> 00:01:53,000
-If you need anything, you know where to find me.
+00:01:03,000 --> 00:01:04,500
+We're just looking.
 
 19
-00:01:53,000 --> 00:01:55,000
-None of us know where to find you.
+00:01:04,500 --> 00:01:09,500
+There’ll be plenty of time for you all to look at it after it wins and gets shown at Endercon.
 
 20
-00:01:55,000 --> 00:01:57,000
-Exactly.
+00:01:09,500 --> 00:01:11,500
+You're being unpleasant.
 
 21
-00:01:58,000 --> 00:02:00,000
-No hard feelings, guys.
+00:01:11,500 --> 00:01:12,500
+Maybe not all of you…
 
 22
-00:02:00,000 --> 00:02:03,000
-If you're cool with Petra, you're cool with us.
+00:01:12,500 --> 00:01:16,500
+Endercon doesn't allow outside food or drink.
 
 23
-00:02:06,000 --> 00:02:09,000
-So why don't we just forget about all this
+00:01:16,500 --> 00:01:17,500
+Shut up.
 
 24
-00:02:09,000 --> 00:02:13,000
-and, you know, make this about how cool our builds are?
+00:01:17,500 --> 00:01:18,500
+What's that?
 
+25
+00:01:18,500 --> 00:01:20,500
+Jesse said “shut up.“
+
+26
+00:01:20,500 --> 00:01:23,000
+Do you need to hear it again?
+
+27
+00:01:23,000 --> 00:01:25,500
+I don't know, maybe?
+
+28
+00:01:25,500 --> 00:01:27,500
+Stop wasting your time, Aiden.
+
+29
+00:01:27,500 --> 00:01:30,000
+We've got work to do.
+
+30
+00:01:30,000 --> 00:01:33,000
+You're lucky I'm busy.
+
+31
+00:01:33,000 --> 00:01:35,500
+Hey Jesse. Guys.
+
+32
+00:01:35,500 --> 00:01:36,500
+Hey Petra.
+
+33
+00:01:36,500 --> 00:01:38,000
+How's the build going?
+
+34
+00:01:38,000 --> 00:01:41,100
+Only time will tell. But we’re optimistic.
+
+35
+00:01:41,100 --> 00:01:44,500
+Hey Petra, I forgot to thank you for that nether star.
+
+36
+00:01:44,500 --> 00:01:45,500
+Hey Lukas.
+
+37
+00:01:45,500 --> 00:01:46,500
+Not a problem.
+
+38
+00:01:46,500 --> 00:01:48,000
+You helped these tools?
+
+39
+00:01:48,000 --> 00:01:51,000
+For the right price, I’ll help anyone.
+
+40
+00:01:51,000 --> 00:01:54,500
+If you need anything, you know where to find me.
+
+41
+00:01:54,500 --> 00:01:56,500
+None of us know where to find you.
+
+42
+00:01:56,500 --> 00:01:58,500
+Exactly.
+
+43
+00:01:58,500 --> 00:02:00,500
+No hard feelings guys.
+
+44
+00:02:00,500 --> 00:02:03,500
+If you're cool with Petra, you're cool with us.
