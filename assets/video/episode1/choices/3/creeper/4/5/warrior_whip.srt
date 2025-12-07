@@ -1,136 +1,111 @@
 1
 00:00:00,000 --> 00:00:02,000
-The warrior whip.
+The "Warrior Whip!"
 
 2
 00:00:08,000 --> 00:00:11,000
-And just like that, I'm nervous again.
+Aaaand just like that, I’m nervous again.
 
 3
-00:00:11,000 --> 00:00:13,000
-Don't talk like that, we can do this.
+00:00:11,000 --> 00:00:16,000
+Don’t talk like that! We can do this! Just stick to the plan and everything will be fine.
 
 4
-00:00:13,000 --> 00:00:16,000
-Just stick to the plan and everything will be fine.
+00:00:16,000 --> 00:00:19,500
+This year, we can't lose!
 
 5
-00:00:16,000 --> 00:00:19,000
-This year, we can't lose.
-
-6
 00:00:24,000 --> 00:00:26,000
 Let's do it.
 
-7
+6
 00:00:26,000 --> 00:00:29,000
-Building starts now!
+Building... starts... now!
+
+7
+00:00:36,200 --> 00:00:41,000
+Oh, no! A fireworks dispenser?! I’m soooo scared!
 
 8
-00:00:30,000 --> 00:00:34,000
-Oh no! A fireworks dispenser! I'm so scared!
+00:00:41,000 --> 00:00:44,300
+You worry about your build and we’ll worry about ours.
 
 9
-00:00:34,000 --> 00:00:38,000
-You worry about your build, and we'll worry about ours.
-
-10
-00:01:00,000 --> 00:01:03,000
+00:01:06,400 --> 00:01:08,900
 And now, the moment of truth.
 
+10
+00:01:10,100 --> 00:01:11,500
+Here goes nothing…
+
 11
-00:01:03,000 --> 00:01:05,000
-Here goes nothing.
+00:01:14,300 --> 00:01:18,800
+Aw man, that looks so cool. We’ll win this for sure.
 
 12
-00:01:08,000 --> 00:01:12,000
-Oh man, that looks so cool. We'll win this for sure.
+00:01:18,800 --> 00:01:21,500
+The Creeper was definitely the right way to go.
 
 13
-00:01:12,000 --> 00:01:15,000
-The creeper was definitely the right way.
+00:01:27,000 --> 00:01:29,500
+Guys, people are looking at us.
 
 14
-00:01:21,000 --> 00:01:23,000
-Guys, people are looking at us.
+00:01:29,500 --> 00:01:31,123
+Good build, man!
 
 15
-00:01:23,000 --> 00:01:25,000
-Good job, guys!
-
-16
-00:01:26,000 --> 00:01:29,000
-Guys, people are looking at us.
-
-17
-00:01:29,000 --> 00:01:31,000
-Good job, man!
-
-18
-00:01:31,000 --> 00:01:33,000
+00:01:32,092 --> 00:01:32,900
 What?
 
+16
+00:01:32,900 --> 00:01:34,500
+No way...
+
+17
+00:01:34,500 --> 00:01:37,500
+It's just a bunch of dyed wool!?
+
+18
+00:01:40,500 --> 00:01:43,500
+Oh, no! Reuben's on fire!
+
 19
-00:01:33,000 --> 00:01:35,000
-Oh my.
-
-20
-00:01:35,000 --> 00:01:37,000
-It's just a bunch of dyed wool.
-
-21
-00:01:41,000 --> 00:01:43,000
-Oh no, Reuben's on fire!
-
-22
-00:01:44,000 --> 00:01:46,000
+00:01:43,500 --> 00:01:46,700
 Reuben, no! Come back!
 
+20
+00:01:46,700 --> 00:01:48,300
+The lava's getting closer!
+
+21
+00:01:48,300 --> 00:01:50,000
+It's gonna ruin the build!
+
+22
+00:01:50,000 --> 00:01:52,000
+Reuben's going to get lost!
+
 23
-00:01:46,000 --> 00:01:48,000
-The lava's getting closer.
+00:01:52,000 --> 00:01:54,000
+You guys stay and save the build.
 
 24
-00:01:48,000 --> 00:01:50,000
-What about the build?
+00:01:54,000 --> 00:01:54,600
+On it!
 
 25
-00:01:50,000 --> 00:01:52,000
-Reuben's going to get lost.
+00:01:54,600 --> 00:01:57,000
+We've got it covered, Jesse. Be careful.
 
 26
-00:01:52,000 --> 00:01:54,000
-You guys stay and save the build, on it.
+00:02:00,000 --> 00:02:02,500
+We’ll meet up with you at Endercon!
 
 27
-00:01:54,000 --> 00:01:56,000
-We've got to cover, Jesse. Be careful.
+00:02:24,500 --> 00:02:27,000
+Reuben?! Where are you?
 
 28
-00:02:00,000 --> 00:02:02,000
-We'll meet up with you at Endercon.
-
-29
-00:02:25,000 --> 00:02:27,000
-Reuben, where are you, buddy?
-
-30
 00:02:27,000 --> 00:02:29,000
-Just oink if you can hear me.
-
-31
-00:02:36,000 --> 00:02:39,000
-Okay, so now you get to choose where to go.
-
-32
-00:02:39,000 --> 00:02:41,000
-Go ahead, select a location.
-
-33
-00:02:55,000 --> 00:02:57,000
-I'm going to go to the end of the road.
-
-34
-00:02:57,000 --> 00:02:59,000
-I'm going to go to the end of the road.
-
+Just give me an oink if you can hear me.
