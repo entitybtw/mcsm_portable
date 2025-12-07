@@ -1,56 +1,51 @@
 1
-00:00:00,000 --> 00:00:02,000
-We're going to crush you.
+00:00:00,000 --> 00:00:02,400
+We’re going to crush you.
 
 2
-00:00:02,000 --> 00:00:07,000
-I don't know if you know this, but we're pretty good.
+00:00:03,400 --> 00:00:06,900
+I don’t know if you know this, but... we’re pretty good…
 
 3
-00:00:07,000 --> 00:00:12,000
-Oh, wait. I get it. It's like a joke, right?
+00:00:06,900 --> 00:00:12,200
+Ohhh. Wait. I get it. It’s like a joke, right?
 
 4
-00:00:12,000 --> 00:00:14,000
+00:00:12,200 --> 00:00:14,600
 No, I'm serious. We're going to destroy you.
 
 5
-00:00:14,000 --> 00:00:19,419
-You know, you're really funny. That's awesome. Hey, good
+00:00:16,200 --> 00:00:19,300
+Ha! Y'know, you're really funny. That's awesome. 
 
 6
-00:00:19,419 --> 00:00:20,000
-luck.
+00:00:19,300 --> 00:00:20,400
+Hey, good luck.
 
 7
-00:00:20,000 --> 00:00:24,835
-Ladies and gentlemen, welcome to the EnderCon building
+00:00:20,400 --> 00:00:22,850
+Ladies and gentlemen...
 
 8
-00:00:24,835 --> 00:00:26,000
-competition.
+00:00:22,850 --> 00:00:26,600
+Welcome to the Endercon Building Competition!
 
 9
-00:00:26,000 --> 00:00:29,292
-The winners of this year's competition will have their
+00:00:26,600 --> 00:00:31,400
+The winners of this competition will have their build featured at Endercon.
 
 10
-00:00:29,292 --> 00:00:31,000
-build featured at EnderCon.
+00:00:31,400 --> 00:00:37,204
+The winners will also meet, in person, Gabriel the Warrior!
 
 11
-00:00:31,000 --> 00:00:37,000
-The winners will also meet, in person, Gabriel the Warrior.
+00:00:40,000 --> 00:00:45,000
+Ocelots! Ocelots! Ocelots!
 
 12
-00:00:45,000 --> 00:00:49,000
-Whoa, handshake? We don't have a handshake.
+00:00:45,000 --> 00:00:49,500
+Whoa. Handshake? We don’t have a handshake.
 
 13
-00:00:49,000 --> 00:00:52,000
-We'll just make one up.
-
-14
-00:00:53,000 --> 00:00:58,000
-We'll call it the... uh...
-
+00:00:49,500 --> 00:00:51,018
+We’ll just make one up.
