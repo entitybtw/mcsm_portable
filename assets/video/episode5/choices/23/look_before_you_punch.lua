@@ -1,6 +1,8 @@
 local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
+local cross = Image.load("assets/icons/cross.png")
+local triangle = Image.load("assets/icons/triangle.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode5/choices/23/look_before_you_punch.pmp', buttons.r, true, 'assets/video/episode5/choices/23/look_before_you_punch.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -9,10 +11,14 @@ if result == 1 then
     return 1
 end
 
-Image.draw(square, 25, 127)
-Image.draw(circle, 455, 127)
-intraFont.print(25 + 15 + 5, 127, "Look before you punch", Color.new(255,255,255), font, 0.4)
-intraFont.print(455 - 5 - intraFont.textW(font, "Petra, you trust him?", 0.4), 127, "Petra, you trust him?", Color.new(255,255,255), font, 0.4)
+Image.draw(square, 59, 160)
+intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "Bookcase", Color.new(255,255,255), font, 0.4)
+Image.draw(circle, 397, 166)
+intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
+Image.draw(triangle, 144, 203)
+intraFont.print(144 - intraFont.textW(font, "Cobblestone", 0.4) / 2 + 8, 203 + 14, "Cobblestone", Color.new(255,255,255), font, 0.4)
+Image.draw(cross, 282, 207)
+intraFont.print(282 - intraFont.textW(font, "Dry Bush", 0.4) / 2 + 8, 207 + 14, "Dry Bush", Color.new(255,255,255), font, 0.4)
 intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
@@ -23,16 +29,36 @@ while choosing do
     if buttons.pressed(buttons.square) then
         Image.unload(square)
         Image.unload(circle)
+        Image.unload(triangle)
+        Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/23/look_before_you_punch.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/bookcase.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
+        Image.unload(triangle)
+        Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/23/petra_you_trust_him.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/supply_door.lua"
+    elseif buttons.pressed(buttons.triangle) then
+        Image.unload(square)
+        Image.unload(circle)
+        Image.unload(triangle)
+        Image.unload(cross)
+        choosing = false
+        nextscene = "assets/video/episode5/choices/no_mi/1/cobblestone.lua"
+    elseif buttons.pressed(buttons.cross) then
+        Image.unload(square)
+        Image.unload(circle)
+        Image.unload(triangle)
+        Image.unload(cross)
+        choosing = false
+        nextscene = "assets/video/episode5/choices/no_mi/1/dry_bush.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(square)
 Image.unload(circle)
+Image.unload(triangle)
+Image.unload(cross)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end
