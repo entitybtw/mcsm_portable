@@ -1,8 +1,16 @@
 1
-00:00:00,000 --> 00:00:06,436
-Reuben? Reuben? Reuben! Oh no, you in there buddy? Oh jeez,
+00:00:01,000 --> 00:00:02,750
+Reuben!
 
 2
-00:00:06,436 --> 00:00:10,000
-please don't be toasted Reuben.
+00:00:02,750 --> 00:00:07,250
+Reuben?! Reuben?! Oh no, you in there buddy?
+
+3
+00:00:07,250 --> 00:00:10,300
+Oh jeez. Please don't be toasted Reuben.
+
+4
+00:00:12,200 --> 00:00:14,300
+Phew!
 
