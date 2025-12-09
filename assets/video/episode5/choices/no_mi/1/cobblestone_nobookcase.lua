@@ -1,5 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 local cross = Image.load("assets/icons/cross.png")
 
@@ -10,8 +9,6 @@ if result == 1 then
     return 1
 end
 
-Image.draw(square, 59, 160)
-intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "Bookcase", Color.new(255,255,255), font, 0.4)
 if no_mi == "ivor" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
@@ -29,25 +26,16 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.circle) then
-        Image.unload(square)
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
         nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nocobblestone.lua"
-    elseif buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(circle)
-        Image.unload(cross)
-        choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/bookcase_nocobblestone.lua"
     elseif buttons.pressed(buttons.cross) then
-        Image.unload(square)
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
         nextscene = "assets/video/episode5/choices/no_mi/1/dry_bush_nocobblestone.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
 Image.unload(circle)
 Image.unload(cross)
 choosing = false
