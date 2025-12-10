@@ -1,8 +1,7 @@
 1
-00:00:00,000 --> 00:00:05,600
-Reuben! No, not you, the pigs!
+00:00:02,900 --> 00:00:05,850
+Reuben! No not you, gu... pig!
 
 2
-00:00:05,600 --> 00:00:07,600
-It's all pigs but Reuben, shut up!
-
+00:00:05,850 --> 00:00:08,100
+Hey ALL pig but Reuben, shut up!
