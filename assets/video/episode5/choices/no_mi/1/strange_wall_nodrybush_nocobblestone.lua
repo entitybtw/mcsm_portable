@@ -4,7 +4,7 @@ local circle = Image.load("assets/icons/circle.png")
 local cross = Image.load("assets/icons/cross.png")
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode5/choices/no_mi/1/supply_door.pmp', buttons.r, true, 'assets/video/episode5/choices/no_mi/1/supply_door.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode5/choices/no_mi/1/strange_wall.pmp', buttons.r, true, 'assets/video/episode5/choices/no_mi/1/strange_wall.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

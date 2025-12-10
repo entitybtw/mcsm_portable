@@ -33,7 +33,7 @@ while choosing do
         Image.unload(circle)
         Image.unload(square)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nodrybush.lua"
+        if no_mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nodrybush.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nodrybush.lua" end
     elseif buttons.pressed(buttons.triangle) then
         Image.unload(triangle)
         Image.unload(circle)

@@ -14,7 +14,7 @@ Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
 else 
 Image.draw(circle, 397, 166)
-intraFont.print(397 - intraFont.textW(font, "Strange Door", 0.4) / 2 + 8, 166 + 14, "Strange Door", Color.new(255,255,255), font, 0.4)
+intraFont.print(397 - intraFont.textW(font, "Strange Wall", 0.4) / 2 + 8, 166 + 14, "Strange Wall", Color.new(255,255,255), font, 0.4)
 end
 Image.draw(cross, 282, 207)
 intraFont.print(282 - intraFont.textW(font, "Dry Bush", 0.4) / 2 + 8, 207 + 14, "Dry Bush", Color.new(255,255,255), font, 0.4)
@@ -29,7 +29,7 @@ while choosing do
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nobookcase_nocobblestone.lua"
+        if mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nobookcase_nocobblestone.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nobookcase_nocobblestone.lua" end
     elseif buttons.pressed(buttons.cross) then
         Image.unload(circle)
         Image.unload(cross)
