@@ -1,76 +1,63 @@
 1
-00:00:00,000 --> 00:00:02,000
-What's in it for me?
+00:00:00,000 --> 00:00:02,150
+What’s in it for me?
 
 2
-00:00:02,000 --> 00:00:04,000
+00:00:02,150 --> 00:00:04,303
 Respect. Admiration.
 
 3
-00:00:04,000 --> 00:00:07,000
+00:00:04,304 --> 00:00:07,500
 Not getting punched in the face for saying that just now.
 
 4
-00:00:09,000 --> 00:00:12,000
+00:00:09,600 --> 00:00:13,050
 You just keep a crafting table down here?
 
 5
-00:00:13,000 --> 00:00:15,000
+00:00:13,050 --> 00:00:15,200
 Comes in handy.
 
 6
-00:00:15,000 --> 00:00:17,000
-Since that wooden sword of yours got busted...
+00:00:15,600 --> 00:00:18,086
+Since that wooden sword of yours got busted…
 
 7
-00:00:17,000 --> 00:00:19,000
-You're giving me a new one?
+00:00:18,086 --> 00:00:19,354
+You’re giving me a new one?
 
 8
-00:00:19,000 --> 00:00:21,000
-Even better, you can make your own.
+00:00:19,355 --> 00:00:21,600
+Even better. You can make your own.
 
 9
-00:00:21,000 --> 00:00:25,000
-One stick plus two stones equals one sword.
+00:00:21,600 --> 00:00:26,000
+One stick, plus two stones, equals one sword.
 
 10
-00:00:27,000 --> 00:00:28,000
+00:00:27,030 --> 00:00:28,800
 Just grab what you need.
 
 11
-00:00:28,000 --> 00:00:30,000
-Oh, okay. Thanks.
+00:00:28,800 --> 00:00:30,950
+Oh. Okay. Thanks.
 
 12
-00:00:30,000 --> 00:00:32,000
+00:00:30,950 --> 00:00:33,134
 Hey, is all this stuff yours?
 
 13
-00:00:32,000 --> 00:00:35,055
-No. We're just stealing from whoever was dumb enough to
+00:00:33,135 --> 00:00:36,800
+No, we’re just stealing from whoever was dumb enough to leave this here.
 
 14
-00:00:35,055 --> 00:00:36,000
-leave this here.
+00:00:36,800 --> 00:00:38,350
+Of course it’s mine.
 
 15
-00:00:36,000 --> 00:00:38,000
-Of course it's mine.
-
-16
-00:00:38,000 --> 00:00:40,000
+00:00:38,350 --> 00:00:39,900
 Just making sure.
 
-17
-00:00:40,000 --> 00:00:42,000
-Oh, here we go.
-
-18
-00:00:42,000 --> 00:00:44,000
-Jackpot.
-
-19
-00:00:58,000 --> 00:01:00,000
-Thanks for watching.
-
+16
+00:00:39,900 --> 00:00:42,350
+Oh, her
