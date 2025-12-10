@@ -28,19 +28,19 @@ while choosing do
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/bookcase.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/bookcase_nodoor_nocobblestone.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/lever_slot.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/lever_slot_1_nocobblestone.lua"
     elseif buttons.pressed(buttons.cross) then
         Image.unload(square)
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/dry_bush.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/drybush_nodoor_nocobblestone.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(square)
 Image.unload(circle)

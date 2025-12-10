@@ -29,12 +29,12 @@ while choosing do
         Image.unload(triangle)
         Image.unload(circle)
         choosing = false
-        if no_mi == "ivor" nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nodrybush.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nodrybush.lua" end
+        if no_mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nodrybush_nobookcase.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nodrybush_nobookcase.lua" end
     elseif buttons.pressed(buttons.triangle) then
         Image.unload(triangle)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/cobblestone_nodrybush.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/cobblestone_nodrybush_nobookcase.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(triangle)
 Image.unload(circle)

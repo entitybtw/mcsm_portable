@@ -29,7 +29,7 @@ while choosing do
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        if mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nobookcase_nocobblestone.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nobookcase_nocobblestone.lua" end
+        if mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nocobblestone_nobookcase.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nocobblestone_nobookcase.lua" end
     elseif buttons.pressed(buttons.cross) then
         Image.unload(circle)
         Image.unload(cross)

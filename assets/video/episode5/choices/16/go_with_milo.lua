@@ -25,7 +25,7 @@ while choosing do
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode5/choices/17/milo/year_sure_whatever.lua"
+        nextscene = "assets/video/episode5/choices/17/milo/yeah_sure_whatever.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
