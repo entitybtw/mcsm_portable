@@ -1,56 +1,39 @@
 1
-00:00:00,000 --> 00:00:02,000
+00:00:00,000 --> 00:00:02,300
 May the best team win.
 
 2
-00:00:02,000 --> 00:00:04,000
+00:00:02,300 --> 00:00:03,900
 Careful what you wish for.
 
 3
-00:00:04,000 --> 00:00:06,000
+00:00:03,900 --> 00:00:05,405
 We'll see about that.
 
 4
-00:00:06,000 --> 00:00:08,000
-Ladies and gentlemen,
+00:00:05,400 --> 00:00:07,850
+Ladies and gentlemen...
 
 5
-00:00:08,000 --> 00:00:12,000
-welcome to the Endercon Building Competition!
+00:00:07,850 --> 00:00:11,600
+Welcome to the Endercon Building Competition!
 
 6
-00:00:12,000 --> 00:00:14,000
-The winners of this year's competition
+00:00:11,600 --> 00:00:16,400
+The winners of this years competition will have their build featured at Endercon.
 
 7
-00:00:14,000 --> 00:00:17,000
-will have their build featured at Endercon.
+00:00:16,400 --> 00:00:22,204
+The winners will also meet, in person, Gabriel the Warrior!
 
 8
-00:00:17,000 --> 00:00:21,000
-The winners will also meet, in person,
-
-9
-00:00:21,000 --> 00:00:23,000
-Gabriel the Warrior!
-
-10
-00:00:23,000 --> 00:00:30,000
+00:00:25,000 --> 00:00:30,000
 Ocelots! Ocelots! Ocelots!
 
-11
-00:00:30,000 --> 00:00:32,000
-Whoa, handshake?
+9
+00:00:30,000 --> 00:00:34,500
+Whoa. Handshake? We don’t have a handshake.
 
-12
-00:00:32,000 --> 00:00:34,000
-We don't have a handshake.
-
-13
-00:00:34,000 --> 00:00:36,000
-We'll just make one up.
-
-14
-00:00:38,000 --> 00:00:42,000
-We'll call it the... uh...
-
+10
+00:00:34,500 --> 00:00:36,018
+We’ll just make one up.
