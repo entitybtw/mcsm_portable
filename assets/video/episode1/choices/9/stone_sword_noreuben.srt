@@ -1,100 +1,83 @@
 1
-00:00:00,000 --> 00:00:10,000
-See? Isn't it better when you make it yourself?
+00:00:07,300 --> 00:00:10,600
+See, isn’t it better when you make it yourself?
 
 2
-00:00:10,000 --> 00:00:24,000
-Check it out. Endercons all lit up.
+00:00:21,000 --> 00:00:24,100
+Check it out… Endercon’s all lit up.
 
 3
-00:00:24,000 --> 00:00:27,000
-I can't believe it. We won.
+00:00:24,100 --> 00:00:27,100
+I can’t believe it… we won!
 
 4
-00:00:27,000 --> 00:00:29,000
+00:00:27,100 --> 00:00:28,900
 Good for you, Jesse.
 
 5
-00:00:29,000 --> 00:00:32,386
-It's about time we beat Lucas and his gang of jerks. What
+00:00:28,900 --> 00:00:31,950
+It’s about time we beat Lukas and his gang of jerks!
 
 6
-00:00:32,386 --> 00:00:35,000
-kind of stupid name is the Ocelots, anyway?
+00:00:31,950 --> 00:00:35,050
+What kind of stupid name is the Ocelots, anyway?
 
 7
-00:00:35,000 --> 00:00:38,943
-You know, Lucas may be kind of arrogant, but he has come
+00:00:35,050 --> 00:00:40,750
+You know, Lukas may be kind of arrogant, but he has come through for me in tricky situations.
 
 8
-00:00:38,943 --> 00:00:43,028
-through for me in tricky situations. You might want to get
+00:00:40,750 --> 00:00:44,100
+You might wanna get to know him… just in case.
 
 9
-00:00:43,028 --> 00:00:45,000
-to know him. Just in case.
+00:00:45,100 --> 00:00:47,350
+Yeah, you might be right
 
 10
-00:00:45,000 --> 00:00:47,000
-Yeah, you might be right.
+00:00:47,350 --> 00:00:50,550
+I’m just saying, if you run into him at Endercon… try to talk to him.
 
 11
-00:00:47,000 --> 00:00:50,840
-I'm just saying, if you run into him at Endercon, try
+00:00:50,550 --> 00:00:55,150
+I don’t need a lecture on the power of collaboration, Petra.
 
 12
-00:00:50,840 --> 00:00:52,000
-talking to him.
+00:00:55,150 --> 00:00:57,973
+How 'bout a lecture on the power of my fist?
 
 13
-00:00:52,000 --> 00:00:55,000
-I don't need a lecture on the power of collaboration, Petra.
+00:00:57,974 --> 00:00:59,250
+It’s short. But deadly.
 
 14
-00:00:55,000 --> 00:00:59,130
-How about a lecture on the power of my fists? It's short,
+00:00:59,250 --> 00:01:01,100
+C’mon… let’s hurry.
 
 15
-00:00:59,130 --> 00:01:00,000
-but deadly.
+00:01:01,100 --> 00:01:04,500
+Remember what Endercon was like BEFORE it was cool?
 
 16
-00:01:00,000 --> 00:01:02,000
-Come on, let's hurry.
+00:01:04,500 --> 00:01:07,850
+Remember what WE were like before WE were cool?
 
 17
-00:01:02,000 --> 00:01:05,000
-Remember what Endercon was like before it was cool?
+00:01:07,850 --> 00:01:09,954
+…some of us will never be cool.
 
 18
-00:01:05,000 --> 00:01:08,000
-Remember what we were like before we were cool?
+00:01:09,955 --> 00:01:11,500
+Ha-ha.
 
 19
-00:01:08,000 --> 00:01:11,000
-Some of us will never be cool.
-
-20
-00:01:11,000 --> 00:01:13,000
-Ha ha.
-
-21
-00:01:16,000 --> 00:01:18,000
+00:01:16,026 --> 00:01:17,200
 Creepers!
 
-22
-00:01:26,000 --> 00:01:28,000
-This doesn't look good.
+20
+00:01:25,400 --> 00:01:28,400
+This… doesn’t look good.
 
-23
-00:01:33,000 --> 00:01:36,000
-Well, there's only one way off this bridge.
-
-24
-00:01:37,000 --> 00:01:40,000
-Whatever we do, we do it together.
-
-25
-00:01:44,000 --> 00:01:46,000
-Hurry up, Jesse!
-
+21
+00:01:33,100 --> 00:01:35,612
+Well… there’s only one way off this bridge.
