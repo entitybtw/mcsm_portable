@@ -1,128 +1,99 @@
 1
 00:00:00,000 --> 00:00:02,800
-You're gonna have to make a run for it, okay?
+You’re gonna have to make a run for it, okay?
 
 2
 00:00:02,800 --> 00:00:04,800
-I'll meet you back in town, I promise!
+I’ll meet up with you back in town, I promise!
 
 3
 00:00:04,800 --> 00:00:06,800
-Get out of here now!
+Get outta here! Now!
 
 4
 00:00:18,800 --> 00:00:20,800
-Get off me!
+Get off of me!
 
 5
-00:00:31,000 --> 00:00:34,000
-Come on, let's get out of the open.
+00:00:32,633 --> 00:00:34,067
+Come on, let’s get out of the open.
 
 6
-00:00:49,000 --> 00:00:51,000
+00:00:49,983 --> 00:00:51,300
 I wanna show you something.
 
 7
-00:00:52,000 --> 00:00:55,000
-Not that this isn't a really cool dimly lit tunnel, but...
+00:00:53,186 --> 00:00:58,550
+Not this isn’t a cool, dimly lit tunnel, but… how far away is this thing you want to show me?
 
 8
-00:00:55,000 --> 00:00:58,000
-How far away is this thing you want to show me?
+00:00:58,550 --> 00:01:02,100
+Careful, Jesse. You don’t want to get a reputation as a wimp.
 
 9
-00:00:58,000 --> 00:01:01,606
-Careful, Jesse. You don't want to get a reputation as a
+00:01:02,100 --> 00:01:05,065
+This isn’t my first time in a cave, Petra.
 
 10
-00:01:01,606 --> 00:01:02,000
-wimp.
+00:01:05,065 --> 00:01:08,568
+Yeah, but have you ever seen… A witherskull?
 
 11
-00:01:02,000 --> 00:01:05,000
-This isn't my first time in a cave, Petra.
+00:01:08,568 --> 00:01:09,800
+Woah!
 
 12
-00:01:05,000 --> 00:01:08,000
-Yeah, but have you ever seen... a wither skull?
+0:01:09,800 --> 00:01:11,438
+Fresh from the Nether.
 
 13
-00:01:08,000 --> 00:01:10,000
-Whoa!
+00:01:12,306 --> 00:01:15,350
+That’s insane, Petra. You could’ve gotten yourself killed.
 
 14
-00:01:10,000 --> 00:01:12,000
-Fresh from the nether.
+00:01:15,350 --> 00:01:19,450
+Don’t worry so much. I can handle myself.
 
 15
-00:01:12,000 --> 00:01:15,000
-That's insane, Petra! You could've gotten yourself killed!
+00:01:19,450 --> 00:01:24,117
+There’s this guy I’m meeting up with at Endercon… he’s gonna trade me a diamond for it.
 
 16
-00:01:15,000 --> 00:01:19,000
-Don't worry so much. I can handle myself.
+00:01:24,117 --> 00:01:27,300
+Why didn’t he just go get the skull himself?
 
 17
-00:01:19,000 --> 00:01:22,000
-There's this guy I'm meeting up with at Endercon.
+00:01:27,300 --> 00:01:30,500
+He’s not the kind of guy who has time to do something like that!
 
 18
-00:01:22,000 --> 00:01:24,000
-He's gonna trade me a diamond for it.
-
-19
-00:01:24,000 --> 00:01:27,000
-Why didn't he just go get the skull himself?
-
-20
-00:01:27,000 --> 00:01:29,718
-He's not the kind of guy who has time to do something like
-
-21
-00:01:29,718 --> 00:01:30,000
-that.
-
-22
-00:01:30,000 --> 00:01:32,000
+00:01:30,500 --> 00:01:32,091
 What kind of guy is he, then?
 
-23
-00:01:32,000 --> 00:01:35,000
+19
+00:01:32,092 --> 00:01:35,128
 The kind who understands the value of hard work.
 
-24
-00:01:36,000 --> 00:01:37,000
+20
+00:01:36,000 --> 00:01:37,200
 Wow.
 
+21
+00:01:37,200 --> 00:01:38,800
+Wow… what?
+
+22
+00:01:38,800 --> 00:01:43,300
+In a single day, you went to the Nether, you killed a Wither skeleton…
+
+23
+00:01:43,300 --> 00:01:49,200
+I mean, I DID build a super cool statue, but still. It’s pretty sweet being you, huh?
+
+24
+00:01:49,200 --> 00:01:52,300
+You know… you could come with me.
+
 25
-00:01:37,000 --> 00:01:39,000
-Wow what?
-
-26
-00:01:39,000 --> 00:01:42,028
-In a single day, you went to the nether, you killed a
-
-27
-00:01:42,028 --> 00:01:43,000
-wither skeleton.
-
-28
-00:01:43,000 --> 00:01:47,000
-I mean, I did build a super cool statue, but still...
-
-29
-00:01:47,000 --> 00:01:49,000
-It's pretty sweet being you, huh?
-
-30
-00:01:49,000 --> 00:01:52,000
-You know, you could come with me.
-
-31
-00:01:52,000 --> 00:01:55,000
-I mean, if you're too nervous, I totally get it.
-
-32
-00:01:55,000 --> 00:01:58,000
-But I wouldn't mind a little backup.
-
+00:01:55,000 --> 00:01:58,752
+I mean, if you’re too nervous, I totally get it.
