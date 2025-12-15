@@ -19,7 +19,7 @@ The original game and Netflix version are no longer available, but it’s still 
   <img src="https://hapka.lol/jlPaR" width="45%" />
 </p>
 <p>
-  <img src="https://hapka.lol/nIZRU" width="45%" />
+  <img src="https://hapka.lol/CNsmr" width="45%" />
   <img src="https://hapka.lol/VmhbG" width="45%" />
 </p>
 
