@@ -24,12 +24,12 @@ while choosing do
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "back_lukas_up.lua"
+        nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "it_doesnt_matter.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "save_the_founder.lua"
+        nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "no_its_your_faultz.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(square)
 Image.unload(circle)

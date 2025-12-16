@@ -14,7 +14,7 @@ end
 Image.draw(square, 59, 160)
 intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "Bookcase", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 397, 166)
-intraFont.print(397 - intraFont.textW(font, "Strange Door", 0.4) / 2 + 8, 166 + 14, "Strange Door", Color.new(255,255,255), font, 0.4)
+intraFont.print(397 - intraFont.textW(font, "Strange Wall", 0.4) / 2 + 8, 166 + 14, "Strange Wall", Color.new(255,255,255), font, 0.4)
 Image.draw(triangle, 144, 203)
 intraFont.print(144 - intraFont.textW(font, "Cobblestone", 0.4) / 2 + 8, 203 + 14, "Cobblestone", Color.new(255,255,255), font, 0.4)
 Image.draw(cross, 282, 207)
@@ -39,7 +39,7 @@ while choosing do
         Image.unload(triangle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/strange_door.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall.lua"
     elseif buttons.pressed(buttons.triangle) then
         Image.unload(square)
         Image.unload(circle)

@@ -21,17 +21,17 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.cross) then
-        Image.unload(triangle)
+        Image.unload(cross)
         Image.unload(square)
         choosing = false
         nextscene = "assets/video/episode5/choices/no_mi/1/crafting_table_nodoor.lua"
     elseif buttons.pressed(buttons.square) then
-        Image.unload(triangle)
+        Image.unload(cross)
         Image.unload(square)
         choosing = false
         nextscene = "assets/video/episode5/choices/no_mi/1/bookcase_nodrybush_nocobblestone.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(triangle)
+Image.unload(cross)
 Image.unload(square)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")

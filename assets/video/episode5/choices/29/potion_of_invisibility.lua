@@ -24,12 +24,12 @@ while choosing do
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode5/choices/30/" .. mi .. "give_up_aiden.lua"
+        nextscene = "assets/video/episode5/choices/30/" .. mi .. "/give_up_aiden.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode5/choices/30/" .. mi .. "ill_kick_your_butt.lua"
+        nextscene = "assets/video/episode5/choices/30/" .. mi .. "/ill_kick_your_butt.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(square)
 Image.unload(circle)

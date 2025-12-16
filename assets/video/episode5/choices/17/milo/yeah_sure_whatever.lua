@@ -3,7 +3,7 @@ local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode5/choices/17/milo/yeah_aidens_our_focus.pmp', buttons.r, true, 'assets/video/episode5/choices/17/milo/yeah_aidens_our_focus.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode5/choices/17/milo/yeah_sure_whatever.pmp', buttons.r, true, 'assets/video/episode5/choices/17/milo/yeah_sure_whatever.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
