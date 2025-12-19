@@ -27,7 +27,25 @@ function SaveGame(episodeNumber)
             building = building,
             pedestal = pedestal,
             slime = slime,
-            sword = sword
+            sword = sword,
+        }
+
+        local file, err = io.open(variablesFilePath, "w")
+        if file then
+            for key, value in pairs(variables) do
+                if value ~= nil then
+                    file:write(string.format("%s = \"%s\"\n", key, tostring(value)))
+                end
+            end
+            file:close()
+        end
+    elseif episodeNumber == 5 then
+        local saveDir = "assets/saves/"
+        local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
+
+        local variables = {
+            save = save,
+            mi = mi
         }
 
         local file, err = io.open(variablesFilePath, "w")
