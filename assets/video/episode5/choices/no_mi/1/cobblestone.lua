@@ -15,7 +15,7 @@ intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "
 if mi == "ivor" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
-else 
+elseif mi == "milo" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Strange Wall", 0.4) / 2 + 8, 166 + 14, "Strange Wall", Color.new(255,255,255), font, 0.4)
 end
