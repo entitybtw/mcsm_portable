@@ -24,12 +24,12 @@ while choosing do
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        if save == "founder" then nextscene = "assets/video/episode5/choices/35/founder/build_something_new.lua" else nextscene = "assets/video/episode5/choices/35/lukas/build_something_new.lua" end
+        nextscene = "assets/video/episode5/choices/34/come_on_milo.lua"
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        if save == "founder" then nextscene = "assets/video/episode5/choices/35/founder/you_could_travel.lua" else nextscene = "assets/video/episode5/choices/35/lukas/you_could_travel.lua" end
+        nextscene = "assets/video/episode5/choices/34/relax_founder.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(square)
 Image.unload(circle)

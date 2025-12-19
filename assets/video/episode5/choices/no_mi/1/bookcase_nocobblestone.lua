@@ -9,7 +9,7 @@ if result == 1 then
     return 1
 end
 
-if no_mi == "ivor" then
+if mi == "ivor" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
 else 

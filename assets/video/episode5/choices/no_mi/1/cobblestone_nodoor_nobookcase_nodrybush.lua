@@ -29,7 +29,7 @@ while choosing do
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/crafting_table_nodoor_nobookcase_nodrybush.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/crafting_table_nodoor_nobookcase.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(circle)
 Image.unload(cross)

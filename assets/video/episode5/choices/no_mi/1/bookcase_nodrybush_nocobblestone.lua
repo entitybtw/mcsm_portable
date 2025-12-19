@@ -11,7 +11,7 @@ end
 
 Image.draw(triangle, 282, 207)
 intraFont.print(282 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 207 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
-if no_mi == "ivor" then
+if mi == "ivor" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
 else 

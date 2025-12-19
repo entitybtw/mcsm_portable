@@ -19,12 +19,10 @@ while choosing do
 
     if buttons.pressed(buttons.circle) then
         Image.unload(circle)
-        Image.unload(cross)
         choosing = false
         nextscene = "assets/video/episode5/choices/no_mi/1/lever_slot_2.lua" 
     elseif buttons.pressed(buttons.start) then
 Image.unload(circle)
-Image.unload(cross)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

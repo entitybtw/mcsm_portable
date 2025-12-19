@@ -12,7 +12,7 @@ end
 
 Image.draw(square, 59, 160)
 intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "Bookcase", Color.new(255,255,255), font, 0.4)
-if no_mi == "ivor" then
+if mi == "ivor" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
 else 
@@ -33,7 +33,7 @@ while choosing do
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        if no_mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nocobblestone.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nocobblestone.lua" end
+        if mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nocobblestone.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nocobblestone.lua" end
     elseif buttons.pressed(buttons.square) then
         Image.unload(square)
         Image.unload(circle)

@@ -1,6 +1,7 @@
 local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
+save = "lukas"
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode5/choices/25/back_lukas_up.pmp', buttons.r, true, 'assets/video/episode5/choices/25/back_lukas_up.srt', font, subssize, "#FFFFFF", "#000000/150", subs)

@@ -8,7 +8,7 @@ if result == 1 then
     return 1
 end
 
-if no_mi == "ivor" then
+if mi == "ivor" then
 Image.draw(circle, 397, 166)
 intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", Color.new(255,255,255), font, 0.4)
 else 
@@ -25,7 +25,7 @@ while choosing do
     if buttons.pressed(buttons.circle) then
         Image.unload(circle)
         choosing = false
-        if no_mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nocraftingtable_nobookcase.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nocraftingtable_nobookcase.lua" end
+        if mi == "ivor" then nextscene = "assets/video/episode5/choices/no_mi/1/supply_door_nocraftingtable_nobookcase.lua" else nextscene = "assets/video/episode5/choices/no_mi/1/strange_wall_nocraftingtable_nobookcase.lua" end
     elseif buttons.pressed(buttons.start) then
 Image.unload(circle)
 choosing = false

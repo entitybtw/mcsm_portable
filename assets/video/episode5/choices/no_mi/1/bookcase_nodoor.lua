@@ -34,7 +34,7 @@ while choosing do
         Image.unload(circle)
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/cobblestone__nodoor_nobookcase.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/cobblestone_nodoor_nobookcase.lua"
     elseif buttons.pressed(buttons.cross) then
         Image.unload(triangle)
         Image.unload(circle)

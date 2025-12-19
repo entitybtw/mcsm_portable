@@ -20,7 +20,7 @@ while choosing do
     if buttons.pressed(buttons.cross) then
         Image.unload(cross)
         choosing = false
-        nextscene = "assets/video/episode5/choices/no_mi/1/crafting_table_nodoor_nobookcase_nodrybush_nocobblestone.lua"
+        nextscene = "assets/video/episode5/choices/no_mi/1/crafting_table_nodoor_nobookcase.lua"
     elseif buttons.pressed(buttons.start) then
 Image.unload(cross)
 choosing = false
