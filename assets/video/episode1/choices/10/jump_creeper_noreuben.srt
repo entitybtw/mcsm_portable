@@ -1,124 +1,99 @@
 1
 00:00:00,000 --> 00:00:02,000
-Alright, let's jump!
+All right, let’s jump!
 
 2
-00:01:01,000 --> 00:01:02,000
-AHHHHH!
+00:01:01,200 --> 00:01:02,500
+Aaaaah!
 
 3
-00:01:03,000 --> 00:01:04,000
-Merse! Merse!
+00:01:03,000 --> 00:01:04,500
+Burns, it burns!
 
 4
-00:01:04,000 --> 00:01:07,362
-Don't you know? You dive into the water, you don't land on
+00:01:04,500 --> 00:01:08,600
+Don’t you know? You dive INTO the water… you don’t land on top of it.
 
 5
-00:01:07,362 --> 00:01:08,000
-top of it.
+00:01:08,600 --> 00:01:10,700
+Pull yourself together, and follow me.
 
 6
-00:01:08,000 --> 00:01:10,000
-Pull yourself together and follow me.
+00:01:26,000 --> 00:01:28,500
+Just let me know if you see Reuben anywhere.
 
 7
-00:01:26,000 --> 00:01:28,000
-Just let me know if you see Ruben anywhere.
+00:01:28,501 --> 00:01:30,022
+He’s gotta be here somewhere.
 
 8
-00:01:28,000 --> 00:01:30,000
-He's gotta be here somewhere.
+00:01:30,023 --> 00:01:32,150
+I hope you’re right.
 
 9
-00:01:30,000 --> 00:01:32,000
-I hope you're right.
+00:01:32,150 --> 00:01:38,050
+So, when we’re making the deal, I need you to let me do the talking, okay?
 
 10
-00:01:33,000 --> 00:01:36,189
-So, when we're making the deal, I need you to let me do the
-
-11
-00:01:36,189 --> 00:01:37,000
-talking. Okay?
-
-12
-00:01:38,000 --> 00:01:40,000
+00:01:38,050 --> 00:01:40,900
 Should I be nervous about this?
 
-13
-00:01:41,000 --> 00:01:43,311
-Given your personality, your life experience, and
+11
+00:01:40,900 --> 00:01:46,340
+Given your personality, your life experience, and everything else you've done to make it to this moment?
 
-14
-00:01:43,311 --> 00:01:46,000
-everything else you've done to make it to this moment...
-
-15
+12
 00:01:47,000 --> 00:01:48,000
-Yes.
+..Yes.
 
-16
-00:01:48,000 --> 00:01:49,000
+13
+00:01:48,000 --> 00:01:49,500
 Jesse!
 
+14
+00:01:49,500 --> 00:01:52,000
+… and… Petra?
+
+15
+00:01:52,000 --> 00:01:55,500
+Hey, you all know Petra... my new super-close friend.
+
+16
+00:01:55,500 --> 00:01:57,500
+We're super-close now.
+
 17
-00:01:50,000 --> 00:01:52,000
-And... Petra?
+00:01:58,500 --> 00:02:01,350
+We ran into each other while I was looking for Reuben.
 
 18
-00:01:52,000 --> 00:01:55,000
-Hey, you all know Petra, my new super close friend.
+00:02:01,350 --> 00:02:03,000
+Couldn’t find him, huh?
 
 19
-00:01:55,000 --> 00:01:57,000
-We're super close now.
+00:02:03,000 --> 00:02:05,350
+He’ll turn up sooner or later -- I just know it!
 
 20
-00:01:59,000 --> 00:02:01,000
-We ran into each other while I was looking for Ruben.
+00:02:05,350 --> 00:02:10,000
+I saw him, but before I knew what was happening, we were under attack by a zombie horde!
 
 21
-00:02:01,000 --> 00:02:03,000
-Couldn't find him, huh?
+00:02:10,000 --> 00:02:12,000
+I told him to run -- it was for his own good!
 
 22
-00:02:03,000 --> 00:02:05,000
-He'll turn up sooner or later. I just know it.
+00:02:12,000 --> 00:02:14,000
+Sorry we didn’t come with you, Jesse.
 
 23
-00:02:05,000 --> 00:02:07,545
-I saw him, but before I knew what was happening, we were
-
-24
-00:02:07,545 --> 00:02:09,000
-under attack by a zombie horde.
-
-25
-00:02:09,000 --> 00:02:12,000
-I told him to run, it was for his own good.
-
-26
-00:02:12,000 --> 00:02:14,000
-Sorry we didn't come with you, Jesse.
-
-27
-00:02:14,000 --> 00:02:16,000
+00:02:14,000 --> 00:02:16,500
 But hey, we won!
 
-28
-00:02:19,000 --> 00:02:21,000
-We did okay, didn't we?
+24
+00:02:18,500 --> 00:02:21,000
+We did okay, didn’t we?
 
-29
-00:02:21,000 --> 00:02:23,606
-I still wish I'd gotten that part in the back to look
-
-30
-00:02:23,606 --> 00:02:24,000
-better.
-
-31
-00:02:24,000 --> 00:02:27,000
-I could've fit more fireworks in there. Somewhere.
-
+25
+00:02:21,000 --> 00:02:24,000
+I still wish I’d gotten that part in the back to look better…
