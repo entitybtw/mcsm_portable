@@ -11,6 +11,9 @@ if result == 1 then
     return 1
 end
 
+-- Throne Room Interactive Zone --
+-- Starts Here! --
+
 Image.draw(square, 59, 160)
 intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "Bookcase", Color.new(255,255,255), font, 0.4)
 Image.draw(circle, 397, 166)
