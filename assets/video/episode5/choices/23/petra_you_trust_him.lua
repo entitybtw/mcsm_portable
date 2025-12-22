@@ -14,4 +14,4 @@ end
 -- Throne Room Interactive Zone --
 -- Starts Here! --
 
-nextscene = "assets/video/episode5/choices/no_mi/1/throne_room_interactive_zone.lua"
+nextscene = "assets/video/episode5/choices/no_mi/1/throne_room_zone.lua"
