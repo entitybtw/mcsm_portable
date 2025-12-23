@@ -1,132 +1,72 @@
 1
-00:00:00,000 --> 00:00:03,000
-I'm proud of you guys.
+00:00:00,000 --> 00:00:03,150
+I’m proud of you guys.
 
 2
-00:00:03,000 --> 00:00:04,000
+00:00:03,150 --> 00:00:04,250
 Aw, shucks.
 
 3
-00:00:04,000 --> 00:00:06,000
-Don't make me blush.
+00:00:04,250 --> 00:00:08,500
+Don’t make me blush. Seriously. Don’t.
 
 4
-00:00:06,000 --> 00:00:08,000
-Seriously. Don't.
+00:00:08,500 --> 00:00:12,500
+Hey, Jesse. It’s time to go see about that -- thing.
 
 5
-00:00:08,000 --> 00:00:12,000
-Hey, Jesse. It's time to go see about that... thing.
+00:00:12,500 --> 00:00:14,700
+Oh, right, The “thing”.
 
 6
-00:00:12,000 --> 00:00:14,000
-Oh, right. The thing.
+00:00:14,700 --> 00:00:15,500
+Subtle.
 
 7
-00:00:14,000 --> 00:00:15,000
-It's subtle.
+00:00:15,500 --> 00:00:16,000
+Yeah?
 
 8
-00:00:15,000 --> 00:00:16,000
-Yeah.
+00:00:16,000 --> 00:00:21,000
+As a punch to the face. Axel and I were gonna head into Endercon anyway -- see you in there?
 
 9
-00:00:16,000 --> 00:00:17,000
-It has a punch to the face.
+00:00:21,000 --> 00:00:24,500
+I heard somebody saying there’s free cake by the map booth.
 
 10
-00:00:17,000 --> 00:00:20,000
-Axel and I were gonna head into Endercon anyway.
+00:00:24,500 --> 00:00:28,000
+Hurry -- we’re supposed to meet in the alley over there.
 
 11
-00:00:20,000 --> 00:00:21,000
-See you in there?
-
-12
-00:00:21,000 --> 00:00:24,000
-I heard somebody saying there's free cake by the map booth.
-
-13
-00:00:24,000 --> 00:00:28,000
-Hurry. We're supposed to meet in the alley over there.
-
-14
 00:00:30,000 --> 00:00:34,000
 Dark. Dark. Very dark in here.
 
+12
+00:00:34,000 --> 00:00:42,200
+That's weird -- he said the dark, creepy alleyway close to the gates, but he's not here. Maybe he's late.
+
+13
+00:00:42,200 --> 00:00:46,000
+Are you sure THIS is the dark, creepy alleyway he was talking about?
+
+14
+00:00:46,000 --> 00:00:48,600
+Hmm. I WAS.
+
 15
-00:00:34,000 --> 00:00:36,000
-That's weird.
+00:00:48,600 --> 00:00:55,500
+Okay, new plan. You stay here just in case this IS the spot he meant, and I'll look around.
 
 16
-00:00:36,000 --> 00:00:40,275
-He said the dark, creepy alley close to the gates, but he's
+00:00:55,500 --> 00:00:58,000
+Okay, I'll hold down the fort.
 
 17
-00:00:40,275 --> 00:00:41,000
-not here.
+00:00:58,000 --> 00:01:03,500
+Thanks, Jesse. I'll be back before you know it. If he shows up while I'm gone, just stall for me.
 
 18
-00:00:41,000 --> 00:00:42,000
-Maybe he's late.
-
-19
-00:00:42,000 --> 00:00:46,000
-Are you sure this is the dark, creepy alley he meant?
-
-20
-00:00:46,000 --> 00:00:49,000
-Hmm. I was.
-
-21
-00:00:49,000 --> 00:00:50,000
-Okay. New plan.
-
-22
-00:00:50,000 --> 00:00:54,578
-You stay here, just in case this is the spot he meant, and
-
-23
-00:00:54,578 --> 00:00:56,000
-I'll look around.
-
-24
-00:00:56,000 --> 00:00:58,000
-Okay. I'll hold down the fort.
-
-25
-00:00:58,000 --> 00:00:59,000
-Thanks, Jesse.
-
-26
-00:00:59,000 --> 00:01:01,780
-I'll be back before you know it. If he shows up while I'm
-
-27
-00:01:01,780 --> 00:01:03,000
-gone, just stall for me.
-
-28
 00:01:14,000 --> 00:01:16,000
-And just who are you?
-
-29
-00:01:19,000 --> 00:01:21,000
-I'm waiting.
-
-30
-00:01:24,000 --> 00:01:26,000
-Answer me.
-
-31
-00:01:29,000 --> 00:01:31,000
-I'm not here.
-
-32
-00:01:31,000 --> 00:01:33,000
-I'm not here.
-
-33
-00:01:33,000 --> 00:01:35,000
-I'm not here.
+And just who are YOU?
 
