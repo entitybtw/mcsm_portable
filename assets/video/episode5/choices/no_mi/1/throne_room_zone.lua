@@ -1,4 +1,5 @@
 -- made by dntrnk --
+-- p.s dntrnk реально молодец (от entitybtw) --
 
 local in_interactive_zone = true
 local choosing = true

@@ -2,86 +2,207 @@
 00:00:07,000 --> 00:00:09,600
 Nothing built can last forever.
 
+
 2
-00:00:09,600 --> 00:00:14,600
-And every legend, no matter how great, fades with time.
+00:00:09,600 --> 00:00:12,199
+And every legend no matter how great,
+
+
+3
+00:00:12,199 --> 00:00:14,600
+fades with time.
+
 
 4
-00:00:15,500 --> 00:00:23,500
-With each passing year, more and more details are lost... until all that remains are myths. Half truths.
+00:00:15,500 --> 00:00:17,920
+With each passing year, more and more
+
 
 5
-00:00:23,500 --> 00:00:27,800
-To put it simply, lies.
+00:00:17,920 --> 00:00:21,200
+details are lost until all that remains
+
 
 6
-00:00:27,800 --> 00:00:33,600
-And yet in all the known universe, between here and the Far Lands...
+00:00:21,200 --> 00:00:22,640
+are myths...
+
 
 7
-00:00:33,600 --> 00:00:40,600
-The legend of the Order of the Stone endures, unabridged, as self-evident fact.
+00:00:22,640 --> 00:00:27,800
+half-truths. To put it simply: lies.
+
 
 8
-00:00:41,399 --> 00:00:45,800
-Indeed, it is only a troubled land that has need for heroes...
+00:00:27,800 --> 00:00:31,000
+And yet, in all the known universe,
+
 
 9
-00:00:45,800 --> 00:00:54,000
-And ours was fortunate to have, so long ago, four heroes such as these:
+00:00:31,000 --> 00:00:33,600
+between here and the Far Lands...
+
 
 10
-00:00:54,000 --> 00:00:55,640
-Gabriel the Warrior.
+00:00:33,600 --> 00:00:34,750
+The legend of the
+
 
 11
+00:00:34,750 --> 00:00:38,300
+ORDER OF THE STONE endures, unabridged,
+
+
+12
+00:00:38,300 --> 00:00:40,600
+as self-evident fact.
+
+
+13
+00:00:41,399 --> 00:00:44,200
+Indeed, it is only a troubled land that
+
+
+14
+00:00:44,200 --> 00:00:45,800
+has need for heroes --
+
+
+15
+00:00:45,800 --> 00:00:47,999
+And ours was fortunate to
+
+
+16
+00:00:48,000 --> 00:00:54,000
+have, so long ago, four heroes such as these;
+
+
+17
+00:00:54,000 --> 00:00:55,640
+Gabriel the Warrior --
+
+
+18
 00:00:55,640 --> 00:01:00,400
 Before whose sword all combatants would tremble.
 
-12
-00:01:00,400 --> 00:01:02,700
-Ellegaard the Redstone Engineer.
 
-13
+19
+00:01:00,400 --> 00:01:02,700
+Ellegaard, the redstone engineer --
+
+
+20
 00:01:02,700 --> 00:01:07,200
 Whose machines would spark an era of invention.
 
-14
+
+21
 00:01:07,200 --> 00:01:08,370
-Magnus the Rogue.
+Magnus the Rogue --
 
-15
-00:01:08,370 --> 00:01:13,660
-Who would channel his destructive creativity for the benefit of all.
 
-16
+22
+00:01:08,370 --> 00:01:11,519
+Who would channel his destructive creativity
+
+
+23
+00:01:11,519 --> 00:01:13,660
+for the benefit of all.
+
+
+24
 00:01:13,660 --> 00:01:15,500
-And Soren the Architect...
+And Soren the Architect --
 
-17
+
+25
 00:01:15,500 --> 00:01:17,000
-Builder of Worlds...
+Builder of worlds.
 
-18
+
+26
 00:01:17,000 --> 00:01:20,900
 And leader of the Order of the Stone.
 
-19
-00:01:20,900 --> 00:01:29,300
-These FOUR friends together, would give so much to gain their rightful place as FOUR heroes.
 
-20
-00:01:29,300 --> 00:01:37,640
-Their greatest quest would take them on a dangerous journey to fight a mysterious creature known as the Ender Dragon.
+27
+00:01:20,900 --> 00:01:23,900
+These FOUR friends together, would give
 
-21
-00:01:39,500 --> 00:01:50,890
-In the end, the Order of the Stone emerged victorious and the dragon was defeated. Their story complete, they slipped away into the pages of legends.
 
-22
-00:01:54,640 --> 00:01:59,299
-But when one story ends, another one begins...
+29
+00:01:23,900 --> 00:01:29,300
+so much to gain their rightful place as FOUR heroes.
 
-23
-00:02:05,000 --> 00:02:12,000
-Would you rather fight a hundred chicken-sized zombies, or ten zombie-sized chickens?
+
+31
+00:01:29,300 --> 00:01:31,500
+Their greatest quest would take them on
+
+
+32
+00:01:31,500 --> 00:01:33,800
+a dangerous journey to fight a
+
+
+33
+00:01:33,800 --> 00:01:35,200
+mysterious creature
+
+
+34
+00:01:35,200 --> 00:01:37,640
+known as the Ender Dragon.
+
+
+35
+00:01:39,500 --> 00:01:41,900
+In the end, the Order of the Stone
+
+
+36
+00:01:41,900 --> 00:01:44,300
+emerged victorious and the dragon
+
+
+37
+00:01:44,300 --> 00:01:45,880
+was defeated.
+
+
+38
+00:01:45,879 --> 00:01:48,460
+Their story complete, they slipped away
+
+
+39
+00:01:48,460 --> 00:01:50,890
+into the pages of legend.
+
+
+40
+00:01:54,640 --> 00:01:56,640
+But when one story ends,
+
+
+41
+00:01:56,640 --> 00:01:59,299
+another one begins.
+
+
+42
+00:02:05,000 --> 00:02:06,180
+Would you rather fight
+
+
+43
+00:02:06,180 --> 00:02:09,259
+a hundred chicken-sized zombies
+
+
+44
+00:02:09,259 --> 00:02:12,000
+or ten zombie-sized chickens?
