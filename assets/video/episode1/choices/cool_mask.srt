@@ -1,300 +1,159 @@
 1
 00:00:00,000 --> 00:00:01,500
-Cool mask.
+Cool mask!
 
 2
-00:00:01,500 --> 00:00:03,000
-It is, isn't it?
+00:00:01,500 --> 00:00:03,300
+It IS, isn’t it?
 
 3
-00:00:03,000 --> 00:00:05,000
-Yeah, very convincing.
+00:00:03,300 --> 00:00:05,700
+Yeah! Very convincing!
 
 4
-00:00:05,000 --> 00:00:06,500
-Ha ha ha.
+00:00:05,700 --> 00:00:06,950
+Hahaha!
 
 5
-00:00:06,500 --> 00:00:08,500
-Look on your faces.
+00:00:06,950 --> 00:00:09,000
+The look on your faces!
 
 6
-00:00:08,500 --> 00:00:10,500
+00:00:09,000 --> 00:00:10,500
 Did you bring the fireworks?
 
 7
 00:00:10,500 --> 00:00:12,000
-Of course I did.
+Of course I did!
 
 8
-00:00:12,000 --> 00:00:14,500
-I even brought something for the little guy.
+00:00:12,000 --> 00:00:14,900
+I even brought something for the little guy!
 
 9
-00:00:14,500 --> 00:00:15,500
-Nice.
+00:00:14,900 --> 00:00:15,600
+Nice!
 
 10
-00:00:15,500 --> 00:00:17,500
+00:00:15,600 --> 00:00:17,500
 You brought Reuben a disguise?
 
 11
 00:00:17,500 --> 00:00:19,500
-Um, we're going to do a convention.
+Umm… We’re going to a convention!
 
 12
 00:00:19,500 --> 00:00:21,500
-Somebody's gonna wear a costume.
+SOMEBODY’s gotta wear a costume!
 
 13
 00:00:23,000 --> 00:00:24,500
-He looks awesome.
+He looks AWESOME!
 
 14
 00:00:24,500 --> 00:00:27,500
 It only took me like a million hours to build it.
 
 15
-00:00:27,500 --> 00:00:29,000
-Alright, alright.
+00:00:27,500 --> 00:00:29,500
+Alright. Alright.
 
 16
 00:00:30,000 --> 00:00:32,000
 You definitely brought the fireworks, right?
 
 17
-00:00:32,000 --> 00:00:33,500
-Yes, I'm ready.
+00:00:32,000 --> 00:00:35,000
+Yeeesss! I’m ready! Waiting on you guys!
 
 18
-00:00:33,500 --> 00:00:35,000
-Waiting on you guys.
+00:00:35,000 --> 00:00:39,000
+If he was REALLY your best friend, you wouldn’t let him go outside dressed like that…
 
 19
-00:00:35,000 --> 00:00:37,000
-If he was really your best friend,
+00:00:39,000 --> 00:00:44,750
+The only thing more dangerous than putting a costume ON a pig, is trying to take OFF.
 
 20
-00:00:37,000 --> 00:00:39,000
-you wouldn't let him go outside dressed like that.
+00:00:44,750 --> 00:00:46,500
+Hurry up and grab your stuff!
 
 21
-00:00:39,000 --> 00:00:42,270
-The only thing more dangerous than putting a costume on a
+00:00:46,500 --> 00:00:48,500
+We’ll meet you downstairs, okay?
 
 22
-00:00:42,270 --> 00:00:42,500
-pig
+00:00:48,500 --> 00:00:50,000
+Okay!
 
 23
-00:00:42,500 --> 00:00:44,500
-is trying to take it off.
+00:00:55,000 --> 00:00:58,000
+Hmmm… flint and steel, not too shabby…
 
 24
-00:00:45,000 --> 00:00:46,500
-Hurry up and grab your stuff.
+00:01:00,500 --> 00:01:04,500
+One of these days, we’re gonna WIN, the Endercon building competition.
 
 25
-00:00:46,500 --> 00:00:48,500
-We'll meet you downstairs, okay?
+00:01:04,500 --> 00:01:07,000
+And WHEN do, people will look up at us and say...
 
 26
-00:00:48,500 --> 00:00:50,000
-Okay.
+00:01:07,000 --> 00:01:11,500
+“Hey, there goes Jesse and Reuben, winners of the Endercon building competition!”
 
 27
-00:00:55,000 --> 00:00:57,500
-Hmm, flint and steel, not too shabby.
+00:01:11,500 --> 00:01:14,500
+They really should change the name…
 
 28
-00:01:00,500 --> 00:01:03,746
-One of these days, we're gonna win the Endercon Building
+00:01:19,000 --> 00:01:21,000
+Give me a dragon roar, Reuben!
 
 29
-00:01:03,746 --> 00:01:04,500
-Competition.
+00:01:25,000 --> 00:01:28,000
+That’ll do, Reuben! That’ll do!
 
 30
-00:01:04,500 --> 00:01:07,000
-And when we do, people will look at us and say,
+00:01:39,000 --> 00:01:40,500
+That’s everything.
 
 31
-00:01:07,000 --> 00:01:09,000
-hey, there goes Jesse and Reuben,
+00:01:40,500 --> 00:01:41,768
+Let’s roll!
 
 32
-00:01:09,000 --> 00:01:11,500
-winners of the Endercon Building Competition.
+00:01:41,768 --> 00:01:42,869
+Let’s roll!
 
 33
-00:01:11,500 --> 00:01:14,000
-They really should change the name.
+00:01:42,869 --> 00:01:44,500
+Yeah, dude! “Roll”!
 
 34
-00:01:19,000 --> 00:01:21,000
-Give me a dragon roar, Reuben.
+00:01:44,500 --> 00:01:51,000
+I heard a pretty juicy rumor about the building competition, but you guys have to PROMISE not say anything.
 
 35
-00:01:25,000 --> 00:01:26,500
-That'll do, Reuben.
-
-36
-00:01:26,500 --> 00:01:28,000
-That'll do.
-
-37
-00:01:30,000 --> 00:01:31,500
-That's everything.
-
-38
-00:01:31,500 --> 00:01:33,000
-Let's roll.
-
-39
-00:01:33,000 --> 00:01:34,000
-Yeah, dude.
-
-40
-00:01:34,000 --> 00:01:36,000
-Roll. Let's go.
-
-41
-00:01:36,000 --> 00:01:39,000
-I heard a pretty juicy rumor about the building competition,
-
-42
-00:01:39,000 --> 00:01:42,000
-but you guys have to promise not to say anything.
-
-43
-00:01:42,000 --> 00:01:43,000
+00:01:51,000 --> 00:01:52,000
 Okay.
 
-44
-00:01:43,000 --> 00:01:44,500
-Also, it's in two parts.
+36
+00:01:52,000 --> 00:01:55,600
+ALSO it’s in two parts! Each part more exciting than the last!
 
-45
-00:01:44,500 --> 00:01:46,500
-Each part more exciting than the last.
+37
+00:01:55,600 --> 00:01:56,900
+Spit it out, Axel!
 
-46
-00:01:46,500 --> 00:01:48,000
-Spit it out, Axel.
+38
+00:01:56,900 --> 00:02:02,900
+Part one. The special guest of this year’s Endercon is none other than Gabriel The Warrior him-freaking-self.
 
-47
-00:01:48,000 --> 00:01:51,371
-Part one, the special guest at this year's Endercon is none
+39
+00:02:02,900 --> 00:02:04,900
+WOAH! What’s part two?!
 
-48
-00:01:51,371 --> 00:01:52,000
-other than
-
-49
-00:01:52,000 --> 00:01:54,370
-the guy who's gonna be the winner of the building
-
-50
-00:01:54,370 --> 00:01:55,000
-competition.
-
-51
-00:01:55,000 --> 00:01:57,000
-And the winner of the building competition is
-
-52
-00:01:57,000 --> 00:01:59,950
-Part one, the special guest at this year's Endercon is none
-
-53
-00:01:59,950 --> 00:02:00,500
-other than
-
-54
-00:02:00,500 --> 00:02:03,000
-Gabriel, the warrior, himself.
-
-55
-00:02:03,000 --> 00:02:05,000
-Whoa, what's part two?
-
-56
-00:02:05,000 --> 00:02:07,000
-Part two, according to my sources,
-
-57
-00:02:07,000 --> 00:02:09,761
-the winner of the building competition's gonna get to meet
-
-58
-00:02:09,761 --> 00:02:10,000
-him.
-
-59
-00:02:13,000 --> 00:02:15,000
-It doesn't mean anything if we lose.
-
-60
-00:02:17,000 --> 00:02:20,483
-But if we win, oh, man, this would make up for all the
-
-61
-00:02:20,483 --> 00:02:21,000
-losing.
-
-62
-00:02:28,000 --> 00:02:30,000
-I'm gonna go get some rest.
-
-63
-00:02:30,000 --> 00:02:32,000
-I'm gonna go get some rest.
-
-64
-00:02:32,000 --> 00:02:34,000
-I'm gonna go get some rest.
-
-65
-00:02:34,000 --> 00:02:36,000
-I'm gonna go get some rest.
-
-66
-00:02:36,000 --> 00:02:38,000
-I'm gonna go get some rest.
-
-67
-00:02:38,000 --> 00:02:40,000
-I'm gonna go get some rest.
-
-68
-00:02:40,000 --> 00:02:42,000
-I'm gonna go get some rest.
-
-69
-00:02:42,000 --> 00:02:44,000
-I'm gonna go get some rest.
-
-70
-00:02:44,000 --> 00:02:46,000
-I'm gonna go get some rest.
-
-71
-00:02:46,000 --> 00:02:48,000
-I'm gonna go get some rest.
-
-72
-00:02:48,000 --> 00:02:50,000
-I'm gonna go get some rest.
-
-73
-00:02:50,000 --> 00:02:52,000
-I'm gonna go get some rest.
-
-74
-00:02:52,000 --> 00:02:54,000
-I'm gonna go get some rest.
-
-75
-00:02:54,000 --> 00:02:56,000
-I'm gonna go get some rest.
-
+40
+00:02:04,900 --> 00:02:10,200
+Part TWO. According to my sources, the winner of the building competition is gonna get to meet him.
