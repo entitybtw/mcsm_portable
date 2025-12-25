@@ -7,202 +7,129 @@ All I've got is this sword.
 Oh, that's very nice.
 
 3
-00:00:07,000 --> 00:00:10,000
-With this, I could cut my butchering time in half.
+00:00:07,000 --> 00:00:10,500
+With this I could cut my butchering time in half.
 
 4
 00:00:13,000 --> 00:00:15,000
-Nice doing business with you.
+Nice doin' business with you.
 
 5
-00:00:15,000 --> 00:00:16,000
-Come on, Reuben.
+00:00:15,000 --> 00:00:16,500
+C'mon, Reuben.
 
 6
-00:00:19,000 --> 00:00:21,507
-I'm sorry, Reuben. I never should have let you run off in
+00:00:18,500 --> 00:00:22,500
+I'm sorry, Reuben. I never should've let you run off in the woods.
 
 7
-00:00:21,507 --> 00:00:22,000
-the woods.
-
-8
 00:00:30,000 --> 00:00:33,000
 Remember that thing I had to go do with Petra?
 
-9
-00:00:33,000 --> 00:00:35,000
+8
+00:00:33,000 --> 00:00:35,800
 Long story short, we met up with this guy.
 
+9
+00:00:35,800 --> 00:00:39,300
+He cheated me and Petra on a deal, and now we're trying to track him down. You in?
+
 10
-00:00:35,000 --> 00:00:37,351
-He cheated me and Petra on a deal, and now we're trying to
+00:00:39,300 --> 00:00:41,000
+Oh, I'm in, all right.
 
 11
-00:00:37,351 --> 00:00:38,000
-track him down.
-
-12
-00:00:38,000 --> 00:00:39,000
-You in?
-
-13
-00:00:39,000 --> 00:00:41,000
-Oh, I'm in. All right.
-
-14
 00:00:41,000 --> 00:00:42,000
 Any sign of him?
 
-15
+12
 00:00:42,000 --> 00:00:45,000
 I thought I saw him earlier, but it was just a false alarm.
 
+13
+00:00:45,000 --> 00:00:46,800
+Wait! There he is!
+
+14
+00:00:46,800 --> 00:00:48,300
+Looks like he's heading towards the Hall.
+
+15
+00:00:48,300 --> 00:00:51,000
+We're going to have to get past that usher to follow him.
+
 16
-00:00:45,000 --> 00:00:46,000
-Wait, there he is!
-
-17
-00:00:46,000 --> 00:00:48,000
-Looks like he's heading towards the hall.
-
-18
-00:00:48,000 --> 00:00:51,000
-We're gonna have to get past that usher to follow him.
-
-19
 00:00:51,000 --> 00:00:52,000
 Let's go!
 
-20
+17
 00:00:53,000 --> 00:00:55,000
 So, yeah, hey...
 
-21
-00:00:55,000 --> 00:00:57,000
+18
+00:00:55,000 --> 00:00:57,700
 What would it take to get us inside tonight?
 
+19
+00:00:59,000 --> 00:01:03,000
+Uh... tickets... hehehe...
+
+20
+00:01:03,000 --> 00:01:06,500
+This might sound crazy, but we're actually on an important mission.
+
+21
+00:01:06,500 --> 00:01:11,200
+I hope your mission came with tickets to the show. 'Cause otherwise...
+
 22
-00:00:58,000 --> 00:01:00,000
-Uh, tickets?
+00:01:11,200 --> 00:01:13,500
+Chickeeeeennnnnn!!!
 
 23
-00:01:02,000 --> 00:01:04,597
-This might sound crazy, but we're actually on an important
+00:01:13,500 --> 00:01:15,500
+Chicken - Chicken - Chicken!
 
 24
-00:01:04,597 --> 00:01:05,000
-mission.
+00:01:15,500 --> 00:01:20,500
+It's gone, you're totally fine, you're a totally cool dude.
 
 25
-00:01:05,000 --> 00:01:08,000
-I hope your mission came with tickets to the show,
-
-26
-00:01:08,000 --> 00:01:10,000
-because, I mean, otherwise...
-
-27
-00:01:10,000 --> 00:01:12,000
-Chicken!
-
-28
-00:01:12,000 --> 00:01:14,000
-Chicken! Chicken! Chicken!
-
-29
-00:01:15,000 --> 00:01:17,000
-It's gone. You're totally fine.
-
-30
-00:01:17,000 --> 00:01:19,000
-You were totally cool to get.
-
-31
-00:01:19,000 --> 00:01:21,000
+00:01:20,500 --> 00:01:22,300
 We have to do something.
 
-32
-00:01:21,000 --> 00:01:24,000
-Like what? This show has been sold out for ages.
+26
+00:01:22,300 --> 00:01:25,000
+Like what? This show has been sold out for ages!
 
-33
-00:01:24,000 --> 00:01:26,000
+27
+00:01:25,000 --> 00:01:27,500
 We need a distraction.
 
-34
-00:01:26,000 --> 00:01:30,000
+28
+00:01:27,500 --> 00:01:31,500
 A lot of chickens running around might be a distraction.
 
-35
-00:01:30,000 --> 00:01:32,000
-Shoo, shoo! Get out of here!
+29
+00:01:31,500 --> 00:01:33,500
+Shoo! shoo! Get outta here!
 
-36
-00:01:32,000 --> 00:01:34,000
-Usher is afraid of chickens.
+30
+00:01:33,500 --> 00:01:35,500
+The usher is afraid of chickens...
 
-37
-00:01:34,000 --> 00:01:37,146
-What would you say if I told you I want to break this guy's
+31
+00:01:35,500 --> 00:01:42,000
+What would you say if I told you I wanna break this guy's chicken machine to create the mother of all distractions?
 
-38
-00:01:37,146 --> 00:01:38,000
-chicken machine
-
-39
-00:01:38,000 --> 00:01:41,000
-to create the mother of all distractions?
-
-40
-00:01:41,000 --> 00:01:43,000
+32
+00:01:42,000 --> 00:01:44,500
 But you have to break that pane of glass.
 
-41
-00:01:43,000 --> 00:01:45,000
-How are you gonna reach it?
+33
+00:01:44,500 --> 00:01:46,000
+How're you going to reach it?
 
-42
-00:01:45,000 --> 00:01:48,000
+34
+00:01:46,000 --> 00:01:49,000
 Let's look around. There has to be something we can do.
-
-43
-00:01:54,000 --> 00:01:56,000
-I'm not sure what to do.
-
-44
-00:01:56,000 --> 00:01:58,000
-I'm not sure what to do.
-
-45
-00:01:58,000 --> 00:02:00,000
-I'm not sure what to do.
-
-46
-00:02:00,000 --> 00:02:02,000
-I'm not sure what to do.
-
-47
-00:02:02,000 --> 00:02:04,000
-I'm not sure what to do.
-
-48
-00:02:04,000 --> 00:02:06,000
-I'm not sure what to do.
-
-49
-00:02:06,000 --> 00:02:08,000
-I'm not sure what to do.
-
-50
-00:02:08,000 --> 00:02:10,000
-I'm not sure what to do.
-
-51
-00:02:10,000 --> 00:02:12,000
-I'm not sure what to do.
-
-52
-00:02:12,000 --> 00:02:14,000
-I'm not sure what to do.
-
