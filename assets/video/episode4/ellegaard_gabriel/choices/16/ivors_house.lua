@@ -12,6 +12,11 @@ local circle = Image.load("assets/icons/circle.png")
 local cross = Image.load("assets/icons/cross.png")
 local triangle = Image.load("assets/icons/triangle.png")
 
+local function goToMenu()
+    nextscene = "./mainmenu.lua"
+    in_interactive_zone = false
+end
+
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
     local result = PMP.playEasy(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -113,14 +118,13 @@ while in_interactive_zone do
             elseif not petra_talk then
                 in_interactive_zone = false
                 choosing = false
-                dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra.lua")
+                local petraExitCode = dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra.lua")
             end
         elseif buttons.pressed(buttons.start) then
             local pause = dofile("assets/misc/pause.lua")
             choosing = false
             if pause == -1 then
-                nextscene = "./mainmenu.lua"
-                in_interactive_zone = false
+                goToMenu()
             end
         elseif buttons.pressed(buttons.r) then
             choosing = false
