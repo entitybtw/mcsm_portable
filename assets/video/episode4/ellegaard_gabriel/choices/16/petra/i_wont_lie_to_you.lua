@@ -7,10 +7,10 @@ if result == 1 then
     return 1
 end
 while choosing do
-if not in_interactive_zone then
-    petra = false
-    in_interactive_zone = true
-    choosing = false
-    break
+    if not in_interactive_zone then
+        petra = false
+        in_interactive_zone = true
+        choosing = false
+        break
     end
 end
