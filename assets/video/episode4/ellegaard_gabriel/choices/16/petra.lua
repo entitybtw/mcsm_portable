@@ -5,7 +5,7 @@ local petra = true
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/petra.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_gabriel/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
-    nextscene = "./mainmenu.lua"
+    -- Go To Menu
     return 1
 end
 
@@ -38,8 +38,8 @@ while choosing do
         choosing = false
         local pause = dofile("assets/misc/pause.lua")
         if pause == -1 then
-            nextscene = "./mainmenu.lua"
-            return -1
+            -- Go To Menu
+            return 1
         end
     elseif buttons.pressed(buttons.r) then
         choosing = false
