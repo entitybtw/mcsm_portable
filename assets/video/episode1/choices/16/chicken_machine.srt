@@ -1,16 +1,11 @@
 1
 00:00:00,000 --> 00:00:05,000
-Hey, what are you doing?
+Hey! What are you doing?
 
 2
-00:00:05,000 --> 00:00:08,712
-Sorry, sorry, just your regular, everyday chicken
+00:00:05,000 --> 00:00:10,000
+Sorry, sorry! Just your regular, everyday chicken enthusiast, here.
 
 3
-00:00:08,712 --> 00:00:10,000
-enthusiast here.
-
-4
 00:00:10,000 --> 00:00:13,000
 Don't make me call security.
-
