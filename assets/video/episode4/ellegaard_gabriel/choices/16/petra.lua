@@ -1,6 +1,7 @@
 local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
+petra = true
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/petra.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_gabriel/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
@@ -22,12 +23,12 @@ while choosing do
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode4/ellegaard_gabriel/choices/16/petra/youll_be_fine.lua"
+        dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra/youll_be_fine.lua")
     elseif buttons.pressed(buttons.circle) then
         Image.unload(square)
         Image.unload(circle)
         choosing = false
-        nextscene = "assets/video/episode4/ellegaard_gabriel/choices/16/petra/i_wont_lie_to_you.lua"
+        dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra/i_wont_lie_to_you.lua")
     elseif buttons.pressed(buttons.start) then
         Image.unload(square)
         Image.unload(circle)
@@ -37,5 +38,8 @@ if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
 choosing = false
         SaveGame(4)
+    elseif not petra then
+        choosing = false
+        break
     end
 end
