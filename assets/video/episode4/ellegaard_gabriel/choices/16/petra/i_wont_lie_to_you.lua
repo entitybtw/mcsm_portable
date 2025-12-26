@@ -5,6 +5,8 @@ local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/
 if result == 1 then
     -- Go To Menu
     return 1
+else
+    return 0
 end
 
 -- vvv Что это, зачем и т.д vvv
