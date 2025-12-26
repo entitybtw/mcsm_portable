@@ -150,4 +150,5 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
 
         screen.flip()
     end
+    System.GC()
 end
