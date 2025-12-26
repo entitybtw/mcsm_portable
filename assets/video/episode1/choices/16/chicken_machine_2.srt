@@ -1,16 +1,7 @@
 1
 00:00:00,000 --> 00:00:04,000
-I need to reach that window but the fence is in the way.
+I need to reach that window, but the fence is in the way.
 
 2
 00:00:04,000 --> 00:00:08,000
-And I don't think I can mess up the fence if he's around.
-
-3
-00:00:30,000 --> 00:00:34,000
-I'm going to try to get him to come out of the window.
-
-4
-00:00:34,000 --> 00:00:38,000
-I'm going to try to get him to come out of the window.
-
+And I don't think I can mess up the fence if HE'S around.
