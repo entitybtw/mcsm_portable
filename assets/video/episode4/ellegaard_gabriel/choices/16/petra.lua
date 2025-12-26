@@ -1,7 +1,7 @@
 local choosing = true
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
-local petra = true
+local gabriel = true
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/petra.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_gabriel/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
@@ -42,7 +42,7 @@ while choosing do
     elseif buttons.pressed(buttons.r) then
         choosing = false
         SaveGame(4)
-    elseif not petra then
+    elseif not gabriel then
         choosing = false
         break
     end
