@@ -119,6 +119,10 @@ while in_interactive_zone do
                 in_interactive_zone = false
                 choosing = false
                 local petraExitCode = dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra.lua")
+
+                if petraExitCode == 1 then
+                    goToMenu()
+                end
             end
         elseif buttons.pressed(buttons.start) then
             local pause = dofile("assets/misc/pause.lua")
