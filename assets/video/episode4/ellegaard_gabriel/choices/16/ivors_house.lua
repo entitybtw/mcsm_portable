@@ -60,7 +60,7 @@ while in_interactive_zone do
     if not petra_talk then
         Image.draw(cross, 210, 169)
         intraFont.print(210 - intraFont.textW(font, "Petra", 0.4) / 2 + 8, 169 + 14, "Petra", Color.new(255,255,255), font, 0.4)
-    elseif crafting_table_used then
+    elseif crafting_table_used and not put_lever then
         Image.draw(square, 393, 146)
         intraFont.print(393 - intraFont.textW(font, "Put lever", 0.4) / 2 + 8, 146 + 14, "Put lever", Color.new(255,255,255), font, 0.4)
     elseif put_lever then
@@ -89,7 +89,7 @@ while in_interactive_zone do
                 playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/chest.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/chest.srt")
                 chest_used = true
                 choosing = false
-            elseif crafting_table_used then
+            elseif crafting_table_used and not put_lever then
                 playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.srt")
                 put_lever = true
                 choosing = false
