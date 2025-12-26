@@ -99,16 +99,16 @@ while in_interactive_zone do
                 playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.srt")
                 put_lever = true
                 choosing = false
+            elseif put_lever then
+                rm("ivors_house_variables")
+                nextscene = "assets/video/episode4/ellegaard_gabriel/choices/16/lever.lua"
+                in_interactive_zone = false
+                choosing = false
             end            
         elseif buttons.pressed(buttons.triangle) then
             if not redstone_hole_used and not crafting_table_used then
                 playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.srt")
                 redstone_hole_used = true
-                choosing = false
-            elseif put_lever then
-                rm("ivors_house_variables")
-                nextscene = "assets/video/episode4/ellegaard_gabriel/choices/16/lever.lua"
-                in_interactive_zone = false
                 choosing = false
             end
         elseif buttons.pressed(buttons.cross) then
