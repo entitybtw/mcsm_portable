@@ -1,6 +1,6 @@
 -- base made by dntrnk --
 
-in_interactive_zone = true
+local in_interactive_zone = true
 local choosing = true
 
 local c_white = Color.new(255, 255, 255)
