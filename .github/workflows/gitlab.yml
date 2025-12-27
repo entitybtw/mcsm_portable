@@ -28,8 +28,9 @@ jobs:
           const apiBase = '${{ secrets.TARGET_API_URL }}';
           const token = '${{ secrets.TARGET_TOKEN }}';
           const tag = '${{ github.event.release.tag_name }}';
-          const name = '${{ github.event.release.name || tag }}';
+          const name = '${{ github.event.release.name }}' || tag;
           const body = '${{ github.event.release.body || "" }}';
+          const prerelease = ${{ toJson(github.event.release.prerelease) }};
           
           const response = await fetch(`${apiBase}/releases`, {
             method: 'POST',
@@ -42,7 +43,7 @@ jobs:
               name: name,
               description: body,
               draft: false,
-              prerelease: ${{ github.event.release.prerelease }}
+              prerelease: prerelease
             })
           });
           
