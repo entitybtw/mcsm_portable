@@ -6,10 +6,10 @@ local text
 local choosing = true
 if bf == "bow" then
     text = "Bow"
-    intraFont.print(25 + 15 + 5, 127, "Bow", Color.new(255,255,255), font, 0.4)
+    intraFont.print(45, 127, "Bow", Color.new(255,255,255), font, 0.4)
 elseif bf == "fishing_pole" then
     text = "Fishing Pole"
-    intraFont.print(25 + 15 + 5, 127, "Fishing Pole", Color.new(255,255,255), font, 0.4)
+    intraFont.print(45, 127, "Fishing Pole", Color.new(255,255,255), font, 0.4)
 else
     LUA.quit()
 end
@@ -22,9 +22,9 @@ end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
-intraFont.print(25 + 15 + 5, 127, text, Color.new(255,255,255), font, 0.4)
-intraFont.print(455 - 5 - intraFont.textW(font, "Sword", 0.4), 127, "Sword", Color.new(255,255,255), font, 0.4)
-intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+intraFont.print(45, 127, text, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, "Sword", 0.4), 127, "Sword", Color.new(255,255,255), font, 0.4)
+intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 while choosing do

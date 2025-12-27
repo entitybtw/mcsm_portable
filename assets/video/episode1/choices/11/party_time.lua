@@ -10,9 +10,9 @@ end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
-intraFont.print(25 + 15 + 5, 127, "I'm jesse", Color.new(255,255,255), font, 0.4)
-intraFont.print(455 - 5 - intraFont.textW(font, "Who are you?", 0.4), 127, "Who are you?", Color.new(255,255,255), font, 0.4)
-intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+intraFont.print(45, 127, "I'm jesse", Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, "Who are you?", 0.4), 127, "Who are you?", Color.new(255,255,255), font, 0.4)
+intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 

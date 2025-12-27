@@ -68,7 +68,7 @@ while in_interactive_zone do
     end
 
 
-    intraFont.print(345 - 5 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+    intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
     debugoverlay.draw(debugoverlay.loadSettings())
 
     screen.flip()
