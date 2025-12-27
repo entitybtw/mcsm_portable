@@ -1,176 +1,159 @@
 1
 00:00:00,000 --> 00:00:04,000
-Come on Axel, make yourself useful. Go find that skull.
+C'mon Axel -- make yourself useful and go find that skull.
 
 2
 00:00:04,000 --> 00:00:05,000
-I am.
+I am…
 
 3
-00:00:05,000 --> 00:00:08,607
-Nope, you're literally doing the exact opposite of what I
+00:00:05,000 --> 00:00:10,000
+Uh, nope. You're literally doing the exact opposite of what I just asked you to do.
 
 4
-00:00:08,607 --> 00:00:10,000
-just asked you to do.
-
-5
 00:00:10,000 --> 00:00:13,000
 There's no way he won't notice his fancy potion is missing.
 
-6
+5
 00:00:13,000 --> 00:00:16,000
 A good thief always covers his tracks.
 
-7
-00:00:17,000 --> 00:00:18,000
-Fixed it.
+6
+00:00:17,250 --> 00:00:18,500
+Fixed it!
 
-8
-00:00:18,000 --> 00:00:21,000
+7
+00:00:18,500 --> 00:00:21,000
 Oh yeah, the perfect crime.
 
+8
+00:00:25,250 --> 00:00:28,000
+Hey, Reuben. Find any clues?
+
 9
-00:00:25,000 --> 00:00:27,000
-Hey Reuben, find any clues?
+00:00:28,250 --> 00:00:30,800
+What it is, buddy? You smell something?
 
 10
-00:00:28,000 --> 00:00:30,000
-What is it buddy, you smell something?
+00:00:32,250 --> 00:00:35,800
+Something over there? Good work, Reuben!
 
 11
-00:00:32,000 --> 00:00:35,000
-Something over there? Good work Reuben.
+00:00:45,250 --> 00:00:47,000
+What the hell is all this stuff?
 
 12
-00:00:45,000 --> 00:00:47,000
-What is all this stuff?
+00:00:47,000 --> 00:00:50,800
+Soul Sand. It was everywhere in the Nether.
 
 13
-00:00:47,000 --> 00:00:50,000
-Soul sand. It was everywhere in the nether.
-
-14
-00:00:50,000 --> 00:00:52,000
+00:00:50,800 --> 00:00:52,250
 What about that block in the middle?
 
+14
+00:00:52,250 --> 00:00:54,000
+I've never seen one of these before…
+
 15
-00:00:52,000 --> 00:00:54,000
-I've never seen one of these before.
+00:00:54,000 --> 00:00:57,700
+I wonder if I just -- take a closer look…
 
 16
-00:00:54,000 --> 00:00:57,000
-I wonder if I just take a closer look.
+00:00:57,700 --> 00:00:59,000
+Don't touch it, Olivia!
 
 17
-00:00:57,000 --> 00:00:59,000
-Don't touch that Olivia.
-
-18
-00:00:59,000 --> 00:01:00,000
+00:00:59,000 --> 00:01:00,700
 I was just curious.
 
+18
+00:01:00,700 --> 00:01:03,850
+Don't forget what we're for -- find that skull.
+
 19
-00:01:00,000 --> 00:01:03,000
-Don't forget what we're here for. Find that skull.
+00:01:09,000 --> 00:01:13,000
+Sooooooo.... Good news, weird news.
 
 20
-00:01:09,000 --> 00:01:12,000
-So, good news, weird news.
-
-21
-00:01:12,000 --> 00:01:15,000
+00:01:13,000 --> 00:01:15,000
 I found the skull, but...
 
-22
-00:01:15,000 --> 00:01:17,602
-Why'd I risk my neck for that skull if he's got two of them
+21
+00:01:15,000 --> 00:01:18,000
+Why'd I risk my neck for that skull if he's got two of them already?
 
 23
-00:01:17,602 --> 00:01:18,000
-already?
+00:01:18,000 --> 00:01:22,000
+Maybe Ivor's some kind of collector, a trophy hunter.
 
 24
-00:01:18,000 --> 00:01:22,000
-Maybe Ivor is some kind of collector. A trophy hunter.
-
-25
 00:01:22,000 --> 00:01:25,000
 Or he could be collecting them to make a bunch of banners.
 
-26
+25
 00:01:25,000 --> 00:01:27,000
 I think I know what's going on here.
 
-27
+26
 00:01:27,000 --> 00:01:31,000
-Soul sand plus three wither skulls.
+Soul Sand, plus three Wither skulls…
+
+27
+00:01:31,000 --> 00:01:33,000
+That's the recipe for a Wither.
 
 28
-00:01:31,000 --> 00:01:33,000
-That's the recipe for a wither.
+00:01:33,000 --> 00:01:36,000
+But... A Wither... That's --
 
 29
-00:01:33,000 --> 00:01:36,000
-But, oh, wither? That's...
-
-30
 00:01:36,000 --> 00:01:38,000
 One of the worst monsters there is.
 
-31
+30
 00:01:38,000 --> 00:01:42,000
 We came down here to find the skull. Well, we found it.
 
+31
+00:01:42,000 --> 00:01:46,250
+Maybe we should just grab it, and get out of here -- while we still can.
+
 32
-00:01:42,000 --> 00:01:45,352
-Maybe we should just grab it and get out of here while we
+00:01:49,000 --> 00:01:50,000
+Uh, guys?
 
 33
-00:01:45,352 --> 00:01:46,000
-still can.
+00:01:50,000 --> 00:01:51,000
+Scatter!
 
 34
-00:01:49,000 --> 00:01:50,000
-Guys!
-
-35
-00:01:50,000 --> 00:01:51,000
-Scanner!
-
-36
-00:01:52,000 --> 00:01:53,000
-Scanner!
-
-37
-00:01:58,000 --> 00:02:00,000
+00:01:57,750 --> 00:02:00,000
 Don't you recognize me?
 
-38
+35
 00:02:00,000 --> 00:02:01,000
 Wait.
 
-39
+36
 00:02:01,000 --> 00:02:03,000
 Surprised to see me?
 
-40
+37
 00:02:03,000 --> 00:02:05,000
-No, that's not good.
+No, that's not good…
 
-41
+38
 00:02:05,000 --> 00:02:08,000
 Thought you were rid of me, didn't you?
 
-42
+39
 00:02:08,000 --> 00:02:10,000
 That's better.
 
-43
-00:02:22,000 --> 00:02:23,000
+40
+00:02:31,300 --> 00:02:32,950
 What was that?
 
-44
-00:02:23,000 --> 00:02:25,000
+41
+00:02:32,950 --> 00:02:33,850
 Who's there?
-
