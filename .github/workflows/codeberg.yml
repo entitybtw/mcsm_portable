@@ -29,7 +29,7 @@ jobs:
           const token = '${{ secrets.CODEBERG_TARGET_TOKEN }}';
           const tag = '${{ github.event.release.tag_name }}';
           const name = '${{ github.event.release.name }}' || tag;
-          const body = '${{ github.event.release.body || "" }}';
+          const body = '${{ github.event.release.body || '' }}';  # ← Фикс 1: '' вместо ""
           const prerelease = ${{ toJson(github.event.release.prerelease) }};
           
           const response = await fetch(`${apiBase}/releases`, {
