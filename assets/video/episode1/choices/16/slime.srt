@@ -3,58 +3,41 @@
 Hmm... I bet I could reach that glass with a slime block.
 
 2
-00:00:07,000 --> 00:00:11,000
+00:00:07,000 --> 00:00:11,500
 Well, you've come to the right place. Our slime's the best.
 
 3
-00:00:11,000 --> 00:00:20,000
-Oh, hey, we meet again. One slime block, please.
+00:00:13,500 --> 00:00:20,500
+Ohh...heeyyy...we meet again...hehe...he... One slime block, please
 
 4
-00:00:20,000 --> 00:00:24,000
+00:00:20,500 --> 00:00:24,500
 We don't give out slime blocks here. Just slime balls.
 
 5
-00:00:24,000 --> 00:00:27,064
-We've got a limited supply today, and we're only giving out
+00:00:24,500 --> 00:00:28,700
+We've got a limited supply today and we're only giving out 2 per customer.
 
 6
-00:00:27,064 --> 00:00:28,000
-two per customer.
-
-7
-00:00:28,000 --> 00:00:31,000
+00:00:28,000 --> 00:00:31,500
 Can I please, please have some slime?
 
-8
-00:00:31,000 --> 00:00:32,000
+7
+00:00:31,500 --> 00:00:33,000
 Ugh, whatever.
 
-9
-00:00:32,000 --> 00:00:35,000
+8
+00:00:33,000 --> 00:00:36,000
 A round of slime balls for everyone, please.
 
+9
+00:00:37,000 --> 00:00:41,000
+Wait, this is only eight slime balls, we need one more to make a block.
+
 10
-00:00:37,000 --> 00:00:40,211
-Wait, this is only eight slime balls. We need one more to
+00:00:41,000 --> 00:00:44,000
+Okay, we need to find another way to get some more slime, and quick.
 
 11
-00:00:40,211 --> 00:00:41,000
-make a block.
-
-12
-00:00:41,000 --> 00:00:43,514
-Okay, we need to find another way to get some more slime.
-
-13
-00:00:43,514 --> 00:00:44,000
-And quick.
-
-14
 00:00:44,000 --> 00:00:45,000
-On it.
-
-15
-00:00:58,000 --> 00:01:07,000
-Thanks for watching!
-
+On it!
