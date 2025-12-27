@@ -1,26 +1,17 @@
 name: CodebergSync
 
 on:
-  push:
-  delete:
-  release:
-    types: [published, created, edited, prereleased]
-  workflow_dispatch:
+  - push
+  - delete
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    name: Git Repo Sync
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-
-    - name: Force sync tags
-      run: |
-        git remote add gitlab "https://${{ secrets.CODEBERG_TARGET_USERNAME }}:${{ secrets.CODEBERG_TARGET_TOKEN }}@${{ secrets.CODEBERG_TARGET_URL#https://* }}"
-        git push gitlab --force --all --tags
-        git remote remove gitlab
-
     - uses: wangchucheng/git-repo-sync@v0.1.0
       with:
         target-url: ${{ secrets.CODEBERG_TARGET_URL }}
