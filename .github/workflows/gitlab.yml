@@ -1,19 +1,28 @@
 name: GitlabSync
-
 on:
-  - push
-  - delete
+  push:
+  delete:
+  release:
+    types: [published, edited, deleted]
 
 jobs:
-  sync:
+  sync-git:
     runs-on: ubuntu-latest
-    name: Git Repo Sync
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - uses: wangchucheng/git-repo-sync@v0.1.0
-      with:
-        target-url: ${{ secrets.TARGET_URL }}
-        target-username: ${{ secrets.TARGET_USERNAME }}
-        target-token: ${{ secrets.TARGET_TOKEN }}
+      - uses: actions/checkout@v2
+        with: {fetch-depth: 0}
+      - uses: wangchucheng/git-repo-sync@v0.1.0
+        with:
+          target-url: ${{ secrets.TARGET_URL }}
+          target-username: ${{ secrets.TARGET_USERNAME }}
+          target-token: ${{ secrets.TARGET_TOKEN }}
+
+  sync-releases:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release'
+    steps:
+      - name: Sync Release to GitLab/Codeberg
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const apiUrl = '${{ secrets.TARGET_API_URL }}';
