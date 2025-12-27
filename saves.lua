@@ -23,10 +23,7 @@ function SaveGame(episodeNumber)
 
         local variables = {
             reuben = reuben,
-            tall_grass = tall_grass,
             building = building,
-            pedestal = pedestal,
-            slime = slime,
             sword = sword,
         }
 
