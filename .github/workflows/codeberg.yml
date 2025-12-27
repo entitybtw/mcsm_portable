@@ -1,4 +1,4 @@
-name: GitlabSync
+name: CodebergSync
 on:
   push:
   delete:
@@ -9,20 +9,43 @@ jobs:
   sync-git:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with: {fetch-depth: 0}
-      - uses: wangchucheng/git-repo-sync@v0.1.0
-        with:
-          target-url: ${{ secrets.CODEBERG_TARGET_URL }}
-          target-username: ${{ secrets.CODEBERG_TARGET_USERNAME }}
-          target-token: ${{ secrets.CODEBERG_TARGET_TOKEN }}
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: wangchucheng/git-repo-sync@v0.1.0
+      with:
+        target-url: ${{ secrets.CODEBERG_TARGET_URL }}
+        target-username: ${{ secrets.CODEBERG_TARGET_USERNAME }}
+        target-token: ${{ secrets.CODEBERG_TARGET_TOKEN }}
 
   sync-releases:
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
     steps:
-      - name: Sync Release to GitLab/Codeberg
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const apiUrl = '${{ secrets.CODEBERG_TARGET_API_URL }}';
+    - uses: actions/github-script@v7
+      with:
+        script: |
+          const apiBase = '${{ secrets.CODEBERG_TARGET_API_URL }}';
+          const token = '${{ secrets.CODEBERG_TARGET_TOKEN }}';
+          const tag = '${{ github.event.release.tag_name }}';
+          const name = '${{ github.event.release.name || tag }}';
+          const body = '${{ github.event.release.body || "" }}';
+          
+          const response = await fetch(`${apiBase}/releases`, {
+            method: 'POST',
+            headers: {
+              'Authorization': `token ${token}`,
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              tag_name: tag,
+              name: name,
+              description: body,
+              draft: false,
+              prerelease: ${{ github.event.release.prerelease }}
+            })
+          });
+          
+          if (!response.ok) {
+            console.log(await response.text());
+          }
