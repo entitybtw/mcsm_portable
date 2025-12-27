@@ -1,52 +1,28 @@
-name: GitlabSync
+name: GitLabSync
+
 on:
   push:
   delete:
   release:
-    types: [published, edited, deleted]
+    types: [published, created, edited, prereleased]
+  workflow_dispatch:
 
 jobs:
-  sync-git:
+  sync:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
+
+    - name: Force sync tags
+      run: |
+        git remote add gitlab "https://${{ secrets.TARGET_USERNAME }}:${{ secrets.TARGET_TOKEN }}@${{ secrets.TARGET_URL#https://* }}"
+        git push gitlab --force --all --tags
+        git remote remove gitlab
+
     - uses: wangchucheng/git-repo-sync@v0.1.0
       with:
         target-url: ${{ secrets.TARGET_URL }}
         target-username: ${{ secrets.TARGET_USERNAME }}
         target-token: ${{ secrets.TARGET_TOKEN }}
-
-  sync-releases:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'release'
-    steps:
-    - uses: actions/github-script@v7
-      with:
-        script: |
-          const apiBase = '${{ secrets.TARGET_API_URL }}';
-          const token = '${{ secrets.TARGET_TOKEN }}';
-          const tag = '${{ github.event.release.tag_name }}';
-          const name = '${{ github.event.release.name }}' || tag;
-          const body = '${{ github.event.release.body || '' }}';  # ← Фикс: '' вместо ""
-          const prerelease = ${{ toJson(github.event.release.prerelease) }};
-          
-          const response = await fetch(`${apiBase}/releases`, {
-            method: 'POST',
-            headers: {
-              'Authorization': `token ${token}`,
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              tag_name: tag,
-              name: name,
-              description: body,
-              draft: false,
-              prerelease: prerelease
-            })
-          });
-          
-          if (!response.ok) {
-            console.log(await response.text());
-          }
