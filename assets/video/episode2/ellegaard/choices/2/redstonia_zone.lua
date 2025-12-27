@@ -33,7 +33,11 @@ local redstonia_bg = "redstonia"
 while in_interactive_zone do
     screen.clear()
 
-    if redstonia_bg == "redstonia" then Image.draw(bg, 0, 0) elseif redstonia_bg == "redstonia_fight" then Image.draw(bg_fight, 0, 0) end
+    if redstonia_bg == "redstonia" then 
+        Image.draw(bg, 0, 0) 
+    elseif redstonia_bg == "redstonia_fight" then 
+        Image.draw(bg_fight, 0, 0) 
+    end
 
     if not autofarm_used then
         Image.draw(cross, 125, 216)

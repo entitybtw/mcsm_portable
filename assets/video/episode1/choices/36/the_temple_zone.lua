@@ -32,7 +32,11 @@ local pedestal_used = false
 while in_interactive_zone do
     screen.clear()
 
-    if not pedestal_used then Image.draw(bg, 0, 0) elseif pedestal_used then Image.draw(bg_pedestal, 0, 0) end
+    if not pedestal_used then 
+        Image.draw(bg, 0, 0)
+    elseif pedestal_used then 
+        Image.draw(bg_pedestal, 0, 0)
+    end
 
     if not olivia_talk then
         Image.draw(triangle, 305, 157)
