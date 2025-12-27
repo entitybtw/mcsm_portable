@@ -44,10 +44,12 @@ while in_interactive_zone do
     if not pigs_used then
         Image.draw(triangle, 389, 193)
         intraFont.print(389 - intraFont.textW(font, "Pigs", 0.4) / 2 + 8, 193 + 14, "Pigs", Color.new(255,255,255), font, 0.4)
-    elseif not bush_used then
+    end
+    if not bush_used then
         Image.draw(square, 88, 63)
         intraFont.print(88 - intraFont.textW(font, "Bush", 0.4) / 2 + 8, 63 + 14, "Bush", Color.new(255,255,255), font, 0.4)
-    elseif not water_well_used then
+    end
+    if not water_well_used then
         Image.draw(circle, 95, 167)
         intraFont.print(95 - intraFont.textW(font, "Water Well", 0.4) / 2 + 8, 167 + 14, "Water Well", Color.new(255,255,255), font, 0.4)
     end

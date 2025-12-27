@@ -41,7 +41,7 @@ while in_interactive_zone do
 
     Image.draw(circle, 397, 166)
     if not strange_wall_used then
-        intraFont.print(397 - intraFont.textW(font, "Strange Wall", 0.4) / 2 + 8, 166 + 14, "Strange Wall", c_white, font, 0.4)
+        if mi == "milo" then intraFont.print(397 - intraFont.textW(font, "Strange Wall", 0.4) / 2 + 8, 166 + 14, "Strange Wall", c_white, font, 0.4) elseif mi == "ivor" then intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", c_white, font, 0.4) end
     else
         intraFont.print(397 - intraFont.textW(font, "Lever Slot", 0.4) / 2 + 8, 166 + 14, "Lever Slot", c_white, font, 0.4)
     end
@@ -77,7 +77,7 @@ while in_interactive_zone do
             end
         elseif buttons.pressed(buttons.circle) then
             if not strange_wall_used then
-                playCutscene("assets/video/episode5/choices/no_mi/1/strange_wall.pmp", "assets/video/episode5/choices/no_mi/1/strange_wall.srt")
+                if mi == "milo" then playCutscene("assets/video/episode5/choices/no_mi/1/strange_wall.pmp", "assets/video/episode5/choices/no_mi/1/strange_wall.srt") elseif mi == "ivor" then playCutscene("assets/video/episode5/choices/no_mi/1/supply_door.pmp", "assets/video/episode5/choices/no_mi/1/supply_door.srt") end
                 strange_wall_used = true
                 choosing = false
             elseif crafting_table_used then

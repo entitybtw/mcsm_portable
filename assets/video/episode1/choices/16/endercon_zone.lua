@@ -5,7 +5,7 @@ local choosing = true
 
 local c_white = Color.new(255, 255, 255)
 
-local bg = Image.load("assets/video/episode1/choices/6/the_woods_zone.png")
+local bg = Image.load("assets/video/episode1/choices/16/endercon_zone.png")
 
 local square = Image.load("assets/icons/square.png")
 local circle = Image.load("assets/icons/circle.png")
@@ -35,7 +35,8 @@ while in_interactive_zone do
     if not slime_used then
         Image.draw(circle, 141, 139)
         intraFont.print(141 - intraFont.textW(font, "Slime", 0.4) / 2 + 8, 139 + 14, "Slime", Color.new(255,255,255), font, 0.4)
-    elseif not chicken_machine_used then
+    end
+    if not chicken_machine_used then
         Image.draw(square, 221, 122)
         intraFont.print(221 - intraFont.textW(font, "Chicken Machine", 0.4) / 2 + 8, 122 + 14, "Chicken Machine", Color.new(255,255,255), font, 0.4)
     elseif chicken_machine_used then
@@ -46,7 +47,8 @@ while in_interactive_zone do
     if slime_used and not crafting_table_used then
         Image.draw(circle, 334, 153)
         intraFont.print(334 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 153 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
-    elseif slime_used then
+    end
+    if slime_used then
         Image.draw(cross, 141, 139)
         intraFont.print(141 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 139 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
     end
@@ -70,28 +72,28 @@ while in_interactive_zone do
             end
         elseif buttons.pressed(buttons.square) then
             if not chicken_machine_used then
-                playCutscene("assets/video/episode1/choices/6/chicken_machine.pmp", "assets/video/episode1/choices/6/chicken_machine.srt")
+                playCutscene("assets/video/episode1/choices/16/chicken_machine.pmp", "assets/video/episode1/choices/16/chicken_machine.srt")
                 chicken_machine_used = true
                 choosing = false
             elseif chicken_machine_used then
-                playCutscene("assets/video/episode1/choices/6/chicken_machine_2.pmp", "assets/video/episode1/choices/6/chicken_machine_2.srt")
+                playCutscene("assets/video/episode1/choices/16/chicken_machine_2.pmp", "assets/video/episode1/choices/16/chicken_machine_2.srt")
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not slime_used then
-                playCutscene("assets/video/episode1/choices/6/slime.pmp", "assets/video/episode1/choices/6/slime.srt")
+                playCutscene("assets/video/episode1/choices/16/slime.pmp", "assets/video/episode1/choices/16/slime.srt")
                 slime_used = true
                 choosing = false
             elseif slime_used and not crafting_table_used then
-                playCutscene("assets/video/episode1/choices/6/crafting_table.pmp", "assets/video/episode1/choices/6/crafting_table.srt")
+                playCutscene("assets/video/episode1/choices/16/crafting_table.pmp", "assets/video/episode1/choices/16/crafting_table.srt")
                 crafting_table_used = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.triangle) then
             if not pigs_used then
-                playCutscene("assets/video/episode1/choices/6/pigs.pmp", "assets/video/episode1/choices/6/pigs.srt")
+                playCutscene("assets/video/episode1/choices/16/pigs.pmp", "assets/video/episode1/choices/16/pigs.srt")
                 pigs_used = true
                 choosing = false
             end

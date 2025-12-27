@@ -3,7 +3,7 @@
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/15/that_was_endercon.pmp', buttons.r, true, 'assets/video/episode4/magnus_gabriel/choices/15/that_was_endercon.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
-    -- Go To Menu
+    nextscene = "./mainmenu.lua"
     return 1
 end
 nextscene = "assets/video/episode4/magnus_gabriel/choices/16/ivors_house.lua"

@@ -37,10 +37,12 @@ while in_interactive_zone do
     if not olivia_talk then
         Image.draw(triangle, 305, 157)
         intraFont.print(305 - intraFont.textW(font, "Olivia", 0.4) / 2 + 8, 157 + 14, "Olivia", Color.new(255,255,255), font, 0.4)
-    elseif not axel_talk then
+    end
+    if not axel_talk then
         Image.draw(square, 123, 161)
         intraFont.print(123 - intraFont.textW(font, "Axel", 0.4) / 2 + 8, 161 + 14, "Axel", Color.new(255,255,255), font, 0.4)
-    elseif not lukas_talk then
+    end
+    if not lukas_talk then
         Image.draw(circle, 174, 153)
         intraFont.print(174 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 153 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
     end

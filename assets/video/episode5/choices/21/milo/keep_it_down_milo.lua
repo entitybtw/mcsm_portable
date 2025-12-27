@@ -1,9 +1,3 @@
-local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
-local cross = Image.load("assets/icons/cross.png")
-local triangle = Image.load("assets/icons/triangle.png")
-
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode5/choices/21/milo/keep_it_down_milo.pmp', buttons.r, true, 'assets/video/episode5/choices/21/milo/keep_it_down_milo.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
