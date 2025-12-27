@@ -23,6 +23,10 @@ The original game and Netflix version are no longer available, but it’s still 
   <img src="https://hapka.lol/VmhbG" width="45%" />
 </p>
 
+## 🪞 repo mirrors
+- codeberg -> https://codeberg.org/entitybtw/mcsm_portable
+- gitlab -> https://gitlab.com/entitybtw-group/mcsm_portable
+
 ## 👏 thanks to
 
 - **pox1016**: For adapting Minecraft Story Mode Netflix Interactive to YouTube.
