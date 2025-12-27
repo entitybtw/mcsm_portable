@@ -1,7 +1,5 @@
 checkFile("assets/saves/gp.txt", "gp")
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode2/magnus/choices/7/pink_wool/1/youre_going_down.pmp', buttons.r, true, 'assets/video/episode2/magnus/choices/7/pink_wool/1/youre_going_down.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -20,8 +18,6 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-Image.unload(square)
-Image.unload(circle)
         choosing = false
         if gp == "gabriel" then
             nextscene =  "assets/video/episode2/magnus/choices/7/pink_wool/2/hello_boom_town.lua"
@@ -29,8 +25,6 @@ Image.unload(circle)
             nextscene = "assets/video/episode2/magnus_petra/pink_wool/hello_boom_town.lua"
         end
     elseif buttons.pressed(buttons.circle) then
-Image.unload(square)
-Image.unload(circle)
         choosing = false
         if gp == "gabriel" then
             nextscene =  "assets/video/episode2/magnus/choices/7/pink_wool/2/who_likes_explosions.lua"
@@ -38,8 +32,6 @@ Image.unload(circle)
             nextscene = "assets/video/episode2/magnus_petra/pink_wool/who_likes_explosions.lua"
         end
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

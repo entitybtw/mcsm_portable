@@ -1,9 +1,5 @@
 local choosing = true
 tall_grass = "off"
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
-local triangle = Image.load("assets/icons/triangle.png")
-local cross = Image.load("assets/icons/cross.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode1/choices/3/creeper/4/5/warrior_whip.pmp', buttons.r, true, 'assets/video/episode1/choices/3/creeper/4/5/warrior_whip.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -26,44 +22,22 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-	Image.unload(cross)
-	Image.unload(triangle)
-	Image.unload(square)
-	Image.unload(circle)
 	choosing = false
         nextscene =  "assets/video/episode1/choices/6/bush.lua"
     elseif buttons.pressed(buttons.circle) then
-	Image.unload(cross)
-	Image.unload(triangle)
-	Image.unload(square)
-	Image.unload(circle)
 	choosing = false
         nextscene =  "assets/video/episode1/choices/6/water_well.lua"
     elseif buttons.pressed(buttons.cross) then
-	Image.unload(cross)
-	Image.unload(triangle)
-	Image.unload(square)
-	Image.unload(circle)
 	choosing = false
         nextscene =  "assets/video/episode1/choices/6/smoke_trail.lua"
     elseif buttons.pressed(buttons.triangle) then
-	Image.unload(cross)
-	Image.unload(triangle)
-	Image.unload(square)
-	Image.unload(circle)
 	choosing = false
         nextscene =  "assets/video/episode1/choices/6/pigs.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(cross)
-	Image.unload(triangle)
-	Image.unload(square)
-	Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
-        Image.unload(cross)
-	Image.unload(triangle)
 choosing = false
         SaveGame(1)
     end

@@ -9,9 +9,6 @@ local bg = Image.load("assets/video/episode3/gabriel/choices/8/woolland.png")
 local bg_levergabriel = Image.load("assets/video/episode3/gabriel/choices/8/woolland_levergabriel.png")
 
 
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
-local cross = Image.load("assets/icons/cross.png")
 
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
@@ -119,8 +116,5 @@ while in_interactive_zone do
     end
 end
 
-Image.unload(square)
-Image.unload(circle)
-Image.unload(cross)
 Image.unload(bg)
 Image.unload(bg_levergabriel)

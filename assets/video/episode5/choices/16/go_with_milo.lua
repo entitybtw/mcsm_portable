@@ -1,6 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 mi = "milo"
 
 PMP.setVolume(pmpvolume)
@@ -22,18 +20,12 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode5/choices/17/milo/yeah_sure_whatever.lua"
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode5/choices/17/milo/your_secrets_safe_with_me.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

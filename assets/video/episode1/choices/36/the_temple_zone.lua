@@ -8,10 +8,6 @@ local c_white = Color.new(255, 255, 255)
 local bg = Image.load("assets/video/episode1/choices/36/the_temple_zone.png")
 local bg_pedestal = Image.load("assets/video/episode1/choices/36/the_temple_zone_pedestal.png")
 
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
-local cross = Image.load("assets/icons/cross.png")
-local triangle = Image.load("assets/icons/triangle.png")
 
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
@@ -115,9 +111,5 @@ while in_interactive_zone do
     end
 end
 
-Image.unload(square)
-Image.unload(circle)
-Image.unload(triangle)
-Image.unload(cross)
 Image.unload(bg)
 Image.unload(bg_pedestal)

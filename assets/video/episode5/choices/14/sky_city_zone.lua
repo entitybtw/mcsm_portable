@@ -9,10 +9,6 @@ local bg_1 = Image.load("assets/video/episode5/choices/14/sky_city_exploration_1
 local bg_2 = Image.load("assets/video/episode5/choices/14/sky_city_exploration_2.png")
 local bg_3 = Image.load("assets/video/episode5/choices/14/sky_city_exploration_3.png")
 
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
-local cross = Image.load("assets/icons/cross.png")
-local triangle = Image.load("assets/icons/triangle.png")
 
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
@@ -122,10 +118,6 @@ while in_interactive_zone do
     end
 end
 
-Image.unload(square)
-Image.unload(circle)
-Image.unload(triangle)
-Image.unload(cross)
 Image.unload(bg_1)
 Image.unload(bg_2)
 Image.unload(bg_3)

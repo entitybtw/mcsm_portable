@@ -1,4 +1,3 @@
-local circle = Image.load("assets/icons/circle.png")
 local bg = Image.load("assets/mainmenu/pause_bg.png")
 
 local btn_static = Image.load("assets/buttons/static.png")
@@ -136,7 +135,6 @@ while true do
         unloadButtons()
         saveSystemInfo()
         Image.unload(bg)
-        Image.unload(circle)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break

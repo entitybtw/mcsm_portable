@@ -1,7 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local cross = Image.load("assets/icons/cross.png")
-local triangle = Image.load("assets/icons/triangle.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode3/petra/choices/16/axel.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/axel.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -22,32 +19,19 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(cross)
-        Image.unload(triangle)
         choosing = false
         nextscene =  "assets/video/episode3/petra/choices/16/button_noaxel.lua"
     elseif buttons.pressed(buttons.cross) then
-        Image.unload(square)
-        Image.unload(cross)
-        Image.unload(triangle)
         choosing = false
         nextscene =  "assets/video/episode3/petra/choices/16/lukas_noaxel.lua"
     elseif buttons.pressed(buttons.triangle) then
-        Image.unload(square)
-        Image.unload(cross)
-        Image.unload(triangle)
         choosing = false
         nextscene =  "assets/video/episode3/petra/choices/16/olivia_noaxel.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(square)
-        Image.unload(cross)
-        Image.unload(triangle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end
     elseif buttons.pressed(buttons.r) then
-        Image.unload(square)
 choosing = false
         SaveGame(3)
     end

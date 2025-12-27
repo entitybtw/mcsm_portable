@@ -1,6 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode1/choices/17/we_get_payback' .. sword .. '.pmp', buttons.r, true, 'assets/video/episode1/choices/17/we_get_payback' .. sword .. '.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
@@ -19,18 +17,12 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-Image.unload(square)
-Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode1/choices/18/its_all_yours.lua"
     elseif buttons.pressed(buttons.circle) then
-Image.unload(square)
-Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode1/choices/18/leave_it_alone.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

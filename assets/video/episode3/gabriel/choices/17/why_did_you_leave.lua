@@ -1,6 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode3/gabriel/choices/17/why_did_you_leave.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/17/why_did_you_leave.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
@@ -19,20 +17,14 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-Image.unload(square)
-Image.unload(circle)
         wr("ema", "magnus")
         choosing = false
         nextscene =  "assets/video/episode3/gabriel/choices/18/take_magnus_armor.lua"
     elseif buttons.pressed(buttons.circle) then
-Image.unload(square)
-Image.unload(circle)
         wr("ema", "ellegaard")
         choosing = false
         nextscene =  "assets/video/episode3/gabriel/choices/18/take_ellegaards_armor.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

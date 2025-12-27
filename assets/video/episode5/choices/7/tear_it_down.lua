@@ -1,6 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode5/choices/7/tear_it_down.pmp', buttons.r, true, 'assets/video/episode5/choices/7/tear_it_down.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -21,18 +19,12 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode5/choices/8/i_still_feel_guilty.lua"
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode5/choices/8/i_really_miss_him.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

@@ -23,8 +23,6 @@ end
     return 1
 end
 
-local square = Image.load('assets/icons/square.png')
-local circle = Image.load('assets/icons/circle.png')
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/mainmenu/lsave.pmp')
 if result == 1 then
@@ -71,18 +69,12 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(circle)
         nextscene =  "assets/video/episode1/100_chicken_sized.lua"
         choosing = false
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(square)
-        Image.unload(circle)
         nextscene =  "assets/video/episode1/10_zombie_sized.lua"
         choosing = false
     elseif buttons.pressed(buttons.start) then
-        Image.unload(square)
-        Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

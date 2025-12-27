@@ -1,5 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode3/petra/choices/16/olivia_button.pmp', buttons.r, true, 'assets/video/episode3/petra/choices/16/olivia_button.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -16,11 +15,9 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
         choosing = false
         nextscene =  "assets/video/episode3/petra/choices/16/chest.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(square)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

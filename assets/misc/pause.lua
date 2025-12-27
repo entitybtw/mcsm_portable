@@ -1,5 +1,4 @@
 local bg = Image.load("assets/mainmenu/pause_bg.png")
-local circle = Image.load("assets/icons/circle.png")
 sound.playEasy("assets/sounds/pause_bg.wav", sound.WAV_2, true, false)
 sound.volumeEasy(sound.WAV_2, menumusic * 10)
 local fade = 255
@@ -89,7 +88,6 @@ while true do
         sound.stop(sound.WAV_2)
         unloadButtons()
         Image.unload(bg)
-        Image.unload(circle)
         break
     end
     if buttons.pressed(buttons.cross) then    
@@ -100,7 +98,6 @@ while true do
             PMP.pause()
             unloadButtons()
             sound.stop(sound.WAV_2)
-            Image.unload(circle)
             Image.unload(bg)
             break
         elseif selectedButton == 2 then
@@ -114,7 +111,6 @@ while true do
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             sound.stop(sound.WAV_2)
             Image.unload(bg)
-            Image.unload(circle)
             unloadButtons()
             return -1
         elseif selectedButton == 4 then

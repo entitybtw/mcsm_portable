@@ -46,7 +46,6 @@ local hints = {
 }
 
 local bg = Image.load("assets/mainmenu/pause_bg.png")
-local circle = Image.load("assets/icons/circle.png")
 local sliderBg = Image.load("assets/mainmenu/settings/slider_bg.png")
 local sliderStatic   = Image.load("assets/mainmenu/settings/slider_static.png")
 local sliderSelected = Image.load("assets/mainmenu/settings/slider_selected.png")
@@ -232,7 +231,6 @@ while true do
         saveLevels("assets/saves/soundlevels.txt", levelsToSave)
         saveSubtitles()
 
-        Image.unload(circle)
 
         Image.unload(bg)
         Image.unload(btn_static)

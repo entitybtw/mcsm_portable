@@ -1,6 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/6/let_it_chase_us.pmp', buttons.r, true, 'assets/video/episode4/ellegaard_gabriel/choices/6/let_it_chase_us.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
@@ -19,18 +17,12 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode4/ellegaard_gabriel/choices/7/warrior_whip.lua"
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode4/ellegaard_gabriel/choices/7/redstone_rap.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(square)
-        Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

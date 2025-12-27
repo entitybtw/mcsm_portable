@@ -7,7 +7,6 @@ local cos = math.cos
 local stat = sound.state(sound.MP3)
 local logo = Image.load('assets/mainmenu/logo.png')
 local arrow = Image.load('assets/mainmenu/arrow.png')
-local cross = Image.load('assets/icons/cross.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
@@ -167,7 +166,6 @@ while true do
             if epmenu == 1 then
                 Image.unload(logo)
                 Image.unload(arrow)
-                Image.unload(cross)
                 Image.unload(welcome)
                 unloadButtons()
                 break

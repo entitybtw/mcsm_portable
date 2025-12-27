@@ -1,7 +1,5 @@
 local choosing = true
 reuben = "reuben"
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r, true, 'assets/video/episode1/choices/6/tall_grass.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
@@ -21,22 +19,16 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-Image.unload(square)
-Image.unload(circle)
 	choosing = false
     tall_grass = nil
 	reuben = "noreuben"
         nextscene =  "assets/video/episode1/choices/7/run_i_distract_them.lua"
     elseif buttons.pressed(buttons.circle) then
-Image.unload(square)
-Image.unload(circle)
 	choosing = false
 	reuben = "reuben"
     tall_grass = nil
         nextscene =  "assets/video/episode1/choices/7/stay_close_i_protect_you.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

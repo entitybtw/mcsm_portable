@@ -1,6 +1,4 @@
 checkFile("assets/saves/bf.txt", "bf")
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 local text
 
 local choosing = true
@@ -31,8 +29,6 @@ while choosing do
     buttons.read()
 
     if buttons.pressed(buttons.square) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         if bf == "bow" then
             nextscene = "assets/video/episode2/magnus/bow.lua"
@@ -40,13 +36,9 @@ while choosing do
             nextscene = "assets/video/episode2/magnus/fishing_pole.lua"
         end
     elseif buttons.pressed(buttons.circle) then
-        Image.unload(square)
-        Image.unload(circle)
         choosing = false
         nextscene = "assets/video/episode2/magnus/sword.lua"
     elseif buttons.pressed(buttons.start) then
-        Image.unload(square)
-        Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end

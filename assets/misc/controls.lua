@@ -1,5 +1,4 @@
 local img = Image.load("assets/mainmenu/controls/psp.png")
-local circle = Image.load("assets/icons/circle.png")
 local imgfade = 0
 local creditfade = 0
 local rectfade = 0
@@ -37,7 +36,6 @@ while true do
 
     if buttons.pressed(buttons.circle) then
         Image.unload(img)
-        Image.unload(circle)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break

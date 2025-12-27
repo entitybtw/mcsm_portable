@@ -11,7 +11,6 @@ local buttonsList = {
 }
 
 local selectedButton = 1
-local circle = Image.load("assets/icons/circle.png")
 
 local function drawButtons()
     local startX = 35
@@ -132,7 +131,6 @@ while true do
     if buttons.pressed(buttons.circle) then
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         unloadButtons()
-        Image.unload(circle)
         break
     end
 

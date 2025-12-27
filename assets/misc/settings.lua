@@ -2,8 +2,6 @@
 
 
 local selectedButton = 1
-local circle = Image.load("assets/icons/circle.png")
-local cross = Image.load("assets/icons/cross.png")
 
 local btn_static = Image.load("assets/buttons/static.png")
 local btn_selected = Image.load("assets/buttons/selected.png")
@@ -97,8 +95,6 @@ while true do
     if buttons.pressed(buttons.circle) then    
        sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
        unloadButtons()
-       Image.unload(circle)
-       Image.unload(cross)
        break
     end
 

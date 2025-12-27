@@ -1,5 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
 
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode3/gabriel/choices/16/button.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/16/button.srt', font, subssize, "#FFFFFF", "#000000/150", subs)

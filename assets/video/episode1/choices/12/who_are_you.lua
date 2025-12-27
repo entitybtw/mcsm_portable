@@ -1,6 +1,4 @@
 local choosing = true
-local square = Image.load("assets/icons/square.png")
-local circle = Image.load("assets/icons/circle.png")
 PMP.setVolume(pmpvolume)
 local result = PMP.playEasy('assets/video/episode1/choices/12/who_are_you_' .. reuben .. '.pmp', buttons.r)
 if result == 1 then
@@ -19,18 +17,12 @@ screen.flip()
 while choosing do
     buttons.read()
     if buttons.pressed(buttons.square) then
-Image.unload(square)
-Image.unload(circle)
         choosing = false
         nextscene =  "assets/video/episode1/choices/13/got_a_bad_feeling.lua"
     elseif buttons.pressed(buttons.circle) then
-Image.unload(square)
-Image.unload(circle)
         choosing = false
         nextscene =  "assets/video/episode1/choices/13/im_cool_if_he_is.lua"
     elseif buttons.pressed(buttons.start) then
-Image.unload(square)
-Image.unload(circle)
 choosing = false
 local pause = dofile("assets/misc/pause.lua")
 if pause == -1 then nextscene = "./mainmenu.lua" end
