@@ -45,14 +45,14 @@ while in_interactive_zone do
     if not petra_talk then
         Image.draw(square, 394, 224)
         intraFont.print(394 - intraFont.textW(font, "Petra", 0.4) / 2 + 8, 224 + 14, "Petra", Color.new(255,255,255), font, 0.4)
-    elseif petra_talk then
+    elseif petra_talk and not leverpetra_used then
         Image.draw(square, 394, 224)
         intraFont.print(394 - intraFont.textW(font, "Lever (Petra)", 0.4) / 2 + 8, 224 + 14, "Lever (Petra)", Color.new(255,255,255), font, 0.4)
     end
     if not reuben_talk then
         Image.draw(circle, 305, 135)
         intraFont.print(305 - intraFont.textW(font, "Reuben", 0.4) / 2 + 8, 135 + 14, "Reuben", Color.new(255,255,255), font, 0.4)
-    elseif reuben_talk then
+    elseif reuben_talk and not leverreuben_used then
         Image.draw(circle, 305, 135)
         intraFont.print(305 - intraFont.textW(font, "Lever (Reuben)", 0.4) / 2 + 8, 135 + 14, "Lever (Reuben)", Color.new(255,255,255), font, 0.4)
     end
@@ -84,7 +84,7 @@ while in_interactive_zone do
                 playCutscene("assets/video/episode3/petra/choices/8/petra.pmp", "assets/video/episode3/petra/choices/8/petra.srt")
                 petra_talk = true
                 choosing = false
-            elseif petra_talk then
+            elseif petra_talk and not leverpetra_used then
                 playCutscene("assets/video/episode3/petra/choices/8/leverpetra.pmp", "assets/video/episode3/petra/choices/8/leverpetra.srt")
                 leverpetra_used = true
                 choosing = false
@@ -95,7 +95,7 @@ while in_interactive_zone do
                 playCutscene("assets/video/episode3/petra/choices/8/reuben.pmp", "assets/video/episode3/petra/choices/8/reuben.srt")
                 reuben_talk = true
                 choosing = false
-            elseif reuben_talk then
+            elseif reuben_talk and not leverreuben_used then
                 playCutscene("assets/video/episode3/petra/choices/8/leverreuben.pmp", "assets/video/episode3/petra/choices/8/leverreuben.srt")
                 leverreuben_used = true
                 choosing = false
