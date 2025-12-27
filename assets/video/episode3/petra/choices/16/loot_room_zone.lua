@@ -73,9 +73,9 @@ while in_interactive_zone do
         if buttons.pressed(buttons.square) then
             if not button_used then
                 playCutscene("assets/video/episode3/petra/choices/16/button.pmp", "assets/video/episode3/petra/choices/16/button.srt")
-                smoke_trail_used = true
+                button_used = true
                 choosing = false
-            elseif smoke_trail_used then
+            elseif button_used then
                 nextscene = "assets/video/episode3/petra/choices/16/chest.lua"
                 in_interactive_zone = false
                 choosing = false
