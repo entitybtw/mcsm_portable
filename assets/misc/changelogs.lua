@@ -246,7 +246,7 @@ Changed
 - Fixed episode 1 subtitles (Thanks to NoHleb)
 - Refactored all menus buttons
 - Refactored all interactive zones (Thanks to dntrnk)
-- New 'Changelogs' tab apparence
+- New 'Changelogs' tab appearance
 
 Removed
 - Removed icons(triangle, square, circle, cross) loading/unloading from choices, interactive zones, menus. Replaced by loading icons at start
