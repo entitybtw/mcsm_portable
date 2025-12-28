@@ -231,7 +231,41 @@ tyom4style for helping with pause-menu background
 @dntrnk for helping fixing subtitles a bit for episode one
 ]]
 
+local changelog_1_7 = [[
+mcsm_portable 1.7 [release]
+
+Added
+- Episode 5
+- Repo Mirrors (codeberg, gitlab)
+- SimpleLocalize page (redirect.entitybtw.ru/localize)
+
+Fixed
+- Useless calculations from choice-texts drawing, replaced by number
+
+Changed
+- Fixed episode 1 subtitles (Thanks to NoHleb)
+- Refactored all menus buttons
+- Refactored all interactive zones (Thanks to dntrnk)
+- New 'Changelogs' tab apparence
+
+Removed
+- Removed icons(triangle, square, circle, cross) loading/unloading from choices, interactive zones, menus. Replaced by loading icons at start
+
+repo mirrors
+- codeberg -> https://codeberg.org/entitybtw/mcsm_portable
+- gitlab -> https://gitlab.com/entitybtw-group/mcsm_portable
+
+Note
+> Subtitles may be unsynchronized or contain mistakes; if you can, please help with fixing the subtitles.
+
+Thanks to
+@NoHleb for fixing episode 1 subtitles
+@dntrnk for helping optimizing port, refactoring interactive zones
+]]
+
+
 local combined_changelog =
+    changelog_1_7 .. sep ..
     changelog_1_6 .. sep ..
     changelog_1_5 .. sep ..
     changelog_1_4 .. sep ..
