@@ -1,12 +1,8 @@
 name: CodebergSync
 
 on:
-  push:
-  delete:
-  workflow_dispatch:
-  release:
-    types: [published]
-
+  - push
+  - delete
 
 jobs:
   sync:
@@ -16,10 +12,8 @@ jobs:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - uses: entitybtw/git-repo-sync@0.1.1
+    - uses: wangchucheng/git-repo-sync@v0.1.0
       with:
         target-url: ${{ secrets.CODEBERG_TARGET_URL }}
         target-username: ${{ secrets.CODEBERG_TARGET_USERNAME }}
         target-token: ${{ secrets.CODEBERG_TARGET_TOKEN }}
-      env:
-        GH_TOKEN: ${{ github.token }}
