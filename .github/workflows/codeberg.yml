@@ -1,0 +1,19 @@
+name: CodebergSync
+
+on:
+  - push
+  - delete
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    name: Git Repo Sync [codeberg]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: wangchucheng/git-repo-sync@v0.1.0
+      with:
+        target-url: ${{ secrets.CODEBERG_TARGET_URL }}
+        target-username: ${{ secrets.CODEBERG_TARGET_USERNAME }}
+        target-token: ${{ secrets.CODEBERG_TARGET_TOKEN }}
