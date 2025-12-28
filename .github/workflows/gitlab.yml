@@ -1,8 +1,12 @@
 name: GitlabSync
 
 on:
-  - push
-  - delete
+  push:
+  delete:
+  workflow_dispatch:
+  release:
+    types: [published]
+
 
 jobs:
   sync:
