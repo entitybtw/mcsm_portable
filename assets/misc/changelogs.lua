@@ -1,8 +1,9 @@
-local psbg = Image.load("assets/mainmenu/pause_bg.png")
 local scrollY = 0
-local scrollSpeed = 10
-local scrollDelay = 0
-local scrollCooldown = 2
+local scrollTarget = 0
+local scrollSpeed = 12
+local smooth = 0.2
+
+
 
 local function printCenteredLine(y, line, scale)
     local textWidth = intraFont.textW(font, line, scale)
@@ -41,7 +42,7 @@ Currently not done:
 ]]
 
 local changelog_0_5 = [[
-mcsm_portable 0.5 [release]
+mcsm_portable 0.3 [release]
 
 updated readme
 ]]
@@ -53,13 +54,13 @@ updated readme, delete assets/saves/1_save.txt
 ]]
 
 local changelog_0_7 = [[
-mcsm_portable 0.7 [release]
+mcsm_portable 0.3 [release]
 
 create assets/saves/123.txt
 ]]
 
 local changelog_0_8 = [[
-mcsm_portable 0.8 [prerelease]
+mcsm_portable 0.6 [prerelease]
 
 - now episode menu is taken from ps4 mcsm version
 - added saves menu
@@ -189,6 +190,7 @@ Thanks to
 @antim0118 for helping optimize the chicken machine button in 'endercon' 
 interactive zone
 ]]
+
 local changelog_1_6 = [[
 mcsm_portable 1.6 [release]
 
@@ -227,37 +229,40 @@ Thanks to
 tyom4style for helping with pause-menu background
 @akrgood for helping fixing subtitles a bit for episode three
 @dntrnk for helping fixing subtitles a bit for episode one
-
-
-
 ]]
 
-local combined_changelog = 
-    changelog_1_6 .. sep .. 
-    changelog_1_5 .. sep .. 
+local combined_changelog =
+    changelog_1_6 .. sep ..
+    changelog_1_5 .. sep ..
     changelog_1_4 .. sep ..
     changelog_1_3 .. sep ..
     changelog_1_2 .. sep ..
     changelog_1_1 .. sep ..
-    changelog_1   .. sep ..
+    changelog_1 .. sep ..
     changelog_0_8 .. sep ..
     changelog_0_7 .. sep ..
     changelog_0_6 .. sep ..
     changelog_0_5 .. sep ..
     changelog_0_2 .. sep ..
-    changelog_0_1 
+    changelog_0_1
 
 local colors = {
-    Added = Color.new(150, 220, 150),
-    Changed = Color.new(220, 220, 150),
-    Fixed = Color.new(150, 190, 220),
-    Removed = Color.new(220, 150, 150),
-    DefaultBullet = Color.new(180, 200, 255),
-    Numbered = Color.new(220, 220, 220),
-    Header = Color.new(255, 255, 100),
-    DefaultText = Color.new(255, 255, 255),
-    Thanks = Color.new(100, 180, 160)
+    Header = Color.new(245, 245, 245),
+
+    Added = Color.new(210, 210, 210),
+    Changed = Color.new(200, 200, 200),
+    Fixed = Color.new(190, 190, 190),
+    Removed = Color.new(180, 180, 180),
+
+    DefaultBullet = Color.new(205, 205, 205),
+    Numbered = Color.new(215, 215, 215),
+
+    DefaultText = Color.new(225, 225, 225),
+    Thanks = Color.new(195, 195, 195)
 }
+
+
+
 
 local lines = {}
 for line in combined_changelog:gmatch("[^\r\n]+") do
@@ -276,39 +281,33 @@ local function getLineHeight(line)
     end
 end
 
+local totalHeight = 0
+for _, line in ipairs(lines) do
+    totalHeight = totalHeight + getLineHeight(line)
+end
+local maxScroll = math.max(0, totalHeight - 250)
+
 while true do
     buttons.read()
 
     if buttons.held(buttons.up) then
-        scrollDelay = scrollDelay + 1
-        if scrollDelay >= scrollCooldown then
-            scrollY = math.max(0, scrollY - scrollSpeed)
-            scrollDelay = 0
-        end
+        scrollTarget = scrollTarget - scrollSpeed
     elseif buttons.held(buttons.down) then
-        scrollDelay = scrollDelay + 1
-        if scrollDelay >= scrollCooldown then
-            local totalHeight = 0
-            for _, line in ipairs(lines) do
-                totalHeight = totalHeight + getLineHeight(line)
-            end
-            local maxScroll = math.max(0, totalHeight - 250)
-            scrollY = math.min(maxScroll, scrollY + scrollSpeed)
-            scrollDelay = 0
-        end
-    else
-        scrollDelay = 0
+        scrollTarget = scrollTarget + scrollSpeed
     end
 
+    if scrollTarget < 0 then scrollTarget = 0 end
+    if scrollTarget > maxScroll then scrollTarget = maxScroll end
+
+    scrollY = scrollY + (scrollTarget - scrollY) * smooth
+
     if buttons.pressed(buttons.start) then
-        Image.unload(psbg)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break
     end
 
     screen.clear()
-    Image.draw(psbg, 0, 0)
 
     local exitText = "Press START to exit"
     local exitScale = 0.3
@@ -316,7 +315,7 @@ while true do
     local exitY = 275 - exitHeight
 
     local y = -scrollY
-    for i, line in ipairs(lines) do
+    for _, line in ipairs(lines) do
         local h = getLineHeight(line)
         if y + h > 0 and y < exitY - 10 then
             if line:find("^mcsm_portable") then
@@ -325,8 +324,6 @@ while true do
                 intraFont.printShadowed(x, y, line, colors.Header, Color.new(0, 0, 0), font, 90, 1, scale, 0)
             elseif line:find("^%-+$") then
                 printCenteredLine(y, line, 0.3)
-            elseif line == "" then
-                -- пусто
             elseif line:find("^Added") then
                 intraFont.printShadowed(30, y, line, colors.Added, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
             elseif line:find("^Changed") then
@@ -338,7 +335,7 @@ while true do
             elseif line:find("^Thanks to") then
                 intraFont.printShadowed(30, y, line, colors.Thanks, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
             elseif line:find("^%-") then
-                intraFont.printShadowed(30, y, line, colors.DefaultBullet, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+                intraFont.printShadowed(30, y, line, colors.DefaultBullet, Color.new(0, 0, 0), font, 90, 1,0.3, 0)
             elseif line:match("^%d+%.") then
                 intraFont.printShadowed(30, y, line, colors.Numbered, Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
             else
@@ -349,7 +346,7 @@ while true do
         if y > exitY - 10 then break end
     end
 
-    intraFont.printShadowed(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(140, 160, 180), Color.new(0, 0, 0), font, 90, 1, exitScale, 0)
+    intraFont.printShadowed(240 - intraFont.textW(font, exitText, exitScale) / 2, exitY, exitText, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, exitScale, 0)
 
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
