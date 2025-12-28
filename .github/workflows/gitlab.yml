@@ -3,8 +3,6 @@ name: GitlabSync
 on:
   - push
   - delete
-  release:
-    types: [published]
 
 jobs:
   sync:
