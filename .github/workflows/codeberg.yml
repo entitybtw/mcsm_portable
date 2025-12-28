@@ -17,4 +17,5 @@ jobs:
         target-url: ${{ secrets.CODEBERG_TARGET_URL }}
         target-username: ${{ secrets.CODEBERG_TARGET_USERNAME }}
         target-token: ${{ secrets.CODEBERG_TARGET_TOKEN }}
-        gh-token: ${{ github.token }}
+      env:
+        GH_TOKEN: ${{ github.token }}
