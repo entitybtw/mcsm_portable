@@ -3,134 +3,105 @@
 He's lost control of it!
 
 2
-00:00:02,000 --> 00:00:05,000
-Oh, no need to be alarmed, my friends.
+00:00:02,000 --> 00:00:07,400
+No need to be alarmed, my friends. I have an elixir that will destroy this creature.
 
 3
-00:00:05,000 --> 00:00:07,000
-I have an elixir that will destroy this creature.
+00:00:07,400 --> 00:00:09,000
+That potion -- is that...?
 
 4
-00:00:07,000 --> 00:00:09,000
-That potion, is that?
+00:00:11,000 --> 00:00:13,000
+Uh-oh...
 
 5
-00:00:11,000 --> 00:00:13,000
-Uh-oh.
+00:00:16,000 --> 00:00:18,000
+Uh, what?
 
 6
-00:00:16,000 --> 00:00:18,000
-What?
+00:00:19,000 --> 00:00:22,400
+It should have worked -- I took such care!
 
 7
-00:00:19,000 --> 00:00:22,000
-It should work. I took such care.
+00:00:23,000 --> 00:00:26,000
+Axel! You've got to throw the real potion!
 
 8
-00:00:23,000 --> 00:00:26,000
-Axel, you've got to throw the real potion.
+00:00:26,000 --> 00:00:27,400
+But -- finders, keepers!
 
 9
-00:00:26,000 --> 00:00:27,000
-But finders keepers.
+00:00:27,400 --> 00:00:29,500
+You thieves! You're ruining everything!
 
 10
-00:00:27,000 --> 00:00:29,000
-You thieves, you're ruining everything!
-
-11
-00:00:29,000 --> 00:00:31,000
+00:00:29,500 --> 00:00:31,000
 Axel, come on!
 
-12
+11
 00:00:32,000 --> 00:00:34,000
-Jesse, throw it!
+Jesse -- throw it!
 
-13
+12
 00:00:38,000 --> 00:00:40,000
 It's protecting itself!
 
-14
+13
 00:00:40,000 --> 00:00:44,000
-Now the command block exposed, the potion is useless!
+Without the command block exposed... The potion is useless!
+
+14
+00:00:44,000 --> 00:00:46,300
+It wasn't supposed to happen like this.
 
 15
-00:00:44,000 --> 00:00:46,000
-It wasn't supposed to happen like this!
+00:00:48,000 --> 00:00:51,000
+Ivor! You coward, come back here!
 
 16
-00:00:48,000 --> 00:00:51,000
-Martin! You coward, come back here!
-
-17
 00:00:55,000 --> 00:00:57,000
 Jesse, help me!
 
-18
-00:01:00,000 --> 00:01:02,000
-Help, help!
-
-19
+17
 00:01:03,000 --> 00:01:06,000
-Thank you. I've always read about one thing.
+Thank you. Ivor was right about one thing...
 
-20
+18
 00:01:06,000 --> 00:01:08,000
 I can't defeat that thing.
 
+19
+00:01:08,000 --> 00:01:12,000
+Not on my own. Everyone's running away...
+
+20
+00:01:12,000 --> 00:01:15,500
+Except for you. Will you help me?
+
 21
-00:01:08,000 --> 00:01:10,000
-Not on my own.
-
-22
-00:01:10,000 --> 00:01:12,000
-Everyone's running away!
-
-23
-00:01:12,000 --> 00:01:14,000
-Axel, will you help me?
-
-24
-00:01:14,000 --> 00:01:16,000
-Will you help me?
-
-25
-00:01:16,000 --> 00:01:18,000
+00:01:15,500 --> 00:01:17,500
 Of course!
 
-26
-00:01:18,000 --> 00:01:20,000
+22
+00:01:17,500 --> 00:01:18,500
 Follow me!
 
-27
-00:01:25,000 --> 00:01:27,000
+23
+00:01:25,000 --> 00:01:26,500
 Out of my way, chickens!
 
-28
-00:01:29,000 --> 00:01:31,000
-No!
-
-29
-00:01:50,000 --> 00:01:52,000
+24
+00:01:51,000 --> 00:01:52,000
 Wait!
 
-30
+25
 00:01:52,000 --> 00:01:54,000
-Sam, up here!
+Hey! I'm up here!
 
-31
+26
 00:01:54,000 --> 00:01:56,000
 Somebody help me!
 
-32
-00:01:56,000 --> 00:01:58,000
+27
+00:01:56,000 --> 00:01:57,500
 Guys!
-
-33
-00:01:59,000 --> 00:02:01,000
-Help!
-
-34
-00:02:29,000 --> 00:02:32,000
-The End
-
