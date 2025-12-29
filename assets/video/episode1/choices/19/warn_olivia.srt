@@ -4,26 +4,26 @@ Olivia, look out!
 
 2
 00:00:02,000 --> 00:00:04,000
-What are you doing here?
+What are you doing here?! 
 
 3
-00:00:04,000 --> 00:00:05,000
-What did you see?
+00:00:04,000 --> 00:00:04,700
+What did you see?!
 
 4
-00:00:05,000 --> 00:00:06,000
+00:00:04,700 --> 00:00:06,000
 Leave him alone!
 
 5
 00:00:06,000 --> 00:00:08,000
-Yeah, back off, pal.
+Yeah! Back off, pal.
 
 6
-00:00:08,000 --> 00:00:11,000
-You two! Did you follow me here?
+00:00:08,000 --> 00:00:11,600
+You two?! Did you follow me here?
 
 7
-00:00:11,000 --> 00:00:14,000
+00:00:11,600 --> 00:00:14,000
 You thought you could get away with it, didn't you?
 
 8
@@ -35,202 +35,97 @@ We're here to prove you wrong.
 What are you going to do about it?
 
 10
-00:00:18,000 --> 00:00:21,000
-We know what you're doing down here.
+00:00:18,000 --> 00:00:25,000
+We know what you're doing here. Soul sand and three wither skulls? You're building a Wither!
 
 11
-00:00:21,000 --> 00:00:25,000
-Soul sand and three wither skulls? You're building a wither!
-
-12
 00:00:25,000 --> 00:00:27,000
 Hmph. Smarter than you look.
 
+12
+00:00:27,000 --> 00:00:33,600
+Hey! Nobody talks to my friends like that! Now shut you mouth -- or else.
+
 13
-00:00:27,000 --> 00:00:30,000
-Hey, nobody talks to my friends like that.
-
-14
-00:00:30,000 --> 00:00:33,000
-Now shut your mouth, or else.
-
-15
-00:00:33,000 --> 00:00:37,000
+00:00:33,600 --> 00:00:37,500
 Enough! You've wasted too much of my time already.
 
-16
+14
 00:00:41,000 --> 00:00:42,000
 Where'd he go?
 
+15
+00:00:42,000 --> 00:00:46,500
+If you won't leave of your own volition, I'll happily remove you myself!
+
+16
+00:00:51,000 --> 00:00:54,250
+Show our friends the door, will you?
+
 17
-00:00:42,000 --> 00:00:45,515
-If you leave of your own volition, I'll happily remove you
+00:01:14,000 --> 00:01:16,800
+Oh man, this is so exciting.
 
 18
-00:00:45,515 --> 00:00:46,000
-myself.
+00:01:16,800 --> 00:01:18,500
+It’s true, isn’t it?
 
 19
-00:00:51,000 --> 00:00:54,000
-Come on, friends, the tour, will you?
+00:01:18,500 --> 00:01:26,500
+And now, for the first time ever here at Endercon! We are very proud to present --
 
 20
-00:00:57,000 --> 00:01:00,000
-Oh, man, this is so exciting.
+00:01:26,500 --> 00:01:28,500
+The one! The only!
 
 21
-00:01:00,000 --> 00:01:02,000
-It sure is.
+00:01:28,500 --> 00:01:30,000
+Gabriel!!
 
 22
-00:01:02,000 --> 00:01:07,000
-And now, for the first time ever here at EnderCon,
+00:01:37,500 --> 00:01:43,000
+Please. Please. Thank you.
 
 23
-00:01:07,000 --> 00:01:10,000
-we are very proud to present...
+00:01:43,000 --> 00:01:46,000
+Are. You. With me?
 
 24
-00:01:10,000 --> 00:01:12,000
-The Web.
+00:01:50,000 --> 00:01:52,000
+Everybody okay?
 
 25
-00:01:12,000 --> 00:01:14,000
-The Web.
+00:01:54,850 --> 00:01:57,400
+Um... guys? 
 
 26
-00:01:14,000 --> 00:01:16,000
-The Web.
-
-27
-00:01:16,000 --> 00:01:18,000
-The Web.
-
-28
-00:01:18,000 --> 00:01:20,000
-The Web.
-
-29
-00:01:20,000 --> 00:01:22,000
-The Web.
-
-30
-00:01:22,000 --> 00:01:24,000
-The Web.
-
-31
-00:01:24,000 --> 00:01:26,000
-The Web.
-
-32
-00:01:26,000 --> 00:01:28,000
-The Web.
-
-33
-00:01:28,000 --> 00:01:30,000
-The Web.
-
-34
-00:01:30,000 --> 00:01:32,000
-The Web.
-
-35
-00:01:38,000 --> 00:01:41,000
-Please, please.
-
-36
-00:01:41,000 --> 00:01:43,000
-Thank you.
-
-37
-00:01:43,000 --> 00:01:46,000
-Are you with me?
-
-38
-00:01:46,000 --> 00:01:48,000
-To the end!
-
-39
-00:01:50,000 --> 00:01:52,000
-Anybody okay?
-
-40
-00:01:53,000 --> 00:01:56,000
-Um, guys?
-
-41
-00:01:56,000 --> 00:01:58,000
+00:01:57,400 --> 00:01:59,250
 Where's Lukas?
 
-42
-00:01:58,000 --> 00:02:00,000
+27
+00:01:59,250 --> 00:02:00,700
 I thought he was right behind me.
 
-43
-00:02:00,000 --> 00:02:04,000
-Well, if he's not here, the only place he could be is...
+28
+00:02:00,700 --> 00:02:04,000
+Well, if he's not here, the only place he could be is --
 
-44
+29
 00:02:04,000 --> 00:02:06,000
 He's still down there!
 
-45
-00:02:06,000 --> 00:02:08,269
-Ivor's got an iron golem and all the ingredients to build a
+30
+00:02:06,000 --> 00:02:10,200
+Ivor's got an iron golem and all the ingredients to build a Wither down there.
 
-46
-00:02:08,269 --> 00:02:09,000
-wither down there.
+31
+00:02:10,200 --> 00:02:14,000
+If he were to unleash it in this crowd of people... We have to act fast.
 
-47
-00:02:09,000 --> 00:02:12,257
-If he were to unleash it on this crowd of people, we have
+32
+00:02:14,000 --> 00:02:18,500
+It just so happens that the greatest warrior of all time is in the building.
 
-48
-00:02:12,257 --> 00:02:13,000
-to act fast.
-
-49
-00:02:13,000 --> 00:02:16,105
-It just so happens that the greatest warrior of all time is
-
-50
-00:02:16,105 --> 00:02:17,000
-in the building.
-
-51
-00:02:17,000 --> 00:02:19,000
-We should ask Gabriel for help.
-
-52
-00:02:19,000 --> 00:02:21,000
-This is the smartest way to help Lukas.
-
-53
-00:02:21,000 --> 00:02:23,000
-He's tough.
-
-54
-00:02:23,000 --> 00:02:25,612
-I just hope he's tough enough to hold out a little bit
-
-55
-00:02:25,612 --> 00:02:26,000
-longer.
-
-56
-00:02:26,000 --> 00:02:29,000
-...exploits of the Order of the Stalled, and even I do.
-
-57
-00:02:29,000 --> 00:02:33,000
-But then, it's so easy to doubt ourselves, isn't it?
-
-58
-00:02:33,000 --> 00:02:36,569
-It's easy to tell ourselves we can't do the things we want
-
-59
-00:02:36,569 --> 00:02:37,000
-to do.
-
+33
+00:02:18,500 --> 00:02:21,000
+We should ask Gabriel for help!
