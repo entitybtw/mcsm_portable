@@ -1,68 +1,35 @@
 1
-00:00:00,000 --> 00:00:03,000
+00:00:00,000 --> 00:00:02,600
 What? Why me?
 
 2
-00:00:03,000 --> 00:00:04,000
-I don't believe in you.
+00:00:02,600 --> 00:00:06,500
+I believe in you. Take the amulet --
 
 3
-00:00:04,000 --> 00:00:06,000
-Take the Amulet.
+00:00:06,500 --> 00:00:08,500
+Take it through the portal, and then --
 
 4
-00:00:06,000 --> 00:00:08,000
-Take it to the portal.
+00:00:25,500 --> 00:00:28,000
+You two; go through the portal and meet up with the others.
 
 5
-00:00:08,000 --> 00:00:09,000
-And then...
+00:00:28,000 --> 00:00:29,500
+I'll stay here and do whatever I can.
 
 6
-00:00:25,000 --> 00:00:28,000
-You two, go through the portal and meet up with the others.
+00:00:29,500 --> 00:00:30,900
+I'm coming with you!
 
 7
-00:00:28,000 --> 00:00:30,000
-Stay here and do whatever I can.
+00:00:30,900 --> 00:00:34,500
+No, you're not. The gang needs you, Jesse.
 
 8
-00:00:30,000 --> 00:00:31,000
-I'm coming with you.
+00:00:34,500 --> 00:00:38,750
+Go through the portal! If anything happens, I'll meet you guys at the temple.
 
 9
-00:00:31,000 --> 00:00:32,000
-No, you're not.
-
-10
-00:00:32,000 --> 00:00:34,000
-The gang needs you, Jesse.
-
-11
-00:00:35,000 --> 00:00:36,000
-Go through the portal.
-
-12
-00:00:36,000 --> 00:00:39,000
-If anything happens, I'll meet you guys at the top.
-
-13
 00:00:48,000 --> 00:00:49,000
-Oh no!
-
-14
-00:00:51,000 --> 00:00:54,000
-I can't... get... away from it!
-
-15
-00:00:54,000 --> 00:00:56,000
-Jesse, do something!
-
-16
-00:00:58,000 --> 00:00:59,000
-Somebody!
-
-17
-00:00:59,000 --> 00:01:00,000
-Help!
-
+Oh, no!
