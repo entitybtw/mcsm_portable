@@ -1,88 +1,79 @@
 1
-00:00:00,000 --> 00:00:02,000
+00:00:00,000 --> 00:00:02,200
 Let's build a hut. It won't take as long.
 
 2
-00:00:02,000 --> 00:00:03,000
-It's not.
+00:00:02,200 --> 00:00:03,000
+It's not...
 
 3
-00:00:03,000 --> 00:00:05,000
+00:00:03,000 --> 00:00:05,500
 That's it, Olivia. Jesse made the call.
 
 4
-00:00:05,000 --> 00:00:07,000
+00:00:05,500 --> 00:00:07,000
 We should get started.
 
 5
-00:00:16,000 --> 00:00:19,597
-All that work? And we're still eye level with monsters that
+00:00:16,300 --> 00:00:21,000
+All that work and we're still eye-level with monsters that are going to try to kill us.
 
 6
-00:00:19,597 --> 00:00:21,000
-are trying to kill us.
-
-7
-00:00:21,000 --> 00:00:24,000
+00:00:21,000 --> 00:00:24,500
 It's done. It's over. We aren't talking about it anymore.
 
-8
-00:00:24,000 --> 00:00:27,000
+7
+00:00:24,500 --> 00:00:27,500
 We could have maybe done like a multi-level thing, but...
 
-9
-00:00:27,000 --> 00:00:31,000
-That's too late now. I mean, it's... it's cool.
+8
+00:00:27,500 --> 00:00:31,000
+It's too late now. I mean, it's... it's cool.
 
-10
-00:00:31,000 --> 00:00:33,000
+9
+00:00:31,150 --> 00:00:33,700
 Let's keep it together, guys.
 
-11
-00:00:47,000 --> 00:00:48,000
-Oh, man!
+10
+00:00:47,000 --> 00:00:48,400
+Oh man!
 
-12
-00:00:48,000 --> 00:00:49,000
+11
+00:00:48,400 --> 00:00:49,200
 What?
 
+12
+00:00:49,200 --> 00:00:53,200
+I'm going to tell you something, you have to promise not to freak out.
+
 13
-00:00:49,000 --> 00:00:52,371
-I'm going to tell you something. You have to promise not to
-
-14
-00:00:52,371 --> 00:00:53,000
-freak out.
-
-15
-00:00:53,000 --> 00:00:54,000
+00:00:53,200 --> 00:00:54,400
 What is it?
 
-16
-00:00:54,000 --> 00:00:57,000
+14
+00:00:55,400 --> 00:00:58,250
 I have cookies.
 
+15
+00:01:01,000 --> 00:01:02,400
+One for me...
+
+16
+00:01:03,600 --> 00:01:05,000
+One for Olivia...
+
 17
-00:01:00,000 --> 00:01:06,000
-One for me, one for Olivia, one for Jesse.
+00:01:06,000 --> 00:01:07,800
+One for Jesse.
 
 18
-00:01:06,000 --> 00:01:08,000
+00:01:07,800 --> 00:01:09,000
 Thanks, Axel.
 
 19
-00:01:11,000 --> 00:01:13,000
+00:01:12,600 --> 00:01:14,200
 And one for Reuben.
 
 20
-00:01:15,000 --> 00:01:17,000
-Sorry, Lukas. I only have four.
-
-21
-00:01:18,000 --> 00:01:22,000
-Oh, no. It's... it's all right. I'm not that hungry anyway.
-
-22
-00:01:22,000 --> 00:01:26,000
-I'll just grab something in the morning or something.
-
+00:01:16,200 --> 00:01:18,600
+Sorry Lukas, I only have four.
