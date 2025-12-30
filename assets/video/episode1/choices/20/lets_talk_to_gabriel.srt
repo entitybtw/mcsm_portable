@@ -1,192 +1,143 @@
 1
-00:00:00,000 --> 00:00:02,941
-We need Gabriel to get Lukas back and to deal with
+00:00:00,000 --> 00:00:03,200
+We need Gabriel to get Lukas back.
 
 2
-00:00:02,941 --> 00:00:05,000
-everything else we saw down there.
+00:00:03,200 --> 00:00:05,500
+And to deal with everything else we saw down there.
 
 3
-00:00:05,000 --> 00:00:07,000
+00:00:05,500 --> 00:00:07,000
 We're doing the right thing, Jesse.
 
 4
-00:00:07,000 --> 00:00:09,666
-I just hope Lukas can hold out against that golem long
+00:00:07,000 --> 00:00:11,000
+I just hope Lukas can hold out against that golem for long enough for us to get help.
 
 5
-00:00:09,666 --> 00:00:11,000
-enough for us to get help.
-
-6
 00:00:11,000 --> 00:00:12,000
 Come on, then.
 
-7
+6
 00:00:12,000 --> 00:00:14,000
 Let's crash this party.
 
+7
+00:00:14,000 --> 00:00:19,000
+With the right training, and guidance, anyone... and I mean anyone can become a hero.
+
 8
-00:00:14,000 --> 00:00:17,373
-With the right training and guidance, anyone, and I mean
-
-9
-00:00:17,373 --> 00:00:19,000
-anyone, can become a hero.
-
-10
 00:00:19,000 --> 00:00:22,000
 You just have to believe it.
 
-11
+9
 00:00:22,000 --> 00:00:25,000
-I'll get you a rookie in the office.
+I want you to look me in the eyes.
+
+10
+00:00:25,000 --> 00:00:29,000
+We've just gotta push through this crowd to get to Gabriel.
+
+11
+00:00:30,250 --> 00:00:32,500
+Start. Believing. It.
 
 12
-00:00:25,000 --> 00:00:29,000
-We just gotta push through this crowd to get to Gabriel.
-
-13
-00:00:30,000 --> 00:00:32,000
-Start believing it.
-
-14
-00:00:32,000 --> 00:00:34,000
+00:00:32,500 --> 00:00:34,000
 And then...
 
-15
+13
 00:00:34,000 --> 00:00:37,000
 Now I'd like to open up the floor for a few questions.
 
-16
+14
 00:00:37,000 --> 00:00:39,000
 Keep it orderly, folks.
 
+15
+00:00:39,000 --> 00:00:41,500
+Aaaaand -- you, right there in the front row.
+
+16
+00:00:41,500 --> 00:00:46,000
+You know when uh... Ellegaard... and the dragon... umm... like what was her favorite food?
+
 17
-00:00:39,000 --> 00:00:41,000
-And you, right there in the front row.
+00:00:49,000 --> 00:00:51,000
+Bread. Next question.
 
 18
-00:00:41,000 --> 00:00:43,000
-No, with, uh, Elgar and the dragon.
-
-19
-00:00:43,000 --> 00:00:46,000
-Um, like, what was her favorite food?
-
-20
-00:00:49,000 --> 00:00:51,000
-Red, next question.
-
-21
 00:00:52,000 --> 00:00:55,000
 What question do you have for the mighty Gabriel?
 
-22
+19
 00:00:55,000 --> 00:00:58,000
-Every person here is in danger.
+Every person here is in danger!
+
+20
+00:00:58,000 --> 00:01:02,000
+Now, hold on just a minute. If this is a joke, it isn't funny.
+
+21
+00:01:02,000 --> 00:01:06,000
+I'm not joking -- somebody's been building a monster in the basement.
+
+22
+00:01:06,000 --> 00:01:09,000
+Hmm. Perhaps we should have this checked out...
 
 23
-00:00:58,000 --> 00:01:00,000
-Now hold on just a minute.
-
-24
-00:01:00,000 --> 00:01:02,000
-If this is a joke, it isn't funny.
-
-25
-00:01:02,000 --> 00:01:03,000
-I'm not joking.
-
-26
-00:01:03,000 --> 00:01:06,000
-Somebody's been building a monster in the basement.
-
-27
-00:01:06,000 --> 00:01:07,000
-Hmm.
-
-28
-00:01:07,000 --> 00:01:09,000
-Perhaps we should have this checked out.
-
-29
 00:01:09,000 --> 00:01:12,000
 I have a question for you.
 
-30
-00:01:12,000 --> 00:01:13,000
-Excuse me, sir.
+24
+00:01:12,000 --> 00:01:15,000
+Excuse me, sir -- you'll have to wait your turn!
 
-31
-00:01:13,000 --> 00:01:15,000
-You'll have to wait your turn.
+25
+00:01:15,000 --> 00:01:20,000
+Just tell me first: do you really believe anyone can be great?
 
-32
-00:01:15,000 --> 00:01:17,000
-Just tell me first.
+26
+00:01:20,000 --> 00:01:23,000
+With enough hard work -- yes!
 
-33
-00:01:17,000 --> 00:01:20,000
-Do you really believe anyone can be great?
+27
+00:01:23,000 --> 00:01:27,000
+Was that where I went wrong? I simply didn't WORK hard enough?
 
-34
-00:01:20,000 --> 00:01:22,000
-With enough hard work?
-
-35
-00:01:22,000 --> 00:01:23,000
-Yes.
-
-36
-00:01:23,000 --> 00:01:24,000
-Was that where I went wrong?
-
-37
-00:01:24,000 --> 00:01:27,000
-I simply didn't work hard enough?
-
-38
-00:01:27,000 --> 00:01:28,000
+28
+00:01:27,000 --> 00:01:28,500
 Ivor?
 
-39
-00:01:28,000 --> 00:01:31,000
-That's the guy who attacked us in the basement.
+29
+00:01:28,500 --> 00:01:31,000
+That's the guy who attacked us in the basement!
 
-40
-00:01:31,000 --> 00:01:33,000
+30
+00:01:31,000 --> 00:01:33,500
 I wish I could say I was surprised.
 
-41
-00:01:33,000 --> 00:01:37,000
-If it surprises you want, you're in for a treat.
+31
+00:01:33,500 --> 00:01:37,000
+If it's surprises you want, you're in for a treat.
 
-42
+32
 00:01:37,000 --> 00:01:40,000
 Why don't you tell them the real story, Gabriel?
 
-43
-00:01:40,000 --> 00:01:42,000
+33
+00:01:40,000 --> 00:01:42,300
 I see time has made you bitter.
 
-44
-00:01:42,000 --> 00:01:46,000
-And it's made you an even bigger fool.
+34
+00:01:42,300 --> 00:01:46,000
+And it's made YOU an even bigger fool.
 
-45
-00:01:46,000 --> 00:01:49,000
-Now these people were promised greatness,
+35
+00:01:46,000 --> 00:01:51,000
+Now, these people were promised greatness -- and I'm ready to deliver.
 
-46
-00:01:49,000 --> 00:01:51,000
-and I'm ready to deliver.
-
-47
+36
 00:01:53,000 --> 00:01:56,000
-I'm sorry this is how they had to learn the truth.
-
-48
-00:01:57,000 --> 00:01:58,000
-I'm sorry.
-
+I'm sorry this is how they had to learn the truth...
