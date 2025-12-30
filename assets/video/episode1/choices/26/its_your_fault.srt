@@ -1,116 +1,95 @@
 1
 00:00:00,000 --> 00:00:03,000
-Our friend is in trouble because of you.
+Our friend is in trouble because of you. 
 
 2
 00:00:03,000 --> 00:00:06,000
-We're trapped in the Nether because of you.
+We're trapped in the Nether because of you!
 
 3
-00:00:06,000 --> 00:00:09,000
+00:00:06,000 --> 00:00:09,750
 You have much bigger problems to contend with.
 
 4
-00:00:10,000 --> 00:00:12,000
-Through that tunnel is a network of mind cards,
+00:00:09,750 --> 00:00:14,250
+Through that tunnel is a network of mine carts built by the Order of the Stone.
 
 5
-00:00:12,000 --> 00:00:14,000
-built by the Order of the Stone.
-
-6
-00:00:14,000 --> 00:00:16,000
+00:00:14,250 --> 00:00:16,500
 It's your only way out.
 
+6
+00:00:16,500 --> 00:00:20,500
+Much as I hate to admit, he might be right.
+
 7
-00:00:17,000 --> 00:00:20,000
-Much as I hate to admit it, he might be right.
+00:00:20,500 --> 00:00:23,500
+Bravo for embracing the truth.
 
 8
-00:00:20,000 --> 00:00:21,000
-We're off.
-
-9
-00:00:21,000 --> 00:00:23,000
-We're embracing the truth.
-
-10
 00:00:26,000 --> 00:00:27,000
 What was that?
 
-11
-00:00:27,000 --> 00:00:29,166
-I would wish you good luck, but luck won't carry you
+9
+00:00:27,000 --> 00:00:30,250
+I would wish you good luck, but luck won't carry you through the Nether.
 
-12
-00:00:29,166 --> 00:00:30,000
-through the Nether.
-
-13
-00:00:30,000 --> 00:00:32,000
+10
+00:00:30,250 --> 00:00:32,500
 You have my sympathies.
 
-14
-00:00:32,000 --> 00:00:34,000
-Let's get out of here! Run!
+11
+00:00:45,500 --> 00:00:46,750
+Let's get out of here!
 
-15
-00:00:41,000 --> 00:00:43,000
+12
+00:00:46,750 --> 00:00:47,750
+RUN!
+
+13
+00:00:55,000 --> 00:00:57,750
 This must be what Ivor was talking about.
 
-16
-00:01:02,000 --> 00:01:03,000
-Everybody hold on!
+14
+00:01:09,000 --> 00:01:10,750
+Everybody, hold on!
 
-17
-00:01:14,000 --> 00:01:15,000
+15
+00:01:21,000 --> 00:01:23,125
 Wow.
 
-18
-00:01:16,000 --> 00:01:17,000
+16
+00:01:23,125 --> 00:01:24,500
 The Nether.
 
-19
-00:01:18,000 --> 00:01:20,000
-Yeah, that is a lot of lava.
+17
+00:01:24,500 --> 00:01:27,200
+Yeah... That is a LOT of lava.
 
-20
-00:01:20,000 --> 00:01:22,000
+18
+00:01:27,200 --> 00:01:28,700
 And fire.
 
-21
-00:01:22,000 --> 00:01:24,000
+19
+00:01:28,700 --> 00:01:31,000
 And other things that could burn you to death.
 
-22
-00:01:25,000 --> 00:01:27,000
-You're not going to get away with this!
-
-23
-00:01:27,000 --> 00:01:29,000
-You're going to get away with this!
-
-24
-00:01:29,000 --> 00:01:31,000
-And other things that could burn you to death.
-
-25
+20
 00:01:32,000 --> 00:01:33,000
 Oh no!
 
-26
+21
 00:01:34,000 --> 00:01:37,000
-Oh, that's a drop. That is very, very much a drop.
+Oh that's a drop. That is very, very much a drop.
 
-27
+22
 00:01:37,000 --> 00:01:39,000
 What are you talking about, new guy?
 
-28
+23
 00:01:39,000 --> 00:01:40,000
-What drop?
+What drrrr
 
-29
+24
 00:01:40,000 --> 00:01:42,000
-Oh, you weren't kidding.
-
+Oh! You weren't kidding.
