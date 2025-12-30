@@ -1,184 +1,136 @@
 1
-00:00:00,000 --> 00:00:01,000
-Thanks, Jesse.
+00:00:06,200 --> 00:00:07,600
+Thanks Jesse!
 
 2
-00:00:01,000 --> 00:00:02,000
-Gabriel's still out there!
+00:00:08,100 --> 00:00:10,500
+Gabriel's still up there!
 
 3
-00:00:02,000 --> 00:00:03,000
-Jesse!
+00:00:10,500 --> 00:00:12,500
+Jesse!! Go!!!
 
 4
-00:00:03,000 --> 00:00:04,000
+00:00:12,500 --> 00:00:14,000
 No!
 
 5
-00:00:04,000 --> 00:00:05,000
-No!
-
-6
-00:00:05,000 --> 00:00:33,280
+00:00:31,300 --> 00:00:33,220
 Where's Petra?
 
-7
-00:00:33,280 --> 00:00:34,280
-We did everything we could.
+6
+00:00:33,220 --> 00:00:35,100
+We did everything we could
 
-8
-00:00:34,280 --> 00:00:36,160
+7
+00:00:35,100 --> 00:00:35,790
 What are you saying?
 
+8
+00:00:35,790 --> 00:00:38,540
+It was chaos. There wasn't much I could do.
+
 9
-00:00:36,160 --> 00:00:37,160
-It was chaos.
-
-10
-00:00:37,160 --> 00:00:38,760
-There wasn't much I could do.
-
-11
-00:00:38,760 --> 00:00:40,120
+00:00:38,540 --> 00:00:39,820
 Jesse's right.
 
-12
-00:00:40,120 --> 00:00:41,760
+10
+00:00:39,820 --> 00:00:41,580
 Petra is still up there.
 
-13
-00:00:41,760 --> 00:00:43,280
-I got scared.
+11
+00:00:41,580 --> 00:00:44,100
+I got scared. Just for a second.
 
-14
-00:00:43,280 --> 00:00:44,440
-Just for a second.
-
-15
-00:00:44,440 --> 00:00:47,160
+12
+00:00:44,100 --> 00:00:46,980
 You got scared?
 
-16
-00:00:47,160 --> 00:00:48,160
+13
+00:00:46,980 --> 00:00:48,540
 It wasn't my fault.
 
-17
-00:00:48,160 --> 00:00:51,480
-You got scared and it's not your fault?
+14
+00:00:48,540 --> 00:00:51,300
+You got scared and it's not your fault?!
 
-18
-00:00:51,480 --> 00:00:52,480
+15
+00:00:51,300 --> 00:00:53,140
 Back off, Axel.
 
-19
-00:00:52,480 --> 00:00:53,480
-We gotta go back.
+16
+00:00:53,140 --> 00:00:55,360
+We should go back.
 
-20
-00:00:53,480 --> 00:00:54,480
+17
+00:00:55,360 --> 00:00:57,100
 She just needs more time.
 
+18
+00:00:57,100 --> 00:01:00,300
+Petra needs our help. We're going.
+
+19
+00:01:00,300 --> 00:01:02,500
+Hey! There she is!
+
+20
+00:01:02,500 --> 00:01:06,000
+Come on... come on!
+
 21
-00:00:54,480 --> 00:00:55,480
-Petra needs our help.
-
-22
-00:00:55,480 --> 00:00:56,480
-We're going.
-
-23
-00:00:56,480 --> 00:00:57,480
-Hey, there she is!
-
-24
-00:00:58,480 --> 00:01:09,880
-Come on, come on.
-
-25
-00:01:09,880 --> 00:01:10,880
+00:01:09,500 --> 00:01:11,000
 You again.
 
-26
-00:01:10,880 --> 00:01:35,720
+22
+00:01:32,640 --> 00:01:33,940
 Ivor.
 
+23
+00:01:35,440 --> 00:01:37,540
+You ruined everything!
+
+24
+00:01:37,540 --> 00:01:44,040
+You can't blame us! Your plan, your monster, your fault.
+
+25
+00:01:44,040 --> 00:01:48,740
+Maybe... but if you hadn't stolen from me, I would have destroyed it.
+
+26
+00:01:48,740 --> 00:01:51,740
+And all of those people... would have been saved.
+
 27
-00:01:35,720 --> 00:01:38,080
-You ruined everything.
+00:01:51,740 --> 00:01:56,640
+There's nothing left up there! Nothing but that Wither storm.
 
 28
-00:01:38,080 --> 00:01:40,280
-You can't blame us.
+00:01:56,640 --> 00:02:00,740
+Why are we wasting time talking to this jerk? We have to go and get Petra.
 
 29
-00:01:40,280 --> 00:01:43,280
-Your plan, your monster, your fault.
+00:02:00,740 --> 00:02:02,940
+The girl. I saw her.
 
 30
-00:01:43,280 --> 00:01:44,280
-Maybe.
-
-31
-00:01:44,280 --> 00:01:49,400
-But if you hadn't stolen from me, I would have destroyed it.
-
-32
-00:01:49,400 --> 00:01:52,520
-And all of those people would have been saved.
-
-33
-00:01:52,520 --> 00:01:54,840
-There's nothing left up there.
-
-34
-00:01:54,840 --> 00:01:57,040
-Nothing but that wither storm.
-
-35
-00:01:57,040 --> 00:01:59,720
-Why are we wasting time talking to this jerk?
-
-36
-00:01:59,720 --> 00:02:01,320
-We have to go and get Petra.
-
-37
-00:02:01,320 --> 00:02:02,320
-The girl.
-
-38
-00:02:02,320 --> 00:02:03,320
-I saw her.
-
-39
-00:02:03,320 --> 00:02:04,320
+00:02:02,940 --> 00:02:03,640
 What?
 
-40
-00:02:04,320 --> 00:02:06,520
-While I was running toward the portal, I passed her.
+31
+00:02:03,640 --> 00:02:06,090
+While I was running toward the portal I passed her.
 
-41
-00:02:06,520 --> 00:02:09,160
+32
+00:02:06,090 --> 00:02:08,940
 She was running in the opposite direction.
 
-42
-00:02:10,040 --> 00:02:12,040
+33
+00:02:08,940 --> 00:02:11,440
 Such bravery.
 
-43
-00:02:12,040 --> 00:02:16,433
-Of course, there's a fine line between bravery and
-
-44
-00:02:16,433 --> 00:02:17,400
-stupidity.
-
-45
-00:02:17,400 --> 00:02:28,160
-And your friend has crossed it.
-
-46
-00:02:28,160 --> 00:02:30,280
-I'm saying she's stupid.
+34
+00:02:11,440 --> 00:02:16,442
+Of course, there's a fine line between bravery and stupidity.
 
