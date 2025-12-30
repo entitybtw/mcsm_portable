@@ -1,192 +1,107 @@
 1
-00:00:00,000 --> 00:00:02,000
-Everybody hold on!
+00:00:00,000 --> 00:00:01,750
+Everybody, hold on!
 
 2
-00:00:13,800 --> 00:00:14,800
-Oh no!
+00:00:13,500 --> 00:00:14,500
+Oh, no.
 
 3
-00:00:15,400 --> 00:00:16,400
-Fuck!
-
-4
-00:00:17,900 --> 00:00:18,900
+00:00:17,500 --> 00:00:18,500
 Watch it!
 
+4
+00:00:23,000 --> 00:00:27,150
+Okay, so, I'm not the only one seeing that we're running out of track, right?
+
 5
-00:00:23,200 --> 00:00:24,400
-Okay, so...
-
-6
-00:00:24,400 --> 00:00:26,800
-We're not the only ones seeing that we're running out of
-
-7
-00:00:26,800 --> 00:00:27,400
-track, right?
-
-8
-00:00:27,400 --> 00:00:28,400
+00:00:27,150 --> 00:00:28,150
 No!
 
-9
-00:00:28,700 --> 00:00:29,700
+6
+00:00:28,150 --> 00:00:29,500
 Good!
 
+7
+00:00:29,500 --> 00:00:32,000
+Jesse! That switch! Now! Do it!
+
+8
+00:00:32,000 --> 00:00:34,250
+Ooh, arms don't fail me now...
+
+9
+00:00:38,250 --> 00:00:43,500
+Haha, wow. I thought something bad was going to happen there, but, heh, I guess everything's going to be...
+
 10
-00:00:30,000 --> 00:00:32,600
-Jesse! That switch! Now, do it!
+00:00:43,500 --> 00:00:44,500
+Whoa!
 
 11
-00:00:32,600 --> 00:00:34,600
-Hold on, don't fail me now!
+00:00:45,500 --> 00:00:46,500
+Whoa! Wait!
 
 12
-00:00:39,000 --> 00:00:40,000
-Wow!
+00:00:46,500 --> 00:00:47,500
+Oh man!
 
 13
-00:00:40,000 --> 00:00:42,809
-I thought something bad was gonna happen there, but I guess
+00:00:48,500 --> 00:00:54,500
+Uhhhhhhh, Axel? Olivia? Reuben? Anybody?!
 
 14
-00:00:42,809 --> 00:00:44,000
-everything's gonna be...
-
-15
-00:00:44,000 --> 00:00:45,000
-Whoa!
-
-16
-00:00:46,000 --> 00:00:47,000
-Oh, wait!
-
-17
-00:00:49,200 --> 00:00:50,400
-Uh, Axel?
-
-18
-00:00:50,800 --> 00:00:51,800
-Lydia?
-
-19
-00:00:52,100 --> 00:00:53,100
-Reuben?
-
-20
-00:00:53,400 --> 00:00:54,400
-Anybody?
-
-21
-00:01:01,000 --> 00:01:03,000
+00:01:01,600 --> 00:01:03,400
 Hang on, Reuben!
 
-22
-00:01:08,000 --> 00:01:09,000
-Reuben?
+15
+00:01:07,750 --> 00:01:09,000
+Reuben!!
 
-23
-00:01:10,000 --> 00:01:13,027
-Okay, Reuben, remember how I said everything was gonna be
+16
+00:01:10,000 --> 00:01:14,000
+Okay Reuben, remember when I everything was going to be just fine before?
 
-24
-00:01:13,027 --> 00:01:14,000
-just fine before?
+17
+00:01:14,000 --> 00:01:16,500
+I know I was wrong THEN but...
 
-25
-00:01:14,000 --> 00:01:16,000
-I know I was wrong then, but...
-
-26
-00:01:17,000 --> 00:01:18,000
+18
+00:01:17,500 --> 00:01:19,000
 Whoa!
 
-27
-00:01:20,000 --> 00:01:21,000
+19
+00:01:21,000 --> 00:01:22,000
 Stop!
 
-28
-00:01:31,000 --> 00:01:32,000
-Whoa!
+20
+00:01:37,500 --> 00:01:41,000
+Well, Ghasts are OFFICIALLY crossed off my to-see list.
 
-29
-00:01:38,000 --> 00:01:41,000
-Well, gasser officially crossed off my to-see list.
+21
+00:01:41,000 --> 00:01:43,500
+Done with the Ghasts. Never need to see them...
 
-30
-00:01:41,000 --> 00:01:44,000
-Some of the gas, you never need to see them.
+22
+00:01:44,500 --> 00:01:46,750
+Are you freaking kidding me with this?
 
-31
-00:01:45,000 --> 00:01:47,000
-Are you freaking kidding me with that?
+23
+00:01:51,500 --> 00:01:53,500
+This-is-bad, this-is-bad, this-is-bad.
 
-32
-00:01:52,000 --> 00:01:54,000
-Spin, spin, spin...
+24
+00:02:07,000 --> 00:02:10,500
+Is...Ha... Is everyone okay?
 
-33
-00:02:01,000 --> 00:02:02,000
-Oh!
+25
+00:02:11,500 --> 00:02:14,500
+I mean I'm not dead. I guess that's pretty good.
 
-34
-00:02:07,000 --> 00:02:10,000
-Is... huh... is everyone okay?
-
-35
-00:02:11,000 --> 00:02:14,000
-I mean, I'm not dead. I guess that's pretty good.
-
-36
-00:02:14,000 --> 00:02:17,000
+26
+00:02:14,500 --> 00:02:16,750
 Ditto. Ditto with the not dead.
 
-37
-00:02:17,000 --> 00:02:18,803
-I just can't believe that Petra comes down here all the
-
-38
-00:02:18,803 --> 00:02:19,000
-time.
-
-39
-00:02:19,000 --> 00:02:21,000
-This place is awful.
-
-40
-00:02:22,000 --> 00:02:24,000
-Your throat's gonna be sore later, Axel.
-
-41
-00:02:24,000 --> 00:02:25,000
-Why?
-
-42
-00:02:25,000 --> 00:02:27,000
-I'm just saying.
-
-43
-00:02:27,000 --> 00:02:29,000
-Wasn't that you doing all that screaming before?
-
-44
-00:02:29,000 --> 00:02:31,000
-Sounded like you were really shredding your larynx.
-
-45
-00:02:31,000 --> 00:02:34,000
-Oh, yeah! I heard that too.
-
-46
-00:02:34,000 --> 00:02:37,000
-Really high-pitched, kind of like a squeaky piston.
-
-47
-00:02:37,000 --> 00:02:39,000
-What? No, shut up.
-
-48
-00:02:40,000 --> 00:02:43,000
-Never mind. Must've... must've been something else.
-
+27
+00:02:16,750 --> 00:02:20,541
+I just can't believe that Petra comes down here all the time... This place is awful.
