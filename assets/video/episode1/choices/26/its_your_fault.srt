@@ -51,7 +51,7 @@ RUN!
 This must be what Ivor was talking about.
 
 14
-00:01:09,000 --> 00:01:10,75v0
+00:01:09,000 --> 00:01:10,750
 Everybody, hold on!
 
 15
