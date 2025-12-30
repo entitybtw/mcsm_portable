@@ -44,7 +44,7 @@ while in_interactive_zone do
         intraFont.print(417 - intraFont.textW(font, "Garden", 0.4) / 2 + 8, 145 + 14, "Garden", Color.new(255,255,255), font, 0.4)
     end
 
-    if sky_city_1_explored and not castle_guard_talk then
+    if sky_city_1_explored and not sky_city_2_explored and not castle_guard_talk then
         Image.draw(cross, 100, 70)
         intraFont.print(100 - intraFont.textW(font, "Castle Guard", 0.4) / 2 + 8, 70 + 14, "Castle Guard", Color.new(255,255,255), font, 0.4)
     end
@@ -79,7 +79,7 @@ while in_interactive_zone do
                 playCutscene("assets/video/episode5/choices/14/crafting_table.pmp", "assets/video/episode5/choices/14/crafting_table.srt")
                 sky_city_1_explored = true
                 choosing = false
-            elseif sky_city_1_explored and not castle_guard_talk then
+            elseif sky_city_1_explored and not sky_city_2_explored and not castle_guard_talk then
                 playCutscene("assets/video/episode5/choices/14/castle_guard.pmp", "assets/video/episode5/choices/14/castle_guard.srt")
                 castle_guard_talk = true
                 choosing = false

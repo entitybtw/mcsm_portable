@@ -24,7 +24,7 @@ while choosing do
         nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "it_doesnt_matter.lua"
     elseif buttons.pressed(buttons.circle) then
         choosing = false
-        nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "no_its_your_faultz.lua"
+        nextscene = "assets/video/episode5/choices/26/" .. mi .. "/" .. "no_its_your_fault.lua"
     elseif buttons.pressed(buttons.start) then
 choosing = false
 local pause = dofile("assets/misc/pause.lua")

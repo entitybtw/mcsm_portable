@@ -9,8 +9,8 @@ end
 
 Image.draw(square, 25, 127)
 Image.draw(circle, 455, 127)
-intraFont.print(45, 127, "These generate resources", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "The Eversource makes eggs?", 0.4), 127, "The Eversource makes eggs?", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, "These generate\n\n resources", Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, "The Eversource\n\n makes eggs?", 0.4), 127, "The Eversource\n\n makes eggs?", Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
