@@ -1,52 +1,35 @@
 1
-00:00:00,000 --> 00:00:03,000
+00:00:00,000 --> 00:00:03,400
 How am I supposed to find Magnus and Ellegaard?
 
 2
-00:00:03,000 --> 00:00:05,000
-The others will guide you.
+00:00:03,400 --> 00:00:06,000
+The amulet will guide you.
 
 3
-00:00:05,000 --> 00:00:08,000
-Take it to the next step, and then...
+00:00:06,000 --> 00:00:08,000
+Take it through the portal, and then --
 
 4
-00:00:24,000 --> 00:00:27,000
-You two, go through the portal and meet up with the others.
+00:00:25,000 --> 00:00:27,500
+You two; go through the portal and meet up with the others.
 
 5
-00:00:27,000 --> 00:00:29,000
-Stay here and do whatever I can.
+00:00:27,500 --> 00:00:29,000
+I'll stay here and do whatever I can.
 
 6
-00:00:29,000 --> 00:00:30,000
-I'm coming with you.
+00:00:29,000 --> 00:00:30,400
+I'm coming with you!
 
 7
-00:00:30,000 --> 00:00:33,000
+00:00:30,400 --> 00:00:34,000
 No, you're not. The gang needs you, Jesse.
 
 8
-00:00:34,000 --> 00:00:37,081
-Go through the portal. If anything happens, I'll meet you
+00:00:34,000 --> 00:00:38,250
+Go through the portal! If anything happens, I'll meet you guys at the temple.
 
 9
-00:00:37,081 --> 00:00:38,000
-guys at the top.
-
-10
-00:00:47,000 --> 00:00:48,000
-Oh no!
-
-11
-00:00:50,000 --> 00:00:53,000
-I can't... get... away from it!
-
-12
-00:00:53,000 --> 00:00:55,000
-Jesse, do something!
-
-13
-00:00:55,000 --> 00:00:57,000
-Somebody, help!
-
+00:00:47,500 --> 00:00:48,500
+Oh, no!
