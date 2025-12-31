@@ -1,24 +1,15 @@
 1
-00:00:00,000 --> 00:00:05,561
-We're in the Temple of the Order of the Stone. The Order's
+00:00:00,000 --> 00:00:04,400
+We're in the Temple of the Order of the Stone.
 
 2
-00:00:05,561 --> 00:00:07,000
-actual temple.
+00:00:04,100 --> 00:00:07,500
+The Order's ACTUAL Temple.
 
 3
-00:00:07,000 --> 00:00:10,489
-Who'd have thought it, huh? A bunch of small-towners like
+00:00:07,500 --> 00:00:13,000
+Who'd of thought it, huh? A bunch of small towners like us wrapped up in an adventure like this.
 
 4
-00:00:10,489 --> 00:00:13,000
-us wrapped up in an adventure like this.
-
-5
-00:00:13,000 --> 00:00:16,475
-Yeah, it's pretty insane. I just hope we all come out the
-
-6
-00:00:16,475 --> 00:00:18,000
-other side in one piece.
-
+00:00:13,000 --> 00:00:18,500
+Yeah. Pretty insane. I just hope we all come out the other side in one piece.
