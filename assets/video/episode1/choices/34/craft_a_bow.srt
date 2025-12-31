@@ -1,80 +1,63 @@
 1
-00:00:00,000 --> 00:00:10,000
+00:00:09,000 --> 00:00:11,000
 Let's do this.
 
 2
-00:00:18,560 --> 00:00:19,600
-All right.
+00:00:18,000 --> 00:00:19,500
+All right!
 
 3
-00:00:19,600 --> 00:00:20,720
+00:00:19,500 --> 00:00:21,500
 Good job, Jesse.
 
 4
-00:00:20,720 --> 00:00:28,720
-See?
+00:00:29,000 --> 00:00:32,500
+This... must be their enchantment room.
 
 5
-00:00:28,720 --> 00:00:34,720
-This must be their enchantment room.
-
-6
-00:00:34,720 --> 00:00:40,720
+00:00:35,000 --> 00:00:38,500
 Doesn't this look like Ivor's creepy basement?
 
-7
-00:00:40,720 --> 00:00:42,720
+6
+00:00:41,000 --> 00:00:43,000
 Find anything useful?
 
+7
+00:00:43,000 --> 00:00:48,000
+Not sure about "useful" but... definitely interesting.
+
 8
-00:00:42,720 --> 00:00:47,720
-Not sure about useful, but definitely interesting.
+00:00:48,000 --> 00:00:51,750
+There's a lot of history in this room.
 
 9
-00:00:47,720 --> 00:00:57,720
-There is a lot of history in this room.
+00:00:57,000 --> 00:01:02,110
+"The battle was fierce, but the Order of the Stone emerged...
 
 10
-00:00:57,720 --> 00:01:02,830
-The battle was fierce, but the Order of the Stone emerged
+00:01:02,110 --> 00:01:07,041
+triumphant, saving the land and ensuring that peace and…
 
 11
-00:01:02,830 --> 00:01:07,761
-triumphant, saving the land and ensuring that peace and
+00:01:07,041 --> 00:01:10,000
+prosperity would reign forever."
 
 12
-00:01:07,761 --> 00:01:10,720
-prosperity would reign forever.
-
-13
-00:01:10,720 --> 00:01:13,720
+00:01:10,000 --> 00:01:14,000
 Well, not exactly forever.
 
+13
+00:01:14,000 --> 00:01:26,000
+"These five members... five friends. Together, would give so much to gain their rightful place, as five heroes."
+
 14
-00:01:13,720 --> 00:01:20,120
-These five members, five friends, together would give so
+00:01:26,000 --> 00:01:30,500
+"They would author their own end.
 
 15
-00:01:20,120 --> 00:01:25,720
-much to gain their rightful place as five years.
+00:01:30,500 --> 00:01:34,000
+They would slay a dragon."
 
 16
-00:01:25,720 --> 00:01:29,720
-They would author their own end.
-
-17
-00:01:29,720 --> 00:01:33,720
-They would slay a dragon.
-
-18
-00:01:33,720 --> 00:01:37,720
-Ivor was a member of the Order of the Stone?
-
-19
-00:01:37,720 --> 00:01:39,720
-The story's never mentioned him.
-
-20
-00:01:39,720 --> 00:01:41,720
-This is so crazy.
-
+00:01:34,000 --> 00:01:38,000
+Ivor was a member of the Order of the Stone?!
