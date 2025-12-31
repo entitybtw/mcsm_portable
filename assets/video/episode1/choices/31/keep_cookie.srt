@@ -1,168 +1,139 @@
 1
-00:00:00,000 --> 00:00:20,000
-If you had to, which would you rather fight?
+00:00:15,500 --> 00:00:18,620
+If you had to... which would you rather fight…
 
 2
-00:00:20,000 --> 00:00:25,016
-A hundred chicken-sized zombies or ten zombie-sized
+00:00:18,620 --> 00:00:23,134
+A hundred chicken-sized zombies, or ten zombie-sized chickens?
 
 3
-00:00:25,016 --> 00:00:26,000
-chickens?
+00:00:24,020 --> 00:00:25,500
+Choose wisely...
 
 4
-00:00:26,000 --> 00:00:28,000
-Choose wisely.
+00:00:26,700 --> 00:00:31,660
+That's a good one. Let me think.
 
 5
-00:00:28,000 --> 00:00:30,000
-That's a good one.
-
-6
-00:00:30,000 --> 00:00:32,000
-Let me think.
-
-7
-00:00:32,000 --> 00:00:35,000
+00:00:31,660 --> 00:00:34,500
 How can you guys joke at a time like this?
 
-8
-00:00:35,000 --> 00:00:37,000
+6
+00:00:34,500 --> 00:00:37,000
 Petra is still out there.
 
-9
-00:00:37,000 --> 00:00:39,000
+7
+00:00:37,740 --> 00:00:39,260
 Petra wouldn't mind at all.
 
-10
-00:00:39,000 --> 00:00:41,000
+8
+00:00:39,260 --> 00:00:41,020
 She'd want us to keep our spirits up.
 
+9
+00:00:41,020 --> 00:00:44,020
+If I were her, I'd... I dunno. It feels wrong.
+
+10
+00:00:45,000 --> 00:00:48,580
+Fine, then. We should get some rest.
+
 11
-00:00:41,000 --> 00:00:44,000
-Fire her. I don't know. It feels wrong.
-
-12
-00:00:44,000 --> 00:00:48,000
-Fine. Then we should get some rest.
-
-13
-00:00:48,000 --> 00:00:51,000
+00:00:48,580 --> 00:00:51,900
 We gotta start looking for this temple as early as we can.
 
+12
+00:00:51,900 --> 00:00:56,060
+Now, my guess is, if we start at the portal and kind of split up --
+
+13
+00:00:56,060 --> 00:00:57,060
+Whoa, what are you doing?
+
 14
-00:00:51,000 --> 00:00:54,625
-Now, my guess is if we start at the portal and kinda split
+00:00:57,060 --> 00:00:59,060
+He's just trying to help.
 
 15
-00:00:54,625 --> 00:00:55,000
-up...
+00:00:59,060 --> 00:01:00,060
+See?
 
 16
-00:00:55,000 --> 00:00:57,000
-Oh, what are you doing?
+00:01:00,060 --> 00:01:04,300
+I'm sorry, Jesse, I'm not gonna sit here and listen to this guy telling us what's what.
 
 17
-00:00:57,000 --> 00:00:59,000
-He's just trying to help. See?
-
-18
-00:00:59,000 --> 00:01:02,390
-I'm sorry, Jesse. I'm not gonna sit here and listen to this
-
-19
-00:01:02,390 --> 00:01:04,000
-guy telling us what's what.
-
-20
-00:01:04,000 --> 00:01:06,000
+00:01:04,300 --> 00:01:06,500
 I'm just trying to get ready for tomorrow.
 
-21
-00:01:06,000 --> 00:01:09,178
-You're the only one wearing that stupid jacket. Don't tell
+18
+00:01:06,500 --> 00:01:09,300
+You're the only one wearing that stupid jacket.
 
-22
-00:01:09,178 --> 00:01:10,000
-us what to do.
+19
+00:01:09,300 --> 00:01:10,860
+Don't tell us what to do.
 
-23
-00:01:10,000 --> 00:01:13,000
+20
+00:01:10,860 --> 00:01:13,860
 Take. That. Back.
 
+21
+00:01:13,860 --> 00:01:14,860
+Can't.
+
+22
+00:01:14,860 --> 00:01:15,860
+Wouldn't.
+
+23
+00:01:15,860 --> 00:01:16,860
+You know what?
+
 24
-00:01:13,000 --> 00:01:15,000
-Can't. Wouldn't.
+00:01:16,860 --> 00:01:18,860
+I get to wear this jacket because I know how to build.
 
 25
-00:01:15,000 --> 00:01:18,420
-You know what? I get to wear this jacket because I know how
-
-26
-00:01:18,420 --> 00:01:19,000
-to build.
-
-27
-00:01:19,000 --> 00:01:21,000
+00:01:18,860 --> 00:01:21,700
 But that doesn't mean I don't know how to break things.
 
+26
+00:01:21,700 --> 00:01:25,060
+Your threats don't scare me, now that we know how you really are.
+
+27
+00:01:25,060 --> 00:01:27,300
+Jesse... Your friend is WAY out of line.
+
 28
-00:01:21,000 --> 00:01:24,687
-Your threats don't scare me now that we know how you really
-
-29
-00:01:24,687 --> 00:01:25,000
-are.
-
-30
-00:01:25,000 --> 00:01:27,000
-Jesse, your friend is way out of line.
-
-31
-00:01:27,000 --> 00:01:28,000
+00:01:27,300 --> 00:01:28,300
 Let's just drop it.
 
-32
-00:01:28,000 --> 00:01:30,000
+29
+00:01:28,300 --> 00:01:30,500
 Don't be like that, Jesse.
 
-33
-00:01:30,000 --> 00:01:32,000
-Just... drop it.
+30
+00:01:30,500 --> 00:01:31,980
+Just drop it.
 
-34
-00:01:32,000 --> 00:01:35,000
+31
+00:01:31,980 --> 00:01:34,900
 Haven't you done enough damage for one day?
 
-35
-00:01:35,000 --> 00:01:37,000
+32
+00:01:34,900 --> 00:01:37,580
 Petra might be dead because of you.
 
-36
-00:01:37,000 --> 00:01:39,000
+33
+00:01:37,580 --> 00:01:39,460
 You're taking this too far, Axel.
 
-37
-00:01:39,000 --> 00:01:41,000
+34
+00:01:39,460 --> 00:01:40,460
 I don't have to take this.
 
-38
-00:01:41,000 --> 00:01:44,677
-Listen, why don't I just leave and let you guys hash this
-
-39
-00:01:44,677 --> 00:01:45,000
-out?
-
-40
-00:01:45,000 --> 00:01:48,000
-You can't leave. It's dangerous out there.
-
-41
-00:01:48,000 --> 00:01:51,000
-I can take care of myself. It's what Axel wants, right?
-
-42
-00:01:51,000 --> 00:01:54,000
-Let him leave if he wants to leave.
-
+35
+00:01:40,460 --> 00:01:45,534
+Listen... Why don't I just leave and let you guys hash this out.
