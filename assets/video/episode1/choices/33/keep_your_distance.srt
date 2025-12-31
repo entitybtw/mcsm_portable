@@ -1,148 +1,215 @@
 1
-00:00:00,000 --> 00:00:06,589
-just keep your distance Jesse come on he was here all night
+00:00:00,000 --> 00:00:02,500
+Just keep your distance.
 
 2
-00:00:06,589 --> 00:00:08,600
-no it's okay I'll
+00:00:02,500 --> 00:00:06,000
+Jesse, come on. He was here all night.
 
 3
-00:00:08,600 --> 00:00:13,680
-take that all right then let's head out
+00:00:06,000 --> 00:00:10,500
+No, it's okay. I'll take that.
 
 4
-00:00:16,160 --> 00:00:19,160
-look at that thing
+00:00:10,500 --> 00:00:12,000
+All right, then. Let's head out.
 
 5
-00:00:22,880 --> 00:00:27,720
-what is it let's get a closer look
+00:00:16,500 --> 00:00:18,500
+Look at that thing.
 
 6
-00:00:30,000 --> 00:00:32,000
-Oh
+00:00:23,250 --> 00:00:24,250
+What is it?
 
 7
-00:00:38,360 --> 00:00:42,400
-what are we waiting for let's go
+00:00:24,250 --> 00:00:26,250
+Let's get a closer look.
 
 8
-00:00:44,880 --> 00:00:49,470
-what is this place that's what we're trying to figure out
+00:00:35,250 --> 00:00:36,250
+What?
 
 9
-00:00:49,470 --> 00:00:51,000
-it's the temple of
+00:00:38,250 --> 00:00:41,250
+What are we waiting for? Let's go.
 
 10
-00:00:51,000 --> 00:00:56,280
-the order of the stone Lukas are you sure
+00:00:45,250 --> 00:00:47,250
+What is this place?
 
 11
-00:00:56,320 --> 00:01:02,704
-he's right look do you think they're in there let's go in
+00:00:47,250 --> 00:00:49,250
+That's what we're trying to figure out.
 
 12
-00:01:02,704 --> 00:01:04,160
-and find out
+00:00:49,250 --> 00:00:52,250
+It's the Temple of the Order of the Stone.
 
 13
-00:01:05,640 --> 00:01:10,451
-let's just all be careful okay if you spot anything call it
+00:00:53,250 --> 00:00:55,250
+Lukas, are you sure?
 
 14
-00:01:10,451 --> 00:01:11,920
-out we don't have
+00:00:56,250 --> 00:00:58,250
+He's right, look.
 
 15
-00:01:11,920 --> 00:01:15,278
-a lot of time isn't it weird how dispensers are carved to
+00:00:58,250 --> 00:01:00,250
+Do you think they're in there?
 
 16
-00:01:15,278 --> 00:01:16,280
-look like spooky
+00:01:00,250 --> 00:01:02,250
+Let's go in and find out.
 
 17
-00:01:16,280 --> 00:01:20,884
-little faces what do you dispense little guy I get the
+00:01:05,250 --> 00:01:07,250
+Let's just all be careful.
 
 18
-00:01:20,884 --> 00:01:22,760
-feeling that we don't
+00:01:07,250 --> 00:01:09,250
+Okay.
 
 19
-00:01:22,760 --> 00:01:40,680
-really want to find that's probably not a good thing
+00:01:09,250 --> 00:01:11,964
+If you spot anything, call it out. We don't have a lot of
 
 20
-00:01:52,760 --> 00:02:00,180
-we're trapped we activated the dispensers with that
+00:01:11,964 --> 00:01:12,250
+time.
 
 21
-00:02:00,180 --> 00:02:02,800
-pressure plate if
+00:01:12,250 --> 00:01:15,831
+Isn't it weird how dispensers are carved to look like
 
 22
-00:02:02,800 --> 00:02:05,850
-we can figure out a way to trigger it again I bet that'll
+00:01:15,831 --> 00:01:17,250
+spooky little faces?
 
 23
-00:02:05,850 --> 00:02:06,600
-shut them off
+00:01:17,250 --> 00:01:19,250
+What do you dispense little guy?
 
 24
-00:02:06,600 --> 00:02:09,884
-there's a crafting table maybe we can make something useful
+00:01:19,250 --> 00:01:24,250
+I get the feeling that we don't really want to find out.
 
 25
-00:02:09,884 --> 00:02:10,720
-how do what we
+00:01:24,250 --> 00:01:26,250
+Get behind me.
 
 26
-00:02:10,720 --> 00:02:14,419
-don't have anything all of our tools and materials are back
+00:01:36,250 --> 00:01:37,250
+What was that?
 
 27
-00:02:14,419 --> 00:02:15,360
-home all right
+00:01:37,250 --> 00:01:39,250
+That's probably not a good thing.
 
 28
-00:02:15,360 --> 00:02:18,462
-everyone empty your pockets let's see what we've got to
+00:01:40,250 --> 00:01:42,250
+Oh come on dispenser faces.
 
 29
-00:02:18,462 --> 00:02:19,760
-work with I have a few
+00:01:42,250 --> 00:01:44,250
+I thought we were friends.
 
 30
-00:02:19,840 --> 00:02:22,064
-sticks left over from building the shelter last night I've
+00:01:44,250 --> 00:01:45,250
+Run!
 
 31
-00:02:22,064 --> 00:02:22,640
-got some flint
+00:01:49,250 --> 00:01:50,250
+We're trapped!
 
 32
-00:02:22,640 --> 00:02:26,547
-and a piece of string all I have are some chicken feathers
+00:01:50,250 --> 00:01:53,250
+We activated the dispensers with that pressure plate.
 
 33
-00:02:26,547 --> 00:02:27,760
-I picked up after
+00:01:53,250 --> 00:01:56,039
+If we can figure out a way to trigger it again, I bet
 
 34
-00:02:27,760 --> 00:02:30,480
-that chicken machine exploded
+00:01:56,039 --> 00:01:57,250
+that'll shut them off.
 
 35
-00:02:33,160 --> 00:02:37,160
-sword oh and some string
+00:01:57,250 --> 00:02:00,856
+There's a crafting table, maybe we can make something
 
 36
-00:02:37,560 --> 00:02:42,720
-string sticks lint and feathers
+00:02:00,856 --> 00:02:01,250
+useful.
 
 37
-00:02:49,760 --> 00:02:53,120
-Océ
+00:02:01,250 --> 00:02:03,250
+Out of what? We don't have anything.
 
+38
+00:02:03,250 --> 00:02:06,250
+All of our tools and materials are back home.
+
+39
+00:02:06,250 --> 00:02:08,250
+Alright everyone, empty your pockets.
+
+40
+00:02:08,250 --> 00:02:10,250
+Let's see who we've got to work with.
+
+41
+00:02:10,250 --> 00:02:12,250
+I have a good idea.
+
+42
+00:02:12,250 --> 00:02:14,250
+Let's go.
+
+43
+00:02:14,250 --> 00:02:16,250
+Let's go.
+
+44
+00:02:16,250 --> 00:02:18,250
+Everyone empty your pockets.
+
+45
+00:02:18,250 --> 00:02:20,250
+Let's see who we've got to work with.
+
+46
+00:02:20,250 --> 00:02:22,712
+I have a few sticks left over from building the shelter
+
+47
+00:02:22,712 --> 00:02:23,250
+last night.
+
+48
+00:02:23,250 --> 00:02:26,250
+I've got some flint and a piece of string.
+
+49
+00:02:26,250 --> 00:02:29,026
+All I have are some chicken feathers I picked up after that
+
+50
+00:02:29,026 --> 00:02:30,250
+chicken machine exploded.
+
+51
+00:02:30,250 --> 00:02:35,250
+Let's see, I've got some flint, steel, sword.
+
+52
+00:02:35,250 --> 00:02:38,250
+Oh and some string from a spider that I fought in Windsor.
+
+53
+00:02:38,250 --> 00:02:42,250
+String, sticks, flint and feathers.
+
+54
+00:02:45,250 --> 00:02:47,250
+Let's go.

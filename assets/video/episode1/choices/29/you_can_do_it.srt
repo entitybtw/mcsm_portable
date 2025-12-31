@@ -3,16 +3,12 @@
 You can do it, Axel.
 
 2
-00:00:02,000 --> 00:00:04,000
+00:00:02,000 --> 00:00:04,500
 That's right, I can do it.
 
 3
-00:00:06,000 --> 00:00:09,483
-Whatever's on the other side has no idea when it's got
-
-4
-00:00:09,483 --> 00:00:10,000
-coming.
+00:00:06,000 --> 00:00:10,000
+Whatever's on the other side has no idea when it's got coming.
 
 5
 00:00:10,000 --> 00:00:13,000
@@ -31,130 +27,98 @@ Be safe up there, Axel.
 Ready or not, here I come.
 
 9
-00:00:30,000 --> 00:00:32,000
+00:00:38,200 --> 00:00:39,750
 Get off of me!
 
 10
-00:00:38,000 --> 00:00:40,000
+00:00:46,000 --> 00:00:48,750
 Oh, man. That was close.
 
 11
-00:00:44,000 --> 00:00:46,000
+00:00:51,000 --> 00:00:53,750
 I'm never going first again.
 
 12
-00:01:00,000 --> 00:01:02,000
+00:01:00,500 --> 00:01:02,500
 Where are we?
 
 13
-00:01:02,000 --> 00:01:05,000
-In the dark in the middle of nowhere?
+00:01:02,500 --> 00:01:05,500
+In the dark; in the middle of nowhere.
 
 14
-00:01:05,000 --> 00:01:07,000
+00:01:05,500 --> 00:01:08,000
 Maybe we should bed down for the night.
 
 15
-00:01:07,000 --> 00:01:09,000
-It's dangerous to be out when it's this dark.
+00:01:08,000 --> 00:01:09,750
+It's dangerous to be out when it's this dark
 
 16
-00:01:09,000 --> 00:01:11,000
-I thought we were headed toward a temple.
+00:01:09,750 --> 00:01:11,500
+I thought we were headed toward the temple.
 
 17
-00:01:11,000 --> 00:01:13,000
-We're looking for a giant building.
-
-18
-00:01:13,000 --> 00:01:14,000
-It should be pretty obvious.
+00:01:11,500 --> 00:01:14,750
+We're looking for a giant building. It should be pretty obvious.
 
 19
-00:01:14,000 --> 00:01:15,000
+00:01:14,750 --> 00:01:15,500
 Ivor said...
 
 20
-00:01:15,000 --> 00:01:17,000
-No, Ivor said...
-
-21
-00:01:17,000 --> 00:01:19,000
-Well, then maybe this is the temple.
+00:01:15,500 --> 00:01:19,000
+Ohhh. "Ivor said". Well, then maybe this is the temple.
 
 22
-00:01:19,000 --> 00:01:20,000
+00:01:19,000 --> 00:01:20,800
 Take it easy, Axel.
 
 23
-00:01:20,000 --> 00:01:22,000
-You called me stupid.
+00:01:20,800 --> 00:01:22,100
+He called me stupid.
 
 24
-00:01:22,000 --> 00:01:23,000
+00:01:22,100 --> 00:01:23,500
 No, I didn't.
 
 25
-00:01:23,000 --> 00:01:24,000
+00:01:23,500 --> 00:01:24,900
 But you wanted to.
 
 26
-00:01:24,000 --> 00:01:25,000
+00:01:24,900 --> 00:01:26,100
 No, I didn't.
 
 27
-00:01:25,000 --> 00:01:27,000
+00:01:26,100 --> 00:01:28,100
 Huh? Did you say something?
 
-28
-00:01:27,000 --> 00:01:29,000
+29
+00:01:28,100 --> 00:01:30,200
 We have to build a shelter.
 
-29
-00:01:29,000 --> 00:01:32,000
-I thought that was what I said, but...
-
 30
-00:01:32,000 --> 00:01:34,000
-Yup, that's totally...
+00:01:30,200 --> 00:01:33,400
+I thought that was what I said, but… uh...
 
 31
-00:01:34,000 --> 00:01:37,000
-It's getting dark and stuff.
-
-32
-00:01:37,000 --> 00:01:39,000
-I say we build a tree house.
+00:01:33,400 --> 00:01:38,000
+Yup. That's totally... It's getting dark and stuff.
 
 33
-00:01:39,000 --> 00:01:42,000
-That'll take forever and won't be exposed while we do it.
+00:01:38,000 --> 00:01:40,000
+I say we build a treehouse.
 
 34
-00:01:42,000 --> 00:01:44,000
-We just need a quick and dirty hut.
+00:01:40,000 --> 00:01:43,100
+That'll take forever. And we'll be exposed while we do it.
 
 35
-00:01:44,000 --> 00:01:47,000
-Look, whatever it is, we gotta do it fast.
+00:01:43,100 --> 00:01:45,000
+We just need a quick and dirty hut.
 
 36
-00:01:51,000 --> 00:01:53,000
-What?
-
-37
-00:01:53,000 --> 00:01:55,442
-In a hut, we won't know what's coming until it's knocking
-
-38
-00:01:55,442 --> 00:01:56,000
-on our door.
-
-39
-00:01:57,000 --> 00:02:00,000
-A tree house is gonna be spider town.
-
-40
-00:02:00,000 --> 00:02:02,000
-I hate spiders.
+00:01:45,000 --> 00:01:50,883
+Look, whatever it is? We gotta do it fast. 
 
