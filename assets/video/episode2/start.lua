@@ -20,6 +20,13 @@ else
     bf = nil
 end
 if em and gp and bf then
+local path = System.LoadData("assets/mainmenu/saves_bg.png")
+if path and em and gp and bf then
+    PMP.setVolume(pmpvolume)
+    PMP.playEasy("assets/mainmenu/loading.pmp")
+    nextscene = path.data
+    return 1
+end
     if em == "ellegaard" then
         nextscene = "assets/video/episode2/ellegaard/start.lua"
         return 1
@@ -27,17 +34,6 @@ if em and gp and bf then
         nextscene = "assets/video/episode2/magnus/start.lua"
         return 1
     end
-local path = System.LoadData("assets/mainmenu/saves_bg.png")
-if path and em and gp and bf then
-    PMP.setVolume(pmpvolume)
-local result =     PMP.playEasy("assets/mainmenu/loading.pmp")
-if result == 1 then
-    nextscene = "./mainmenu.lua"
-    return 1
-end
-    nextscene = path.data
-    return 1
-end
 else
     while true do
         screen.clear()

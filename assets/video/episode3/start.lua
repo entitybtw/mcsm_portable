@@ -9,11 +9,7 @@ if gp then
     local path = System.LoadData("assets/mainmenu/saves_bg.png")
     if path and gp then
         PMP.setVolume(pmpvolume)
-local result =         PMP.playEasy("assets/mainmenu/loading.pmp")
-if result == 1 then
-    nextscene = "./mainmenu.lua"
-    return 1
-end
+        PMP.playEasy("assets/mainmenu/loading.pmp")
         nextscene = path.data
         return 1
     end

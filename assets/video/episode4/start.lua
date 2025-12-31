@@ -14,6 +14,14 @@ else
 end
 
 if ema and gp then
+    local path = System.LoadData("assets/mainmenu/saves_bg.png")
+    if path and ema and gp then
+        PMP.setVolume(pmpvolume)
+        PMP.playEasy("assets/mainmenu/loading.pmp")
+            nextscene = path.data
+        return 1
+    end
+    
     if ema == "ellegaard" then
         nextscene = "assets/video/episode4/ellegaard_" .. gp .. "/start.lua"
         return 1
@@ -21,17 +29,6 @@ if ema and gp then
         nextscene = "assets/video/episode4/magnus_" .. gp .. "/start.lua"
         return 1
     end
-local path = System.LoadData("assets/mainmenu/saves_bg.png")
-if path and ema and gp then
-    PMP.setVolume(pmpvolume)
-local result =     PMP.playEasy("assets/mainmenu/loading.pmp")
-if result == 1 then
-    nextscene = "./mainmenu.lua"
-    return 1
-end
-    nextscene = path.data
-    return 1
-end
 else
     while true do
         screen.clear()
