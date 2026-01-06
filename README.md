@@ -15,12 +15,12 @@ This port is not affiliated with Telltale Games or Netflix.
 The original game and Netflix version are no longer available, but it’s still a great game worth experiencing!
 
 <p>
-  <img src="https://hapka.lol/JrOIn" width="45%" />
-  <img src="https://hapka.lol/jlPaR" width="45%" />
+  <img src="images/reflection_menu.png" width="45%" />
+  <img src="images/epmenu.png" width="45%" />
 </p>
 <p>
-  <img src="https://hapka.lol/CNsmr" width="45%" />
-  <img src="https://hapka.lol/VmhbG" width="45%" />
+  <img src="images/gameplay.jpg" width="45%" />
+  <img src="images/mainmenu.png" width="45%" />
 </p>
 
 ## 🪞 repo mirrors
