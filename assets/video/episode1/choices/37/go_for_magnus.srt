@@ -1,28 +1,31 @@
 1
-00:00:00,000 --> 00:00:03,200
-Get ready to roll, Axel. We're gonna go find Lukas.
+00:00:00,000 --> 00:00:03,400
+Get ready to roll, Axel. We're gonna go find Magnus.
 
 2
-00:00:03,200 --> 00:00:06,400
-Let's do this. Olivia, you stay here with Lukas,
+00:00:03,400 --> 00:00:04,500
+Let's do this.
 
 3
-00:00:06,400 --> 00:00:09,400
-and get the place ready for when Petra comes back, okay?
+00:00:04,500 --> 00:00:06,700
+Olivia, you stay here with Lukas
+
+4
+00:00:06,700 --> 00:00:09,500
+Get the place ready for when Petra comes back, okay?
 
 4
 00:00:09,400 --> 00:00:13,200
 Fine, but I'm only doing this for Petra.
 
 5
-00:00:13,200 --> 00:00:14,600
+00:00:13,200 --> 00:00:15,000
 I'll take it.
 
 6
-00:00:17,800 --> 00:00:19,600
-Uh, guys?
+00:00:17,800 --> 00:00:20,000
+Uh...guys?
 
 7
 00:00:30,000 --> 00:00:32,200
 Please hurry.
-

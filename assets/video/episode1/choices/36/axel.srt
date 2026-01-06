@@ -1,28 +1,24 @@
 1
 00:00:00,000 --> 00:00:02,000
-What you looking at?
+Watcha looking at?
 
 2
-00:00:02,000 --> 00:00:04,000
-Nothing, whatever.
+00:00:02,000 --> 00:00:03,500
+Nothing. Whatever.
 
 3
-00:00:04,000 --> 00:00:06,000
-Axel?
+00:00:03,500 --> 00:00:05,750
+Axel...?
 
 4
-00:00:06,000 --> 00:00:08,000
+00:00:05,750 --> 00:00:08,000
 I was just trying to figure out where Petra might be.
 
 5
-00:00:08,000 --> 00:00:10,000
-I mean, I know she's gonna be fine,
+00:00:08,000 --> 00:00:11,400
+I mean, I know she's going to be fine... But I just curious.
 
 6
-00:00:10,000 --> 00:00:12,000
-but I was just curious.
-
-7
-00:00:12,000 --> 00:00:14,000
+00:00:11,400 --> 00:00:14,000
 We're gonna find her.
 
