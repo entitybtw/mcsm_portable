@@ -4,7 +4,7 @@ local step = -10
 local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
-local stat = sound.state(sound.MP3)
+local stat = sound.state(5)
 local logo = Image.load('assets/mainmenu/logo.png')
 local arrow = Image.load('assets/mainmenu/arrow.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
@@ -77,7 +77,7 @@ local function unloadButtons()
 end
 
 if stat.state == "stopped" then
-    sound.playEasy("assets/sounds/bg.mp3", sound.MP3)
+    sound.playEasy("assets/sounds/bg.at3", 5)
 end
 
 while true do

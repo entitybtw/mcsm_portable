@@ -1,3 +1,4 @@
+-- error("error-test")
 -- initialize variables
 local fade = 255
 local voidfade = 0
@@ -199,7 +200,7 @@ PMP.play("assets/mainmenu/loading.pmp")
 require("saves")
 require("debugoverlay")
 require("files")
-sound.playEasy("assets/sounds/bg.mp3", sound.MP3, true, false)
+sound.playEasy("assets/sounds/bg.at3", 5, true, false)
 
 fade_enabled = 1  -- enable fade effect for mainmenu (1 = enabled, 0 = disabled)
 nextscene = "./mainmenu.lua" -- open mainmenu
