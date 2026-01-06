@@ -89,7 +89,7 @@ local sliders = {
         level = menumusic,
         positions = generatePositions(55),
         spritesheet = musicSpritesheet,
-        apply = function(level) sound.volumeEasy(sound.MP3, level * 10) end,
+        apply = function(level) sound.volumeEasy(5, level * 10) end,
         hintText = hints.music
     },
     {

@@ -79,53 +79,53 @@ while true do
         if selectedButton == 1 then
             -- 'episode 1' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volumeEasy(sound.MP3, 0)
+	        sound.volumeEasy(5, 0)
             PMP.stop(videoFrame)
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep1.pmp', false, false, nil, buttons.start)
             videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
-	    sound.volumeEasy(sound.MP3, menumusic * 10)
+	    sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 2 then
             -- 'episode 2' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volumeEasy(sound.MP3, 0)
+	        sound.volumeEasy(5, 0)
             PMP.stop(videoFrame)
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep2.pmp', false, false, nil, buttons.start)
             videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
-	    sound.volumeEasy(sound.MP3, menumusic * 10)
+	    sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 3 then
             -- 'episode 3' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volumeEasy(sound.MP3, 0)
+	        sound.volumeEasy(5, 0)
             PMP.stop(videoFrame)
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep3.pmp', false, false, nil, buttons.start)
             videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
-	    sound.volumeEasy(sound.MP3, menumusic * 10)
+	    sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 4 then
             -- 'episode 4' button
 	        PMP.setVolume(pmpvolume)
-	        sound.volumeEasy(sound.MP3, 0)
+	        sound.volumeEasy(5, 0)
             PMP.stop(videoFrame)
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep4.pmp', false, false, nil, buttons.start)
             videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
-	    sound.volumeEasy(sound.MP3, menumusic * 10)
+	    sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 5 then
             -- 'episode 5' button
 	        PMP.setVolume(pmpvolume)
-            sound.volumeEasy(sound.MP3, 0)
+            sound.volumeEasy(5, 0)
             PMP.stop(videoFrame)
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep5.pmp', false, false, nil, buttons.start)
             videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
-	    sound.volumeEasy(sound.MP3, menumusic * 10)
+	    sound.volumeEasy(5, menumusic * 10)
         end
     end
     if buttons.pressed(buttons.circle) then

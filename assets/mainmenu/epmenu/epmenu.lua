@@ -6,7 +6,7 @@ local latestContinue = 0
 if not fileExists("assets/saves/lastep.txt") then
     wr("lastep", 1)
 else
-    lastEp = tonumber(cnt("assets/saves/lastep.txt"))
+    local lastEp = tonumber(cnt("assets/saves/lastep.txt"))
     curEp = lastEp
 end
 
@@ -90,7 +90,7 @@ while true do
     if buttons.pressed(buttons["cross"]) then -- if you click cross, episode starts
         if hasStart(curEp) then
             local epPath = "assets/video/episode" .. curEp .. "/start.lua"
-            stop_sound(sound.MP3)
+            stop_sound(5)
             fade_enabled = 1
             wr("lastep", tostring(curEp))
             nextscene = epPath

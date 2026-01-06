@@ -1,5 +1,5 @@
 local bg = Image.load("assets/mainmenu/pause_bg.png")
-sound.playEasy("assets/sounds/pause_bg.wav", sound.WAV_2, true, false)
+sound.playEasy("assets/sounds/pause_bg.at3", 5, true, false)
 sound.volumeEasy(sound.WAV_2, menumusic * 10)
 local fade = 255
 local c_black = Color.new(0, 0, 0)
@@ -85,7 +85,6 @@ while true do
     end
     if buttons.pressed(buttons.circle) then
         PMP.pause()
-        sound.stop(sound.WAV_2)
         unloadButtons()
         Image.unload(bg)
         break
@@ -97,7 +96,6 @@ while true do
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.pause()
             unloadButtons()
-            sound.stop(sound.WAV_2)
             Image.unload(bg)
             break
         elseif selectedButton == 2 then
@@ -109,7 +107,6 @@ while true do
             -- 'mainmenu' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-            sound.stop(sound.WAV_2)
             Image.unload(bg)
             unloadButtons()
             return -1
