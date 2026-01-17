@@ -1,5 +1,7 @@
 # Minecraft Story Mode Portable (PSP)
 
+### [russian readme version / русская версия readme](./README_RU.md)
+
 [![GitHub license](https://img.shields.io/github/license/entitybtw/mcsm_portable?color=brightgreen)](https://github.com/entitybtw/mcsm_portable/blob/main/License)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/entitybtw/mcsm_portable?color=blue)](https://github.com/entitybtw/mcsm_portable/commits) 
 [![GitHub all releases](https://img.shields.io/github/downloads/entitybtw/mcsm_portable/total?logo=github&color=orange)](https://github.com/entitybtw/mcsm_portable/releases/)  
