@@ -225,4 +225,3 @@ String, sticks, flint and feathers.
 58
 00:02:48,250 --> 00:02:50,250
 Let's go.
-м
