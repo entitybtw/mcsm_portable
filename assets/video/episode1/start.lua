@@ -56,7 +56,7 @@ local choices = {
         nextchoice = "choice5"
     },
     choice5 = {
-        path = nil,
+        path = ep1 .. "choices/3/",
         leftchoice = "May the best team win",
         rightchoice = "We're going to crush you",
         leftchoicefilename = "may_the_best_team_win",
