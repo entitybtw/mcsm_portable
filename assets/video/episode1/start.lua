@@ -78,9 +78,9 @@ while currentchoice do
     
     if currentchoice == choices.choice5 and currentchoice.path == nil then
         if _G.build then
-            currentchoice.path = ep1 .. "choices/3/" .. _G.build .. "/"
+            currentchoice.path = ep1 .. "choices/2/" .. _G.build .. "/"
         else
-            currentchoice.path = ep1 .. "choices/3/default/"
+            currentchoice.path = ep1 .. "choices/2/"
         end
     end
     
