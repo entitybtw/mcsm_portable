@@ -24,6 +24,16 @@ local choices = {
     
     choice2 = {
         path = ep1 .. "choices/1",
+        leftchoice = "Gabriel is awesome!",
+        rightchoice = "No big deal",
+        leftchoicefilename = "gabriel_is_awesome",
+        rightchoicefilename = "no_big_deal",
+        leftchoicestate = nil,
+        rightchoicestate = nil,
+        nextchoice = nil
+    },
+    choice3 = {
+        path = ep1 .. "choices/2",
         leftchoice = "Build a Creeper!",
         rightchoice = "Build an Enderman!",
         leftchoicefilename = "build_a_creeper",
@@ -34,18 +44,14 @@ local choices = {
     }
 }
 
--- Глобальные переменные для сборки
 _G.build = nil
 
--- Начинаем с первого выбора
 local currentchoice = choices.choice0
 PMP.setVolume(pmpvolume)
 
--- ГЛАВНЫЙ ЦИКЛ ВЫБОРОВ
 while currentchoice do
     local choosing = true
     
-    -- 1. Играем видео текущего выбора
     local result = PMP.playEasy(currentchoice.path .. '.pmp', buttons.r, true, 
                                 currentchoice.path .. ".srt", font, subssize, 
                                 "#FFFFFF", "#000000/150", subs)
@@ -54,7 +60,6 @@ while currentchoice do
         return 1
     end
     
-    -- 2. Показываем варианты выбора для ЭТОГО видео
     Image.draw(square, 25, 127)
     Image.draw(circle, 455, 127)
     intraFont.print(45, 127, currentchoice.leftchoice, Color.new(255,255,255), font, 0.4)
@@ -65,7 +70,6 @@ while currentchoice do
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
     
-    -- 3. Ожидаем выбора игрока
     while choosing do
         buttons.read()
 
@@ -73,13 +77,11 @@ while currentchoice do
             choosing = false
             currentchoice.leftchoicestate = "done"
             
-            -- Проверяем специальные условия
             if currentchoice.leftchoicefilename == "build_a_creeper" then
                 _G.build = "creeper"
             end
             
-            -- Сохраняем выбранный путь для следующего воспроизведения
-            _G.lastChoicePath = ep1 .. currentchoice.leftchoicefilename
+            _G.lastChoicePath = currentchoice.path .. currentchoice.leftchoicefilename
             
         elseif buttons.pressed(buttons.circle) then
             choosing = false
@@ -107,16 +109,13 @@ while currentchoice do
         end
     end
     
-    -- 4. Переходим к следующему выбору (если есть)
     if currentchoice.nextchoice then
         currentchoice = choices[currentchoice.nextchoice]
-        -- Если есть сохраненный путь от предыдущего выбора, используем его
         if _G.lastChoicePath then
             currentchoice.path = _G.lastChoicePath
-            _G.lastChoicePath = nil  -- очищаем после использования
+            _G.lastChoicePath = nil
         end
     else
-        -- Конец ветки
         currentchoice = nil
     end
 end
