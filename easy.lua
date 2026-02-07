@@ -54,14 +54,6 @@ local function hexToColor(input)
 end
 
 
-local function splitString(input)
-	local result = {}
-	for line in string.gmatch(input, "[^\n]+") do
-		table.insert(result, line)
-	end
-	return result
-end
-
 function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize, hexColor, hexBg, subsControl, loop)
     if type(getPointer) ~= "boolean" then getPointer = false end
     if type(loop) ~= "boolean" then loop = false end
@@ -96,30 +88,105 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
 
     local paused = false
 
+    local function autoWrapText(text, maxChars)
+        if not text or text == "" then return {} end
+        
+        local lines = {}
+        local words = {}
+        
+        -- Разбиваем текст на слова
+        for word in text:gmatch("%S+") do
+            table.insert(words, word)
+        end
+        
+        if #words == 0 then return {text} end
+        
+        local currentLine = words[1]
+        
+        for i = 2, #words do
+            local word = words[i]
+            if #currentLine + #word + 1 <= maxChars then
+                currentLine = currentLine .. " " .. word
+            else
+                table.insert(lines, currentLine)
+                currentLine = word
+            end
+        end
+        
+        table.insert(lines, currentLine)
+        
+        return lines
+    end
+
     while PMP.getFrame(pointer) do
         screen.clear()
         buttons.read()
-
-
         Image.draw(pointer, 0, 0)
 
-        -- Используем статичные fontSizeNow и subsEnabledNow
         if subsEnabledNow then
             local subs = PMP.getSubs()
             if subs and subs ~= "" then
-                for i, line in ipairs(splitString(subs)) do
-                    local y = 210 + fontSizeNow * (i - 1)
-                    local x = 240 - intraFont.textW(usedFont, line, fontSizeNow) / 2
-                    local w = intraFont.textW(usedFont, line, fontSizeNow)
-                    local h = fontSizeNow + 6
-
-
-                    if colorEnd then
-                        screen.filledRect(x - 4, y - 2, w + 7, h + 12, bgColor)
-                        intraFont.printGradient(x, y, line, colorStart, colorEnd, usedFont, fontSizeNow)
+                if subs:find("\\n") then
+                    subs = subs:gsub("\\n", "\n")
+                end
+                subs = subs:gsub("\r\n", "\n")
+                subs = subs:gsub("\r", "\n")
+                
+                local allLines = {}
+                local start = 1
+                
+                while true do
+                    local found = subs:find("\n", start)
+                    if not found then
+                        table.insert(allLines, subs:sub(start))
+                        break
+                    end
+                    table.insert(allLines, subs:sub(start, found - 1))
+                    start = found + 1
+                end
+                
+                local finalLines = {}
+                local maxChars = 47
+                
+                for _, originalLine in ipairs(allLines) do
+                    if originalLine ~= "" then
+                        local wrappedLines = autoWrapText(originalLine, maxChars)
+                        
+                        for _, wrappedLine in ipairs(wrappedLines) do
+                            table.insert(finalLines, wrappedLine)
+                        end
+                        
+                        if #wrappedLines > 0 then
+                            table.insert(finalLines, "")
+                        end
                     else
-                        intraFont.printBackground(x, y, line, colorStart, bgColor, usedFont, fontSizeNow)
-                    end                                  
+                        table.insert(finalLines, "")
+                    end
+                end
+                
+                if #finalLines > 0 and finalLines[#finalLines] == "" then
+                    table.remove(finalLines, #finalLines)
+                end
+                
+                local lineHeight = fontSizeNow + 15
+                local totalHeight = #finalLines * lineHeight
+                local startY = 272 - totalHeight - 20
+                
+                for i, line in ipairs(finalLines) do
+                    if line ~= "" then
+                        local y = startY + (i - 1) * lineHeight
+                        local textWidth = intraFont.textW(usedFont, line, fontSizeNow)
+                        local x = 240 - textWidth / 2
+                        local w = textWidth
+                        local h = fontSizeNow + 6
+
+                        if colorEnd then
+                            screen.filledRect(x - 4, y - 2, w + 7, h + 12, bgColor)
+                            intraFont.printGradient(x, y, line, colorStart, colorEnd, usedFont, fontSizeNow)
+                        else
+                            intraFont.printBackground(x, y, line, colorStart, bgColor, usedFont, fontSizeNow)
+                        end
+                    end
                 end
             end
         end
