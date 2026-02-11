@@ -67,9 +67,15 @@ while in_interactive_zone do
                 smoke_trail_used = true
                 choosing = false
             elseif smoke_trail_used then
-                nextscene = "assets/video/episode1/choices/6/tall_grass.lua"
                 in_interactive_zone = false
-                choosing = false
+        local result = PMP.playEasy("assets/video/episode1/choices/6/tall_grass.pmp", buttons.r, true, 
+                                    "assets/video/episode1/choices/6/tall_grass.srt", font, subssize, 
+                                    "#FFFFFF", "#000000/150", subs)
+        if result == 1 then
+            nextscene = "./mainmenu.lua"
+            return 1
+        end
+                break
             end
         elseif buttons.pressed(buttons.square) then
             if not bush_used then

@@ -75,9 +75,22 @@ local choices = {
     {
         id = "choice7",
         path = ep1 .. "choices/5/",
-        nextchoice = "choice7",
-        nextscene = ep1 .. "choices/6/the_woods_zone.lua"
-    }
+        leftchoice = "Run, I'll distract them!",
+        rightchoice = "Stay close, I'll protect you",
+        leftchoicefilename = "run_i_distract_them",
+        rightchoicefilename = "stay_close_i_protect_you",
+        zone = "the_woods"
+    },
+
+    {
+        id = "choice8",
+        path = ep1 .. "choices/7/",
+        leftchoice = "Run, I'll distract them!",
+        rightchoice = "Stay close, I'll protect you",
+        leftchoicefilename = "run_i_distract_them",
+        rightchoicefilename = "stay_close_i_protect_you",
+        nextchoice = "choice9"
+    },
 }
 
 local choicesMap = {}
@@ -89,6 +102,7 @@ _G.build = nil
 _G.lastChoiceFilename = nil
 
 local currentchoice = choicesMap.choice0
+
 PMP.setVolume(pmpvolume)
 
 while currentchoice do
@@ -105,6 +119,18 @@ while currentchoice do
     local videoPath = currentchoice.path or ""
     if _G.lastChoiceFilename and videoPath ~= "" and string.sub(videoPath, -1) == "/" then
         videoPath = videoPath .. _G.lastChoiceFilename
+    end
+
+    if currentchoice.zone == "the_woods" then
+        local result = PMP.playEasy(videoPath .. '.pmp', buttons.r, true, 
+                                    videoPath .. ".srt", font, subssize, 
+                                    "#FFFFFF", "#000000/150", subs)
+        if result == 1 then
+            nextscene = "./mainmenu.lua"
+            return 1
+        end
+        
+        dofile(ep1 .. "choices/6/the_woods_zone.lua")
     end
     
     if videoPath ~= "" then
@@ -146,6 +172,7 @@ while currentchoice do
     
     while choosing do
         buttons.read()
+
         
         if buttons.pressed(buttons.square) and currentchoice.leftchoice then
             choosing = false
