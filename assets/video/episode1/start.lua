@@ -1,226 +1,83 @@
-local ep1 = "assets/video/episode1/"
-local choices = {
-    {
-        id = "choice0",
-        path = ep1 .. "start",
-        leftchoice = "100 chicken-sized\n \n       zombie",
-        rightchoice = "10 zombie-sized\n \n       chickens",
-        leftchoicefilename = "100_chicken_sized",
-        rightchoicefilename = "10_zombie_sized",
-        nextchoice = "choice1"
-    },
-    
-    {
-        id = "choice1",
-        path = ep1,
-        leftchoice = "Cool Mask",
-        rightchoice = "Not funny, Axel",
-        leftchoicefilename = "cool_mask",
-        rightchoicefilename = "not_funny_axel",
-        nextchoice = "choice2"
-    },
-    
-    {
-        id = "choice2",
-        path = ep1 .. "choices/",
-        leftchoice = "Gabriel is awesome!",
-        rightchoice = "No big deal",
-        leftchoicefilename = "gabriel_is_awesome",
-        rightchoicefilename = "no_big_deal",
-        nextchoice = "choice3"
-    },
-    
-    {
-        id = "choice3",
-        path = ep1 .. "choices/1/",
-        leftchoice = "Build a Creeper!",
-        rightchoice = "Build an Enderman!",
-        leftchoicefilename = "build_a_creeper",
-        rightchoicefilename = "build_a_enderman",
-        nextchoice = "choice4"
-    },
-    
-    {
-        id = "choice4",
-        path = ep1 .. "choices/2/",
-        leftchoice = "We're Dead Enders",
-        rightchoice = "We're the Nether Maniacs",
-        middlechoice = "We're the Order Of The pig",
-        leftchoicefilename = "dead_enders",
-        rightchoicefilename = "nether_maniacs",
-        middlechoicefilename = "order_of_the_pig",
-        nextchoice = "choice5"
-    },
-    
-    {
-        id = "choice5",
-        path = ep1 .. "choices/3/",
-        leftchoice = "May the best team win",
-        rightchoice = "We're going to crush you",
-        leftchoicefilename = "may_the_best_team_win",
-        rightchoicefilename = "we_going_to_crush_you",
-        nextchoice = "choice6"   
-    },
-    
-    {
-        id = "choice6",
-        path = ep1 .. "choices/4/",
-        leftchoice = "Redstone Rap!",
-        rightchoice = "Warrior Whip!",
-        leftchoicefilename = "redstone_rap",
-        rightchoicefilename = "warrior_whip",
-        nextchoice = "choice7"
-    },
-    
-    {
-        id = "choice7",
-        path = ep1 .. "choices/5/",
-        leftchoice = "Run, I'll distract them!",
-        rightchoice = "Stay close, I'll protect you",
-        leftchoicefilename = "run_i_distract_them",
-        rightchoicefilename = "stay_close_i_protect_you",
-        zone = "the_woods"
-    },
+local path = System.LoadData("assets/mainmenu/saves_bg.png")
+local choosing = true
+local fade = 255
+if path then
+    PMP.setVolume(pmpvolume)
+local result =     PMP.playEasy("assets/mainmenu/loading.pmp")
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
+    nextscene = path.data
 
-    {
-        id = "choice8",
-        path = ep1 .. "choices/7/",
-        leftchoice = "Run, I'll distract them!",
-        rightchoice = "Stay close, I'll protect you",
-        leftchoicefilename = "run_i_distract_them",
-        rightchoicefilename = "stay_close_i_protect_you",
-        nextchoice = "choice9"
-    },
-}
-
-local choicesMap = {}
-for _, choice in ipairs(choices) do
-    choicesMap[choice.id] = choice
+    local variablesFile = io.open("assets/saves/1_variables.txt", "r")
+    if variablesFile then
+        for line in variablesFile:lines() do
+            local key, value = line:match("^(%w+) = \"([^\"]+)\"$")
+            if key and value then
+                _G[key] = value
+            end
+        end
+        variablesFile:close()
+    end
+    return 1
 end
 
-_G.build = nil
-_G.lastChoiceFilename = nil
+PMP.setVolume(pmpvolume)
+local result = PMP.playEasy('assets/mainmenu/lsave.pmp')
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
+local yourText = "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play"
+fade = 0
 
-local currentchoice = choicesMap.choice0
+-- Fade in
+while fade < 255 do
+    fade = math.min(fade + 8, 255)
+    screen.clear()
+    intraFont.print(230 - intraFont.textW(font, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", 0.3) / 2 + 8, 118 + 14, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", Color.new(255,255,255, fade), font, 0.3)
+    screen.flip()
+    LUA.sleep(16)
+end
+LUA.sleep(2000)
+
+-- Fade out
+while fade > 0 do
+    fade = math.max(fade - 8, 0)
+    screen.clear()
+    intraFont.print(230 - intraFont.textW(font, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", 0.3) / 2 + 8, 118 + 14, "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play", Color.new(255,255,255, fade), font, 0.3)
+    screen.flip()
+    LUA.sleep(16)
+end
 
 PMP.setVolume(pmpvolume)
+local result = PMP.playEasy('assets/video/episode1/START.pmp', buttons.r, true, "assets/video/episode1/start.srt", font, subssize, "#FFFFFF", "#000000/150", subs)
+if result == 1 then
+    nextscene = "./mainmenu.lua"
+    return 1
+end
 
-while currentchoice do
-    local choosing = true
-    
-    if currentchoice.id == "choice5" and (not currentchoice.path or currentchoice.path == "") then
-        if _G.build then
-            currentchoice.path = ep1 .. "choices/2/" .. _G.build .. "/"
-        else
-            currentchoice.path = ep1 .. "choices/2/"
-        end
-    end
-    
-    local videoPath = currentchoice.path or ""
-    if _G.lastChoiceFilename and videoPath ~= "" and string.sub(videoPath, -1) == "/" then
-        videoPath = videoPath .. _G.lastChoiceFilename
+Image.draw(square, 25, 127)
+Image.draw(circle, 455, 127)
+intraFont.print(45, 127, "100 chicken-sized\n \n       zombies", Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, "10 zombie-sized\n \n       chickens", 0.4), 127, "10 zombie-sized\n \n       chickens", Color.new(255,255,255), font, 0.4)
+intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+debugoverlay.draw(debugoverlay.loadSettings())
+screen.flip()
+
+while choosing do
+    buttons.read()
+    if buttons.pressed(buttons.square) then
+        nextscene =  "assets/video/episode1/100_chicken_sized.lua"
+        choosing = false
+    elseif buttons.pressed(buttons.circle) then
+        nextscene =  "assets/video/episode1/10_zombie_sized.lua"
+        choosing = false
+    elseif buttons.pressed(buttons.start) then
+choosing = false
+local pause = dofile("assets/misc/pause.lua")
+if pause == -1 then nextscene = "./mainmenu.lua" end
     end
 
-    if currentchoice.zone == "the_woods" then
-        local result = PMP.playEasy(videoPath .. '.pmp', buttons.r, true, 
-                                    videoPath .. ".srt", font, subssize, 
-                                    "#FFFFFF", "#000000/150", subs)
-        if result == 1 then
-            nextscene = "./mainmenu.lua"
-            return 1
-        end
-        
-        dofile(ep1 .. "choices/6/the_woods_zone.lua")
-    end
-    
-    if videoPath ~= "" then
-        local result = PMP.playEasy(videoPath .. '.pmp', buttons.r, true, 
-                                    videoPath .. ".srt", font, subssize, 
-                                    "#FFFFFF", "#000000/150", subs)
-        if result == 1 then
-            nextscene = "./mainmenu.lua"
-            return 1
-        end
-    end
-    
-    if currentchoice.leftchoice or currentchoice.rightchoice or currentchoice.middlechoice then
-        Image.draw(square, 25, 127)
-        Image.draw(circle, 455, 127)
-        
-        if currentchoice.middlechoice then
-            Image.draw(triangle, 140, 182)
-        end
-        
-        if currentchoice.leftchoice then
-            intraFont.print(45, 127, currentchoice.leftchoice, Color.new(255,255,255), font, 0.4)
-        end
-        
-        if currentchoice.rightchoice then
-            intraFont.print(450 - intraFont.textW(font, currentchoice.rightchoice, 0.4), 127, 
-                           currentchoice.rightchoice, Color.new(255,255,255), font, 0.4)
-        end
-
-        if currentchoice.middlechoice then
-            intraFont.print(140 + 15 + 5, 182, currentchoice.middlechoice, Color.new(255,255,255), font, 0.4)
-        end
-        
-        intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, 
-                       "Press R to save", Color.new(255,255,255, 150), font, 0.63)
-        debugoverlay.draw(debugoverlay.loadSettings())
-        screen.flip()
-    end
-    
-    while choosing do
-        buttons.read()
-
-        
-        if buttons.pressed(buttons.square) and currentchoice.leftchoice then
-            choosing = false
-            _G.lastChoiceFilename = currentchoice.leftchoicefilename
-            
-            if currentchoice.leftchoicefilename == "build_a_creeper" then
-                _G.build = "creeper/"
-            end
-            
-        elseif buttons.pressed(buttons.circle) and currentchoice.rightchoice then
-            choosing = false
-            _G.lastChoiceFilename = currentchoice.rightchoicefilename
-            
-            if currentchoice.rightchoicefilename == "build_a_enderman" then
-                _G.build = ""
-            end
-            
-        elseif buttons.pressed(buttons.triangle) and currentchoice.middlechoice then
-            choosing = false
-            _G.lastChoiceFilename = currentchoice.middlechoicefilename
-            
-            
-        elseif buttons.pressed(buttons.start) then
-            choosing = false
-            local pause = dofile("assets/misc/pause.lua")
-            if pause == -1 then 
-                nextscene = "./mainmenu.lua" 
-                return
-            end
-            choosing = true
-            
-        elseif buttons.pressed(buttons.r) then
-            choosing = false
-            SaveGame(1)
-            choosing = true
-            
-        elseif currentchoice.id == "choice7" then
-            choosing = false
-        end
-    end
-    
-    if currentchoice.nextscene then
-        nextscene = currentchoice.nextscene
-        zone = "the_woods"
-        break
-    elseif currentchoice.nextchoice then
-        currentchoice = choicesMap[currentchoice.nextchoice]
-    else
-        currentchoice = nil
-    end
 end
