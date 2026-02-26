@@ -5,7 +5,6 @@ local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
 local stat = sound.state(5)
-local logo = Image.load('assets/mainmenu/logo.png')
 local arrow = Image.load('assets/mainmenu/arrow.png')
 local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
@@ -14,9 +13,6 @@ videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, true, nil, nil,
 
 local timered = timer.create()
 local welanim_duration = timer.create()
-
-local btn_static = Image.load("assets/buttons/static.png")
-local btn_selected = Image.load("assets/buttons/selected.png")
 
 local buttonsList = {
     { text = "Play" },
@@ -27,41 +23,34 @@ local buttonsList = {
 
 local selectedButton = 1
 
+local buttonSprites = {
+    selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
+    static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 }
+}
+
 local function drawButtons()
-    local startX = 35
-    local startY = 100
+    local startX, startY, gap = 35, 105, 5
+    
     for i, button in ipairs(buttonsList) do
-        local x = startX
-        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
-        local bg = (i == selectedButton) and btn_selected or btn_static
-        Image.draw(bg, x, y)
+        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+        local y = startY + (i - 1) * (sprite.srch + gap)
+        
+        Image.draw(spritesheet, startX, y, sprite.srcw, sprite.srch, nil, 
+                   sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch, nil, nil, nil)
 
         local scale = 0.3
-        local tw = intraFont.textW(font, button.text, scale)
-        local th = intraFont.textH(font) * scale
-
-        local tx = x + (Image.W(bg) - tw) / 2
-        local ty = y + (Image.H(bg) - th)  / 2.7
-
-        local color = (i == selectedButton)
-            and Color.new(251, 238, 90)
-            or Color.new(255, 255, 255)
-
+        local textColor = (i == selectedButton) and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+        local textWidth = intraFont.textW(font, button.text, scale)
+        local textHeight = intraFont.textH(font) * scale
+        
         intraFont.printShadowed(
-            tx,
-            ty,
-            button.text,
-            color,
-            Color.new(0, 0, 0),
-            font,
-            90,
-            1,
-            scale,
-            0
+            startX + (sprite.srcw - textWidth) / 2,
+            y + (sprite.srch - textHeight) / 4,
+            button.text, textColor, Color.new(0, 0, 0),
+            font, 90, 1, scale, 0
         )
     end
 end
-
 
 function stop_sound(channel)
     local state = sound.state(channel)
@@ -69,11 +58,6 @@ function stop_sound(channel)
         sound.stop(channel)
     end
     sound.stop(channel)
-end
-
-local function unloadButtons()
-    Image.unload(btn_static)
-    Image.unload(btn_selected)
 end
 
 if stat.state == "stopped" then
@@ -117,7 +101,7 @@ while true do
         end
     end
 
-    Image.draw(logo, 32, 38, 190, 61, nil, nil, nil, nil, nil, nil, nil, nil, true)
+    Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
     intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     Image.draw(cross, 40, 233, 14, 14)
 
@@ -147,7 +131,7 @@ while true do
             fade = 0
             while fade < 255 do
                 screen.clear()
-                Image.draw(logo, 32, 38, 190, 61)
+                Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 190, 61, nil, nil, nil, true)
                 drawButtons()
                 Image.draw(arrow, arrowX, 107, 14, 22)
                 Image.draw(arrow, arrowX, 137, 14, 22)
@@ -164,10 +148,8 @@ while true do
             PMP.stop(videoFrame)
             local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
             if epmenu == 1 then
-                Image.unload(logo)
                 Image.unload(arrow)
                 Image.unload(welcome)
-                unloadButtons()
                 break
             end
         elseif selectedButton == 2 then
@@ -189,14 +171,11 @@ while true do
     end
 
     drawButtons()
-
     Image.draw(arrow, arrowX, 107, 14, 22)
     Image.draw(arrow, arrowX, 137, 14, 22)
 
-    if fade_enabled == 1 then
-        if fade > 0 then
-            screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-        end
+    if fade_enabled == 1 and fade > 0 then
+        screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
     end
 
     Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)

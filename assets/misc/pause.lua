@@ -1,13 +1,8 @@
-local bg = Image.load("assets/mainmenu/pause_bg.png")
 sound.playEasy("assets/sounds/pause_bg.at3", 5, true, false)
 sound.volumeEasy(sound.WAV_2, menumusic * 10)
 local fade = 255
 local c_black = Color.new(0, 0, 0)
 local fade_enabled = 1
-
--- load buttons
-local btn_static = Image.load("assets/buttons/static.png")
-local btn_selected = Image.load("assets/buttons/selected.png")
 
 local buttonsList = {
     { text = "Resume Game" },
@@ -17,45 +12,32 @@ local buttonsList = {
 }
 
 local selectedButton = 1
+local buttonSprites = {
+    selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
+    static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 }
+}
 
 local function drawButtons()
-    local startX = 150
-    local startY = 40
+    local startX, startY, gap = 150, 40, 5
     for i, button in ipairs(buttonsList) do
-        local x = startX
-        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
-        local bg = (i == selectedButton) and btn_selected or btn_static
-        Image.draw(bg, x, y)
+        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+        local y = startY + (i - 1) * (sprite.srch + gap)
+        
+        Image.draw(spritesheet, startX, y, sprite.srcw, sprite.srch, nil, 
+                   sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch, nil, nil, nil)
 
         local scale = 0.3
-        local tw = intraFont.textW(font, button.text, scale)
-        local th = intraFont.textH(font) * scale
-
-        local tx = x + (Image.W(bg) - tw) / 2
-        local ty = y + (Image.H(bg) - th)  / 2.7
-
-        local color = (i == selectedButton)
-            and Color.new(251, 238, 90)
-            or Color.new(255, 255, 255)
-
+        local textColor = (i == selectedButton) and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+        local textWidth = intraFont.textW(font, button.text, scale)
+        local textHeight = intraFont.textH(font) * scale
+        
         intraFont.printShadowed(
-            tx,
-            ty,
-            button.text,
-            color,
-            Color.new(0, 0, 0),
-            font,
-            90,
-            1,
-            scale,
-            0
+            startX + (sprite.srcw - textWidth) / 2,
+            y + (sprite.srch - textHeight) / 4,
+            button.text, textColor, Color.new(0, 0, 0),
+            font, 90, 1, scale, 0
         )
     end
-end
-
-local function unloadButtons()
-    Image.unload(btn_static)
-    Image.unload(btn_selected)
 end
 
 while true do
@@ -66,13 +48,12 @@ while true do
         fade = fade - 2
         if fade < 0 then fade = 0 end
     end    
-    
 
-    Image.draw(bg, 0, 0)
+    Image.draw(pause_bg, 0, 0)
     intraFont.printShadowed(230 - intraFont.textW(font, "Paused", 0.3) / 2 + 14, 25, "Paused", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     Image.draw(circle, 240 - intraFont.textW(font, "Resume Game", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, nil, nil, nil, nil, nil)
     intraFont.printShadowed(240 - intraFont.textW(font, "Resume Game", 0.3) / 2 + 8, 233 + 14, "Resume Game", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0) 
-    -- navigation logic
+
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
@@ -85,42 +66,30 @@ while true do
     end
     if buttons.pressed(buttons.circle) then
         PMP.pause()
-        unloadButtons()
-        Image.unload(bg)
         break
     end
     if buttons.pressed(buttons.cross) then    
         if selectedButton == 1 then
-            -- 'resume game' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.pause()
-            unloadButtons()
-            Image.unload(bg)
             break
         elseif selectedButton == 2 then
-            -- 'settings' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             dofile("assets/misc/pause_settings.lua")
         elseif selectedButton == 3 then
-            -- 'mainmenu' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-            Image.unload(bg)
-            unloadButtons()
             return -1
         elseif selectedButton == 4 then
-            -- 'Exit Game' button
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             LUA.exit()
         end
     end
 
-    -- Draw buttons
-    drawButtons() -- draw buttons
-
+    drawButtons()
     debugoverlay.draw(debugoverlay.loadSettings())
     if fade_enabled == 1 and fade > 0 then
         screen.filledRect(0, 0, 480, 272, c_black, 0, fade)

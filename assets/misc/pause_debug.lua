@@ -1,8 +1,3 @@
-local bg = Image.load("assets/mainmenu/pause_bg.png")
-
-local btn_static = Image.load("assets/buttons/static.png")
-local btn_selected = Image.load("assets/buttons/selected.png")
-
 local buttonsList = {
     { id = "FREERAM", text = "Free RAM", isToggle = true, state = false },
     { id = "BATTERY", text = "Battery", isToggle = true, state = false },
@@ -12,43 +7,32 @@ local buttonsList = {
 }
 
 local selectedButton = 1
+local buttonSprites = {
+    selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
+    static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 }
+}
 
 local function drawButtons()
-    local startX = 150
-    local startY = 40
-    local scale = 0.3
-
+    local startX, startY, gap, scale = 150, 40, 5, 0.3
     for i, button in ipairs(buttonsList) do
-        local x = startX
-        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
-
-        local bg = (i == selectedButton) and btn_selected or btn_static
-        Image.draw(bg, x, y)
+        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+        local y = startY + (i - 1) * (sprite.srch + gap)
+        
+        Image.draw(spritesheet, startX, y, sprite.srcw, sprite.srch, nil, 
+                   sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch, nil, nil, nil)
 
         local label = button.text .. ": " .. (button.state and "ON" or "OFF")
-        local tw = intraFont.textW(font, label, scale)
-        local th = intraFont.textH(font) * scale
-        local tx = x + (Image.W(bg) - tw) / 2
-        local ty = y + (Image.H(bg) - th)  / 2.7
-
-        local color = (i == selectedButton)
-            and Color.new(251, 238, 90)
-            or Color.new(255, 255, 255)
-
+        local textColor = (i == selectedButton) and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+        local textWidth = intraFont.textW(font, label, scale)
+        local textHeight = intraFont.textH(font) * scale
+        
         intraFont.printShadowed(
-            tx, ty,
-            label,
-            color,
-            Color.new(0, 0, 0),
-            font,
-            90, 1, scale, 0
+            startX + (sprite.srcw - textWidth) / 2,
+            y + (sprite.srch - textHeight) / 4,
+            label, textColor, Color.new(0, 0, 0),
+            font, 90, 1, scale, 0
         )
     end
-end
-
-local function unloadButtons()
-    Image.unload(btn_static)
-    Image.unload(btn_selected)
 end
 
 local function drawSystemInfo()
@@ -77,21 +61,17 @@ end
 local function saveSystemInfo()
     local file = io.open("assets/saves/debuginfo.txt", "w")
     if not file then return end
-
     for _, btn in ipairs(buttonsList) do
         if btn.isToggle then
-            local value = btn.state and 1 or 0
-            file:write(string.format("%s:%d\n", btn.id, value))
+            file:write(string.format("%s:%d\n", btn.id, btn.state and 1 or 0))
         end
     end
-
     file:close()
 end
 
 local function loadSystemInfo()
     local file = io.open("assets/saves/debuginfo.txt", "r")
     if not file then return end
-
     for line in file:lines() do
         local id, val = line:match("^(%w+):(%d)")
         if id and val then
@@ -103,7 +83,6 @@ local function loadSystemInfo()
             end
         end
     end
-
     file:close()
 end
 
@@ -112,8 +91,9 @@ loadSystemInfo()
 while true do
     screen.clear()
     buttons.read()
-    Image.draw(bg, 0, 0)
+    Image.draw(pause_bg, 0, 0)
     intraFont.printShadowed(230 - intraFont.textW(font, "Debug Menu", 0.3) / 2 + 14, 25, "Debug Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
@@ -122,7 +102,6 @@ while true do
         selectedButton = selectedButton + 1
         sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
     end
-
     if buttons.pressed(buttons.cross) then
         local current = buttonsList[selectedButton]
         if current.isToggle then
@@ -130,11 +109,8 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
         end
     end
-    
     if buttons.pressed(buttons.circle) then
-        unloadButtons()
         saveSystemInfo()
-        Image.unload(bg)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break

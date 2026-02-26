@@ -2,8 +2,6 @@
 subs = true
 subssize = 0.4
 
-local btn_static = Image.load("assets/buttons/static.png")
-local btn_selected = Image.load("assets/buttons/selected.png")
 local subtitleSavePath = "assets/saves/subtitles.txt"
 
 local function loadSubtitles()
@@ -45,10 +43,6 @@ local hints = {
     subssize = "Adjust the size of the subtitles"
 }
 
-local sliderBg = Image.load("assets/mainmenu/settings/slider_bg.png")
-local sliderStatic   = Image.load("assets/mainmenu/settings/slider_static.png")
-local sliderSelected = Image.load("assets/mainmenu/settings/slider_selected.png")
-
 local function generatePositions(yPos)
     local positions = {}
     for i = 0, 10 do
@@ -88,7 +82,6 @@ local sliders = {
         name = "Menu Music Volume",
         level = menumusic,
         positions = generatePositions(55),
-        spritesheet = musicSpritesheet,
         apply = function(level) sound.volumeEasy(5, level * 10) end,
         hintText = hints.music
     },
@@ -96,7 +89,6 @@ local sliders = {
         name = "PMP Videos Volume",
         level = pmpvideos,
         positions = generatePositions(95),
-        spritesheet = videoSpritesheet,
         apply = function(level) pmpvolume = level * 10 end,
         hintText = hints.video
     },
@@ -104,7 +96,6 @@ local sliders = {
         name = "UI Sounds Volume",
         level = uiLevel,
         positions = generatePositions(135),
-        spritesheet = uiSpritesheet,
         apply = function(level) sound.volumeEasy(sound.WAV_1, level * 10) end,
         hintText = hints.ui
     }
@@ -117,9 +108,23 @@ end
 local selectedIndex = 1
 local totalItems = #sliders + 2
 
+local buttonSprites = {
+    selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
+    static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 }
+}
+
+local sliderSprites = {
+    bg = { srcx = 227, srcy = 110, srcw = 180, srch = 26 },
+    selected = { srcx = 407, srcy = 110, srcw = 18, srch = 26 },
+    static = { srcx = 425, srcy = 110, srcw = 18, srch = 26 }
+}
+
 local function drawSlider(slider, isSelected, y)
     local x = 36
-    Image.draw(sliderBg, x, y, 183, 26)
+    
+    Image.draw(spritesheet, x, y, sliderSprites.bg.srcw, sliderSprites.bg.srch, nil,
+               sliderSprites.bg.srcx, sliderSprites.bg.srcy, 
+               sliderSprites.bg.srcw, sliderSprites.bg.srch, nil, nil, nil)
 
     local scale = 0.27
     local text = slider.name .. ": " .. tostring(slider.level)
@@ -127,21 +132,26 @@ local function drawSlider(slider, isSelected, y)
     local th = intraFont.textH(font) * scale
 
     local tx = x + (179 - tw) / 2
-    local ty = y + (37 - th) / 3.5
+    local ty = y + (37 - th) / 4
 
     local color = isSelected and Color.new(251,238,90) or Color.new(255,255,255)
 
     intraFont.printShadowed(tx, ty, text, color, Color.new(0,0,0), font, 90, 1, scale, 0)
 
     local pos = slider.positions[slider.level + 1]
-    local sliderImg = isSelected and sliderSelected or sliderStatic
-    Image.draw(sliderImg, pos.x, y)
+    local sliderSprite = isSelected and sliderSprites.selected or sliderSprites.static
+    
+    Image.draw(spritesheet, pos.x, y, sliderSprite.srcw, sliderSprite.srch, nil,
+               sliderSprite.srcx, sliderSprite.srcy, 
+               sliderSprite.srcw, sliderSprite.srch, nil, nil, nil)
 end
 
 local function drawToggle(text, stateText, isSelected, y)
     local x = 36
-    local slcted = isSelected and btn_selected or btn_static
-    Image.draw(slcted, x, y)
+    local sprite = isSelected and buttonSprites.selected or buttonSprites.static
+    
+    Image.draw(spritesheet, x, y, sprite.srcw, sprite.srch, nil,
+               sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch, nil, nil, nil)
 
     local scale = 0.3
     local fullText = text .. ": " .. stateText
@@ -149,7 +159,7 @@ local function drawToggle(text, stateText, isSelected, y)
     local th = intraFont.textH(font) * scale
 
     local tx = x + (179 - tw) / 2
-    local ty = y + (37 - th) / 3
+    local ty = y + (37 - th) / 5
 
     local color = isSelected and Color.new(251,238,90) or Color.new(255,255,255)
 
@@ -157,13 +167,13 @@ local function drawToggle(text, stateText, isSelected, y)
 end
 
 local function drawui()
-    intraFont.printShadowed(40, 40, "Audio/Video Settings", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(40, 35, "Audio/Video Settings", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
 
     for i, slider in ipairs(sliders) do
         drawSlider(slider, i == selectedIndex, 27 + i * 30)
     end
 
-    drawToggle("Subtitles", subs and "On" or "Off", selectedIndex == #sliders + 1, 1 + (#sliders + 1) * 35)
+    drawToggle("Subtitles", subs and "On" or "Off", selectedIndex == #sliders + 1, 1 + (#sliders + 1) * 36)
     local sizeText = (subssizeIndex == 1 and "Small") or (subssizeIndex == 2 and "Medium") or "Large"
     drawToggle("Subtitle Size", sizeText, selectedIndex == #sliders + 2, 1 + (#sliders + 2) * 34)
 
@@ -230,13 +240,6 @@ while true do
         end
         saveLevels("assets/saves/soundlevels.txt", levelsToSave)
         saveSubtitles()
-
-
-        Image.unload(btn_static)
-        Image.unload(btn_selected)
-        Image.unload(sliderBg)
-        Image.unload(sliderStatic)
-        Image.unload(sliderSelected)
         break
     end
 end

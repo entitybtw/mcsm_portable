@@ -1,5 +1,4 @@
 local img = Image.load("assets/mainmenu/controls/psp.png")
-local bg = Image.load("assets/mainmenu/pause_bg.png")
 local imgfade = 0
 local imgtimer = timer.create()
 
@@ -7,7 +6,7 @@ while true do
     buttons.read()
     screen.clear()
 
-    Image.draw(bg, 0, 0)
+    Image.draw(pause_bg, 0, 0)
 
 
     local elapsed = timer.time(imgtimer)
@@ -31,7 +30,6 @@ while true do
 
     if buttons.pressed(buttons.circle) then
         Image.unload(img)
-        Image.unload(bg)
         sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
         sound.volumeEasy(sound.WAV_1, uiLevel * 10)
         break

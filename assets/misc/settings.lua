@@ -1,11 +1,4 @@
--- load buttons
-
-
 local selectedButton = 1
-
-local btn_static = Image.load("assets/buttons/static.png")
-local btn_selected = Image.load("assets/buttons/selected.png")
-
 local buttonsList = {
     { text = "Controls" },
     { text = "Audio/Video" },
@@ -13,45 +6,33 @@ local buttonsList = {
     { text = "Credits" }
 }
 
+local buttonSprites = {
+    selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
+    static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 }
+}
 
 local function drawButtons()
-    local startX = 35
-    local startY = 50
+    local startX, startY, gap = 35, 50, 5
+    
     for i, button in ipairs(buttonsList) do
-        local x = startX
-        local y = startY + (i - 1) * (Image.H(btn_static) / 1.15)
-        local bg = (i == selectedButton) and btn_selected or btn_static
-        Image.draw(bg, x, y)
+        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+        local y = startY + (i - 1) * (sprite.srch + gap)
+        
+        Image.draw(spritesheet, startX, y, sprite.srcw, sprite.srch, nil, 
+                   sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch, nil, nil, nil)
 
         local scale = 0.3
-        local tw = intraFont.textW(font, button.text, scale)
-        local th = intraFont.textH(font) * scale
-
-        local tx = x + (Image.W(bg) - tw) / 2
-        local ty = y + (Image.H(bg) - th)  / 2.7
-
-        local color = (i == selectedButton)
-            and Color.new(251, 238, 90)
-            or Color.new(255, 255, 255)
-
+        local textColor = (i == selectedButton) and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+        local textWidth = intraFont.textW(font, button.text, scale)
+        local textHeight = intraFont.textH(font) * scale
+        
         intraFont.printShadowed(
-            tx,
-            ty,
-            button.text,
-            color,
-            Color.new(0, 0, 0),
-            font,
-            90,
-            1,
-            scale,
-            0
+            startX + (sprite.srcw - textWidth) / 2,
+            y + (sprite.srch - textHeight) / 4,
+            button.text, textColor, Color.new(0, 0, 0),
+            font, 90, 1, scale, 0
         )
     end
-end
-
-local function unloadButtons()
-    Image.unload(btn_static)
-    Image.unload(btn_selected)
 end
 
 while true do
@@ -94,14 +75,13 @@ while true do
     end
     if buttons.pressed(buttons.circle) then    
        sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-       unloadButtons()
        break
     end
 
     drawButtons()
 
     debugoverlay.draw(debugoverlay.loadSettings())
-    intraFont.printShadowed(40, 40, "Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(40, 35, "Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     Image.draw(cross, 40, 233, 14, 14)
     intraFont.printShadowed(38 + 14 + 5, 234, "Select", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
     Image.draw(circle, 40 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 233, 14, 14)
