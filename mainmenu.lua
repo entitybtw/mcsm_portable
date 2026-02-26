@@ -5,8 +5,6 @@ local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
 local stat = sound.state(5)
-local arrow = Image.load('assets/mainmenu/arrow.png')
-local welcome = Image.load('assets/mainmenu/welcome.png')
 local arrowX = 27
 local arrowStep = 0
 videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
@@ -133,9 +131,9 @@ while true do
                 screen.clear()
                 Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 190, 61, nil, nil, nil, true)
                 drawButtons()
-                Image.draw(arrow, arrowX, 107, 14, 22)
-                Image.draw(arrow, arrowX, 137, 14, 22)
-                Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+                Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
+                Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
+                Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
                 Image.draw(cross, 40, 233, 14, 14)
                 intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
                 screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
@@ -148,8 +146,6 @@ while true do
             PMP.stop(videoFrame)
             local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
             if epmenu == 1 then
-                Image.unload(arrow)
-                Image.unload(welcome)
                 break
             end
         elseif selectedButton == 2 then
@@ -171,14 +167,14 @@ while true do
     end
 
     drawButtons()
-    Image.draw(arrow, arrowX, 107, 14, 22)
-    Image.draw(arrow, arrowX, 137, 14, 22)
+    Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
+    Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
 
     if fade_enabled == 1 and fade > 0 then
         screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
     end
 
-    Image.draw(welcome, 245, 200, 226, 49, white, 0, 0, 226, 49, 0, welanim)
+    Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
     intraFont.printShadowed(270, 205, "Welcome to Minecraft: Story Mode!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.3, 0)
     intraFont.printShadowed(335, 225, "Visit mcsm_portable github page!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.2, 0)
 
