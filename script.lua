@@ -7,12 +7,13 @@ local rectfade = 0
 
 local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 local subtitles = io.open("assets/saves/subtitles.txt", "r")
-local void = Image.load("assets/mainmenu/void.png")
 font = intraFont.load("assets/minecraft.pgf")
 square = Image.load("assets/icons/square.png")
 circle = Image.load("assets/icons/circle.png")
 cross = Image.load("assets/icons/cross.png")
 triangle = Image.load("assets/icons/triangle.png")
+pause_bg = Image.load("assets/mainmenu/pause_bg.png")
+spritesheet = Image.load("assets/mainmenu/menu-spritesheet.png")
 require("easy")
 
 -- check if the file exists; if not, create it with default values (10 for each setting)
@@ -23,7 +24,7 @@ if not soundlevels then
     soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 end
 menumusic = tonumber(soundlevels:read("*l"))
-pmpvideos = tonumber(soundlevels:read("*l")) 
+pmpvideos = tonumber(soundlevels:read("*l"))
 uiLevel = tonumber(soundlevels:read("*l"))
 
 if not subtitles then
@@ -33,7 +34,7 @@ if not subtitles then
     subtitles = io.open("assets/saves/subtitles.txt", "r")
 end
 subs = tonumber(subtitles:read("*l"))
-subssize = tonumber(subtitles:read("*l")) 
+subssize = tonumber(subtitles:read("*l"))
 subtitles:close()
 -- load menumusic level
 if menumusic and menumusic >= 0 and menumusic <= 10 then
@@ -101,7 +102,7 @@ local pointer = PMP.play("assets/mainmenu/mcsm_title.pmp", true, true)
 
 local loadingFrames = {}
 for i = 0, 7 do
-    loadingFrames[i] = Image.load("assets/icons/loading/"..i..".png")
+    loadingFrames[i] = Image.load("assets/icons/loading/" .. i .. ".png")
 end
 
 local startPressed = false
@@ -114,10 +115,10 @@ local stepTimer = 0
 local videoStartTime = os.clock()
 local loadingSequence = {
     { text = "Initializing functions...", duration = 1.5 },
-    { text = "Reading settings...", duration = 0.7 },
-    { text = "Reading save data...", duration = 1.4 },
-    { text = "Checking episodes...", duration = 0.4 },
-    { text = "Finishing up...", duration = 2.0 },
+    { text = "Reading settings...",       duration = 0.7 },
+    { text = "Reading save data...",      duration = 1.4 },
+    { text = "Checking episodes...",      duration = 0.4 },
+    { text = "Finishing up...",           duration = 2.0 },
 }
 
 while PMP.getFrame(pointer) do
@@ -137,7 +138,7 @@ while PMP.getFrame(pointer) do
         if voidfade < 255 then
             voidfade = math.min(voidfade + 5, 255)
         end
-        Image.draw(void, 177, 189, nil, nil, nil, nil, nil, nil, nil, nil, voidfade)
+        Image.draw(spritesheet, 177, 189, 124, 14, nil, 210, 48, 124, 14, nil, voidfade)
 
         local timeSinceStart = os.clock() - loadingStartTime
 
@@ -151,7 +152,8 @@ while PMP.getFrame(pointer) do
                 textfade = math.min(textfade + 5, 255)
             end
 
-            intraFont.print(235 - intraFont.textW(font, "LOADING", 0.4) / 2 + 8, 195 + 14, "LOADING", Color.new(255,255,255, textfade), font, 0.4)
+            intraFont.print(235 - intraFont.textW(font, "LOADING", 0.4) / 2 + 8, 195 + 14, "LOADING",
+                Color.new(255, 255, 255, textfade), font, 0.4)
 
             local frame = loadingFrames[frameIndex]
             if frame then
@@ -160,7 +162,8 @@ while PMP.getFrame(pointer) do
 
             if currentStep <= #loadingSequence then
                 local step = loadingSequence[currentStep]
-                intraFont.print(235 - intraFont.textW(font, step.text, 0.3) / 2 + 8, 222, step.text, Color.new(255,255,255, textfade), font, 0.3)
+                intraFont.print(235 - intraFont.textW(font, step.text, 0.3) / 2 + 8, 222, step.text,
+                    Color.new(255, 255, 255, textfade), font, 0.3)
 
                 if os.clock() - stepTimer >= step.duration then
                     currentStep = currentStep + 1
@@ -187,7 +190,6 @@ while PMP.getFrame(pointer) do
     screen.flip()
 end
 
-Image.unload(void)
 for i = 0, 7 do
     if loadingFrames[i] then
         Image.unload(loadingFrames[i])
@@ -202,7 +204,7 @@ require("debugoverlay")
 require("files")
 sound.playEasy("assets/sounds/bg.at3", 5, true, false)
 
-fade_enabled = 1  -- enable fade effect for mainmenu (1 = enabled, 0 = disabled)
+fade_enabled = 1             -- enable fade effect for mainmenu (1 = enabled, 0 = disabled)
 nextscene = "./mainmenu.lua" -- open mainmenu
 
 -- optimized dofile replacement, made by dntrnk, to prevent memory overload and PSP freezes
