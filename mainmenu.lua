@@ -7,7 +7,7 @@ local cos = math.cos
 local stat = sound.state(5)
 local arrowX = 27
 local arrowStep = 0
-videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
+videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
 
 local timered = timer.create()
 local welanim_duration = timer.create()
@@ -144,7 +144,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.stop(videoFrame)
-            local epmenu = dofile("assets/mainmenu/epmenu/epmenu.lua")
+            local epmenu = dofile("assets/ui/epmenu/epmenu.lua")
             if epmenu == 1 then
                 break
             end
