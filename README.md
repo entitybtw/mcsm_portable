@@ -26,8 +26,10 @@ The original game and Netflix version are no longer available, but it’s still 
 </p>
 
 ## 🪞 repo mirrors
+- github -> https://github.com/entitybtw/mcsm_portable
 - codeberg -> https://codeberg.org/entitybtw/mcsm_portable
 - gitlab -> https://gitlab.com/entitybtw-group/mcsm_portable
+- entbtwgit (^_^) [my selfhosted git-service] -> https://git.entitybtw.ru/entitybtw/mcsm_portable
 
 ## 👏 thanks to
 
