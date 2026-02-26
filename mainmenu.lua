@@ -129,7 +129,7 @@ while true do
             fade = 0
             while fade < 255 do
                 screen.clear()
-                Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 190, 61, nil, nil, nil, true)
+                Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
                 drawButtons()
                 Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
                 Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
@@ -174,7 +174,7 @@ while true do
         screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
     end
 
-    Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
+    Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 225, 48, 0, welanim)
     intraFont.printShadowed(270, 205, "Welcome to Minecraft: Story Mode!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.3, 0)
     intraFont.printShadowed(335, 225, "Visit mcsm_portable github page!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.2, 0)
 
