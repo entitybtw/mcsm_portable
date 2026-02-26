@@ -1,9 +1,9 @@
 local choosing = true
 
-local path = System.LoadData("assets/mainmenu/saves_bg.png")
+local path = System.LoadData("assets/ui/saves_bg.png")
 if path then
     PMP.setVolume(pmpvolume)
-local result =     PMP.playEasy("assets/mainmenu/loading.pmp")
+local result =     PMP.playEasy("assets/ui/loading.pmp")
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

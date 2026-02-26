@@ -63,7 +63,7 @@ for i = 1, latestContinue - 1 do
 end
 
 PMP.setVolume(pmpvolume) -- setting video volume based on the volume set in the game settings
-PMP.play("assets/mainmenu/epmenu/ep" .. curEp .. getStatusForEpisode(curEp) .. ".pmp") -- playing a video based on the current episode
+PMP.play("assets/ui/epmenu/ep" .. curEp .. getStatusForEpisode(curEp) .. ".pmp") -- playing a video based on the current episode
 while true do
     buttons.read()
 
@@ -72,7 +72,7 @@ while true do
         if curEp ~= 1 then
             status = getStatus(animType, curEp)
             PMP.setVolume(pmpvolume)
-            PMP.play("assets/mainmenu/epmenu/ep" .. curEp .. "_" .. animType .. status .. ".pmp") -- playing a video based on the current episode and the current animation
+            PMP.play("assets/ui/epmenu/ep" .. curEp .. "_" .. animType .. status .. ".pmp") -- playing a video based on the current episode and the current animation
             curEp = curEp - 1
         end
     end
@@ -82,7 +82,7 @@ while true do
         if curEp ~= 5 then
             status = getStatus(animType, curEp)
             PMP.setVolume(pmpvolume)
-            PMP.play("assets/mainmenu/epmenu/ep" .. curEp .. "_" .. animType .. status .. ".pmp")
+            PMP.play("assets/ui/epmenu/ep" .. curEp .. "_" .. animType .. status .. ".pmp")
             curEp = curEp + 1
         end
     end
@@ -100,54 +100,54 @@ while true do
 
     if buttons.pressed(buttons["square"]) then
         if curEp ~= 1 and curEp ~= 3 then
-            System.DeleteData("assets/mainmenu/saves_bg.png")
+            System.DeleteData("assets/ui/saves_bg.png")
             rm(curEp .. "_status")
             _G["status_" .. curEp] = "start"
             wr(curEp .. "_status", "start")
             PMP.setVolume(pmpvolume)
-            PMP.play("assets/mainmenu/epmenu/ep" .. curEp .. getStatusForEpisode(curEp) .. ".pmp")
+            PMP.play("assets/ui/epmenu/ep" .. curEp .. getStatusForEpisode(curEp) .. ".pmp")
         end
         if curEp == 1 then -- if the 1st episode is selected and the square button is pressed, a question appears about deleting key saves or regular saves
             System.message("Do you want to delete the save files for episode 1, or just the key save files? Save files - Yes, Key save files - No", 1) -- if you clicking yes, opens usual saves management menu, if you click no, all key saves are being deleted, if you click back it returns to episode menu
             local answer = System.buttonPressed()
             if answer == "Yes" then
-                System.DeleteData("assets/mainmenu/saves_bg.png")
+                System.DeleteData("assets/ui/saves_bg.png")
                 rm("1_status")
                 rm("1_variables")
                 status_1 = "start"
                 PMP.setVolume(pmpvolume)
-                PMP.play("assets/mainmenu/epmenu/ep1_start.pmp")
+                PMP.play("assets/ui/epmenu/ep1_start.pmp")
             elseif answer == "No" then
                 rm("bf", "gp", "em")
                 PMP.setVolume(pmpvolume)
-                PMP.play("assets/mainmenu/epmenu/ep1_start.pmp")
+                PMP.play("assets/ui/epmenu/ep1_start.pmp")
             elseif answer == "Back" then
                 PMP.setVolume(pmpvolume)
-                PMP.play("assets/mainmenu/epmenu/ep1_start.pmp")
+                PMP.play("assets/ui/epmenu/ep1_start.pmp")
             end
         elseif curEp == 3 then -- if the 1st episode is selected and the square button is pressed, a question appears about deleting key saves or regular saves
                 System.message("Do you want to delete the save files for episode 3, or just the key save files? Save files - Yes, Key save files - No", 1) -- if you clicking yes, opens usual saves management menu, if you click no, all key saves are being deleted, if you click back it returns to episode menu
                 local answer = System.buttonPressed()
                 if answer == "Yes" then
-                    System.DeleteData("assets/mainmenu/saves_bg.png")
+                    System.DeleteData("assets/ui/saves_bg.png")
                     rm("3_status")
                     status_3 = "start"
                     PMP.setVolume(pmpvolume)
-                    PMP.play("assets/mainmenu/epmenu/ep3_start.pmp")
+                    PMP.play("assets/ui/epmenu/ep3_start.pmp")
                 elseif answer == "No" then
                     rm("ema")
                     PMP.setVolume(pmpvolume)
-                    PMP.play("assets/mainmenu/epmenu/ep3_start.pmp")
+                    PMP.play("assets/ui/epmenu/ep3_start.pmp")
                 elseif answer == "Back" then
                     PMP.setVolume(pmpvolume)
-                    PMP.play("assets/mainmenu/epmenu/ep3_start.pmp")
+                    PMP.play("assets/ui/epmenu/ep3_start.pmp")
                 end
         end
     end
 
     if buttons.pressed(buttons["circle"]) then
         wr("lastep", tostring(curEp))
-        videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+        videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
         return 0
     end
 end

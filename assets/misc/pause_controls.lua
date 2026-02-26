@@ -1,4 +1,4 @@
-local img = Image.load("assets/mainmenu/controls/psp.png")
+local img = Image.load("assets/ui/controls/psp.png")
 local imgfade = 0
 local imgtimer = timer.create()
 

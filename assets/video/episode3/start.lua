@@ -6,10 +6,10 @@ else
     gp = nil
 end
 if gp then
-    local path = System.LoadData("assets/mainmenu/saves_bg.png")
+    local path = System.LoadData("assets/ui/saves_bg.png")
     if path and gp then
         PMP.setVolume(pmpvolume)
-        PMP.playEasy("assets/mainmenu/loading.pmp")
+        PMP.playEasy("assets/ui/loading.pmp")
         nextscene = path.data
         return 1
     end

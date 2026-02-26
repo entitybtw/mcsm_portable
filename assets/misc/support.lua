@@ -1,4 +1,4 @@
-local img = Image.load("assets/mainmenu/support.png") -- load image
+local img = Image.load("assets/ui/support.png") -- load image
 
 screen.clear()
 Image.draw(img, 0, 0) -- draw image

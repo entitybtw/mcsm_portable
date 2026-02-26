@@ -12,8 +12,8 @@ square = Image.load("assets/icons/square.png")
 circle = Image.load("assets/icons/circle.png")
 cross = Image.load("assets/icons/cross.png")
 triangle = Image.load("assets/icons/triangle.png")
-pause_bg = Image.load("assets/mainmenu/pause_bg.png")
-spritesheet = Image.load("assets/mainmenu/menu-spritesheet.png")
+pause_bg = Image.load("assets/ui/pause_bg.png")
+spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
 
 -- check if the file exists; if not, create it with default values (10 for each setting)
@@ -51,8 +51,8 @@ if uiLevel and uiLevel >= 0 and uiLevel <= 10 then
 end
 soundlevels:close()
 
-local byentitybtw = Image.load("assets/mainmenu/byentitybtw.png")
-local headphones = Image.load("assets/mainmenu/headphones.png")
+local byentitybtw = Image.load("assets/ui/byentitybtw.png")
+local headphones = Image.load("assets/ui/headphones.png")
 
 -- byentitybtw fade in
 fade = 255
@@ -98,7 +98,7 @@ Image.unload(byentitybtw)
 Image.unload(headphones)
 
 PMP.setVolume(pmpvolume)
-local pointer = PMP.play("assets/mainmenu/mcsm_title.pmp", true, true)
+local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true)
 
 local loadingFrames = {}
 for i = 0, 7 do
@@ -197,7 +197,7 @@ for i = 0, 7 do
     end
 end
 
-PMP.play("assets/mainmenu/loading.pmp")
+PMP.play("assets/ui/loading.pmp")
 
 require("saves")
 require("debugoverlay")

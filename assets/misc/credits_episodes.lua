@@ -62,7 +62,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep1.pmp', false, false, nil, buttons.start)
-            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+            videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
             sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 2 then
             PMP.setVolume(pmpvolume)
@@ -71,7 +71,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep2.pmp', false, false, nil, buttons.start)
-            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+            videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
             sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 3 then
             PMP.setVolume(pmpvolume)
@@ -80,7 +80,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep3.pmp', false, false, nil, buttons.start)
-            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+            videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
             sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 4 then
             PMP.setVolume(pmpvolume)
@@ -89,7 +89,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep4.pmp', false, false, nil, buttons.start)
-            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+            videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
             sound.volumeEasy(5, menumusic * 10)
         elseif selectedButton == 5 then
             PMP.setVolume(pmpvolume)
@@ -98,7 +98,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.play('assets/video/credits/ep5.pmp', false, false, nil, buttons.start)
-            videoFrame = PMP.play("assets/mainmenu/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
+            videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
             sound.volumeEasy(5, menumusic * 10)
         end
     end
