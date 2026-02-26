@@ -94,7 +94,6 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
         local lines = {}
         local words = {}
         
-        -- Разбиваем текст на слова
         for word in text:gmatch("%S+") do
             table.insert(words, word)
         end
