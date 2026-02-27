@@ -10,7 +10,7 @@ function SaveGame(episodeNumber)
     elseif episodeNumber == 4 or episodeNumber == 5 then
         suffix = "th"
     end
-    System.SaveData(nextscene, episodeNumber .. suffix .. " episode save", "Minecraft Story Mode Save", "EBOOT.PBP", "assets/buttons/saves_icon.png", "assets/ui/saves_bg.png")
+    System.SaveData(nextscene, episodeNumber .. suffix .. " episode save", "Minecraft Story Mode Save", "EBOOT.PBP", "assets/ui/saves_icon.png", "assets/ui/saves_bg.png")
     wr(episodeNumber .. "_status", "continue")
     for i = episodeNumber + 1, 5 do
         rm(i .. "_status")
