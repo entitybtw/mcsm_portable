@@ -101,7 +101,7 @@ while true do
 
     Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
     intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-    Image.draw(cross, 40, 233, 14, 14)
+    Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
 
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1
@@ -134,7 +134,7 @@ while true do
                 Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
                 Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
                 Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
-                Image.draw(cross, 40, 233, 14, 14)
+                Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
                 intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
                 screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
                 screen.flip()
