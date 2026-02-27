@@ -1,5 +1,6 @@
 sound.playEasy("assets/sounds/pause_bg.at3", 5, true, false)
 sound.volumeEasy(sound.WAV_2, menumusic * 10)
+pause_bg = Image.load("assets/ui/pause_bg.png")
 local fade = 255
 local c_black = Color.new(0, 0, 0)
 local fade_enabled = 1
@@ -73,6 +74,7 @@ while true do
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
             PMP.pause()
+            Image.unload(pause_bg)
             System.GC()
             break
         elseif selectedButton == 2 then
@@ -83,6 +85,7 @@ while true do
         elseif selectedButton == 3 then
             sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
             sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+            Image.unload(pause_bg)
             System.GC()
             return -1
         elseif selectedButton == 4 then

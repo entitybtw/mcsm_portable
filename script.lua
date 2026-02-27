@@ -8,7 +8,6 @@ local rectfade = 0
 local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 local subtitles = io.open("assets/saves/subtitles.txt", "r")
 font = intraFont.load("assets/minecraft.pgf")
-pause_bg = Image.load("assets/ui/pause_bg.png")
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
 
@@ -98,7 +97,7 @@ local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true)
 
 local loadingFrames = {}
 for i = 0, 7 do
-    loadingFrames[i] = Image.load("assets/icons/loading/" .. i .. ".png")
+    loadingFrames[i] = Image.load("assets/ui/loading/" .. i .. ".png")
 end
 
 local startPressed = false
