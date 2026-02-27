@@ -68,7 +68,7 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.square) then
             if not button_used then
-                playCutscene("assets/video/episode3/petra/choices/16/button.pmp", "assets/video/episode3/petra/choices/16/button.srt")
+                playCutscene("assets/video/episode3/petra/choices/16/button.pmp", "assets/subtitles/episode3/petra/choices/16/button.srt")
                 button_used = true
                 choosing = false
             elseif button_used then
@@ -78,21 +78,21 @@ while in_interactive_zone do
             end
         elseif buttons.pressed(buttons.cross) then
             if not lukas_talk then
-                if not button_used then playCutscene("assets/video/episode3/petra/choices/16/lukas.pmp", "assets/video/episode3/petra/choices/16/lukas.srt") elseif button_used then playCutscene("assets/video/episode3/petra/choices/16/lukas_button.pmp", "assets/video/episode3/petra/choices/16/lukas_button.srt") end
+                if not button_used then playCutscene("assets/video/episode3/petra/choices/16/lukas.pmp", "assets/subtitles/episode3/petra/choices/16/lukas.srt") elseif button_used then playCutscene("assets/video/episode3/petra/choices/16/lukas_button.pmp", "assets/subtitles/episode3/petra/choices/16/lukas_button.srt") end
                 lukas_talk = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not axel_talk then
-                if not button_used then playCutscene("assets/video/episode3/petra/choices/16/axel.pmp", "assets/video/episode3/petra/choices/16/axel.srt") elseif button_used then playCutscene("assets/video/episode3/petra/choices/16/axel_button.pmp", "assets/video/episode3/petra/choices/16/axel_button.srt") end
+                if not button_used then playCutscene("assets/video/episode3/petra/choices/16/axel.pmp", "assets/subtitles/episode3/petra/choices/16/axel.srt") elseif button_used then playCutscene("assets/video/episode3/petra/choices/16/axel_button.pmp", "assets/subtitles/episode3/petra/choices/16/axel_button.srt") end
                 axel_talk = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.triangle) then
             if not olivia_talk then
-                if not button_used then playCutscene("assets/video/episode3/petra/choices/16/olivia.pmp", "assets/video/episode3/petra/choices/16/olivia.srt") elseif button_used then playCutscene("assets/video/episode3/petra/choices/16/olivia_button.pmp", "assets/video/episode3/petra/choices/16/olivia_button.srt") end
+                if not button_used then playCutscene("assets/video/episode3/petra/choices/16/olivia.pmp", "assets/subtitles/episode3/petra/choices/16/olivia.srt") elseif button_used then playCutscene("assets/video/episode3/petra/choices/16/olivia_button.pmp", "assets/subtitles/episode3/petra/choices/16/olivia_button.srt") end
                 olivia_talk = true
                 choosing = false
             end

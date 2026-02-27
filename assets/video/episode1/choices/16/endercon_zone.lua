@@ -68,28 +68,28 @@ while in_interactive_zone do
             end
         elseif buttons.pressed(buttons.square) then
             if not chicken_machine_used then
-                playCutscene("assets/video/episode1/choices/16/chicken_machine.pmp", "assets/video/episode1/choices/16/chicken_machine.srt")
+                playCutscene("assets/video/episode1/choices/16/chicken_machine.pmp", "assets/subtitles/episode1/choices/16/chicken_machine.srt")
                 chicken_machine_used = true
                 choosing = false
             elseif chicken_machine_used then
-                playCutscene("assets/video/episode1/choices/16/chicken_machine_2.pmp", "assets/video/episode1/choices/16/chicken_machine_2.srt")
+                playCutscene("assets/video/episode1/choices/16/chicken_machine_2.pmp", "assets/subtitles/episode1/choices/16/chicken_machine_2.srt")
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not slime_used then
-                playCutscene("assets/video/episode1/choices/16/slime.pmp", "assets/video/episode1/choices/16/slime.srt")
+                playCutscene("assets/video/episode1/choices/16/slime.pmp", "assets/subtitles/episode1/choices/16/slime.srt")
                 slime_used = true
                 choosing = false
             elseif slime_used and not crafting_table_used then
-                playCutscene("assets/video/episode1/choices/16/crafting_table.pmp", "assets/video/episode1/choices/16/crafting_table.srt")
+                playCutscene("assets/video/episode1/choices/16/crafting_table.pmp", "assets/subtitles/episode1/choices/16/crafting_table.srt")
                 crafting_table_used = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.triangle) then
             if not pigs_used then
-                playCutscene("assets/video/episode1/choices/16/pigs.pmp", "assets/video/episode1/choices/16/pigs.srt")
+                playCutscene("assets/video/episode1/choices/16/pigs.pmp", "assets/subtitles/episode1/choices/16/pigs.srt")
                 pigs_used = true
                 choosing = false
             end

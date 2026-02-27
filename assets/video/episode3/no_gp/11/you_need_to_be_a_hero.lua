@@ -2,7 +2,7 @@ checkFile("assets/saves/gp.txt", "gp")
 local choosing = true
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode3/no_gp/11/you_need_to_be_a_hero.pmp', buttons.r, true, 'assets/video/episode3/no_gp/11/you_need_to_be_a_hero.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/no_gp/11/you_need_to_be_a_hero.pmp', buttons.r, true, 'assets/subtitles/episode3/no_gp/11/you_need_to_be_a_hero.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

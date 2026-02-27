@@ -71,21 +71,21 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.cross) then
             if not autofarm_used then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/autofarm.pmp", "assets/video/episode2/ellegaard/choices/2/autofarm.srt")
+                playCutscene("assets/video/episode2/ellegaard/choices/2/autofarm.pmp", "assets/subtitles/episode2/ellegaard/choices/2/autofarm.srt")
                 autofarm_used = true
                 choosing = false
             elseif not autofarm_used and intellectual_talk then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/autofarm_fight.pmp", "assets/video/episode2/ellegaard/choices/2/autofarm_fight.srt")
+                playCutscene("assets/video/episode2/ellegaard/choices/2/autofarm_fight.pmp", "assets/subtitles/episode2/ellegaard/choices/2/autofarm_fight.srt")
                 autofarm_used = true
                 choosing = false
             end
         elseif buttons.pressed(buttons.square) then
             if not chest_used then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/chest.pmp", "assets/video/episode2/ellegaard/choices/2/chest.srt")
+                playCutscene("assets/video/episode2/ellegaard/choices/2/chest.pmp", "assets/subtitles/episode2/ellegaard/choices/2/chest.srt")
                 chest_used = true
                 choosing = false
             elseif not chest_used and intellectual_talk then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/chest_fight.pmp", "assets/video/episode2/ellegaard/choices/2/chest_fight.srt")
+                playCutscene("assets/video/episode2/ellegaard/choices/2/chest_fight.pmp", "assets/subtitles/episode2/ellegaard/choices/2/chest_fight.srt")
                 chest_used = true
                 choosing = false
             elseif autofarm_used and chest_used then
@@ -96,11 +96,11 @@ while in_interactive_zone do
 
         elseif buttons.pressed(buttons.circle) then
             if not intellectual_talk then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/Intellectual.pmp", "assets/video/episode2/ellegaard/choices/2/Intellectual.srt")
+                playCutscene("assets/video/episode2/ellegaard/choices/2/Intellectual.pmp", "assets/subtitles/episode2/ellegaard/choices/2/Intellectual.srt")
                 intellectual_talk = true
                 choosing = false
             elseif not fight then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/schoolboy.pmp", "assets/video/episode2/ellegaard/choices/2/schoolboy.srt")
+                playCutscene("assets/video/episode2/ellegaard/choices/2/schoolboy.pmp", "assets/subtitles/episode2/ellegaard/choices/2/schoolboy.srt")
                 fight = true
                 redstonia_bg = "redstonia_fight"
                 choosing = false

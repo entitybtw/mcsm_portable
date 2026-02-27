@@ -22,7 +22,7 @@ end
     return 1
 end
 
-local result = PMP.playEasy('assets/video/episode5/start.pmp', buttons.r, true, 'assets/video/episode5/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode5/start.pmp', buttons.r, true, 'assets/subtitles/episode5/start.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

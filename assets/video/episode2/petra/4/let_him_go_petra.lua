@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode2/petra/4/let_him_go_petra.pmp', buttons.r, true, 'assets/video/episode2/petra/4/let_him_go_petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode2/petra/4/let_him_go_petra.pmp', buttons.r, true, 'assets/subtitles/episode2/petra/4/let_him_go_petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

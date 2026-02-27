@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/10/cake/he_bailed_on_me.pmp', buttons.r, true, 'assets/video/episode4/magnus_petra/choices/10/cake/he_bailed_on_me.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/10/cake/he_bailed_on_me.pmp', buttons.r, true, 'assets/subtitles/episode4/magnus_petra/choices/10/cake/he_bailed_on_me.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

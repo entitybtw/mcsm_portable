@@ -63,13 +63,13 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.cross) then
             if not smoke_trail_used then
-                playCutscene("assets/video/episode1/choices/6/smoke_trail.pmp", "assets/video/episode1/choices/6/smoke_trail.srt")
+                playCutscene("assets/video/episode1/choices/6/smoke_trail.pmp", "assets/subtitles/episode1/choices/6/smoke_trail.srt")
                 smoke_trail_used = true
                 choosing = false
             elseif smoke_trail_used then
                 in_interactive_zone = false
         local result = PMP.playEasy("assets/video/episode1/choices/6/tall_grass.pmp", buttons.r, true, 
-                                    "assets/video/episode1/choices/6/tall_grass.srt", font, subssize, 
+                                    "assets/subtitles/episode1/choices/6/tall_grass.srt", font, subssize, 
                                     "#FFFFFF", "#000000/150", subs)
         if result == 1 then
             nextscene = "./mainmenu.lua"
@@ -80,21 +80,21 @@ while in_interactive_zone do
             end
         elseif buttons.pressed(buttons.square) then
             if not bush_used then
-                playCutscene("assets/video/episode1/choices/6/bush.pmp", "assets/video/episode1/choices/6/bush.srt")
+                playCutscene("assets/video/episode1/choices/6/bush.pmp", "assets/subtitles/episode1/choices/6/bush.srt")
                 bush_used = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not water_well_used then
-                playCutscene("assets/video/episode1/choices/6/water_well.pmp", "assets/video/episode1/choices/6/water_well.srt")
+                playCutscene("assets/video/episode1/choices/6/water_well.pmp", "assets/subtitles/episode1/choices/6/water_well.srt")
                 water_well_used = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.triangle) then
             if not pigs_used then
-                playCutscene("assets/video/episode1/choices/6/pigs.pmp", "assets/video/episode1/choices/6/pigs.srt")
+                playCutscene("assets/video/episode1/choices/6/pigs.pmp", "assets/subtitles/episode1/choices/6/pigs.srt")
                 pigs_used = true
                 choosing = false
             end

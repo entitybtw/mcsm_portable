@@ -1,7 +1,7 @@
 building = "enderman"
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode1/choices/2/build_a_enderman.pmp', buttons.r, true, 'assets/video/episode1/choices/2/build_a_enderman.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode1/choices/2/build_a_enderman.pmp', buttons.r, true, 'assets/subtitles/episode1/choices/2/build_a_enderman.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

@@ -1,4 +1,4 @@
-local ep1 = "assets/video/episode1/"
+local ep1 = "assets/subtitles/episode1/"
 local choices = {
     {
         id = "choice0",

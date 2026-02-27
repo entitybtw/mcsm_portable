@@ -78,21 +78,21 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.circle) then
             if not bookcase_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/bookcase.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/bookcase.srt")
+                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/bookcase.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/bookcase.srt")
                 bookcase_used = true
                 choosing = false
             end
         elseif buttons.pressed(buttons.square) then
             if not chest_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/chest.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/chest.srt")
+                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/chest.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/chest.srt")
                 chest_used = true
                 choosing = false
             elseif chest_used and not crafting_table_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/crafting_table.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/crafting_table.srt")
+                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/crafting_table.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/crafting_table.srt")
                 crafting_table_used = true
                 choosing = false
             elseif crafting_table_used and not put_lever then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.srt")
+                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/put_lever.srt")
                 put_lever = true
                 choosing = false
             elseif put_lever then
@@ -103,7 +103,7 @@ while in_interactive_zone do
             end            
         elseif buttons.pressed(buttons.triangle) then
             if not redstone_hole_used and not crafting_table_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.pmp", "assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.srt")
+                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/redstone_hole.srt")
                 redstone_hole_used = true
                 choosing = false
             end

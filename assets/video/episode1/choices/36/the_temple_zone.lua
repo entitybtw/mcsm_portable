@@ -68,7 +68,7 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.cross) then
             if not pedestal_used then
-                playCutscene("assets/video/episode1/choices/36/pedestal.pmp", "assets/video/episode1/choices/36/pedestal.srt")
+                playCutscene("assets/video/episode1/choices/36/pedestal.pmp", "assets/subtitles/episode1/choices/36/pedestal.srt")
                 pedestal_used = true
                 choosing = false
             elseif pedestal_used then
@@ -78,21 +78,21 @@ while in_interactive_zone do
             end
         elseif buttons.pressed(buttons.square) then
             if not axel_talk then
-                if not pedestal_used then playCutscene("assets/video/episode1/choices/36/axel.pmp", "assets/video/episode1/choices/36/axel.srt") elseif pedestal_used then playCutscene("assets/video/episode1/choices/36/axel_pedestal.pmp", "assets/video/episode1/choices/36/axel_pedestal.srt") end 
+                if not pedestal_used then playCutscene("assets/video/episode1/choices/36/axel.pmp", "assets/subtitles/episode1/choices/36/axel.srt") elseif pedestal_used then playCutscene("assets/video/episode1/choices/36/axel_pedestal.pmp", "assets/subtitles/episode1/choices/36/axel_pedestal.srt") end 
                 axel_talk = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not lukas_talk then
-                if not pedestal_used then playCutscene("assets/video/episode1/choices/36/lukas.pmp", "assets/video/episode1/choices/36/lukas.srt") elseif pedestal_used then playCutscene("assets/video/episode1/choices/36/lukas_pedestal.pmp", "assets/video/episode1/choices/36/lukas_pedestal.srt") end 
+                if not pedestal_used then playCutscene("assets/video/episode1/choices/36/lukas.pmp", "assets/subtitles/episode1/choices/36/lukas.srt") elseif pedestal_used then playCutscene("assets/video/episode1/choices/36/lukas_pedestal.pmp", "assets/subtitles/episode1/choices/36/lukas_pedestal.srt") end 
                 lukas_talk = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.triangle) then
             if not olivia_talk then
-                if not pedestal_used then playCutscene("assets/video/episode1/choices/36/olivia.pmp", "assets/video/episode1/choices/36/olivia.srt") elseif pedestal_used then playCutscene("assets/video/episode1/choices/36/olivia_pedestal.pmp", "assets/video/episode1/choices/36/olivia_pedestal.srt") end 
+                if not pedestal_used then playCutscene("assets/video/episode1/choices/36/olivia.pmp", "assets/subtitles/episode1/choices/36/olivia.srt") elseif pedestal_used then playCutscene("assets/video/episode1/choices/36/olivia_pedestal.pmp", "assets/subtitles/episode1/choices/36/olivia_pedestal.srt") end 
                 olivia_talk = true
                 choosing = false
             end

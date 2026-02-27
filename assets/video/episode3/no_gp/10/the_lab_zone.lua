@@ -68,7 +68,7 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.cross) then
             if not exit1_used and not chest_used then
-                playCutscene("assets/video/episode3/no_gp/10/exit.pmp", "assets/video/episode3/no_gp/10/exit.srt")
+                playCutscene("assets/video/episode3/no_gp/10/exit.pmp", "assets/subtitles/episode3/no_gp/10/exit.srt")
                 exit1_used = true
                 choosing = false
             elseif area_1_search and area_2_search and upstairs_search then
@@ -76,28 +76,28 @@ while in_interactive_zone do
                 in_interactive_zone = false
                 choosing = false
             elseif not upstairs_search and chest_used then
-                playCutscene("assets/video/episode3/no_gp/10/search_upstairs.pmp", "assets/video/episode3/no_gp/10/search_upstairs.srt")
+                playCutscene("assets/video/episode3/no_gp/10/search_upstairs.pmp", "assets/subtitles/episode3/no_gp/10/search_upstairs.srt")
                 upstairs_search = true
                 choosing = false
             end
         elseif buttons.pressed(buttons.square) then
             if not area_1_search and chest_used then
-                playCutscene("assets/video/episode3/no_gp/10/search_area1.pmp", "assets/video/episode3/no_gp/10/search_area1.srt")
+                playCutscene("assets/video/episode3/no_gp/10/search_area1.pmp", "assets/subtitles/episode3/no_gp/10/search_area1.srt")
                 area_1_search = true
                 choosing = false
             elseif not olivia_talk then
-                playCutscene("assets/video/episode3/no_gp/10/olivia.pmp", "assets/video/episode3/no_gp/10/olivia.srt")
+                playCutscene("assets/video/episode3/no_gp/10/olivia.pmp", "assets/subtitles/episode3/no_gp/10/olivia.srt")
                 olivia_talk = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not area_2_search and chest_used then
-                playCutscene("assets/video/episode3/no_gp/10/search_area2.pmp", "assets/video/episode3/no_gp/10/search_area2.srt")
+                playCutscene("assets/video/episode3/no_gp/10/search_area2.pmp", "assets/subtitles/episode3/no_gp/10/search_area2.srt")
                 area_2_search = true
                 choosing = false
             elseif not chest_used then
-                playCutscene("assets/video/episode3/no_gp/10/chest.pmp", "assets/video/episode3/no_gp/10/chest.srt")
+                playCutscene("assets/video/episode3/no_gp/10/chest.pmp", "assets/subtitles/episode3/no_gp/10/chest.srt")
                 chest_used = true
                 choosing = false
             end

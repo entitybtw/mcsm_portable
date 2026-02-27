@@ -1,7 +1,7 @@
 -- The Woolland Interactive Zone -- 
 -- Starts Here! --
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode3/gabriel/choices/7/im_hallucinating.pmp', buttons.r, true, 'assets/video/episode3/gabriel/choices/7/im_hallucinating.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode3/gabriel/choices/7/im_hallucinating.pmp', buttons.r, true, 'assets/subtitles/episode3/gabriel/choices/7/im_hallucinating.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     -- Go To Menu
     return 1

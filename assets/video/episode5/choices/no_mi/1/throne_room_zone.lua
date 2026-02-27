@@ -67,13 +67,13 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.square) then
             if not bookcase_used then
-                playCutscene("assets/video/episode5/choices/no_mi/1/bookcase.pmp", "assets/video/episode5/choices/no_mi/1/bookcase.srt")
+                playCutscene("assets/video/episode5/choices/no_mi/1/bookcase.pmp", "assets/subtitles/episode5/choices/no_mi/1/bookcase.srt")
                 bookcase_used = true
                 choosing = false
             end
         elseif buttons.pressed(buttons.circle) then
             if not strange_wall_used then
-                if mi == "milo" then playCutscene("assets/video/episode5/choices/no_mi/1/strange_wall.pmp", "assets/video/episode5/choices/no_mi/1/strange_wall.srt") elseif mi == "ivor" then playCutscene("assets/video/episode5/choices/no_mi/1/supply_door.pmp", "assets/video/episode5/choices/no_mi/1/supply_door.srt") end
+                if mi == "milo" then playCutscene("assets/video/episode5/choices/no_mi/1/strange_wall.pmp", "assets/subtitles/episode5/choices/no_mi/1/strange_wall.srt") elseif mi == "ivor" then playCutscene("assets/video/episode5/choices/no_mi/1/supply_door.pmp", "assets/subtitles/episode5/choices/no_mi/1/supply_door.srt") end
                 strange_wall_used = true
                 choosing = false
             elseif crafting_table_used then
@@ -81,23 +81,23 @@ while in_interactive_zone do
                 in_interactive_zone = false
                 choosing = false
             else
-                playCutscene("assets/video/episode5/choices/no_mi/1/lever_slot_1.pmp", "assets/video/episode5/choices/no_mi/1/lever_slot_1.srt")
+                playCutscene("assets/video/episode5/choices/no_mi/1/lever_slot_1.pmp", "assets/subtitles/episode5/choices/no_mi/1/lever_slot_1.srt")
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.triangle) then
             if not cobblestone_collected then
-                playCutscene("assets/video/episode5/choices/no_mi/1/cobblestone.pmp", "assets/video/episode5/choices/no_mi/1/cobblestone.srt")
+                playCutscene("assets/video/episode5/choices/no_mi/1/cobblestone.pmp", "assets/subtitles/episode5/choices/no_mi/1/cobblestone.srt")
                 cobblestone_collected = true
                 choosing = false
             end
         elseif buttons.pressed(buttons.cross) then
             if not dry_bush_collected then
-                playCutscene("assets/video/episode5/choices/no_mi/1/dry_bush.pmp", "assets/video/episode5/choices/no_mi/1/dry_bush.srt")
+                playCutscene("assets/video/episode5/choices/no_mi/1/dry_bush.pmp", "assets/subtitles/episode5/choices/no_mi/1/dry_bush.srt")
                 dry_bush_collected = true
                 choosing = false
             elseif cobblestone_collected and dry_bush_collected and not crafting_table_used then
-                playCutscene("assets/video/episode5/choices/no_mi/1/crafting_table.pmp", "assets/video/episode5/choices/no_mi/1/crafting_table.srt")
+                playCutscene("assets/video/episode5/choices/no_mi/1/crafting_table.pmp", "assets/subtitles/episode5/choices/no_mi/1/crafting_table.srt")
                 crafting_table_used = true
                 choosing = false
             end

@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode2/ellegaard_gabriel/3/he_wasnt_on_the_map.pmp', buttons.r, true, 'assets/video/episode2/ellegaard_gabriel/3/he_wasnt_on_the_map.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode2/ellegaard_gabriel/3/he_wasnt_on_the_map.pmp', buttons.r, true, 'assets/subtitles/episode2/ellegaard_gabriel/3/he_wasnt_on_the_map.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

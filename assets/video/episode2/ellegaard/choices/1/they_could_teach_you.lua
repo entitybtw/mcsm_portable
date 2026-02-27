@@ -1,7 +1,7 @@
 -- Redstonia Interactive Zone -- 
 -- Starts Here! --
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode2/ellegaard/choices/1/they_could_teach_you.pmp', buttons.r, true, 'assets/video/episode2/ellegaard/choices/1/they_could_teach_you.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode2/ellegaard/choices/1/they_could_teach_you.pmp', buttons.r, true, 'assets/subtitles/episode2/ellegaard/choices/1/they_could_teach_you.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

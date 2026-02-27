@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/4/they_could_be_alive.pmp', buttons.r, true, 'assets/video/episode4/magnus_gabriel/choices/4/they_could_be_alive.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playEasy('assets/video/episode4/magnus_gabriel/choices/4/they_could_be_alive.pmp', buttons.r, true, 'assets/subtitles/episode4/magnus_gabriel/choices/4/they_could_be_alive.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

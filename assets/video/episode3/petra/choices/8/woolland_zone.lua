@@ -72,28 +72,28 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.cross) then
             if not fountain_used then
-                playCutscene("assets/video/episode3/petra/choices/8/fountain.pmp", "assets/video/episode3/petra/choices/8/fountain.srt")
+                playCutscene("assets/video/episode3/petra/choices/8/fountain.pmp", "assets/subtitles/episode3/petra/choices/8/fountain.srt")
                 fountain_used = true
                 choosing = false
             end
         elseif buttons.pressed(buttons.square) then
             if not petra_talk then
-                playCutscene("assets/video/episode3/petra/choices/8/petra.pmp", "assets/video/episode3/petra/choices/8/petra.srt")
+                playCutscene("assets/video/episode3/petra/choices/8/petra.pmp", "assets/subtitles/episode3/petra/choices/8/petra.srt")
                 petra_talk = true
                 choosing = false
             elseif petra_talk and not leverpetra_used then
-                playCutscene("assets/video/episode3/petra/choices/8/leverpetra.pmp", "assets/video/episode3/petra/choices/8/leverpetra.srt")
+                playCutscene("assets/video/episode3/petra/choices/8/leverpetra.pmp", "assets/subtitles/episode3/petra/choices/8/leverpetra.srt")
                 leverpetra_used = true
                 choosing = false
             end
 
         elseif buttons.pressed(buttons.circle) then
             if not reuben_talk then
-                playCutscene("assets/video/episode3/petra/choices/8/reuben.pmp", "assets/video/episode3/petra/choices/8/reuben.srt")
+                playCutscene("assets/video/episode3/petra/choices/8/reuben.pmp", "assets/subtitles/episode3/petra/choices/8/reuben.srt")
                 reuben_talk = true
                 choosing = false
             elseif reuben_talk and not leverreuben_used then
-                playCutscene("assets/video/episode3/petra/choices/8/leverreuben.pmp", "assets/video/episode3/petra/choices/8/leverreuben.srt")
+                playCutscene("assets/video/episode3/petra/choices/8/leverreuben.pmp", "assets/subtitles/episode3/petra/choices/8/leverreuben.srt")
                 leverreuben_used = true
                 choosing = false
             elseif leverreuben_used and leverpetra_used then

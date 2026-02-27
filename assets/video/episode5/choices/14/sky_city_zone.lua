@@ -76,11 +76,11 @@ while in_interactive_zone do
 
         if buttons.pressed(buttons.cross) then
             if not sky_city_1_explored then
-                playCutscene("assets/video/episode5/choices/14/crafting_table.pmp", "assets/video/episode5/choices/14/crafting_table.srt")
+                playCutscene("assets/video/episode5/choices/14/crafting_table.pmp", "assets/subtitles/episode5/choices/14/crafting_table.srt")
                 sky_city_1_explored = true
                 choosing = false
             elseif sky_city_1_explored and not sky_city_2_explored and not castle_guard_talk then
-                playCutscene("assets/video/episode5/choices/14/castle_guard.pmp", "assets/video/episode5/choices/14/castle_guard.srt")
+                playCutscene("assets/video/episode5/choices/14/castle_guard.pmp", "assets/subtitles/episode5/choices/14/castle_guard.srt")
                 castle_guard_talk = true
                 choosing = false
             elseif sky_city_2_explored then
@@ -91,15 +91,15 @@ while in_interactive_zone do
 
         elseif buttons.pressed(buttons.triangle) then
             if not sky_city_1_explored then
-                playCutscene("assets/video/episode5/choices/14/garden.pmp", "assets/video/episode5/choices/14/garden.srt")
+                playCutscene("assets/video/episode5/choices/14/garden.pmp", "assets/subtitles/episode5/choices/14/garden.srt")
                 sky_city_1_explored = true
                 choosing = false
             elseif sky_city_2_explored and not townspeople_talk then
-                playCutscene("assets/video/episode5/choices/14/townspeople.pmp", "assets/video/episode5/choices/14/townspeople.srt")
+                playCutscene("assets/video/episode5/choices/14/townspeople.pmp", "assets/subtitles/episode5/choices/14/townspeople.srt")
                 townspeople_talk = true
                 choosing = false
             elseif not sky_city_2_explored and sky_city_1_explored then
-                playCutscene("assets/video/episode5/choices/14/build_site.pmp", "assets/video/episode5/choices/14/build_site.srt")
+                playCutscene("assets/video/episode5/choices/14/build_site.pmp", "assets/subtitles/episode5/choices/14/build_site.srt")
                 sky_city_2_explored = true
                 choosing = false
             end
