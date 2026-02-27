@@ -6,9 +6,9 @@ if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
 end
-Image.draw(square, 25, 127)
-Image.draw(circle, 455, 127)
-Image.draw(triangle, 140, 182)
+Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
+Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
+Image.draw(spritesheet, 140, 182, 15, 15, nil, 430, 0, 15, 15)
 intraFont.print(45, 127, "TNT launcher", Color.new(255,255,255), font, 0.4)
 intraFont.print(450 - intraFont.textW(font, "Rocket minecart", 0.4), 127, "Rocket minecart", Color.new(255,255,255), font, 0.4)
 intraFont.print(140 + 15 + 5, 182, "Flying machine", Color.new(255,255,255), font, 0.4)

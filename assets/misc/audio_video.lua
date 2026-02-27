@@ -197,7 +197,7 @@ while true do
     if PMP.getFrame(videoFrame) then
         Image.draw(videoFrame, 0, 0)
     end
-    Image.draw(circle, 40, 233, 14, 14)
+    Image.draw(spritesheet, 40, 233, 14, 14, nil, 384, 0, 15, 15)
     intraFont.printShadowed(57, 234, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
 
     drawui()

@@ -6,9 +6,9 @@ if result == 1 then
     return 1
 end
 
-Image.draw(triangle, 171, 132)
+Image.draw(spritesheet, 171, 132, 15, 15, nil, 430, 0, 15, 15)
 intraFont.print(171 - intraFont.textW(font, "Olivia", 0.4) / 2 + 8, 132 + 14, "Olivia", Color.new(255,255,255), font, 0.4)
-Image.draw(square, 321, 131)
+Image.draw(spritesheet, 321, 131, 15, 15, nil, 414, 0, 15, 15)
 intraFont.print(321 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 131 + 14, "Chest", Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())

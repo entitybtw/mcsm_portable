@@ -144,11 +144,11 @@ while currentchoice do
     end
     
     if currentchoice.leftchoice or currentchoice.rightchoice or currentchoice.middlechoice then
-        Image.draw(square, 25, 127)
-        Image.draw(circle, 455, 127)
+        Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
+        Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
         
         if currentchoice.middlechoice then
-            Image.draw(triangle, 140, 182)
+            Image.draw(spritesheet, 140, 182, 15, 15, nil, 430, 0, 15, 15)
         end
         
         if currentchoice.leftchoice then

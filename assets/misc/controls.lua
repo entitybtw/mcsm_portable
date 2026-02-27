@@ -22,7 +22,7 @@ while true do
     creditfade = math.min(imgfade * 0.6, 100)
 
     Image.draw(img, 47.5, 26, 385, 220, nil, nil, nil, nil, nil, nil, imgfade)
-    Image.draw(circle, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 8, 233 + 13, 14, 14)
+    Image.draw(spritesheet, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, 384, 0, 15, 15)
     intraFont.printShadowed(240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 + 8, 233 + 14, "Previous Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)    
     intraFont.printShadowed(225 - intraFont.textW(font, "Controls", 0.2) / 2 + 8, 5 + 14, "Controls", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     intraFont.printShadowed(390, 75, "Skip current\n\n   cutscene", Color.new(255, 255, 255, imgfade), Color.new(0, 0, 0, imgfade), font, 90, 1, 0.3, 0)

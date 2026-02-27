@@ -31,11 +31,11 @@ while in_interactive_zone do
     Image.draw(bg, 0, 0)
 
     if not bookcase_used then
-        Image.draw(square, 59, 160)
+        Image.draw(spritesheet, 59, 160, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(59 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 160 + 14, "Bookcase", c_white, font, 0.4)
     end
 
-    Image.draw(circle, 397, 166)
+    Image.draw(spritesheet, 397, 166, 15, 15, nil, 384, 0, 15, 15)
     if not strange_wall_used then
         if mi == "milo" then intraFont.print(397 - intraFont.textW(font, "Strange Wall", 0.4) / 2 + 8, 166 + 14, "Strange Wall", c_white, font, 0.4) elseif mi == "ivor" then intraFont.print(397 - intraFont.textW(font, "Supply Door", 0.4) / 2 + 8, 166 + 14, "Supply Door", c_white, font, 0.4) end
     else
@@ -43,15 +43,15 @@ while in_interactive_zone do
     end
 
     if not cobblestone_collected then
-        Image.draw(triangle, 144, 203)
+        Image.draw(spritesheet, 144, 203, 15, 15, nil, 430, 0, 15, 15)
         intraFont.print(144 - intraFont.textW(font, "Cobblestone", 0.4) / 2 + 8, 203 + 14, "Cobblestone", c_white, font, 0.4)
     end
 
     if not dry_bush_collected then
-        Image.draw(cross, 282, 207)
+        Image.draw(spritesheet, 282, 207, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(282 - intraFont.textW(font, "Dry Bush", 0.4) / 2 + 8, 207 + 14, "Dry Bush", c_white, font, 0.4)
     elseif cobblestone_collected and not crafting_table_used then
-        Image.draw(cross, 282, 207)
+        Image.draw(spritesheet, 282, 207, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(282 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 207 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
     end
 

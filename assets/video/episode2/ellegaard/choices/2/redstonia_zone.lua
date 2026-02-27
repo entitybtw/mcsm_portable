@@ -36,26 +36,26 @@ while in_interactive_zone do
     end
 
     if not autofarm_used then
-        Image.draw(cross, 125, 216)
+        Image.draw(spritesheet, 125, 216, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(125 - intraFont.textW(font, "Autofarm", 0.4) / 2 + 8, 216 + 14, "Autofarm", Color.new(255,255,255), font, 0.4)
     end
 
     if not intellectual_talk then
-        Image.draw(circle, 344, 167)
+        Image.draw(spritesheet, 344, 167, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(344 - intraFont.textW(font, "Intellectual", 0.4) / 2 + 8, 167 + 14, "Intellectual", Color.new(255,255,255), font, 0.4)
     elseif not fight then
-        Image.draw(circle, 383, 197)
+        Image.draw(spritesheet, 383, 197, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(383 - intraFont.textW(font, "School Boy", 0.4) / 2 + 8, 197 + 14, "School Boy", Color.new(255,255,255), font, 0.4)
     elseif fight then
-        Image.draw(circle, 404, 161)
+        Image.draw(spritesheet, 404, 161, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(404 - intraFont.textW(font, "Steal Repeater", 0.4) / 2 + 8, 161 + 14, "Steal Repeater", Color.new(255,255,255), font, 0.4)
     end
 
     if not chest_used then
-        Image.draw(square, 160, 173)
+        Image.draw(spritesheet, 160, 173, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(160 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 173 + 14, "Chest", Color.new(255,255,255), font, 0.4)
     elseif autofarm_used and chest_used then
-        Image.draw(square, 241, 210)
+        Image.draw(spritesheet, 241, 210, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(241 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 210 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
     end
 

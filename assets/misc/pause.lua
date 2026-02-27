@@ -51,7 +51,7 @@ while true do
 
     Image.draw(pause_bg, 0, 0)
     intraFont.printShadowed(230 - intraFont.textW(font, "Paused", 0.3) / 2 + 14, 25, "Paused", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-    Image.draw(circle, 240 - intraFont.textW(font, "Resume Game", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, nil, nil, nil, nil, nil)
+    Image.draw(spritesheet, 240 - intraFont.textW(font, "Resume Game", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, 384, 0, 15, 15)
     intraFont.printShadowed(240 - intraFont.textW(font, "Resume Game", 0.3) / 2 + 8, 233 + 14, "Resume Game", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0) 
 
     if buttons.pressed(buttons.up) and selectedButton > 1 then

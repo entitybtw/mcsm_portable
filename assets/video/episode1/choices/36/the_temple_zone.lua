@@ -35,23 +35,23 @@ while in_interactive_zone do
     end
 
     if not olivia_talk then
-        Image.draw(triangle, 305, 157)
+        Image.draw(spritesheet, 305, 157, 15, 15, nil, 430, 0, 15, 15)
         intraFont.print(305 - intraFont.textW(font, "Olivia", 0.4) / 2 + 8, 157 + 14, "Olivia", Color.new(255,255,255), font, 0.4)
     end
     if not axel_talk then
-        Image.draw(square, 123, 161)
+        Image.draw(spritesheet, 123, 161, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(123 - intraFont.textW(font, "Axel", 0.4) / 2 + 8, 161 + 14, "Axel", Color.new(255,255,255), font, 0.4)
     end
     if not lukas_talk then
-        Image.draw(circle, 174, 153)
+        Image.draw(spritesheet, 174, 153, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(174 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 153 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
     end
 
     if not pedestal_used then
-        Image.draw(cross, 243, 139)
+        Image.draw(spritesheet, 243, 139, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(243 - intraFont.textW(font, "Pedestal", 0.4) / 2 + 8, 139 + 14, "Pedestal", Color.new(255,255,255), font, 0.4)
     elseif pedestal_used then
-        Image.draw(cross, 392, 183)
+        Image.draw(spritesheet, 392, 183, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(392 - intraFont.textW(font, "Levers", 0.4) / 2 + 8, 183 + 14, "Levers", Color.new(255,255,255), font, 0.4)
     end
 

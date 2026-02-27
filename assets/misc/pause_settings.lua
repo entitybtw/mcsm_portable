@@ -39,9 +39,9 @@ while true do
 
     Image.draw(pause_bg, 0, 0)
     intraFont.printShadowed(230 - intraFont.textW(font, "Settings", 0.3) / 2 + 14, 25, "Settings", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-    Image.draw(cross, 240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2, 246, 14, 14)
+    Image.draw(spritesheet, 240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2, 246, 14, 14, nil, 399, 0, 15, 15)
     intraFont.printShadowed(240 - (14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + 5, 247, "Select", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
-    Image.draw(circle, 240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 246, 14, 14)
+    Image.draw(spritesheet, 240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 246, 14, 14, nil, 384, 0, 15, 15)
     intraFont.printShadowed(240 - (14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2 + 14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + 5, 247, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
     
     if buttons.pressed(buttons.up) and selectedButton > 1 then

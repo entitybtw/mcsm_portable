@@ -30,23 +30,23 @@ while in_interactive_zone do
     Image.draw(bg, 0, 0)
 
     if not smoke_trail_used then
-        Image.draw(cross, 257, 136)
+        Image.draw(spritesheet, 257, 136, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(257 - intraFont.textW(font, "Smoke Trail", 0.4) / 2 + 8, 136 + 14, "Smoke Trail", Color.new(255,255,255), font, 0.4)
     elseif smoke_trail_used then
-        Image.draw(cross, 201, 130)
+        Image.draw(spritesheet, 201, 130, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(201 - intraFont.textW(font, "Tall Grass", 0.4) / 2 + 8, 130 + 14, "Tall Grass", Color.new(255,255,255), font, 0.4)
     end
 
     if not pigs_used then
-        Image.draw(triangle, 389, 193)
+        Image.draw(spritesheet, 389, 193, 15, 15, nil, 430, 0, 15, 15)
         intraFont.print(389 - intraFont.textW(font, "Pigs", 0.4) / 2 + 8, 193 + 14, "Pigs", Color.new(255,255,255), font, 0.4)
     end
     if not bush_used then
-        Image.draw(square, 88, 63)
+        Image.draw(spritesheet, 88, 63, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(88 - intraFont.textW(font, "Bush", 0.4) / 2 + 8, 63 + 14, "Bush", Color.new(255,255,255), font, 0.4)
     end
     if not water_well_used then
-        Image.draw(circle, 95, 167)
+        Image.draw(spritesheet, 95, 167, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(95 - intraFont.textW(font, "Water Well", 0.4) / 2 + 8, 167 + 14, "Water Well", Color.new(255,255,255), font, 0.4)
     end
 
@@ -75,7 +75,8 @@ while in_interactive_zone do
             nextscene = "./mainmenu.lua"
             return 1
         end
-                break
+                -- break
+                nextscene = "assets/video/episode1/choices/6/tall_grass.lua"
             end
         elseif buttons.pressed(buttons.square) then
             if not bush_used then

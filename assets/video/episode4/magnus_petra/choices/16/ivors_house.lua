@@ -36,33 +36,33 @@ while in_interactive_zone do
     Image.draw(bg, 0, 0)
 
     if not bookcase_used then
-        Image.draw(circle, 126, 169)
+        Image.draw(spritesheet, 126, 169, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(126 - intraFont.textW(font, "Bookcase", 0.4) / 2 + 8, 169 + 14, "Bookcase", Color.new(255,255,255), font, 0.4)
     end
 
     if not chest_used then
-        Image.draw(square, 272, 119)
+        Image.draw(spritesheet, 272, 119, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(272 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 119 + 14, "Chest", Color.new(255,255,255), font, 0.4)
     elseif chest_used and not crafting_table_used then
-        Image.draw(square, 289, 119)
+        Image.draw(spritesheet, 289, 119, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(289 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 119 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
     end
 
     if not redstone_hole_used and not crafting_table_used then
-        Image.draw(triangle, 397, 147)
+        Image.draw(spritesheet, 397, 147, 15, 15, nil, 430, 0, 15, 15)
         intraFont.print(397 - intraFont.textW(font, "Redstone Hole", 0.4) / 2 + 8, 147 + 14, "Redstone Hole", Color.new(255,255,255), font, 0.4)
     end
 
     if not gabriel_talk then
-        Image.draw(cross, 210, 169)
+        Image.draw(spritesheet, 210, 169, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(210 - intraFont.textW(font, "Gabriel", 0.4) / 2 + 8, 169 + 14, "Gabriel", Color.new(255,255,255), font, 0.4)
     end
     
     if crafting_table_used and not put_lever then
-        Image.draw(square, 393, 146)
+        Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(393 - intraFont.textW(font, "Put lever", 0.4) / 2 + 8, 146 + 14, "Put lever", Color.new(255,255,255), font, 0.4)
     elseif put_lever then
-        Image.draw(square, 393, 146)
+        Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(393 - intraFont.textW(font, "Lever", 0.4) / 2 + 8, 146 + 14, "Lever", Color.new(255,255,255), font, 0.4)
     end
 

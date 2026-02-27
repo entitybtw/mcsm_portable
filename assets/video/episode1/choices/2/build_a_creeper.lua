@@ -7,9 +7,9 @@ if result == 1 then
     return 1
 end
 
-Image.draw(square, 25, 127)
-Image.draw(circle, 455, 127)
-Image.draw(triangle, 140, 182)
+Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
+Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
+Image.draw(spritesheet, 140, 182, 15, 15, nil, 430, 0, 15, 15)
 intraFont.print(45, 127, "We're Dead Enders", Color.new(255,255,255), font, 0.4)
 intraFont.print(450 - intraFont.textW(font, "We're the Nether Maniacs", 0.4), 127, "We're the Nether Maniacs", Color.new(255,255,255), font, 0.4)
 intraFont.print(140 + 15 + 5, 182, "We're the Order Of The pig", Color.new(255,255,255), font, 0.4)

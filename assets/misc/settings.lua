@@ -82,9 +82,9 @@ while true do
 
     debugoverlay.draw(debugoverlay.loadSettings())
     intraFont.printShadowed(40, 35, "Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-    Image.draw(cross, 40, 233, 14, 14)
+    Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
     intraFont.printShadowed(38 + 14 + 5, 234, "Select", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
-    Image.draw(circle, 40 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 233, 14, 14)
+    Image.draw(spritesheet, 40 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 233, 14, 14, nil, 384, 0, 15, 15)
     intraFont.printShadowed(38 + 14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + 5, 234, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)    
     screen.flip()
 end
