@@ -1,4 +1,3 @@
--- error("error-test")
 -- initialize variables
 local fade = 255
 local voidfade = 0
@@ -31,16 +30,14 @@ end
 subs = tonumber(subtitles:read("*l"))
 subssize = tonumber(subtitles:read("*l"))
 subtitles:close()
--- load menumusic level
+
+-- load volumes
 if menumusic and menumusic >= 0 and menumusic <= 10 then
     sound.volumeEasy(sound.MP3, menumusic * 10)
 end
--- load pmp videos sound level
 if pmpvideos and pmpvideos >= 0 and pmpvideos <= 10 then
     pmpvolume = pmpvideos * 10
 end
-
--- load ui sounds level
 if uiLevel and uiLevel >= 0 and uiLevel <= 10 then
     sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 end
@@ -49,7 +46,7 @@ soundlevels:close()
 local byentitybtw = Image.load("assets/ui/byentitybtw.png")
 local headphones = Image.load("assets/ui/headphones.png")
 
--- byentitybtw fade in
+-- byentitybtw fade in/out
 fade = 255
 while fade > 0 do
     fade = fade - 8
@@ -59,7 +56,6 @@ while fade > 0 do
     LUA.sleep(16)
 end
 LUA.sleep(2000)
--- byentitybtw fade out
 fade = 0
 while fade < 255 do
     fade = fade + 8
@@ -69,7 +65,7 @@ while fade < 255 do
     LUA.sleep(16)
 end
 
--- headphones fade in
+-- headphones fade in/out
 fade = 255
 while fade > 0 do
     fade = fade - 8
@@ -78,7 +74,6 @@ while fade > 0 do
     screen.flip()
     LUA.sleep(16)
 end
--- headphones fade out
 LUA.sleep(1500)
 fade = 0
 while fade < 255 do
@@ -88,7 +83,7 @@ while fade < 255 do
     screen.flip()
     LUA.sleep(16)
 end
--- unload images
+
 Image.unload(byentitybtw)
 Image.unload(headphones)
 
@@ -96,8 +91,9 @@ PMP.setVolume(pmpvolume)
 local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true)
 
 local loadingFrames = {}
+local frameX = {0, 48, 96, 144, 192, 240, 288, 336}
 for i = 0, 7 do
-    loadingFrames[i] = Image.load("assets/ui/loading/" .. i .. ".png")
+    loadingFrames[i] = { x = frameX[i+1] }
 end
 
 local startPressed = false
@@ -123,6 +119,13 @@ while PMP.getFrame(pointer) do
 
     local currentVideoTime = os.clock() - videoStartTime
     if not startPressed and currentVideoTime >= 12 and buttons.pressed(buttons.start) then
+        -- reset fades
+        voidfade = 0
+        textfade = 0
+        rectfade = 0
+        frameIndex = 0
+        currentStep = 1
+        
         startPressed = true
         loadingStartTime = os.clock()
         frameTimer = os.clock()
@@ -152,7 +155,13 @@ while PMP.getFrame(pointer) do
 
             local frame = loadingFrames[frameIndex]
             if frame then
-                Image.draw(frame, 250 - 48 / 2, 200 - 48 / 2, 30, 30, nil, nil, nil, nil, nil, nil, textfade)
+                Image.draw(spritesheet, 
+                    250 - 24, 200 - 24,
+                    30, 30,
+                    nil,
+                    frame.x, 0,
+                    48, 48,
+                    nil, nil, textfade)
             end
 
             if currentStep <= #loadingSequence then
@@ -185,13 +194,6 @@ while PMP.getFrame(pointer) do
     screen.flip()
 end
 
-for i = 0, 7 do
-    if loadingFrames[i] then
-        Image.unload(loadingFrames[i])
-        loadingFrames[i] = nil
-    end
-end
-
 PMP.play("assets/ui/loading.pmp")
 
 require("saves")
@@ -199,10 +201,9 @@ require("debugoverlay")
 require("files")
 sound.playEasy("assets/sounds/bg.at3", 5, true, false)
 
-fade_enabled = 1             -- enable fade effect for mainmenu (1 = enabled, 0 = disabled)
-nextscene = "./mainmenu.lua" -- open mainmenu
+fade_enabled = 1
+nextscene = "./mainmenu.lua"
 
--- optimized dofile replacement, made by dntrnk, to prevent memory overload and PSP freezes
 while true do
     System.PowerTick()
     dofile(nextscene)
