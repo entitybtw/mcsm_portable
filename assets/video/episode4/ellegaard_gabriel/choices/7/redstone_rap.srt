@@ -1,0 +1,28 @@
+1
+00:00:00,000 --> 00:00:02,000
+The redstone wrap, you got it.
+
+2
+00:00:07,800 --> 00:00:09,400
+I'll see you at Soren's, alright?
+
+3
+00:00:10,200 --> 00:00:11,700
+Not if I see you first.
+
+4
+00:00:30,000 --> 00:00:31,000
+Are we there yet?
+
+5
+00:00:31,000 --> 00:00:32,000
+Almost there.
+
+6
+00:01:00,000 --> 00:01:01,000
+Are we there yet?
+
+7
+00:01:01,000 --> 00:01:02,000
+Not much further now.
+
