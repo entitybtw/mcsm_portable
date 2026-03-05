@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode2/ellegaard/choices/2/steal_repeater.pmp', buttons.r, true, 'assets/subtitles/episode2/ellegaard/choices/2/steal_repeater.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode2/ellegaard/choices/2/steal_repeater.pmp', buttons.r, true, 'assets/subtitles/episode2/ellegaard/choices/2/steal_repeater.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

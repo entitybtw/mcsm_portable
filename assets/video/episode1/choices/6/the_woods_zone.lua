@@ -10,7 +10,7 @@ local bg = Image.load("assets/video/episode1/choices/6/the_woods_zone.png")
 
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
-    local result = PMP.playEasy(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+    local result = PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
     if result == 1 then
         choosing = false
         in_interactive_zone = false
@@ -68,7 +68,7 @@ while in_interactive_zone do
                 choosing = false
             elseif smoke_trail_used then
                 in_interactive_zone = false
-        local result = PMP.playEasy("assets/video/episode1/choices/6/tall_grass.pmp", buttons.r, true, 
+        local result = PMP.playExt("assets/video/episode1/choices/6/tall_grass.pmp", buttons.r, true, 
                                     "assets/subtitles/episode1/choices/6/tall_grass.srt", font, subssize, 
                                     "#FFFFFF", "#000000/150", subs)
         if result == 1 then

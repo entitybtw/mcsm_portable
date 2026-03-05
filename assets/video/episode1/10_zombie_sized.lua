@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode1/10_zombie_sized.pmp', buttons.r, true, "assets/subtitles/episode1/10_zombie_sized.srt", font, 0.4, "#FFFFFF", "#000000/150")
+local result = PMP.playExt('assets/video/episode1/10_zombie_sized.pmp', buttons.r, true, "assets/subtitles/episode1/10_zombie_sized.srt", font, 0.4, "#FFFFFF", "#000000/150")
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

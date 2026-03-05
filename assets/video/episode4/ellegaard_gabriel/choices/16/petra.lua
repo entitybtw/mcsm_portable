@@ -1,7 +1,7 @@
 local choosing = true
 local gabriel = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/16/petra.pmp', buttons.r, true, 'assets/subtitles/episode4/ellegaard_gabriel/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode4/ellegaard_gabriel/choices/16/petra.pmp', buttons.r, true, 'assets/subtitles/episode4/ellegaard_gabriel/choices/16/petra.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     -- Go To Menu
     return 1

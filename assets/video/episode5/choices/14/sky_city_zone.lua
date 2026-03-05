@@ -12,7 +12,7 @@ local bg_3 = Image.load("assets/video/episode5/choices/14/sky_city_exploration_3
 
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
-    local result = PMP.playEasy(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+    local result = PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
     if result == 1 then
         choosing = false
         in_interactive_zone = false

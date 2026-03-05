@@ -11,7 +11,7 @@ local bg = Image.load("assets/video/episode5/choices/no_mi/1/throne_room_bg.png"
 
 local function playCutscene(videoPath, subtitlesPath)
     PMP.setVolume(pmpvolume)
-    local result = PMP.playEasy(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+    local result = PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
     if result == 1 then
         choosing = false
         in_interactive_zone = false

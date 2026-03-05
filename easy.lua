@@ -54,7 +54,7 @@ local function hexToColor(input)
 end
 
 
-function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize, hexColor, hexBg, subsControl, loop)
+function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize, hexColor, hexBg, subsControl, loop)
     if type(getPointer) ~= "boolean" then getPointer = false end
     if type(loop) ~= "boolean" then loop = false end
 
@@ -145,7 +145,7 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
                 end
                 
                 local finalLines = {}
-                local maxChars = 47
+                local maxChars = 85
                 
                 for _, originalLine in ipairs(allLines) do
                     if originalLine ~= "" then
@@ -167,7 +167,7 @@ function PMP.playEasy(path, stopButton, getPointer, subsPath, fontPath, fontSize
                     table.remove(finalLines, #finalLines)
                 end
                 
-                local lineHeight = fontSizeNow + 15
+                local lineHeight = fontSizeNow + 18
                 local totalHeight = #finalLines * lineHeight
                 local startY = 272 - totalHeight - 20
                 
