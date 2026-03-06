@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/ellegaard_gabriel/choices/22/i_made_a_weapon_pickaxe.pmp', buttons.r, true, 'assets/subtitles/episode4/ellegaard_gabriel/choices/22/i_made_a_weapon_pickaxe.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode4/ellegaard_gabriel/choices/22/i_made_a_weapon_pickaxe.pmp', buttons.r, true, 'assets/subtitles/episode4/ellegaard_gabriel/choices/22/i_made_a_weapon_pickaxe.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

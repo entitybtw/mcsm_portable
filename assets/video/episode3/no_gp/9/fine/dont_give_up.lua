@@ -1,7 +1,7 @@
 -- The Woolland Interactive Zone -- 
 -- Starts Here! --
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode3/no_gp/9/fine/dont_give_up.pmp', buttons.r, true, 'assets/subtitles/episode3/no_gp/9/fine/dont_give_up.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode3/no_gp/9/fine/dont_give_up.pmp', buttons.r, true, 'assets/subtitles/episode3/no_gp/9/fine/dont_give_up.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     -- Go To Menu
     return 1

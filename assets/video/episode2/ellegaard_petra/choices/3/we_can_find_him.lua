@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode2/ellegaard_petra/choices/3/we_can_find_him.pmp', buttons.r, true, 'assets/subtitles/episode2/ellegaard_petra/choices/3/we_can_find_him.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode2/ellegaard_petra/choices/3/we_can_find_him.pmp', buttons.r, true, 'assets/subtitles/episode2/ellegaard_petra/choices/3/we_can_find_him.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

@@ -1,7 +1,7 @@
 local choosing = true
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode5/choices/34/come_on_milo.pmp', buttons.r, true, 'assets/subtitles/episode5/choices/34/come_on_milo.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode5/choices/34/come_on_milo.pmp', buttons.r, true, 'assets/subtitles/episode5/choices/34/come_on_milo.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

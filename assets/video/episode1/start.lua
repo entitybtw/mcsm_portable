@@ -3,7 +3,7 @@ local choosing = true
 local fade = 255
 if path then
     PMP.setVolume(pmpvolume)
-local result =     PMP.playEasy("assets/ui/loading.pmp")
+local result =     PMP.playExt("assets/ui/loading.pmp")
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
@@ -24,7 +24,7 @@ end
 end
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/ui/lsave.pmp')
+local result = PMP.playExt('assets/ui/lsave.pmp')
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
@@ -52,7 +52,7 @@ while fade > 0 do
 end
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode1/START.pmp', buttons.r, true, "assets/subtitles/episode1/start.srt", font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode1/START.pmp', buttons.r, true, "assets/subtitles/episode1/start.srt", font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

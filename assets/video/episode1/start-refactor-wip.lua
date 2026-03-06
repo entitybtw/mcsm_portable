@@ -122,7 +122,7 @@ while currentchoice do
     end
 
     if currentchoice.zone == "the_woods" then
-        local result = PMP.playEasy(videoPath .. '.pmp', buttons.r, true, 
+        local result = PMP.playExt(videoPath .. '.pmp', buttons.r, true, 
                                     videoPath .. ".srt", font, subssize, 
                                     "#FFFFFF", "#000000/150", subs)
         if result == 1 then
@@ -134,7 +134,7 @@ while currentchoice do
     end
     
     if videoPath ~= "" then
-        local result = PMP.playEasy(videoPath .. '.pmp', buttons.r, true, 
+        local result = PMP.playExt(videoPath .. '.pmp', buttons.r, true, 
                                     videoPath .. ".srt", font, subssize, 
                                     "#FFFFFF", "#000000/150", subs)
         if result == 1 then

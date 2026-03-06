@@ -2,7 +2,7 @@ local choosing = true
 reuben = "reuben"
 
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r, true, 'assets/subtitles/episode1/choices/6/tall_grass.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode1/choices/6/tall_grass.pmp', buttons.r, true, 'assets/subtitles/episode1/choices/6/tall_grass.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

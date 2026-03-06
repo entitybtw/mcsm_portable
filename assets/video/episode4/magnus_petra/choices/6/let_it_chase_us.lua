@@ -1,6 +1,6 @@
 local choosing = true
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode4/magnus_petra/choices/6/let_it_chase_us.pmp', buttons.r, true, 'assets/subtitles/episode4/magnus_petra/choices/6/let_it_chase_us.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode4/magnus_petra/choices/6/let_it_chase_us.pmp', buttons.r, true, 'assets/subtitles/episode4/magnus_petra/choices/6/let_it_chase_us.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1

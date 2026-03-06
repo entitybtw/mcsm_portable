@@ -1,7 +1,7 @@
 -- The Loot Room Interactive Zone -- 
 -- Starts Here! --
 PMP.setVolume(pmpvolume)
-local result = PMP.playEasy('assets/video/episode3/petra/choices/15/that_was_scary.pmp', buttons.r, true, 'assets/subtitles/episode3/petra/choices/15/that_was_scary.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt('assets/video/episode3/petra/choices/15/that_was_scary.pmp', buttons.r, true, 'assets/subtitles/episode3/petra/choices/15/that_was_scary.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
 if result == 1 then
     nextscene = "./mainmenu.lua"
     return 1
