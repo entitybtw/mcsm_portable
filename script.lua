@@ -199,6 +199,7 @@ PMP.play("assets/ui/loading.pmp")
 require("saves")
 require("debugoverlay")
 require("files")
+require("sentences")
 sound.playEasy("assets/sounds/bg.at3", 5, true, false)
 
 fade_enabled = 1
