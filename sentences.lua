@@ -128,3 +128,90 @@ choices_one = {
         go_for_magnus = "Go for Magnus",
 
 }
+choices_three = {
+        lets_keep_this_between_us = "Let's keep this between us",
+        we_have_to_tell_the_others = "We have to tell the others",
+
+        drop_amulet = "Drop Amulet",
+        jump_down = "Jump down",
+
+        this_cant_be_good = "This can't be good",
+        whats_that_doing_here = "What's that doing here?",
+
+        jumping_is_easy = "Jumping is easy",
+        tuck_and_roll = "Tuck and roll",
+
+        save_amulet = "Save Amulet",
+        help_reuben_and_axel = "Help Reuben and Axel",
+
+        dont_touch_my_pig = "Don't touch my pig",
+        thanks_for_saving_reuben = "Thanks for saving Reuben",
+
+        give_it_back_its_mine = "Give it back it's mine",
+        thanks_for_grabbing_it = "Thanks for grabbing it",
+
+        a_haunting = "A haunting",
+        dont_look_at_them = "Don't look at them",
+
+        follow_lukas = "Follow Lukas",
+        follow_me = "Follow me",
+
+        im_hallucinating = "I'm hallucianting",
+        its_beautiful = "It's beautiful",
+
+        lukas = "Lukas",
+        reuben = "Reuben",
+        gabriel = "Gabriel",
+        levergabriel = "Lever (Gabriel)",
+        leverpetra = "Lever (Petra)",
+        leverreuben = "Lever (Reuben)",
+        petra = "Petra",
+        fountain = "Fountain",
+
+        gabriel_is_sick = "Gabriel is sick",
+        petra_is_sick = "Petra is sick",
+        we_are_a_team = "We are a team",
+        you_can_do_this = "You can do this",
+
+        chest = "Chest",
+        exit = "Exit",
+        serach_area1 = "Search Area 1",
+        search_area2 = "Search Area 2",
+        search_upstairs = "Search Upstairs",
+        olivia = "Olivia",
+
+        help_me_save_the_world = "Help me save the world",
+        you_need_to_be_a_hero = "You need to be a hero",
+
+        dont_give_up = "Don't give up",
+        soren_was_here = "Soren was here",
+
+        i_guess_so = "I guess so",
+        not_really = "Not really",
+
+        break_the_fountain = "Break the fountain",
+        dont_look_at_them = "Don't look at then",
+
+        eyes_down = "Eyes down",
+        hold_onto_me = "Hold onto me",
+
+        that_was_cool = "That was cool",
+        that_was_scary = "That was scary",
+
+        button = "Button",
+        axel = "Axel",
+        
+        why_did_you_leave = "Why did you leave?",
+        will_you_help_us = "Will you help us?",
+
+        take_ellegaards_armor = "Take Ellegaard's armor",
+        take_magnus_armor = "Take Magnus' armor",
+
+        i_owe_you_guys = "I owe you guys",
+        it_was_all_me = "It was all me",
+
+        please_dont_die = "Please don't die",
+        this_armor_is_yours = "This armor is your's",
+
+
+}
