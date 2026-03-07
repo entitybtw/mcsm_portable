@@ -9,8 +9,8 @@ if result == 1 then
 end
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Run, I'll distract them!", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "Stay close, I'll protect you", 0.4), 127, "Stay close, I'll protect you", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_one.run_i_distract_them, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_one.stay_close_i_protect_you, 0.4), 127, choices_one.stay_close_i_protect_you, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

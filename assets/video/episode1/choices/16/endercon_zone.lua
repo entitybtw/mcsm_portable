@@ -30,11 +30,11 @@ while in_interactive_zone do
 
     if not slime_used then
         Image.draw(spritesheet, 141, 139, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(141 - intraFont.textW(font, "Slime", 0.4) / 2 + 8, 139 + 14, "Slime", Color.new(255,255,255), font, 0.4)
+        intraFont.print(141 - intraFont.textW(font, choices_one.slime, 0.4) / 2 + 8, 139 + 14, choices_one.slime, Color.new(255,255,255), font, 0.4)
     end
     if not chicken_machine_used then
         Image.draw(spritesheet, 221, 122, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(221 - intraFont.textW(font, "Chicken Machine", 0.4) / 2 + 8, 122 + 14, "Chicken Machine", Color.new(255,255,255), font, 0.4)
+        intraFont.print(221 - intraFont.textW(font, choices_one.chicken_machine, 0.4) / 2 + 8, 122 + 14, choices_one.chicken_machine, Color.new(255,255,255), font, 0.4)
     elseif chicken_machine_used then
         Image.draw(spritesheet, 221, 122, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(221 - intraFont.textW(font, "Chicken Machine 2", 0.4) / 2 + 8, 122 + 14, "Chicken Machine 2", Color.new(255,255,255), font, 0.4)
@@ -42,11 +42,11 @@ while in_interactive_zone do
 
     if slime_used and not crafting_table_used then
         Image.draw(spritesheet, 334, 153, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(334 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 153 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
+        intraFont.print(334 - intraFont.textW(font, choices_one.crafting_table, 0.4) / 2 + 8, 153 + 14, choices_one.crafting_table, Color.new(255,255,255), font, 0.4)
     end
     if slime_used then
         Image.draw(spritesheet, 141, 139, 15, 15, nil, 399, 0, 15, 15)
-        intraFont.print(141 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 139 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
+        intraFont.print(141 - intraFont.textW(font, choices_one.lukas, 0.4) / 2 + 8, 139 + 14, choices_one.lukas, Color.new(255,255,255), font, 0.4)
     end
 
 
