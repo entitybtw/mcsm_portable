@@ -1,4 +1,4 @@
-sentences = {
+choices_one = {
         hundred_chicken_sized = "100 chicken-sized\n \n       zombies",
         ten_zombie_sized = "10 zombie-sized\n \n       chickens",
 
@@ -16,7 +16,7 @@ sentences = {
         order_of_the_pig = "Order of the pig",
 
         may_the_best_team_win = "May the best team win",
-        we_going_to_    },crush_you = "We going to crush you",
+        we_going_to_crush_you = "We going to crush you",
 
         redstone_rap = "Redstone Rap",
         warrior_whip = "Warrior Whip",
