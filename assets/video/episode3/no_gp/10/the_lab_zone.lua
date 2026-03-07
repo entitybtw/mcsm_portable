@@ -33,7 +33,7 @@ while in_interactive_zone do
 
     if not exit1_used and not chest_used or area_1_search and area_2_search and upstairs_search then
         Image.draw(spritesheet, 445, 179, 15, 15, nil, 399, 0, 15, 15)
-        intraFont.print(445 - intraFont.textW(font, "Exit", 0.4) / 2 + 8, 179 + 14, "Exit", Color.new(255,255,255), font, 0.4)
+        intraFont.print(445 - intraFont.textW(font, choices_three.exit, 0.4) / 2 + 8, 179 + 14, choices_three.exit, Color.new(255,255,255), font, 0.4)
     elseif chest_used and not upstairs_search then
         Image.draw(spritesheet, 344, 31, 15, 15, nil, 399, 0, 15, 15)
         intraFont.print(344 - intraFont.textW(font, "Search upstairs", 0.4) / 2 + 8, 31 + 14, "Search upstairs", Color.new(255,255,255), font, 0.4)
@@ -41,18 +41,18 @@ while in_interactive_zone do
 
     if not area_1_search and chest_used then
         Image.draw(spritesheet, 144, 170, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(144 - intraFont.textW(font, "Search Area 1", 0.4) / 2 + 8, 170 + 14, "Search Area 1", Color.new(255,255,255), font, 0.4)
+        intraFont.print(144 - intraFont.textW(font, choices_three.search_area1, 0.4) / 2 + 8, 170 + 14, choices_three.search_area1, Color.new(255,255,255), font, 0.4)
     elseif not olivia_talk then
         Image.draw(spritesheet, 62, 203, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(62 - intraFont.textW(font, "Olivia", 0.4) / 2 + 8, 203 + 14, "Olivia", Color.new(255,255,255), font, 0.4)
+        intraFont.print(62 - intraFont.textW(font, choices_three.olivia, 0.4) / 2 + 8, 203 + 14, choices_three.olivia, Color.new(255,255,255), font, 0.4)
     end
 
     if not area_2_search and chest_used then
         Image.draw(spritesheet, 310, 177, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(310 - intraFont.textW(font, "Search Area 2", 0.4) / 2 + 8, 177 + 14, "Search Area 2", Color.new(255,255,255), font, 0.4)
+        intraFont.print(310 - intraFont.textW(font, choices_three.search_area2, 0.4) / 2 + 8, 177 + 14, choices_three.search_area2, Color.new(255,255,255), font, 0.4)
     elseif not chest_used then
         Image.draw(spritesheet, 155, 171, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(155 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 171 + 14, "Chest", Color.new(255,255,255), font, 0.4)
+        intraFont.print(155 - intraFont.textW(font, choices_three.chest, 0.4) / 2 + 8, 171 + 14, choices_three.chest, Color.new(255,255,255), font, 0.4)
     end
 
 

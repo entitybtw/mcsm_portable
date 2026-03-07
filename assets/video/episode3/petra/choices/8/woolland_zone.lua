@@ -37,18 +37,18 @@ while in_interactive_zone do
 
     if not fountain_used then
         Image.draw(spritesheet, 166, 131, 15, 15, nil, 399, 0, 15, 15)
-        intraFont.print(166 - intraFont.textW(font, "Fountain", 0.4) / 2 + 8, 131 + 14, "Fountain", Color.new(255,255,255), font, 0.4)
+        intraFont.print(166 - intraFont.textW(font, choices_three.fountain, 0.4) / 2 + 8, 131 + 14, choices_three.fountain, Color.new(255,255,255), font, 0.4)
     end
     if not petra_talk then
         Image.draw(spritesheet, 394, 224, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(394 - intraFont.textW(font, "Petra", 0.4) / 2 + 8, 224 + 14, "Petra", Color.new(255,255,255), font, 0.4)
+        intraFont.print(394 - intraFont.textW(font, choices_three.petra, 0.4) / 2 + 8, 224 + 14, choices_three.petra, Color.new(255,255,255), font, 0.4)
     elseif petra_talk and not leverpetra_used then
         Image.draw(spritesheet, 394, 224, 15, 15, nil, 414, 0, 15, 15)
         intraFont.print(394 - intraFont.textW(font, "Lever (Petra)", 0.4) / 2 + 8, 224 + 14, "Lever (Petra)", Color.new(255,255,255), font, 0.4)
     end
     if not reuben_talk then
         Image.draw(spritesheet, 305, 135, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(305 - intraFont.textW(font, "Reuben", 0.4) / 2 + 8, 135 + 14, "Reuben", Color.new(255,255,255), font, 0.4)
+        intraFont.print(305 - intraFont.textW(font, choices_three.reuben, 0.4) / 2 + 8, 135 + 14, choices_three.reuben, Color.new(255,255,255), font, 0.4)
     elseif reuben_talk and not leverreuben_used then
         Image.draw(spritesheet, 305, 135, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(305 - intraFont.textW(font, "Lever (Reuben)", 0.4) / 2 + 8, 135 + 14, "Lever (Reuben)", Color.new(255,255,255), font, 0.4)
@@ -56,7 +56,7 @@ while in_interactive_zone do
 
     if leverpetra_used and leverreuben_used then
         Image.draw(spritesheet, 126, 169, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(126 - intraFont.textW(font, "Lukas", 0.4) / 2 + 8, 169 + 14, "Lukas", Color.new(255,255,255), font, 0.4)
+        intraFont.print(126 - intraFont.textW(font, choices_three.lukas, 0.4) / 2 + 8, 169 + 14, choices_three.lukas, Color.new(255,255,255), font, 0.4)
     end
 
 

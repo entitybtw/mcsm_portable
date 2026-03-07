@@ -8,8 +8,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Don't give up", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "Soren was here", 0.4), 127, "Soren was here", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_three.dont_give_up, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_three.soren_was_here, 0.4), 127, choices_three.soren_was_here, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
