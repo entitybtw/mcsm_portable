@@ -1,9 +1,10 @@
 local selectedButton = 1
+
 local buttonsList = {
-    { text = "Controls" },
-    { text = "Audio/Video" },
-    { text = "Debug" },
-    { text = "Credits" }
+    { text = ui.controls },
+    { text = ui.audio_video },
+    { text = ui.debug },
+    { text = ui.credits }
 }
 
 local buttonSprites = {

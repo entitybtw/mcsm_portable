@@ -1,9 +1,9 @@
 local buttonsList = {
-    { text = "Episode 1" },
-    { text = "Episode 2" },
-    { text = "Episode 3" },
-    { text = "Episode 4" },
-    { text = "Episode 5" }
+    { text = ui.episode .. " 1" },
+    { text = ui.episode .. " 2" },
+    { text = ui.episode .. " 3" },
+    { text = ui.episode .. " 4" },
+    { text = ui.episode .. " 5" }
 }
 
 local selectedButton = 1

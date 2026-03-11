@@ -13,10 +13,10 @@ local timered = timer.create()
 local welanim_duration = timer.create()
 
 local buttonsList = {
-    { text = "Play" },
-    { text = "Support" },
-    { text = "Changelogs" },
-    { text = "Settings" }
+    { text = ui.play },
+    { text = ui.support },
+    { text = ui.changelogs },
+    { text = ui.settings }
 }
 
 local selectedButton = 1

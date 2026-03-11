@@ -1,7 +1,7 @@
 local buttonsList = {
-    { text = "Controls" },
-    { text = "Audio/Video" },
-    { text = "Debug" }
+    { text = ui.controls },
+    { text = ui.audiovideo },
+    { text = ui.debug }
 }
 
 local selectedButton = 1

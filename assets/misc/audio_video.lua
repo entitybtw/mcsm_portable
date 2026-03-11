@@ -35,14 +35,6 @@ for i, v in ipairs(subssizeOptions) do
     end
 end
 
-local hints = {
-    music = "Adjust the Menu Music volume",
-    video = "Adjust the PMP Videos volume",
-    ui = "Adjust the UI Sounds volume",
-    subs = "Displays subtitles at the bottom of the screen",
-    subssize = "Adjust the size of the subtitles"
-}
-
 local function generatePositions(yPos)
     local positions = {}
     for i = 0, 10 do
@@ -83,21 +75,21 @@ local sliders = {
         level = menumusic,
         positions = generatePositions(55),
         apply = function(level) sound.volumeEasy(5, level * 10) end,
-        hintText = hints.music
+        hintText = ui.music
     },
     {
         name = "PMP Videos Volume",
         level = pmpvideos,
         positions = generatePositions(95),
         apply = function(level) pmpvolume = level * 10 end,
-        hintText = hints.video
+        hintText = ui.video
     },
     {
         name = "UI Sounds Volume",
         level = uiLevel,
         positions = generatePositions(135),
         apply = function(level) sound.volumeEasy(sound.WAV_1, level * 10) end,
-        hintText = hints.ui
+        hintText = ui.ui
     }
 }
 
@@ -181,9 +173,9 @@ local function drawui()
     if selectedIndex <= #sliders then
         hintText = sliders[selectedIndex].hintText
     elseif selectedIndex == #sliders + 1 then
-        hintText = hints.subs
+        hintText = ui.subs
     elseif selectedIndex == #sliders + 2 then
-        hintText = hints.subssize
+        hintText = ui.subssize
     end
 
     if hintText then
