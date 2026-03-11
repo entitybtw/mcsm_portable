@@ -213,5 +213,166 @@ choices_three = {
         please_dont_die = "Please don't die",
         this_armor_is_yours = "This armor is your's",
 
+}
 
+choices_fifth = {
+        for_glory = "",
+        lets_find_treasutre = "",
+
+        i_was_clueless = "",
+        weve_come_so_far = "",
+
+        its_mine_now = "",
+        what_is_this = "",
+
+        redstone_rap = "",
+        warrior_whip = "",
+
+        way_a_head_of_you = "",
+        you_try_it_axel = "",
+
+        dont_mess_with_me = "",
+        youre_not_worth_it = "",
+
+        this_place_is_awesome = "",
+        time_to_party = "",
+
+        leave_it_alone = "",
+        tear_it_down = "",
+
+        i_really_miss_him = "",
+        i_still_feel_guilty = "",
+
+        is_it_valuable = "",
+        what_is_that = "",
+
+        hes_funny = "",
+        hes_smart = "",
+
+        please_be_careful = "",
+        youll_regret_that = "",
+
+        is_that_a_city = "",
+        maybe_aidens_there = "",
+
+        did_you_see_the_blaze_rods = "",
+        is_something_wrong = "",
+
+        build_site = "",
+        castle_guard = "",
+        garden = "",
+        innkeeper = "",
+        townspeople = "",
+
+        dont_lie_to_me = "",
+        you_can_trust_me = "",
+
+        go_with_milo = "",
+        help_ivor = "",
+
+        shut_up_both_of_you = "",
+        yeah_aidens_our_focus = "",
+        yeah_sure_whatever = "",
+        your_secrets_safe_with_me = "",
+
+        aiden_is_using_you = "",
+        he_stole_from_us = "",
+        our_friends_need_us = "",
+        you_have_a_plan = "",
+
+        we_can_help_you = "",
+        you_just_want_power = "",
+        craft_anvil = "",
+        craft_boots = "",
+
+        hes_just_a_liar = "",
+        were_not_criminals = "",
+        ill_do_it_for_my_friends = "",
+        we_had_a_deal = "",
+
+        aiden_is_much_worse = "",
+        its_the_right_thing = "",
+        keep_it_down_milo = "",
+        supposedly = "",
+
+        aiden_cant_get_it = "",
+        taking_it_is_wrong = "",
+
+        look_before_you_punch = "",
+        petra_you_trust_him = "",
+
+        the_people_need_it = "",
+        well_take_the_chicken = "",
+
+        back_lukas_up = "",
+        save_the_founder = "",
+
+        it_doesnt_matter = "",
+        no_its_your_fault = "",
+
+        bring_everyone_here = "",
+        we_kick_aidens_butt = "",
+
+        im_going_home = "",
+        its_my_portal = "",
+
+        potion_of_invisibility = "",
+        potion_of_speed = "",
+
+        give_up_aiden = "",
+        ill_kick_your_butt = "",
+
+        its_too_dangerous = "",
+        you_should_rest = "",
+
+        im_glad_youre_okay = "",
+        sorry_i_didnt_help = "",
+
+        have_some_fun = "",
+        take_it_slow = "",
+
+        come_on_milo = "",
+        relax_founder = "",
+
+        build_something_new = "",
+        you_could_travel = "",
+
+        bookcase = "",
+        cobblestone = "",
+        dry_bush = "",
+        lever_slot = "",
+        strange_wall = "",
+        supply_door = "",
+
+        the_eversource_makes_eggs = "",
+        these_generate_resources = "",
+}
+
+ui = {
+        play = "Play",
+        support = "Support",
+        changelogs = "Changelogs",
+        settings = "Settings",
+
+        controls = "Controls",
+        audiovideo = "Audio/Video",
+        debug = "Debug",
+        credits = "Credits",
+
+        previous_menu = "Previous Menu",
+        cutscene_skip = "Skip current\n\n   cutscene",
+        actions = "Actions/\n\nDialog Choices",
+        pause_menu = "Pause Menu",
+        pause_game = "Pause Game",
+        art_by = "art by Ossi101",
+
+        music = "Adjust the Menu Music volume",
+        video = "Adjust the PMP Videos volume",
+        ui = "Adjust the UI Sounds volume",
+        subs = "Displays subtitles at the bottom of the screen",
+        subssize = "Adjust the size of the subtitles",
+
+        debug_menu = "Debug Menu",
+
+        episode = "Episode"
 }
