@@ -71,21 +71,21 @@ local menumusic, pmpvideos, uiLevel = loadLevels("assets/saves/soundlevels.txt")
 
 local sliders = {
     {
-        name = "Menu Music Volume",
+        name = ui.menumusic_volume,
         level = menumusic,
         positions = generatePositions(45),
         apply = function(level) sound.volumeEasy(5, level * 10) end,
         hintText = ui.music
     },
     {
-        name = "PMP Videos Volume",
+        name = ui.pmp_volume,
         level = pmpvideos,
         positions = generatePositions(45 + 30),
         apply = function(level) pmpvolume = level * 10 end,
         hintText = ui.video
     },
     {
-        name = "UI Sounds Volume",
+        name = ui.ui_volume,
         level = uiLevel,
         positions = generatePositions(45 + 60),
         apply = function(level) sound.volumeEasy(sound.WAV_1, level * 10) end,
@@ -159,7 +159,7 @@ local function drawToggle(text, stateText, isSelected, y)
 end
 
 local function drawui()
-    intraFont.printShadowed(230 - intraFont.textW(font, "Audio/Video Settings", 0.3) / 2 + 14, 25, "Audio/Video Settings", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)   
+    intraFont.printShadowed(230 - intraFont.textW(font, ui.audiovideotext, 0.3) / 2 + 14, 25, ui.audiovideotext, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)   
 
     for i, slider in ipairs(sliders) do
         drawSlider(slider, i == selectedIndex, 15 + i * 30)
@@ -188,8 +188,8 @@ while true do
     buttons.read()
     screen.clear()
     Image.draw(pause_bg, 0, 0)
-    Image.draw(spritesheet, 240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 2, 233 + 13, 14, 14, nil, 384, 0, 15, 15)
-    intraFont.printShadowed(240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 + 14, 233 + 14, "Previous Menu", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)   
+    Image.draw(spritesheet, 240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 2, 233 + 13, 14, 14, nil, 384, 0, 15, 15)
+    intraFont.printShadowed(240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 + 14, 233 + 14, ui.previous_menu, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)   
 
     drawui()
     screen.flip()

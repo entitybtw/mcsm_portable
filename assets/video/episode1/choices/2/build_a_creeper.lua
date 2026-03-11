@@ -13,7 +13,7 @@ Image.draw(spritesheet, 140, 182, 15, 15, nil, 430, 0, 15, 15)
 intraFont.print(45, 127, choices_one.dead_enders, Color.new(255,255,255), font, 0.4)
 intraFont.print(450 - intraFont.textW(font, choices_one.nether_maniacs, 0.4), 127, choices_one.nether_maniacs, Color.new(255,255,255), font, 0.4)
 intraFont.print(140 + 15 + 5, 182, choices_one.order_of_the_pig, Color.new(255,255,255), font, 0.4)
-intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 

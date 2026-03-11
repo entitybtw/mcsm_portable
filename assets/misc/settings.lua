@@ -2,7 +2,7 @@ local selectedButton = 1
 
 local buttonsList = {
     { text = ui.controls },
-    { text = ui.audio_video },
+    { text = ui.audiovideo },
     { text = ui.debug },
     { text = ui.credits }
 }
@@ -82,10 +82,10 @@ while true do
     drawButtons()
 
     debugoverlay.draw(debugoverlay.loadSettings())
-    intraFont.printShadowed(40, 35, "Settings", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(40, 35, ui.settings, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
     Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
-    intraFont.printShadowed(38 + 14 + 5, 234, "Select", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
-    Image.draw(spritesheet, 40 + 14 + intraFont.textW(font, "Select", 0.3) + 10, 233, 14, 14, nil, 384, 0, 15, 15)
-    intraFont.printShadowed(38 + 14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + 5, 234, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)    
+    intraFont.printShadowed(38 + 14 + 5, 234, ui.select, Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    Image.draw(spritesheet, 40 + 14 + intraFont.textW(font, ui.select, 0.3) + 10, 233, 14, 14, nil, 384, 0, 15, 15)
+    intraFont.printShadowed(38 + 14 + intraFont.textW(font, ui.select, 0.3) + 10 + 14 + 5, 234, ui.previous_menu, Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)    
     screen.flip()
 end

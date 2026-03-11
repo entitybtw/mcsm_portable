@@ -6,10 +6,10 @@ local c_black = Color.new(0, 0, 0)
 local fade_enabled = 1
 
 local buttonsList = {
-    { text = "Resume Game" },
-    { text = "Settings" },
-    { text = "Main Menu" },
-    { text = "Exit Game" }
+    { text = ui.resume_game },
+    { text = ui.settings },
+    { text = ui.main_menu },
+    { text = ui.exit_game }
 }
 
 local selectedButton = 1
@@ -51,9 +51,9 @@ while true do
     end    
 
     Image.draw(pause_bg, 0, 0)
-    intraFont.printShadowed(230 - intraFont.textW(font, "Paused", 0.3) / 2 + 14, 25, "Paused", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-    Image.draw(spritesheet, 240 - intraFont.textW(font, "Resume Game", 0.3) / 2 - 8, 233 + 13, 14, 14, nil, 384, 0, 15, 15)
-    intraFont.printShadowed(240 - intraFont.textW(font, "Resume Game", 0.3) / 2 + 8, 233 + 14, "Resume Game", Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0) 
+    intraFont.printShadowed(230 - intraFont.textW(font, ui.paused, 0.3) / 2 + 14, 25, ui.paused, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+    Image.draw(spritesheet, 240 - intraFont.textW(font, ui.resume_game, 0.3) / 2 - 8, 233 + 13, 14, 14, nil, 384, 0, 15, 15)
+    intraFont.printShadowed(240 - intraFont.textW(font, ui.resume_game, 0.3) / 2 + 8, 233 + 14, ui.resume_game, Color.new(255,255,255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0) 
 
     if buttons.pressed(buttons.up) and selectedButton > 1 then
         selectedButton = selectedButton - 1

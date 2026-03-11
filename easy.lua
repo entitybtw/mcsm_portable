@@ -211,7 +211,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 
         if paused then
             screen.filledRect(0, 0, 480, 272, Color.new(0, 0, 0), nil, 150)
-            intraFont.print(235 - intraFont.textW(font, "Paused", 1) / 2 + 8, 105 + 14, "Paused", Color.new(255,255,255), font, 1)
+            intraFont.print(235 - intraFont.textW(font, ui.paused, 1) / 2 + 8, 105 + 14, ui.paused, Color.new(255,255,255), font, 1)
         end
 
         screen.flip()

@@ -135,7 +135,7 @@ while true do
                 Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
                 Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
                 Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
-                intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+                intraFont.printShadowed(57, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
                 screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
                 screen.flip()
                 fade = fade + 8
@@ -175,8 +175,8 @@ while true do
     end
 
     Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 225, 48, 0, welanim)
-    intraFont.printShadowed(270, 205, "Welcome to Minecraft: Story Mode!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.3, 0)
-    intraFont.printShadowed(335, 225, "Visit mcsm_portable github page!", Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.2, 0)
+    intraFont.printShadowed(270, 205, ui.welcome, Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(335, 225, ui.welcome_sub, Color.new(255, 255, 255, welanim), Color.new(0, 0, 0, welanim), font, 90, 1, 0.2, 0)
 
     debugoverlay.draw(debugoverlay.loadSettings())
     screen.flip()
