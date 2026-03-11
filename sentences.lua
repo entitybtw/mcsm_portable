@@ -371,8 +371,25 @@ ui = {
         ui = "Adjust the UI Sounds volume",
         subs = "Displays subtitles at the bottom of the screen",
         subssize = "Adjust the size of the subtitles",
+        
+        menumusic_volume = "Menu Music Volume",
+        pmp_volume = "PMP Videos Volume",
+        ui_volume = "UI Sounds Volume",
 
         debug_menu = "Debug Menu",
 
-        episode = "Episode"
+        episode = "Episode",
+
+        paused = "Paused",
+        resume_game = "Resume Game",
+        main_menu = "Main Menu",
+        exit_game = "Exit Game",
+        select = "Select",
+        audiovideotext = "Audio/Video Settings",
+
+        welcome = "Welcome to Minecraft: Story Mode!",
+        welcome_sub = "Visit mcsm_portable github page!",
+
+        save = "Press R to save",
+
 }
