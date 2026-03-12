@@ -164,8 +164,8 @@ while currentchoice do
             intraFont.print(140 + 15 + 5, 182, currentchoice.middlechoice, Color.new(255,255,255), font, 0.4)
         end
         
-        intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, 
-                       "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+        intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, 
+                       ui.save, Color.new(255,255,255, 150), font, 0.63)
         debugoverlay.draw(debugoverlay.loadSettings())
         screen.flip()
     end

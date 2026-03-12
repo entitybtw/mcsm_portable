@@ -11,7 +11,7 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, "Don't lie to me", Color.new(255,255,255), font, 0.4)
 intraFont.print(450 - intraFont.textW(font, "You can trust me", 0.4), 127, "You can trust me", Color.new(255,255,255), font, 0.4)
-intraFont.print(340 - intraFont.textW(font, "Press R to save", 0.63), 230, "Press R to save", Color.new(255,255,255, 150), font, 0.63)
+intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 

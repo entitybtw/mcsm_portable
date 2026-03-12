@@ -71,21 +71,21 @@ local menumusic, pmpvideos, uiLevel = loadLevels("assets/saves/soundlevels.txt")
 
 local sliders = {
     {
-        name = "Menu Music Volume",
+        name = ui.menumusic_volume,
         level = menumusic,
         positions = generatePositions(55),
         apply = function(level) sound.volumeEasy(5, level * 10) end,
         hintText = ui.music
     },
     {
-        name = "PMP Videos Volume",
+        name = ui.pmp_volume,
         level = pmpvideos,
         positions = generatePositions(95),
         apply = function(level) pmpvolume = level * 10 end,
         hintText = ui.video
     },
     {
-        name = "UI Sounds Volume",
+        name = ui.ui_volume,
         level = uiLevel,
         positions = generatePositions(135),
         apply = function(level) sound.volumeEasy(sound.WAV_1, level * 10) end,
@@ -159,7 +159,7 @@ local function drawToggle(text, stateText, isSelected, y)
 end
 
 local function drawui()
-    intraFont.printShadowed(40, 35, "Audio/Video Settings", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(40, 35, ui.audiovideotext, Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
 
     for i, slider in ipairs(sliders) do
         drawSlider(slider, i == selectedIndex, 27 + i * 30)
@@ -190,7 +190,7 @@ while true do
         Image.draw(videoFrame, 0, 0)
     end
     Image.draw(spritesheet, 40, 233, 14, 14, nil, 384, 0, 15, 15)
-    intraFont.printShadowed(57, 234, "Previous Menu", Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
+    intraFont.printShadowed(57, 234, ui.previous_menu, Color.new(255,255,255), Color.new(0,0,0), font, 90, 1, 0.3, 0)
 
     drawui()
     screen.flip()
