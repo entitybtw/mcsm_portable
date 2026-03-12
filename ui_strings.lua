@@ -216,136 +216,136 @@ choices_three = {
 }
 
 choices_fifth = {
-        for_glory = "",
-        lets_find_treasutre = "",
+        for_glory = "For glory",
+        lets_find_treasure = "Let's find treasure",
 
-        i_was_clueless = "",
-        weve_come_so_far = "",
+        i_was_clueless = "I was clueless",
+        weve_come_so_far = "We've come so far",
 
-        its_mine_now = "",
-        what_is_this = "",
+        its_mine_now = "It's mine now",
+        what_is_this = "What is this?",
 
-        redstone_rap = "",
-        warrior_whip = "",
+        redstone_rap = "Redstone Rap",
+        warrior_whip = "Warrior Whip",
 
-        way_a_head_of_you = "",
-        you_try_it_axel = "",
+        way_a_head_of_you = "Way a head of you",
+        you_try_it_axel = "You try it, Axel",
 
-        dont_mess_with_me = "",
-        youre_not_worth_it = "",
+        dont_mess_with_me = "Don't mess with me",
+        youre_not_worth_it = "You're not worth it",
 
-        this_place_is_awesome = "",
-        time_to_party = "",
+        this_place_is_awesome = "This place is awesome",
+        time_to_party = "Time to party",
 
-        leave_it_alone = "",
-        tear_it_down = "",
+        leave_it_alone = "Leave it alone",
+        tear_it_down = "Tear it down",
 
-        i_really_miss_him = "",
-        i_still_feel_guilty = "",
+        i_really_miss_him = "I realy miss him",
+        i_still_feel_guilty = "I still feel guilty",
 
-        is_it_valuable = "",
-        what_is_that = "",
+        is_it_valuable = "Is it valuable?",
+        what_is_that = "What is that?",
 
-        hes_funny = "",
-        hes_smart = "",
+        hes_funny = "He's funny",
+        hes_smart = "He's smart",
 
-        please_be_careful = "",
-        youll_regret_that = "",
+        please_be_careful = "Please be careful",
+        youll_regret_that = "You'll regret that",
 
-        is_that_a_city = "",
-        maybe_aidens_there = "",
+        is_that_a_city = "Is that a city?",
+        maybe_aidens_there = "Maybe Aiden's here",
 
-        did_you_see_the_blaze_rods = "",
-        is_something_wrong = "",
+        did_you_see_the_blaze_rods = "Did you see the blaze rods?",
+        is_something_wrong = "Is something wrong?",
 
-        build_site = "",
-        castle_guard = "",
-        garden = "",
-        innkeeper = "",
-        townspeople = "",
+        build_site = "Build Site",
+        castle_guard = "Castle Guard",
+        garden = "Garden",
+        innkeeper = "Innkeeper",
+        townspeople = "Townspeople",
 
-        dont_lie_to_me = "",
-        you_can_trust_me = "",
+        dont_lie_to_me = "Don't lie to me",
+        you_can_trust_me = "You can trust me",
 
-        go_with_milo = "",
-        help_ivor = "",
+        go_with_milo = "Go with Milo",
+        help_ivor = "Help Ivor",
 
-        shut_up_both_of_you = "",
-        yeah_aidens_our_focus = "",
-        yeah_sure_whatever = "",
-        your_secrets_safe_with_me = "",
+        shut_up_both_of_you = "Shut up both of you",
+        yeah_aidens_our_focus = "Yeah, Aiden's our focus",
+        yeah_sure_whatever = "Yeah sure, whatever",
+        your_secrets_safe_with_me = "Your secrets safe with me",
 
-        aiden_is_using_you = "",
-        he_stole_from_us = "",
-        our_friends_need_us = "",
-        you_have_a_plan = "",
+        aiden_is_using_you = "Aiden is using you",
+        he_stole_from_us = "He stole from us",
+        our_friends_need_us = "Our friends need us",
+        you_have_a_plan = "You have a plan",
 
-        we_can_help_you = "",
-        you_just_want_power = "",
-        craft_anvil = "",
-        craft_boots = "",
+        we_can_help_you = "We can help you",
+        you_just_want_power = "You just want power",
+        craft_anvil = "Craft anvil",
+        craft_boots = "Craft boots",
 
-        hes_just_a_liar = "",
-        were_not_criminals = "",
-        ill_do_it_for_my_friends = "",
-        we_had_a_deal = "",
+        hes_just_a_liar = "He's just a liar",
+        were_not_criminals = "We're not criminals",
+        ill_do_it_for_my_friends = "I'll do it for my friends",
+        we_had_a_deal = "We had a deal",
 
-        aiden_is_much_worse = "",
-        its_the_right_thing = "",
-        keep_it_down_milo = "",
-        supposedly = "",
+        aiden_is_much_worse = "Aiden is much worse",
+        its_the_right_thing = "It's the right thing",
+        keep_it_down_milo = "Keep it down, Milo",
+        supposedly = "Supposedly",
 
-        aiden_cant_get_it = "",
-        taking_it_is_wrong = "",
+        aiden_cant_get_it = "Aiden can't get it",
+        taking_it_is_wrong = "Taking it is wrong",
 
-        look_before_you_punch = "",
-        petra_you_trust_him = "",
+        look_before_you_punch = "Look before you punch",
+        petra_you_trust_him = "Petra you trust him",
 
-        the_people_need_it = "",
-        well_take_the_chicken = "",
+        the_people_need_it = "The people need it",
+        well_take_the_chicken = "We'll take the chicken",
 
-        back_lukas_up = "",
-        save_the_founder = "",
+        back_lukas_up = "Bake Lukas up",
+        save_the_founder = "Save the Founder",
 
-        it_doesnt_matter = "",
-        no_its_your_fault = "",
+        it_doesnt_matter = "It doesn't matter",
+        no_its_your_fault = "No, it's your fault",
 
-        bring_everyone_here = "",
-        we_kick_aidens_butt = "",
+        bring_everyone_here = "Bring everyone here",
+        we_kick_aidens_butt = "We kick aidens butt",
 
-        im_going_home = "",
-        its_my_portal = "",
+        im_going_home = "I'm going home",
+        its_my_portal = "It's my portal",
 
-        potion_of_invisibility = "",
-        potion_of_speed = "",
+        potion_of_invisibility = "Potion of invisibility",
+        potion_of_speed = "Potion of speed",
 
-        give_up_aiden = "",
-        ill_kick_your_butt = "",
+        give_up_aiden = "Give up, Aiden",
+        ill_kick_your_butt = "I'll kick your butt",
 
-        its_too_dangerous = "",
-        you_should_rest = "",
+        its_too_dangerous = "It's too dangerous",
+        you_should_rest = "You should rest",
 
-        im_glad_youre_okay = "",
-        sorry_i_didnt_help = "",
+        im_glad_youre_okay = "I'm glad you're okay",
+        sorry_i_didnt_help = "Sorry i didn't help",
 
-        have_some_fun = "",
-        take_it_slow = "",
+        have_some_fun = "Have some fun",
+        take_it_slow = "Take it slow",
 
-        come_on_milo = "",
-        relax_founder = "",
+        come_on_milo = "Come on, Milo",
+        relax_founder = "Relax, Founder",
 
-        build_something_new = "",
-        you_could_travel = "",
+        build_something_new = "Build something new",
+        you_could_travel = "You could travel",
 
-        bookcase = "",
-        cobblestone = "",
-        dry_bush = "",
-        lever_slot = "",
-        strange_wall = "",
-        supply_door = "",
+        bookcase = "Bookcase",
+        cobblestone = "Cobblestone",
+        dry_bush = "Dry Bush",
+        lever_slot = "Lever Slot",
+        strange_wall = "Strange Wall",
+        supply_door = "Supply Door",
 
-        the_eversource_makes_eggs = "",
-        these_generate_resources = "",
+        the_eversource_makes_eggs = "The eversource makes eggs",
+        these_generate_resources = "These generate resoures",
 }
 
 ui = {
@@ -371,8 +371,25 @@ ui = {
         ui = "Adjust the UI Sounds volume",
         subs = "Displays subtitles at the bottom of the screen",
         subssize = "Adjust the size of the subtitles",
+        
+        menumusic_volume = "Menu Music Volume",
+        pmp_volume = "PMP Videos Volume",
+        ui_volume = "UI Sounds Volume",
 
         debug_menu = "Debug Menu",
 
-        episode = "Episode"
+        episode = "Episode",
+
+        paused = "Paused",
+        resume_game = "Resume Game",
+        main_menu = "Main Menu",
+        exit_game = "Exit Game",
+        select = "Select",
+        audiovideotext = "Audio/Video Settings",
+
+        welcome = "Welcome to Minecraft: Story Mode!",
+        welcome_sub = "Visit mcsm_portable github page!",
+
+        save = "Press R to save",
+
 }
