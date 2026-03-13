@@ -348,6 +348,88 @@ choices_fifth = {
         these_generate_resources = "These generate resoures",
 }
 
+choices_two = {
+        bow = "Bow",
+        fishing_pole = "Fishing Pole",
+        sword = "Sword",
+
+        they_could_teach_you = "They could teach you",
+        youre_just_as_good = "You're just as good",
+
+        autofarm = "Autofarm",
+        crafting_table = "Crafting Table",
+        intellectual = "Intellectual",
+        steal_repeater = "Steal Repeater",
+        schoolboy = "Schoolboy",
+
+        dont_touch_anything = "Don't touch anything",
+        no_clue_what_this_is = "No clue what this is",
+
+        its_an_honor = "It's an honor",
+        we_need_your_help = "We need your help",
+
+        leave_her_alone = "Leave her alone",
+        we_have_bigger_issues = "We have bigger issues",
+
+        lets_do_this = "Let's do this",
+        theres_no_time = "There's not time",
+
+        ellegaard_is_cool = "Ellegaard is cool",
+        you_need_to_get_along = "You need to get along",
+
+        glad_youre_okay = "Glad you're okay",
+        how_did_you_escape = "How did you escape?",
+
+        ellegaard_calm_down = "Ellegaard calm down",
+        stay_out_of_it_axel = "Stay out of it, Axel",
+
+        he_wasnt_on_the_map = "He wasn't on the map",
+        we_can_find_him = "We can find him",
+
+        he_can_be_a_jerk = "He can be a jerk",
+        hes_awesome = "He's awesome",
+        shes_awesome = "She's awesome",
+        you_make_her_nervous = "You make her nervous",
+
+        lets_do_this = "Let's do this",
+        theres_no_time = "There's no time",
+
+        hello_boom_town = "Hello Boom Town",
+        who_likes_explosions = "Who likes explosions?",
+
+        i_know_what_this_means = "I know what this means",
+        only_the_green_part = "Only the green part",
+
+        chase_griefer = "Chase Griefer",
+        chase_nohr = "Chase Nohr",
+
+        give_amulet = "Give Amulet",
+        keep_amulet = "Keep Amulet",
+
+        we_need_your_help = "We need your help",
+        were_not_griefers = "We're not griefers",
+
+        its_the_truth = "It's the truth",
+        you_dont_trust_me = "You don't trust me",
+
+        how_could_i_beat_you = "How could i beat you?s",
+        then_id_be_stuck_here = "Then i'd be stuck here",
+
+        pink_wool = "Pink Wool",
+        stone = "Stone",
+
+        what_about_the_plan = "What about the plan?",
+        youre_going_down = "You're going down",
+
+        magnus_is_cool = "Magnus is cool",
+        you_need_to_get_along = "You need to get along",
+
+}
+
+choices_forth = {
+        
+}
+
 ui = {
         play = "Play",
         support = "Support",
