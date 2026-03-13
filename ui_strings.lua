@@ -128,7 +128,7 @@ choices_one = {
         go_for_magnus = "Go for Magnus",
 
 }
-choices_three = {
+choices_third = {
         lets_keep_this_between_us = "Let's keep this between us",
         we_have_to_tell_the_others = "We have to tell the others",
 
@@ -348,7 +348,7 @@ choices_fifth = {
         these_generate_resources = "These generate resoures",
 }
 
-choices_two = {
+choices_second = {
         bow = "Bow",
         fishing_pole = "Fishing Pole",
         sword = "Sword",
@@ -426,8 +426,117 @@ choices_two = {
 
 }
 
-choices_forth = {
-        
+choices_fourth = {
+        ill_take_gabriel = "",
+        ive_got_petra = "",
+
+        give_her_some_space = "",
+        give_him_some_space = "",
+        she_doesnt_know_us = "",
+        he_forgot_everyone = "",
+
+        go_talk_to_gabriel = "",
+        go_talk_to_petra = "",
+        stay_with_petra = "",
+        stay_with_gabriel = "",
+
+
+        just_have_our_back = "",
+        youll_get_a_chance = "",
+        doesnt_matter_now = "",
+        we_all_make_mistakes = "",
+        i_chose_gabriel = "",
+        i_couldnt_save_you = "",
+        its_ivors_fault = "",
+        you_didnt_know = "",
+
+        nothing_you_can_do = "",
+        they_could_be_alive = "",
+
+        the_order_has_failed = "",
+        the_world_needs_us = "",
+
+        let_it_chase_us = "",
+        use_the_amulet = "",
+
+        redstone_rap = "",
+        warrior_whip = "",
+
+        are_we_there_yet = "",
+        we_must_be_close = "",
+
+        lets_head_back = "",
+        we_need_that_cake = "",
+
+        get_ready_to_fight = "",
+        ill_distract_them = "",
+        he_bailed_on_me = "",
+        i_have_no_idea = "",
+
+        find_another_way = "",
+        lets_go_inside = "",
+
+        we_have_to_continue = "",
+        were_back_together = "",
+
+        we_reunited_the_order = "",
+        we_won_at_endercon = "",
+
+        craft_redstone_block = "",
+        craft_sticky_piston = "",
+
+        that_was_endercon = "",
+        the_chicken_machine = "",
+
+        bookcase = "",
+        crafting_table = "",
+        chest = "",
+        petra = "",
+        put_lever = "",
+        redstone_hole = "",
+
+        i_wont_lie_to_you = "",
+        youll_be_fine = "",
+
+        are_those_ender_crystals = "",
+        is_the_dragon_a_clue = "",
+
+        that_was_amazing = "",
+        youre_full_of_it = "",
+
+        i_looked_up_to_you = "",
+        you_lied_to_everyone = "",
+
+        how_is_this_better = "",
+        youre_a_mad_man = "",
+
+        craft_diamond_hoe = "",
+        craft_diamond_pickaxe = "",
+
+        fight_to_the_death = "",
+        i_made_a_weapon = "",
+
+        come_back = "",
+        you_coward = "",
+
+        flying_machine = "",
+        rocket_minecart = "",
+        tnt_launcher = "",
+
+        ill_be_fine = "",
+        stay_hidden = "",
+
+        everyone_okay = "",
+        wheres_reuben = "",
+
+        im_here_for_you_boy = "",
+        reuben_i_need_you = "",
+
+        just_let_them_believe = "",
+        they_deserve_the_truth = "",
+
+        my_pig_reuben = "",
+        saving_the_world = ""
 }
 
 ui = {
