@@ -8,8 +8,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Reuben, I need you", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "I'm here for you, boy", 0.4), 127, "I'm here for you, boy", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fourth.reuben_i_need_you, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_fourth.im_here_for_you_boy, 0.4), 127, choices_fourth.im_here_for_you_boy, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

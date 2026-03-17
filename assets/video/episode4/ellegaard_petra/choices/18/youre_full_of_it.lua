@@ -8,8 +8,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "I looked up to you", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "You lied to everyone", 0.4), 127, "You lied to everyone", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fourth.i_looked_up_to_you, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_fourth.you_lied_to_everyone, 0.4), 127, choices_fourth.you_lied_to_everyone, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

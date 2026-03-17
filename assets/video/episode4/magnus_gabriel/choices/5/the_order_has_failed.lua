@@ -8,8 +8,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Let it chase us", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "Use the amulet", 0.4), 127, "Use the amulet", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fourth.let_it_chase_us, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_fourth.use_the_amulet, 0.4), 127, choices_fourth.use_the_amulet, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

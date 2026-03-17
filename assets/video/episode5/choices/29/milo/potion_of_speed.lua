@@ -9,8 +9,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Give up, Aiden", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "I'll kick your butt", 0.4), 127, "I'll kick your butt", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fifth.give_up_aiden, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_fifth.ill_kick_your_butt, 0.4), 127, choices_fifth.ill_kick_your_butt, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

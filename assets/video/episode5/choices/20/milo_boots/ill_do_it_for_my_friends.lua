@@ -9,8 +9,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Keep it down, Milo", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "Supposedly", 0.4), 127, "Supposedly", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fifth.keep_it_down_milo, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_fifth.supposedly, 0.4), 127, choices_fifth.supposedly, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

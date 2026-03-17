@@ -8,7 +8,7 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Glad you're okay", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_second.glad_youre_okay, Color.new(255,255,255), font, 0.4)
 intraFont.print(450 - intraFont.textW(font, "How did you escape?", 0.4), 127, "How did you escape?", Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())

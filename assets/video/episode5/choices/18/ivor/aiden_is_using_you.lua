@@ -9,8 +9,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "We can help you", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "You just want power", 0.4), 127, "You just want power", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fifth.we_can_help_you, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_fifth.you_just_want_power, 0.4), 127, choices_fifth.you_just_want_power, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

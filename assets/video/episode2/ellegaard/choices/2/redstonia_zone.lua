@@ -37,18 +37,18 @@ while in_interactive_zone do
 
     if not autofarm_used then
         Image.draw(spritesheet, 125, 216, 15, 15, nil, 399, 0, 15, 15)
-        intraFont.print(125 - intraFont.textW(font, "Autofarm", 0.4) / 2 + 8, 216 + 14, "Autofarm", Color.new(255,255,255), font, 0.4)
+        intraFont.print(125 - intraFont.textW(font, choices_second.autofarm, 0.4) / 2 + 8, 216 + 14, choices_second.autofarm, Color.new(255,255,255), font, 0.4)
     end
 
     if not intellectual_talk then
         Image.draw(spritesheet, 344, 167, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(344 - intraFont.textW(font, "Intellectual", 0.4) / 2 + 8, 167 + 14, "Intellectual", Color.new(255,255,255), font, 0.4)
+        intraFont.print(344 - intraFont.textW(font, choices_second.intellectual, 0.4) / 2 + 8, 167 + 14, choices_second.intellectual, Color.new(255,255,255), font, 0.4)
     elseif not fight then
         Image.draw(spritesheet, 383, 197, 15, 15, nil, 384, 0, 15, 15)
         intraFont.print(383 - intraFont.textW(font, "School Boy", 0.4) / 2 + 8, 197 + 14, "School Boy", Color.new(255,255,255), font, 0.4)
     elseif fight then
         Image.draw(spritesheet, 404, 161, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(404 - intraFont.textW(font, "Steal Repeater", 0.4) / 2 + 8, 161 + 14, "Steal Repeater", Color.new(255,255,255), font, 0.4)
+        intraFont.print(404 - intraFont.textW(font, choices_second.steal_repeater, 0.4) / 2 + 8, 161 + 14, choices_second.steal_repeater, Color.new(255,255,255), font, 0.4)
     end
 
     if not chest_used then
@@ -56,7 +56,7 @@ while in_interactive_zone do
         intraFont.print(160 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 173 + 14, "Chest", Color.new(255,255,255), font, 0.4)
     elseif autofarm_used and chest_used then
         Image.draw(spritesheet, 241, 210, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(241 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8, 210 + 14, "Crafting Table", Color.new(255,255,255), font, 0.4)
+        intraFont.print(241 - intraFont.textW(font, choices_second.crafting_table, 0.4) / 2 + 8, 210 + 14, choices_second.crafting_table, Color.new(255,255,255), font, 0.4)
     end
 
     intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)

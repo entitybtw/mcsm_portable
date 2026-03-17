@@ -8,8 +8,8 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "She's awesome", Color.new(255,255,255), font, 0.4)
-intraFont.print(450 - intraFont.textW(font, "You make her nervous", 0.4), 127, "You make her nervous", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_second.shes_awesome, Color.new(255,255,255), font, 0.4)
+intraFont.print(450 - intraFont.textW(font, choices_second.you_make_her_nervous, 0.4), 127, choices_second.you_make_her_nervous, Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

@@ -9,7 +9,7 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Back Lukas up", Color.new(255,255,255), font, 0.4)
+intraFont.print(45, 127, choices_fifth.back_lukas_up, Color.new(255,255,255), font, 0.4)
 intraFont.print(450 - intraFont.textW(font, "Save the founder", 0.4), 127, "Save the founder", Color.new(255,255,255), font, 0.4)
 intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
