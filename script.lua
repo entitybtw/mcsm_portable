@@ -9,6 +9,7 @@ local subtitles = io.open("assets/saves/subtitles.txt", "r")
 font = intraFont.load("assets/minecraft.pgf")
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
+require("ui_strings")
 
 -- check if the file exists; if not, create it with default values (10 for each setting)
 if not soundlevels then
@@ -105,11 +106,11 @@ local stepTimer = 0
 
 local videoStartTime = os.clock()
 local loadingSequence = {
-    { text = "Initializing functions...", duration = 1.5 },
-    { text = "Reading settings...",       duration = 0.7 },
-    { text = "Reading save data...",      duration = 1.4 },
-    { text = "Checking episodes...",      duration = 0.4 },
-    { text = "Finishing up...",           duration = 2.0 },
+    { text = ui.loading_1, duration = 1.5 },
+    { text = ui.loading_2, duration = 0.7 },
+    { text = ui.loading_3, duration = 1.4 },
+    { text = ui.loading_4, duration = 0.4 },
+    { text = ui.loading_5, duration = 2.0 },
 }
 
 while PMP.getFrame(pointer) do
@@ -150,7 +151,7 @@ while PMP.getFrame(pointer) do
                 textfade = math.min(textfade + 5, 255)
             end
 
-            intraFont.print(235 - intraFont.textW(font, "LOADING", 0.4) / 2 + 8, 195 + 14, "LOADING",
+            intraFont.print(235 - intraFont.textW(font, ui.loading, 0.4) / 2 + 8, 195 + 14, ui.loading,
                 Color.new(255, 255, 255, textfade), font, 0.4)
 
             local frame = loadingFrames[frameIndex]
@@ -199,7 +200,6 @@ PMP.play("assets/ui/loading.pmp")
 require("saves")
 require("debugoverlay")
 require("files")
-require("ui_strings")
 sound.playEasy("assets/sounds/bg.at3", 5, true, false)
 
 fade_enabled = 1
