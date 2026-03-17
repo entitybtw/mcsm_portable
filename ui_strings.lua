@@ -583,4 +583,11 @@ ui = {
 
         save = "Press R to save",
 
+        loading = "LOADING",
+        loading_1 = "Initializing functions...",
+        loading_2 = "Reading settings...",
+        loading_3 = "Reading save data...",
+        loading_4 = "Checking episodes...",
+        loading_5 = "Finishing up..."
+
 }
