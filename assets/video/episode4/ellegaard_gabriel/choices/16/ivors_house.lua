@@ -7,20 +7,20 @@ local c_white = Color.new(255, 255, 255)
 
 local bg = Image.load("assets/video/episode4/ellegaard_gabriel/choices/16/ivors_house.png")
 
-
 local function goToMenu()
-    nextscene = "./mainmenu.lua"
-    in_interactive_zone = false
+	nextscene = "./mainmenu.lua"
+	in_interactive_zone = false
 end
 
 local function playCutscene(videoPath, subtitlesPath)
-    PMP.setVolume(pmpvolume)
-    local result = PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
-    if result == 1 then
-        choosing = false
-        in_interactive_zone = false
-        nextscene = "./mainmenu.lua"
-    end
+	PMP.setVolume(pmpvolume)
+	local result =
+		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+	if result == 1 then
+		choosing = false
+		in_interactive_zone = false
+		nextscene = "./mainmenu.lua"
+	end
 end
 
 local bookcase_used = false
@@ -31,102 +31,166 @@ local put_lever = false
 local petra_talk = false
 
 while in_interactive_zone do
-    screen.clear()
+	screen.clear()
 
-    Image.draw(bg, 0, 0)
+	Image.draw(bg, 0, 0)
 
-    if not bookcase_used then
-        Image.draw(spritesheet, 126, 169, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(126 - intraFont.textW(font, choices_fourth.bookcase, 0.4) / 2 + 8, 169 + 14, choices_fourth.bookcase, Color.new(255,255,255), font, 0.4)
-    end
+	if not bookcase_used then
+		Image.draw(spritesheet, 126, 169, 15, 15, nil, 384, 0, 15, 15)
+		intraFont.print(
+			126 - intraFont.textW(font, choices_fourth.bookcase, 0.4) / 2 + 8,
+			169 + 14,
+			choices_fourth.bookcase,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    if not chest_used then
-        Image.draw(spritesheet, 272, 119, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(272 - intraFont.textW(font, choices_fourth.chest, 0.4) / 2 + 8, 119 + 14, choices_fourth.chest, Color.new(255,255,255), font, 0.4)
-    elseif chest_used and not crafting_table_used then
-        Image.draw(spritesheet, 289, 119, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(289 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8, 119 + 14, choices_fourth.crafting_table, Color.new(255,255,255), font, 0.4)
-    end
+	if not chest_used then
+		Image.draw(spritesheet, 272, 119, 15, 15, nil, 414, 0, 15, 15)
+		intraFont.print(
+			272 - intraFont.textW(font, choices_fourth.chest, 0.4) / 2 + 8,
+			119 + 14,
+			choices_fourth.chest,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	elseif chest_used and not crafting_table_used then
+		Image.draw(spritesheet, 289, 119, 15, 15, nil, 414, 0, 15, 15)
+		intraFont.print(
+			289 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8,
+			119 + 14,
+			choices_fourth.crafting_table,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    if not redstone_hole_used and not crafting_table_used then
-        Image.draw(spritesheet, 397, 147, 15, 15, nil, 430, 0, 15, 15)
-        intraFont.print(397 - intraFont.textW(font, "Redstone Hole", 0.4) / 2 + 8, 147 + 14, "Redstone Hole", Color.new(255,255,255), font, 0.4)
-    end
+	if not redstone_hole_used and not crafting_table_used then
+		Image.draw(spritesheet, 397, 147, 15, 15, nil, 430, 0, 15, 15)
+		intraFont.print(
+			397 - intraFont.textW(font, "Redstone Hole", 0.4) / 2 + 8,
+			147 + 14,
+			"Redstone Hole",
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    if not petra_talk then
-        Image.draw(spritesheet, 210, 169, 15, 15, nil, 399, 0, 15, 15)
-        intraFont.print(210 - intraFont.textW(font, choices_fourth.petra, 0.4) / 2 + 8, 169 + 14, choices_fourth.petra, Color.new(255,255,255), font, 0.4)
-    end
-    
-    if crafting_table_used and not put_lever then
-        Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(393 - intraFont.textW(font, choices_fourth.put_lever, 0.4) / 2 + 8, 146 + 14, choices_fourth.put_lever, Color.new(255,255,255), font, 0.4)
-    elseif put_lever then
-        Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(393 - intraFont.textW(font, "Lever", 0.4) / 2 + 8, 146 + 14, "Lever", Color.new(255,255,255), font, 0.4)
-    end
+	if not petra_talk then
+		Image.draw(spritesheet, 210, 169, 15, 15, nil, 399, 0, 15, 15)
+		intraFont.print(
+			210 - intraFont.textW(font, choices_fourth.petra, 0.4) / 2 + 8,
+			169 + 14,
+			choices_fourth.petra,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
-    debugoverlay.draw(debugoverlay.loadSettings())
+	if crafting_table_used and not put_lever then
+		Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
+		intraFont.print(
+			393 - intraFont.textW(font, choices_fourth.put_lever, 0.4) / 2 + 8,
+			146 + 14,
+			choices_fourth.put_lever,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	elseif put_lever then
+		Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
+		intraFont.print(
+			393 - intraFont.textW(font, "Lever", 0.4) / 2 + 8,
+			146 + 14,
+			"Lever",
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    screen.flip()
+	intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
+	debugoverlay.draw(debugoverlay.loadSettings())
 
-    choosing = true
+	screen.flip()
 
-    while choosing do
-        buttons.read()
+	choosing = true
 
-        if buttons.pressed(buttons.circle) then
-            if not bookcase_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/bookcase.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/bookcase.srt")
-                bookcase_used = true
-                choosing = false
-            end
-        elseif buttons.pressed(buttons.square) then
-            if not chest_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/chest.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/chest.srt")
-                chest_used = true
-                choosing = false
-            elseif chest_used and not crafting_table_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/crafting_table.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/crafting_table.srt")
-                crafting_table_used = true
-                choosing = false
-            elseif crafting_table_used and not put_lever then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/put_lever.srt")
-                put_lever = true
-                choosing = false
-            elseif put_lever then
-                rm("ivors_house_variables")
-                nextscene = "assets/video/episode4/ellegaard_gabriel/choices/16/lever.lua"
-                in_interactive_zone = false
-                choosing = false
-            end            
-        elseif buttons.pressed(buttons.triangle) then
-            if not redstone_hole_used and not crafting_table_used then
-                playCutscene("assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.pmp", "assets/subtitles/episode4/ellegaard_gabriel/choices/16/redstone_hole.srt")
-                redstone_hole_used = true
-                choosing = false
-            end
-        elseif buttons.pressed(buttons.cross) then
-            if not petra_talk then
-                petra_talk = true
-                choosing = false
-                local petraExitCode = dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra.lua")
-                if petraExitCode == 1 then
-                    goToMenu()
-                end
-            end
-        elseif buttons.pressed(buttons.start) then
-            local pause = dofile("assets/misc/pause.lua")
-            choosing = false
-            if pause == -1 then
-                goToMenu()
-            end
-        elseif buttons.pressed(buttons.r) then
-            choosing = false
-            SaveGame(5)
-        end
-    end
+	while choosing do
+		buttons.read()
+
+		if buttons.pressed(buttons.circle) then
+			if not bookcase_used then
+				playCutscene(
+					"assets/video/episode4/ellegaard_gabriel/choices/16/bookcase.pmp",
+					"assets/subtitles/episode4/ellegaard_gabriel/choices/16/bookcase.srt"
+				)
+				bookcase_used = true
+				choosing = false
+			end
+		elseif buttons.pressed(buttons.square) then
+			if not chest_used then
+				playCutscene(
+					"assets/video/episode4/ellegaard_gabriel/choices/16/chest.pmp",
+					"assets/subtitles/episode4/ellegaard_gabriel/choices/16/chest.srt"
+				)
+				chest_used = true
+				choosing = false
+			elseif chest_used and not crafting_table_used then
+				playCutscene(
+					"assets/video/episode4/ellegaard_gabriel/choices/16/crafting_table.pmp",
+					"assets/subtitles/episode4/ellegaard_gabriel/choices/16/crafting_table.srt"
+				)
+				crafting_table_used = true
+				choosing = false
+			elseif crafting_table_used and not put_lever then
+				playCutscene(
+					"assets/video/episode4/ellegaard_gabriel/choices/16/put_lever.pmp",
+					"assets/subtitles/episode4/ellegaard_gabriel/choices/16/put_lever.srt"
+				)
+				put_lever = true
+				choosing = false
+			elseif put_lever then
+				rm("ivors_house_variables")
+				nextscene = "assets/video/episode4/ellegaard_gabriel/choices/16/lever.lua"
+				in_interactive_zone = false
+				choosing = false
+			end
+		elseif buttons.pressed(buttons.triangle) then
+			if not redstone_hole_used and not crafting_table_used then
+				playCutscene(
+					"assets/video/episode4/ellegaard_gabriel/choices/16/redstone_hole.pmp",
+					"assets/subtitles/episode4/ellegaard_gabriel/choices/16/redstone_hole.srt"
+				)
+				redstone_hole_used = true
+				choosing = false
+			end
+		elseif buttons.pressed(buttons.cross) then
+			if not petra_talk then
+				petra_talk = true
+				choosing = false
+				local petraExitCode = dofile("assets/video/episode4/ellegaard_gabriel/choices/16/petra.lua")
+				if petraExitCode == 1 then
+					goToMenu()
+				end
+			end
+		elseif buttons.pressed(buttons.start) then
+			local pause = dofile("assets/misc/pause.lua")
+			choosing = false
+			if pause == -1 then
+				goToMenu()
+			end
+		elseif buttons.pressed(buttons.r) then
+			choosing = false
+			SaveGame(5)
+		end
+	end
 end
 
 Image.unload(bg)

@@ -8,15 +8,15 @@ local c_white = Color.new(255, 255, 255)
 local bg = Image.load("assets/video/episode2/ellegaard/choices/2/redstonia_bg.png")
 local bg_fight = Image.load("assets/video/episode2/ellegaard/choices/2/redstonia_bg_fight.png")
 
-
 local function playCutscene(videoPath, subtitlesPath)
-    PMP.setVolume(pmpvolume)
-    local result = PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
-    if result == 1 then
-        choosing = false
-        in_interactive_zone = false
-        nextscene = "./mainmenu.lua"
-    end
+	PMP.setVolume(pmpvolume)
+	local result =
+		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+	if result == 1 then
+		choosing = false
+		in_interactive_zone = false
+		nextscene = "./mainmenu.lua"
+	end
 end
 
 local chest_used = false
@@ -25,103 +25,160 @@ local fight = false
 local intellectual_talk = false
 local redstonia_bg = "redstonia"
 
-
 while in_interactive_zone do
-    screen.clear()
+	screen.clear()
 
-    if redstonia_bg == "redstonia" then 
-        Image.draw(bg, 0, 0) 
-    elseif redstonia_bg == "redstonia_fight" then 
-        Image.draw(bg_fight, 0, 0) 
-    end
+	if redstonia_bg == "redstonia" then
+		Image.draw(bg, 0, 0)
+	elseif redstonia_bg == "redstonia_fight" then
+		Image.draw(bg_fight, 0, 0)
+	end
 
-    if not autofarm_used then
-        Image.draw(spritesheet, 125, 216, 15, 15, nil, 399, 0, 15, 15)
-        intraFont.print(125 - intraFont.textW(font, choices_second.autofarm, 0.4) / 2 + 8, 216 + 14, choices_second.autofarm, Color.new(255,255,255), font, 0.4)
-    end
+	if not autofarm_used then
+		Image.draw(spritesheet, 125, 216, 15, 15, nil, 399, 0, 15, 15)
+		intraFont.print(
+			125 - intraFont.textW(font, choices_second.autofarm, 0.4) / 2 + 8,
+			216 + 14,
+			choices_second.autofarm,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    if not intellectual_talk then
-        Image.draw(spritesheet, 344, 167, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(344 - intraFont.textW(font, choices_second.intellectual, 0.4) / 2 + 8, 167 + 14, choices_second.intellectual, Color.new(255,255,255), font, 0.4)
-    elseif not fight then
-        Image.draw(spritesheet, 383, 197, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(383 - intraFont.textW(font, "School Boy", 0.4) / 2 + 8, 197 + 14, "School Boy", Color.new(255,255,255), font, 0.4)
-    elseif fight then
-        Image.draw(spritesheet, 404, 161, 15, 15, nil, 384, 0, 15, 15)
-        intraFont.print(404 - intraFont.textW(font, choices_second.steal_repeater, 0.4) / 2 + 8, 161 + 14, choices_second.steal_repeater, Color.new(255,255,255), font, 0.4)
-    end
+	if not intellectual_talk then
+		Image.draw(spritesheet, 344, 167, 15, 15, nil, 384, 0, 15, 15)
+		intraFont.print(
+			344 - intraFont.textW(font, choices_second.intellectual, 0.4) / 2 + 8,
+			167 + 14,
+			choices_second.intellectual,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	elseif not fight then
+		Image.draw(spritesheet, 383, 197, 15, 15, nil, 384, 0, 15, 15)
+		intraFont.print(
+			383 - intraFont.textW(font, "School Boy", 0.4) / 2 + 8,
+			197 + 14,
+			"School Boy",
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	elseif fight then
+		Image.draw(spritesheet, 404, 161, 15, 15, nil, 384, 0, 15, 15)
+		intraFont.print(
+			404 - intraFont.textW(font, choices_second.steal_repeater, 0.4) / 2 + 8,
+			161 + 14,
+			choices_second.steal_repeater,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    if not chest_used then
-        Image.draw(spritesheet, 160, 173, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(160 - intraFont.textW(font, "Chest", 0.4) / 2 + 8, 173 + 14, "Chest", Color.new(255,255,255), font, 0.4)
-    elseif autofarm_used and chest_used then
-        Image.draw(spritesheet, 241, 210, 15, 15, nil, 414, 0, 15, 15)
-        intraFont.print(241 - intraFont.textW(font, choices_second.crafting_table, 0.4) / 2 + 8, 210 + 14, choices_second.crafting_table, Color.new(255,255,255), font, 0.4)
-    end
+	if not chest_used then
+		Image.draw(spritesheet, 160, 173, 15, 15, nil, 414, 0, 15, 15)
+		intraFont.print(
+			160 - intraFont.textW(font, "Chest", 0.4) / 2 + 8,
+			173 + 14,
+			"Chest",
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	elseif autofarm_used and chest_used then
+		Image.draw(spritesheet, 241, 210, 15, 15, nil, 414, 0, 15, 15)
+		intraFont.print(
+			241 - intraFont.textW(font, choices_second.crafting_table, 0.4) / 2 + 8,
+			210 + 14,
+			choices_second.crafting_table,
+			Color.new(255, 255, 255),
+			font,
+			0.4
+		)
+	end
 
-    intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255,255,255, 150), font, 0.63)
-    debugoverlay.draw(debugoverlay.loadSettings())
+	intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
+	debugoverlay.draw(debugoverlay.loadSettings())
 
-    screen.flip()
+	screen.flip()
 
-    choosing = true
+	choosing = true
 
-    while choosing do
-        buttons.read()
+	while choosing do
+		buttons.read()
 
-        if buttons.pressed(buttons.cross) then
-            if not autofarm_used then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/autofarm.pmp", "assets/subtitles/episode2/ellegaard/choices/2/autofarm.srt")
-                autofarm_used = true
-                choosing = false
-            elseif not autofarm_used and intellectual_talk then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/autofarm_fight.pmp", "assets/subtitles/episode2/ellegaard/choices/2/autofarm_fight.srt")
-                autofarm_used = true
-                choosing = false
-            end
-        elseif buttons.pressed(buttons.square) then
-            if not chest_used then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/chest.pmp", "assets/subtitles/episode2/ellegaard/choices/2/chest.srt")
-                chest_used = true
-                choosing = false
-            elseif not chest_used and intellectual_talk then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/chest_fight.pmp", "assets/subtitles/episode2/ellegaard/choices/2/chest_fight.srt")
-                chest_used = true
-                choosing = false
-            elseif autofarm_used and chest_used then
-                nextscene = "assets/video/episode2/ellegaard/choices/2/crafting_table.lua"
-                in_interactive_zone = false
-                choosing = false
-            end
-
-        elseif buttons.pressed(buttons.circle) then
-            if not intellectual_talk then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/Intellectual.pmp", "assets/subtitles/episode2/ellegaard/choices/2/Intellectual.srt")
-                intellectual_talk = true
-                choosing = false
-            elseif not fight then
-                playCutscene("assets/video/episode2/ellegaard/choices/2/schoolboy.pmp", "assets/subtitles/episode2/ellegaard/choices/2/schoolboy.srt")
-                fight = true
-                redstonia_bg = "redstonia_fight"
-                choosing = false
-            elseif fight then
-                nextscene = "assets/video/episode2/ellegaard/choices/2/steal_repeater.lua"
-                in_interactive_zone = false
-                choosing = false
-            end
-
-        elseif buttons.pressed(buttons.start) then
-            local pause = dofile("assets/misc/pause.lua")
-            choosing = false
-            if pause == -1 then
-                nextscene = "./mainmenu.lua"
-                in_interactive_zone = false
-            end
-        elseif buttons.pressed(buttons.r) then
-            choosing = false
-            SaveGame(5)
-        end
-    end
+		if buttons.pressed(buttons.cross) then
+			if not autofarm_used then
+				playCutscene(
+					"assets/video/episode2/ellegaard/choices/2/autofarm.pmp",
+					"assets/subtitles/episode2/ellegaard/choices/2/autofarm.srt"
+				)
+				autofarm_used = true
+				choosing = false
+			elseif not autofarm_used and intellectual_talk then
+				playCutscene(
+					"assets/video/episode2/ellegaard/choices/2/autofarm_fight.pmp",
+					"assets/subtitles/episode2/ellegaard/choices/2/autofarm_fight.srt"
+				)
+				autofarm_used = true
+				choosing = false
+			end
+		elseif buttons.pressed(buttons.square) then
+			if not chest_used then
+				playCutscene(
+					"assets/video/episode2/ellegaard/choices/2/chest.pmp",
+					"assets/subtitles/episode2/ellegaard/choices/2/chest.srt"
+				)
+				chest_used = true
+				choosing = false
+			elseif not chest_used and intellectual_talk then
+				playCutscene(
+					"assets/video/episode2/ellegaard/choices/2/chest_fight.pmp",
+					"assets/subtitles/episode2/ellegaard/choices/2/chest_fight.srt"
+				)
+				chest_used = true
+				choosing = false
+			elseif autofarm_used and chest_used then
+				nextscene = "assets/video/episode2/ellegaard/choices/2/crafting_table.lua"
+				in_interactive_zone = false
+				choosing = false
+			end
+		elseif buttons.pressed(buttons.circle) then
+			if not intellectual_talk then
+				playCutscene(
+					"assets/video/episode2/ellegaard/choices/2/Intellectual.pmp",
+					"assets/subtitles/episode2/ellegaard/choices/2/Intellectual.srt"
+				)
+				intellectual_talk = true
+				choosing = false
+			elseif not fight then
+				playCutscene(
+					"assets/video/episode2/ellegaard/choices/2/schoolboy.pmp",
+					"assets/subtitles/episode2/ellegaard/choices/2/schoolboy.srt"
+				)
+				fight = true
+				redstonia_bg = "redstonia_fight"
+				choosing = false
+			elseif fight then
+				nextscene = "assets/video/episode2/ellegaard/choices/2/steal_repeater.lua"
+				in_interactive_zone = false
+				choosing = false
+			end
+		elseif buttons.pressed(buttons.start) then
+			local pause = dofile("assets/misc/pause.lua")
+			choosing = false
+			if pause == -1 then
+				nextscene = "./mainmenu.lua"
+				in_interactive_zone = false
+			end
+		elseif buttons.pressed(buttons.r) then
+			choosing = false
+			SaveGame(5)
+		end
+	end
 end
 
 Image.unload(bg)

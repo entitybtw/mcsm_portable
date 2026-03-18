@@ -1,6 +1,16 @@
 PMP.setVolume(pmpvolume)
-local result = PMP.playExt('assets/video/episode4/magnus_gabriel/choices/16/petra/i_wont_lie_to_you.pmp', buttons.r, true, 'assets/subtitles/episode4/magnus_gabriel/choices/16/petra/i_wont_lie_to_you.srt', font, subssize, "#FFFFFF", "#000000/150", subs)
+local result = PMP.playExt(
+	"assets/video/episode4/magnus_gabriel/choices/16/petra/i_wont_lie_to_you.pmp",
+	buttons.r,
+	true,
+	"assets/subtitles/episode4/magnus_gabriel/choices/16/petra/i_wont_lie_to_you.srt",
+	font,
+	subssize,
+	"#FFFFFF",
+	"#000000/150",
+	subs
+)
 if result == 1 then
-    -- Go To Menu
-    return 1
+	-- Go To Menu
+	return 1
 end
