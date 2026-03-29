@@ -21,9 +21,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_fifth.look_before_you_punch, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Petra, you trust him?", 0.4),
+	450 - intraFont.textW(font, choices_fifth.petra_you_trust_him, 0.4),
 	127,
-	"Petra, you trust him?",
+	choices_fifth.petra_you_trust_him,
 	Color.new(255, 255, 255),
 	font,
 	0.4

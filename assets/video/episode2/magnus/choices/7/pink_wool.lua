@@ -18,7 +18,7 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "What about the plan?", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_second.what_about_the_plan, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
 	450 - intraFont.textW(font, choices_second.youre_going_down, 0.4),
 	127,

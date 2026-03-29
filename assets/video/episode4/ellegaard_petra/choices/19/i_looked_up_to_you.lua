@@ -20,9 +20,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_fourth.youre_a_mad_man, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "How is this better?", 0.4),
+	450 - intraFont.textW(font, choices_fourth.how_is_this_better, 0.4),
 	127,
-	"How is this better?",
+	choices_fourth.how_is_this_better,
 	Color.new(255, 255, 255),
 	font,
 	0.4

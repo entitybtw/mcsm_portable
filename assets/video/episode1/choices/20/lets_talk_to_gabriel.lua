@@ -18,7 +18,7 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Somebody stop him!", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_one.somebody_stop_him, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
 	450 - intraFont.textW(font, choices_one.this_cant_be_good, 0.4),
 	127,

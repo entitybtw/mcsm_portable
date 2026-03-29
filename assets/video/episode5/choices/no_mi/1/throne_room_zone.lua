@@ -99,9 +99,9 @@ while in_interactive_zone do
 	elseif cobblestone_collected and not crafting_table_used then
 		Image.draw(spritesheet, 282, 207, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			282 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8,
+			282 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8,
 			207 + 14,
-			"Crafting Table",
+			choices_fourth.crafting_table,
 			Color.new(255, 255, 255),
 			font,
 			0.4

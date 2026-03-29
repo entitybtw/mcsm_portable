@@ -23,7 +23,7 @@ local choices = {
 	{
 		id = "choice2",
 		path = ep1 .. "choices/",
-		leftchoice = "Gabriel is awesome!",
+		leftchoice = choices_one.gabriel_is_awesome,
 		rightchoice = choices_one.no_big_deal,
 		leftchoicefilename = "gabriel_is_awesome",
 		rightchoicefilename = "no_big_deal",
@@ -33,8 +33,8 @@ local choices = {
 	{
 		id = "choice3",
 		path = ep1 .. "choices/1/",
-		leftchoice = "Build a Creeper!",
-		rightchoice = "Build an Enderman!",
+		leftchoice = choices_one.build_a_creeper,
+		rightchoice = choices_one.build_a_enderman,
 		leftchoicefilename = "build_a_creeper",
 		rightchoicefilename = "build_a_enderman",
 		nextchoice = "choice4",
@@ -65,8 +65,8 @@ local choices = {
 	{
 		id = "choice6",
 		path = ep1 .. "choices/4/",
-		leftchoice = "Redstone Rap!",
-		rightchoice = "Warrior Whip!",
+		leftchoice = choices_fifth.redstone_rap,
+		rightchoice = choices_fifth.warrior_whip,
 		leftchoicefilename = "redstone_rap",
 		rightchoicefilename = "warrior_whip",
 		nextchoice = "choice7",

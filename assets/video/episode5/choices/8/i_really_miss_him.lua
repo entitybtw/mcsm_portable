@@ -19,11 +19,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "What is that?", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_fifth.what_is_that, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Is it valuable?", 0.4),
+	450 - intraFont.textW(font, choices_fifth.is_it_valuable, 0.4),
 	127,
-	"Is it valuable?",
+	choices_fifth.is_it_valuable,
 	Color.new(255, 255, 255),
 	font,
 	0.4

@@ -84,9 +84,9 @@ while in_interactive_zone do
 	if not gabriel_talk then
 		Image.draw(spritesheet, 210, 169, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			210 - intraFont.textW(font, "Gabriel", 0.4) / 2 + 8,
+			210 - intraFont.textW(font, choices_three.gabriel, 0.4) / 2 + 8,
 			169 + 14,
-			"Gabriel",
+			choices_three.gabriel,
 			Color.new(255, 255, 255),
 			font,
 			0.4

@@ -81,9 +81,9 @@ while in_interactive_zone do
 	if not chest_used then
 		Image.draw(spritesheet, 160, 173, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			160 - intraFont.textW(font, "Chest", 0.4) / 2 + 8,
+			160 - intraFont.textW(font, choices_fourth.chest, 0.4) / 2 + 8,
 			173 + 14,
-			"Chest",
+			choices_fourth.chest,
 			Color.new(255, 255, 255),
 			font,
 			0.4

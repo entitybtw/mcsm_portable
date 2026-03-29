@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Why did you leave?", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_three.why_did_you_leave, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Will you help us?", 0.4),
+	450 - intraFont.textW(font, choices_three.will_you_help_us, 0.4),
 	127,
-	"Will you help us?",
+	choices_three.will_you_help_us,
 	Color.new(255, 255, 255),
 	font,
 	0.4

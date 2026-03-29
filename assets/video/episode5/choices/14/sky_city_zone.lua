@@ -39,9 +39,9 @@ while in_interactive_zone do
 	if not sky_city_1_explored then
 		Image.draw(spritesheet, 140, 134, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			140 - intraFont.textW(font, "Crafting Table", 0.4) / 2 + 8,
+			140 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8,
 			134 + 14,
-			"Crafting Table",
+			choices_fourth.crafting_table,
 			Color.new(255, 255, 255),
 			font,
 			0.4

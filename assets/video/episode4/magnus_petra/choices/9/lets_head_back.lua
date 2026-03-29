@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "I'll distract them!", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_fourth.ill_distract_them, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Get ready to fight!", 0.4),
+	450 - intraFont.textW(font, choices_fourth.get_ready_to_fight, 0.4),
 	127,
-	"Get ready to fight!",
+	choices_fourth.get_ready_to_fight,
 	Color.new(255, 255, 255),
 	font,
 	0.4

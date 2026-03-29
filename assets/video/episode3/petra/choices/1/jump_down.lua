@@ -20,9 +20,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_three.this_cant_be_good, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "What's that doing here?", 0.4),
+	450 - intraFont.textW(font, choices_three.whats_that_doing_here, 0.4),
 	127,
-	"What's that doing here?",
+	choices_three.whats_that_doing_here,
 	Color.new(255, 255, 255),
 	font,
 	0.4
