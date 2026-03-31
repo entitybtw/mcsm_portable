@@ -21,9 +21,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_fifth.back_lukas_up, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Save the founder", 0.4),
+	450 - intraFont.textW(font, choices_fifth.save_the_founder, 0.4),
 	127,
-	"Save the founder",
+	choices_fifth.save_the_founder,
 	Color.new(255, 255, 255),
 	font,
 	0.4

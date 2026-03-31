@@ -72,9 +72,9 @@ while in_interactive_zone do
 	if not redstone_hole_used and not crafting_table_used then
 		Image.draw(spritesheet, 397, 147, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			397 - intraFont.textW(font, "Redstone Hole", 0.4) / 2 + 8,
+			397 - intraFont.textW(font, choices_fourth.redstone_hole, 0.4) / 2 + 8,
 			147 + 14,
-			"Redstone Hole",
+			choices_fourth.redstone_hole,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -106,9 +106,9 @@ while in_interactive_zone do
 	elseif put_lever then
 		Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			393 - intraFont.textW(font, "Lever", 0.4) / 2 + 8,
+			393 - intraFont.textW(font, choices_fourth.lever, 0.4) / 2 + 8,
 			146 + 14,
-			"Lever",
+			choices_fourth.lever,
 			Color.new(255, 255, 255),
 			font,
 			0.4

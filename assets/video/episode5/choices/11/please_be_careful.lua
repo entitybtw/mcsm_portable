@@ -21,9 +21,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_fifth.is_that_a_city, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Maybe Aiden's there", 0.4),
+	450 - intraFont.textW(font, choices_fifth.maybe_aidens_there, 0.4),
 	127,
-	"Maybe Aiden's there",
+	choices_fifth.maybe_aidens_there,
 	Color.new(255, 255, 255),
 	font,
 	0.4

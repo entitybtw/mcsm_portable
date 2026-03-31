@@ -58,9 +58,9 @@ while in_interactive_zone do
 	elseif petra_talk and not leverpetra_used then
 		Image.draw(spritesheet, 394, 224, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			394 - intraFont.textW(font, "Lever (Petra)", 0.4) / 2 + 8,
+			394 - intraFont.textW(font, choices_third.leverpetra, 0.4) / 2 + 8,
 			224 + 14,
-			"Lever (Petra)",
+			choices_third.leverpetra,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -79,9 +79,9 @@ while in_interactive_zone do
 	elseif reuben_talk and not leverreuben_used then
 		Image.draw(spritesheet, 305, 135, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			305 - intraFont.textW(font, "Lever (Reuben)", 0.4) / 2 + 8,
+			305 - intraFont.textW(font, choices_third.leverreuben, 0.4) / 2 + 8,
 			135 + 14,
-			"Lever (Reuben)",
+			choices_third.leverreuben,
 			Color.new(255, 255, 255),
 			font,
 			0.4

@@ -43,9 +43,9 @@ while in_interactive_zone do
 	elseif chest_used and not upstairs_search then
 		Image.draw(spritesheet, 344, 31, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			344 - intraFont.textW(font, "Search upstairs", 0.4) / 2 + 8,
+			344 - intraFont.textW(font, choices_third.search_upstairs, 0.4) / 2 + 8,
 			31 + 14,
-			"Search upstairs",
+			choices_third.search_upstairs,
 			Color.new(255, 255, 255),
 			font,
 			0.4

@@ -20,9 +20,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_fourth.is_the_dragon_a_clue, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Are those Ender Crystals?", 0.4),
+	450 - intraFont.textW(font, choices_fourth.are_those_ender_crystals, 0.4),
 	127,
-	"Are those Ender Crystals?",
+	choices_fourth.are_those_ender_crystals,
 	Color.new(255, 255, 255),
 	font,
 	0.4

@@ -21,9 +21,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_fifth.is_something_wrong, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Did you see the Blaze Rods?", 0.4),
+	450 - intraFont.textW(font, choices_fifth.did_you_see_the_blaze_rods, 0.4),
 	127,
-	"Did you see the Blaze Rods?",
+	choices_fifth.did_you_see_the_blaze_rods,
 	Color.new(255, 255, 255),
 	font,
 	0.4

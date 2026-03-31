@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Craft Sticky Piston", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_fourth.craft_sticky_piston, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Craft Redstone Block", 0.4),
+	450 - intraFont.textW(font, choices_fourth.craft_redstone_block, 0.4),
 	127,
-	"Craft Redstone Block",
+	choices_fourth.craft_redstone_block,
 	Color.new(255, 255, 255),
 	font,
 	0.4

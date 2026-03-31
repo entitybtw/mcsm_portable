@@ -20,9 +20,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, choices_third.take_magnus_armor, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Take Ellegaard`s armor", 0.4),
+	450 - intraFont.textW(font, choices_third.take_ellegaards_armor, 0.4),
 	127,
-	"Take Ellegaard`s armor",
+	choices_third.take_ellegaards_armor,
 	Color.new(255, 255, 255),
 	font,
 	0.4

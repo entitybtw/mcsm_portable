@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "Is that true?", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_fourth.is_that_true, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "You're afraid", 0.4),
+	450 - intraFont.textW(font, choices_fourth.youre_afraid, 0.4),
 	127,
-	"You're afraid",
+	choices_fourth.youre_afraid,
 	Color.new(255, 255, 255),
 	font,
 	0.4
