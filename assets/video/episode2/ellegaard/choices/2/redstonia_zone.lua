@@ -59,9 +59,9 @@ while in_interactive_zone do
 	elseif not fight then
 		Image.draw(spritesheet, 383, 197, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			383 - intraFont.textW(font, "School Boy", 0.4) / 2 + 8,
+			383 - intraFont.textW(font, choices_second.schoolboy, 0.4) / 2 + 8,
 			197 + 14,
-			"School Boy",
+			choices_second.schoolboy,
 			Color.new(255, 255, 255),
 			font,
 			0.4

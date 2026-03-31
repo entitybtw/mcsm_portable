@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "He's not leaving", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_second.hes_not_leaving, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Let him go, Gabriel", 0.4),
+	450 - intraFont.textW(font, choices_second.let_him_go_gabriel, 0.4),
 	127,
-	"Let him go, Gabriel",
+	choices_second.let_him_go_gabriel,
 	Color.new(255, 255, 255),
 	font,
 	0.4

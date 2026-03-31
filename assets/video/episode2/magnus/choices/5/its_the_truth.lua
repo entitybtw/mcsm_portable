@@ -18,7 +18,7 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "How could i beat you?", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_second.how_could_i_beat_you, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
 	450 - intraFont.textW(font, choices_second.then_id_be_stuck_here, 0.4),
 	127,

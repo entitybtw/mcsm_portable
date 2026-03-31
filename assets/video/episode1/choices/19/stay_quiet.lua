@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, "I'm going after Lukas", Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_one.im_going_after_lukas, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, "Let's talk to Gabriel", 0.4),
+	450 - intraFont.textW(font, choices_one.lets_talk_to_gabriel, 0.4),
 	127,
-	"Let's talk to Gabriel",
+	choices_one.lets_talk_to_gabriel,
 	Color.new(255, 255, 255),
 	font,
 	0.4
