@@ -126,7 +126,20 @@ choices_one = {
 
 	go_for_ellegaard = "Go for Ellegaard",
 	go_for_magnus = "Go for Magnus",
+	
+	the_order_has_failed = "The Order has failed",
+	the_world_needs_us_reuben = "The world needs us, Reuben",
+	craft_sticky_piston = "Craft Sticky Piston",
+	craft_redstone_block = "Craft Redstone Block",
+	redstone_hole = "Redstone Hole",
+	lever = "Lever",
+	are_those_ender_crystals = "Are those Ender Crystals?",
+	is_that_true = "Is that true?",
+	youre_afraid = "You're afraid",
+	craft_diamond_hoe = "Craft Diamond Hoe",
+	craft_diamond_pickaxe = "Craft Diamond Pickaxe",
 }
+
 choices_third = {
 	lets_keep_this_between_us = "Let's keep this between us",
 	we_have_to_tell_the_others = "We have to tell the others",
@@ -211,6 +224,23 @@ choices_third = {
 
 	please_dont_die = "Please don't die",
 	this_armor_is_yours = "This armor is your's",
+	
+	craft_sticky_piston = "Craft Sticky Piston",
+	craft_redstone_block = "Craft Redstone Block",
+	hes_fine = "He's fine",
+	lever_gabriel = "Lever (Gabriel)",
+	lever_reuben = "Lever (Reuben)",
+	lever_petra = "Lever (Petra)",
+	search_upstairs_text = "Search upstairs",
+	redstone_hole = "Redstone Hole",
+	lever = "Lever",
+	are_those_ender_crystals = "Are those Ender Crystals?",
+	is_that_true = "Is that true?",
+	youre_afraid = "You're afraid",
+	craft_diamond_hoe = "Craft Diamond Hoe",
+	craft_diamond_pickaxe = "Craft Diamond Pickaxe",
+	save_amulet_text = "Save amulet",
+	give_it_back_its_mine_text = "Give it back, It's mine",
 }
 
 choices_fifth = {
@@ -344,6 +374,13 @@ choices_fifth = {
 
 	the_eversource_makes_eggs = "The eversource makes eggs",
 	these_generate_resources = "These generate resoures",
+	
+	crafting_table = "Crafting Table",
+	gabriel = "Gabriel",
+	lukas = "Lukas",
+	come_on_milo_text = "Come on Milo",
+	these_generate_resources_multiline = "These generate\n\n resources",
+	the_eversource_makes_eggs_q = "The Eversource\n\n makes eggs?",
 }
 
 choices_second = {
@@ -421,6 +458,27 @@ choices_second = {
 
 	magnus_is_cool = "Magnus is cool",
 	you_need_to_get_along = "You need to get along",
+	
+	school_boy = "School Boy",
+	chest = "Chest",
+	hes_fine = "He's fine",
+	shes_fine = "She's fine",
+	we_make_her_nervous = "We make her nervous",
+	thank_you = "Thank you",
+	that_was_reckless = "That was reckless",
+	follow_ellegaard = "Follow Ellegaard",
+	follow_magnus = "Follow Magnus",
+	go_get_help = "Go get help",
+	im_fine = "I'm fine",
+	hes_not_leaving = "He's not leaving",
+	let_him_go_gabriel = "Let him go, Gabriel",
+	let_him_go_petra = "Let him go, Petra",
+	be_careful = "Be careful",
+	hes_done_this_before = "He's done this before",
+	chase_griefer_lower = "Chase griefer",
+	pink_wool_lower = "Pink wool",
+	magnus_calm_down = "Magnus calm down",
+	stay_out_of_it_olivia = "Stay out of it, Olivia",
 }
 
 choices_fourth = {
@@ -533,6 +591,13 @@ choices_fourth = {
 
 	my_pig_reuben = "My pig Reuben",
 	saving_the_world = "Saving the world",
+	
+	lever = "Lever",
+	are_those_ender_crystals_q = "Are those Ender Crystals?",
+	the_order_has_failed_text = "The order has failed",
+	the_world_needs_us_reuben = "The world needs us, Reuben",
+	is_that_true_q = "Is that true?",
+	youre_afraid_text = "You're afraid",
 }
 
 ui = {
