@@ -30,7 +30,7 @@ intraFont.print(
 	0.4
 )
 intraFont.print(140 + 15 + 5, 182, choices_one.order_of_the_pig, Color.new(255, 255, 255), font, 0.4)
-intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
+intraFont.print(240 - intraFont.textW(font, ui.save, 0.63) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 

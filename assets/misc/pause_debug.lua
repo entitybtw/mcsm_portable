@@ -124,9 +124,9 @@ while true do
 	buttons.read()
 	Image.draw(pause_bg, 0, 0)
 	intraFont.printShadowed(
-		230 - intraFont.textW(font, "Debug Menu", 0.3) / 2 + 14,
+		230 - intraFont.textW(font, ui.debug_menu, 0.3) / 2 + 14,
 		25,
-		"Debug Menu",
+		ui.debug_menu,
 		Color.new(255, 255, 255),
 		Color.new(0, 0, 0),
 		font,
@@ -162,7 +162,7 @@ while true do
 	drawSystemInfo()
 	Image.draw(
 		spritesheet,
-		240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 - 2,
+		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 2,
 		233 + 13,
 		14,
 		14,
@@ -173,9 +173,9 @@ while true do
 		15
 	)
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, "Previous Menu", 0.3) / 2 + 14,
+		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 + 14,
 		233 + 14,
-		"Previous Menu",
+		ui.previous_menu,
 		Color.new(255, 255, 255),
 		Color.new(0, 0, 0),
 		font,

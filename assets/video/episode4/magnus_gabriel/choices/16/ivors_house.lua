@@ -115,7 +115,7 @@ while in_interactive_zone do
 		)
 	end
 
-	intraFont.print(340 - intraFont.textW(font, ui.save, 0.63), 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
+	intraFont.print(240 - intraFont.textW(font, ui.save, 0.63) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
 	debugoverlay.draw(debugoverlay.loadSettings())
 
 	screen.flip()

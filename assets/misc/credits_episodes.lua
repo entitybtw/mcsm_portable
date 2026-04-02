@@ -128,8 +128,8 @@ while true do
 
 	drawButtons()
 	debugoverlay.draw(debugoverlay.loadSettings())
-	intraFont.printShadowed(40, 35, "Credits", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+	intraFont.printShadowed(40, 35, ui.credits, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 	Image.draw(spritesheet, 40, 233, 14, 14, nil, 384, 0, 15, 15)
-	intraFont.printShadowed(57, 234, "Previous Menu", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+	intraFont.printShadowed(57, 234, ui.previous_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 	screen.flip()
 end

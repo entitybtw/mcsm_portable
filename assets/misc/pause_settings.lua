@@ -58,9 +58,9 @@ while true do
 
 	Image.draw(pause_bg, 0, 0)
 	intraFont.printShadowed(
-		230 - intraFont.textW(font, "Settings", 0.3) / 2 + 14,
+		230 - intraFont.textW(font, ui.settings, 0.3) / 2 + 14,
 		25,
-		"Settings",
+		ui.settings,
 		Color.new(255, 255, 255),
 		Color.new(0, 0, 0),
 		font,
@@ -71,7 +71,7 @@ while true do
 	)
 	Image.draw(
 		spritesheet,
-		240 - (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2,
+		240 - (14 + intraFont.textW(font, ui.select, 0.3) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2,
 		246,
 		14,
 		14,
@@ -83,11 +83,11 @@ while true do
 	)
 	intraFont.printShadowed(
 		240
-			- (14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 0.3) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
 			+ 14
 			+ 5,
 		247,
-		"Select",
+		ui.select,
 		Color.new(255, 255, 255),
 		Color.new(0, 0, 0),
 		font,
@@ -99,9 +99,9 @@ while true do
 	Image.draw(
 		spritesheet,
 		240
-			- (14 + intraFont.textW(font, "Select", 0.3) + 7 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 0.3) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
 			+ 14
-			+ intraFont.textW(font, "Select", 0.3)
+			+ intraFont.textW(font, ui.select, 0.3)
 			+ 10,
 		246,
 		14,
@@ -114,14 +114,14 @@ while true do
 	)
 	intraFont.printShadowed(
 		240
-			- (14 + intraFont.textW(font, "Select", 0.3) + 10 + 14 + intraFont.textW(font, "Previous Menu", 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 0.3) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
 			+ 14
-			+ intraFont.textW(font, "Select", 0.3)
+			+ intraFont.textW(font, ui.select, 0.3)
 			+ 10
 			+ 14
 			+ 5,
 		247,
-		"Previous Menu",
+		ui.previous_menu,
 		Color.new(255, 255, 255),
 		Color.new(0, 0, 0),
 		font,
