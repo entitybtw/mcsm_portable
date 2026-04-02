@@ -121,7 +121,7 @@ while true do
 	end
 
 	Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
-	intraFont.printShadowed(57, 237, "Select", Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+	intraFont.printShadowed(57, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 	Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
