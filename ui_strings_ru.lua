@@ -139,7 +139,7 @@ choices_one = {
 	craft_diamond_pickaxe = "[Скрафтить алмазную кирку]",
 }
 
-choices_third = {
+choices_three = {
 	lets_keep_this_between_us = "Оставим это между нами",
 	we_have_to_tell_the_others = "Мы должны рассказать остальным",
 
@@ -242,7 +242,7 @@ choices_third = {
 	give_it_back_its_mine_text = "Верни это, это моё!",
 }
 
-choices_fifth = {
+choices_five = {
 	for_glory = "Ради славы",
 	lets_find_treasure = "Давайте найдём сокровища",
 
@@ -382,7 +382,7 @@ choices_fifth = {
 	the_eversource_makes_eggs_q = "Источник делает\n\n яйца?",
 }
 
-choices_second = {
+choices_two = {
 	bow = "[Лук]",
 	fishing_pole = "[Удочка]",
 	sword = "[Меч]",
@@ -477,7 +477,7 @@ choices_second = {
 	stay_out_of_it_olivia = "Не лезь в это, Оливия",
 }
 
-choices_fourth = {
+choices_four = {
 	ill_take_gabriel = "Я возьму Габриэля",
 	ive_got_petra = "Петра на мне",
 

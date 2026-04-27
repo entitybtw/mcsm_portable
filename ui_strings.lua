@@ -140,7 +140,7 @@ choices_one = {
 	craft_diamond_pickaxe = "Craft Diamond Pickaxe",
 }
 
-choices_third = {
+choices_three = {
 	lets_keep_this_between_us = "Let's keep this between us",
 	we_have_to_tell_the_others = "We have to tell the others",
 
@@ -243,7 +243,7 @@ choices_third = {
 	give_it_back_its_mine_text = "Give it back, It's mine",
 }
 
-choices_fifth = {
+choices_five = {
 	for_glory = "For glory",
 	lets_find_treasure = "Let's find treasure",
 
@@ -383,7 +383,7 @@ choices_fifth = {
 	the_eversource_makes_eggs_q = "The Eversource\n\n makes eggs?",
 }
 
-choices_second = {
+choices_two = {
 	bow = "Bow",
 	fishing_pole = "Fishing Pole",
 	sword = "Sword",
@@ -481,7 +481,7 @@ choices_second = {
 	stay_out_of_it_olivia = "Stay out of it, Olivia",
 }
 
-choices_fourth = {
+choices_four = {
 	ill_take_gabriel = "I'll take Gabriel",
 	ive_got_petra = "I've got Petra",
 
