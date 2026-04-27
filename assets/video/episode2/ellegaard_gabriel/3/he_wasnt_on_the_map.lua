@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_second.he_can_be_a_jerk, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_two.he_can_be_a_jerk, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_second.hes_awesome, 0.4),
+	450 - intraFont.textW(font, choices_two.hes_awesome, 0.4),
 	127,
-	choices_second.hes_awesome,
+	choices_two.hes_awesome,
 	Color.new(255, 255, 255),
 	font,
 	0.4

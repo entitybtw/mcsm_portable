@@ -20,11 +20,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fifth.shut_up_both_of_you, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_five.shut_up_both_of_you, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fifth.yeah_aidens_our_focus, 0.4),
+	450 - intraFont.textW(font, choices_five.yeah_aidens_our_focus, 0.4),
 	127,
-	choices_fifth.yeah_aidens_our_focus,
+	choices_five.yeah_aidens_our_focus,
 	Color.new(255, 255, 255),
 	font,
 	0.4

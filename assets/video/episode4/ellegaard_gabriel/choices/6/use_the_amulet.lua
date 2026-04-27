@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fifth.warrior_whip, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_five.warrior_whip, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fifth.redstone_rap, 0.4),
+	450 - intraFont.textW(font, choices_five.redstone_rap, 0.4),
 	127,
-	choices_fifth.redstone_rap,
+	choices_five.redstone_rap,
 	Color.new(255, 255, 255),
 	font,
 	0.4

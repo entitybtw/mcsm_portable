@@ -39,18 +39,18 @@ while in_interactive_zone do
 	if not sky_city_1_explored then
 		Image.draw(spritesheet, 140, 134, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			140 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8,
+			140 - intraFont.textW(font, choices_four.crafting_table, 0.4) / 2 + 8,
 			134 + 14,
-			choices_fourth.crafting_table,
+			choices_four.crafting_table,
 			Color.new(255, 255, 255),
 			font,
 			0.4
 		)
 		Image.draw(spritesheet, 417, 145, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			417 - intraFont.textW(font, choices_fifth.garden, 0.4) / 2 + 8,
+			417 - intraFont.textW(font, choices_five.garden, 0.4) / 2 + 8,
 			145 + 14,
-			choices_fifth.garden,
+			choices_five.garden,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -60,9 +60,9 @@ while in_interactive_zone do
 	if sky_city_1_explored and not sky_city_2_explored and not castle_guard_talk then
 		Image.draw(spritesheet, 100, 70, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			100 - intraFont.textW(font, choices_fifth.castle_guard, 0.4) / 2 + 8,
+			100 - intraFont.textW(font, choices_five.castle_guard, 0.4) / 2 + 8,
 			70 + 14,
-			choices_fifth.castle_guard,
+			choices_five.castle_guard,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -73,7 +73,7 @@ while in_interactive_zone do
 		intraFont.print(
 			417 - intraFont.textW(font, "Build site", 0.4) / 2 + 8,
 			60 + 14,
-			choices_fifth.build_site,
+			choices_five.build_site,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -83,9 +83,9 @@ while in_interactive_zone do
 	if sky_city_2_explored and not townspeople_talk then
 		Image.draw(spritesheet, 330, 140, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			330 - intraFont.textW(font, choices_fifth.townspeople, 0.4) / 2 + 8,
+			330 - intraFont.textW(font, choices_five.townspeople, 0.4) / 2 + 8,
 			140 + 14,
-			choices_fifth.townspeople,
+			choices_five.townspeople,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -95,9 +95,9 @@ while in_interactive_zone do
 	if sky_city_2_explored then
 		Image.draw(spritesheet, 115, 145, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			115 - intraFont.textW(font, choices_fifth.innkeeper, 0.4) / 2 + 8,
+			115 - intraFont.textW(font, choices_five.innkeeper, 0.4) / 2 + 8,
 			145 + 14,
-			choices_fifth.innkeeper,
+			choices_five.innkeeper,
 			Color.new(255, 255, 255),
 			font,
 			0.4

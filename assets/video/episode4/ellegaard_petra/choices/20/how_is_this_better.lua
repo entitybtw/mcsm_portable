@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fourth.craft_diamond_hoe, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_four.craft_diamond_hoe, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fourth.craft_diamond_pickaxe, 0.4),
+	450 - intraFont.textW(font, choices_four.craft_diamond_pickaxe, 0.4),
 	127,
-	choices_fourth.craft_diamond_pickaxe,
+	choices_four.craft_diamond_pickaxe,
 	Color.new(255, 255, 255),
 	font,
 	0.4

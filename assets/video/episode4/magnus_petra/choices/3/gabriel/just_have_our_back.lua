@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fourth.they_could_be_alive, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_four.they_could_be_alive, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fourth.nothing_you_can_do, 0.4),
+	450 - intraFont.textW(font, choices_four.nothing_you_can_do, 0.4),
 	127,
-	choices_fourth.nothing_you_can_do,
+	choices_four.nothing_you_can_do,
 	Color.new(255, 255, 255),
 	font,
 	0.4

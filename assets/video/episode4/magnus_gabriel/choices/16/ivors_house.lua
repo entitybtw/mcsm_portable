@@ -38,9 +38,9 @@ while in_interactive_zone do
 	if not bookcase_used then
 		Image.draw(spritesheet, 126, 169, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			126 - intraFont.textW(font, choices_fourth.bookcase, 0.4) / 2 + 8,
+			126 - intraFont.textW(font, choices_four.bookcase, 0.4) / 2 + 8,
 			169 + 14,
-			choices_fourth.bookcase,
+			choices_four.bookcase,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -50,9 +50,9 @@ while in_interactive_zone do
 	if not chest_used then
 		Image.draw(spritesheet, 272, 119, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			272 - intraFont.textW(font, choices_fourth.chest, 0.4) / 2 + 8,
+			272 - intraFont.textW(font, choices_four.chest, 0.4) / 2 + 8,
 			119 + 14,
-			choices_fourth.chest,
+			choices_four.chest,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -60,9 +60,9 @@ while in_interactive_zone do
 	elseif chest_used and not crafting_table_used then
 		Image.draw(spritesheet, 289, 119, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			289 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8,
+			289 - intraFont.textW(font, choices_four.crafting_table, 0.4) / 2 + 8,
 			119 + 14,
-			choices_fourth.crafting_table,
+			choices_four.crafting_table,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -72,9 +72,9 @@ while in_interactive_zone do
 	if not redstone_hole_used and not crafting_table_used then
 		Image.draw(spritesheet, 397, 147, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			397 - intraFont.textW(font, choices_fourth.redstone_hole, 0.4) / 2 + 8,
+			397 - intraFont.textW(font, choices_four.redstone_hole, 0.4) / 2 + 8,
 			147 + 14,
-			choices_fourth.redstone_hole,
+			choices_four.redstone_hole,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -84,9 +84,9 @@ while in_interactive_zone do
 	if not petra_talk then
 		Image.draw(spritesheet, 210, 169, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			210 - intraFont.textW(font, choices_fourth.petra, 0.4) / 2 + 8,
+			210 - intraFont.textW(font, choices_four.petra, 0.4) / 2 + 8,
 			169 + 14,
-			choices_fourth.petra,
+			choices_four.petra,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -96,9 +96,9 @@ while in_interactive_zone do
 	if crafting_table_used and not put_lever then
 		Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			393 - intraFont.textW(font, choices_fourth.put_lever, 0.4) / 2 + 8,
+			393 - intraFont.textW(font, choices_four.put_lever, 0.4) / 2 + 8,
 			146 + 14,
-			choices_fourth.put_lever,
+			choices_four.put_lever,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -106,9 +106,9 @@ while in_interactive_zone do
 	elseif put_lever then
 		Image.draw(spritesheet, 393, 146, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			393 - intraFont.textW(font, choices_fourth.lever, 0.4) / 2 + 8,
+			393 - intraFont.textW(font, choices_four.lever, 0.4) / 2 + 8,
 			146 + 14,
-			choices_fourth.lever,
+			choices_four.lever,
 			Color.new(255, 255, 255),
 			font,
 			0.4

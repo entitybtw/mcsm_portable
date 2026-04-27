@@ -3,11 +3,11 @@ local text
 
 local choosing = true
 if bf == "bow" then
-	text = choices_second.bow
-	intraFont.print(45, 127, choices_second.bow, Color.new(255, 255, 255), font, 0.4)
+	text = choices_two.bow
+	intraFont.print(45, 127, choices_two.bow, Color.new(255, 255, 255), font, 0.4)
 elseif bf == "fishing_pole" then
-	text = choices_second.fishing_pole
-	intraFont.print(45, 127, choices_second.fishing_pole, Color.new(255, 255, 255), font, 0.4)
+	text = choices_two.fishing_pole
+	intraFont.print(45, 127, choices_two.fishing_pole, Color.new(255, 255, 255), font, 0.4)
 else
 	LUA.quit()
 end
@@ -32,9 +32,9 @@ Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 intraFont.print(45, 127, text, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_second.sword, 0.4),
+	450 - intraFont.textW(font, choices_two.sword, 0.4),
 	127,
-	choices_second.sword,
+	choices_two.sword,
 	Color.new(255, 255, 255),
 	font,
 	0.4

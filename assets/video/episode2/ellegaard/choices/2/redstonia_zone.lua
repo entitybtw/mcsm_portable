@@ -37,9 +37,9 @@ while in_interactive_zone do
 	if not autofarm_used then
 		Image.draw(spritesheet, 125, 216, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			125 - intraFont.textW(font, choices_second.autofarm, 0.4) / 2 + 8,
+			125 - intraFont.textW(font, choices_two.autofarm, 0.4) / 2 + 8,
 			216 + 14,
-			choices_second.autofarm,
+			choices_two.autofarm,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -49,9 +49,9 @@ while in_interactive_zone do
 	if not intellectual_talk then
 		Image.draw(spritesheet, 344, 167, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			344 - intraFont.textW(font, choices_second.intellectual, 0.4) / 2 + 8,
+			344 - intraFont.textW(font, choices_two.intellectual, 0.4) / 2 + 8,
 			167 + 14,
-			choices_second.intellectual,
+			choices_two.intellectual,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -59,9 +59,9 @@ while in_interactive_zone do
 	elseif not fight then
 		Image.draw(spritesheet, 383, 197, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			383 - intraFont.textW(font, choices_second.schoolboy, 0.4) / 2 + 8,
+			383 - intraFont.textW(font, choices_two.schoolboy, 0.4) / 2 + 8,
 			197 + 14,
-			choices_second.schoolboy,
+			choices_two.schoolboy,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -69,9 +69,9 @@ while in_interactive_zone do
 	elseif fight then
 		Image.draw(spritesheet, 404, 161, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			404 - intraFont.textW(font, choices_second.steal_repeater, 0.4) / 2 + 8,
+			404 - intraFont.textW(font, choices_two.steal_repeater, 0.4) / 2 + 8,
 			161 + 14,
-			choices_second.steal_repeater,
+			choices_two.steal_repeater,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -81,9 +81,9 @@ while in_interactive_zone do
 	if not chest_used then
 		Image.draw(spritesheet, 160, 173, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			160 - intraFont.textW(font, choices_fourth.chest, 0.4) / 2 + 8,
+			160 - intraFont.textW(font, choices_four.chest, 0.4) / 2 + 8,
 			173 + 14,
-			choices_fourth.chest,
+			choices_four.chest,
 			Color.new(255, 255, 255),
 			font,
 			0.4
@@ -91,9 +91,9 @@ while in_interactive_zone do
 	elseif autofarm_used and chest_used then
 		Image.draw(spritesheet, 241, 210, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			241 - intraFont.textW(font, choices_second.crafting_table, 0.4) / 2 + 8,
+			241 - intraFont.textW(font, choices_two.crafting_table, 0.4) / 2 + 8,
 			210 + 14,
-			choices_second.crafting_table,
+			choices_two.crafting_table,
 			Color.new(255, 255, 255),
 			font,
 			0.4

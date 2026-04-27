@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fourth.just_let_them_believe, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_four.just_let_them_believe, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fourth.they_deserve_the_truth, 0.4),
+	450 - intraFont.textW(font, choices_four.they_deserve_the_truth, 0.4),
 	127,
-	choices_fourth.they_deserve_the_truth,
+	choices_four.they_deserve_the_truth,
 	Color.new(255, 255, 255),
 	font,
 	0.4

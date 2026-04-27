@@ -18,11 +18,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_second.chase_griefer, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_two.chase_griefer, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_second.chase_nohr, 0.4),
+	450 - intraFont.textW(font, choices_two.chase_nohr, 0.4),
 	127,
-	choices_second.chase_nohr,
+	choices_two.chase_nohr,
 	Color.new(255, 255, 255),
 	font,
 	0.4

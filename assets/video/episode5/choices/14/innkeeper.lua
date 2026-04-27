@@ -19,11 +19,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fifth.dont_lie_to_me, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_five.dont_lie_to_me, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fifth.you_can_trust_me, 0.4),
+	450 - intraFont.textW(font, choices_five.you_can_trust_me, 0.4),
 	127,
-	choices_fifth.you_can_trust_me,
+	choices_five.you_can_trust_me,
 	Color.new(255, 255, 255),
 	font,
 	0.4

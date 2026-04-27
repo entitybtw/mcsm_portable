@@ -19,16 +19,16 @@ end
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
 Image.draw(spritesheet, 140, 182, 15, 15, nil, 430, 0, 15, 15)
-intraFont.print(45, 127, choices_fourth.tnt_launcher, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_four.tnt_launcher, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fourth.rocket_minecart, 0.4),
+	450 - intraFont.textW(font, choices_four.rocket_minecart, 0.4),
 	127,
-	choices_fourth.rocket_minecart,
+	choices_four.rocket_minecart,
 	Color.new(255, 255, 255),
 	font,
 	0.4
 )
-intraFont.print(140 + 15 + 5, 182, choices_fourth.flying_machine, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(140 + 15 + 5, 182, choices_four.flying_machine, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(240 - intraFont.textW(font, ui.save, 0.63) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()

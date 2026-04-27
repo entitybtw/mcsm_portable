@@ -19,11 +19,11 @@ end
 
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_fifth.tear_it_down, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_five.tear_it_down, Color.new(255, 255, 255), font, 0.4)
 intraFont.print(
-	450 - intraFont.textW(font, choices_fifth.leave_it_alone, 0.4),
+	450 - intraFont.textW(font, choices_five.leave_it_alone, 0.4),
 	127,
-	choices_fifth.leave_it_alone,
+	choices_five.leave_it_alone,
 	Color.new(255, 255, 255),
 	font,
 	0.4

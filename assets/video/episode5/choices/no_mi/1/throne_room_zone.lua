@@ -33,9 +33,9 @@ while in_interactive_zone do
 	if not bookcase_used then
 		Image.draw(spritesheet, 59, 160, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			59 - intraFont.textW(font, choices_fifth.bookcase, 0.4) / 2 + 8,
+			59 - intraFont.textW(font, choices_five.bookcase, 0.4) / 2 + 8,
 			160 + 14,
-			choices_fifth.bookcase,
+			choices_five.bookcase,
 			c_white,
 			font,
 			0.4
@@ -46,18 +46,18 @@ while in_interactive_zone do
 	if not strange_wall_used then
 		if mi == "milo" then
 			intraFont.print(
-				397 - intraFont.textW(font, choices_fifth.strange_wall, 0.4) / 2 + 8,
+				397 - intraFont.textW(font, choices_five.strange_wall, 0.4) / 2 + 8,
 				166 + 14,
-				choices_fifth.strange_wall,
+				choices_five.strange_wall,
 				c_white,
 				font,
 				0.4
 			)
 		elseif mi == "ivor" then
 			intraFont.print(
-				397 - intraFont.textW(font, choices_fifth.supply_door, 0.4) / 2 + 8,
+				397 - intraFont.textW(font, choices_five.supply_door, 0.4) / 2 + 8,
 				166 + 14,
-				choices_fifth.supply_door,
+				choices_five.supply_door,
 				c_white,
 				font,
 				0.4
@@ -65,9 +65,9 @@ while in_interactive_zone do
 		end
 	else
 		intraFont.print(
-			397 - intraFont.textW(font, choices_fifth.lever_slot, 0.4) / 2 + 8,
+			397 - intraFont.textW(font, choices_five.lever_slot, 0.4) / 2 + 8,
 			166 + 14,
-			choices_fifth.lever_slot,
+			choices_five.lever_slot,
 			c_white,
 			font,
 			0.4
@@ -77,9 +77,9 @@ while in_interactive_zone do
 	if not cobblestone_collected then
 		Image.draw(spritesheet, 144, 203, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			144 - intraFont.textW(font, choices_fifth.cobblestone, 0.4) / 2 + 8,
+			144 - intraFont.textW(font, choices_five.cobblestone, 0.4) / 2 + 8,
 			203 + 14,
-			choices_fifth.cobblestone,
+			choices_five.cobblestone,
 			c_white,
 			font,
 			0.4
@@ -89,9 +89,9 @@ while in_interactive_zone do
 	if not dry_bush_collected then
 		Image.draw(spritesheet, 282, 207, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			282 - intraFont.textW(font, choices_fifth.dry_bush, 0.4) / 2 + 8,
+			282 - intraFont.textW(font, choices_five.dry_bush, 0.4) / 2 + 8,
 			207 + 14,
-			choices_fifth.dry_bush,
+			choices_five.dry_bush,
 			c_white,
 			font,
 			0.4
@@ -99,9 +99,9 @@ while in_interactive_zone do
 	elseif cobblestone_collected and not crafting_table_used then
 		Image.draw(spritesheet, 282, 207, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			282 - intraFont.textW(font, choices_fourth.crafting_table, 0.4) / 2 + 8,
+			282 - intraFont.textW(font, choices_four.crafting_table, 0.4) / 2 + 8,
 			207 + 14,
-			choices_fourth.crafting_table,
+			choices_four.crafting_table,
 			Color.new(255, 255, 255),
 			font,
 			0.4
