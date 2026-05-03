@@ -141,9 +141,14 @@ while true do
 	if buttons.pressed(buttons.circle) then
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
 		saveSystemInfo()
+		ui_enabled = false
+		screen.flip()
+		menuTransition(11)
+		ui_enabled = true
 		break
 	end
 
+	if ui_enabled then
 	drawButtons()
 	drawSystemInfo()
 	intraFont.printShadowed(40, 35, ui.debug_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
@@ -160,5 +165,6 @@ while true do
 		0.3,
 		0
 	)
+	end
 	screen.flip()
 end

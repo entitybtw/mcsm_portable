@@ -123,18 +123,6 @@ while true do
 	screen.clear()
 	buttons.read()
 	Image.draw(pause_bg, 0, 0)
-	intraFont.printShadowed(
-		230 - intraFont.textW(font, ui.debug_menu, 0.3) / 2 + 14,
-		25,
-		ui.debug_menu,
-		Color.new(255, 255, 255),
-		Color.new(0, 0, 0),
-		font,
-		90,
-		1,
-		0.3,
-		0
-	)
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
@@ -155,11 +143,28 @@ while true do
 		saveSystemInfo()
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
 		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+		ui_enabled = false
+		screen.flip()
+		LUA.sleep(165)
+		ui_enabled = true
 		break
 	end
 
+	if ui_enabled then
 	drawButtons()
 	drawSystemInfo()
+	intraFont.printShadowed(
+		230 - intraFont.textW(font, ui.debug_menu, 0.3) / 2 + 14,
+		25,
+		ui.debug_menu,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.3,
+		0
+	)
 	Image.draw(
 		spritesheet,
 		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 2,
@@ -184,5 +189,6 @@ while true do
 		0.3,
 		0
 	)
+end
 	screen.flip()
 end

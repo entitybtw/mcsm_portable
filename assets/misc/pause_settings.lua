@@ -57,6 +57,52 @@ while true do
 	buttons.read()
 
 	Image.draw(pause_bg, 0, 0)
+
+	if buttons.pressed(buttons.up) and selectedButton > 1 then
+		selectedButton = selectedButton - 1
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	end
+	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
+		selectedButton = selectedButton + 1
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	end
+	if buttons.pressed(buttons.circle) then
+		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
+		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+		break
+	end
+	if buttons.pressed(buttons.cross) then
+		if selectedButton == 1 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			dofile("assets/misc/pause_controls.lua")
+		elseif selectedButton == 2 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			dofile("assets/misc/pause_audio_video.lua")
+		elseif selectedButton == 3 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			dofile("assets/misc/pause_debug.lua")
+		end
+	end
+
+	if ui_enabled then
+	drawButtons()
 	intraFont.printShadowed(
 		230 - intraFont.textW(font, ui.settings, 0.3) / 2 + 14,
 		25,
@@ -130,39 +176,7 @@ while true do
 		0.3,
 		0
 	)
-
-	if buttons.pressed(buttons.up) and selectedButton > 1 then
-		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-	end
-	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
-		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-	end
-	if buttons.pressed(buttons.circle) then
-		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-		break
-	end
-	if buttons.pressed(buttons.cross) then
-		if selectedButton == 1 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			dofile("assets/misc/pause_controls.lua")
-		elseif selectedButton == 2 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			dofile("assets/misc/pause_audio_video.lua")
-		elseif selectedButton == 3 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			dofile("assets/misc/pause_debug.lua")
-		end
-	end
-
-	drawButtons()
+end
 	debugoverlay.draw(debugoverlay.loadSettings())
 	screen.flip()
 end

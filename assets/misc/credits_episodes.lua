@@ -80,6 +80,7 @@ while true do
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			System.GC()
 			PMP.play("assets/video/credits/ep1.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
 			sound.volumeEasy(5, menumusic * 10)
@@ -89,6 +90,7 @@ while true do
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			System.GC()
 			PMP.play("assets/video/credits/ep2.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
 			sound.volumeEasy(5, menumusic * 10)
@@ -98,6 +100,7 @@ while true do
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			System.GC()
 			PMP.play("assets/video/credits/ep3.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
 			sound.volumeEasy(5, menumusic * 10)
@@ -107,6 +110,7 @@ while true do
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			System.GC()
 			PMP.play("assets/video/credits/ep4.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
 			sound.volumeEasy(5, menumusic * 10)
@@ -116,6 +120,7 @@ while true do
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			System.GC()
 			PMP.play("assets/video/credits/ep5.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
 			sound.volumeEasy(5, menumusic * 10)
@@ -123,13 +128,30 @@ while true do
 	end
 	if buttons.pressed(buttons.circle) then
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
+		ui_enabled = false
+		screen.flip()
+		menuTransition(11)
+		ui_enabled = true
 		break
 	end
 
+	if ui_enabled then
 	drawButtons()
 	debugoverlay.draw(debugoverlay.loadSettings())
 	intraFont.printShadowed(40, 35, ui.credits, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
 	Image.draw(spritesheet, 40, 233, 14, 14, nil, 384, 0, 15, 15)
-	intraFont.printShadowed(57, 234, ui.previous_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+	intraFont.printShadowed(
+		57,
+		234,
+		ui.previous_menu,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.3,
+		0
+	)
+end
 	screen.flip()
 end

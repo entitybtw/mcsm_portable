@@ -253,6 +253,7 @@ while true do
 	buttons.read()
 	screen.clear()
 	Image.draw(pause_bg, 0, 0)
+	if ui_enabled then
 	Image.draw(
 		spritesheet,
 		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 2,
@@ -279,6 +280,7 @@ while true do
 	)
 
 	drawui()
+	end
 	screen.flip()
 
 	if buttons.pressed(buttons.down) and selectedIndex < totalItems then
@@ -318,6 +320,10 @@ while true do
 		end
 		saveLevels("assets/saves/soundlevels.txt", levelsToSave)
 		saveSubtitles()
+		ui_enabled = false
+		screen.flip()
+		LUA.sleep(165)
+		ui_enabled = true
 		break
 	end
 end

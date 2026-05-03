@@ -78,18 +78,34 @@ while true do
 		if selectedButton == 1 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/controls.lua")
 		elseif selectedButton == 2 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/audio_video.lua")
 		elseif selectedButton == 3 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/debug.lua")
 		elseif selectedButton == 4 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/credits_episodes.lua")
 		end
 	end
@@ -98,6 +114,7 @@ while true do
 		break
 	end
 
+	if ui_enabled then
 	drawButtons()
 
 	debugoverlay.draw(debugoverlay.loadSettings())
@@ -128,5 +145,6 @@ while true do
 		0.3,
 		0
 	)
+	end
 	screen.flip()
 end

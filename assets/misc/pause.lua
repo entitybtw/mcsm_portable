@@ -72,6 +72,68 @@ while true do
 	end
 
 	Image.draw(pause_bg, 0, 0)
+
+	if buttons.pressed(buttons.up) and selectedButton > 1 then
+		selectedButton = selectedButton - 1
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	end
+	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
+		selectedButton = selectedButton + 1
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	end
+	if buttons.pressed(buttons.circle) then
+		PMP.pause()
+		break
+	end
+	if buttons.pressed(buttons.cross) then
+		if selectedButton == 1 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			PMP.pause()
+			Image.unload(pause_bg)
+			sound.stop(5)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			System.GC()
+			break
+		elseif selectedButton == 2 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			System.GC()
+			dofile("assets/misc/pause_settings.lua")
+		elseif selectedButton == 3 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			Image.unload(pause_bg)
+			sound.stop(5)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			System.GC()
+			return -1
+		elseif selectedButton == 4 then
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			LUA.sleep(165)
+			ui_enabled = true
+			LUA.exit()
+		end
+	end
+
+	if ui_enabled then
+	drawButtons()
+	debugoverlay.draw(debugoverlay.loadSettings())
 	intraFont.printShadowed(
 		230 - intraFont.textW(font, ui.paused, 0.3) / 2 + 14,
 		25,
@@ -108,51 +170,7 @@ while true do
 		0.3,
 		0
 	)
-
-	if buttons.pressed(buttons.up) and selectedButton > 1 then
-		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 	end
-	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
-		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-	end
-	if buttons.pressed(buttons.circle) then
-		PMP.pause()
-		break
-	end
-	if buttons.pressed(buttons.cross) then
-		if selectedButton == 1 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			PMP.pause()
-			Image.unload(pause_bg)
-			sound.stop(5)
-			System.GC()
-			break
-		elseif selectedButton == 2 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			System.GC()
-			dofile("assets/misc/pause_settings.lua")
-		elseif selectedButton == 3 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			Image.unload(pause_bg)
-			sound.stop(5)
-			System.GC()
-			return -1
-		elseif selectedButton == 4 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
-			LUA.exit()
-		end
-	end
-
-	drawButtons()
-	debugoverlay.draw(debugoverlay.loadSettings())
 	if fade_enabled == 1 and fade > 0 then
 		screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
 	end

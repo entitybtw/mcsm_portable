@@ -257,7 +257,7 @@ while true do
 		0
 	)
 
-	drawui()
+	if ui_enabled then drawui() end
 	screen.flip()
 
 	if buttons.pressed(buttons.down) and selectedIndex < totalItems then
@@ -297,6 +297,10 @@ while true do
 		end
 		saveLevels("assets/saves/soundlevels.txt", levelsToSave)
 		saveSubtitles()
+		ui_enabled = false
+		screen.flip()
+		menuTransition(11)
+		ui_enabled = true
 		break
 	end
 end
