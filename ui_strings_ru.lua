@@ -126,7 +126,7 @@ choices_one = {
 
 	go_for_ellegaard = "[Пойти за Эльгордом]",
 	go_for_magnus = "[Пойти за Магнусом]",
-	
+
 	the_order_has_failed = "Орден потерпел неудачу",
 	the_world_needs_us_reuben = "Мир нуждается в нас, Рубен",
 	craft_sticky_piston = "[Скрафтить липкий поршень]",
@@ -223,7 +223,7 @@ choices_three = {
 
 	please_dont_die = "Пожалуйста, не умирай",
 	this_armor_is_yours = "Эта броня твоя",
-	
+
 	craft_sticky_piston = "[Скрафтить липкий поршень]",
 	craft_redstone_block = "[Скрафтить блок красного камня]",
 	hes_fine = "С ним всё в порядке",
@@ -373,7 +373,7 @@ choices_five = {
 
 	the_eversource_makes_eggs = "Источник делает яйца",
 	these_generate_resources = "Они генерируют ресурсы",
-	
+
 	crafting_table = "Верстак",
 	gabriel = "Габриэль",
 	lukas = "Лукас",
@@ -454,7 +454,7 @@ choices_two = {
 
 	magnus_is_cool = "Магнус классный",
 	you_need_to_get_along = "Вам нужно поладить",
-	
+
 	school_boy = "Школьник",
 	chest = "Сундук",
 	hes_fine = "С ним всё в порядке",
@@ -587,7 +587,7 @@ choices_four = {
 
 	my_pig_reuben = "Мой поросёнок Рубен",
 	saving_the_world = "Спасение мира",
-	
+
 	lever = "Рычаг",
 	are_those_ender_crystals_q = "Это кристаллы Эндера?",
 	the_order_has_failed_text = "Орден потерпел неудачу",
@@ -645,5 +645,5 @@ ui = {
 	loading_2 = "Чтение настроек...",
 	loading_3 = "Чтение сохранений...",
 	loading_4 = "Проверка эпизодов...",
-	loading_5 = "Завершение..."
+	loading_5 = "Завершение...",
 }

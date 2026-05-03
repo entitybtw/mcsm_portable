@@ -126,7 +126,7 @@ choices_one = {
 
 	go_for_ellegaard = "Go for Ellegaard",
 	go_for_magnus = "Go for Magnus",
-	
+
 	the_order_has_failed = "The Order has failed",
 	the_world_needs_us_reuben = "The world needs us, Reuben",
 	craft_sticky_piston = "Craft Sticky Piston",
@@ -224,7 +224,7 @@ choices_three = {
 
 	please_dont_die = "Please don't die",
 	this_armor_is_yours = "This armor is your's",
-	
+
 	craft_sticky_piston = "Craft Sticky Piston",
 	craft_redstone_block = "Craft Redstone Block",
 	hes_fine = "He's fine",
@@ -374,7 +374,7 @@ choices_five = {
 
 	the_eversource_makes_eggs = "The eversource makes eggs",
 	these_generate_resources = "These generate resoures",
-	
+
 	crafting_table = "Crafting Table",
 	gabriel = "Gabriel",
 	lukas = "Lukas",
@@ -458,7 +458,7 @@ choices_two = {
 
 	magnus_is_cool = "Magnus is cool",
 	you_need_to_get_along = "You need to get along",
-	
+
 	school_boy = "School Boy",
 	chest = "Chest",
 	hes_fine = "He's fine",
@@ -591,7 +591,7 @@ choices_four = {
 
 	my_pig_reuben = "My pig Reuben",
 	saving_the_world = "Saving the world",
-	
+
 	lever = "Lever",
 	are_those_ender_crystals_q = "Are those Ender Crystals?",
 	the_order_has_failed_text = "The order has failed",
