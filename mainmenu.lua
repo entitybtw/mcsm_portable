@@ -8,6 +8,7 @@ local stat = sound.state(5)
 local arrowX = 27
 local arrowStep = 0
 videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
+ui_enabled = true
 
 local timered = timer.create()
 local welanim_duration = timer.create()
@@ -25,6 +26,21 @@ local buttonSprites = {
 	selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
 	static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 },
 }
+
+function menuTransition(time)
+	-- Время в кадрах
+	-- 60 кадров = 1 секунда
+	local i = time
+	while i > 0 do
+		i = i - 1
+
+		screen.clear()
+		if PMP.getFrame(videoFrame) then
+			Image.draw(videoFrame, 0, 0)
+		end
+		screen.flip()
+	end
+end
 
 local function drawButtons()
 	local startX, startY, gap = 35, 105, 5
@@ -120,10 +136,6 @@ while true do
 		end
 	end
 
-	Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
-	intraFont.printShadowed(57, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-	Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
-
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
 		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
@@ -184,54 +196,71 @@ while true do
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/support.lua")
 		elseif selectedButton == 3 then
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/changelogs.lua")
 		elseif selectedButton == 4 then
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
 			dofile("assets/misc/settings.lua")
 		end
 	end
 
-	drawButtons()
-	Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
-	Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
+	if ui_enabled then
+		drawButtons()
+		Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 225, 48, 0, welanim)
+		Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
+
+		intraFont.printShadowed(
+			270,
+			205,
+			ui.welcome,
+			Color.new(255, 255, 255, welanim),
+			Color.new(0, 0, 0, welanim),
+			font,
+			90,
+			1,
+			0.3,
+			0
+		)
+		intraFont.printShadowed(
+			335,
+			225,
+			ui.welcome_sub,
+			Color.new(255, 255, 255, welanim),
+			Color.new(0, 0, 0, welanim),
+			font,
+			90,
+			1,
+			0.2,
+			0
+		)
+		intraFont.printShadowed(57, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+		Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
+		debugoverlay.draw(debugoverlay.loadSettings())
+	end
 
 	if fade_enabled == 1 and fade > 0 then
 		screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
 	end
 
-	Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 225, 48, 0, welanim)
-	intraFont.printShadowed(
-		270,
-		205,
-		ui.welcome,
-		Color.new(255, 255, 255, welanim),
-		Color.new(0, 0, 0, welanim),
-		font,
-		90,
-		1,
-		0.3,
-		0
-	)
-	intraFont.printShadowed(
-		335,
-		225,
-		ui.welcome_sub,
-		Color.new(255, 255, 255, welanim),
-		Color.new(0, 0, 0, welanim),
-		font,
-		90,
-		1,
-		0.2,
-		0
-	)
-
-	debugoverlay.draw(debugoverlay.loadSettings())
 	screen.flip()
 end
