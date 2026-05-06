@@ -35,7 +35,7 @@ local function drawButtons()
 		)
 
 		local label = button.text .. ": " .. (button.state and "ON" or "OFF")
-		local textColor = (i == selectedButton) and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
 		local textWidth = intraFont.textW(font, label, scale)
 		local textHeight = intraFont.textH(font) * scale
 

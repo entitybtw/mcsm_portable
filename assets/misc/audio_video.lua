@@ -144,7 +144,7 @@ local function drawSlider(slider, isSelected, y)
 	local tx = x + (179 - tw) / 2
 	local ty = y + (37 - th) / 4
 
-	local color = isSelected and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+	local color = isSelected and Color.new(255, 255, 153) or Color.new(255, 255, 255)
 
 	intraFont.printShadowed(tx, ty, text, color, Color.new(0, 0, 0), font, 90, 1, scale, 0)
 
@@ -196,7 +196,7 @@ local function drawToggle(text, stateText, isSelected, y)
 	local tx = x + (179 - tw) / 2
 	local ty = y + (37 - th) / 5
 
-	local color = isSelected and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+	local color = isSelected and Color.new(255, 255, 153) or Color.new(255, 255, 255)
 
 	intraFont.printShadowed(tx, ty, fullText, color, Color.new(0, 0, 0), font, 90, 1, scale, 0)
 end

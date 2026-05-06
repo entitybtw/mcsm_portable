@@ -33,7 +33,7 @@ local function drawButtons()
 		)
 
 		local scale = 0.3
-		local textColor = (i == selectedButton) and Color.new(251, 238, 90) or Color.new(255, 255, 255)
+		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
 		local textWidth = intraFont.textW(font, button.text, scale)
 		local textHeight = intraFont.textH(font) * scale
 
