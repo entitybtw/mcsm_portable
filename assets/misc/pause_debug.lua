@@ -13,7 +13,7 @@ local buttonSprites = {
 }
 
 local function drawButtons()
-	local startX, startY, gap, scale = 150, 40, 5, 0.3
+	local startX, startY, gap, scale = 150, 40, 3, 0.3
 	for i, button in ipairs(buttonsList) do
 		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
 		local y = startY + (i - 1) * (sprite.srch + gap)

@@ -43,7 +43,7 @@ function menuTransition(time)
 end
 
 local function drawButtons()
-	local startX, startY, gap = 35, 105, 5
+	local startX, startY, gap = 35, 105, 3
 
 	for i, button in ipairs(buttonsList) do
 		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
@@ -165,7 +165,7 @@ while true do
 				Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
 				drawButtons()
 				Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
-				Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, arrowX, 125, 14, 22, nil, 444, 0, 7, 11)
 				Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
 				Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
 				intraFont.printShadowed(
@@ -193,6 +193,30 @@ while true do
 				break
 			end
 		elseif selectedButton == 2 then
+			while fade < 255 do
+				screen.clear()
+				Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
+				drawButtons()
+				Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, arrowX, 125, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
+				Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
+				intraFont.printShadowed(
+					57,
+					237,
+					ui.select,
+					Color.new(255, 255, 255),
+					Color.new(0, 0, 0),
+					font,
+					90,
+					1,
+					0.3,
+					0
+				)
+				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+				screen.flip()
+				fade = fade + 8
+			end
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
@@ -202,6 +226,30 @@ while true do
 			ui_enabled = true
 			dofile("assets/misc/support.lua")
 		elseif selectedButton == 3 then
+			while fade < 255 do
+				screen.clear()
+				Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
+				drawButtons()
+				Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, arrowX, 125, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
+				Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
+				intraFont.printShadowed(
+					57,
+					237,
+					ui.select,
+					Color.new(255, 255, 255),
+					Color.new(0, 0, 0),
+					font,
+					90,
+					1,
+					0.3,
+					0
+				)
+				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+				screen.flip()
+				fade = fade + 8
+			end
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
@@ -225,7 +273,7 @@ while true do
 	if ui_enabled then
 		drawButtons()
 		Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
-		Image.draw(spritesheet, arrowX, 137, 14, 22, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, arrowX, 135, 14, 22, nil, 444, 0, 7, 11)
 		Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 225, 48, 0, welanim)
 		Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
 

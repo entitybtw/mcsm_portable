@@ -11,7 +11,7 @@ local buttonSprites = {
 }
 
 local function drawButtons()
-	local startX, startY, gap = 150, 40, 5
+	local startX, startY, gap = 150, 40, 3
 	for i, button in ipairs(buttonsList) do
 		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
 		local y = startY + (i - 1) * (sprite.srch + gap)
@@ -71,6 +71,10 @@ while true do
 	if buttons.pressed(buttons.circle) then
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
 		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+		ui_enabled = false
+		screen.flip()
+		LUA.sleep(165)
+		ui_enabled = true
 		break
 	end
 	if buttons.pressed(buttons.cross) then

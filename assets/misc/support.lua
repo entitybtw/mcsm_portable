@@ -12,6 +12,7 @@ while true do
 		Image.unload(img)
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
 		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+		fade_enabled = 1
 		break
 	end
 end

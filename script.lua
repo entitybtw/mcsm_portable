@@ -34,7 +34,7 @@ subtitles:close()
 
 -- load volumes
 if menumusic and menumusic >= 0 and menumusic <= 10 then
-	sound.volumeEasy(sound.MP3, menumusic * 10)
+	sound.volumeEasy(5, menumusic * 10)
 end
 if pmpvideos and pmpvideos >= 0 and pmpvideos <= 10 then
 	pmpvolume = pmpvideos * 10
