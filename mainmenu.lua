@@ -224,7 +224,7 @@ while true do
 			screen.flip()
 			menuTransition(11)
 			ui_enabled = true
-			dofile("assets/misc/support.lua")
+			dofile("assets/misc/stuff.lua")
 		elseif selectedButton == 3 then
 			while fade < 255 do
 				screen.clear()
