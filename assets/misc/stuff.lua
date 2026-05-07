@@ -1,7 +1,7 @@
 sound.playEasy("assets/sounds/stuff.wav", sound.WAV_1, false, false)
 sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 sound.volumeEasy(5, 0)
-local img = Image.load("assets/ui/support.png") -- load image
+local img = Image.load("assets/ui/stuff.png") -- load image
 
 local buttonsList = {
 	{ text = "repo mirrors" },
