@@ -15,7 +15,7 @@ local welanim_duration = timer.create()
 
 local buttonsList = {
 	{ text = ui.play },
-	{ text = ui.stuff },
+	{ text = ui.extras },
 	{ text = ui.changelogs },
 	{ text = ui.settings },
 }
@@ -224,7 +224,7 @@ while true do
 			screen.flip()
 			menuTransition(11)
 			ui_enabled = true
-			dofile("assets/misc/stuff.lua")
+			dofile("assets/misc/extras.lua")
 		elseif selectedButton == 3 then
 			while fade < 255 do
 				screen.clear()
