@@ -33,14 +33,8 @@ subssize = tonumber(subtitles:read("*l"))
 subtitles:close()
 
 -- load volumes
-if menumusic and menumusic >= 0 and menumusic <= 10 then
-	sound.volumeEasy(5, menumusic * 10)
-end
 if pmpvideos and pmpvideos >= 0 and pmpvideos <= 10 then
 	pmpvolume = pmpvideos * 10
-end
-if uiLevel and uiLevel >= 0 and uiLevel <= 10 then
-	sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 end
 soundlevels:close()
 
@@ -207,6 +201,7 @@ require("saves")
 require("debugoverlay")
 require("files")
 sound.playEasy("assets/sounds/bg.at3", 5, true, false)
+sound.volumeEasy(5, menumusic * 10)
 
 fade_enabled = 1
 nextscene = "./mainmenu.lua"

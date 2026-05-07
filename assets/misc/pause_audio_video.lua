@@ -295,20 +295,28 @@ while true do
 		local slider = sliders[selectedIndex]
 		if buttons.pressed(buttons.left) and slider.level > 0 then
 			slider.level = slider.level - 1
+			sound.playEasy("assets/sounds/skeleton_2.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 			slider.apply(slider.level)
 		elseif buttons.pressed(buttons.right) and slider.level < 10 then
 			slider.level = slider.level + 1
+			sound.playEasy("assets/sounds/skeleton_2.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 			slider.apply(slider.level)
 		end
 	elseif selectedIndex == #sliders + 1 then
 		if buttons.pressed(buttons.cross) then
 			subs = not subs
+			sound.playEasy("assets/sounds/lava.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 			saveSubtitles()
 		end
 	elseif selectedIndex == #sliders + 2 then
 		if buttons.pressed(buttons.cross) then
 			subssizeIndex = subssizeIndex % #subssizeOptions + 1
 			subssize = subssizeOptions[subssizeIndex]
+			sound.playEasy("assets/sounds/lava.wav", sound.WAV_1, false, false)
+			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 			saveSubtitles()
 		end
 	end
