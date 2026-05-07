@@ -1,7 +1,15 @@
-sound.playEasy("assets/sounds/stuff.wav", sound.WAV_1, false, false)
+sound.playEasy("assets/sounds/stuff.wav", 17, false, false)
 sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 sound.volumeEasy(5, 0)
 local img = Image.load("assets/ui/stuff.png") -- load image
+local cloudtips = Image.load("assets/ui/qrcodes/cloudtips.png")
+local extras_img = Image.load("assets/ui/qrcodes/extras.png")
+local github = Image.load("assets/ui/qrcodes/github.png")
+local entbtwgit = Image.load("assets/ui/qrcodes/entbtwgit.png")
+local codeberg = Image.load("assets/ui/qrcodes/codeberg.png")
+local gitlab = Image.load("assets/ui/qrcodes/gitlab.png")
+local mirrors = false
+local extras = false
 
 local buttonsList = {
 	{ text = "repo mirrors" },
@@ -74,6 +82,7 @@ screen.flip()
 
 while true do
 Image.draw(img, 0, 0) -- draw image
+if not extras and not mirrors then
 intraFont.printShadowed(
 	250,
 	30,
@@ -99,6 +108,121 @@ intraFont.printShadowed(
 	0
 	)
 	drawButtons()
+end
+if extras then
+	intraFont.printShadowed(
+	250,
+	30,
+	ui.extras_support,
+	Color.new(255, 255, 153),
+	Color.new(0, 0, 0),
+	font,
+	90,
+	1,
+	0.35,
+	0
+	)
+	drawButtons()
+	Image.draw(cloudtips, 350, 50, 70, 70)
+	Image.draw(extras_img, 250, 50, 70, 70)
+
+	intraFont.printShadowed(
+		270 - intraFont.textW(font, ui.extras, 0.3) / 2 + 14,
+		123,
+		ui.extras,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.35,
+		0
+	)
+
+	intraFont.printShadowed(
+		370 - intraFont.textW(font, ui.support, 0.3) / 2 + 14,
+		123,
+		ui.support,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.35,
+		0
+	)
+end
+if mirrors then
+	intraFont.printShadowed(
+	220,
+	45,
+	ui.repos,
+	Color.new(255, 255, 153),
+	Color.new(0, 0, 0),
+	font,
+	90,
+	1,
+	0.35,
+	0
+	)
+	drawButtons()
+	Image.draw(entbtwgit, 220, 60, 60, 60)
+	Image.draw(github, 285, 60, 60, 60)
+	Image.draw(codeberg, 350, 60, 60, 60)
+	Image.draw(gitlab, 415, 60, 60, 60)
+
+	intraFont.printShadowed(
+		240 - intraFont.textW(font, ui.entbtwgit, 0.3) / 2 + 14,
+		120,
+		ui.entbtwgit,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.25,
+		0
+	)
+
+	intraFont.printShadowed(
+		305 - intraFont.textW(font, ui.github, 0.3) / 2 + 14,
+		120,
+		ui.github,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.25,
+		0
+	)
+
+	intraFont.printShadowed(
+		370 - intraFont.textW(font, ui.codeberg, 0.3) / 2 + 14,
+		120,
+		ui.codeberg,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.25,
+		0
+	)
+
+	intraFont.printShadowed(
+		435 - intraFont.textW(font, ui.gitlab, 0.3) / 2 + 14,
+		120,
+		ui.gitlab,
+		Color.new(255, 255, 255),
+		Color.new(0, 0, 0),
+		font,
+		90,
+		1,
+		0.25,
+		0
+	)
+end
 	screen.flip()
 	buttons.read()
 
@@ -121,7 +245,8 @@ intraFont.printShadowed(
 			screen.flip()
 			LUA.sleep(165)
 			ui_enabled = true
-			dofile("assets/misc/pause_controls.lua")
+			extras = false
+			mirrors = true
 		elseif selectedButton == 2 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
 			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
@@ -129,9 +254,18 @@ intraFont.printShadowed(
 			screen.flip()
 			LUA.sleep(165)
 			ui_enabled = true
-			dofile("assets/misc/pause_audio_video.lua")
+			mirrors = false
+			extras = true
 		elseif selectedButton == 3 then
 		Image.unload(img)
+		
+		Image.unload(cloudtips)
+		Image.unload(extras_img)
+
+		Image.unload(github)
+		Image.unload(entbtwgit)
+		Image.unload(codeberg)
+		Image.unload(gitlab)
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
 		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 		fade_enabled = 1
