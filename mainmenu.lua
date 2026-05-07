@@ -15,7 +15,7 @@ local welanim_duration = timer.create()
 
 local buttonsList = {
 	{ text = ui.play },
-	{ text = ui.support },
+	{ text = ui.stuff },
 	{ text = ui.changelogs },
 	{ text = ui.settings },
 }

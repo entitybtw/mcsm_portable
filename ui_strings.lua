@@ -602,7 +602,7 @@ choices_four = {
 
 ui = {
 	play = "Play",
-	support = "Support",
+	stuff = "more stuff",
 	changelogs = "Changelogs",
 	settings = "Settings",
 
@@ -650,4 +650,8 @@ ui = {
 	loading_3 = "Reading save data...",
 	loading_4 = "Checking episodes...",
 	loading_5 = "Finishing up...",
+
+	header = "a star would be awesome :)",
+	description = "i spend a lot of time on this\n\nproject,\n\n\n\ni really appreciate your \n\nsupport and activity :3"
+
 }
