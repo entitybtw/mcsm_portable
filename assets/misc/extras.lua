@@ -1,7 +1,7 @@
-sound.playEasy("assets/sounds/stuff.wav", 17, false, false)
+sound.playEasy("assets/sounds/extras.wav", 17, false, false)
 sound.volumeEasy(sound.WAV_1, uiLevel * 10)
 sound.volumeEasy(5, 0)
-local img = Image.load("assets/ui/stuff.png") -- load image
+local img = Image.load("assets/ui/extras.png") -- load image
 local cloudtips = Image.load("assets/ui/qrcodes/cloudtips.png")
 local extras_img = Image.load("assets/ui/qrcodes/extras.png")
 local github = Image.load("assets/ui/qrcodes/github.png")
