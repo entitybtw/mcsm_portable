@@ -9,6 +9,8 @@ local codeberg = Image.load("assets/ui/qrcodes/codeberg.png")
 local gitlab = Image.load("assets/ui/qrcodes/gitlab.png")
 local mirrors = false
 local extras = false
+local fade = 255
+local c_black = Color.new(0, 0, 0)
 
 local buttonsList = {
 	{ text = "repo mirrors" },
@@ -28,12 +30,12 @@ local buttonGlobalScaleY = 0.9
 -- Настройки позиции текста для разных кнопок
 local textOffset = {
     firstButton = {
-        x = 0,      -- Смещение по X для первой кнопки (положительное/отрицательное)
-        y = -5       -- Смещение по Y для первой кнопки
+        x = 0,
+        y = -5
     },
     otherButtons = {
-        x = 0,      -- Смещение по X для остальных кнопок
-        y = -5       -- Смещение по Y для остальных кнопок
+        x = 0,
+        y = -5
     }
 }
 
@@ -74,11 +76,9 @@ local function drawButtons()
         local textWidth = intraFont.textW(font, button.text, textScaleX)
         local textHeight = intraFont.textH(font) * textScaleY
         
-        -- Базовые позиции
         local baseTextX = startX + (buttonWidth - textWidth) / 2
         local baseTextY = y + (buttonHeight - textHeight) / 2
         
-        -- Применяем смещения в зависимости от кнопки
         local textX, textY
         if i == 1 then
             textX = baseTextX + textOffset.firstButton.x
@@ -99,9 +99,35 @@ local function drawButtons()
     end
 end
 
+-- Fade in эффект при входе
 screen.clear()
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
+
+-- Fade in анимация
+fade = 255
+while fade > 0 do
+    screen.clear()
+    Image.draw(img, 0, 0)
+    if not extras and not mirrors then
+        intraFont.printShadowed(
+            250, 30, ui.header,
+            Color.new(255, 255, 153),
+            Color.new(0, 0, 0),
+            font, 90, 1, 0.35, 0
+        )
+        intraFont.printShadowed(
+            250, 50, ui.description,
+            Color.new(255, 255, 255),
+            Color.new(0, 0, 0),
+            font, 90, 1, 0.35, 0
+        )
+        drawButtons()
+    end
+    screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+    screen.flip()
+    fade = fade - 8
+end
 
 while true do
 Image.draw(img, 0, 0) -- draw image
@@ -261,26 +287,16 @@ end
 	if buttons.pressed(buttons.cross) then
 		if selectedButton == 1 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			ui_enabled = false
-			screen.flip()
-			LUA.sleep(165)
-			ui_enabled = true
 			extras = false
 			mirrors = true
 		elseif selectedButton == 2 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			ui_enabled = false
-			screen.flip()
-			LUA.sleep(165)
-			ui_enabled = true
 			mirrors = false
 			extras = true
 		elseif selectedButton == 3 then
 		Image.unload(img)
-		
 		Image.unload(cloudtips)
 		Image.unload(extras_img)
-
 		Image.unload(github)
 		Image.unload(entbtwgit)
 		Image.unload(codeberg)
@@ -288,6 +304,7 @@ end
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
 		fade_enabled = 1
 		sound.volumeEasy(5, menumusic * 10)
+		videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
 		break
 		end
 	end
