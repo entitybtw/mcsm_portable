@@ -10,7 +10,7 @@
 [![Simple Localize](https://img.shields.io/badge/Simple-Localize-green?labelColor=5e5e5e)](https://simplelocalize.io/suggestions/?id=e2fbe6bc389540e680d62f12ee00f0cd)
 [![extras](https://img.shields.io/badge/extras-orange)](https://github.com/entitybtw/mcsm_portable_extras)
 
-Порт Minecraft Story Mode: Сезон 1 для PSP.
+Порт Minecraft Story Mode: Сезон 1 Netflix Edition для PSP.
 
 Это фанатский порт Minecraft: Story Mode.
 Этот порт не связан с Telltale Games или Netflix.
