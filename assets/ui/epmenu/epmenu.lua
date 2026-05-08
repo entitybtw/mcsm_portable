@@ -3,7 +3,7 @@ local animType = "r"
 local curEp = 1
 local latestContinue = 0
 
-if not fileExists("assets/saves/lastep.txt") then
+if not System.isFile("assets/saves/lastep.txt") then
 	wr("lastep", 1)
 else
 	local lastEp = tonumber(cnt("assets/saves/lastep.txt"))
@@ -109,7 +109,7 @@ while true do
 	if buttons.pressed(buttons["square"]) then
 		if curEp ~= 1 and curEp ~= 3 then
 			System.DeleteData("assets/ui/saves_bg.png")
-			rm(curEp .. "_status")
+			System.removeFile("assets/saves/" .. curEp .. "_status")
 			_G["status_" .. curEp] = "start"
 			wr(curEp .. "_status", "start")
 			PMP.setVolume(pmpvolume)
@@ -124,14 +124,14 @@ while true do
 			local answer = System.buttonPressed()
 			if answer == "Yes" then
 				System.DeleteData("assets/ui/saves_bg.png")
-				rm("1_status")
-				rm("1_variables")
+				System.removeFile("assets/saves/" .. "1_status")
+				System.removeFile("assets/saves/" .. "1_variables")
 				status_1 = "start"
 				PMP.setVolume(pmpvolume)
 				System.GC()
 				PMP.play("assets/ui/epmenu/ep1_start.pmp")
 			elseif answer == "No" then
-				rm("bf", "gp", "em")
+				System.removeFile("assets/saves/" .. "bf", "gp", "em")
 				PMP.setVolume(pmpvolume)
 				System.GC()
 				PMP.play("assets/ui/epmenu/ep1_start.pmp")
@@ -148,13 +148,13 @@ while true do
 			local answer = System.buttonPressed()
 			if answer == "Yes" then
 				System.DeleteData("assets/ui/saves_bg.png")
-				rm("3_status")
+				System.removeFile("assets/saves/" .. "3_status")
 				status_3 = "start"
 				PMP.setVolume(pmpvolume)
 				System.GC()
 				PMP.play("assets/ui/epmenu/ep3_start.pmp")
 			elseif answer == "No" then
-				rm("ema")
+				System.removeFile("assets/saves/" .. "ema")
 				PMP.setVolume(pmpvolume)
 				System.GC()
 				PMP.play("assets/ui/epmenu/ep3_start.pmp")

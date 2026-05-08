@@ -23,55 +23,79 @@ local buttonSprites = {
 	static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 },
 }
 
+local buttonGlobalScaleX = 0.9
+local buttonGlobalScaleY = 0.9
+
+-- Настройки позиции текста для разных кнопок
+local textOffset = {
+    firstButton = {
+        x = 0,      -- Смещение по X для первой кнопки (положительное/отрицательное)
+        y = -5       -- Смещение по Y для первой кнопки
+    },
+    otherButtons = {
+        x = 0,      -- Смещение по X для остальных кнопок
+        y = -5       -- Смещение по Y для остальных кнопок
+    }
+}
+
 local function drawButtons()
     local startX, startY, gap = 250, 180, 3
     for i, button in ipairs(buttonsList) do
         local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
         
-        -- Параметры растяжения для первой кнопки
-        local scaleY = 1
-        local y = startY + (i - 1) * (sprite.srch + gap)
+        local finalScaleX = buttonGlobalScaleX
+        local finalScaleY = buttonGlobalScaleY
         
         if i == 1 then
-            scaleY = 1.4  -- растягиваем первую кнопку по высоте
-            y = startY - 10  -- поднимаем её выше (Y меньше)
+            finalScaleY = finalScaleY * 1.4
         end
         
-        -- Отрисовка спрайта с учетом растяжения
+        local buttonHeight = sprite.srch * finalScaleY
+        local buttonWidth = sprite.srcw * finalScaleX
+        
+        local y = startY + (i - 1) * (buttonHeight + gap)
+        
+        if i == 1 then
+            y = startY - 10
+        end
+        
         Image.draw(
             spritesheet,
-            startX,
-            y,
-            sprite.srcw,           -- ширина без изменений
-            sprite.srch * scaleY,  -- высота растянута
+            startX, y,
+            buttonWidth, buttonHeight,
             nil,
-            sprite.srcx,
-            sprite.srcy,
-            sprite.srcw,
-            sprite.srch,
-            nil,
-            nil,
-            nil
+            sprite.srcx, sprite.srcy,
+            sprite.srcw, sprite.srch
         )
         
-        -- Текст с учетом растяжения
-        local scale = 0.3
-        local textScale = (i == 1) and (scale * scaleY) or scale  -- текст тоже растягиваем немного
+        local textScaleX = 0.3 * buttonGlobalScaleX
+        local textScaleY = 0.3 * finalScaleY
+        
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-        local textWidth = intraFont.textW(font, button.text, textScale)
-        local textHeight = intraFont.textH(font) * textScale
+        local textWidth = intraFont.textW(font, button.text, textScaleX)
+        local textHeight = intraFont.textH(font) * textScaleY
+        
+        -- Базовые позиции
+        local baseTextX = startX + (buttonWidth - textWidth) / 2
+        local baseTextY = y + (buttonHeight - textHeight) / 2
+        
+        -- Применяем смещения в зависимости от кнопки
+        local textX, textY
+        if i == 1 then
+            textX = baseTextX + textOffset.firstButton.x
+            textY = baseTextY + textOffset.firstButton.y
+        else
+            textX = baseTextX + textOffset.otherButtons.x
+            textY = baseTextY + textOffset.otherButtons.y
+        end
         
         intraFont.printShadowed(
-            startX + (sprite.srcw - textWidth) / 2,
-            y + (sprite.srch * scaleY - textHeight) / 4,
+            textX, textY,
             button.text,
             textColor,
             Color.new(0, 0, 0),
-            font,
-            90,
-            1,
-            textScale,
-            0
+            font, 90, 1,
+            textScaleX, textScaleY
         )
     end
 end

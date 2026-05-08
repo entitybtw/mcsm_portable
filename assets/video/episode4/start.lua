@@ -34,8 +34,8 @@ else
 		screen.clear()
 		System.message("Key data not found, do you want to start episode choice setup?", 1)
 		local episodeChoiceResponse = System.buttonPressed()
-		local emaexists = fileExists("assets/saves/ema.txt")
-		local gpexists = fileExists("assets/saves/gp.txt")
+		local emaexists = System.isFile("assets/saves/ema.txt")
+		local gpexists = System.isFile("assets/saves/gp.txt")
 		if episodeChoiceResponse == "Yes" then
 			local step = 1
 			local gp, ema
