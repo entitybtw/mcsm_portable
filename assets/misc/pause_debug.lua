@@ -136,7 +136,7 @@ while true do
 		local current = buttonsList[selectedButton]
 		if current.isToggle then
 			current.state = not current.state
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+			sound.playEasy("assets/sounds/lava.wav", sound.WAV_1, false, false, uiLevel * 10)
 		end
 	end
 	if buttons.pressed(buttons.circle) then

@@ -301,7 +301,7 @@ end
 		Image.unload(entbtwgit)
 		Image.unload(codeberg)
 		Image.unload(gitlab)
-		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
+		sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 		fade_enabled = 1
 		sound.volumeEasy(5, menumusic * 10)
 		videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
