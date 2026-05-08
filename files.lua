@@ -16,26 +16,6 @@ function wr(fileName, content)
 
 	System.GC()
 end
-
-function rm(...)
-	local files = { ... }
-	if #files == 0 then
-		return
-	end
-
-	for _, fileName in ipairs(files) do
-		if type(fileName) == "string" and fileName ~= "" then
-			local filePath = string.format("assets/saves/%s.txt", fileName)
-			local fileExists = io.open(filePath, "r")
-			if fileExists then
-				fileExists:close()
-				System.removeFile(filePath)
-			end
-		end
-	end
-
-	System.GC()
-end
 -- any path
 function checkFile(filePath, globalVarName)
 	local file = io.open(filePath, "r")
@@ -46,15 +26,6 @@ function checkFile(filePath, globalVarName)
 	file:close()
 	globalVarName = content
 	return true
-end
-function fileExists(filePath)
-	local file = io.open(filePath, "r")
-	if file then
-		file:close()
-		return true
-	else
-		return false
-	end
 end
 function cnt(filePath)
 	local file = io.open(filePath, "r")

@@ -20,7 +20,7 @@ function SaveGame(episodeNumber)
 	)
 	wr(episodeNumber .. "_status", "continue")
 	for i = episodeNumber + 1, 5 do
-		rm(i .. "_status")
+		System.removeFile("assets/saves/" .. i .. "_status")
 		_G["status_" .. i] = nil
 	end
 
