@@ -164,7 +164,7 @@ while in_interactive_zone do
 				put_lever = true
 				choosing = false
 			elseif put_lever then
-				System.removeFile("assets/saves/" .. "ivors_house_variables")
+				rm("ivors_house_variables")
 				nextscene = "assets/video/episode4/ellegaard_petra/choices/16/lever.lua"
 				in_interactive_zone = false
 				choosing = false
