@@ -236,6 +236,5 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 
 		screen.flip()
 	end
-	System.GC()
 end
 
