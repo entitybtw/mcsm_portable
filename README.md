@@ -37,4 +37,9 @@ The original game and Netflix version are no longer available, but it’s still 
 - **Antim**: For a bunch of advice and fixing bugs
 - **dntrnk**: For menu improvements, huge optimizations
 
+## 👾 discord server
+
+- **short link**: https://redirect.entitybtw.ru/discord
+- **original link**: https://discord.gg/5R7YEe4q2G
+
 thank u for supporting this project! feel free to contribute or report any issues. 🚀
