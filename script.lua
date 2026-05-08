@@ -200,8 +200,7 @@ PMP.play("assets/ui/loading.pmp")
 require("saves")
 require("debugoverlay")
 require("files")
-sound.playEasy("assets/sounds/bg.at3", 5, true, false)
-sound.volumeEasy(5, menumusic * 10)
+sound.playEasy("assets/sounds/bg.at3", 5, true, false, menumusic * 10)
 
 fade_enabled = 1
 nextscene = "./mainmenu.lua"

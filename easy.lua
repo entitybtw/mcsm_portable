@@ -1,4 +1,4 @@
-function sound.playEasy(path, channel, loop, loadToRAM)
+function sound.playEasy(path, channel, loop, loadToRAM, volume)
 	if type(path) ~= "string" then
 		return
 	end
@@ -11,8 +11,13 @@ function sound.playEasy(path, channel, loop, loadToRAM)
 		loop = false
 	end
 
+	if volume == nil then
+		volume = 100
+	end
+
 	sound.cloud(path, channel, loadToRAM)
 	sound.play(channel, loop)
+	sound.volumeEasy(channel, volume, volume)
 end
 
 function sound.volumeEasy(channel, volume)
@@ -233,3 +238,4 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 	end
 	System.GC()
 end
+
