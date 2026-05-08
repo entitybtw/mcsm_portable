@@ -214,6 +214,7 @@ while true do
 				screen.flip()
 				fade = fade + 8
 			end
+			PMP.stop(videoFrame)
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
@@ -246,6 +247,7 @@ while true do
 				screen.flip()
 				fade = fade + 8
 			end
+			PMP.stop(videoFrame)
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
