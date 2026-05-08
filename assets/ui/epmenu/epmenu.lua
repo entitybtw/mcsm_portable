@@ -68,7 +68,6 @@ for i = 1, latestContinue - 1 do
 end
 
 PMP.setVolume(pmpvolume) -- setting video volume based on the volume set in the game settings
-System.GC()
 PMP.play("assets/ui/epmenu/ep" .. curEp .. getStatusForEpisode(curEp) .. ".pmp") -- playing a video based on the current episode
 while true do
 	buttons.read()
@@ -78,7 +77,6 @@ while true do
 		if curEp ~= 1 then
 			status = getStatus(animType, curEp)
 			PMP.setVolume(pmpvolume)
-			System.GC()
 			PMP.play("assets/ui/epmenu/ep" .. curEp .. "_" .. animType .. status .. ".pmp") -- playing a video based on the current episode and the current animation
 			curEp = curEp - 1
 		end
@@ -89,7 +87,6 @@ while true do
 		if curEp ~= 5 then
 			status = getStatus(animType, curEp)
 			PMP.setVolume(pmpvolume)
-			System.GC()
 			PMP.play("assets/ui/epmenu/ep" .. curEp .. "_" .. animType .. status .. ".pmp")
 			curEp = curEp + 1
 		end
@@ -113,7 +110,6 @@ while true do
 			_G["status_" .. curEp] = "start"
 			wr(curEp .. "_status", "start")
 			PMP.setVolume(pmpvolume)
-			System.GC()
 			PMP.play("assets/ui/epmenu/ep" .. curEp .. getStatusForEpisode(curEp) .. ".pmp")
 		end
 		if curEp == 1 then -- if the 1st episode is selected and the square button is pressed, a question appears about deleting key saves or regular saves
@@ -128,16 +124,13 @@ while true do
 				rm("1_variables")
 				status_1 = "start"
 				PMP.setVolume(pmpvolume)
-				System.GC()
 				PMP.play("assets/ui/epmenu/ep1_start.pmp")
 			elseif answer == "No" then
 				rm("bf", "gp", "em")
 				PMP.setVolume(pmpvolume)
-				System.GC()
 				PMP.play("assets/ui/epmenu/ep1_start.pmp")
 			elseif answer == "Back" then
 				PMP.setVolume(pmpvolume)
-				System.GC()
 				PMP.play("assets/ui/epmenu/ep1_start.pmp")
 			end
 		elseif curEp == 3 then -- if the 1st episode is selected and the square button is pressed, a question appears about deleting key saves or regular saves
@@ -151,16 +144,13 @@ while true do
 				rm("3_status")
 				status_3 = "start"
 				PMP.setVolume(pmpvolume)
-				System.GC()
 				PMP.play("assets/ui/epmenu/ep3_start.pmp")
 			elseif answer == "No" then
 				rm("ema")
 				PMP.setVolume(pmpvolume)
-				System.GC()
 				PMP.play("assets/ui/epmenu/ep3_start.pmp")
 			elseif answer == "Back" then
 				PMP.setVolume(pmpvolume)
-				System.GC()
 				PMP.play("assets/ui/epmenu/ep3_start.pmp")
 			end
 		end

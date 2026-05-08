@@ -94,7 +94,6 @@ while true do
 			screen.flip()
 			LUA.sleep(165)
 			ui_enabled = true
-			System.GC()
 			break
 		elseif selectedButton == 2 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
@@ -102,7 +101,6 @@ while true do
 			screen.flip()
 			LUA.sleep(165)
 			ui_enabled = true
-			System.GC()
 			dofile("assets/misc/pause_settings.lua")
 		elseif selectedButton == 3 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
@@ -112,7 +110,6 @@ while true do
 			screen.flip()
 			LUA.sleep(165)
 			ui_enabled = true
-			System.GC()
 			return -1
 		elseif selectedButton == 4 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
