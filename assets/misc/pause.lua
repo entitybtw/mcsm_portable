@@ -1,5 +1,4 @@
-sound.playEasy("assets/sounds/pause_bg.at3", 5, true, false)
-sound.volumeEasy(sound.WAV_2, menumusic * 10)
+sound.playEasy("assets/sounds/pause_bg.at3", 5, true, false, menumusic * 10)
 pause_bg = Image.load("assets/ui/pause_bg.png")
 local fade = 255
 local c_black = Color.new(0, 0, 0)
@@ -75,13 +74,11 @@ while true do
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
 		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.circle) then
 		PMP.pause()
@@ -89,8 +86,7 @@ while true do
 	end
 	if buttons.pressed(buttons.cross) then
 		if selectedButton == 1 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			PMP.pause()
 			Image.unload(pause_bg)
 			sound.stop(5)
@@ -101,8 +97,7 @@ while true do
 			System.GC()
 			break
 		elseif selectedButton == 2 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			LUA.sleep(165)
@@ -110,8 +105,7 @@ while true do
 			System.GC()
 			dofile("assets/misc/pause_settings.lua")
 		elseif selectedButton == 3 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			Image.unload(pause_bg)
 			sound.stop(5)
 			ui_enabled = false
@@ -121,8 +115,7 @@ while true do
 			System.GC()
 			return -1
 		elseif selectedButton == 4 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			LUA.sleep(165)

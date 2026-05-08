@@ -127,19 +127,19 @@ while true do
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
 		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.cross) then
 		local current = buttonsList[selectedButton]
 		current.state = not current.state
-		sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
+		sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.circle) then
-		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
+		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
 		saveSystemInfo()
 		ui_enabled = false
 		screen.flip()

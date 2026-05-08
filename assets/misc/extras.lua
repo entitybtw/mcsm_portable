@@ -1,5 +1,4 @@
-sound.playEasy("assets/sounds/extras.wav", 17, false, false)
-sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+sound.playEasy("assets/sounds/extras.wav", 17, false, false, uiLevel * 10)
 sound.volumeEasy(5, 0)
 local img = Image.load("assets/ui/extras.png") -- load image
 local cloudtips = Image.load("assets/ui/qrcodes/cloudtips.png")
@@ -252,19 +251,16 @@ end
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
 		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 
 	if buttons.pressed(buttons.cross) then
 		if selectedButton == 1 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			LUA.sleep(165)
@@ -272,8 +268,7 @@ end
 			extras = false
 			mirrors = true
 		elseif selectedButton == 2 then
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			LUA.sleep(165)
@@ -290,8 +285,7 @@ end
 		Image.unload(entbtwgit)
 		Image.unload(codeberg)
 		Image.unload(gitlab)
-		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
 		fade_enabled = 1
 		sound.volumeEasy(5, menumusic * 10)
 		break

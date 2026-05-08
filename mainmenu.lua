@@ -138,13 +138,11 @@ while true do
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
 		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 
 	if buttons.pressed(buttons.triangle) then
@@ -185,8 +183,7 @@ while true do
 				fade = fade + 8
 			end
 			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			PMP.stop(videoFrame)
 			local epmenu = dofile("assets/ui/epmenu/epmenu.lua")
 			if epmenu == 1 then
@@ -218,8 +215,7 @@ while true do
 				fade = fade + 8
 			end
 			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			menuTransition(11)
@@ -251,8 +247,7 @@ while true do
 				fade = fade + 8
 			end
 			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			menuTransition(11)
@@ -260,8 +255,7 @@ while true do
 			dofile("assets/misc/changelogs.lua")
 		elseif selectedButton == 4 then
 			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
 			screen.flip()
 			menuTransition(11)

@@ -117,8 +117,7 @@ while true do
 
 	if buttons.pressed(buttons.circle) then
 		Image.unload(img)
-		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
 		break
 	end
 end

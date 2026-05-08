@@ -64,13 +64,11 @@ while true do
 
 	if buttons.pressed(buttons.up) and selectedButton > 1 then
 		selectedButton = selectedButton - 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
 		selectedButton = selectedButton + 1
-		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false)
-		sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 
 	if buttons.pressed(buttons.cross) then
@@ -78,8 +76,7 @@ while true do
 			PMP.setVolume(pmpvolume)
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			System.GC()
 			PMP.play("assets/video/credits/ep1.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
@@ -88,8 +85,7 @@ while true do
 			PMP.setVolume(pmpvolume)
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			System.GC()
 			PMP.play("assets/video/credits/ep2.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
@@ -98,8 +94,7 @@ while true do
 			PMP.setVolume(pmpvolume)
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			System.GC()
 			PMP.play("assets/video/credits/ep3.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
@@ -108,8 +103,7 @@ while true do
 			PMP.setVolume(pmpvolume)
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			System.GC()
 			PMP.play("assets/video/credits/ep4.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
@@ -118,8 +112,7 @@ while true do
 			PMP.setVolume(pmpvolume)
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false)
-			sound.volumeEasy(sound.WAV_1, uiLevel * 10)
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			System.GC()
 			PMP.play("assets/video/credits/ep5.pmp", false, false, nil, buttons.start)
 			videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, nil, nil, 29.97)
@@ -127,7 +120,7 @@ while true do
 		end
 	end
 	if buttons.pressed(buttons.circle) then
-		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false)
+		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
 		ui_enabled = false
 		screen.flip()
 		menuTransition(11)
