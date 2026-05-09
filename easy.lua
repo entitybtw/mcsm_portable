@@ -96,6 +96,11 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 	local bgColor = hexToColor(hexBg)
 
 	local paused = false
+	
+	local lastSubs = ""
+	local lastSubsTime = 0
+	local currentDisplayLength = 0
+	local typingSpeed = 0.05
 
 	local function autoWrapText(text, maxChars)
 		if not text or text == "" then
@@ -134,6 +139,8 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		screen.clear()
 		buttons.read()
 		Image.draw(pointer, 0, 0)
+		
+		local currentTime = os.clock()
 
 		if subsEnabledNow then
 			local subs = PMP.getSubs()
@@ -143,17 +150,40 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 				end
 				subs = subs:gsub("\r\n", "\n")
 				subs = subs:gsub("\r", "\n")
+				
+				if subs ~= lastSubs then
+					lastSubs = subs
+					currentDisplayLength = 0
+					lastSubsTime = currentTime
+				end
+				
+				if not paused then
+					if currentDisplayLength < #subs then
+						local elapsed = currentTime - lastSubsTime
+						local targetLength = math.floor(elapsed / typingSpeed)
+						if targetLength > #subs then
+							targetLength = #subs
+						end
+						if targetLength > currentDisplayLength then
+							currentDisplayLength = targetLength
+						end
+					end
+				end
+				
+				local displaySubs = subs:sub(1, currentDisplayLength)
 
 				local allLines = {}
 				local start = 1
 
 				while true do
-					local found = subs:find("\n", start)
+					local found = displaySubs:find("\n", start)
 					if not found then
-						table.insert(allLines, subs:sub(start))
+						if start <= #displaySubs then
+							table.insert(allLines, displaySubs:sub(start))
+						end
 						break
 					end
-					table.insert(allLines, subs:sub(start, found - 1))
+					table.insert(allLines, displaySubs:sub(start, found - 1))
 					start = found + 1
 				end
 
@@ -200,6 +230,9 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 						end
 					end
 				end
+			else
+				lastSubs = ""
+				currentDisplayLength = 0
 			end
 		end
 
@@ -237,4 +270,3 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		screen.flip()
 	end
 end
-
