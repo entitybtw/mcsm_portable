@@ -87,6 +87,7 @@ while true do
 	if buttons.pressed(buttons.cross) then
 		if selectedButton == 1 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+			sound.stop(5)
 			PMP.pause()
 			Image.unload(pause_bg)
 			sound.stop(5)
@@ -104,6 +105,7 @@ while true do
 			dofile("assets/misc/pause_settings.lua")
 		elseif selectedButton == 3 then
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+			sound.stop(sound.WAV_1)
 			Image.unload(pause_bg)
 			sound.stop(5)
 			ui_enabled = false
