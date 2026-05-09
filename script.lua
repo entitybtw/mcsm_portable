@@ -7,6 +7,7 @@ local rectfade = 0
 local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 local subtitles = io.open("assets/saves/subtitles.txt", "r")
 font = intraFont.load("assets/minecraft.pgf")
+subs_font = intraFont.load("assets/pexico.pgf")
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
 require("ui_strings")
