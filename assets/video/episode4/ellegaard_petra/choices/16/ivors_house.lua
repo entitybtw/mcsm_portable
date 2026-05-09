@@ -15,7 +15,7 @@ end
 local function playCutscene(videoPath, subtitlesPath)
 	PMP.setVolume(pmpvolume)
 	local result =
-		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/110", subs)
 	if result == 1 then
 		choosing = false
 		in_interactive_zone = false

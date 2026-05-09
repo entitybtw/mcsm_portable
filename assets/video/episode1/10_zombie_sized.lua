@@ -8,7 +8,7 @@ local result = PMP.playExt(
 	subs_font,
 	0.4,
 	"#FFFFFF",
-	"#000000/150"
+	"#000000/110"
 )
 if result == 1 then
 	nextscene = "./mainmenu.lua"

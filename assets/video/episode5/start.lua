@@ -30,7 +30,7 @@ local result = PMP.playExt(
 	subs_font,
 	subssize,
 	"#FFFFFF",
-	"#000000/150",
+	"#000000/110",
 	subs
 )
 if result == 1 then

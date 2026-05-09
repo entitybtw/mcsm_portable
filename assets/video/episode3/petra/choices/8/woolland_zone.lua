@@ -11,7 +11,7 @@ local bg_leverpetra = Image.load("assets/video/episode3/petra/choices/8/woolland
 local function playCutscene(videoPath, subtitlesPath)
 	PMP.setVolume(pmpvolume)
 	local result =
-		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/110", subs)
 	if result == 1 then
 		choosing = false
 		in_interactive_zone = false

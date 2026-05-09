@@ -10,7 +10,7 @@ local bg = Image.load("assets/video/episode1/choices/6/the_woods_zone.png")
 local function playCutscene(videoPath, subtitlesPath)
 	PMP.setVolume(pmpvolume)
 	local result =
-		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/150", subs)
+		PMP.playExt(videoPath, buttons.r, true, subtitlesPath, font, subssize, "#FFFFFF", "#000000/110", subs)
 	if result == 1 then
 		choosing = false
 		in_interactive_zone = false
@@ -119,7 +119,7 @@ while in_interactive_zone do
 					font,
 					subssize,
 					"#FFFFFF",
-					"#000000/150",
+					"#000000/110",
 					subs
 				)
 				if result == 1 then
