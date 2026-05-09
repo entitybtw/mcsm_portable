@@ -5,7 +5,7 @@ local result = PMP.playExt(
 	buttons.r,
 	true,
 	"assets/subtitles/episode3/petra/choices/18/ellegaard/2/please_dont_die.srt",
-	font,
+	subs_font,
 	subssize,
 	"#FFFFFF",
 	"#000000/150",

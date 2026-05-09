@@ -5,7 +5,7 @@ local result = PMP.playExt(
 	buttons.r,
 	true,
 	"assets/subtitles/episode1/choices/28/yeah_its_awful.srt",
-	font,
+	subs_font,
 	subssize,
 	"#FFFFFF",
 	"#000000/150",

@@ -5,7 +5,7 @@ local result = PMP.playExt(
 	buttons.r,
 	true,
 	"assets/subtitles/episode3/no_gp/10/exit_2.srt",
-	font,
+	subs_font,
 	subssize,
 	"#FFFFFF",
 	"#000000/150",

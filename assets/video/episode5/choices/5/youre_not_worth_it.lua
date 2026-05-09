@@ -6,7 +6,7 @@ local result = PMP.playExt(
 	buttons.r,
 	true,
 	"assets/subtitles/episode5/choices/5/youre_not_worth_it.srt",
-	font,
+	subs_font,
 	subssize,
 	"#FFFFFF",
 	"#000000/150",

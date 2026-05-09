@@ -5,7 +5,7 @@ local result = PMP.playExt(
 	buttons.r,
 	true,
 	"assets/subtitles/episode2/magnus_gabriel/4/shes_awesome.srt",
-	font,
+	subs_font,
 	subssize,
 	"#FFFFFF",
 	"#000000/150",
