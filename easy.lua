@@ -188,7 +188,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 				end
 
 				local finalLines = {}
-				local maxChars = 85
+				local maxChars = 55
 
 				for _, originalLine in ipairs(allLines) do
 					if originalLine ~= "" then
