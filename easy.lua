@@ -100,7 +100,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 	local lastSubs = ""
 	local lastSubsTime = 0
 	local currentDisplayLength = 0
-	local typingSpeed = 0.05
+	local typingSpeed = 0.02
 
 	local function autoWrapText(text, maxChars)
 		if not text or text == "" then
