@@ -102,7 +102,7 @@ local function drawAll()
 		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
 		screen.filledRect(422, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
 
-		screen.filledRect(267, 200, 155, 39, Color.new(104, 171, 151), 0, welanim - 155)
+		screen.filledRect(267, 200, 155, 39, Color.new(74, 125, 110), 0, welanim - 100)
 		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
 
 		intraFont.printShadowed(
