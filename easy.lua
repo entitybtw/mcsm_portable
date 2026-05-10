@@ -212,21 +212,39 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 
 				local lineHeight = fontSizeNow + 18
 				local totalHeight = #finalLines * lineHeight
-				local startY = 272 - totalHeight - 20
-
+				
+				local maxWidth = 0
+				for _, line in ipairs(finalLines) do
+					if line ~= "" then
+						local textWidth = intraFont.textW(usedFont, line, fontSizeNow)
+						if textWidth > maxWidth then
+							maxWidth = textWidth
+						end
+					end
+				end
+				
+				local bgPaddingX = 0
+				local bgPaddingY = 0
+				
+				local totalTextHeight = #finalLines * lineHeight
+				local startY = 272 - totalTextHeight - 30
+				
+				local bgX = 240 - (maxWidth / 2) - bgPaddingX
+				local bgWidth = maxWidth + (bgPaddingX * 2)
+				local bgY = startY - bgPaddingY
+				local bgHeight = totalTextHeight + (bgPaddingY * 2)
+				
+				screen.filledRect(bgX, bgY, bgWidth, bgHeight, bgColor)
+				
 				for i, line in ipairs(finalLines) do
 					if line ~= "" then
 						local y = startY + (i - 1) * lineHeight
-						local textWidth = intraFont.textW(usedFont, line, fontSizeNow)
-						local x = 240 - textWidth / 2
-						local w = textWidth
-						local h = fontSizeNow + 6
-
+						local x = 240 - intraFont.textW(usedFont, line, fontSizeNow) / 2
+						
 						if colorEnd then
-							screen.filledRect(x - 4, y - 2, w + 7, h + 12, bgColor)
 							intraFont.printGradient(x, y, line, colorStart, colorEnd, usedFont, fontSizeNow)
 						else
-							intraFont.printBackground(x, y, line, colorStart, bgColor, usedFont, fontSizeNow)
+							intraFont.print(x, y, line, colorStart, usedFont, fontSizeNow)
 						end
 					end
 				end
