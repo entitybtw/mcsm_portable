@@ -5,7 +5,7 @@ local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
 local stat = sound.state(5)
-local arrowX = 35
+local arrowX = 39
 local arrowStep = 0
 videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
 ui_enabled = true
@@ -94,8 +94,8 @@ end
 
 local function drawAll()
 		drawButtons()
-		Image.draw(spritesheet, arrowX, 85, 14, 22, nil, 444, 0, 7, 11)
-		Image.draw(spritesheet, arrowX, 130, 14, 22, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, arrowX, 85, 11, 19, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, arrowX, 133, 11, 19, nil, 444, 0, 7, 11)
 
 		screen.filledRect(266, 199, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)
 		screen.filledRect(266, 239, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)
@@ -199,7 +199,7 @@ while true do
 	end
 
 	arrowStep = arrowStep + 0.2
-	arrowX = 35 + cos(arrowStep) * 3
+	arrowX = 39 + cos(arrowStep) * 3
 	if arrowStep >= 360 then
 		arrowStep = 0
 	end
@@ -265,45 +265,7 @@ while true do
 	end
 
 	if ui_enabled then
-		drawButtons()
-		Image.draw(spritesheet, arrowX, 85, 14, 22, nil, 444, 0, 7, 11)
-		Image.draw(spritesheet, arrowX, 130, 14, 22, nil, 444, 0, 7, 11)
-
-		screen.filledRect(266, 199, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(266, 239, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(422, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
-
-		screen.filledRect(267, 200, 155, 39, Color.new(104, 171, 151), 0, welanim - 155)
-		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
-
-		intraFont.printShadowed(
-			280,
-			205,
-			ui.welcome,
-			Color.new(255, 255, 255, welanim),
-			Color.new(0, 0, 0, welanim),
-			font,
-			90,
-			1,
-			0.209,
-			0
-		)
-		intraFont.printShadowed(
-			305,
-			223,
-			ui.welcome_sub,
-			Color.new(255, 255, 255, welanim),
-			Color.new(0, 0, 0, welanim),
-			font,
-			90,
-			1,
-			0.17,
-			0
-		)
-		intraFont.printShadowed(61, 236, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.27, 0)
-		Image.draw(spritesheet, 45, 233, 13, 13, nil, 399, 0, 15, 15)
-		debugoverlay.draw(debugoverlay.loadSettings())
+		drawAll()
 	end
 
 	if fade_enabled == 1 and fade > 0 then
