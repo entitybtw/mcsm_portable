@@ -7,6 +7,7 @@ local cos = math.cos
 local stat = sound.state(5)
 local arrowX = 39
 local arrowStep = 0
+local welsel = false
 videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
 ui_enabled = true
 
@@ -45,12 +46,11 @@ end
 
 local function drawButtons()
     local startX, startY, gap = 45, 85, 3
-    local buttonScale = 0.75  -- Добавьте масштабирование кнопок
+    local buttonScale = 0.75
 
     for i, button in ipairs(buttonsList) do
         local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
         
-        -- Масштабируем размеры спрайтов
         local scaledWidth = sprite.srcw * buttonScale + 3
         local scaledHeight = sprite.srch * buttonScale + 3
         local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
@@ -71,8 +71,7 @@ local function drawButtons()
             nil
         )
 
-        -- Увеличиваем масштаб текста пропорционально
-        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textScale = 0.3 * buttonScale
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
@@ -97,10 +96,17 @@ local function drawAll()
 		Image.draw(spritesheet, arrowX, 85, 11, 19, nil, 444, 0, 7, 11)
 		Image.draw(spritesheet, arrowX, 133, 11, 19, nil, 444, 0, 7, 11)
 
-		screen.filledRect(266, 199, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(266, 239, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(422, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
+		local welcolor = 255
+		if welsel then
+			welcolor = 183
+		elseif not welsel then
+			welcolor = 255
+		end
+
+		screen.filledRect(266, 199, 157, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(266, 239, 157, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(422, 199, 1, 41, Color.new(255, 255, welcolor), 0, welanim - 55)
 
 		screen.filledRect(267, 200, 155, 39, Color.new(74, 125, 110), 0, welanim - 100)
 		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
@@ -109,7 +115,7 @@ local function drawAll()
 			280,
 			205,
 			ui.welcome,
-			Color.new(255, 255, 255, welanim),
+			Color.new(255, 255, welcolor, welanim),
 			Color.new(0, 0, 0, welanim),
 			font,
 			90,
@@ -121,7 +127,7 @@ local function drawAll()
 			305,
 			223,
 			ui.welcome_sub,
-			Color.new(255, 255, 255, welanim),
+			Color.new(255, 255, welcolor, welanim),
 			Color.new(0, 0, 0, welanim),
 			font,
 			90,
@@ -185,13 +191,25 @@ while true do
 		end
 	end
 
-	if buttons.pressed(buttons.up) and selectedButton > 1 then
-		selectedButton = selectedButton - 1
-	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
+	if buttons.pressed(buttons.right) and not welsel and selectedButton == 5 and welanim > 50  then
+		welsel = true
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
-	if buttons.pressed(buttons.down) and selectedButton < #buttonsList then
-		selectedButton = selectedButton + 1
-	sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
+	
+	if buttons.pressed(buttons.left) and welsel then
+		welsel = false
+		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
+	end
+
+	if not welsel then
+		if buttons.pressed(buttons.up) and selectedButton > 1 then
+			selectedButton = selectedButton - 1
+			sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
+		end
+		if buttons.pressed(buttons.down) and selectedButton < #buttonsList and not welsel then
+			selectedButton = selectedButton + 1
+			sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
+		end
 	end
 
 	if buttons.pressed(buttons.triangle) then
@@ -205,23 +223,7 @@ while true do
 	end
 
 	if buttons.pressed(buttons.cross) then
-		if selectedButton == 1 then
-			fade = 0
-			while fade < 255 do
-				screen.clear()
-				drawAll()
-				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-				screen.flip()
-				fade = fade + 8
-			end
-			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			PMP.stop(videoFrame)
-			local epmenu = dofile("assets/ui/epmenu/epmenu.lua")
-			if epmenu == 1 then
-				break
-			end
-		elseif selectedButton == 3 then
+		if welsel then
 			while fade < 255 do
 				screen.clear()
 				drawAll()
@@ -237,30 +239,64 @@ while true do
 			menuTransition(11)
 			ui_enabled = true
 			dofile("assets/misc/extras.lua")
-		elseif selectedButton == 4 then
-			while fade < 255 do
-				screen.clear()
-				drawAll()
-				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+		else
+			if selectedButton == 1 then
+				fade = 0
+				while fade < 255 do
+					screen.clear()
+					drawAll()
+					screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+					screen.flip()
+					fade = fade + 8
+				end
+				fade_enabled = 0
+				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+				PMP.stop(videoFrame)
+				local epmenu = dofile("assets/ui/epmenu/epmenu.lua")
+				if epmenu == 1 then
+					break
+				end
+			elseif selectedButton == 3 then
+				while fade < 255 do
+					screen.clear()
+					drawAll()
+					screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+					screen.flip()
+					fade = fade + 8
+				end
+				PMP.stop(videoFrame)
+				fade_enabled = 0
+				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+				ui_enabled = false
 				screen.flip()
-				fade = fade + 8
+				menuTransition(11)
+				ui_enabled = true
+				dofile("assets/misc/extras.lua")
+			elseif selectedButton == 4 then
+				while fade < 255 do
+					screen.clear()
+					drawAll()
+					screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+					screen.flip()
+					fade = fade + 8
+				end
+				PMP.stop(videoFrame)
+				fade_enabled = 0
+				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+				ui_enabled = false
+				screen.flip()
+				menuTransition(11)
+				ui_enabled = true
+				dofile("assets/misc/changelogs.lua")
+			elseif selectedButton == 5 then
+				fade_enabled = 0
+				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+				ui_enabled = false
+				screen.flip()
+				menuTransition(11)
+				ui_enabled = true
+				dofile("assets/misc/settings.lua")
 			end
-			PMP.stop(videoFrame)
-			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			ui_enabled = false
-			screen.flip()
-			menuTransition(11)
-			ui_enabled = true
-			dofile("assets/misc/changelogs.lua")
-		elseif selectedButton == 5 then
-			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			ui_enabled = false
-			screen.flip()
-			menuTransition(11)
-			ui_enabled = true
-			dofile("assets/misc/settings.lua")
 		end
 	end
 
