@@ -5,7 +5,7 @@ local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
 local stat = sound.state(5)
-local arrowX = 27
+local arrowX = 35
 local arrowStep = 0
 videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
 ui_enabled = true
@@ -15,6 +15,7 @@ local welanim_duration = timer.create()
 
 local buttonsList = {
 	{ text = ui.play },
+	{ text = ui.episodes },
 	{ text = ui.extras },
 	{ text = ui.changelogs },
 	{ text = ui.settings },
@@ -43,46 +44,52 @@ function menuTransition(time)
 end
 
 local function drawButtons()
-	local startX, startY, gap = 35, 105, 3
+    local startX, startY, gap = 45, 85, 3
+    local buttonScale = 0.75  -- Добавьте масштабирование кнопок
 
-	for i, button in ipairs(buttonsList) do
-		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
-		local y = startY + (i - 1) * (sprite.srch + gap)
+    for i, button in ipairs(buttonsList) do
+        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+        
+        -- Масштабируем размеры спрайтов
+        local scaledWidth = sprite.srcw * buttonScale + 3
+        local scaledHeight = sprite.srch * buttonScale + 3
+        local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
 
-		Image.draw(
-			spritesheet,
-			startX,
-			y,
-			sprite.srcw,
-			sprite.srch,
-			nil,
-			sprite.srcx,
-			sprite.srcy,
-			sprite.srcw,
-			sprite.srch,
-			nil,
-			nil,
-			nil
-		)
+        Image.draw(
+            spritesheet,
+            startX,
+            y,
+            scaledWidth,
+            scaledHeight,
+            nil,
+            sprite.srcx,
+            sprite.srcy,
+            sprite.srcw,
+            sprite.srch,
+            nil,
+            nil,
+            nil
+        )
 
-		local scale = 0.3
-		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-		local textWidth = intraFont.textW(font, button.text, scale)
-		local textHeight = intraFont.textH(font) * scale
+        -- Увеличиваем масштаб текста пропорционально
+        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
+        local textWidth = intraFont.textW(font, button.text, textScale)
+        local textHeight = intraFont.textH(font) * textScale
 
-		intraFont.printShadowed(
-			startX + (sprite.srcw - textWidth) / 2,
-			y + (sprite.srch - textHeight) / 4,
-			button.text,
-			textColor,
-			Color.new(0, 0, 0),
-			font,
-			90,
-			1,
-			scale,
-			0
-		)
-	end
+        intraFont.printShadowed(
+            startX + (scaledWidth - textWidth) / 2,
+            y + (scaledHeight - textHeight) / 4,
+            button.text,
+            textColor,
+            Color.new(0, 0, 0),
+            font,
+            90,
+            1,
+            textScale,
+            0
+        )
+    end
 end
 
 function stop_sound(channel)
@@ -150,7 +157,7 @@ while true do
 	end
 
 	arrowStep = arrowStep + 0.2
-	arrowX = 27 + cos(arrowStep) * 3
+	arrowX = 35 + cos(arrowStep) * 3
 	if arrowStep >= 360 then
 		arrowStep = 0
 	end
@@ -189,39 +196,6 @@ while true do
 			if epmenu == 1 then
 				break
 			end
-		elseif selectedButton == 2 then
-			while fade < 255 do
-				screen.clear()
-				Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
-				drawButtons()
-				Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
-				Image.draw(spritesheet, arrowX, 125, 14, 22, nil, 444, 0, 7, 11)
-				Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
-				Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
-				intraFont.printShadowed(
-					57,
-					237,
-					ui.select,
-					Color.new(255, 255, 255),
-					Color.new(0, 0, 0),
-					font,
-					90,
-					1,
-					0.3,
-					0
-				)
-				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-				screen.flip()
-				fade = fade + 8
-			end
-			PMP.stop(videoFrame)
-			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			ui_enabled = false
-			screen.flip()
-			menuTransition(11)
-			ui_enabled = true
-			dofile("assets/misc/extras.lua")
 		elseif selectedButton == 3 then
 			while fade < 255 do
 				screen.clear()
@@ -254,8 +228,41 @@ while true do
 			screen.flip()
 			menuTransition(11)
 			ui_enabled = true
-			dofile("assets/misc/changelogs.lua")
+			dofile("assets/misc/extras.lua")
 		elseif selectedButton == 4 then
+			while fade < 255 do
+				screen.clear()
+				Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
+				drawButtons()
+				Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, arrowX, 125, 14, 22, nil, 444, 0, 7, 11)
+				Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 226, 49, 0, welanim)
+				Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
+				intraFont.printShadowed(
+					57,
+					237,
+					ui.select,
+					Color.new(255, 255, 255),
+					Color.new(0, 0, 0),
+					font,
+					90,
+					1,
+					0.3,
+					0
+				)
+				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+				screen.flip()
+				fade = fade + 8
+			end
+			PMP.stop(videoFrame)
+			fade_enabled = 0
+			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+			ui_enabled = false
+			screen.flip()
+			menuTransition(11)
+			ui_enabled = true
+			dofile("assets/misc/changelogs.lua")
+		elseif selectedButton == 5 then
 			fade_enabled = 0
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 			ui_enabled = false
@@ -268,37 +275,43 @@ while true do
 
 	if ui_enabled then
 		drawButtons()
-		Image.draw(spritesheet, arrowX, 107, 14, 22, nil, 444, 0, 7, 11)
-		Image.draw(spritesheet, arrowX, 135, 14, 22, nil, 444, 0, 7, 11)
-		Image.draw(spritesheet, 245, 200, 226, 49, white, 2, 111, 225, 48, 0, welanim)
-		Image.draw(spritesheet, 32, 38, 190, 61, nil, 0, 48, 210, 61, nil, nil, nil, true)
+		Image.draw(spritesheet, arrowX, 85, 14, 22, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, arrowX, 130, 14, 22, nil, 444, 0, 7, 11)
+
+		screen.filledRect(266, 199, 152, 1, Color.new(255, 255, 255), 0, welanim - 55)
+		screen.filledRect(266, 239, 152, 1, Color.new(255, 255, 255), 0, welanim - 55)
+		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
+		screen.filledRect(417, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
+
+		screen.filledRect(267, 200, 150, 39, Color.new(104, 171, 151), 0, welanim - 155)
+		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
 
 		intraFont.printShadowed(
-			270,
+			280,
 			205,
 			ui.welcome,
 			Color.new(255, 255, 255, welanim),
 			Color.new(0, 0, 0, welanim),
 			font,
 			90,
-			1,
-			0.3,
+			0,
+			0.2,
 			0
 		)
 		intraFont.printShadowed(
-			335,
-			225,
+			300,
+			223,
 			ui.welcome_sub,
 			Color.new(255, 255, 255, welanim),
 			Color.new(0, 0, 0, welanim),
 			font,
 			90,
-			1,
-			0.2,
+			0,
+			0.17,
 			0
 		)
-		intraFont.printShadowed(57, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-		Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
+		intraFont.printShadowed(61, 236, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.27, 0)
+		Image.draw(spritesheet, 45, 233, 13, 13, nil, 399, 0, 15, 15)
 		debugoverlay.draw(debugoverlay.loadSettings())
 	end
 

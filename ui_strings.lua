@@ -602,7 +602,7 @@ choices_four = {
 
 ui = {
 	play = "Play",
-	stuff = "more stuff",
+	episodes = "Episodes",
 	changelogs = "Changelogs",
 	settings = "Settings",
 
