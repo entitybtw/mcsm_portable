@@ -278,17 +278,17 @@ while true do
 		Image.draw(spritesheet, arrowX, 85, 14, 22, nil, 444, 0, 7, 11)
 		Image.draw(spritesheet, arrowX, 130, 14, 22, nil, 444, 0, 7, 11)
 
-		screen.filledRect(266, 199, 152, 1, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(266, 239, 152, 1, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
-		screen.filledRect(417, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)
+screen.filledRect(266, 199, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)   -- верх
+screen.filledRect(266, 239, 157, 1, Color.new(255, 255, 255), 0, welanim - 55)   -- низ
+screen.filledRect(266, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)    -- лево
+screen.filledRect(422, 199, 1, 41, Color.new(255, 255, 255), 0, welanim - 55)    -- право
 
-		screen.filledRect(267, 200, 150, 39, Color.new(104, 171, 151), 0, welanim - 155)
+		screen.filledRect(267, 200, 155, 39, Color.new(104, 171, 151), 0, welanim - 155)
 		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
 
 		intraFont.printShadowed(
-			275,
-			207,
+			280,
+			205,
 			ui.welcome,
 			Color.new(255, 255, 255, welanim),
 			Color.new(0, 0, 0, welanim),
@@ -299,7 +299,7 @@ while true do
 			0
 		)
 		intraFont.printShadowed(
-			300,
+			305,
 			223,
 			ui.welcome_sub,
 			Color.new(255, 255, 255, welanim),
