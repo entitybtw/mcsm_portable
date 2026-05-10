@@ -654,7 +654,7 @@ ui = {
 	header = "a star would be awesome :)",
 	description = "i spend a lot of time on this\n\nproject,\n\n\n\ni really appreciate your \n\nsupport and activity :3",
 
-	extras = "extras",
+	extras = "Extras",
 	extras_support = "extras / support me",
 	support = "support me",
 	repos = "repo mirrors",
