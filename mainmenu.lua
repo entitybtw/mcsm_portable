@@ -287,15 +287,15 @@ while true do
 		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
 
 		intraFont.printShadowed(
-			280,
-			205,
+			275,
+			207,
 			ui.welcome,
 			Color.new(255, 255, 255, welanim),
 			Color.new(0, 0, 0, welanim),
 			font,
 			90,
-			0,
-			0.2,
+			1,
+			0.209,
 			0
 		)
 		intraFont.printShadowed(
@@ -306,7 +306,7 @@ while true do
 			Color.new(0, 0, 0, welanim),
 			font,
 			90,
-			0,
+			1,
 			0.17,
 			0
 		)
