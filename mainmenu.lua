@@ -129,7 +129,7 @@ local function drawAll()
 			0.17,
 			0
 		)
-		intraFont.printShadowed(61, 236, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.27, 0)
+		intraFont.printShadowed(61, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.27, 0)
 		Image.draw(spritesheet, 45, 233, 13, 13, nil, 399, 0, 15, 15)
 		debugoverlay.draw(debugoverlay.loadSettings())
 end
