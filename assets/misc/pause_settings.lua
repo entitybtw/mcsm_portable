@@ -122,10 +122,10 @@ while true do
 	)
 	Image.draw(
 		spritesheet,
-		240 - (14 + intraFont.textW(font, ui.select, 0.3) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2,
+		240 - (14 + intraFont.textW(font, ui.select, 0.27) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2,
 		246,
-		14,
-		14,
+		13,
+		13,
 		nil,
 		399,
 		0,
@@ -134,7 +134,7 @@ while true do
 	)
 	intraFont.printShadowed(
 		240
-			- (14 + intraFont.textW(font, ui.select, 0.3) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 0.27) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
 			+ 14
 			+ 5,
 		247,
@@ -150,13 +150,13 @@ while true do
 	Image.draw(
 		spritesheet,
 		240
-			- (14 + intraFont.textW(font, ui.select, 0.3) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 0.27) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
 			+ 14
 			+ intraFont.textW(font, ui.select, 0.3)
 			+ 10,
 		246,
-		14,
-		14,
+		13,
+		13,
 		nil,
 		384,
 		0,
@@ -165,7 +165,7 @@ while true do
 	)
 	intraFont.printShadowed(
 		240
-			- (14 + intraFont.textW(font, ui.select, 0.3) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 0.27) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
 			+ 14
 			+ intraFont.textW(font, ui.select, 0.3)
 			+ 10

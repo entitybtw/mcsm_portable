@@ -14,12 +14,11 @@ local buttonSprites = {
 
 local function drawButtons()
     local startX, startY, gap = 45, 50, 3
-    local buttonScale = 0.75  -- Добавьте масштабирование кнопок
+    local buttonScale = 0.75  
 
     for i, button in ipairs(buttonsList) do
         local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
         
-        -- Масштабируем размеры спрайтов
         local scaledWidth = sprite.srcw * buttonScale + 3
         local scaledHeight = sprite.srch * buttonScale + 3
         local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
@@ -40,8 +39,7 @@ local function drawButtons()
             nil
         )
 
-        -- Увеличиваем масштаб текста пропорционально
-        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textScale = 0.3 * buttonScale  
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
@@ -119,32 +117,35 @@ while true do
 
 	debugoverlay.draw(debugoverlay.loadSettings())
 	intraFont.printShadowed(45, 35, ui.settings, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
-	Image.draw(spritesheet, 40, 233, 14, 14, nil, 399, 0, 15, 15)
-	intraFont.printShadowed(
-		38 + 14 + 5,
-		234,
-		ui.select,
-		Color.new(255, 255, 255),
-		Color.new(0, 0, 0),
-		font,
-		90,
-		1,
-		0.3,
-		0
-	)
-	Image.draw(spritesheet, 40 + 14 + intraFont.textW(font, ui.select, 0.3) + 10, 233, 14, 14, nil, 384, 0, 15, 15)
-	intraFont.printShadowed(
-		38 + 14 + intraFont.textW(font, ui.select, 0.3) + 10 + 14 + 5,
-		234,
-		ui.previous_menu,
-		Color.new(255, 255, 255),
-		Color.new(0, 0, 0),
-		font,
-		90,
-		1,
-		0.3,
-		0
-	)
+Image.draw(spritesheet, 61 - 16, 233, 13, 13, nil, 399, 0, 15, 15)
+
+intraFont.printShadowed(
+    61,
+    233,
+    ui.select,
+    Color.new(255, 255, 255),
+    Color.new(0, 0, 0),
+    font,
+    90,
+    1,
+    0.27,
+    0
+)
+
+Image.draw(spritesheet, 61 + intraFont.textW(font, ui.select, 0.3) + 10, 233, 13, 13, nil, 384, 0, 15, 15)
+
+intraFont.printShadowed(
+    61 + intraFont.textW(font, ui.select, 0.3) + 10 + 16,
+    234,
+    ui.previous_menu,
+    Color.new(255, 255, 255),
+    Color.new(0, 0, 0),
+    font,
+    90,
+    1,
+    0.27,
+    0
+)
 	end
 	screen.flip()
 end

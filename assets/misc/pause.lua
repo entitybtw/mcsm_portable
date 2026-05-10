@@ -147,10 +147,10 @@ while true do
 	)
 	Image.draw(
 		spritesheet,
-		240 - intraFont.textW(font, ui.resume_game, 0.3) / 2 - 8,
+		240 - intraFont.textW(font, ui.resume_game, 0.27) / 2 - 8,
 		233 + 13,
-		14,
-		14,
+		13,
+		13,
 		nil,
 		384,
 		0,
@@ -158,7 +158,7 @@ while true do
 		15
 	)
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, ui.resume_game, 0.3) / 2 + 8,
+		240 - intraFont.textW(font, ui.resume_game, 0.27) / 2 + 8,
 		233 + 14,
 		ui.resume_game,
 		Color.new(255, 255, 255),
@@ -166,7 +166,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		0.27,
 		0
 	)
 	end
