@@ -13,17 +13,24 @@ local buttonSprites = {
 }
 
 local function drawButtons()
-	local startX, startY, gap, scale = 150, 40, 3, 0.3
+	local startX, startY, gap = 175, 40, 3
+	local buttonScale = 0.75  -- Масштаб кнопок
+	local textScale = 0.3 * buttonScale  -- Масштаб текста пропорционально кнопкам
+
 	for i, button in ipairs(buttonsList) do
 		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
-		local y = startY + (i - 1) * (sprite.srch + gap)
+		
+		-- Масштабируем размеры спрайтов
+		local scaledWidth = sprite.srcw * buttonScale + 3
+		local scaledHeight = sprite.srch * buttonScale + 3
+		local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
 
 		Image.draw(
 			spritesheet,
 			startX,
 			y,
-			sprite.srcw,
-			sprite.srch,
+			scaledWidth,
+			scaledHeight,
 			nil,
 			sprite.srcx,
 			sprite.srcy,
@@ -34,21 +41,22 @@ local function drawButtons()
 			nil
 		)
 
+		-- Формируем текст с состоянием ON/OFF
 		local label = button.text .. ": " .. (button.state and "ON" or "OFF")
 		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-		local textWidth = intraFont.textW(font, label, scale)
-		local textHeight = intraFont.textH(font) * scale
+		local textWidth = intraFont.textW(font, label, textScale)
+		local textHeight = intraFont.textH(font) * textScale
 
 		intraFont.printShadowed(
-			startX + (sprite.srcw - textWidth) / 2,
-			y + (sprite.srch - textHeight) / 4,
+			startX + (scaledWidth - textWidth) / 2,
+			y + (scaledHeight - textHeight) / 4,
 			label,
 			textColor,
 			Color.new(0, 0, 0),
 			font,
 			90,
 			1,
-			scale,
+			textScale,
 			0
 		)
 	end

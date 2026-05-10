@@ -18,45 +18,52 @@ local buttonSprites = {
 }
 
 local function drawButtons()
-	local startX, startY, gap = 150, 40, 3
-	for i, button in ipairs(buttonsList) do
-		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
-		local y = startY + (i - 1) * (sprite.srch + gap)
+    local startX, startY, gap = 175, 40, 3
+    local buttonScale = 0.75  -- Добавьте масштабирование кнопок
 
-		Image.draw(
-			spritesheet,
-			startX,
-			y,
-			sprite.srcw,
-			sprite.srch,
-			nil,
-			sprite.srcx,
-			sprite.srcy,
-			sprite.srcw,
-			sprite.srch,
-			nil,
-			nil,
-			nil
-		)
+    for i, button in ipairs(buttonsList) do
+        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+        
+        -- Масштабируем размеры спрайтов
+        local scaledWidth = sprite.srcw * buttonScale + 3
+        local scaledHeight = sprite.srch * buttonScale + 3
+        local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
 
-		local scale = 0.3
-		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-		local textWidth = intraFont.textW(font, button.text, scale)
-		local textHeight = intraFont.textH(font) * scale
+        Image.draw(
+            spritesheet,
+            startX,
+            y,
+            scaledWidth,
+            scaledHeight,
+            nil,
+            sprite.srcx,
+            sprite.srcy,
+            sprite.srcw,
+            sprite.srch,
+            nil,
+            nil,
+            nil
+        )
 
-		intraFont.printShadowed(
-			startX + (sprite.srcw - textWidth) / 2,
-			y + (sprite.srch - textHeight) / 4,
-			button.text,
-			textColor,
-			Color.new(0, 0, 0),
-			font,
-			90,
-			1,
-			scale,
-			0
-		)
-	end
+        -- Увеличиваем масштаб текста пропорционально
+        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
+        local textWidth = intraFont.textW(font, button.text, textScale)
+        local textHeight = intraFont.textH(font) * textScale
+
+        intraFont.printShadowed(
+            startX + (scaledWidth - textWidth) / 2,
+            y + (scaledHeight - textHeight) / 4,
+            button.text,
+            textColor,
+            Color.new(0, 0, 0),
+            font,
+            90,
+            1,
+            textScale,
+            0
+        )
+    end
 end
 
 while true do
