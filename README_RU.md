@@ -10,6 +10,8 @@
 [![Simple Localize](https://img.shields.io/badge/Simple-Localize-green?labelColor=5e5e5e)](https://simplelocalize.io/suggestions/?id=e2fbe6bc389540e680d62f12ee00f0cd)
 [![extras](https://img.shields.io/badge/extras-orange)](https://github.com/entitybtw/mcsm_portable_extras)
 
+Исходный репозиторий перенесен на [entbtw git (^_^)](https://git.entitybtw.ru/entitybtw/mcsm_portable). Я по-прежнему отслеживаю жалобы, пулл-реквесты и т.д. на GitHub. Все коммиты на Codeberg, GitLab и GitHub зеркалируются из [entbtw git (^_^)](https://git.entitybtw.ru/entitybtw/mcsm_portable)
+
 Порт Minecraft Story Mode: Сезон 1 Netflix Edition для PSP.
 
 Это фанатский порт Minecraft: Story Mode.
