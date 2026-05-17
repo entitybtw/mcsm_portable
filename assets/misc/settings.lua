@@ -14,7 +14,7 @@ local buttonSprites = {
 
 local function drawButtons()
     local startX, startY, gap = 45, 50, 3
-    local buttonScale = 0.75  
+    local buttonScale = 0.75 
 
     for i, button in ipairs(buttonsList) do
         local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
@@ -39,7 +39,7 @@ local function drawButtons()
             nil
         )
 
-        local textScale = 0.3 * buttonScale  
+        local textScale = 1 * buttonScale  
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
@@ -53,7 +53,7 @@ local function drawButtons()
             font,
             90,
             1,
-            textScale,
+            1,
             0
         )
     end
@@ -116,7 +116,7 @@ while true do
 	drawButtons()
 
 	debugoverlay.draw(debugoverlay.loadSettings())
-	intraFont.printShadowed(45, 35, ui.settings, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+	intraFont.printShadowed(45, 35, ui.settings, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
 Image.draw(spritesheet, 61 - 16, 233, 13, 13, nil, 399, 0, 15, 15)
 
 intraFont.printShadowed(
@@ -128,14 +128,14 @@ intraFont.printShadowed(
     font,
     90,
     1,
-    0.27,
+    1,
     0
 )
 
-Image.draw(spritesheet, 61 + intraFont.textW(font, ui.select, 0.3) + 10, 233, 13, 13, nil, 384, 0, 15, 15)
+Image.draw(spritesheet, 61 + intraFont.textW(font, ui.select, 1) + 10, 233, 13, 13, nil, 384, 0, 15, 15)
 
 intraFont.printShadowed(
-    61 + intraFont.textW(font, ui.select, 0.3) + 10 + 16,
+    61 + intraFont.textW(font, ui.select, 1) + 10 + 16,
     234,
     ui.previous_menu,
     Color.new(255, 255, 255),
@@ -143,7 +143,7 @@ intraFont.printShadowed(
     font,
     90,
     1,
-    0.27,
+    1,
     0
 )
 	end

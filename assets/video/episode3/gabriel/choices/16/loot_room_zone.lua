@@ -36,56 +36,56 @@ while in_interactive_zone do
 	if not button_used then
 		Image.draw(spritesheet, 224, 64, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			224 - intraFont.textW(font, choices_three.button, 0.4) / 2 + 8,
+			224 - intraFont.textW(font, choices_three.button, 1.5) / 2 + 8,
 			64 + 14,
 			choices_three.button,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	elseif button_used then
 		Image.draw(spritesheet, 321, 131, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			321 - intraFont.textW(font, choices_three.chest, 0.4) / 2 + 8,
+			321 - intraFont.textW(font, choices_three.chest, 1.5) / 2 + 8,
 			131 + 14,
 			choices_three.chest,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 
 	if not olivia_talk then
 		Image.draw(spritesheet, 171, 132, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			171 - intraFont.textW(font, choices_three.olivia, 0.4) / 2 + 8,
+			171 - intraFont.textW(font, choices_three.olivia, 1.5) / 2 + 8,
 			132 + 14,
 			choices_three.olivia,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 	if not lukas_talk then
 		Image.draw(spritesheet, 277, 80, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			277 - intraFont.textW(font, choices_three.lukas, 0.4) / 2 + 8,
+			277 - intraFont.textW(font, choices_three.lukas, 1.5) / 2 + 8,
 			80 + 14,
 			choices_three.lukas,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 	if not axel_talk then
 		Image.draw(spritesheet, 341, 195, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			341 - intraFont.textW(font, choices_three.axel, 0.4) / 2 + 8,
+			341 - intraFont.textW(font, choices_three.axel, 1.5) / 2 + 8,
 			195 + 14,
 			choices_three.axel,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 

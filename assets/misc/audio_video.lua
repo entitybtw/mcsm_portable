@@ -26,7 +26,7 @@ end
 
 loadSubtitles()
 
-local subssizeOptions = { 0.35, 0.4, 0.415 }
+local subssizeOptions = { 1, 1.4, 1.415 }
 local subssizeIndex = 2
 for i, v in ipairs(subssizeOptions) do
 	if v == subssize then
@@ -136,7 +136,7 @@ local function drawSlider(slider, isSelected, y)
 		nil
 	)
 
-	local scale = 0.27
+	local scale = 1
 	local text = slider.name .. ": " .. tostring(slider.level)
 	local tw = intraFont.textW(font, text, scale)
 	local th = intraFont.textH(font) * scale
@@ -188,7 +188,7 @@ local function drawToggle(text, stateText, isSelected, y)
 		nil
 	)
 
-	local scale = 0.3
+	local scale = 1
 	local fullText = text .. ": " .. stateText
 	local tw = intraFont.textW(font, fullText, scale)
 	local th = intraFont.textH(font) * scale
@@ -211,7 +211,7 @@ local function drawui()
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 
@@ -233,7 +233,7 @@ local function drawui()
 	end
 
 	if hintText then
-		intraFont.printShadowed(43, 220, hintText, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+		intraFont.printShadowed(43, 220, hintText, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
 	end
 end
 
@@ -253,7 +253,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 

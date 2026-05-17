@@ -26,7 +26,7 @@ end
 
 loadSubtitles()
 
-local subssizeOptions = { 0.35, 0.4, 0.415 }
+local subssizeOptions = { 1, 1.4, 1.415 }
 local subssizeIndex = 2
 for i, v in ipairs(subssizeOptions) do
 	if v == subssize then
@@ -136,7 +136,7 @@ local function drawSlider(slider, isSelected, y)
 		nil
 	)
 
-	local scale = 0.27
+	local scale = 1
 	local text = slider.name .. ": " .. tostring(slider.level)
 	local tw = intraFont.textW(font, text, scale)
 	local th = intraFont.textH(font) * scale
@@ -188,7 +188,7 @@ local function drawToggle(text, stateText, isSelected, y)
 		nil
 	)
 
-	local scale = 0.3
+	local scale = 1
 	local fullText = text .. ": " .. stateText
 	local tw = intraFont.textW(font, fullText, scale)
 	local th = intraFont.textH(font) * scale
@@ -203,7 +203,7 @@ end
 
 local function drawui()
 	intraFont.printShadowed(
-		230 - intraFont.textW(font, ui.audiovideotext, 0.3) / 2 + 14,
+		230 - intraFont.textW(font, ui.audiovideotext, 1) / 2 + 14,
 		25,
 		ui.audiovideotext,
 		Color.new(255, 255, 255),
@@ -211,7 +211,7 @@ local function drawui()
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 
@@ -235,7 +235,7 @@ local function drawui()
 	if hintText then
 		intraFont.setStyle(font, 0.6, Color.new(255, 255, 255), 0, intraFont.ALIGN_CENTER)
 		intraFont.printShadowed(
-			238 - intraFont.textW(font, hintText, 0.3) / 2 + 8,
+			238 - intraFont.textW(font, hintText, 1) / 2 + 8,
 			220 + 14,
 			hintText,
 			Color.new(255, 255, 255),
@@ -243,7 +243,7 @@ local function drawui()
 			font,
 			90,
 			1,
-			0.3,
+			1,
 			0
 		)
 	end
@@ -256,7 +256,7 @@ while true do
 	if ui_enabled then
 	Image.draw(
 		spritesheet,
-		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 2,
+		240 - intraFont.textW(font, ui.previous_menu, 1) / 2 - 2,
 		233 + 13,
 		14,
 		14,
@@ -267,7 +267,7 @@ while true do
 		15
 	)
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 + 14,
+		240 - intraFont.textW(font, ui.previous_menu, 1) / 2 + 14,
 		233 + 14,
 		ui.previous_menu,
 		Color.new(255, 255, 255),
@@ -275,7 +275,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 

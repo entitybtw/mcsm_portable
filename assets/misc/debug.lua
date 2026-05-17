@@ -44,7 +44,7 @@ local function drawButtons()
         local label = button.text .. ": " .. (button.state and "ON" or "OFF")
         
         -- Увеличиваем масштаб текста пропорционально
-        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textScale = 1 * buttonScale  -- Было 1
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, label, textScale)
         local textHeight = intraFont.textH(font) * textScale
@@ -58,7 +58,7 @@ local function drawButtons()
             font,
             90,
             1,
-            textScale,
+            1,
             0
         )
     end
@@ -161,7 +161,7 @@ while true do
 	if ui_enabled then
 	drawButtons()
 	drawSystemInfo()
-	intraFont.printShadowed(45, 35, ui.debug_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.3, 0)
+	intraFont.printShadowed(45, 35, ui.debug_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
 	Image.draw(spritesheet, 45, 233, 13, 13, nil, 384, 0, 15, 15)
 
 intraFont.printShadowed(
@@ -173,7 +173,7 @@ intraFont.printShadowed(
     font,
     90,
     1,
-    0.27,
+    1,
     0
 )
 	end

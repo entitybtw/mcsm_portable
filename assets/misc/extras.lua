@@ -69,8 +69,8 @@ local function drawButtons()
             sprite.srcw, sprite.srch
         )
         
-        local textScaleX = 0.3 * buttonGlobalScaleX
-        local textScaleY = 0.3 * finalScaleY
+        local textScaleX = 1 * buttonGlobalScaleX
+        local textScaleY = 1 * finalScaleY
         
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScaleX)
@@ -94,7 +94,7 @@ local function drawButtons()
             textColor,
             Color.new(0, 0, 0),
             font, 90, 1,
-            textScaleX, textScaleY
+            1
         )
     end
 end
@@ -114,13 +114,13 @@ while fade > 0 do
             250, 30, ui.header,
             Color.new(255, 255, 153),
             Color.new(0, 0, 0),
-            font, 90, 1, 0.35, 0
+            font, 90, 1, 1, 0
         )
         intraFont.printShadowed(
             250, 50, ui.description,
             Color.new(255, 255, 255),
             Color.new(0, 0, 0),
-            font, 90, 1, 0.35, 0
+            font, 90, 1, 1, 0
         )
         drawButtons()
     end
@@ -141,7 +141,7 @@ intraFont.printShadowed(
 	font,
 	90,
 	1,
-	0.35,
+	1,
 	0
 	)
 intraFont.printShadowed(
@@ -153,7 +153,7 @@ intraFont.printShadowed(
 	font,
 	90,
 	1,
-	0.35,
+	1,
 	0
 	)
 	drawButtons()
@@ -168,7 +168,7 @@ if extras then
 	font,
 	90,
 	1,
-	0.35,
+	1,
 	0
 	)
 	drawButtons()
@@ -176,7 +176,7 @@ if extras then
 	Image.draw(extras_img, 250, 50, 70, 70)
 
 	intraFont.printShadowed(
-		270 - intraFont.textW(font, ui.extras, 0.3) / 2 + 14,
+		270 - intraFont.textW(font, ui.extras, 1) / 2 + 14,
 		123,
 		ui.extras,
 		Color.new(255, 255, 255),
@@ -184,12 +184,12 @@ if extras then
 		font,
 		90,
 		1,
-		0.35,
+		1,
 		0
 	)
 
 	intraFont.printShadowed(
-		370 - intraFont.textW(font, ui.support, 0.3) / 2 + 14,
+		370 - intraFont.textW(font, ui.support, 1) / 2 + 14,
 		123,
 		ui.support,
 		Color.new(255, 255, 255),
@@ -197,7 +197,7 @@ if extras then
 		font,
 		90,
 		1,
-		0.35,
+		1,
 		0
 	)
 end
@@ -211,7 +211,7 @@ if mirrors then
 	font,
 	90,
 	1,
-	0.35,
+	1,
 	0
 	)
 	drawButtons()
@@ -221,7 +221,7 @@ if mirrors then
 	Image.draw(gitlab, 415, 60, 60, 60)
 
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, ui.entbtwgit, 0.3) / 2 + 14,
+		240 - intraFont.textW(font, ui.entbtwgit, 1) / 2 + 14,
 		120,
 		ui.entbtwgit,
 		Color.new(255, 255, 255),
@@ -229,12 +229,12 @@ if mirrors then
 		font,
 		90,
 		1,
-		0.25,
+		1,
 		0
 	)
 
 	intraFont.printShadowed(
-		305 - intraFont.textW(font, ui.github, 0.3) / 2 + 14,
+		305 - intraFont.textW(font, ui.github, 1) / 2 + 14,
 		120,
 		ui.github,
 		Color.new(255, 255, 255),
@@ -242,12 +242,12 @@ if mirrors then
 		font,
 		90,
 		1,
-		0.25,
+		1,
 		0
 	)
 
 	intraFont.printShadowed(
-		370 - intraFont.textW(font, ui.codeberg, 0.3) / 2 + 14,
+		370 - intraFont.textW(font, ui.codeberg, 1) / 2 + 14,
 		120,
 		ui.codeberg,
 		Color.new(255, 255, 255),
@@ -255,12 +255,12 @@ if mirrors then
 		font,
 		90,
 		1,
-		0.25,
+		1,
 		0
 	)
 
 	intraFont.printShadowed(
-		435 - intraFont.textW(font, ui.gitlab, 0.3) / 2 + 14,
+		435 - intraFont.textW(font, ui.gitlab, 1) / 2 + 14,
 		120,
 		ui.gitlab,
 		Color.new(255, 255, 255),
@@ -268,7 +268,7 @@ if mirrors then
 		font,
 		90,
 		1,
-		0.25,
+		1,
 		0
 	)
 end

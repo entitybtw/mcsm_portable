@@ -31,56 +31,56 @@ while in_interactive_zone do
 	if not smoke_trail_used then
 		Image.draw(spritesheet, 257, 136, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			257 - intraFont.textW(font, choices_one.smoke_trail, 0.4) / 2 + 8,
+			257 - intraFont.textW(font, choices_one.smoke_trail, 1.5) / 2 + 8,
 			136 + 14,
 			choices_one.smoke_trail,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	elseif smoke_trail_used then
 		Image.draw(spritesheet, 201, 130, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			201 - intraFont.textW(font, choices_one.tall_grass, 0.4) / 2 + 8,
+			201 - intraFont.textW(font, choices_one.tall_grass, 1.5) / 2 + 8,
 			130 + 14,
 			choices_one.tall_grass,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 
 	if not pigs_used then
 		Image.draw(spritesheet, 389, 193, 15, 15, nil, 430, 0, 15, 15)
 		intraFont.print(
-			389 - intraFont.textW(font, choices_one.pigs, 0.4) / 2 + 8,
+			389 - intraFont.textW(font, choices_one.pigs, 1.5) / 2 + 8,
 			193 + 14,
 			choices_one.pigs,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 	if not bush_used then
 		Image.draw(spritesheet, 88, 63, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			88 - intraFont.textW(font, choices_one.bush, 0.4) / 2 + 8,
+			88 - intraFont.textW(font, choices_one.bush, 1.5) / 2 + 8,
 			63 + 14,
 			choices_one.bush,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 	if not water_well_used then
 		Image.draw(spritesheet, 95, 167, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			95 - intraFont.textW(font, choices_one.water_well, 0.4) / 2 + 8,
+			95 - intraFont.textW(font, choices_one.water_well, 1.5) / 2 + 8,
 			167 + 14,
 			choices_one.water_well,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 

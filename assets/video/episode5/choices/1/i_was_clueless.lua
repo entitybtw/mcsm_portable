@@ -18,16 +18,16 @@ if result == 1 then
 end
 Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
 Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_five.what_is_this, Color.new(255, 255, 255), font, 0.4)
+intraFont.print(45, 127, choices_five.what_is_this, Color.new(255, 255, 255), font, 2)
 intraFont.print(
-	450 - intraFont.textW(font, choices_five.its_mine_now, 0.4),
+	450 - intraFont.textW(font, choices_five.its_mine_now, 2),
 	127,
 	choices_five.its_mine_now,
 	Color.new(255, 255, 255),
 	font,
-	0.4
+	2
 )
-intraFont.print(240 - intraFont.textW(font, ui.save, 0.63) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 0.63)
+intraFont.print(240 - intraFont.textW(font, ui.save, 2) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 2)
 debugoverlay.draw(debugoverlay.loadSettings())
 screen.flip()
 

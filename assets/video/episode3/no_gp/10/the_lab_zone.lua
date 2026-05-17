@@ -33,66 +33,66 @@ while in_interactive_zone do
 	if not exit1_used and not chest_used or area_1_search and area_2_search and upstairs_search then
 		Image.draw(spritesheet, 445, 179, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			445 - intraFont.textW(font, choices_three.exit, 0.4) / 2 + 8,
+			445 - intraFont.textW(font, choices_three.exit, 1.5) / 2 + 8,
 			179 + 14,
 			choices_three.exit,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	elseif chest_used and not upstairs_search then
 		Image.draw(spritesheet, 344, 31, 15, 15, nil, 399, 0, 15, 15)
 		intraFont.print(
-			344 - intraFont.textW(font, choices_three.search_upstairs, 0.4) / 2 + 8,
+			344 - intraFont.textW(font, choices_three.search_upstairs, 1.5) / 2 + 8,
 			31 + 14,
 			choices_three.search_upstairs,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 
 	if not area_1_search and chest_used then
 		Image.draw(spritesheet, 144, 170, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			144 - intraFont.textW(font, choices_three.search_area1, 0.4) / 2 + 8,
+			144 - intraFont.textW(font, choices_three.search_area1, 1.5) / 2 + 8,
 			170 + 14,
 			choices_three.search_area1,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	elseif not olivia_talk then
 		Image.draw(spritesheet, 62, 203, 15, 15, nil, 414, 0, 15, 15)
 		intraFont.print(
-			62 - intraFont.textW(font, choices_three.olivia, 0.4) / 2 + 8,
+			62 - intraFont.textW(font, choices_three.olivia, 1.5) / 2 + 8,
 			203 + 14,
 			choices_three.olivia,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 
 	if not area_2_search and chest_used then
 		Image.draw(spritesheet, 310, 177, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			310 - intraFont.textW(font, choices_three.search_area2, 0.4) / 2 + 8,
+			310 - intraFont.textW(font, choices_three.search_area2, 1.5) / 2 + 8,
 			177 + 14,
 			choices_three.search_area2,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	elseif not chest_used then
 		Image.draw(spritesheet, 155, 171, 15, 15, nil, 384, 0, 15, 15)
 		intraFont.print(
-			155 - intraFont.textW(font, choices_three.chest, 0.4) / 2 + 8,
+			155 - intraFont.textW(font, choices_three.chest, 1.5) / 2 + 8,
 			171 + 14,
 			choices_three.chest,
 			Color.new(255, 255, 255),
 			font,
-			0.4
+			1.5
 		)
 	end
 

@@ -11,6 +11,8 @@ local welsel = false
 videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
 ui_enabled = true
 
+local colorWhite = Color.new(255, 255, 255)
+
 local timered = timer.create()
 local welanim_duration = timer.create()
 
@@ -71,14 +73,14 @@ local function drawButtons()
             nil
         )
 
-        local textScale = 0.3 * buttonScale
-        local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
+        local textScale = 1
+        local textColor = (i == selectedButton) and Color.new(255, 255, 153) or colorWhite
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
 
         intraFont.printShadowed(
-            startX + (scaledWidth - textWidth) / 2,
-            y + (scaledHeight - textHeight) / 4,
+            math.floor(startX + (scaledWidth - textWidth) / 2),
+            math.floor(y + (scaledHeight - textHeight) / 2),
             button.text,
             textColor,
             Color.new(0, 0, 0),
@@ -88,13 +90,14 @@ local function drawButtons()
             textScale,
             0
         )
+
     end
 end
 
 local function drawAll()
 		drawButtons()
-		Image.draw(spritesheet, arrowX, 85, 11, 19, nil, 444, 0, 7, 11)
-		Image.draw(spritesheet, arrowX, 133, 11, 19, nil, 444, 0, 7, 11)
+		Image.draw(spritesheet, arrowX, 85, 22, 38, colorWhite, 444, 0, 11, 19)
+		Image.draw(spritesheet, arrowX, 133, 22, 38, colorWhite, 444, 0, 11, 19)
 
 		local welcolor = 255
 		if welsel then
@@ -120,7 +123,7 @@ local function drawAll()
 			font,
 			90,
 			1,
-			0.209,
+			1,
 			0
 		)
 		intraFont.printShadowed(
@@ -132,10 +135,10 @@ local function drawAll()
 			font,
 			90,
 			1,
-			0.17,
+			1,
 			0
 		)
-		intraFont.printShadowed(61, 237, ui.select, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 0.27, 0)
+		intraFont.printShadowed(61, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 90, 1, 1, 0)
 		Image.draw(spritesheet, 45, 233, 13, 13, nil, 399, 0, 15, 15)
 		debugoverlay.draw(debugoverlay.loadSettings())
 end

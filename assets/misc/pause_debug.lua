@@ -15,7 +15,7 @@ local buttonSprites = {
 local function drawButtons()
 	local startX, startY, gap = 175, 40, 3
 	local buttonScale = 0.75  -- Масштаб кнопок
-	local textScale = 0.3 * buttonScale  -- Масштаб текста пропорционально кнопкам
+	local textScale = 1 * buttonScale  -- Масштаб текста пропорционально кнопкам
 
 	for i, button in ipairs(buttonsList) do
 		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
@@ -44,19 +44,19 @@ local function drawButtons()
 		-- Формируем текст с состоянием ON/OFF
 		local label = button.text .. ": " .. (button.state and "ON" or "OFF")
 		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-		local textWidth = intraFont.textW(font, label, textScale)
-		local textHeight = intraFont.textH(font) * textScale
+		local textWidth = intraFont.textW(font, label, 1)
+		local textHeight = intraFont.textH(font) * 1
 
 		intraFont.printShadowed(
-			startX + (scaledWidth - textWidth) / 2,
-			y + (scaledHeight - textHeight) / 4,
+			math.floor(startX + (scaledWidth - textWidth) / 2),
+			math.floor(y + (scaledHeight - textHeight) / 4),
 			label,
 			textColor,
 			Color.new(0, 0, 0),
 			font,
 			90,
 			1,
-			textScale,
+			1,
 			0
 		)
 	end
@@ -161,7 +161,7 @@ while true do
 	drawButtons()
 	drawSystemInfo()
 	intraFont.printShadowed(
-		230 - intraFont.textW(font, ui.debug_menu, 0.3) / 2 + 14,
+		230 - intraFont.textW(font, ui.debug_menu, 1) / 2 + 14,
 		25,
 		ui.debug_menu,
 		Color.new(255, 255, 255),
@@ -169,12 +169,12 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	Image.draw(
 		spritesheet,
-		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 2,
+		240 - intraFont.textW(font, ui.previous_menu, 1) / 2 - 2,
 		233 + 13,
 		14,
 		14,
@@ -185,7 +185,7 @@ while true do
 		15
 	)
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 + 14,
+		240 - intraFont.textW(font, ui.previous_menu, 1) / 2 + 14,
 		233 + 14,
 		ui.previous_menu,
 		Color.new(255, 255, 255),
@@ -193,7 +193,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 end

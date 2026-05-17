@@ -46,7 +46,7 @@ while true do
 	
 	Image.draw(
 		spritesheet,
-		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 - 8,
+		240 - intraFont.textW(font, ui.previous_menu, 1) / 2 - 8,
 		233 + 13,
 		14,
 		14,
@@ -59,7 +59,7 @@ while true do
 		imgfade
 	)
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, ui.previous_menu, 0.3) / 2 + 8,
+		240 - intraFont.textW(font, ui.previous_menu, 1) / 2 + 8,
 		233 + 14,
 		ui.previous_menu,
 		Color.new(255, 255, 255, imgfade),
@@ -67,7 +67,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	intraFont.printShadowed(
@@ -79,7 +79,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	intraFont.printShadowed(
@@ -91,7 +91,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	intraFont.printShadowed(
@@ -103,7 +103,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	intraFont.printShadowed(
@@ -115,11 +115,11 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	intraFont.printShadowed(
-		280 - intraFont.textW(font, ui.pause_game, 0.3) / 2 + 8,
+		280 - intraFont.textW(font, ui.pause_game, 1) / 2 + 8,
 		193 + 14,
 		ui.pause_game,
 		Color.new(255, 255, 255, imgfade),
@@ -127,7 +127,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	intraFont.printShadowed(
@@ -139,7 +139,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 

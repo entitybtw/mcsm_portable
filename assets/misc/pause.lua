@@ -46,7 +46,7 @@ local function drawButtons()
         )
 
         -- Увеличиваем масштаб текста пропорционально
-        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textScale = 1 * buttonScale  -- Было 1
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
@@ -134,7 +134,7 @@ while true do
 	drawButtons()
 	debugoverlay.draw(debugoverlay.loadSettings())
 	intraFont.printShadowed(
-		230 - intraFont.textW(font, ui.paused, 0.3) / 2 + 14,
+		230 - intraFont.textW(font, ui.paused, 1) / 2 + 14,
 		25,
 		ui.paused,
 		Color.new(255, 255, 255),
@@ -142,12 +142,12 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	Image.draw(
 		spritesheet,
-		240 - intraFont.textW(font, ui.resume_game, 0.27) / 2 - 8,
+		240 - intraFont.textW(font, ui.resume_game, 1) / 2 - 8,
 		233 + 13,
 		13,
 		13,
@@ -158,7 +158,7 @@ while true do
 		15
 	)
 	intraFont.printShadowed(
-		240 - intraFont.textW(font, ui.resume_game, 0.27) / 2 + 8,
+		240 - intraFont.textW(font, ui.resume_game, 1) / 2 + 8,
 		233 + 14,
 		ui.resume_game,
 		Color.new(255, 255, 255),
@@ -166,7 +166,7 @@ while true do
 		font,
 		90,
 		1,
-		0.27,
+		1,
 		0
 	)
 	end

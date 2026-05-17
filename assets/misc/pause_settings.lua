@@ -39,7 +39,7 @@ local function drawButtons()
         )
 
         -- Увеличиваем масштаб текста пропорционально
-        local textScale = 0.3 * buttonScale  -- Было 0.3
+        local textScale = 1 * buttonScale  -- Было 1
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
@@ -109,7 +109,7 @@ while true do
 	if ui_enabled then
 	drawButtons()
 	intraFont.printShadowed(
-		230 - intraFont.textW(font, ui.settings, 0.3) / 2 + 14,
+		230 - intraFont.textW(font, ui.settings, 1) / 2 + 14,
 		25,
 		ui.settings,
 		Color.new(255, 255, 255),
@@ -117,12 +117,12 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	Image.draw(
 		spritesheet,
-		240 - (14 + intraFont.textW(font, ui.select, 0.27) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2,
+		240 - (14 + intraFont.textW(font, ui.select, 1) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 1)) / 2,
 		246,
 		13,
 		13,
@@ -134,7 +134,7 @@ while true do
 	)
 	intraFont.printShadowed(
 		240
-			- (14 + intraFont.textW(font, ui.select, 0.27) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 1) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 1)) / 2
 			+ 14
 			+ 5,
 		247,
@@ -144,15 +144,15 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 	Image.draw(
 		spritesheet,
 		240
-			- (14 + intraFont.textW(font, ui.select, 0.27) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 1) + 7 + 14 + intraFont.textW(font, ui.previous_menu, 1)) / 2
 			+ 14
-			+ intraFont.textW(font, ui.select, 0.3)
+			+ intraFont.textW(font, ui.select, 1)
 			+ 10,
 		246,
 		13,
@@ -165,9 +165,9 @@ while true do
 	)
 	intraFont.printShadowed(
 		240
-			- (14 + intraFont.textW(font, ui.select, 0.27) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 0.3)) / 2
+			- (14 + intraFont.textW(font, ui.select, 1) + 10 + 14 + intraFont.textW(font, ui.previous_menu, 1)) / 2
 			+ 14
-			+ intraFont.textW(font, ui.select, 0.3)
+			+ intraFont.textW(font, ui.select, 1)
 			+ 10
 			+ 14
 			+ 5,
@@ -178,7 +178,7 @@ while true do
 		font,
 		90,
 		1,
-		0.3,
+		1,
 		0
 	)
 end
