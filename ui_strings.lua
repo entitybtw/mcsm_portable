@@ -652,7 +652,7 @@ ui = {
 	loading_5 = "Finishing up...",
 
 	header = "a star would be awesome :)",
-	description = "i spend a lot of time on this\n\nproject,\n\n\n\ni really appreciate your \n\nsupport and activity :3",
+	description = "i spend a lot of time on this\n\n\n\nproject,\n\n\n\n\n\ni really appreciate your \n\n\n\nsupport and activity :3",
 
 	extras = "Extras",
 	extras_support = "extras / support me",
@@ -662,5 +662,5 @@ ui = {
 	github = "GitHub",
 	codeberg = "Codeberg",
 	gitlab = "GitLab",
-	entbtwgit = "entbtwgit\n\n   (^_^)"
+	entbtwgit = "entbtwgit\n\n\n\n   (^_^)"
 }

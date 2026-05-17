@@ -6,8 +6,9 @@ local rectfade = 0
 
 local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 local subtitles = io.open("assets/saves/subtitles.txt", "r")
-font = intraFont.load("assets/minecraft.pgf")
-subs_font = intraFont.load("assets/pexico.pgf")
+font = intraFont.load("assets/minecraft.ttf", 8)
+-- font = intraFont.load("assets/unifont.ttf", 7)
+subs_font = intraFont.load("assets/pexico.ttf", 10)
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
 require("ui_strings")
@@ -25,7 +26,7 @@ uiLevel = tonumber(soundlevels:read("*l"))
 
 if not subtitles then
 	subtitles = io.open("assets/saves/subtitles.txt", "w")
-	subtitles:write("true\n0.4")
+	subtitles:write("true\n1.4")
 	subtitles:close()
 	subtitles = io.open("assets/saves/subtitles.txt", "r")
 end
@@ -147,12 +148,12 @@ while PMP.getFrame(pointer) do
 			end
 
 			intraFont.print(
-				235 - intraFont.textW(font, ui.loading, 0.4) / 2 + 8,
+				235 - intraFont.textW(font, ui.loading, 1) / 2 + 8,
 				195 + 14,
 				ui.loading,
 				Color.new(255, 255, 255, textfade),
 				font,
-				0.4
+				1
 			)
 
 			local frame = loadingFrames[frameIndex]
@@ -163,12 +164,12 @@ while PMP.getFrame(pointer) do
 			if currentStep <= #loadingSequence then
 				local step = loadingSequence[currentStep]
 				intraFont.print(
-					235 - intraFont.textW(font, step.text, 0.3) / 2 + 8,
+					235 - intraFont.textW(font, step.text, 1) / 2 + 8,
 					222,
 					step.text,
 					Color.new(255, 255, 255, textfade),
 					font,
-					0.3
+					1
 				)
 
 				if os.clock() - stepTimer >= step.duration then
