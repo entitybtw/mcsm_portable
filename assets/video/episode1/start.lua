@@ -1,127 +1,53 @@
+-- Entry point for Episode 1 (epmenu checks this file exists via hasStart()).
+-- Handles save detection, intro text, then hands off to episode1.lua.
+
 local path = System.LoadData("assets/ui/saves_bg.png")
-local choosing = true
-local fade = 255
 if path then
 	PMP.setVolume(pmpvolume)
-	local result = PMP.playExt("assets/ui/loading.pmp")
+	local result = PMP.playExt("assets/ui/lsave.pmp")
 	if result == 1 then
 		nextscene = "./mainmenu.lua"
 		return 1
 	end
-	nextscene = path.data
-
-	local variablesFile = io.open("assets/saves/1_variables.txt", "r")
-	if variablesFile then
-		for line in variablesFile:lines() do
-			local key, value = line:match('^(%w+) = "([^"]+)"$')
-			if key and value then
-				_G[key] = value
-			end
+	local varFile = io.open("assets/saves/1_variables.txt", "r")
+	if varFile then
+		for line in varFile:lines() do
+			local k, v = line:match('^(%w+) = "([^"]+)"$')
+			if k and v then _G[k] = v end
 		end
-		variablesFile:close()
+		varFile:close()
 	end
+	nextscene = "assets/video/episode1/episode1.lua"
 	return 1
 end
 
+-- New game: fade-in story tagline
 PMP.setVolume(pmpvolume)
 local result = PMP.playExt("assets/ui/lsave.pmp")
 if result == 1 then
 	nextscene = "./mainmenu.lua"
 	return 1
 end
-local yourText = "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play"
-fade = 0
 
--- Fade in
+local tagline = "The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play"
+local tagX = 230 - intraFont.textW(font, tagline, 0.3) / 2 + 8
+local fade = 0
+
 while fade < 255 do
 	fade = math.min(fade + 8, 255)
 	screen.clear()
-	intraFont.print(
-		230
-			- intraFont.textW(
-				font,
-				"The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play",
-				0.3
-			) / 2
-			+ 8,
-		118 + 14,
-		"The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play",
-		Color.new(255, 255, 255, fade),
-		font,
-		0.3
-	)
+	intraFont.print(tagX, 118 + 14, tagline, Color.new(255, 255, 255, fade), font, 0.3)
 	screen.flip()
 	LUA.sleep(16)
 end
 LUA.sleep(2000)
-
--- Fade out
 while fade > 0 do
 	fade = math.max(fade - 8, 0)
 	screen.clear()
-	intraFont.print(
-		230
-			- intraFont.textW(
-				font,
-				"The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play",
-				0.3
-			) / 2
-			+ 8,
-		118 + 14,
-		"The game series adapts to the choices you make.\n\n\n          The story is tailored by how you play",
-		Color.new(255, 255, 255, fade),
-		font,
-		0.3
-	)
+	intraFont.print(tagX, 118 + 14, tagline, Color.new(255, 255, 255, fade), font, 0.3)
 	screen.flip()
 	LUA.sleep(16)
 end
 
-PMP.setVolume(pmpvolume)
-local result = PMP.playExt(
-	"assets/video/episode1/START.pmp",
-	buttons.r,
-	true,
-	"assets/subtitles/episode1/start.srt",
-	subs_font,
-	subssize,
-	"#FFFFFF",
-	"#000000/110",
-	subs
-)
-if result == 1 then
-	nextscene = "./mainmenu.lua"
-	return 1
-end
-
-Image.draw(spritesheet, 25, 127, 15, 15, nil, 414, 0, 15, 15)
-Image.draw(spritesheet, 455, 127, 15, 15, nil, 384, 0, 15, 15)
-intraFont.print(45, 127, choices_one.hundred_chicken_sized, Color.new(255, 255, 255), font, 2)
-intraFont.print(
-	450 - intraFont.textW(font, choices_one.ten_zombie_sized, 2),
-	127,
-	choices_one.ten_zombie_sized,
-	Color.new(255, 255, 255),
-	font,
-	2
-)
-intraFont.print(240 - intraFont.textW(font, ui.save, 2) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 2)
-debugoverlay.draw(debugoverlay.loadSettings())
-screen.flip()
-
-while choosing do
-	buttons.read()
-	if buttons.pressed(buttons.square) then
-		nextscene = "assets/video/episode1/100_chicken_sized.lua"
-		choosing = false
-	elseif buttons.pressed(buttons.circle) then
-		nextscene = "assets/video/episode1/10_zombie_sized.lua"
-		choosing = false
-	elseif buttons.pressed(buttons.start) then
-		choosing = false
-		local pause = dofile("assets/misc/pause.lua")
-		if pause == -1 then
-			nextscene = "./mainmenu.lua"
-		end
-	end
-end
+ep1_node = nil
+nextscene = "assets/video/episode1/episode1.lua"
