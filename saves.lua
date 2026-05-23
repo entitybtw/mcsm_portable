@@ -32,6 +32,7 @@ function SaveGame(episodeNumber)
 			reuben = reuben,
 			building = building,
 			sword = sword,
+			ep1_node = ep1_node,
 		}
 
 		local file, err = io.open(variablesFilePath, "w")
