@@ -13,13 +13,8 @@ if gp then
 		nextscene = path.data
 		return 1
 	end
-	if gp == "petra" then
-		nextscene = "assets/video/episode3/petra/start.lua"
-		return 1
-	elseif gp == "gabriel" then
-		nextscene = "assets/video/episode3/gabriel/start.lua"
-		return 1
-	end
+	nextscene = "assets/video/episode3/episode3.lua"
+	return 1
 else
 	while true do
 		screen.clear()
