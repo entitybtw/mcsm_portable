@@ -27,13 +27,8 @@ if em and gp and bf then
 		nextscene = path.data
 		return 1
 	end
-	if em == "ellegaard" then
-		nextscene = "assets/video/episode2/ellegaard/start.lua"
-		return 1
-	elseif em == "magnus" then
-		nextscene = "assets/video/episode2/magnus/start.lua"
-		return 1
-	end
+	nextscene = "assets/video/episode2/episode2.lua"
+	return 1
 else
 	while true do
 		screen.clear()
