@@ -22,13 +22,8 @@ if ema and gp then
 		return 1
 	end
 
-	if ema == "ellegaard" then
-		nextscene = "assets/video/episode4/ellegaard_" .. gp .. "/start.lua"
-		return 1
-	elseif ema == "magnus" then
-		nextscene = "assets/video/episode4/magnus_" .. gp .. "/start.lua"
-		return 1
-	end
+	nextscene = "assets/video/episode4/episode4.lua"
+	return 1
 else
 	while true do
 		screen.clear()
