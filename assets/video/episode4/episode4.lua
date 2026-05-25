@@ -81,7 +81,7 @@ local function zone_ivors()
 	local function pc(rel)
 		PMP.setVolume(pmpvolume)
 		local r = PMP.playExt(Bv .. rel .. ".pmp", buttons.r, true,
-			Bs .. rel .. ".srt", subs_font, subssize, "#FFFFFF", "#000000/110", subs)
+			Bs .. rel .. ".srt", font, subssize, "#FFFFFF", "#000000/110", subs)
 		System.GC()
 		if r == 1 then nextscene = "./mainmenu.lua"; in_zone = false end
 		return r == 1

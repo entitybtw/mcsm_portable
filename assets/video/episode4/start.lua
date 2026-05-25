@@ -71,7 +71,7 @@ else
 							wr("gp", gp)
 						end
 						if not emaexists then
-							wr("ema", em)
+							wr("ema", ema)
 						end
 
 						screen.flip()
