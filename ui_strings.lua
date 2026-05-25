@@ -168,7 +168,7 @@ choices_three = {
 	follow_lukas = "Follow Lukas",
 	follow_me = "Follow me",
 
-	im_hallucinating = "I'm hallucianting",
+	im_hallucinating = "I'm hallucinating",
 	its_beautiful = "It's beautiful",
 
 	lukas = "Lukas",
@@ -202,7 +202,7 @@ choices_three = {
 	not_really = "Not really",
 
 	break_the_fountain = "Break the fountain",
-	dont_look_at_them = "Don't look at then",
+	dont_look_at_them = "Don't look at them",
 
 	eyes_down = "Eyes down",
 	hold_onto_me = "Hold onto me",
@@ -223,7 +223,7 @@ choices_three = {
 	it_was_all_me = "It was all me",
 
 	please_dont_die = "Please don't die",
-	this_armor_is_yours = "This armor is your's",
+	this_armor_is_yours = "This armor is yours",
 
 	craft_sticky_piston = "Craft Sticky Piston",
 	craft_redstone_block = "Craft Redstone Block",
@@ -256,7 +256,7 @@ choices_five = {
 	redstone_rap = "Redstone Rap",
 	warrior_whip = "Warrior Whip",
 
-	way_a_head_of_you = "Way a head of you",
+	way_a_head_of_you = "Way ahead of you",
 	you_try_it_axel = "You try it, Axel",
 
 	dont_mess_with_me = "Don't mess with me",
@@ -268,7 +268,7 @@ choices_five = {
 	leave_it_alone = "Leave it alone",
 	tear_it_down = "Tear it down",
 
-	i_really_miss_him = "I realy miss him",
+	i_really_miss_him = "I really miss him",
 	i_still_feel_guilty = "I still feel guilty",
 
 	is_it_valuable = "Is it valuable?",
@@ -332,7 +332,7 @@ choices_five = {
 	the_people_need_it = "The people need it",
 	well_take_the_chicken = "We'll take the chicken",
 
-	back_lukas_up = "Bake Lukas up",
+	back_lukas_up = "Back Lukas up",
 	save_the_founder = "Save the Founder",
 
 	it_doesnt_matter = "It doesn't matter",
@@ -354,7 +354,7 @@ choices_five = {
 	you_should_rest = "You should rest",
 
 	im_glad_youre_okay = "I'm glad you're okay",
-	sorry_i_didnt_help = "Sorry i didn't help",
+	sorry_i_didnt_help = "Sorry I didn't help",
 
 	have_some_fun = "Have some fun",
 	take_it_slow = "Take it slow",
@@ -373,7 +373,7 @@ choices_five = {
 	supply_door = "Supply Door",
 
 	the_eversource_makes_eggs = "The eversource makes eggs",
-	these_generate_resources = "These generate resoures",
+	these_generate_resources = "These generate resources",
 
 	crafting_table = "Crafting Table",
 	gabriel = "Gabriel",
@@ -405,9 +405,6 @@ choices_two = {
 
 	leave_her_alone = "Leave her alone",
 	we_have_bigger_issues = "We have bigger issues",
-
-	lets_do_this = "Let's do this",
-	theres_no_time = "There's not time",
 
 	ellegaard_is_cool = "Ellegaard is cool",
 	you_need_to_get_along = "You need to get along",
@@ -447,7 +444,7 @@ choices_two = {
 	its_the_truth = "It's the truth",
 	you_dont_trust_me = "You don't trust me",
 
-	how_could_i_beat_you = "How could i beat you?s",
+	how_could_i_beat_you = "How could I beat you?",
 	then_id_be_stuck_here = "Then i'd be stuck here",
 
 	pink_wool = "Pink Wool",
