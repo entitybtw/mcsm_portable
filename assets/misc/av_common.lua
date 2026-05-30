@@ -88,7 +88,7 @@ local function drawSlider(slider, isSelected, y)
 	local tw = intraFont.textW(font, text, 1)
 	local th = intraFont.textH(font)
 	local color = isSelected and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-	intraFont.printShadowed(x + (179 - tw) / 2, math.floor(y + (37 - th) / 2), text, color, Color.new(0, 0, 0), font, 90, 1, 1, 0)
+	intraFont.printShadowed(x + (179 - tw) / 2, y + (37 - th) / 4, text, color, Color.new(0, 0, 0), font, 90, 1, 1, 0)
 	local pos = slider.positions[slider.level + 1]
 	local ss = isSelected and sliderSprites.selected or sliderSprites.static
 	Image.draw(spritesheet, pos.x, y, ss.srcw, ss.srch, nil, ss.srcx, ss.srcy, ss.srcw, ss.srch)
@@ -102,7 +102,7 @@ local function drawToggle(text, stateText, isSelected, y)
 	local tw = intraFont.textW(font, fullText, 1)
 	local th = intraFont.textH(font)
 	local color = isSelected and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-	intraFont.printShadowed(x + (179 - tw) / 2, math.floor(y + (37 - th) / 2), fullText, color, Color.new(0, 0, 0), font, 90, 1, 1, 0)
+	intraFont.printShadowed(x + (179 - tw) / 2, y + (37 - th) / 5, fullText, color, Color.new(0, 0, 0), font, 90, 1, 1, 0)
 end
 
 local function drawui()

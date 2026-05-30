@@ -21,7 +21,7 @@ local function drawButtons(startX)
 		local textHeight = intraFont.textH(font)
 		intraFont.printShadowed(
 			math.floor(startX + (scaledWidth - textWidth) / 2),
-			math.floor(y + (scaledHeight - textHeight) / 2),
+			math.floor(y + (scaledHeight - textHeight) / 4),
 			label, textColor, Color.new(0, 0, 0), font, 90, 1, 1, 0
 		)
 	end
