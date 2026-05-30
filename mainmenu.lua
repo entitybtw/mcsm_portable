@@ -10,6 +10,7 @@ local arrowStep = 0
 local welsel = false
 videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
 ui_enabled = true
+debugoverlay.loadSettings()
 
 local colorWhite = Color.new(255, 255, 255)
 
@@ -99,12 +100,7 @@ local function drawAll()
 		Image.draw(spritesheet, arrowX, 85, 22, 38, colorWhite, 444, 0, 11, 19)
 		Image.draw(spritesheet, arrowX, 133, 22, 38, colorWhite, 444, 0, 11, 19)
 
-		local welcolor = 255
-		if welsel then
-			welcolor = 183
-		elseif not welsel then
-			welcolor = 255
-		end
+		local welcolor = welsel and 183 or 255
 
 		screen.filledRect(266, 199, 157, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
 		screen.filledRect(266, 239, 157, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
@@ -140,15 +136,13 @@ local function drawAll()
 		)
 		intraFont.printShadowed(61, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 90, 1, 1, 0)
 		Image.draw(spritesheet, 45, 233, 13, 13, nil, 399, 0, 15, 15)
-		debugoverlay.draw(debugoverlay.loadSettings())
+		debugoverlay.draw()
 end
 
 function stop_sound(channel)
-	local state = sound.state(channel)
-	if state.state ~= "stopped" then
+	if sound.state(channel).state ~= "stopped" then
 		sound.stop(channel)
 	end
-	sound.stop(channel)
 end
 
 if stat.state == "stopped" then
@@ -225,71 +219,40 @@ while true do
 		arrowStep = 0
 	end
 
+local function doFadeOut()
+	fade = 0
+	while fade < 255 do
+		screen.clear()
+		drawAll()
+		screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
+		screen.flip()
+		fade = fade + 8
+	end
+	PMP.stop(videoFrame)
+	fade_enabled = 0
+	sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+	ui_enabled = false
+	screen.flip()
+	menuTransition(11)
+	ui_enabled = true
+end
+
 	if buttons.pressed(buttons.cross) then
 		if welsel then
-			while fade < 255 do
-				screen.clear()
-				drawAll()
-				screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-				screen.flip()
-				fade = fade + 8
-			end
-			PMP.stop(videoFrame)
-			fade_enabled = 0
-			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-			ui_enabled = false
-			screen.flip()
-			menuTransition(11)
-			ui_enabled = true
+			doFadeOut()
 			dofile("assets/misc/extras.lua")
 		else
 			if selectedButton == 1 then
-				fade = 0
-				while fade < 255 do
-					screen.clear()
-					drawAll()
-					screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-					screen.flip()
-					fade = fade + 8
-				end
-				fade_enabled = 0
-				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-				PMP.stop(videoFrame)
+				doFadeOut()
 				local epmenu = dofile("assets/ui/epmenu/epmenu.lua")
 				if epmenu == 1 then
 					break
 				end
 			elseif selectedButton == 3 then
-				while fade < 255 do
-					screen.clear()
-					drawAll()
-					screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-					screen.flip()
-					fade = fade + 8
-				end
-				PMP.stop(videoFrame)
-				fade_enabled = 0
-				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-				ui_enabled = false
-				screen.flip()
-				menuTransition(11)
-				ui_enabled = true
+				doFadeOut()
 				dofile("assets/misc/extras.lua")
 			elseif selectedButton == 4 then
-				while fade < 255 do
-					screen.clear()
-					drawAll()
-					screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-					screen.flip()
-					fade = fade + 8
-				end
-				PMP.stop(videoFrame)
-				fade_enabled = 0
-				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
-				ui_enabled = false
-				screen.flip()
-				menuTransition(11)
-				ui_enabled = true
+				doFadeOut()
 				dofile("assets/misc/changelogs.lua")
 			elseif selectedButton == 5 then
 				fade_enabled = 0

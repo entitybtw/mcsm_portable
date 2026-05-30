@@ -1,18 +1,16 @@
-function SaveGame(episodeNumber)
-	local suffix = ""
+local suffixes = { "st", "nd", "rd", "th", "th" }
+local episodeVars = {
+	[1] = { "reuben", "building", "sword", "ep1_node" },
+	[2] = { "ep2_node" },
+	[3] = { "ep3_node" },
+	[4] = { "ep4_node" },
+	[5] = { "ep5_node", "save", "mi" },
+}
 
-	if episodeNumber == 1 then
-		suffix = "st"
-	elseif episodeNumber == 2 then
-		suffix = "nd"
-	elseif episodeNumber == 3 then
-		suffix = "rd"
-	elseif episodeNumber == 4 or episodeNumber == 5 then
-		suffix = "th"
-	end
+function SaveGame(episodeNumber)
 	System.SaveData(
 		nextscene,
-		episodeNumber .. suffix .. " episode save",
+		episodeNumber .. suffixes[episodeNumber] .. " episode save",
 		"Minecraft Story Mode Save",
 		"EBOOT.PBP",
 		"assets/ui/saves_icon.png",
@@ -24,95 +22,17 @@ function SaveGame(episodeNumber)
 		_G["status_" .. i] = nil
 	end
 
-	if episodeNumber == 1 then
-		local saveDir = "assets/saves/"
-		local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
+	local vars = episodeVars[episodeNumber]
+	if not vars then return end
 
-		local variables = {
-			reuben = reuben,
-			building = building,
-			sword = sword,
-			ep1_node = ep1_node,
-		}
-
-		local file, err = io.open(variablesFilePath, "w")
-		if file then
-			for key, value in pairs(variables) do
-				if value ~= nil then
-					file:write(string.format('%s = "%s"\n', key, tostring(value)))
-				end
+	local file = io.open(string.format("assets/saves/%d_variables.txt", episodeNumber), "w")
+	if file then
+		for _, key in ipairs(vars) do
+			local val = _G[key]
+			if val ~= nil then
+				file:write(string.format('%s = "%s"\n', key, tostring(val)))
 			end
-			file:close()
 		end
-	elseif episodeNumber == 2 then
-		local saveDir = "assets/saves/"
-		local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
-
-		local variables = {
-			ep2_node = ep2_node,
-		}
-
-		local file, err = io.open(variablesFilePath, "w")
-		if file then
-			for key, value in pairs(variables) do
-				if value ~= nil then
-					file:write(string.format('%s = "%s"\n', key, tostring(value)))
-				end
-			end
-			file:close()
-		end
-	elseif episodeNumber == 3 then
-		local saveDir = "assets/saves/"
-		local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
-
-		local variables = {
-			ep3_node = ep3_node,
-		}
-
-		local file, err = io.open(variablesFilePath, "w")
-		if file then
-			for key, value in pairs(variables) do
-				if value ~= nil then
-					file:write(string.format('%s = "%s"\n', key, tostring(value)))
-				end
-			end
-			file:close()
-		end
-	elseif episodeNumber == 4 then
-		local saveDir = "assets/saves/"
-		local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
-
-		local variables = {
-			ep4_node = ep4_node,
-		}
-
-		local file, err = io.open(variablesFilePath, "w")
-		if file then
-			for key, value in pairs(variables) do
-				if value ~= nil then
-					file:write(string.format('%s = "%s"\n', key, tostring(value)))
-				end
-			end
-			file:close()
-		end
-	elseif episodeNumber == 5 then
-		local saveDir = "assets/saves/"
-		local variablesFilePath = string.format("%s%d_variables.txt", saveDir, episodeNumber)
-
-		local variables = {
-			ep5_node = ep5_node,
-			save = save,
-			mi = mi,
-		}
-
-		local file, err = io.open(variablesFilePath, "w")
-		if file then
-			for key, value in pairs(variables) do
-				if value ~= nil then
-					file:write(string.format('%s = "%s"\n', key, tostring(value)))
-				end
-			end
-			file:close()
-		end
+		file:close()
 	end
 end
