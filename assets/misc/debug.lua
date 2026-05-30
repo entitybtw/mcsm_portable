@@ -20,8 +20,8 @@ local function drawButtons(startX)
 		local textWidth = intraFont.textW(font, label, buttonScale)
 		local textHeight = intraFont.textH(font) * buttonScale
 		intraFont.printShadowed(
-			startX + (scaledWidth - textWidth) / 2,
-			y + (scaledHeight - textHeight) / 4,
+			math.floor(startX + (scaledWidth - textWidth) / 2),
+			math.floor(y + (scaledHeight - textHeight) / 2),
 			label, textColor, Color.new(0, 0, 0), font, 90, 1, 1, 0
 		)
 	end
