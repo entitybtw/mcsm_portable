@@ -1,5 +1,6 @@
 sound.playEasy("assets/sounds/pause_bg.at3", 5, true, false, menumusic * 10)
 pause_bg = Image.load("assets/ui/pause_bg.png")
+debugoverlay.loadSettings()
 local fade = 255
 local c_black = Color.new(0, 0, 0)
 local fade_enabled = 1
@@ -97,7 +98,6 @@ while true do
 			sound.stop(5)
 			PMP.pause()
 			Image.unload(pause_bg)
-			sound.stop(5)
 			ui_enabled = false
 			screen.flip()
 			LUA.sleep(165)
@@ -132,7 +132,7 @@ while true do
 
 	if ui_enabled then
 	drawButtons()
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	intraFont.printShadowed(
 		230 - intraFont.textW(font, ui.paused, 1) / 2 + 14,
 		25,

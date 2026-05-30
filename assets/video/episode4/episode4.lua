@@ -38,7 +38,7 @@ local function ui2(ltxt, rtxt)
 	intraFont.print(45, 127, ltxt, Color.new(255, 255, 255), font, 2)
 	intraFont.print(450 - intraFont.textW(font, rtxt, 2), 127, rtxt, Color.new(255, 255, 255), font, 2)
 	intraFont.print(240 - intraFont.textW(font, ui.save, 2) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 2)
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	screen.flip()
 end
 
@@ -50,7 +50,7 @@ local function ui3(ltxt, rtxt, tritxt)
 	intraFont.print(450 - intraFont.textW(font, rtxt, 2), 127, rtxt, Color.new(255, 255, 255), font, 2)
 	intraFont.print(140 + 15 + 5, 182, tritxt, Color.new(255, 255, 255), font, 2)
 	intraFont.print(240 - intraFont.textW(font, ui.save, 2) / 2, 230, ui.save, Color.new(255, 255, 255, 150), font, 2)
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	screen.flip()
 end
 
@@ -131,7 +131,7 @@ local function zone_ivors()
 
 		intraFont.print(240 - intraFont.textW(font, ui.save, 0.63) / 2, 230,
 			ui.save, Color.new(255, 255, 255, 150), font, 0.63)
-		debugoverlay.draw(debugoverlay.loadSettings())
+		debugoverlay.draw()
 		screen.flip()
 
 		local choosing = true

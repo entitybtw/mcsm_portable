@@ -3,8 +3,8 @@ local buttonsList = {
 	{ text = ui.audiovideo },
 	{ text = ui.debug },
 }
-
 local selectedButton = 1
+debugoverlay.loadSettings()
 local buttonSprites = {
 	selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
 	static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 },
@@ -182,6 +182,6 @@ while true do
 		0
 	)
 end
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	screen.flip()
 end

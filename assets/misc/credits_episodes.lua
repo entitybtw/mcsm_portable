@@ -132,7 +132,7 @@ while true do
 
 	if ui_enabled then
 	drawButtons()
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	intraFont.printShadowed(45, 35, ui.credits, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
 	Image.draw(spritesheet, 45, 233, 13, 13, nil, 384, 0, 15, 15)
 

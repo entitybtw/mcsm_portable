@@ -1,4 +1,5 @@
 local selectedButton = 1
+debugoverlay.loadSettings()
 
 local buttonsList = {
 	{ text = ui.controls },
@@ -115,7 +116,7 @@ while true do
 	if ui_enabled then
 	drawButtons()
 
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	intraFont.printShadowed(45, 35, ui.settings, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
 Image.draw(spritesheet, 61 - 16, 233, 13, 13, nil, 399, 0, 15, 15)
 

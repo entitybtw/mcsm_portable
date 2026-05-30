@@ -2,6 +2,7 @@ local scrollY = 0
 local scrollTarget = 0
 local scrollSpeed = 12
 local smooth = 0.2
+debugoverlay.loadSettings()
 
 local function printCenteredLine(y, line, scale)
 	local textWidth = intraFont.textW(font, line, scale)
@@ -366,7 +367,7 @@ while true do
 			if line:find("^mcsm_portable") then
 				local scale = 0.4
 				local x = 240 - intraFont.textW(font, line, scale) / 2
-				intraFont.printShadowed(x, y, line, colors.Header, Color.new(0, 0, 0), font, 90, 1, 1, 0)
+				intraFont.printShadowed(x, y, line, colors.Header, Color.new(0, 0, 0), font, 90, 1, scale, 0)
 			elseif line:find("^%-+$") then
 				printCenteredLine(y, line, 1)
 			elseif line:find("^Added") then
@@ -406,6 +407,6 @@ while true do
 		0
 	)
 
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	screen.flip()
 end

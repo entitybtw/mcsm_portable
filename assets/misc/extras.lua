@@ -1,5 +1,6 @@
 sound.playEasy("assets/sounds/extras.wav", 17, false, false, uiLevel * 10)
 sound.volumeEasy(5, 0)
+debugoverlay.loadSettings()
 local img = Image.load("assets/ui/extras.png") -- load image
 local cloudtips = Image.load("assets/ui/qrcodes/cloudtips.png")
 local extras_img = Image.load("assets/ui/qrcodes/extras.png")
@@ -101,7 +102,7 @@ end
 
 -- Fade in эффект при входе
 screen.clear()
-debugoverlay.draw(debugoverlay.loadSettings())
+debugoverlay.draw()
 screen.flip()
 
 -- Fade in анимация
@@ -130,6 +131,7 @@ while fade > 0 do
 end
 
 while true do
+screen.clear()
 Image.draw(img, 0, 0) -- draw image
 if not extras and not mirrors then
 intraFont.printShadowed(

@@ -1,131 +1,31 @@
-local buttonsList = {
-	{ id = "FREERAM", text = "Free RAM", isToggle = true, state = false },
-	{ id = "BATTERY", text = "Battery", isToggle = true, state = false },
-	{ id = "CPUFREQ", text = "CPU Freq", isToggle = true, state = false },
-	{ id = "NICKNAME", text = "Nickname", isToggle = true, state = false },
-	{ id = "TIMEDATE", text = "Time/Date", isToggle = true, state = false },
-}
-
+local buttonsList = debugoverlay.getButtons()
 local selectedButton = 1
+debugoverlay.loadSettings()
+
 local buttonSprites = {
 	selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
 	static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 },
 }
 
-local function drawButtons()
-    local startX, startY, gap = 45, 50, 3
-    local buttonScale = 0.75  -- Масштабирование кнопок
-
-    for i, button in ipairs(buttonsList) do
-        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
-        
-        -- Масштабируем размеры спрайтов
-        local scaledWidth = sprite.srcw * buttonScale + 3
-        local scaledHeight = sprite.srch * buttonScale + 3
-        local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
-
-        Image.draw(
-            spritesheet,
-            startX,
-            y,
-            scaledWidth,
-            scaledHeight,
-            nil,
-            sprite.srcx,
-            sprite.srcy,
-            sprite.srcw,
-            sprite.srch,
-            nil,
-            nil,
-            nil
-        )
-
-        -- Формируем текст с состоянием
-        local label = button.text .. ": " .. (button.state and "ON" or "OFF")
-        
-        -- Увеличиваем масштаб текста пропорционально
-        local textScale = 1 * buttonScale  -- Было 1
-        local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-        local textWidth = intraFont.textW(font, label, textScale)
-        local textHeight = intraFont.textH(font) * textScale
-
-        intraFont.printShadowed(
-            startX + (scaledWidth - textWidth) / 2,
-            y + (scaledHeight - textHeight) / 4,
-            label,
-            textColor,
-            Color.new(0, 0, 0),
-            font,
-            90,
-            1,
-            1,
-            0
-        )
-    end
-end
-
-local function drawSystemInfo()
-	local y = 0
-	for _, btn in ipairs(buttonsList) do
-		if btn.state then
-			local text = ""
-			if btn.id == "FREERAM" then
-				text = string.format("Free RAM: %.2f MB", LUA.getRAM() / (1024 * 1024))
-			elseif btn.id == "BATTERY" then
-				text = "Battery: " .. System.getBatteryPercent() .. "%"
-			elseif btn.id == "CPUFREQ" then
-				text = "CPU: " .. System.getCPU() .. " MHz"
-			elseif btn.id == "NICKNAME" then
-				text = "Nickname: " .. System.getNickname()
-			elseif btn.id == "TIMEDATE" then
-				local t = System.getTime()
-				text = string.format(
-					"Time: %02d:%02d:%02d %02d/%02d/%04d",
-					t.hour,
-					t.minutes,
-					t.seconds,
-					t.day,
-					t.month,
-					t.year
-				)
-			end
-			LUA.print(0, y, text)
-			y = y + 13
-		end
+local function drawButtons(startX)
+	local startY, gap, buttonScale = 50, 3, 0.75
+	for i, button in ipairs(buttonsList) do
+		local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
+		local scaledWidth = sprite.srcw * buttonScale + 3
+		local scaledHeight = sprite.srch * buttonScale + 3
+		local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
+		Image.draw(spritesheet, startX, y, scaledWidth, scaledHeight, nil, sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch)
+		local label = button.text .. ": " .. (button.state and "ON" or "OFF")
+		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
+		local textWidth = intraFont.textW(font, label, buttonScale)
+		local textHeight = intraFont.textH(font) * buttonScale
+		intraFont.printShadowed(
+			startX + (scaledWidth - textWidth) / 2,
+			y + (scaledHeight - textHeight) / 4,
+			label, textColor, Color.new(0, 0, 0), font, 90, 1, 1, 0
+		)
 	end
 end
-
-local function saveSystemInfo()
-	local file = io.open("assets/saves/debuginfo.txt", "w")
-	if not file then
-		return
-	end
-	for _, btn in ipairs(buttonsList) do
-		file:write(string.format("%s:%d\n", btn.id, btn.state and 1 or 0))
-	end
-	file:close()
-end
-
-local function loadSystemInfo()
-	local file = io.open("assets/saves/debuginfo.txt", "r")
-	if not file then
-		return
-	end
-	for line in file:lines() do
-		local id, val = line:match("^(%w+):(%d)")
-		if id and val then
-			for _, btn in ipairs(buttonsList) do
-				if btn.id == id then
-					btn.state = (val == "1")
-					break
-				end
-			end
-		end
-	end
-	file:close()
-end
-
-loadSystemInfo()
 
 while true do
 	screen.clear()
@@ -144,13 +44,13 @@ while true do
 		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.cross) then
-		local current = buttonsList[selectedButton]
-		current.state = not current.state
+		buttonsList[selectedButton].state = not buttonsList[selectedButton].state
 		sound.playEasy("assets/sounds/lava.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
 	if buttons.pressed(buttons.circle) then
 		sound.playEasy("assets/sounds/skeleton_1.wav", sound.WAV_1, false, false, uiLevel * 10)
-		saveSystemInfo()
+		debugoverlay.saveDebugInfo()
+		debugoverlay.loadSettings()
 		ui_enabled = false
 		screen.flip()
 		menuTransition(11)
@@ -159,23 +59,11 @@ while true do
 	end
 
 	if ui_enabled then
-	drawButtons()
-	drawSystemInfo()
-	intraFont.printShadowed(45, 35, ui.debug_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
-	Image.draw(spritesheet, 45, 233, 13, 13, nil, 384, 0, 15, 15)
-
-intraFont.printShadowed(
-    61,
-    233,
-    ui.previous_menu,
-    Color.new(255, 255, 255),
-    Color.new(0, 0, 0),
-    font,
-    90,
-    1,
-    1,
-    0
-)
+		drawButtons(45)
+		debugoverlay.draw()
+		intraFont.printShadowed(45, 35, ui.debug_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
+		Image.draw(spritesheet, 45, 233, 13, 13, nil, 384, 0, 15, 15)
+		intraFont.printShadowed(61, 233, ui.previous_menu, Color.new(255, 255, 255), Color.new(0, 0, 0), font, 90, 1, 1, 0)
 	end
 	screen.flip()
 end

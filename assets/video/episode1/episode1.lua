@@ -30,7 +30,7 @@ local function ui2(lk, rk)
 		choices_one[rk], Color.new(255, 255, 255), font, 2)
 	intraFont.print(240 - intraFont.textW(font, ui.save, 2) / 2, 230,
 		ui.save, Color.new(255, 255, 255, 150), font, 2)
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	screen.flip()
 end
 
@@ -45,7 +45,7 @@ local function ui3(sk, ck, tk)
 	intraFont.print(140 + 15 + 5, 182, choices_one[tk], Color.new(255, 255, 255), font, 2)
 	intraFont.print(240 - intraFont.textW(font, ui.save, 2) / 2, 230,
 		ui.save, Color.new(255, 255, 255, 150), font, 2)
-	debugoverlay.draw(debugoverlay.loadSettings())
+	debugoverlay.draw()
 	screen.flip()
 end
 
@@ -95,7 +95,7 @@ local function zone_woods()
 		end
 		intraFont.print(240 - intraFont.textW(font, ui.save, 0.63)/2, 230,
 			ui.save, Color.new(255, 255, 255, 150), font, 0.63)
-		debugoverlay.draw(debugoverlay.loadSettings())
+		debugoverlay.draw()
 		screen.flip()
 
 		local picking = true
@@ -169,7 +169,7 @@ local function zone_endercon()
 		end
 		intraFont.print(240 - intraFont.textW(font, ui.save, 0.63)/2, 230,
 			ui.save, Color.new(255, 255, 255, 150), font, 0.63)
-		debugoverlay.draw(debugoverlay.loadSettings())
+		debugoverlay.draw()
 		screen.flip()
 
 		local picking = true
@@ -248,7 +248,7 @@ local function zone_temple()
 		end
 		intraFont.print(240 - intraFont.textW(font, ui.save, 0.63)/2, 230,
 			ui.save, Color.new(255, 255, 255, 150), font, 0.63)
-		debugoverlay.draw(debugoverlay.loadSettings())
+		debugoverlay.draw()
 		screen.flip()
 
 		local picking = true
