@@ -81,6 +81,7 @@ while true do
 	if buttons.pressed(buttons.cross) then
 		if selectedButton == 1 then
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
@@ -89,6 +90,7 @@ while true do
 			sound.volumeEasy(5, menumusic * 10)
 		elseif selectedButton == 2 then
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
@@ -97,6 +99,7 @@ while true do
 			sound.volumeEasy(5, menumusic * 10)
 		elseif selectedButton == 3 then
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
@@ -105,6 +108,7 @@ while true do
 			sound.volumeEasy(5, menumusic * 10)
 		elseif selectedButton == 4 then
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
@@ -113,6 +117,7 @@ while true do
 			sound.volumeEasy(5, menumusic * 10)
 		elseif selectedButton == 5 then
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			sound.volumeEasy(5, 0)
 			PMP.stop(videoFrame)
 			sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)

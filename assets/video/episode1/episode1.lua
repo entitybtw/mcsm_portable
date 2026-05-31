@@ -789,6 +789,7 @@ local nodes = {
 		v    = "choices/37/go_for_magnus",
 		post = function()
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			PMP.playExt("assets/video/credits/ep1.pmp", buttons.start)
 			nextscene = "./mainmenu.lua"
 		end,
@@ -798,6 +799,7 @@ local nodes = {
 		v    = "choices/37/go_for_ellegaard",
 		post = function()
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			PMP.playExt("assets/video/credits/ep1.pmp", buttons.start)
 			nextscene = "./mainmenu.lua"
 		end,

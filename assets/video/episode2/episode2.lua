@@ -359,6 +359,7 @@ local nodes = {
 		v    = "gabriel/5/be_careful",
 		post = function()
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			PMP.playExt("assets/video/credits/ep2.pmp", buttons.start)
 			nextscene = "./mainmenu.lua"
 		end,
@@ -368,6 +369,7 @@ local nodes = {
 		v    = "gabriel/5/hes_done_this_before",
 		post = function()
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			PMP.playExt("assets/video/credits/ep2.pmp", buttons.start)
 			nextscene = "./mainmenu.lua"
 		end,
@@ -392,6 +394,7 @@ local nodes = {
 		v    = "petra/5/be_careful",
 		post = function()
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			PMP.playExt("assets/video/credits/ep2.pmp", buttons.start)
 			nextscene = "./mainmenu.lua"
 		end,
@@ -401,6 +404,7 @@ local nodes = {
 		v    = "petra/5/hes_done_this_before",
 		post = function()
 			PMP.setVolume(pmpvolume)
+			System.GC()
 			PMP.playExt("assets/video/credits/ep2.pmp", buttons.start)
 			nextscene = "./mainmenu.lua"
 		end,
