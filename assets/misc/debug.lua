@@ -17,11 +17,11 @@ local function drawButtons(startX)
 		Image.draw(spritesheet, startX, y, scaledWidth, scaledHeight, nil, sprite.srcx, sprite.srcy, sprite.srcw, sprite.srch)
 		local label = button.text .. ": " .. (button.state and "ON" or "OFF")
 		local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
-		local textWidth = intraFont.textW(font, label, buttonScale)
-		local textHeight = intraFont.textH(font) * buttonScale
+		local textWidth = intraFont.textW(font, label, 1)
+		local textHeight = intraFont.textH(font)
 		intraFont.printShadowed(
-			startX + (scaledWidth - textWidth) / 2,
-			y + (scaledHeight - textHeight) / 4,
+			math.floor(startX + (scaledWidth - textWidth) / 2),
+			math.floor(y + (scaledHeight - textHeight) / 2),
 			label, textColor, Color.new(0, 0, 0), font, 90, 1, 1, 0
 		)
 	end

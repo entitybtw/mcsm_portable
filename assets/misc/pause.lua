@@ -47,14 +47,14 @@ local function drawButtons()
         )
 
         -- Увеличиваем масштаб текста пропорционально
-        local textScale = 1 * buttonScale  -- Было 1
+        local textScale = 1
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or Color.new(255, 255, 255)
         local textWidth = intraFont.textW(font, button.text, textScale)
         local textHeight = intraFont.textH(font) * textScale
 
         intraFont.printShadowed(
-            startX + (scaledWidth - textWidth) / 2,
-            y + (scaledHeight - textHeight) / 4,
+            math.floor(startX + (scaledWidth - textWidth) / 2),
+            math.floor(y + (scaledHeight - textHeight) / 2),
             button.text,
             textColor,
             Color.new(0, 0, 0),
