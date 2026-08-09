@@ -28,8 +28,8 @@ local buttonsList = {
 local selectedButton = 1
 
 local buttonSprites = {
-	selected = { srcx = 0, srcy = 164, srcw = 183, srch = 25 },
-	static = { srcx = 184, srcy = 165, srcw = 183, srch = 25 },
+	selected = { srcx = 0, srcy = 164, srcw = 184, srch = 25 },
+	static = { srcx = 184, srcy = 165, srcw = 184, srch = 25 },
 }
 
 function menuTransition(time)
@@ -48,14 +48,14 @@ function menuTransition(time)
 end
 
 local function drawButtons()
-    local startX, startY, gap = 45, 85, 3
-    local buttonScale = 0.75
+    local startX, startY, gap = 45, 25, 0.1
+    local buttonScale = 1.5
 
     for i, button in ipairs(buttonsList) do
         local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
         
-        local scaledWidth = sprite.srcw * buttonScale + 3
-        local scaledHeight = sprite.srch * buttonScale + 3
+        local scaledWidth = sprite.srcw - 20
+        local scaledHeight = sprite.srch * buttonScale - 5
         local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
 
         Image.draw(
@@ -97,22 +97,21 @@ end
 
 local function drawAll()
 		drawButtons()
-		Image.draw(spritesheet, arrowX, 85, 22, 38, colorWhite, 444, 0, 11, 19)
-		Image.draw(spritesheet, arrowX, 133, 22, 38, colorWhite, 444, 0, 11, 19)
+		Image.draw(spritesheet, arrowX, 27, 28, 46, colorWhite, 444, 0, 11, 19)
+		Image.draw(spritesheet, arrowX, 92, 28, 46, colorWhite, 444, 0, 11, 19)
 
 		local welcolor = welsel and 183 or 255
 
-		screen.filledRect(266, 199, 157, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
-		screen.filledRect(266, 239, 157, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
-		screen.filledRect(266, 199, 1, 41, Color.new(255, 255, welcolor), 0, welanim - 55)
-		screen.filledRect(422, 199, 1, 41, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(267, 149, 180, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(267, 245, 180, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(266, 150, 1, 95, Color.new(255, 255, welcolor), 0, welanim - 55)
+		screen.filledRect(447, 150, 1, 95, Color.new(255, 255, welcolor), 0, welanim - 55)
 
-		screen.filledRect(267, 200, 155, 39, Color.new(74, 125, 110), 0, welanim - 100)
-		Image.draw(spritesheet, 45, 35, 140, 45, nil, 0, 48, 210, 61, nil, nil, nil, true)
+		screen.filledRect(267, 150, 180, 95, Color.new(74, 125, 110), 0, welanim - 100)
 
 		intraFont.printShadowed(
-			280,
-			205,
+			268,
+			155,
 			ui.welcome,
 			Color.new(255, 255, welcolor, welanim),
 			Color.new(0, 0, 0, welanim),
@@ -123,8 +122,8 @@ local function drawAll()
 			0
 		)
 		intraFont.printShadowed(
-			305,
-			223,
+			268,
+			195,
 			ui.welcome_sub,
 			Color.new(255, 255, welcolor, welanim),
 			Color.new(0, 0, 0, welanim),
@@ -214,7 +213,7 @@ while true do
 	end
 
 	arrowStep = arrowStep + 0.2
-	arrowX = 39 + cos(arrowStep) * 3
+	arrowX = 38 + cos(arrowStep) * 3
 	if arrowStep >= 360 then
 		arrowStep = 0
 	end
@@ -229,6 +228,8 @@ local function doFadeOut()
 		fade = fade + 8
 	end
 	PMP.stop(videoFrame)
+	System.GC()
+	LUA.sleep(200)
 	fade_enabled = 0
 	sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 	ui_enabled = false

@@ -59,7 +59,7 @@ local function hexToColor(input)
 	return Color.new(255, 255, 255), nil
 end
 
-function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize, hexColor, hexBg, subsControl, loop)
+function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize, hexColor, hexBg, subsControl, loop, overlayFn)
 	if type(getPointer) ~= "boolean" then
 		getPointer = false
 	end
@@ -76,8 +76,13 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		usedFont = font
 	end
 
-	local fontSizeNow = fontSize or 12
+	local fontSizeNow = (type(fontSize) == "number" and fontSize > 0) and fontSize or 1.0
+	local nativeFontPx = 14  -- pexico загружен на 14px
 	local subsEnabledNow = subsControl ~= false
+
+	if subs_font then
+		usedFont = subs_font
+	end
 
 	pointer = PMP.play(path, getPointer, loop, subsPath, stopButton)
 
@@ -102,7 +107,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 	local currentDisplayLength = 0
 	local typingSpeed = 0.03
 	
-	local function autoWrapText(text, maxChars)
+	local function autoWrapText(text, maxPx)
 		if not text or text == "" then
 			return {}
 		end
@@ -122,8 +127,9 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 
 		for i = 2, #words do
 			local word = words[i]
-			if #currentLine + #word + 1 <= maxChars then
-				currentLine = currentLine .. " " .. word
+			local candidate = currentLine .. " " .. word
+			if intraFont.textW(usedFont, candidate, fontSizeNow) <= maxPx then
+				currentLine = candidate
 			else
 				table.insert(lines, currentLine)
 				currentLine = word
@@ -169,7 +175,16 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 						end
 					end
 				end
-				
+
+				while currentDisplayLength > 0 and currentDisplayLength < #subs do
+					local b = subs:byte(currentDisplayLength + 1)
+					if b and b >= 128 and b < 192 then
+						currentDisplayLength = currentDisplayLength - 1
+					else
+						break
+					end
+				end
+
 				local displaySubs = subs:sub(1, currentDisplayLength)
 
 				local allLines = {}
@@ -188,11 +203,11 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 				end
 
 				local finalLines = {}
-				local maxChars = 55
+				local maxPx = 440
 
 				for _, originalLine in ipairs(allLines) do
 					if originalLine ~= "" then
-						local wrappedLines = autoWrapText(originalLine, maxChars)
+						local wrappedLines = autoWrapText(originalLine, maxPx)
 
 						for _, wrappedLine in ipairs(wrappedLines) do
 							table.insert(finalLines, wrappedLine)
@@ -210,7 +225,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 					table.remove(finalLines, #finalLines)
 				end
 
-				local lineHeight = fontSizeNow + 18
+				local lineHeight = math.floor(nativeFontPx * fontSizeNow + 4)
 				local totalHeight = #finalLines * lineHeight
 				
 				local maxWidth = 0
@@ -283,6 +298,10 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 				font,
 				1
 			)
+		end
+
+		if type(overlayFn) == "function" then
+			overlayFn()
 		end
 
 		screen.flip()

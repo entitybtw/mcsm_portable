@@ -6,12 +6,34 @@ local rectfade = 0
 
 local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
 local subtitles = io.open("assets/saves/subtitles.txt", "r")
-font = intraFont.load("assets/minecraft.ttf", 8)
--- font = intraFont.load("assets/unifont.ttf", 7)
-subs_font = intraFont.load("assets/pexico.ttf", 10)
+-- font = intraFont.load("assets/minecraft.ttf", 8)
+font = intraFont.load("assets/unifont.ttf", 16)
+-- subs_font = intraFont.load("assets/pexico.ttf", 14)  -- англ. версия
+subs_font = font  -- рус. версия: тот же объект
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
 require("ui_strings")
+
+-- Глобальные цвета (палитра)
+C_WHITE = Color.new(255, 255, 255)
+C_WHITE_150 = Color.new(255, 255, 255, 150)
+C_BLACK = Color.new(0, 0, 0)
+C_YELLOW = Color.new(255, 255, 153)
+C_GREEN = Color.new(74, 125, 110)
+-- цвета с изменяемой прозрачностью / анимацией -> функции
+function whiteA(a) return Color.new(255, 255, 255, a or 255) end
+function blackA(a) return Color.new(0, 0, 0, a or 255) end
+function welColor(ws, a) return Color.new(255, 255, ws, a or 255) end
+-- changelog-серые
+C_CG_HEADER = Color.new(245, 245, 245)
+C_CG_ADDED = Color.new(210, 210, 210)
+C_CG_CHANGED = Color.new(200, 200, 200)
+C_CG_FIXED = Color.new(190, 190, 190)
+C_CG_REMOVED = Color.new(180, 180, 180)
+C_CG_BULLET = Color.new(205, 205, 205)
+C_CG_NUMBERED = Color.new(215, 215, 215)
+C_CG_TEXT = Color.new(225, 225, 225)
+C_CG_THANKS = Color.new(195, 195, 195)
 
 -- check if the file exists; if not, create it with default values (10 for each setting)
 if not soundlevels then
@@ -24,14 +46,9 @@ menumusic = tonumber(soundlevels:read("*l"))
 pmpvideos = tonumber(soundlevels:read("*l"))
 uiLevel = tonumber(soundlevels:read("*l"))
 
-if not subtitles then
-	subtitles = io.open("assets/saves/subtitles.txt", "w")
-	subtitles:write("true\n1.4")
-	subtitles:close()
-	subtitles = io.open("assets/saves/subtitles.txt", "r")
-end
-subs = tonumber(subtitles:read("*l"))
-subssize = tonumber(subtitles:read("*l"))
+local subsLine = subtitles:read("*l")
+subs = (subsLine == "true")
+subssize = 1  -- фиксированный размер субтитров
 subtitles:close()
 
 -- load volumes
