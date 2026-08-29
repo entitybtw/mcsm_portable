@@ -186,7 +186,7 @@ choices_three = {
 
 	chest = "Сундук",
 	exit = "Выход",
-	serach_area1 = "Обыскать зону 1",
+	search_area1 = "Обыскать зону 1",
 	search_area2 = "Обыскать зону 2",
 	search_upstairs = "Обыскать наверху",
 	olivia = "Оливия",
@@ -660,5 +660,13 @@ ui = {
 	github = "GitHub",
 	codeberg = "Codeberg",
 	gitlab = "GitLab",
-	entbtwgit = "entbtwgit\n\n   (^_^)"
+	entbtwgit = "entbtwgit\n\n   (^_^)",
+
+	language = "Язык",
+	language_select = "Выберите язык",
+	lang_ru = "Русский",
+	lang_en = "English",
+	lang_es = "Español",
+	lang_uk = "Українська",
+	lang_pt = "Português",
 }

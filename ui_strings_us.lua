@@ -187,7 +187,7 @@ choices_three = {
 
 	chest = "Chest",
 	exit = "Exit",
-	serach_area1 = "Search Area 1",
+	search_area1 = "Search Area 1",
 	search_area2 = "Search Area 2",
 	search_upstairs = "Search Upstairs",
 	olivia = "Olivia",

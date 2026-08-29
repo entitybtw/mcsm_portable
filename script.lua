@@ -12,7 +12,13 @@ font = intraFont.load("assets/unifont.ttf", 16)
 subs_font = font  -- рус. версия: тот же объект
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("easy")
-require("ui_strings")
+dofile("assets/misc/lang.lua")
+getlang()
+if lang == "en" then require("ui_strings_en")
+elseif lang == "es" then require("ui_strings_es")
+elseif lang == "uk" then require("ui_strings_uk")
+elseif lang == "pt" then require("ui_strings_pt")
+else require("ui_strings") end
 
 -- Глобальные цвета (палитра)
 C_WHITE = Color.new(255, 255, 255)
