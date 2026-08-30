@@ -18,11 +18,11 @@ local timered = timer.create()
 local welanim_duration = timer.create()
 
 local buttonsList = {
-	{ text = ui.play },
-	{ text = ui.episodes },
-	{ text = ui.extras },
-	{ text = ui.changelogs },
-	{ text = ui.settings },
+	{ k = "play" },
+	{ k = "episodes" },
+	{ k = "extras" },
+	{ k = "changelogs" },
+	{ k = "settings" },
 }
 
 local selectedButton = 1
@@ -75,14 +75,15 @@ local function drawButtons()
         )
 
         local textScale = 1
+        local btntxt = ui[button.k]
         local textColor = (i == selectedButton) and Color.new(255, 255, 153) or colorWhite
-        local textWidth = intraFont.textW(font, button.text, textScale)
+        local textWidth = intraFont.textW(font, btntxt, textScale)
         local textHeight = intraFont.textH(font) * textScale
 
         intraFont.printShadowed(
             math.floor(startX + (scaledWidth - textWidth) / 2),
             math.floor(y + (scaledHeight - textHeight) / 2),
-            button.text,
+            btntxt,
             textColor,
             Color.new(0, 0, 0),
             font,
@@ -133,8 +134,9 @@ local function drawAll()
 			1,
 			0
 		)
-		intraFont.printShadowed(69, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 90, 1, 1, 0)
+		-- Bottom hint: cross = select (aligned with text)
 		Image.draw(spritesheet, 45, 235, 20, 20, nil, 20, 111, 20, 20)
+		intraFont.printShadowed(69, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 90, 1, 1, 0)
 		debugoverlay.draw()
 end
 
