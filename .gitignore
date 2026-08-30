@@ -1,6 +1,9 @@
 # Saves & runtime state (keep everything in assets/saves out of git)
 assets/saves/*
 !assets/saves/readme.txt
+# JSON data files (save/settings database, etc.)
+assets/saves/*.json
+seed_data.json
 
 error_log.txt
 templuaFont.pgf

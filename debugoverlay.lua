@@ -15,33 +15,24 @@ function debugoverlay.getButtons()
 end
 
 function debugoverlay.saveDebugInfo()
-	local file = io.open("assets/saves/debuginfo.txt", "w")
-	if not file then return end
+	local flags = {}
 	for _, btn in ipairs(_debugButtons) do
-		file:write(string.format("%s:%d\n", btn.id, btn.state and 1 or 0))
+		flags[btn.id] = btn.state
 	end
-	file:close()
+	sav.set("debug", "flags", flags)
 end
 
 function debugoverlay.loadSettings()
 	local flags = { FREERAM = false, BATTERY = false, CPUFREQ = false, NICKNAME = false, TIMEDATE = false }
-	local file = io.open("assets/saves/debuginfo.txt", "r")
-	if file then
-		for line in file:lines() do
-			local id, val = line:match("^(%w+):(%d)")
-			if id then
-				if flags[id] ~= nil then
-					flags[id] = (val == "1")
-				end
-				for _, btn in ipairs(_debugButtons) do
-					if btn.id == id then
-						btn.state = (val == "1")
-						break
-					end
-				end
+	local saved = sav.get("debug", "flags")
+	if saved then
+		for _, btn in ipairs(_debugButtons) do
+			local v = saved[btn.id]
+			if v ~= nil then
+				btn.state = (v == true)
+				flags[btn.id] = (v == true)
 			end
 		end
-		file:close()
 	end
 	_cachedFlags = flags
 	return flags
