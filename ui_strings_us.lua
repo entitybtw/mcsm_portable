@@ -637,8 +637,8 @@ ui = {
 	select = "Select",
 	audiovideotext = "Audio/Video Settings",
 
-	welcome = "Welcome to Minecraft: Story Mode!",
-	welcome_sub = "Visit mcsm_portable github page!\n\n\n\n\n\n\nksaodoaskdopk!!",
+	welcome = "Welcome to\n\n\n\nMinecraft: Story Mode!",
+	welcome_sub = "Visit the page\n\n\n\nmcsm_portable on\n\n\n\nGitHub!",
 
 	save = "Press R to save",
 
@@ -654,6 +654,7 @@ ui = {
 
 	extras = "Extras",
 	extras_support = "extras / support me",
+	extras_close = "Close",
 	support = "support me",
 	repos = "repo mirrors",
 

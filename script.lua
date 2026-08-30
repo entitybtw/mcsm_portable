@@ -4,16 +4,15 @@ local voidfade = 0
 local textfade = 0
 local rectfade = 0
 
-local soundlevels = io.open("assets/saves/soundlevels.txt", "r")
-local subtitles = io.open("assets/saves/subtitles.txt", "r")
--- font = intraFont.load("assets/minecraft.ttf", 8)
-font = intraFont.load("assets/unifont.ttf", 16)
--- subs_font = intraFont.load("assets/pexico.ttf", 14)  -- англ. версия
-subs_font = font  -- рус. версия: тот же объект
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
+require("sav")
 require("easy")
 dofile("assets/misc/lang.lua")
 getlang()
+-- Fonts depend on the chosen language:
+--   en/es/pt (latin) : minecraft (with cyrillic) UI + pexico subtitles
+--   ru/uk   (cyrilic): unifont for both
+applyFonts(lang)
 if lang == "en" then require("ui_strings_en")
 elseif lang == "es" then require("ui_strings_es")
 elseif lang == "uk" then require("ui_strings_uk")
@@ -41,27 +40,27 @@ C_CG_NUMBERED = Color.new(215, 215, 215)
 C_CG_TEXT = Color.new(225, 225, 225)
 C_CG_THANKS = Color.new(195, 195, 195)
 
--- check if the file exists; if not, create it with default values (10 for each setting)
-if not soundlevels then
-	soundlevels = io.open("assets/saves/soundlevels.txt", "w")
-	soundlevels:write("10\n10\n10")
-	soundlevels:close()
-	soundlevels = io.open("assets/saves/soundlevels.txt", "r")
+-- ===== Настройки (единое JSON) =====
+-- звуковые уровни (0..10) и субтитры
+function loadLevels()
+	return sav.get("settings", "menumusic", 10),
+		sav.get("settings", "pmpvideos", 10),
+		sav.get("settings", "uiLevel", 10)
 end
-menumusic = tonumber(soundlevels:read("*l"))
-pmpvideos = tonumber(soundlevels:read("*l"))
-uiLevel = tonumber(soundlevels:read("*l"))
-
-local subsLine = subtitles:read("*l")
-subs = (subsLine == "true")
+function saveLevels(levels)
+	sav.set("settings", "menumusic", levels[1])
+	sav.set("settings", "pmpvideos", levels[2])
+	sav.set("settings", "uiLevel", levels[3])
+end
+function saveSubs()
+	sav.set("settings", "subs", subs == true)
+end
+menumusic, pmpvideos, uiLevel = loadLevels()
+subs = sav.get("settings", "subs", true)
 subssize = 1  -- фиксированный размер субтитров
-subtitles:close()
 
 -- load volumes
-if pmpvideos and pmpvideos >= 0 and pmpvideos <= 10 then
-	pmpvolume = pmpvideos * 10
-end
-soundlevels:close()
+pmpvolume = (tonumber(pmpvideos) or 10) * 10
 
 local byentitybtw = Image.load("assets/ui/byentitybtw.png")
 local headphones = Image.load("assets/ui/headphones.png")

@@ -654,6 +654,7 @@ ui = {
 
 	extras = "Extras",
 	extras_support = "extras / me apoiar",
+	extras_close = "Fechar",
 	support = "me apoiar",
 	repos = "espelhos dos repositórios",
 
