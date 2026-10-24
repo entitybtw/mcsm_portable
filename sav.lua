@@ -148,8 +148,32 @@ sav.decode = function(str)
 end
 
 -- ================= FILE STORE =================
+-- The file with the settings. It is written through a temporary file and
+-- then renamed, so a broken write never leaves a half written file behind.
+-- The path of the settings file. It is a global on purpose: the tests
+-- point it to another folder, so the saves of the player are never
+-- touched by the tools of the project.
+SAV_DATA_FILE = SAV_DATA_FILE or "assets/saves/data.json"
+local DATA_FILE = SAV_DATA_FILE
+local DATA_TMP  = SAV_DATA_FILE .. ".tmp"
+
+-- The folder with the saves. It is created when it does not exist, so a
+-- fresh installation (or a deleted folder) does not make the game crash
+-- when it tries to write the settings.
+local function ensureSaveDir()
+	-- The folder of the settings file (it can be another folder, when the
+	-- tests point the file somewhere else).
+	local dir = DATA_FILE:match("^(.*)/[^/]+$")
+	if not dir or dir == "" then return end
+	if System and System.isDir and System.isDir(dir) then return end
+	if System and System.createDir then
+		pcall(System.createDir, dir)
+	end
+end
+
 function sav.load()
-	local f = io.open("assets/saves/data.json", "r")
+	ensureSaveDir()
+	local f = io.open(DATA_FILE, "r")
 	if f then
 		local txt = f:read("*a")
 		f:close()
@@ -159,13 +183,53 @@ function sav.load()
 		sav.data = {}
 	end
 end
-function sav.save()
-	local f = io.open("assets/saves/data.json", "w")
-	if f then
-		f:write(sav.encode(sav.data))
-		f:close()
-		if System and System.GC then System.GC() end
+local function stripVersion(t)
+	if type(t) ~= "table" then return t end
+	local out = {}
+	for k, v in pairs(t) do
+		if k == "_VERSION" then -- skip
+		elseif type(v) == "table" then
+			out[k] = stripVersion(v)
+		else
+			out[k] = v
+		end
 	end
+	return out
+end
+
+-- The file is written through a temporary file and then renamed: a broken
+-- write (a low battery, a reset of the PSP) never leaves a half written
+-- settings file behind.
+function sav.save()
+	ensureSaveDir()
+	local ok, txt = pcall(sav.encode, stripVersion(sav.data))
+	if not ok or type(txt) ~= "string" then return end
+
+	local f = io.open(DATA_TMP, "w")
+	if not f then return end
+	local wrote = pcall(function()
+		f:write(txt)
+		f:close()
+	end)
+	if not wrote then
+		pcall(function() f:close() end)
+		pcall(os.remove, DATA_TMP)
+		return
+	end
+
+	if not os.rename(DATA_TMP, DATA_FILE) then
+		-- The rename is not supported: write the file directly.
+		local g = io.open(DATA_FILE, "w")
+		if g then
+			pcall(function()
+				g:write(txt)
+				g:close()
+			end)
+		end
+		pcall(os.remove, DATA_TMP)
+	end
+
+	if System and System.GC then System.GC() end
 end
 function sav.get(section, key, default)
 	local sec = sav.data[section]

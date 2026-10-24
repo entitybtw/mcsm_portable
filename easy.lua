@@ -1,5 +1,18 @@
+-- The sounds of the game.
+--
+-- The engine raises a Lua error when a sound cannot be loaded (a missing
+-- file, but also NOT ENOUGH MEMORY: on the 32 MB of the PSP this happens
+-- when the video of the menu is playing and a lot of pictures are loaded).
+-- Such an error kills the whole script, so every call is wrapped: a sound
+-- that cannot be loaded is simply skipped, the game keeps running.
+--
+-- The sounds of the interface (select.wav, click.wav) are loaded only once
+-- and are kept in the channel, so the memory of the PSP is not wasted on
+-- loading the same file again and again.
+local soundLoaded = {}
+
 function sound.playEasy(path, channel, loop, loadToRAM, volume)
-	if type(path) ~= "string" then
+	if type(path) ~= "string" or path == "" then
 		return
 	end
 
@@ -15,13 +28,31 @@ function sound.playEasy(path, channel, loop, loadToRAM, volume)
 		volume = 100
 	end
 
-	sound.cloud(path, channel, loadToRAM)
-	sound.play(channel, loop)
-	sound.volumeEasy(channel, volume, volume)
+	-- The sound is loaded only when the channel does not already hold it:
+	-- the engine keeps the file in the channel, and loading it again would
+	-- eat the memory of the PSP. A channel holds one sound, so the cache is
+	-- per channel.
+	if soundLoaded[channel] ~= path then
+		local ok = pcall(sound.cloud, path, channel, loadToRAM)
+		if not ok then
+			-- The sound cannot be loaded (no memory, no file): the game goes
+			-- on, only without the sound.
+			if debugoverlay and debugoverlay.log then
+				debugoverlay.log("cannot load sound: " .. path)
+			end
+			soundLoaded[channel] = nil
+			return
+		end
+		soundLoaded[channel] = path
+	end
+
+	-- The sound is played from the beginning every time.
+	pcall(sound.play, channel, loop)
+	pcall(sound.volume, channel, volume, volume)
 end
 
 function sound.volumeEasy(channel, volume)
-	sound.volume(channel, volume, volume)
+	pcall(sound.volume, channel, volume, volume)
 end
 local function hexToColor(input)
 	if not input then
@@ -84,7 +115,18 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		usedFont = subs_font
 	end
 
-	pointer = PMP.play(path, getPointer, loop, subsPath, stopButton)
+	-- The video is started safely: a missing file or a video that does not
+	-- fit into the memory of the PSP must not kill the game. In that case
+	-- the function returns nil and the caller shows something else.
+	local okStart, res = pcall(PMP.play, path, getPointer, loop, subsPath, stopButton)
+	if not okStart or res == nil then
+		if debugoverlay and debugoverlay.log then
+			debugoverlay.log("cannot play video: " .. tostring(path))
+		end
+		pointer = nil
+		return nil
+	end
+	pointer = res
 
 	local colorStart, colorEnd
 	if hexColor and hexColor:find("/") then
@@ -105,7 +147,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 	local lastSubs = ""
 	local lastSubsTime = 0
 	local currentDisplayLength = 0
-	local typingSpeed = 0.03
+	local typingSpeed = 0.01
 	
 	local function autoWrapText(text, maxPx)
 		if not text or text == "" then
@@ -253,7 +295,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 				
 				for i, line in ipairs(finalLines) do
 					if line ~= "" then
-						local y = startY + (i - 1) * lineHeight
+						local y = startY + (i - 0.8) * lineHeight
 						local x = 240 - intraFont.textW(usedFont, line, fontSizeNow) / 2
 						
 						if colorEnd then

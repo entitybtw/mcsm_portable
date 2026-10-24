@@ -600,19 +600,27 @@ choices_four = {
 ui = {
 	play = "Play",
 	episodes = "Episodes",
-	changelogs = "Changelogs",
+	epi_installed = "Installed",
+	epi_available = "Available Now!",
+	epi_bundle = "Story Bundle Choices",
+	epi_season_pass = "Season Pass",
+	epi_season_pass_sub = "Get Episodes 2-5",
 	settings = "Settings",
 
 	controls = "Controls",
 	audiovideo = "Audio/Video",
 	debug = "Debug",
+	auto_save = "Auto Save",
 	credits = "Credits",
 
 	previous_menu = "Previous Menu",
-	cutscene_skip = "Skip current\n\n   cutscene",
-	actions = "Actions/\n\nDialog Choices",
+	back = "Back",
+	cutscene_skip = "Skip current cutscene",
+	actions = "Actions / Dialog Choices",
 	pause_menu = "Pause Menu",
 	pause_game = "Pause Game",
+	slot_created = "Slot created",
+	new_save = "Create",
 	art_by = "art by Ossi101",
 
 	music = "Adjust the Menu Music volume",
@@ -629,6 +637,7 @@ ui = {
 	debug_menu = "Debug Menu",
 
 	episode = "Episode",
+	ep_short = "Ep.",
 
 	paused = "Paused",
 	resume_game = "Resume Game",
@@ -637,10 +646,49 @@ ui = {
 	select = "Select",
 	audiovideotext = "Audio/Video Settings",
 
-	welcome = "Welcome to\n\n\n\nMinecraft: Story Mode!",
-	welcome_sub = "Visit the page\n\n\n\nmcsm_portable on\n\n\n\nGitHub!",
+	welcome = "Welcome to Minecraft: Story Mode!",
+	welcome_sub = "Visit the page mcsm_portable on GitHub!",
 
 	save = "Press R to save",
+
+	save_files = "Save Files",
+	save_slot = "Save",
+	save_properties = "Save Properties",
+	choose_save = "Choose Save",
+	current_save = "Current save",
+	current_save_short = "Current",
+	empty_slot = "Empty",
+	slot_is_empty = "This slot is empty",
+	save_deleted = "Save deleted",
+	confirm_delete = "Delete this save?",
+	yes = "Yes",
+	setup_title = "Choice Setup",
+	setup_q_save = "Who do you want to save?",
+	setup_q_craft = "What do you want to craft?",
+	setup_q_follow = "Who are you going to look for?",
+	setup_q_armor = "Whose armor are you going to take?",
+	setup_q_start = "Do you want to start the episode choice setup?",
+	setup_start = "Start",
+	setup_skip = "Skip",
+	setup_back = "Back",
+	magnus = "Magnus",
+	ellegaard = "Ellegaard",
+	no = "No",
+	properties = "Properties",
+	copy = "Copy",
+	delete = "Delete",
+	rename = "Rename",
+	rename_desc = "Enter a save name",
+	no_empty_slot = "No empty save slots",
+	select_destination_slot = "Select destination slot",
+	props_hint = "X View  Square Delete  O Back",
+	no_variables = "No variables",
+	variables = "variables",
+
+	autosave = "Auto-save",
+	autosave_hint = "Autosave frequency (after choices)",
+	on = "ON",
+	off = "OFF",
 
 	loading = "LOADING",
 	loading_1 = "Initializing functions...",
@@ -650,7 +698,7 @@ ui = {
 	loading_5 = "Finishing up...",
 
 	header = "a star would be awesome :)",
-	description = "i spend a lot of time on this\n\n\n\nproject,\n\n\n\n\n\ni really appreciate your \n\n\n\nsupport and activity :3",
+	description = "i spend a lot of time on this project, i really appreciate your support and activity :3",
 
 	extras = "Extras",
 	extras_support = "extras / support me",
@@ -659,7 +707,6 @@ ui = {
 	repos = "repo mirrors",
 
 	github = "GitHub",
-	codeberg = "Codeberg",
-	gitlab = "GitLab",
-	entbtwgit = "entbtwgit\n\n\n\n   (^_^)"
+	entbtwgit = "entbtwgit (^_^)",
+	gitlab = "GitLab"
 }

@@ -1,5 +1,23 @@
 debugoverlay = {}
 
+-- The last messages of the game (a missing picture, a video that does not
+-- fit into the memory, ...). They are shown in the overlay and kept in a
+-- small ring, so the memory never grows.
+local logLines = {}
+local LOG_MAX = 12
+
+function debugoverlay.log(msg)
+	msg = tostring(msg)
+	logLines[#logLines + 1] = msg
+	while #logLines > LOG_MAX do
+		table.remove(logLines, 1)
+	end
+end
+
+function debugoverlay.getLog()
+	return logLines
+end
+
 local _cachedFlags = nil
 
 local _debugButtons = {

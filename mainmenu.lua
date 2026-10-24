@@ -8,7 +8,14 @@ local stat = sound.state(5)
 local arrowX = 39
 local arrowStep = 0
 local welsel = false
-videoFrame = PMP.play("assets/ui/mcsm_mainmenu.pmp", true, true, nil, nil, 29.97)
+
+require("assets/misc/safe")
+
+-- The background video of the menu. It is started safely: if the video does
+-- not fit into the memory of the PSP, the menu simply shows the black
+-- background instead of crashing.
+safePlayMenuVideo("assets/ui/mcsm_mainmenu.pmp")
+
 ui_enabled = true
 debugoverlay.loadSettings()
 
@@ -16,12 +23,12 @@ local colorWhite = Color.new(255, 255, 255)
 
 local timered = timer.create()
 local welanim_duration = timer.create()
+local welanimTick = 0   -- the frame counter for the running text of the block
 
 local buttonsList = {
 	{ k = "play" },
 	{ k = "episodes" },
 	{ k = "extras" },
-	{ k = "changelogs" },
 	{ k = "settings" },
 }
 
@@ -80,20 +87,48 @@ local function drawButtons()
         local textWidth = intraFont.textW(font, btntxt, textScale)
         local textHeight = intraFont.textH(font) * textScale
 
-        intraFont.printShadowed(
-            math.floor(startX + (scaledWidth - textWidth) / 2),
-            math.floor(y + (scaledHeight - textHeight) / 2),
-            btntxt,
-            textColor,
-            Color.new(0, 0, 0),
-            font,
-            90,
-            1,
-            textScale,
-            0
-        )
+                drawShadowedText(math.floor(startX + (scaledWidth - textWidth) / 2), math.floor(y + (scaledHeight - textHeight) / 2), btntxt, textColor, Color.new(0, 0, 0), font, textScale)
 
     end
+end
+
+-- The block of the welcome: the plate, its border and the two lines of the
+-- text. The text is broken into lines by words and aligned to the LEFT
+-- edge of the block, so it fits into the block with any language and with
+-- any font: a line that is too long scrolls inside the block instead of
+-- running over its edge.
+local WEL = { x = 267, y = 150, w = 180, h = 95 }
+local WEL_TEXT_X = WEL.x + 6
+local WEL_TEXT_W = WEL.w - 12
+local WEL_TOP = WEL.y + 5
+
+local function drawWelcome(welcolor, alpha)
+	screen.filledRect(WEL.x, WEL.y - 1, WEL.w, 1, Color.new(255, 255, welcolor), 0, alpha - 55)
+	screen.filledRect(WEL.x, WEL.y + WEL.h - 1, WEL.w, 1, Color.new(255, 255, welcolor), 0, alpha - 55)
+	screen.filledRect(WEL.x - 1, WEL.y, 1, WEL.h, Color.new(255, 255, welcolor), 0, alpha - 55)
+	screen.filledRect(WEL.x + WEL.w - 1, WEL.y, 1, WEL.h, Color.new(255, 255, welcolor), 0, alpha - 55)
+
+	screen.filledRect(WEL.x, WEL.y, WEL.w, WEL.h, Color.new(74, 125, 110), 0, alpha - 100)
+
+	-- The two texts of the block. The first one is on the top, the second
+	-- one is on the bottom of the block, and both are aligned to the left
+	-- edge of the block.
+	local textColor = Color.new(255, 255, welcolor, alpha)
+	local shadowColor = Color.new(0, 0, 0, alpha)
+	local lineH = intraFont.textH(font) + 4
+
+	local function drawLeft(y, text)
+		local lines = wrapText(text, font, 1, WEL_TEXT_W)
+		local blockH = #lines * lineH
+		local ty = y - math.floor(blockH / 2)
+		for i, line in ipairs(lines) do
+			drawBoxedText(WEL_TEXT_X, ty + (i - 1) * lineH, WEL_TEXT_W, line,
+				textColor, shadowColor, font, 1, welanimTick, false)
+		end
+	end
+
+	drawLeft(WEL.y + 24, ui.welcome)
+	drawLeft(WEL.y + WEL.h - 22, ui.welcome_sub)
 end
 
 local function drawAll()
@@ -103,40 +138,11 @@ local function drawAll()
 
 		local welcolor = welsel and 183 or 255
 
-		screen.filledRect(267, 149, 180, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
-		screen.filledRect(267, 245, 180, 1, Color.new(255, 255, welcolor), 0, welanim - 55)
-		screen.filledRect(266, 150, 1, 95, Color.new(255, 255, welcolor), 0, welanim - 55)
-		screen.filledRect(447, 150, 1, 95, Color.new(255, 255, welcolor), 0, welanim - 55)
+		drawWelcome(welcolor, welanim)
 
-		screen.filledRect(267, 150, 180, 95, Color.new(74, 125, 110), 0, welanim - 100)
-
-		intraFont.printShadowed(
-			268,
-			155,
-			ui.welcome,
-			Color.new(255, 255, welcolor, welanim),
-			Color.new(0, 0, 0, welanim),
-			font,
-			90,
-			1,
-			1,
-			0
-		)
-		intraFont.printShadowed(
-			268,
-			195,
-			ui.welcome_sub,
-			Color.new(255, 255, welcolor, welanim),
-			Color.new(0, 0, 0, welanim),
-			font,
-			90,
-			1,
-			1,
-			0
-		)
 		-- Bottom hint: cross = select (aligned with text)
 		Image.draw(spritesheet, 45, 235, 20, 20, nil, 20, 111, 20, 20)
-		intraFont.printShadowed(69, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 90, 1, 1, 0)
+				drawShadowedText(69, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 1)
 		debugoverlay.draw()
 end
 
@@ -146,11 +152,17 @@ function stop_sound(channel)
 	end
 end
 
+-- The music of the menu loops: the flag loop of sound.playEasy is true and
+-- the volume of the menu is applied, so the music never stops in the
+-- background and never restarts from the beginning.
 if stat.state == "stopped" then
-	sound.playEasy("assets/sounds/bg.at3", 5)
+	sound.playEasy("assets/sounds/bg.at3", 5, true, false, (menumusic or 10) * 10)
+else
+	sound.volumeEasy(5, (menumusic or 10) * 10)
 end
 
 while true do
+	welanimTick = welanimTick + 1
 	screen.clear()
 	buttons.read()
 	if PMP.getFrame(videoFrame) then
@@ -189,7 +201,7 @@ while true do
 		end
 	end
 
-	if buttons.pressed(buttons.right) and not welsel and selectedButton == 5 and welanim > 50  then
+	if buttons.pressed(buttons.right) and not welsel and selectedButton == #buttonsList and welanim > 50  then
 		welsel = true
 		sound.playEasy("assets/sounds/select.wav", sound.WAV_1, false, false, uiLevel * 10)
 	end
@@ -229,7 +241,9 @@ local function doFadeOut()
 		screen.flip()
 		fade = fade + 8
 	end
-	PMP.stop(videoFrame)
+	-- The video of the menu is stopped: the engine frees the texture of its
+	-- frame, so the memory is not eaten by the menus that are opened again.
+	stopMenuVideo()
 	System.GC()
 	LUA.sleep(200)
 	fade_enabled = 0
@@ -251,13 +265,25 @@ end
 				if epmenu == 1 then
 					break
 				end
+			elseif selectedButton == 2 then
+				-- Episodes: open the popup list of episodes (official
+				-- Menu_EpisodeSelect data). It overlays the still-running menu
+				-- video, so no fade-out is needed. On confirm it hands the chosen
+				-- episode to epmenu, exactly like the Play button does.
+				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
+				local choice = dofile("assets/misc/episodes_popup.lua")
+				if choice and choice.action == "start" then
+					wr("lastep", tostring(choice.episode))
+					doFadeOut()
+					local epmenu = dofile("assets/ui/epmenu/epmenu.lua")
+					if epmenu == 1 then
+						break
+					end
+				end
 			elseif selectedButton == 3 then
 				doFadeOut()
 				dofile("assets/misc/extras.lua")
 			elseif selectedButton == 4 then
-				doFadeOut()
-				dofile("assets/misc/changelogs.lua")
-			elseif selectedButton == 5 then
 				fade_enabled = 0
 				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
 				ui_enabled = false
