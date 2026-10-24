@@ -29,16 +29,6 @@ C_GREEN = Color.new(74, 125, 110)
 function whiteA(a) return Color.new(255, 255, 255, a or 255) end
 function blackA(a) return Color.new(0, 0, 0, a or 255) end
 function welColor(ws, a) return Color.new(255, 255, ws, a or 255) end
--- changelog-серые
-C_CG_HEADER = Color.new(245, 245, 245)
-C_CG_ADDED = Color.new(210, 210, 210)
-C_CG_CHANGED = Color.new(200, 200, 200)
-C_CG_FIXED = Color.new(190, 190, 190)
-C_CG_REMOVED = Color.new(180, 180, 180)
-C_CG_BULLET = Color.new(205, 205, 205)
-C_CG_NUMBERED = Color.new(215, 215, 215)
-C_CG_TEXT = Color.new(225, 225, 225)
-C_CG_THANKS = Color.new(195, 195, 195)
 
 -- ===== Настройки (единое JSON) =====
 -- звуковые уровни (0..10) и субтитры
@@ -107,7 +97,9 @@ Image.unload(byentitybtw)
 Image.unload(headphones)
 
 PMP.setVolume(pmpvolume)
-local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true)
+-- The video of the title screen. It loops and can be interrupted with the
+-- START button (the loading screen of the game is shown then).
+local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true, nil, buttons.start)
 
 local loadingFrames = {}
 local frameX = { 0, 48, 96, 144, 192, 240, 288, 336 }
@@ -219,7 +211,9 @@ while PMP.getFrame(pointer) do
 	screen.flip()
 end
 
-PMP.play("assets/ui/loading.pmp")
+-- The loading video of the game. It can be interrupted with the START
+-- button, so the player is never stuck on the loading screen.
+PMP.play("assets/ui/loading.pmp", false, false, nil, buttons.start)
 
 require("saves")
 require("debugoverlay")
@@ -229,8 +223,41 @@ sound.playEasy("assets/sounds/bg.at3", 5, true, false, menumusic * 10)
 fade_enabled = 1
 nextscene = "./mainmenu.lua"
 
+-- The main loop of the game: the current scene is run, then the next one
+-- is started.
+--
+-- The call is wrapped: an error inside a scene (a broken save file, a
+-- missing file, a video that does not fit into the memory) must not kill
+-- the whole game. The player is taken back to the main menu instead, and
+-- the error is written into the log of the debug overlay.
+local SCENE_ERRORS = 0
 while true do
 	System.PowerTick()
-	dofile(nextscene)
+
+	local scene = nextscene
+	if type(scene) ~= "string" or scene == "" then
+		scene = "./mainmenu.lua"
+		nextscene = scene
+	end
+
+	local ok, err = pcall(dofile, scene)
+	if not ok then
+		SCENE_ERRORS = SCENE_ERRORS + 1
+		local msg = tostring(err)
+		if debugoverlay and debugoverlay.log then
+			debugoverlay.log("error in " .. scene .. ": " .. msg)
+		end
+		-- After three errors in a row the game goes to the main menu, so it
+		-- never gets stuck in a broken scene.
+		if SCENE_ERRORS >= 3 then
+			SCENE_ERRORS = 0
+			nextscene = "./mainmenu.lua"
+		end
+		-- The game always has a scene to run.
+		if type(nextscene) ~= "string" or nextscene == "" then
+			nextscene = "./mainmenu.lua"
+		end
+	end
+
 	System.GC()
 end
