@@ -621,7 +621,6 @@ ui = {
 	pause_game = "Pause Game",
 	slot_created = "Slot created",
 	new_save = "Create",
-	art_by = "art by Ossi101",
 
 	music = "Adjust the Menu Music volume",
 	video = "Adjust the PMP Videos volume",
@@ -648,8 +647,6 @@ ui = {
 
 	welcome = "Welcome to Minecraft: Story Mode!",
 	welcome_sub = "Visit the page mcsm_portable on GitHub!",
-
-	save = "Press R to save",
 
 	save_files = "Save Files",
 	save_slot = "Save",

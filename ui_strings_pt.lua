@@ -371,7 +371,7 @@ choices_five = {
 	strange_wall = "Parede estranha",
 	supply_door = "Porta de suprimentos",
 
-	the_eversource_makes_eggs = "A Eversource faz ovos",
+	the_eversource_makes_eggs = "A Fonte Eterna faz ovos",
 	these_generate_resources = "Elas geram recursos",
 
 	crafting_table = "Mesa de trabalho",
@@ -379,7 +379,7 @@ choices_five = {
 	lukas = "Lukas",
 	come_on_milo_text = "Vamos lá, Milo",
 	these_generate_resources_multiline = "Elas geram\n\n recursos",
-	the_eversource_makes_eggs_q = "A Eversource faz\n\n ovos?",
+	the_eversource_makes_eggs_q = "A Fonte Eterna faz\n\n ovos?",
 }
 
 choices_two = {
@@ -597,6 +597,17 @@ choices_four = {
 }
 
 ui = {
+	debug_ram = "RAM livre",
+	debug_battery = "Bateria",
+	debug_cpu = "Frequência CPU",
+	debug_nick = "Apelido",
+	debug_time = "Data e hora",
+	gabriel = "Gabriel",
+	petra = "Petra",
+	fishing_pole = "Vara de pescar",
+	bow = "Arco",
+	tagline_1 = "Esta série de jogos se adapta às suas escolhas.",
+	tagline_2 = "A história muda conforme você joga.",
 	play = "Jogar",
 	support = "Apoiar",
 	settings = "Configurações",
@@ -615,7 +626,6 @@ ui = {
 	pause_game = "Pausar jogo",
 	slot_created = "Slot criado",
 	new_save = "Criar",
-	art_by = "Arte por Ossi101",
 
 	music = "Ajusta o volume da música do menu",
 	video = "Ajusta o volume do vídeo PMP",
@@ -647,6 +657,10 @@ ui = {
 	epi_purchase = "Comprar",
 	epi_install = "Instalar",
 	epi_comingSoon = "Em Breve",
+	epi_btn_start = "Iniciar episódio %d",
+	epi_btn_continue = "Continuar episódio %d",
+	epi_btn_restart = "Reiniciar episódio %d",
+	epi_btn_soon = "Episódio %d em breve",
 	epi_notInstalled = "Não Baixado",
 	epi_installed = "Instalado",
 	epi_available = "Disponível agora!",
@@ -667,8 +681,6 @@ ui = {
 
 	welcome = "Bem-vindo a Minecraft: Story Mode!",
 	welcome_sub = "Visite a página do mcsm_portable no GitHub!",
-
-	save = "Pressione R para salvar",
 
 	label_selectsave = "Selecione um Arquivo de Jogo Salvo",
 	save_files = "Arquivos de salvamento",

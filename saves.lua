@@ -45,8 +45,8 @@ SAVE_ICON = {
 	chestSize = 24,
 	arrowSize = 24,
 	-- the cells of the spritesheet
-	chest = { 0, 220, 48, 48 },
-	arrow = { 48, 220, 48, 48 },
+	chest = { 426, 26, 24, 24 },
+	arrow = { 452, 26, 24, 24 },
 	-- the position of the arrow relative to the chest
 	arrowDX = 0,
 	arrowDY = -16,
@@ -117,7 +117,8 @@ function SaveGame(episodeNumber)
 	currentEpisode = episodeNumber
 	currentSaveSlot = currentSaveSlot or 1
 	require("assets/misc/savefiles")
-	SaveToFile(currentSaveSlot)
+	local ok, saved = pcall(SaveToFile, currentSaveSlot)
+	if not ok or saved == false then return end
 	PlaySaveAnim()
 	wr(episodeNumber .. "_status", "continue")
 	for i = episodeNumber + 1, 5 do
@@ -142,7 +143,16 @@ function AutoSave(episodeNumber)
 	currentEpisode = ep
 	currentSaveSlot = currentSaveSlot or 1
 	require("assets/misc/savefiles")
-	SaveToFile(currentSaveSlot)
+	-- An autosave must never stop the game: when the stick cannot write now,
+	-- the next checkpoint simply tries again.
+	local ok, saved = pcall(SaveToFile, currentSaveSlot)
+	if not ok or saved == false then
+		choiceCounter = freq
+		if debugoverlay and debugoverlay.log then
+			debugoverlay.log("autosave failed: " .. tostring(saved))
+		end
+		return
+	end
 	PlaySaveAnim()
 	wr(ep .. "_status", "continue")
 	_G["status_" .. ep] = "continue"

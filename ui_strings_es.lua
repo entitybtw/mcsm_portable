@@ -597,6 +597,17 @@ choices_four = {
 }
 
 ui = {
+	debug_ram = "RAM libre",
+	debug_battery = "Batería",
+	debug_cpu = "Frecuencia CPU",
+	debug_nick = "Apodo",
+	debug_time = "Fecha y hora",
+	gabriel = "Gabriel",
+	petra = "Petra",
+	fishing_pole = "Caña de pescar",
+	bow = "Arco",
+	tagline_1 = "Esta serie de juegos se adapta a tus decisiones.",
+	tagline_2 = "La historia cambia según cómo juegues.",
 	play = "Jugar",
 	support = "Apoyar",
 	settings = "Configuración",
@@ -615,7 +626,6 @@ ui = {
 	pause_game = "Pausar juego",
 	slot_created = "Ranura creada",
 	new_save = "Crear",
-	art_by = "Arte de Ossi101",
 
 	music = "Ajusta el volumen de la música del menú",
 	video = "Ajusta el volumen del video PMP",
@@ -647,6 +657,10 @@ ui = {
 	epi_purchase = "Adquirir",
 	epi_install = "Instalar",
 	epi_comingSoon = "Próximamente",
+	epi_btn_start = "Empezar episodio %d",
+	epi_btn_continue = "Continuar episodio %d",
+	epi_btn_restart = "Reiniciar episodio %d",
+	epi_btn_soon = "Episodio %d próximamente",
 	epi_notInstalled = "Sin descargar",
 	epi_installed = "Instalado",
 	epi_available = "¡Disponible ya!",
@@ -667,8 +681,6 @@ ui = {
 
 	welcome = "Bienvenido a Minecraft: Story Mode!",
 	welcome_sub = "Visita la página mcsm_portable en GitHub!",
-
-	save = "Presiona R para guardar",
 
 	label_selectsave = "Seleccionar como archivo guardado",
 	save_files = "Archivos de guardado",

@@ -21,11 +21,11 @@ end
 local _cachedFlags = nil
 
 local _debugButtons = {
-	{ id = "FREERAM",  text = "Free RAM",  state = false },
-	{ id = "BATTERY",  text = "Battery",   state = false },
-	{ id = "CPUFREQ",  text = "CPU Freq",  state = false },
-	{ id = "NICKNAME", text = "Nickname",  state = false },
-	{ id = "TIMEDATE", text = "Time/Date", state = false },
+	{ id = "FREERAM",  text = "Free RAM",  key = "debug_ram", state = false },
+	{ id = "BATTERY",  text = "Battery",   key = "debug_battery", state = false },
+	{ id = "CPUFREQ",  text = "CPU Freq",  key = "debug_cpu", state = false },
+	{ id = "NICKNAME", text = "Nickname",  key = "debug_nick", state = false },
+	{ id = "TIMEDATE", text = "Time/Date", key = "debug_time", state = false },
 }
 
 function debugoverlay.getButtons()
@@ -56,12 +56,20 @@ function debugoverlay.loadSettings()
 	return flags
 end
 
+local ramFrames, ramText = 0, ""
+
 function debugoverlay.draw(flags)
 	local f = flags or _cachedFlags
 	if not f then return end
 	local y = 0
 	if f.FREERAM then
-		LUA.print(0, y, string.format("Free RAM: %.2f MB", LUA.getRAM() / (1024 * 1024)))
+		-- The measure allocates the whole heap, so it runs once a second.
+		ramFrames = ramFrames - 1
+		if ramFrames <= 0 then
+			ramFrames = 60
+			ramText = string.format("Free RAM: %.2f MB", LUA.getRAM() / (1024 * 1024))
+		end
+		LUA.print(0, y, ramText)
 		y = y + 13
 	end
 	if f.BATTERY then

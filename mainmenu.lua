@@ -34,11 +34,6 @@ local buttonsList = {
 
 local selectedButton = 1
 
-local buttonSprites = {
-	selected = { srcx = 0, srcy = 164, srcw = 184, srch = 25 },
-	static = { srcx = 184, srcy = 165, srcw = 184, srch = 25 },
-}
-
 function menuTransition(time)
 	-- Время в кадрах
 	-- 60 кадров = 1 секунда
@@ -55,41 +50,7 @@ function menuTransition(time)
 end
 
 local function drawButtons()
-    local startX, startY, gap = 45, 25, 0.1
-    local buttonScale = 1.5
-
-    for i, button in ipairs(buttonsList) do
-        local sprite = (i == selectedButton) and buttonSprites.selected or buttonSprites.static
-        
-        local scaledWidth = sprite.srcw - 20
-        local scaledHeight = sprite.srch * buttonScale - 5
-        local y = startY + (i - 1) * (scaledHeight + gap * buttonScale)
-
-        Image.draw(
-            spritesheet,
-            startX,
-            y,
-            scaledWidth,
-            scaledHeight,
-            nil,
-            sprite.srcx,
-            sprite.srcy,
-            sprite.srcw,
-            sprite.srch,
-            nil,
-            nil,
-            nil
-        )
-
-        local textScale = 1
-        local btntxt = ui[button.k]
-        local textColor = (i == selectedButton) and Color.new(255, 255, 153) or colorWhite
-        local textWidth = intraFont.textW(font, btntxt, textScale)
-        local textHeight = intraFont.textH(font) * textScale
-
-                drawShadowedText(math.floor(startX + (scaledWidth - textWidth) / 2), math.floor(y + (scaledHeight - textHeight) / 2), btntxt, textColor, Color.new(0, 0, 0), font, textScale)
-
-    end
+	drawMenuButtons(#buttonsList, selectedButton, 45, 25, function(i) return ui[buttonsList[i].k] end)
 end
 
 -- The block of the welcome: the plate, its border and the two lines of the
@@ -133,16 +94,15 @@ end
 
 local function drawAll()
 		drawButtons()
-		Image.draw(spritesheet, arrowX, 27, 28, 46, colorWhite, 444, 0, 11, 19)
-		Image.draw(spritesheet, arrowX, 92, 28, 46, colorWhite, 444, 0, 11, 19)
+		Image.draw(spritesheet, arrowX, 27, 28, 46, colorWhite, 454, 0, 11, 19)
+		Image.draw(spritesheet, arrowX, 92, 28, 46, colorWhite, 454, 0, 11, 19)
 
 		local welcolor = welsel and 183 or 255
 
 		drawWelcome(welcolor, welanim)
 
 		-- Bottom hint: cross = select (aligned with text)
-		Image.draw(spritesheet, 45, 235, 20, 20, nil, 20, 111, 20, 20)
-				drawShadowedText(69, 237, ui.select, colorWhite, Color.new(0, 0, 0), font, 1)
+		drawHintRow({ { "cross", ui.select } }, HINT_LEFT_X)
 		debugoverlay.draw()
 end
 

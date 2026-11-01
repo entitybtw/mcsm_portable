@@ -101,10 +101,20 @@ PMP.setVolume(pmpvolume)
 -- START button (the loading screen of the game is shown then).
 local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true, nil, buttons.start)
 
-local loadingFrames = {}
-local frameX = { 0, 48, 96, 144, 192, 240, 288, 336 }
-for i = 0, 7 do
-	loadingFrames[i] = { x = frameX[i + 1] }
+-- The loading animation: a ring of 8 squares around an empty middle. Nothing is
+-- stored in the spritesheet: the same alphas run around the ring.
+local RING = { {0,0}, {1,0}, {2,0}, {2,1}, {2,2}, {1,2}, {0,2}, {0,1} }
+local RING_ALPHA = { 255, 230, 204, 179, 153, 128, 102, 77 }
+local RING_X, RING_Y, RING_STEP, RING_SIZE = 226, 176, 10, 9
+local ringColor = Color.new(255, 255, 255)
+
+local function drawLoadingRing(head, alpha)
+	for i = 1, 8 do
+		local cell = RING[i]
+		screen.filledRect(RING_X + cell[1] * RING_STEP, RING_Y + cell[2] * RING_STEP,
+			RING_SIZE, RING_SIZE, ringColor, 0,
+			math.floor(RING_ALPHA[(i - 1 - head) % 8 + 1] * alpha / 255))
+	end
 end
 
 local startPressed = false
@@ -147,7 +157,7 @@ while PMP.getFrame(pointer) do
 		if voidfade < 255 then
 			voidfade = math.min(voidfade + 5, 255)
 		end
-		Image.draw(spritesheet, 177, 189, 124, 14, nil, 210, 48, 124, 14, nil, voidfade)
+		Image.draw(spritesheet, 177, 189, 124, 14, nil, 300, 26, 124, 14, nil, voidfade)
 
 		local timeSinceStart = os.clock() - loadingStartTime
 
@@ -170,10 +180,7 @@ while PMP.getFrame(pointer) do
 				1
 			)
 
-			local frame = loadingFrames[frameIndex]
-			if frame then
-				Image.draw(spritesheet, 250 - 24, 200 - 24, 30, 30, nil, frame.x, 0, 48, 48, nil, nil, textfade)
-			end
+			drawLoadingRing(frameIndex + 1, textfade)
 
 			if currentStep <= #loadingSequence then
 				local step = loadingSequence[currentStep]
@@ -215,6 +222,7 @@ end
 -- button, so the player is never stuck on the loading screen.
 PMP.play("assets/ui/loading.pmp", false, false, nil, buttons.start)
 
+require("assets/misc/safe")
 require("saves")
 require("debugoverlay")
 require("files")
@@ -239,6 +247,11 @@ while true do
 		scene = "./mainmenu.lua"
 		nextscene = scene
 	end
+
+	-- Every scene starts on a clean heap: the videos need big solid blocks, and
+	-- the garbage of the last scene would stand in the middle of them.
+	cleanupScreen()
+	collectgarbage("collect")
 
 	local ok, err = pcall(dofile, scene)
 	if not ok then

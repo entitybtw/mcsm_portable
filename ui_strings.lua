@@ -1,5 +1,5 @@
 choices_one = {
-	hundred_chicken_sized = "100 змоби размером в\n \n       курицу",
+	hundred_chicken_sized = "100 зомби размером в\n \n       курицу",
 	ten_zombie_sized = "10 кур размером с\n \n       зомби",
 
 	cool_mask = "Крутая маска.",
@@ -124,7 +124,7 @@ choices_one = {
 	pedestal = "Пьедестал",
 	levers = "Рычаги",
 
-	go_for_ellegaard = "[Пойти за Эльгордом]",
+	go_for_ellegaard = "[Пойти за Эльгорд]",
 	go_for_magnus = "[Пойти за Магнусом]",
 
 	the_order_has_failed = "Орден потерпел неудачу",
@@ -165,7 +165,7 @@ choices_three = {
 	dont_look_at_them = "Не смотри на них",
 
 	follow_lukas = "[Идти за Лукасом]",
-	follow_me = "[Идти за мной]",
+	follow_me = "[За мной]",
 
 	im_hallucinating = "У меня галлюцинации",
 	its_beautiful = "Это прекрасно",
@@ -188,14 +188,14 @@ choices_three = {
 	exit = "Выход",
 	search_area1 = "Обыскать зону 1",
 	search_area2 = "Обыскать зону 2",
-	search_upstairs = "Обыскать наверху",
+	search_upstairs = "Обыскать верхний этаж",
 	olivia = "Оливия",
 
 	help_me_save_the_world = "Помоги мне спасти мир",
 	you_need_to_be_a_hero = "Ты должен стать героем",
 
 	dont_give_up = "Не сдавайся",
-	soren_was_here = "Зорен был здесь",
+	soren_was_here = "Сорен был здесь",
 
 	i_guess_so = "Наверное",
 	not_really = "Не особо",
@@ -215,7 +215,7 @@ choices_three = {
 	why_did_you_leave = "Почему ты ушёл?",
 	will_you_help_us = "Ты поможешь нам?",
 
-	take_ellegaards_armor = "[Взять броню Эльгорда]",
+	take_ellegaards_armor = "[Взять броню Эльгорд]",
 	take_magnus_armor = "[Взять броню Магнуса]",
 
 	i_owe_you_guys = "Я ваш должник",
@@ -230,7 +230,7 @@ choices_three = {
 	lever_gabriel = "Рычаг (Габриэль)",
 	lever_reuben = "Рычаг (Рубен)",
 	lever_petra = "Рычаг (Петра)",
-	search_upstairs_text = "Обыскать наверху",
+	search_upstairs_text = "Обыскать верхний этаж",
 	redstone_hole = "Яма с красным камнем",
 	lever = "Рычаг",
 	are_those_ender_crystals = "Это кристаллы Эндера?",
@@ -262,7 +262,7 @@ choices_five = {
 	youre_not_worth_it = "Ты не стоишь этого",
 
 	this_place_is_awesome = "Это место клёвое",
-	time_to_party = "Время вечеринок",
+	time_to_party = "Пора веселиться",
 
 	leave_it_alone = "Не трогай это",
 	tear_it_down = "Снеси это",
@@ -300,7 +300,7 @@ choices_five = {
 	shut_up_both_of_you = "Заткнитесь оба",
 	yeah_aidens_our_focus = "Да, Эйден — наша цель",
 	yeah_sure_whatever = "Да, конечно, как скажешь",
-	your_secrets_safe_with_me = "Твои секреты в безопасности",
+	your_secrets_safe_with_me = "Твой секрет останется со мной",
 
 	aiden_is_using_you = "Эйден использует тебя",
 	he_stole_from_us = "Он украл у нас",
@@ -326,7 +326,7 @@ choices_five = {
 	taking_it_is_wrong = "Забирать это неправильно",
 
 	look_before_you_punch = "Смотри, прежде чем бить",
-	petra_you_trust_him = "Петра, ты доверяешь ему",
+	petra_you_trust_him = "Петра, ты ему доверяешь",
 
 	the_people_need_it = "Это нужно людям",
 	well_take_the_chicken = "Мы возьмём курицу",
@@ -338,7 +338,7 @@ choices_five = {
 	no_its_your_fault = "Нет, это твоя вина",
 
 	bring_everyone_here = "[Привести всех сюда]",
-	we_kick_aidens_butt = "[Накрутить Эйдену задницу]",
+	we_kick_aidens_butt = "[Надрать Эйдену задницу]",
 
 	im_going_home = "Я иду домой",
 	its_my_portal = "Это мой портал",
@@ -369,17 +369,17 @@ choices_five = {
 	dry_bush = "Сухой куст",
 	lever_slot = "Гнездо для рычага",
 	strange_wall = "Странная стена",
-	supply_door = "Дверь снабжения",
+	supply_door = "Дверь склада",
 
-	the_eversource_makes_eggs = "Источник делает яйца",
-	these_generate_resources = "Они генерируют ресурсы",
+	the_eversource_makes_eggs = "Вечный источник несёт яйца",
+	these_generate_resources = "Они дают ресурсы",
 
 	crafting_table = "Верстак",
 	gabriel = "Габриэль",
 	lukas = "Лукас",
 	come_on_milo_text = "Давай же, Майло",
-	these_generate_resources_multiline = "Они генерируют\n\n ресурсы",
-	the_eversource_makes_eggs_q = "Источник делает\n\n яйца?",
+	these_generate_resources_multiline = "Они дают\n\n ресурсы",
+	the_eversource_makes_eggs_q = "Вечный источник\n\n несёт яйца?",
 }
 
 choices_two = {
@@ -423,7 +423,7 @@ choices_two = {
 	he_can_be_a_jerk = "Иногда он бывает засранцем",
 	hes_awesome = "Он классный",
 	shes_awesome = "Она классная",
-	you_make_her_nervous = "Ты делаешь её нервной",
+	you_make_her_nervous = "Ты заставляешь её нервничать",
 
 	hello_boom_town = "Привет, Город Взрывов",
 	who_likes_explosions = "Кто любит взрывы?",
@@ -459,12 +459,12 @@ choices_two = {
 	chest = "Сундук",
 	hes_fine = "С ним всё в порядке",
 	shes_fine = "С ней всё в порядке",
-	we_make_her_nervous = "Мы делаем её нервной",
+	we_make_her_nervous = "Мы заставляем её нервничать",
 	thank_you = "Спасибо",
 	that_was_reckless = "Это было безрассудно",
-	follow_ellegaard = "[Идти за Эльгордом]",
+	follow_ellegaard = "[Идти за Эльгорд]",
 	follow_magnus = "[Идти за Магнусом]",
-	go_get_help = "[Иди за помощью]",
+	go_get_help = "[Пойти за помощью]",
 	im_fine = "Я в порядке",
 	hes_not_leaving = "Он не уходит",
 	let_him_go_gabriel = "Отпусти его, Габриэль",
@@ -479,10 +479,10 @@ choices_two = {
 
 choices_four = {
 	ill_take_gabriel = "Я возьму Габриэля",
-	ive_got_petra = "Петра на мне",
+	ive_got_petra = "Я возьму Петру",
 
-	give_her_some_space = "Дай ей немного пространства",
-	give_him_some_space = "Дай ему немного пространства",
+	give_her_some_space = "Дай ей побыть одной",
+	give_him_some_space = "Дай ему побыть одному",
 	she_doesnt_know_us = "Она нас не знает",
 	he_forgot_everyone = "Он забыл всех",
 
@@ -501,7 +501,7 @@ choices_four = {
 	you_didnt_know = "Ты не знал",
 
 	nothing_you_can_do = "Ничего не поделаешь",
-	they_could_be_alive = "Они могли быть живы",
+	they_could_be_alive = "Возможно, они живы",
 
 	the_order_has_failed = "Орден потерпел неудачу",
 	the_world_needs_us = "Мир нуждается в нас",
@@ -571,7 +571,7 @@ choices_four = {
 
 	flying_machine = "Летающая машина",
 	rocket_minecart = "Вагонетка с ракетой",
-	tnt_launcher = "Пусковая установка ТНТ",
+	tnt_launcher = "Пусковая установка TNT",
 
 	ill_be_fine = "Со мной всё будет в порядке",
 	stay_hidden = "Оставайся в укрытии",
@@ -579,7 +579,7 @@ choices_four = {
 	everyone_okay = "Все целы?",
 	wheres_reuben = "Где Рубен?",
 
-	im_here_for_you_boy = "Я здесь для тебя, малой",
+	im_here_for_you_boy = "Я с тобой, малыш",
 	reuben_i_need_you = "Рубен, ты мне нужен",
 
 	just_let_them_believe = "Просто позволь им верить",
@@ -597,13 +597,24 @@ choices_four = {
 }
 
 ui = {
+	debug_ram = "Свободно RAM",
+	debug_battery = "Батарея",
+	debug_cpu = "Частота ЦП",
+	debug_nick = "Никнейм",
+	debug_time = "Дата и время",
+	gabriel = "Габриэль",
+	petra = "Петра",
+	fishing_pole = "Удочка",
+	bow = "Лук",
+	tagline_1 = "Эта серия игр подстраивается под ваши решения.",
+	tagline_2 = "История зависит от того, как вы играете.",
 	play = "Играть",
 	support = "Поддержать",
 	settings = "Настройки",
 
-	controls = "Управления",
+	controls = "Управление",
 	audiovideo = "Аудио/Видео",
-	debug = "Дебаг",
+	debug = "Отладка",
 	auto_save = "Автосохранение",
 	credits = "Титры",
 
@@ -615,7 +626,6 @@ ui = {
 	pause_game = "Остановить игру",
 	slot_created = "Слот создан",
 	new_save = "Создать",
-	art_by = "Арт от Ossi101",
 
 	music = "Настройка громкости музыки в меню",
 	video = "Настройка громкости видео PMP",
@@ -628,7 +638,7 @@ ui = {
 	pmp_volume = "Громкость PMP",
 	ui_volume = "Громкость звуков интерфейса",
 
-	debug_menu = "Дебаг меню",
+	debug_menu = "Меню отладки",
 
 	episode = "Эпизод",
 	ep_short = "Эп.",
@@ -636,18 +646,22 @@ ui = {
 
 	-- Episodes popup (text from the official ru landb of Menu_EpisodeSelect)
 	epi_select_header = "Выбор эпизода",
-	epi_title1 = "«Орден камня»",
+	epi_title1 = "«Орден Камня»",
 	epi_title2 = "«Нужна сборка»",
 	epi_title3 = "«Да где же оно?»",
 	epi_title4 = "«Между молотом и наковальней»",
-	epi_title5 = "«Вперед, орден!»",
-	epi_start = "Начало",
+	epi_title5 = "«Вперёд, Орден!»",
+	epi_start = "Начать",
 	epi_continue = "Продолжить",
-	epi_restart = "Перезапуск",
+	epi_restart = "Заново",
 	epi_download = "Загрузить",
 	epi_purchase = "Купить",
 	epi_install = "Установить",
-	epi_comingSoon = "Скоро в продаже",
+	epi_comingSoon = "Скоро",
+	epi_btn_start = "Начать эпизод %d",
+	epi_btn_continue = "Продолжить эпизод %d",
+	epi_btn_restart = "Перезапустить эпизод %d",
+	epi_btn_soon = "Эпизод %d скоро",
 	epi_notInstalled = "Не загружено",
 	epi_installed = "Установлено",
 	epi_available = "Доступно сейчас!",
@@ -657,7 +671,7 @@ ui = {
 	legend_select = "Выбор",
 	legend_previousMenu = "Предыдущее меню",
 	legend_rewind = "Перемотать",
-	legend_changeSaveFile = "Файлы сохранения",
+	legend_changeSaveFile = "Сменить сохранение",
 
 	paused = "Пауза",
 	resume_game = "Продолжить",
@@ -669,9 +683,7 @@ ui = {
 	welcome = "Добро пожаловать в Minecraft: Story Mode!",
 	welcome_sub = "Посетите страницу mcsm_portable на GitHub!",
 
-	save = "Нажмите R, чтобы сохраниться",
-
-	label_selectsave = "Выберите файл сохранений",
+	label_selectsave = "Выберите файл сохранения",
 	save_files = "Файлы сохранений",
 	save_slot = "Сохранение",
 	save_properties = "Свойства сохранения",
@@ -718,8 +730,8 @@ ui = {
 	loading_4 = "Проверка эпизодов...",
 	loading_5 = "Завершение...",
 
-	header = "было бы славно если бы ты поставил(а) звезду :)",
-	description = "я трачу много время на этот проект, я очень ценю вашу поддержку и активность :3",
+	header = "было бы славно, если бы ты поставил(а) звезду :)",
+	description = "я трачу много времени на этот проект, я очень ценю вашу поддержку и активность :3",
 
 	extras = "Дополнительно",
 	extras_support = "поддержать меня",
