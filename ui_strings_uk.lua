@@ -597,6 +597,17 @@ choices_four = {
 }
 
 ui = {
+	debug_ram = "Вільно RAM",
+	debug_battery = "Батарея",
+	debug_cpu = "Частота ЦП",
+	debug_nick = "Нікнейм",
+	debug_time = "Дата й час",
+	gabriel = "Габріель",
+	petra = "Петра",
+	fishing_pole = "Вудка",
+	bow = "Лук",
+	tagline_1 = "Ця серія ігор підлаштовується під ваші рішення.",
+	tagline_2 = "Історія залежить від того, як ви граєте.",
 	play = "Грати",
 	support = "Підтримати",
 	settings = "Налаштування",
@@ -615,7 +626,6 @@ ui = {
 	pause_game = "Пауза гри",
 	slot_created = "Слот створено",
 	new_save = "Створити",
-	art_by = "Арт від Ossi101",
 
 	music = "Налаштування гучності музики в меню",
 	video = "Налаштування гучності відео PMP",
@@ -647,6 +657,10 @@ ui = {
 	epi_purchase = "Купити",
 	epi_install = "Встановити",
 	epi_comingSoon = "Незабаром",
+	epi_btn_start = "Почати епізод %d",
+	epi_btn_continue = "Продовжити епізод %d",
+	epi_btn_restart = "Перезапустити епізод %d",
+	epi_btn_soon = "Епізод %d незабаром",
 	epi_notInstalled = "Епізод не завантажено",
 	epi_installed = "Встановлено",
 	epi_available = "Доступно зараз!",
@@ -667,8 +681,6 @@ ui = {
 
 	welcome = "Ласкаво просимо до Minecraft: Story Mode!",
 	welcome_sub = "Відвідайте сторінку mcsm_portable на GitHub!",
-
-	save = "Натисніть R, щоб зберегтися",
 
 	label_selectsave = "Виберіть файл збереження",
 	save_files = "Файли збережень",
