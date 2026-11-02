@@ -597,6 +597,13 @@ choices_four = {
 }
 
 ui = {
+	prop_save = "Кого врятувати",
+	prop_craft = "Що скрафтити",
+	prop_follow = "Кого шукати",
+	prop_armor = "Чию броню взяти",
+	prop_not_set = "Не вибрано",
+	prop_confirm = "Скинути відповідь?",
+	prop_reset = "Скинути",
 	debug_ram = "Вільно RAM",
 	debug_battery = "Батарея",
 	debug_cpu = "Частота ЦП",
@@ -713,7 +720,6 @@ ui = {
 	rename_desc = "Введіть назву збереження",
 	no_empty_slot = "Немає вільних слотів",
 	select_destination_slot = "Оберіть слот призначення",
-	props_hint = "X Перегляд  □ Видалити  O Назад",
 	no_variables = "Немає змінних",
 	variables = "змінних",
 

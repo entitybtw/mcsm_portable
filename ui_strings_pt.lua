@@ -597,6 +597,13 @@ choices_four = {
 }
 
 ui = {
+	prop_save = "Quem salvar",
+	prop_craft = "O que criar",
+	prop_follow = "Quem procurar",
+	prop_armor = "Qual armadura",
+	prop_not_set = "Não definido",
+	prop_confirm = "Redefinir resposta?",
+	prop_reset = "Redefinir",
 	debug_ram = "RAM livre",
 	debug_battery = "Bateria",
 	debug_cpu = "Frequência CPU",
@@ -713,7 +720,6 @@ ui = {
 	rename_desc = "Digite um nome para o save",
 	no_empty_slot = "Não há espaços vazios",
 	select_destination_slot = "Selecionar destino",
-	props_hint = "X Ver  □ Excluir  O Voltar",
 	no_variables = "Sem variáveis",
 	variables = "variáveis",
 
