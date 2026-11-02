@@ -598,6 +598,13 @@ choices_four = {
 }
 
 ui = {
+	prop_save = "Who to save",
+	prop_craft = "What to craft",
+	prop_follow = "Who to look for",
+	prop_armor = "Whose armor",
+	prop_not_set = "Not set",
+	prop_confirm = "Reset this answer?",
+	prop_reset = "Reset",
 	debug_ram = "Free RAM",
 	debug_battery = "Battery",
 	debug_cpu = "CPU Freq",
@@ -714,7 +721,6 @@ ui = {
 	rename_desc = "Enter a save name",
 	no_empty_slot = "No empty save slots",
 	select_destination_slot = "Select destination slot",
-	props_hint = "X View  Square Delete  O Back",
 	no_variables = "No variables",
 	variables = "variables",
 

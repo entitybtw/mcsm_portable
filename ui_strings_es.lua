@@ -597,6 +597,13 @@ choices_four = {
 }
 
 ui = {
+	prop_save = "A quién salvar",
+	prop_craft = "Qué fabricar",
+	prop_follow = "A quién buscar",
+	prop_armor = "Qué armadura tomar",
+	prop_not_set = "Sin elegir",
+	prop_confirm = "¿Restablecer respuesta?",
+	prop_reset = "Restablecer",
 	debug_ram = "RAM libre",
 	debug_battery = "Batería",
 	debug_cpu = "Frecuencia CPU",
@@ -713,7 +720,6 @@ ui = {
 	rename_desc = "Introduce un nombre para la partida",
 	no_empty_slot = "No hay ranuras vacías",
 	select_destination_slot = "Seleccionar destino",
-	props_hint = "X Ver  □ Eliminar  O Volver",
 	no_variables = "Sin variables",
 	variables = "variables",
 

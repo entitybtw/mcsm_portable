@@ -678,7 +678,6 @@ ui = {
 	rename_desc = "Enter a save name",
 	no_empty_slot = "No empty save slots",
 	select_destination_slot = "Select destination slot",
-	props_hint = "X View  Square Delete  O Back",
 	no_variables = "No variables",
 	variables = "variables",
 
