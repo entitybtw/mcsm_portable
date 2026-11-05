@@ -197,6 +197,7 @@ while true do
 
 local function doFadeOut()
 	-- The menu goes to black (ui_keyArt_hide).
+	if fadeIn then fadeIn:cancel() end
 	Fade.run(Fade.KEYART_HIDE, function()
 		if PMP.getFrame(videoFrame) then
 			Image.draw(videoFrame, 0, 0)
@@ -221,6 +222,7 @@ end
 local function comeBack(seconds)
 	fade = 255
 	fade_enabled = 1
+	if fadeIn then fadeIn:cancel() end
 	fadeIn = Fade.start(seconds, false)
 end
 
