@@ -8,7 +8,8 @@ getlang()
 --   en/es/pt (latin) : minecraft (with cyrillic) UI + pexico subtitles
 --   ru/uk   (cyrilic): unifont for both
 applyFonts(lang)
-if lang == "en" then require("ui_strings_en")
+-- ui_strings.lua is English, the other languages are ui_strings_<code>.lua.
+if lang == "ru" then require("ui_strings_ru")
 elseif lang == "es" then require("ui_strings_es")
 elseif lang == "uk" then require("ui_strings_uk")
 elseif lang == "pt" then require("ui_strings_pt")
