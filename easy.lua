@@ -51,6 +51,14 @@ function sound.playEasy(path, channel, loop, loadToRAM, volume)
 	pcall(sound.volume, channel, volume, volume)
 end
 
+-- Stops a channel and frees its sound (the buffers of a streamed AT3 stay in
+-- the channel until then). The next playEasy() on it loads its file again.
+function sound.unloadEasy(channel)
+	pcall(sound.stop, channel)
+	pcall(sound.unload, channel)
+	soundLoaded[channel] = nil
+end
+
 function sound.volumeEasy(channel, volume)
 	pcall(sound.volume, channel, volume, volume)
 end
