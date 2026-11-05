@@ -1,4 +1,6 @@
 local fade = 255
+-- The fade of the menu out of black (assets/misc/fade.lua).
+local fadeIn = nil
 local welanim = 255
 local step = -10
 local delay_time = 4000
@@ -129,10 +131,11 @@ while true do
 		Image.draw(videoFrame, 0, 0)
 	end
 
+	-- The menu comes out of black (ui_menuMain_show, or ui_keyArt_show when
+	-- it comes back from the episodes).
 	if fade_enabled == 1 then
-		if fade > 0 then
-			fade = fade - 8
-		end
+		if not fadeIn then fadeIn = Fade.start(Fade.MENU_SHOW, false) end
+		fade = fadeIn:alpha()
 	end
 
 	if timer.time(timered) == 0 then
@@ -193,14 +196,14 @@ while true do
 	end
 
 local function doFadeOut()
-	fade = 0
-	while fade < 255 do
-		screen.clear()
+	-- The menu goes to black (ui_keyArt_hide).
+	Fade.run(Fade.KEYART_HIDE, function()
+		if PMP.getFrame(videoFrame) then
+			Image.draw(videoFrame, 0, 0)
+		end
 		drawAll()
-		screen.filledRect(0, 0, 480, 272, c_black, 0, fade)
-		screen.flip()
-		fade = fade + 8
-	end
+	end, true)
+	fade = 255
 	-- The video of the menu is stopped: the engine frees the texture of its
 	-- frame, so the memory is not eaten by the menus that are opened again.
 	stopMenuVideo()
@@ -214,10 +217,18 @@ local function doFadeOut()
 	ui_enabled = true
 end
 
+-- Back from a screen opened with doFadeOut: the menu comes out of black.
+local function comeBack(seconds)
+	fade = 255
+	fade_enabled = 1
+	fadeIn = Fade.start(seconds, false)
+end
+
 	if buttons.pressed(buttons.cross) then
 		if welsel then
 			doFadeOut()
 			dofile("assets/misc/extras.lua")
+			comeBack(Fade.MENU_SHOW)
 		else
 			if selectedButton == 1 then
 				doFadeOut()
@@ -225,6 +236,7 @@ end
 				if epmenu == 1 then
 					break
 				end
+				comeBack(Fade.KEYART_SHOW)
 			elseif selectedButton == 2 then
 				-- Episodes: open the popup list of episodes (official
 				-- Menu_EpisodeSelect data). It overlays the still-running menu
@@ -239,10 +251,12 @@ end
 					if epmenu == 1 then
 						break
 					end
+					comeBack(Fade.KEYART_SHOW)
 				end
 			elseif selectedButton == 3 then
 				doFadeOut()
 				dofile("assets/misc/extras.lua")
+				comeBack(Fade.MENU_SHOW)
 			elseif selectedButton == 4 then
 				fade_enabled = 0
 				sound.playEasy("assets/sounds/click.wav", sound.WAV_1, false, false, uiLevel * 10)
