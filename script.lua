@@ -1,8 +1,3 @@
--- initialize variables
-local fade = 255
-local voidfade = 0
-local textfade = 0
-local rectfade = 0
 
 spritesheet = Image.load("assets/ui/menu-spritesheet.png")
 require("sav")
@@ -52,79 +47,37 @@ subssize = 1  -- фиксированный размер субтитров
 -- load volumes
 pmpvolume = (tonumber(pmpvideos) or 10) * 10
 
-local byentitybtw = Image.load("assets/ui/byentitybtw.png")
-local headphones = Image.load("assets/ui/headphones.png")
+-- The loading screen of the game (black, the spinner in the corner) and the
+-- fades of the menus (the times of the original game). They stay for the
+-- whole game, so they are loaded before the intro and the title: what lives
+-- on must not stand above the big blocks of those two (the music of the
+-- title is 3 MB), or their memory comes back in pieces.
+loadingScreen = dofile("assets/misc/loading.lua")
+Fade = dofile("assets/misc/fade.lua")
 
--- byentitybtw fade in/out
-fade = 255
-while fade > 0 do
-	fade = fade - 8
-	screen.clear()
-	Image.draw(byentitybtw, 0, 0, 480, 272, nil, nil, nil, nil, nil, nil, 255 - fade)
-	screen.flip()
-	LUA.sleep(16)
-end
-LUA.sleep(2000)
-fade = 0
-while fade < 255 do
-	fade = fade + 8
-	screen.clear()
-	Image.draw(byentitybtw, 0, 0, 480, 272, nil, nil, nil, nil, nil, nil, 255 - fade)
-	screen.flip()
-	LUA.sleep(16)
-end
-
--- headphones fade in/out
-fade = 255
-while fade > 0 do
-	fade = fade - 8
-	screen.clear()
-	Image.draw(headphones, 0, 0, 480, 272, nil, nil, nil, nil, nil, nil, 255 - fade)
-	screen.flip()
-	LUA.sleep(16)
-end
-LUA.sleep(1500)
-fade = 0
-while fade < 255 do
-	fade = fade + 8
-	screen.clear()
-	Image.draw(headphones, 0, 0, 480, 272, nil, nil, nil, nil, nil, nil, 255 - fade)
-	screen.flip()
-	LUA.sleep(16)
-end
-
-Image.unload(byentitybtw)
-Image.unload(headphones)
+-- The screens before the title: who made the port, then the headphones
+-- (assets/misc/intro.lua).
+dofile("assets/misc/intro.lua").play()
+collectgarbage("collect")
 
 PMP.setVolume(pmpvolume)
--- The video of the title screen. It loops and can be interrupted with the
--- START button (the loading screen of the game is shown then).
-local pointer = PMP.play("assets/ui/mcsm_title.pmp", true, true, nil, buttons.start)
+-- The title screen (assets/misc/title.lua) with its music. START shows the
+-- loading screen of the game.
+local title = dofile("assets/misc/title.lua")
+title.load()
+local TITLE_MUSIC = sound.AT3_2
+sound.playEasy("assets/ui/title/music.at3", TITLE_MUSIC, true, false, pmpvolume)
+local titleClock = timer.create()
+timer.start(titleClock)
 
--- The loading animation: a ring of 8 squares around an empty middle. Nothing is
--- stored in the spritesheet: the same alphas run around the ring.
-local RING = { {0,0}, {1,0}, {2,0}, {2,1}, {2,2}, {1,2}, {0,2}, {0,1} }
-local RING_ALPHA = { 255, 230, 204, 179, 153, 128, 102, 77 }
-local RING_X, RING_Y, RING_STEP, RING_SIZE = 226, 176, 10, 9
-local ringColor = Color.new(255, 255, 255)
-
-local function drawLoadingRing(head, alpha)
-	for i = 1, 8 do
-		local cell = RING[i]
-		screen.filledRect(RING_X + cell[1] * RING_STEP, RING_Y + cell[2] * RING_STEP,
-			RING_SIZE, RING_SIZE, ringColor, 0,
-			math.floor(RING_ALPHA[(i - 1 - head) % 8 + 1] * alpha / 255))
-	end
-end
-
-local startPressed = false
-local loadingStartTime = 0
-local frameIndex = 0
-local frameTimer = 0
-local currentStep = 1
-local stepTimer = 0
-
-local videoStartTime = os.clock()
+-- After START, as in the original (bootTitle.lua and its chores):
+--   ui_boot_startHide   "Press START" goes in 0.25 s
+--   ui_boot_updateShow  the busy icon and the lines of the update come in
+--                       0.5 s; the lines follow each other, then
+--   ui_boot_updateHide  go in 0.5 s
+--   ui_boot_titleHide   the screen goes to black in 3.03 s, the music in 3.84 s
+local AFTER = { show = 0.25, fade = 0.5, black = 3.034, music = 3.842 }
+local BUSY = { x = 226, y = 176, size = 9, pitch = 10, step = 0.25 }
 local loadingSequence = {
 	{ text = ui.loading_1, duration = 1.5 },
 	{ text = ui.loading_2, duration = 0.7 },
@@ -132,95 +85,84 @@ local loadingSequence = {
 	{ text = ui.loading_4, duration = 0.4 },
 	{ text = ui.loading_5, duration = 2.0 },
 }
+local LINES = 0
+for _, step in ipairs(loadingSequence) do LINES = LINES + step.duration end
+AFTER.hide = AFTER.show + AFTER.fade + LINES
+AFTER.blackAt = AFTER.hide + AFTER.fade
 
-while PMP.getFrame(pointer) do
+local function centred(text, y, alpha)
+	if not text or alpha <= 0 then return end
+	intraFont.print(math.floor(240 - intraFont.textW(font, text, 1) / 2), y, text,
+		Color.new(255, 255, 255, math.floor(alpha)), font, 1)
+end
+
+-- The update after START at the time s (seconds since START). Returns true when
+-- the screen is black and the music silent.
+local function drawAfterStart(s)
+	local function smooth(v)
+		if v <= 0 then return 0 elseif v >= 1 then return 1 end
+		return v * v * (3 - 2 * v)
+	end
+	local a = math.min(smooth((s - AFTER.show) / AFTER.fade), 1 - smooth((s - AFTER.hide) / AFTER.fade))
+	if a > 0 then
+		loadingScreen.drawSpinner(s - AFTER.show, a, BUSY)
+		centred(ui.loading, 209, 255 * a)
+		local at = s - AFTER.show - AFTER.fade
+		local line = loadingSequence[1]
+		for _, step in ipairs(loadingSequence) do
+			line = step
+			if at < step.duration then break end
+			at = at - step.duration
+		end
+		centred(line.text, 222, 255 * a)
+	end
+	local b = smooth((s - AFTER.blackAt) / AFTER.black)
+	if b > 0 then
+		screen.filledRect(0, 0, 480, 272, Color.new(0, 0, 0), nil, math.floor(255 * b))
+	end
+	local m = 1 - smooth((s - AFTER.blackAt) / AFTER.music)
+	pcall(sound.volumeEasy, TITLE_MUSIC, math.floor((pmpvolume or 100) * m))
+	return s >= AFTER.blackAt + AFTER.music
+end
+
+local startPressed = false
+local titleDone = false
+local startClock = nil
+
+while true do
+	local now = timer.time(titleClock) / 1000
+	local since = startClock and timer.time(startClock) / 1000 or nil
 	screen.clear()
-	Image.draw(pointer, 0, 0)
+	title.draw(now, since)
 	buttons.read()
 
-	local currentVideoTime = os.clock() - videoStartTime
-	if not startPressed and currentVideoTime >= 12 and buttons.pressed(buttons.start) then
-		-- reset fades
-		voidfade = 0
-		textfade = 0
-		rectfade = 0
-		frameIndex = 0
-		currentStep = 1
-
+	if not startPressed and now >= title.START_AT and buttons.pressed(buttons.start) then
 		startPressed = true
-		loadingStartTime = os.clock()
-		frameTimer = os.clock()
-		stepTimer = os.clock()
+		startClock = timer.create()
+		timer.start(startClock)
 	end
 
-	if startPressed then
-		if voidfade < 255 then
-			voidfade = math.min(voidfade + 5, 255)
-		end
-		Image.draw(spritesheet, 177, 189, 124, 14, nil, 300, 26, 124, 14, nil, voidfade)
-
-		local timeSinceStart = os.clock() - loadingStartTime
-
-		if timeSinceStart >= 1 and timeSinceStart < 8 then
-			if os.clock() - frameTimer >= 0.2 then
-				frameIndex = (frameIndex + 1) % 8
-				frameTimer = os.clock()
-			end
-
-			if textfade < 255 then
-				textfade = math.min(textfade + 5, 255)
-			end
-
-			intraFont.print(
-				235 - intraFont.textW(font, ui.loading, 1) / 2 + 8,
-				195 + 14,
-				ui.loading,
-				Color.new(255, 255, 255, textfade),
-				font,
-				1
-			)
-
-			drawLoadingRing(frameIndex + 1, textfade)
-
-			if currentStep <= #loadingSequence then
-				local step = loadingSequence[currentStep]
-				intraFont.print(
-					235 - intraFont.textW(font, step.text, 1) / 2 + 8,
-					222,
-					step.text,
-					Color.new(255, 255, 255, textfade),
-					font,
-					1
-				)
-
-				if os.clock() - stepTimer >= step.duration then
-					currentStep = currentStep + 1
-					stepTimer = os.clock()
-				end
-			end
-		end
-
-		if timeSinceStart >= 6 and textfade > 0 then
-			textfade = math.max(textfade - 8, 0)
-		end
-
-		if timeSinceStart >= 8 then
-			rectfade = math.min(rectfade + 3, 255)
-			screen.filledRect(0, 0, 480, 272, Color.new(0, 0, 0), nil, rectfade)
-		end
-
-		if timeSinceStart >= 10 then
-			PMP.stop(pointer)
-			break
-		end
+	if since and drawAfterStart(since) then
+		titleDone = true
 	end
 
 	screen.flip()
+	-- The pictures are freed after the frame that used them is drawn.
+	if titleDone then
+		pcall(sound.stop, TITLE_MUSIC)
+		pcall(sound.unload, TITLE_MUSIC)
+		title.unload()
+		timer.remove(startClock)
+		timer.remove(titleClock)
+		break
+	end
 end
 
--- The loading video of the game. It can be interrupted with the START
--- button, so the player is never stuck on the loading screen.
-PMP.play("assets/ui/loading.pmp", false, false, nil, buttons.start)
+-- Nothing of the title is kept: its tables are freed before the menus load.
+title, startClock, titleClock = nil, nil, nil
+collectgarbage("collect")
+
+loadingScreen.play(buttons.start)
 
 require("assets/misc/safe")
 require("saves")

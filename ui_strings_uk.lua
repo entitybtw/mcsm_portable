@@ -729,6 +729,13 @@ ui = {
 	off = "ВИМК",
 
 	loading = "ЗАВАНТАЖЕННЯ",
+	intro_byline = "homebrew-порт від",
+	intro_github = "Вихідний код на GitHub",
+	intro_disclaimer = "Це фанатський порт Minecraft: Story Mode. Він не пов'язаний із Telltale Games чи Netflix.\nОригінальна гра та її версія для Netflix більше недоступні, але в цю гру все ще варто зіграти!",
+	intro_headphones = "Minecraft найкраще грати в навушниках.",
+	press_start = "Щоб почати, натисніть START",
+	title_autosave = "Цей індикатор вказує на виконання збереження.\nБудь ласка, не вимикайте живлення, доки індикатор не зникне.",
+	title_legal = "©2015 Telltale, Inc. Telltale, Telltale Games і логотип Telltale Games є товарними знаками та/або зареєстрованими товарними знаками компанії Telltale, Inc. Усі права захищено. © 2015 Mojang AB і Mojang Synergies AB. MINECRAFT є товарним знаком або зареєстрованим товарним знаком компанії Mojang Synergies AB.",
 	loading_1 = "Ініціалізація функцій...",
 	loading_2 = "Читання налаштувань...",
 	loading_3 = "Читання збережень...",

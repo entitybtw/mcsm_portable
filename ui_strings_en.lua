@@ -730,6 +730,13 @@ ui = {
 	off = "OFF",
 
 	loading = "LOADING",
+	intro_byline = "a homebrew port by",
+	intro_github = "Source code on GitHub",
+	intro_disclaimer = "This is a fan-made port of Minecraft: Story Mode. It is not affiliated with Telltale Games or Netflix.\nThe original game and its Netflix version are no longer available, but it is still a great game worth experiencing!",
+	intro_headphones = "Minecraft is best played with headphones.",
+	press_start = "Press START to Begin",
+	title_autosave = "Progress is saved whenever this indicator is displayed.\nPlease do not turn the power off while the indicator is on screen.",
+	title_legal = "©2015 Telltale, Inc. Telltale, Telltale Games, the Telltale Games logo are trademarks and/or registered trademarks of Telltale, Inc. All rights reserved. © 2015 Mojang AB and Mojang Synergies AB. MINECRAFT is a trademark or registered trademark of Mojang Synergies AB.",
 	loading_1 = "Initializing functions...",
 	loading_2 = "Reading settings...",
 	loading_3 = "Reading save data...",
