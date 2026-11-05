@@ -22,9 +22,15 @@ choiceCounter = 0
 --   arrow     — the cell {x, y, w, h} of the arrow inside the spritesheet
 --   arrowDX   — the arrow is drawn this far to the right of the chest
 --   arrowDY   — ... and this far above it (a negative number is up)
---   bob       — how much the arrow bounces up and down
---   bobSpeed  — how fast the arrow bounces (bigger = faster)
---   frames    — how long the animation lasts (in frames)
+--   bob       — how much the arrow bounces up and down (pixels, rounded)
+--   bobSpeed  — how fast the arrow bounces (radians per second; bigger = faster)
+--   duration  — how long the animation lasts (seconds)
+--
+-- The speed, the bounce and the time are measured on a recording of the original
+-- game (60 fps): the icon appears at once, stays 1.47 s and goes at once; the
+-- arrow swings with a period of 1.03 s (6.1 rad/s) by about 1.7 px on a 720p
+-- screen, that is about 1 px next to a chest of our size. The animation runs in
+-- time, so it does not depend on the frame rate of the loop that draws it.
 --
 -- The two sizes are separate, so the arrow can be smaller than the chest
 -- (or bigger) without touching anything else. The picture of the chest and
@@ -50,10 +56,10 @@ SAVE_ICON = {
 	-- the position of the arrow relative to the chest
 	arrowDX = 0,
 	arrowDY = -16,
-	-- the animation
-	bob = 3,
-	bobSpeed = 0.15,
-	frames = 90,
+	-- the animation (measured on the original game)
+	bob = 1,
+	bobSpeed = 6.1,
+	duration = 1.47,
 }
 
 -- Moves the save icon (the same as changing SAVE_ICON.x and SAVE_ICON.y).
@@ -62,13 +68,24 @@ function setSaveIcon(x, y)
 	SAVE_ICON.y = y
 end
 
-local saveAnim = { visible = false, timer = 0, bobAngle = 0 }
-local SAVE_ANIM_FRAMES = SAVE_ICON.frames or 90   -- ~1.5 s at ~60 fps
+-- The animation runs by a timer (milliseconds), not by frames: `t` is the
+-- seconds since it started.
+local saveAnim = { visible = false, clock = nil, t = 0 }
+
+local function stopSaveAnim()
+	saveAnim.visible = false
+	saveAnim.t = 0
+	if saveAnim.clock then
+		timer.remove(saveAnim.clock)
+		saveAnim.clock = nil
+	end
+end
 
 function triggerSaveAnim()
+	stopSaveAnim()
+	saveAnim.clock = timer.create()
+	timer.start(saveAnim.clock)
 	saveAnim.visible = true
-	saveAnim.timer = 0
-	saveAnim.bobAngle = 0
 end
 
 -- Non-blocking: just triggers the animation.
@@ -78,12 +95,9 @@ end
 
 function updateSaveAnim()
 	if not saveAnim.visible then return end
-	saveAnim.timer = saveAnim.timer + 1
-	saveAnim.bobAngle = saveAnim.bobAngle + (SAVE_ICON.bobSpeed or 0.15)
-	if saveAnim.timer >= SAVE_ANIM_FRAMES then
-		saveAnim.visible = false
-		saveAnim.timer = 0
-		saveAnim.bobAngle = 0
+	saveAnim.t = timer.time(saveAnim.clock) / 1000
+	if saveAnim.t >= (SAVE_ICON.duration or 1.47) then
+		stopSaveAnim()
 	end
 end
 
@@ -98,7 +112,7 @@ function drawSaveAnim()
 		s.chest[1], s.chest[2], s.chest[3], s.chest[4])
 
 	-- The arrow: it bounces over the chest and points down at it.
-	local bobY = math.floor(math.cos(saveAnim.bobAngle) * (s.bob or 0))
+	local bobY = math.floor(math.cos(saveAnim.t * (s.bobSpeed or 6.1)) * (s.bob or 0) + 0.5)
 	Image.draw(spritesheet, s.x + s.arrowDX, s.y + s.arrowDY + bobY,
 		as, as, nil,
 		s.arrow[1], s.arrow[2], s.arrow[3], s.arrow[4])
