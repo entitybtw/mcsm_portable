@@ -1,3 +1,17 @@
+-- ===== THE ARROW OF THE MENU: set the place here =====
+-- ARROW_X     the x of the box of the arrow (28 px wide), the middle of its slide.
+--             The tip of the triangle is 22.9 px from the left edge of the box and the
+--             buttons start at x = 45, so ARROW_X = 45 - 22.9 = 22.1 puts the tip on
+--             the left edge of the buttons; bigger goes into the button, smaller away.
+--             Now 24.5: the tip 2.4 px inside on average, as in the original game.
+-- ARROW_SLIDE how far the arrow slides to the left and to the right (px).
+-- ARROW_SPEED how fast it slides: the step of the sine per frame (0.2 = one slide
+--             back and forth in about 31 frames, half a second at 60 fps); bigger is faster.
+local ARROW_X = 32
+local ARROW_SLIDE = 3
+local ARROW_SPEED = 0.2
+-- =====================================================
+
 local fade = 255
 -- The fade of the menu out of black (assets/misc/fade.lua).
 local fadeIn = nil
@@ -7,7 +21,7 @@ local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
 local stat = sound.state(5)
-local arrowX = 39
+local arrowX = ARROW_X
 local arrowStep = 0
 local welsel = false
 
@@ -189,8 +203,8 @@ while true do
 		LUA.quit()
 	end
 
-	arrowStep = arrowStep + 0.2
-	arrowX = 38 + cos(arrowStep) * 3
+	arrowStep = arrowStep + ARROW_SPEED
+	arrowX = ARROW_X + cos(arrowStep) * ARROW_SLIDE
 	if arrowStep >= 360 then
 		arrowStep = 0
 	end
