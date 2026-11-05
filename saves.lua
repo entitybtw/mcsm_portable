@@ -176,9 +176,7 @@ function LoadEpisodeVars(episodeNumber)
 	require("assets/misc/savefiles")
 	local sf = GetSaveFile(currentSaveSlot)
 	if sf and sf.vars then
-		for key, val in pairs(sf.vars) do
-			_G[key] = val
-		end
+		RestoreSaveVars(sf.vars)
 	end
 	-- The answers of the setup of the episode are restored as well, so the
 	-- story of the episode is the one the player has chosen.
