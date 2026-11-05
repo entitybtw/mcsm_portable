@@ -9,3 +9,8 @@ error_log.txt
 templuaFont.pgf
 резюме/
 lpyt-docs
+# Asset build scripts and their sources stay local
+tools/
+
+# Editor temp files
+assets/ui/.xdp-*
