@@ -7,9 +7,9 @@
 -- ARROW_SLIDE how far the arrow slides to the left and to the right (px).
 -- ARROW_SPEED how fast it slides: the step of the sine per frame (0.2 = one slide
 --             back and forth in about 31 frames, half a second at 60 fps); bigger is faster.
-local ARROW_X = 32
+local ARROW_X = 33
 local ARROW_SLIDE = 3
-local ARROW_SPEED = 0.2
+local ARROW_SPEED = 0.1
 -- =====================================================
 
 local fade = 255

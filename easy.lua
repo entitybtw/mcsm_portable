@@ -99,6 +99,12 @@ local function hexToColor(input)
 end
 
 function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize, hexColor, hexBg, subsControl, loop, overlayFn)
+	-- The frame kept under the last choice (saves.lua) belongs to the video
+	-- before this one: it is freed, so the memory goes to this video.
+	if ChoiceBackdropFree then ChoiceBackdropFree() end
+	-- The subtitles of the language, or of its base language when it does not
+	-- have this clip (a language pack does not have to be complete).
+	if ResolveSubs then subsPath = ResolveSubs(subsPath) end
 	if type(getPointer) ~= "boolean" then
 		getPointer = false
 	end
@@ -325,7 +331,9 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		elseif buttons.pressed(buttons.start) then
 			if not paused then
 				PMP.pause()
+				PAUSE_IN_VIDEO = true
 				local code = dofile("assets/misc/pause.lua")
+				PAUSE_IN_VIDEO = false
 				if code == -1 then
 					PMP.stop(pointer)
 					return 1

@@ -17,7 +17,7 @@ choiceCounter = 0
 --
 --   x, y      — where the icon stands on the screen (480×272)
 --   chestSize — how big the chest is drawn (in pixels on the screen)
---   arrowSize — how big the arrow is drawn (in pixels on the screen)
+--   arrowW, arrowH — the size of the arrow on the screen: its own, so it stays sharp
 --   chest     — the cell {x, y, w, h} of the chest inside the spritesheet
 --   arrow     — the cell {x, y, w, h} of the arrow inside the spritesheet
 --   arrowDX   — the arrow is drawn this far to the right of the chest
@@ -49,13 +49,14 @@ SAVE_ICON = {
 	y = 132,
 	-- the size of the two pictures on the screen (in pixels)
 	chestSize = 24,
-	arrowSize = 24,
+	arrowW = 13,
+	arrowH = 15,
 	-- the cells of the spritesheet
 	chest = { 426, 26, 24, 24 },
-	arrow = { 452, 26, 24, 24 },
+	arrow = { 452, 26, 13, 15 },
 	-- the position of the arrow relative to the chest
-	arrowDX = 0,
-	arrowDY = -16,
+	arrowDX = 5,
+	arrowDY = -15,
 	-- the animation (measured on the original game)
 	bob = 1,
 	bobSpeed = 6.1,
@@ -105,7 +106,6 @@ function drawSaveAnim()
 	if not saveAnim.visible then return end
 	local s = SAVE_ICON
 	local cs = s.chestSize or s.size or 32
-	local as = s.arrowSize or s.size or 32
 
 	-- The chest: the picture of its cell, scaled to the wanted size.
 	Image.draw(spritesheet, s.x, s.y, cs, cs, nil,
@@ -114,7 +114,7 @@ function drawSaveAnim()
 	-- The arrow: it bounces over the chest and points down at it.
 	local bobY = math.floor(math.cos(saveAnim.t * (s.bobSpeed or 6.1)) * (s.bob or 0) + 0.5)
 	Image.draw(spritesheet, s.x + s.arrowDX, s.y + s.arrowDY + bobY,
-		as, as, nil,
+		s.arrowW, s.arrowH, nil,
 		s.arrow[1], s.arrow[2], s.arrow[3], s.arrow[4])
 end
 
@@ -125,22 +125,45 @@ function drawSaveOverlay()
 	drawSaveAnim()
 end
 
--- ================= SAVE STUBS (lazy-load assets/misc/savefiles.lua) =================
--- SaveGame writes the file, then plays the blocking save animation.
-function SaveGame(episodeNumber)
-	currentEpisode = episodeNumber
-	currentSaveSlot = currentSaveSlot or 1
-	require("assets/misc/savefiles")
-	local ok, saved = pcall(SaveToFile, currentSaveSlot)
-	if not ok or saved == false then return end
-	PlaySaveAnim()
-	wr(episodeNumber .. "_status", "continue")
-	for i = episodeNumber + 1, 5 do
-		rm(i .. "_status")
-		_G["status_" .. i] = nil
+-- True while the save icon is on the screen.
+function SaveAnimActive()
+	updateSaveAnim()
+	return saveAnim.visible
+end
+
+-- The last frame of a video under a choice: the screen must be drawn again for
+-- the save icon, so the picture is kept until the next video starts (or the scene
+-- ends, in script.lua). It is the frame the engine kept (PMP.takeLastFrame, 16-bit,
+-- 277 KB), which has no subtitles on it. Image.fromScreen is only for a screen
+-- without a video before it: PPSSPP with a hardware renderer does not write the
+-- screen back to the VRAM, so there it gives a frame from long ago.
+function ChoiceBackdropTake()
+	if CHOICE_BACKDROP then return end
+	local last = PMP.takeLastFrame()
+	if last then
+		CHOICE_BACKDROP = last
+		return
+	end
+	local ok, img = pcall(Image.fromScreen)
+	if ok then CHOICE_BACKDROP = img end
+end
+
+function ChoiceBackdropDraw()
+	if CHOICE_BACKDROP then
+		screen.clear()
+		Image.draw(CHOICE_BACKDROP, 0, 0)
 	end
 end
 
+function ChoiceBackdropFree()
+	if CHOICE_BACKDROP then
+		pcall(Image.unload, CHOICE_BACKDROP)
+		CHOICE_BACKDROP = nil
+	end
+	PMP.freeLastFrame()
+end
+
+-- ================= SAVE STUBS (lazy-load assets/misc/savefiles.lua) =================
 -- Autosave at choice checkpoints: throttled by the autosave_freq setting
 -- (0 = off, 1 = every choice, N = every N choices). Writes the current slot
 -- file so the save menu always reflects progress, and marks this episode
@@ -148,7 +171,7 @@ end
 -- later episodes' status markers (replaying an older episode must not wipe a
 -- marker for an episode already played). Called from each episode's choice node.
 function AutoSave(episodeNumber)
-	local freq = sav.get("settings", "autosave_freq", 1) or 1
+	local freq = sav.get("settings", "autosave_freq", 5) or 5
 	if freq == 0 then return end
 	choiceCounter = choiceCounter + 1
 	if choiceCounter < freq then return end
@@ -167,6 +190,7 @@ function AutoSave(episodeNumber)
 		end
 		return
 	end
+	WriteSlotThumb(currentSaveSlot)
 	PlaySaveAnim()
 	wr(ep .. "_status", "continue")
 	_G["status_" .. ep] = "continue"
