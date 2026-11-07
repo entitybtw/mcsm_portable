@@ -8,12 +8,10 @@ getlang()
 --   en/es/pt (latin) : minecraft (with cyrillic) UI + pexico subtitles
 --   ru/uk   (cyrilic): unifont for both
 applyFonts(lang)
--- ui_strings.lua is English, the other languages are ui_strings_<code>.lua.
-if lang == "ru" then require("ui_strings_ru")
-elseif lang == "es" then require("ui_strings_es")
-elseif lang == "uk" then require("ui_strings_uk")
-elseif lang == "pt" then require("ui_strings_pt")
-else require("ui_strings") end
+-- The interface strings: English (assets/langs/en/ui_strings.lua) under those
+-- of the language (assets/langs/<language>/ui_strings.lua), so a key a
+-- language does not have stays readable.
+loadStrings(lang)
 
 -- Глобальные цвета (палитра)
 C_WHITE = Color.new(255, 255, 255)
@@ -193,6 +191,7 @@ while true do
 
 	-- Every scene starts on a clean heap: the videos need big solid blocks, and
 	-- the garbage of the last scene would stand in the middle of them.
+	if ChoiceBackdropFree then ChoiceBackdropFree() end
 	cleanupScreen()
 	collectgarbage("collect")
 
