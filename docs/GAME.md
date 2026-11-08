@@ -30,10 +30,14 @@ The video and its subtitles share the relative path: `V .. rel .. ".pmp"` and `S
 Story variables that change the videos, all saved in the slot:
 
 - `reuben` (`reuben` / `noreuben`)
-- `building` (`creeper` / `enderman`)
+- `building` (`creeper` / `enderman`): the team scenes of episode 1, and the statue in choices 22-23 (`_enderman`)
 - `sword` (`""` / `"_sword"`)
-- the setup answers `gp`, `bf`, `em`, `ema`
-- `mi` and `save` in episode 5
+- `with_lukas` (`""` / `"_lukas"`): Jesse went after Lukas at choice 19. Choices 21-23 of episode 1 show Lukas with Jesse, and in "Help Lukas" he thanks him. Old saves without it play the videos without Lukas.
+- the setup answers `gp`, `bf`, `em`, `ema`; `bf` also picks `_bow` in the fight of Boom Town (episode 2, choice 7)
+- `potion` (`""` / `"_nopotion"`) in episode 4: "Let's head back" at choice 9 comes to choice 11 without the potion of leaping (another line and shorter videos), "We need that cake" with it. Old saves play the videos with the potion.
+- `mi` and `save` in episode 5. `save` (`lukas` / `founder`, choice 25) picks `_founder` in choices 26-30 and `_lukas` in 33-34: the base videos of 26-30 are the ones where Jesse backed Lukas up, those of 33-34 the ones where he saved the Founder. In 26, 27 ("Bring everyone here") and 29 ("Potion of speed") the Founder's video is the same for Ivor and Milo, so it has no `mi` folder.
+
+A version of a video that one of them changes has the suffix after the name of the base video, in the order of the list: `help_lukas_lukas_enderman.pmp`.
 
 ## Choice screens and the save icon
 
@@ -71,6 +75,21 @@ Buttons: Cross loads or creates; Square renames (`System.OSK`, 24 characters at 
 `assets/ui/epmenu/epmenu.lua` plays the clips `assets/ui/epmenu/epN.pmp` (`_l` and `_r` for the slide). The game draws the overlay: name, button, hints in `smallFont()`, arrows. The video is paused a few frames before its end to keep the frame.
 
 Each episode shows Start, Continue or Restart, from the keys `N_status` in `data.json`. `SetStatusesFromSave(slot)` recomputes them whenever the slot changes (create, load, delete): episodes before the one of the save get Restart, its episode gets Continue (Start before the first choice), later ones get Start.
+
+## Videos
+
+Every video of the game is a PMP file made from the original with `pmp-cli` (the PMP command-line converter, kept outside this repository), with the same settings for all of them:
+
+```bash
+pmp-cli convert clip.mp4 clip.pmp --crf 27 --preset faster --audio-bitrate 64   # from a source video
+pmp-cli compress clip.pmp --crf 27 --preset faster --audio-bitrate 64           # an existing PMP
+```
+
+A source bigger than the screen needs `--width 480 --height 272`: pmp-cli keeps the size of the source, and a 720p PMP is about 28 MB for 2.5 minutes, too much for the PSP.
+
+A clip starts right after the choice before it, and ends about a second after the frame of the next choice appears, once the characters are silent and the music has settled; a person chose each end, so the tail after the frame differs (29 to 134 frames). A new version of an existing clip is cut like it: the same first frames, and the same tail after the frame.
+
+Use them for any new or remade video, so that size, quality and decoding cost stay the same across the game.
 
 ## Title screen
 
