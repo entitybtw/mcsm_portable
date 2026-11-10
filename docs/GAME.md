@@ -76,6 +76,10 @@ Buttons: Cross loads or creates; Square renames (`System.OSK`, 24 characters at 
 
 Each episode shows Start, Continue or Restart, from the keys `N_status` in `data.json`. `SetStatusesFromSave(slot)` recomputes them whenever the slot changes (create, load, delete): episodes before the one of the save get Restart, its episode gets Continue (Start before the first choice), later ones get Start.
 
+## Menu video
+
+The main menu, the episode list, the extras and the settings stand on `assets/ui/mcsm_mainmenu.pmp`. It is stopped whenever a screen needs its memory (the episode menu with its own clips, the credits, a font rebuild), and the menus go on with it where it stopped: `stopMenuVideo` keeps its frame in `MENU_VIDEO` and `safePlayMenuVideo` starts it there (`PMP.play` with a start frame, [ENGINE.md](ENGINE.md)); a menu comes out of black only once the video shows its own frame (`waitMenuVideo`). From the game (the start, "Main menu" of the pause, the end of an episode) `mainmenu.lua` runs as a new scene, and there the video and the music of the menu start from the beginning.
+
 ## Videos
 
 Every video of the game is a PMP file made from the original with `pmp-cli` (the PMP command-line converter, kept outside this repository), with the same settings for all of them:

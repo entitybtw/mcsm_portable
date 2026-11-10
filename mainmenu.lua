@@ -20,7 +20,6 @@ local step = -10
 local delay_time = 4000
 local c_black = Color.new(0, 0, 0)
 local cos = math.cos
-local stat = sound.state(5)
 local arrowX = ARROW_X
 local arrowStep = 0
 local welsel = false
@@ -30,7 +29,14 @@ require("assets/misc/safe")
 -- The background video of the menu. It is started safely: if the video does
 -- not fit into the memory of the PSP, the menu simply shows the black
 -- background instead of crashing.
+-- This file runs as a scene only when the game comes to the main menu from
+-- the game itself (the start, the pause menu, the end of an episode): the
+-- menus next to it (episodes, extras, settings) come back inside its loop.
+-- So here the menu starts over: its video and its music from the beginning.
+stopMenuVideo()
+MENU_VIDEO.frame = 0
 safePlayMenuVideo("assets/ui/mcsm_mainmenu.pmp")
+waitMenuVideo()
 
 ui_enabled = true
 debugoverlay.loadSettings()
@@ -128,14 +134,13 @@ function stop_sound(channel)
 	end
 end
 
--- The music of the menu loops: the flag loop of sound.playEasy is true and
--- the volume of the menu is applied, so the music never stops in the
--- background and never restarts from the beginning.
-if stat.state == "stopped" then
-	sound.playEasy("assets/sounds/bg.at3", 5, true, false, (menumusic or 10) * 10)
-else
-	sound.volumeEasy(5, (menumusic or 10) * 10)
-end
+-- The music of the menu loops (the flag loop of sound.playEasy). It starts
+-- from the beginning here, whatever the channel held before (the music of the
+-- pause menu, of an episode, or this music started at boot): the channel is
+-- emptied, so the stream is opened again at its start. The menus next to this
+-- one never touch it, so there it goes on.
+sound.unloadEasy(5)
+sound.playEasy("assets/sounds/bg.at3", 5, true, false, (menumusic or 10) * 10)
 
 while true do
 	welanimTick = welanimTick + 1
@@ -235,6 +240,9 @@ end
 -- Back from a screen opened with doFadeOut: the menu comes out of black.
 local function comeBack(seconds)
 	fade = 255
+	-- The screen behind is black: the fade starts with the first frame of
+	-- the menu video, never with the frame of the screen left.
+	waitMenuVideo()
 	fade_enabled = 1
 	if fadeIn then fadeIn:cancel() end
 	fadeIn = Fade.start(seconds, false)
