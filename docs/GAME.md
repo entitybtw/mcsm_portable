@@ -93,7 +93,7 @@ pmp-cli compress clip.pmp --crf 27 --preset faster --audio-bitrate 64           
 
 A source bigger than the screen needs `--width 480 --height 272`: pmp-cli keeps the size of the source, and a 720p PMP is about 28 MB for 2.5 minutes, too much for the PSP.
 
-A clip starts right after the choice before it, and ends about a second after the frame of the next choice appears, once the characters are silent and the music has settled; a person chose each end, so the tail after the frame differs (29 to 134 frames). A new version of an existing clip is cut like it: the same first frames, and the same tail after the frame.
+A clip starts right after the choice before it. In episodes 1 to 3 a clip with a choice after it runs to the end of the uncut source (the wait under the choice: 16 to 48 s after the choice appears in episode 1, 5 to 29 s in episode 2). The uncut sources are the structured videos of the maintainer's cloud, and the YouTube nodes of the Netflix version for the clips added later (episode 2: the four `_bow` clips of choice 7 and `magnus_petra/stone/*`). In episodes 2 and 3 only the clips before a zone (Redstonia; Woolland, the loot, the lab) and the endings keep their old cut. Elsewhere it ends about a second after the frame of the next choice appears, once the characters are silent and the music has settled; a person chose each end, so the tail after the frame differs (29 to 134 frames). A new version of an existing clip is cut like it: the same first frames, and the same tail after the frame.
 
 Use them for any new or remade video, so that size, quality and decoding cost stay the same across the game.
 
