@@ -17,3 +17,6 @@ assets/ui/.xdp-*
 
 # Local work state of long tasks (translations, audits); see CLAUDE.md R3
 work/
+
+# Open work stays local (docs/NEXT.md)
+docs/NEXT.md

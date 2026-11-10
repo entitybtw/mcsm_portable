@@ -1,6 +1,6 @@
 # Minecraft: Story Mode Portable (PSP)
 
-A fan port to the PSP: the episodes are videos, the story and menus are Lua. Start with **`docs/README.md`**, then open only the page of the task. Open work is in `docs/NEXT.md`; on "continue" (продолжай / делай / дальше), take its first open item without questions, and update it when stopping.
+A fan port to the PSP: the episodes are videos, the story and menus are Lua. Start with **`docs/README.md`**, then open only the page of the task. Open work is in `docs/NEXT.md`: a local file of the maintainer, git-ignored and never committed, but it is the queue of the work and its instructions. Read it before starting; on "continue" (продолжай / делай / дальше), take its first open item without questions, and update it when stopping. If it is missing (a fresh clone), say so instead of guessing the queue.
 
 ## Talking to the maintainer
 
@@ -9,7 +9,7 @@ A fan port to the PSP: the episodes are videos, the story and menus are Lua. Sta
 
 ## Docs
 
-- Docs describe the current state; history lives in git. New knowledge goes to the page of the topic, open work to `docs/NEXT.md`, and finished work leaves `NEXT.md`.
+- Docs describe the current state; history lives in git. New knowledge goes to the page of the topic, open work to `docs/NEXT.md`, and finished work leaves `NEXT.md`. Public docs never link to `NEXT.md` (it is not in the repository).
 - **They are public.** Never write credentials, tokens, private host names, IPs, e-mail addresses or home paths. Write `$HOME`, `<psp root>`, `<engine repo>`.
 
 ## Rules

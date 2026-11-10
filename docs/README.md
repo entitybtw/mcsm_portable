@@ -8,7 +8,6 @@ A fan port of Minecraft: Story Mode season 1 to the PSP, built on the interactiv
 | [GAME.md](GAME.md) | Story, saves, menus |
 | [LANGUAGES.md](LANGUAGES.md) | Languages and subtitles |
 | [TESTING.md](TESTING.md) | PSPLink, PPSSPP tests, known traps |
-| [NEXT.md](NEXT.md) | Open work |
 
 ## Where things are
 
@@ -26,7 +25,7 @@ A fan port of Minecraft: Story Mode season 1 to the PSP, built on the interactiv
 | `assets/ui/` | Menu art |
 | `translations/` | SimpleLocalize exports |
 
-Git-ignored: `assets/saves/`, `tools/` (asset build scripts and their sources), `work/` (long tasks).
+Git-ignored: `assets/saves/`, `tools/` (asset build scripts and their sources), `work/` (long tasks), `docs/NEXT.md` (the open work of the maintainer, kept local).
 
 ## Build and run
 
