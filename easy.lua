@@ -358,10 +358,55 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 			)
 		end
 
+		-- The overlay may end the video (a choice answered over it): then
+		-- the video stops on this frame and the function returns 2.
+		local act = nil
 		if type(overlayFn) == "function" then
-			overlayFn()
+			act = overlayFn()
 		end
 
 		screen.flip()
+		if act == "stop" then
+			PMP.stop(pointer)
+			return 2
+		end
 	end
+end
+
+-- The credits of an episode: the video comes out of black and goes back to
+-- black at its end, or when START skips it (the picture and the sound fade
+-- together). The screen is black when it returns.
+local CREDITS_IN, CREDITS_OUT = 0.8, 1.0   -- seconds
+function PlayCredits(path)
+	local Fade = require("assets/misc/fade")
+	if ChoiceBackdropFree then ChoiceBackdropFree() end
+	local vol = pmpvolume or 10
+	PMP.setVolume(vol)
+	local ok, frame = pcall(PMP.play, path, true, false, nil, nil)
+	if not ok or not frame then
+		screen.clear(); screen.flip()
+		return
+	end
+	local fps = 29.97
+	local skip = nil
+	local smooth = function(v) if v <= 0 then return 0 elseif v >= 1 then return 1 end return v * v * (3 - 2 * v) end
+	while PMP.getFrame(frame) do
+		buttons.read()
+		local pos, n = PMP.position(), PMP.frameCount()
+		if not skip and buttons.pressed(buttons.start) then skip = Fade.start(CREDITS_OUT, true) end
+		local a = 0
+		if pos then a = 1 - smooth(pos / (CREDITS_IN * fps)) end
+		if pos and n and n > 0 then a = math.max(a, smooth(1 - (n - 1 - pos) / (CREDITS_OUT * fps))) end
+		if skip then a = math.max(a, skip:alpha() / 255) end
+		screen.clear()
+		Image.draw(frame, 0, 0)
+		Fade.cover(math.floor(255 * a + 0.5))
+		screen.flip()
+		pcall(PMP.setVolume, math.floor(vol * (1 - a) + 0.5))
+		if skip and skip:done() then break end
+	end
+	pcall(PMP.stop, frame)
+	if PMP.freeLastFrame then PMP.freeLastFrame() end
+	PMP.setVolume(vol)
+	screen.clear(); screen.flip()
 end
