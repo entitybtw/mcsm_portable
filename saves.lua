@@ -89,9 +89,24 @@ function triggerSaveAnim()
 	saveAnim.visible = true
 end
 
+-- A save at a choice is written while the choice stands, but its icon is shown
+-- as in the original game: after the answer, over the next video. AutoSave
+-- with `deferAnim` only marks it, and PMP.playExt starts it with the video.
+-- A local, not a global: every global flag goes into the save file.
+local saveAnimPending = false
+
 -- Non-blocking: just triggers the animation.
 function PlaySaveAnim()
+	saveAnimPending = false
 	triggerSaveAnim()
+end
+
+function StartPendingSaveAnim()
+	if saveAnimPending then PlaySaveAnim() end
+end
+
+function SaveAnimPending()
+	return saveAnimPending
 end
 
 function updateSaveAnim()
@@ -170,7 +185,10 @@ end
 -- "continue" so the episode menu shows it. Unlike SaveGame it never clears
 -- later episodes' status markers (replaying an older episode must not wipe a
 -- marker for an episode already played). Called from each episode's choice node.
-function AutoSave(episodeNumber)
+function AutoSave(episodeNumber, deferAnim)
+	-- An icon left over from a choice that was never answered (the player
+	-- quit from the pause menu) is not shown later.
+	saveAnimPending = false
 	local freq = sav.get("settings", "autosave_freq", 5) or 5
 	if freq == 0 then return end
 	choiceCounter = choiceCounter + 1
@@ -191,7 +209,11 @@ function AutoSave(episodeNumber)
 		return
 	end
 	WriteSlotThumb(currentSaveSlot)
-	PlaySaveAnim()
+	if deferAnim then
+		saveAnimPending = true
+	else
+		PlaySaveAnim()
+	end
 	wr(ep .. "_status", "continue")
 	_G["status_" .. ep] = "continue"
 end
@@ -240,6 +262,12 @@ function ContinueEpisode(episodeNumber)
 	if not sf or sf.episode ~= episodeNumber then return nil end
 	LoadEpisodeVars(episodeNumber)
 	choiceCounter = 0
+	-- A save that has not reached a checkpoint of the episode (a new slot, or
+	-- one that has just finished the episode before) starts it from the
+	-- beginning, with its opening (the tagline of episode 1, the setup).
+	if not (sf.vars and sf.vars["ep" .. episodeNumber .. "_node"] ~= nil) then
+		return nil
+	end
 	return sf.scene or ("assets/video/episode" .. episodeNumber .. "/episode" .. episodeNumber .. ".lua")
 end
 

@@ -8,6 +8,8 @@
 
 Each episode is one file, `assets/video/episodeN/episodeN.lua`. Its `start.lua` asks the setup questions, stored per save slot, and starts or continues the episode.
 
+`ContinueEpisode(N)` continues only a save that has reached a checkpoint of the episode (`epN_node` in its vars). A new slot is written as episode 1 at once, so without this check its first start skipped the opening of the episode (the tagline "The game series adapts to the choices you make" of episode 1).
+
 Episodes 2 to 4 branch on the setup answers: who was saved (Gabriel or Petra) and whose armour (Magnus or Ellegaard). Episode 4 has four branch folders: `ellegaard_gabriel`, `ellegaard_petra`, `magnus_gabriel`, `magnus_petra`.
 
 An episode is a table of nodes:

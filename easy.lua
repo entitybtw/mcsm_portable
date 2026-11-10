@@ -141,6 +141,8 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		return nil
 	end
 	pointer = res
+	-- The icon of a save made at the choice before this video.
+	if StartPendingSaveAnim then StartPendingSaveAnim() end
 
 	local colorStart, colorEnd
 	if hexColor and hexColor:find("/") then
