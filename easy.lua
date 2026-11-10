@@ -199,6 +199,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 		return lines
 	end
 
+	SUBS_TOP = nil
 	while PMP.getFrame(pointer) do
 		screen.clear()
 		buttons.read()
@@ -301,6 +302,9 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 				
 				local totalTextHeight = #finalLines * lineHeight
 				local startY = 272 - totalTextHeight - 30
+				-- The top of the subtitle on the screen: a choice drawn over the
+				-- video by the overlay moves up above a subtitle of two lines.
+				SUBS_TOP = startY
 				
 				local bgX = 240 - (maxWidth / 2) - bgPaddingX
 				local bgWidth = maxWidth + (bgPaddingX * 2)
@@ -324,6 +328,7 @@ function PMP.playExt(path, stopButton, getPointer, subsPath, fontPath, fontSize,
 			else
 				lastSubs = ""
 				currentDisplayLength = 0
+				SUBS_TOP = nil
 			end
 		end
 
