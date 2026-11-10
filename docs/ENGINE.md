@@ -9,6 +9,8 @@ make DEV_PRX=0            # without EBOOT_dev.prx
 ./build.sh                # regenerates the built-in resources, then clean + make; takes make arguments
 ```
 
+The Makefile does not track headers: after changing a `.h` (a struct of the PMP player, say), delete the objects that include it (`rm libs/pmp/*.o lua/graphics.o`) or run `./build.sh`. Stale objects with an old struct layout build without a warning and break at run time.
+
 | File | What |
 |---|---|
 | `LP.c` | `main`, the crash screen |
@@ -105,17 +107,21 @@ Constants: `ALIGN_LEFT`, `ALIGN_CENTER`, `ALIGN_RIGHT`, `SCROLL_LEFT`, `SCROLL_R
 
 | Call | What |
 |---|---|
-| `PMP.play(path, getPointer, [loop], [srtPath], [interruptButton], [fps=29.97])` | With `getPointer`, starts the video and returns its frame as an image, or nil when it cannot start. Otherwise plays to the end before returning |
+| `PMP.play(path, getPointer, [loop], [srtPath], [interruptButton], [fps=29.97], [startFrame=0])` | With `getPointer`, starts the video and returns its frame as an image, or nil when it cannot start. Otherwise plays to the end before returning. `startFrame` starts it on that frame |
 | `PMP.getFrame(frame)` | Updates `frame`. True while playing, and once more after the end, with the last frame |
 | `PMP.stop(frame)` | Stops the video; the frame becomes the last frame |
 | `PMP.pause()` | Toggles pause |
+| `PMP.seek(frame)` | The playing video (of `PMP.play(path, true)`) goes on from `frame`, modulo its length. True when it plays on |
+| `PMP.position()` | The number of the frame shown now (0 is the first), or nil when nothing plays |
+| `PMP.ready()` | True once the playing video shows a frame of its own (a start in the middle decodes from the key frame before it first) |
+| `PMP.frameCount()` | The frames of the playing video, or nil |
 | `PMP.setVolume(volume)` | 0..100 |
 | `PMP.getTimeCode()` | Seconds as a string, or nil when nothing plays |
 | `PMP.getSubs()` | The current subtitle |
 | `PMP.takeLastFrame()` | The frame the last video ended on, now owned by the caller, or nil |
 | `PMP.freeLastFrame()` | Frees it; the next `PMP.play` does so at the latest |
 
-The game wraps these in `PMP.playExt` (`easy.lua`), which draws the subtitles and the overlay of the last choice.
+The game wraps these in `PMP.playExt` (`easy.lua`), which draws the subtitles and the overlay of the last choice. When the overlay function returns `"stop"`, the video stops on that frame and `PMP.playExt` returns 2 (a choice answered over the video).
 
 ```lua
 local frame = PMP.play("clip.pmp", true, false, "clip.srt")
@@ -127,6 +133,8 @@ end
 ```
 
 The output thread never closes the player: it only ends the video, and `pmp_stop` closes it on the main thread, so a frame stays valid while it is being copied.
+
+**Starting in the middle, seeking.** H.264 decodes only from a key frame. A start on frame N (`startFrame`, `PMP.seek`) finds the key frame before N in the packet index of the file (bit 0 of an entry), and the decode thread decodes from there to N without sound before the first frame is shown; until then the frame image keeps its picture. A new image starts black, except when `PMP.play` starts at a frame (startFrame > 0) and the last video stopped was the same file (`PMP.stop` keeps its frame): the new image starts as a copy of that frame, so a video that goes on after a stop shows where it stopped instead of a black screen. The frame of another file is never copied (the card of the episode menu showed under the fade back to the main menu for a second on a PSP). `PMP.ready()` is true once the video shows a decoded frame of its own; `waitMenuVideo()` (`assets/misc/safe.lua`) waits on black for it, at most 1.5 s, before a menu comes out of black. The cost grows with the distance from the key frame: the menu video has one every 50 to 250 frames (2 to 10 s at 25 fps). In PPSSPP a resume 100 frames after a key frame took about 0.7 s. The decoder puts frame n into the buffer `n % number_of_frame_buffers`, so the output thread starts from the buffer of N. `PMP.seek` opens the same file again at the frame instead of moving the two threads under each other: the frame image, the subtitles, the loop and the pause stay. The menus use it to keep their background video going (`safePlayMenuVideo` in `assets/misc/safe.lua`).
 
 **Subtitles.** `parseSRT`: at most 256 cues, 512 bytes of text each. The clock is `frame / 29.97 - 0.35` s, and the first cue with `start < t < end` shows. File rules: [LANGUAGES.md](LANGUAGES.md).
 
