@@ -42,6 +42,22 @@ What the engine accepts (`parseSRT`):
 - Timings made by a person are the reference: the English base of episodes 1 to 4 and the Russian of episode 1. **Never retime in bulk.** An AI commit once changed about 580 timings this way (208bd0585).
 - Change a timing only when it is measured against the speech, and only for lines off by more than about a second.
 - A line may be extended to the end of its speech, but never past the start of the next line.
+- The one exception, decided by the maintainer: the English and the Spanish are replaced by the Netflix subtitles with their own timings (made by people, placed on our clips by the speech, "The Netflix subtitles" below). The other languages keep their timings. Their cues whose English changed in meaning were translated again from the Netflix English, and the lines they lacked were added at the Netflix times where no cue of theirs is; the Russian of episode 1 was changed only where it was wrong in meaning.
+
+## The Netflix subtitles
+
+The subtitles of the Netflix version (English CC and Spanish MX, one file per episode) are the source of the English and Spanish being made now. A file holds every segment of the interactive episode on one timeline of 7 to 19 hours: both Jesses, every branch, so one line is there several times, in several copies of a segment that differ in their lines or in their pace. The Spanish file is on the same timeline as the English one. The English has CC markup to remove: sound tags (`[groans]`), speaker names (`[Jesse] He's still down there!`), and two speakers in one cue as `-line` / `-line`. A clip of ours is not always one segment: it can join two (a fight shared by the branches, then the branch). It is placed by its own speech, not by our old subtitles (their timings are coarse in places, seconds off in episode 2): each Netflix line heard in the clip gives an offset, and the copy that belongs to our video keeps one offset over its lines.
+
+What the placement has to handle:
+
+- Two copies of one line can both land in a clip, cut differently ("We need three stone ... to make one." and "and one pile of redstone dust to make one."): of two cues that overlap in time, the one whose words are in the other goes.
+- A cue of another choice sits right next to ours on the timeline ("He's lost control of it!" before "Ivor, what are you doing?"): a cue not heard while three or more other words are clearly said is dropped, unless our old English has the same line there.
+- Cues of sounds only, or only "Oh!" under a sheep, are no reason to stop following a segment past its last heard line.
+- The Spanish has style markup (`<span style="style.default_1">`) that the engine would show as text.
+- Ties between candidate lines must be broken in a fixed order: Python iterates sets of strings in a different order on every run.
+- Our old lines that Netflix lacks are kept in the free time, only their sentences that Netflix does not have ("He was a great pig." where this copy of Netflix has only "I am so sorry.").
+
+On screen, `playExt` wraps a line at 440 px and puts an empty row between the lines of a cue, and a Netflix line is about 40 characters, close to 440 px in pexico: a two-speaker cue takes 3 rows, 4 or 5 when a line wraps.
 
 ## Speech recognition
 
