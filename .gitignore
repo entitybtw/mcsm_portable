@@ -15,7 +15,7 @@ tools/
 # Editor temp files
 assets/ui/.xdp-*
 
-# Local work state of long tasks (translations, audits); see CLAUDE.md R3
+# Local work state of long tasks (translations, audits); see AGENTS.md R3
 work/
 
 # Open work stays local (docs/NEXT.md)
