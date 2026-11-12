@@ -23,7 +23,6 @@ A fan port of Minecraft: Story Mode season 1 to the PSP, built on the interactiv
 | `assets/video/episodeN/` | Videos, `start.lua` (setup questions), `episodeN.lua` (the story) |
 | `assets/langs/<code>/` | A language: strings and subtitles |
 | `assets/ui/` | Menu art |
-| `translations/` | SimpleLocalize exports |
 
 Git-ignored: `assets/saves/`, `tools/` (asset build scripts and their sources), `work/` (long tasks), `docs/NEXT.md` (the open work of the maintainer, kept local).
 
