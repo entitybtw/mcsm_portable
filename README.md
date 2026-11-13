@@ -34,7 +34,7 @@ This is a fan project. It is not affiliated with Mojang, Microsoft, Telltale Gam
 - **Timed choices**, as in the original game. The timer can be switched off in the settings.
 - **Interactive zones**, where you choose what to look at and whom to talk to.
 - **Saves.** Autosave and four save slots.
-- **Six languages:** English, Russian, Ukrainian, Spanish, Portuguese (Brazil) and Portuguese (Portugal). More can be added as language packs.
+- **Seven languages:** English, Russian, Ukrainian, Spanish, Portuguese (Brazil), Portuguese (Portugal) and German. More can be added as language packs.
 - **The menus of the original game**, recreated for the PSP screen.
 
 ## Requirements

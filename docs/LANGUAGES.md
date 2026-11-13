@@ -10,10 +10,11 @@ Every language, built-in or a language pack, is a folder of `assets/langs/`. The
 | `es` | Español | en | Latin American ("ustedes") |
 | `pt_br` | Português (Brasil) | en | Was `pt`; a saved `pt` is migrated |
 | `pt_pt` | Português (Portugal) | pt_br | European Portuguese |
+| `de` | Deutsch | en | Menus write "ss" for "ß" (minecraft.ttf has no "ß"); subtitles (pexico) keep "ß" |
 
 ## How a language is chosen
 
-**First launch.** `getlang()` takes the saved language if it exists, else the PSP system language (`US→en, ES→es, RU→ru, PT→pt_br`), else English. Ukrainian does not exist as a PSP system language.
+**First launch.** `getlang()` takes the saved language if it exists, else the PSP system language (`US→en, ES→es, RU→ru, PT→pt_br, DE→de`), else English. Ukrainian does not exist as a PSP system language.
 
 **Fallbacks**, so a partial language still works:
 
@@ -65,28 +66,30 @@ A second opinion, not the truth: in fights and under music two models can agree 
 
 ## Glossary
 
-| English | ru | uk | es | pt_br | pt_pt |
-|---|---|---|---|---|---|
-| Wither Storm | Шторм Визера | Шторм Візера | Tormenta Wither | Tempestade de Wither | Tempestade de Wither |
-| Order of the Stone | Орден Камня | Орден Каменя | Orden de la Piedra | Ordem da Pedra | Ordem da Pedra |
-| Formidi-Bomb | Гипербомба | Гіпербомба | Hiperbomba | Bomba Formidável | Formidi-Bomba |
-| Command Block | командный блок | командний блок | bloque de comandos | bloco de comando | bloco de comando |
-| Endercon | Крайкон | ЕндерКон | EnderCon | Endercon | Endercon |
-| Far Lands | Чужедальние края | Далекі Краї | Tierras Lejanas | Terras Distantes | Terras Distantes |
-| Eversource | Вечный источник | Вічне джерело | Fuente Eterna | Fonte Eterna | Fonte Eterna |
-| the Founder | Основательница | Засновниця | la Fundadora | a Fundadora | a Fundadora |
-| Sky City | Небесный город | Небесне місто | Ciudad del Cielo | Cidade do Céu | Cidade do Céu |
-| Ocelots | Оцелоты | Оцелоти | Ocelotes | Ocelotes | Ocelotes |
-| crafting table | верстак | верстат | mesa de trabajo | bancada de trabalho | bancada |
+| English | ru | uk | es | pt_br | pt_pt | de |
+|---|---|---|---|---|---|---|
+| Wither Storm | Шторм Визера | Шторм Візера | Tormenta Wither | Tempestade de Wither | Tempestade de Wither | Wither-Sturm |
+| Order of the Stone | Орден Камня | Орден Каменя | Orden de la Piedra | Ordem da Pedra | Ordem da Pedra | Orden des Steins |
+| Formidi-Bomb | Гипербомба | Гіпербомба | Hiperbomba | Bomba Formidável | Formidi-Bomba | Formidi-Bombe |
+| Command Block | командный блок | командний блок | bloque de comandos | bloco de comando | bloco de comando | Befehlsblock |
+| Endercon | Крайкон | ЕндерКон | EnderCon | Endercon | Endercon | EnderCon |
+| Far Lands | Чужедальние края | Далекі Краї | Tierras Lejanas | Terras Distantes | Terras Distantes | Ferne Lande |
+| Eversource | Вечный источник | Вічне джерело | Fuente Eterna | Fonte Eterna | Fonte Eterna | Ewige Quelle |
+| the Founder | Основательница | Засновниця | la Fundadora | a Fundadora | a Fundadora | die Gründerin |
+| Sky City | Небесный город | Небесне місто | Ciudad del Cielo | Cidade do Céu | Cidade do Céu | Himmelsstadt |
+| Ocelots | Оцелоты | Оцелоти | Ocelotes | Ocelotes | Ocelotes | Ozelots |
+| crafting table | верстак | верстат | mesa de trabajo | bancada de trabalho | bancada | Werkbank |
 
 Names: Jesse, Petra, Axel, Olivia, Lukas, Reuben, Gabriel, Ellegaard, Magnus, Soren, Ivor, Aiden, Milo, Gill.
 
 - ru: Джесси, Петра, Аксель, Оливия, Лукас, Рубен, Габриэль, Эльгорд, Магнус, Сорен, Айвор, Айден, Майло.
 - uk: Джессі, Петра, Аксель, Олівія, Лукас, Рубен, Габріель, Еллегард, Магнус, Сорен, Айвор, Айден, Майло. Vocatives like Рубене, Лукасе, Петро are right.
+- de: the names stay as in English.
 - Jesse is male; Petra, Olivia, Ellegaard and the Founder are female.
 
 Style:
 
 - es: neutral Latin American ("ustedes").
 - pt_br: "você".
+- de: "du" between friends, "Sie" only for strangers addressing Gabriel; Blaze Rods = Lohenruten, flint and steel = Feuerzeug, Build Club = Bauclub, Old Builders = die Alten Baumeister.
 - pt_pt: "tu", "estar a + infinitivo", enclisis, PT vocabulary (fixe, pá, malta, equipa, miúdo, comboio, ecrã, ficheiro).
