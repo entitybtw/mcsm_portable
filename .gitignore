@@ -20,3 +20,6 @@ work/
 
 # Open work stays local (docs/NEXT.md)
 docs/NEXT.md
+
+# Editor backups
+*.save
